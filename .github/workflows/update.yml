@@ -1,8 +1,9 @@
-name: Esegui Gen.py ogni ora
+
+name: Esegui def.py ogni ora
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Esegue ogni ora esatta
+    - cron: '0 * * * *'  # Esegue ogni 30 minuti
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
@@ -21,26 +22,17 @@ jobs:
           python-version: '3.x'  # Sostituisci con la versione necessaria
 
       - name: Installa le dipendenze
-        run: |
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          else
-            pip install requests
-          fi
+        run: pip install requests
 
       - name: Esegui lo script
-        run: python def.py  # Assicurati che il file sia corretto
+        run: python def.py
 
-      - name: Verifica modifiche
-        run: git status  # Controlla lo stato del repository
-
-      - name: Aggiungi il file generato al commit (se ci sono modifiche)
+      - name: Aggiungi il file generato al commit
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add .
-          git diff --quiet && echo "Nessuna modifica da committare" || git commit -m "Aggiungi file generato channels_italy"
+          git commit -m "Aggiungi file generato channels_italy"
 
-      - name: Pusha il cambiamento (se necessario)
-        run: |
-          git diff --quiet && echo "Nessuna modifica da pushare" || git push
+      - name: Pusha il cambiamento
+        run: git push
