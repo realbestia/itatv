@@ -1,4 +1,4 @@
-name: Esegui Gen.py ogni ora
+name: Esegui def.py ogni ora
 
 on:
   schedule:
@@ -29,7 +29,7 @@ jobs:
           fi
 
       - name: Esegui lo script
-        run: python Gen.py  # Assicurati che il file sia corretto
+        run: python def.py  # Assicurati che il file sia corretto
 
       - name: Verifica modifiche
         run: |
