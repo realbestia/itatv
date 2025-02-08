@@ -112,6 +112,7 @@ def organize_channels(channels):
     # Ordina alfabeticamente i canali dentro ciascuna categoria
     for service in organized_data:
         for category in organized_data[service]:
+            # Ordina i canali per nome in minuscolo
             organized_data[service][category].sort(key=lambda x: x[0].lower())  # Ordina per nome del canale
 
     return organized_data
