@@ -5,10 +5,7 @@ import os
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
-#    "https://huhu.to",
     "https://vavoo.to",
-#    "https://kool.to",
-#    "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
@@ -94,6 +91,12 @@ def extract_user_agent(base_url):
         return match.group(1).upper()
     return "DEFAULT"
 
+def clean_tvg_id(name):
+    """Genera un tvg-id pulito rimuovendo spazi, trattini e suffissi come (V) o (V2) e aggiungendo .it."""
+    name = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove i suffissi tra parentesi (V), (V2), ecc.
+    name = re.sub(r"[^\w]", "", name)  # Rimuove tutto tranne lettere e numeri
+    return name.lower() + ".it"  # Aggiunge ".it" alla fine
+
 def organize_channels(channels):
     """Organizza i canali per servizio e categoria."""
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
@@ -101,26 +104,31 @@ def organize_channels(channels):
     for name, url, base_url in channels:
         service, category = classify_channel(name)
         user_agent = extract_user_agent(base_url)
+        tvg_id = clean_tvg_id(name)
+        
         organized_data[service][category].append((name, url, base_url, user_agent))
 
     return organized_data
 
 def save_m3u8(organized_channels):
-    """Salva i canali in un file M3U8 senza divisori di servizio e categoria."""
+    """Salva i canali in un file M3U8."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
-    
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
-                    f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
+                    tvg_id = clean_tvg_id(name)  # Usa il nome pulito e aggiunge ".it"
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}", {name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/1.0","Referer":"{base_url}/"}}\n')
                     f.write(f"{url}\n\n")
+
+    print(f"File {OUTPUT_FILE} creato con successo!")
 
 def main():
     all_links = []
