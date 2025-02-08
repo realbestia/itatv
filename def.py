@@ -5,22 +5,13 @@ import os
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
+#    "https://huhu.to",
     "https://vavoo.to",
+#    "https://kool.to",
+#    "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
-
-# Lista di URL EPG
-EPG_URLS = [
-    "https://xmltv.tvkaista.net/guides/raiplay.it.xml",
-    "https://xmltv.tvkaista.net/guides/guida.tv.xml",
-    "https://xmltv.tvkaista.net/guides/mediasetinfinity.mediaset.it.xml",
-    "https://xmltv.tvkaista.net/guides/superguidatv.it.xml",
-    "https://xmltv.tvkaista.net/guides/tivu.tv.xml",
-    "https://xmltv.tvkaista.net/guides/guidatv.sky.it.xml",
-    "https://xmltv.tvkaista.net/guides/tv.blue.ch.xml",
-    "https://xmltv.tvkaista.net/guides/melita.com.xml"
-]
 
 # Mappatura servizi
 SERVICE_KEYWORDS = {
@@ -103,12 +94,6 @@ def extract_user_agent(base_url):
         return match.group(1).upper()
     return "DEFAULT"
 
-def clean_tvg_id(name):
-    """Genera un tvg-id pulito rimuovendo spazi, trattini e suffissi come (V) o (V2)."""
-    name = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove i suffissi tra parentesi (V), (V2), ecc.
-    name = re.sub(r"[^\w]", "", name)  # Rimuove tutto tranne lettere e numeri
-    return name.lower() + ".it"  # Converte tutto in minuscolo e aggiunge ".it"
-
 def organize_channels(channels):
     """Organizza i canali per servizio e categoria."""
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
@@ -121,25 +106,21 @@ def organize_channels(channels):
     return organized_data
 
 def save_m3u8(organized_channels):
-    """Salva i canali in un file M3U8 con supporto per più EPG e tvg-id pulito."""
+    """Salva i canali in un file M3U8 senza divisori di servizio e categoria."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
-
+    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        epg_string = ",".join(EPG_URLS)  # Unisce gli URL con una virgola
-        f.write(f"#EXTM3U url-tvg=\"{epg_string}\"\n\n")
+        f.write("#EXTM3U\n\n")
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
-                    tvg_id = clean_tvg_id(name)  # Usa il nome pulito + ".it"
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
+                    f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/1.0","Referer":"{base_url}/"}}\n')
                     f.write(f"{url}\n\n")
-
-    print(f"File {OUTPUT_FILE} creato con successo con tvg-id pulito!")
 
 def main():
     all_links = []
