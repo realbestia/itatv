@@ -13,9 +13,14 @@ OUTPUT_FILE = "channels_italy.m3u8"
 
 # Link agli EPG
 EPG_URLS = [
-    "https://epg1.xml",
-    "https://epg2.xml",
-    "https://epg3.xml"
+    "https://xmltv.tvkaista.net/guides/raiplay.it.xml",
+    "https://xmltv.tvkaista.net/guides/guida.tv.xml",
+    "https://xmltv.tvkaista.net/guides/mediasetinfinity.mediaset.it.xml",
+    "https://xmltv.tvkaista.net/guides/superguidatv.it.xml",
+    "https://xmltv.tvkaista.net/guides/tivu.tv.xml",
+    "https://xmltv.tvkaista.net/guides/guidatv.sky.it.xml",
+    "https://xmltv.tvkaista.net/guides/tv.blue.ch.xml",
+    "https://xmltv.tvkaista.net/guides/melita.com.xml"
 ]
 
 # Mappatura servizi e categorie
