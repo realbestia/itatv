@@ -50,6 +50,7 @@ def fetch_channels(base_url):
     try:
         response = requests.get(f"{base_url}/channels", timeout=10)
         response.raise_for_status()
+        print(f"Data from {base_url}: {response.json()}")  # Debug log
         return response.json()
     except requests.RequestException as e:
         print(f"Errore durante il download da {base_url}: {e}")
@@ -59,6 +60,7 @@ def filter_italian_channels(channels, base_url):
     """Filtra i canali con country Italy e genera i link M3U8."""
     results = []
     for ch in channels:
+        print(f"Processing channel: {ch.get('name')}")  # Debug log
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
@@ -107,10 +109,12 @@ def fetch_epg_logos(epg_urls):
                 icon = channel.find('icon')
                 if icon is not None:
                     logo_map[tvg_id] = icon.get('src')
-
+            print(f"Fetched EPG logos from {url}")  # Debug log
         except requests.RequestException as e:
             print(f"Errore nel download dell'EPG {url}: {e}")
-
+        except Exception as e:
+            print(f"Errore nel parsing dell'EPG {url}: {e}")
+    
     return logo_map
 
 def organize_channels(channels, epg_logos):
@@ -140,6 +144,7 @@ def save_m3u8(organized_channels):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         # Scrive i link agli EPG
         f.write("#EXTM3U url-tvg=\"" + " ".join(EPG_URLS) + "\"\n\n")
+        print(f"Writing to {OUTPUT_FILE}...")  # Debug log
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
