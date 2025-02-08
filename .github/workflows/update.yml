@@ -37,5 +37,6 @@ jobs:
 
       - name: Effettua il push con merge dei cambiamenti
         run: |
-          git pull --rebase origin main  # Scarica gli ultimi aggiornamenti
-          git push
+          git fetch origin  # Recupera gli aggiornamenti dal remoto senza modificarlo
+          git reset --hard origin/main  # Resetta il branch locale alla versione remota
+          git push origin main  # Fai il push dei cambiamenti locali
