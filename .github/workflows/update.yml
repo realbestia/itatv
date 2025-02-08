@@ -37,5 +37,5 @@ jobs:
 
       - name: Effettua il push con merge dei cambiamenti
         run: |
-          git pull --rebase  # Evita conflitti con modifiche remote
+          git pull --rebase origin main  # Scarica gli ultimi aggiornamenti
           git push
