@@ -9,7 +9,7 @@ BASE_URLS = ["https://vavoo.to"]
 OUTPUT_FILE = "channels_italy.m3u8"
 
 # URL RAW GitHub che contiene la lista dei link EPG XML
-EPG_LIST_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg"
+EPG_LIST_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.txt"
 
 # Mappatura servizi e categorie
 SERVICE_KEYWORDS = {
