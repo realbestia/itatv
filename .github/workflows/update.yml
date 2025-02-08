@@ -1,9 +1,9 @@
 
-name: Esegui def.py ogni 30 minuti
+name: Esegui def.py ogni ora
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Esegue ogni 30 minuti
+    - cron: '0 * * * *'  # Esegue ogni ora
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
