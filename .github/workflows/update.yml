@@ -1,5 +1,5 @@
 
-name: Esegui Gen.py ogni 30 minuti
+name: Esegui def.py ogni 30 minuti
 
 on:
   schedule:
