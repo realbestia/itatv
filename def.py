@@ -1,5 +1,4 @@
 import requests
-import json
 import re
 import os
 
@@ -29,8 +28,10 @@ CATEGORY_KEYWORDS = {
 }
 
 def clean_channel_name(name):
-    """Pulisce il nome del canale rimuovendo caratteri indesiderati."""
-    return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
+    """Pulisce il nome del canale rimuovendo caratteri indesiderati e qualsiasi suffisso tra parentesi."""
+    name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)  # Pulisce i suffissi conosciuti
+    name = re.sub(r"\s*\(.*?\)\s*", "", name)  # Rimuove tutti i suffissi tra parentesi
+    return name
 
 def fetch_channels(base_url):
     """Scarica i dati JSON da /channels di un sito."""
@@ -92,7 +93,7 @@ def extract_user_agent(base_url):
     return "DEFAULT"
 
 def clean_tvg_id(name):
-    """Genera un tvg-id pulito rimuovendo spazi, trattini e suffissi come (V) o (V2) e aggiungendo .it."""
+    """Genera un tvg-id pulito rimuovendo spazi, trattini e suffissi tra parentesi come (V), (V2) e aggiungendo .it."""
     name = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove i suffissi tra parentesi (V), (V2), ecc.
     name = re.sub(r"[^\w]", "", name)  # Rimuove tutto tranne lettere e numeri
     return name.lower() + ".it"  # Aggiunge ".it" alla fine
@@ -121,8 +122,9 @@ def save_m3u8(organized_channels):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
-                    tvg_id = clean_tvg_id(name)  # Usa il nome pulito e aggiunge ".it"
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}", {name}\n')
+                    clean_name = clean_channel_name(name)  # Clean name for tvg-name
+                    tvg_id = clean_tvg_id(name)  # Clean tvg-id by removing suffixes like (V), (V2)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{clean_name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}", {clean_name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/1.0","Referer":"{base_url}/"}}\n')
