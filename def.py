@@ -99,7 +99,7 @@ def clean_tvg_id(name):
     return name.lower() + ".it"  # Aggiunge ".it" alla fine
 
 def organize_channels(channels):
-    """Organizza i canali per servizio e categoria."""
+    """Organizza i canali per servizio e categoria, ordinando alfabeticamente i canali per categoria."""
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
 
     for name, url, base_url in channels:
@@ -108,6 +108,11 @@ def organize_channels(channels):
         tvg_id = clean_tvg_id(name)
         
         organized_data[service][category].append((name, url, base_url, user_agent))
+
+    # Ordina alfabeticamente i canali dentro ciascuna categoria
+    for service in organized_data:
+        for category in organized_data[service]:
+            organized_data[service][category].sort(key=lambda x: x[0].lower())  # Ordina per nome del canale
 
     return organized_data
 
