@@ -103,12 +103,13 @@ def fetch_epg_logos(epg_urls):
             response = requests.get(url, timeout=10)
             response.raise_for_status()
             root = ET.fromstring(response.content)
+            print(f"EPG data fetched from {url}: {ET.tostring(root, encoding='unicode')}")  # Aggiungi log del contenuto XML
 
-            for channel in root.findall('channel'):
-                tvg_id = channel.get('id')
-                icon = channel.find('icon')
-                if icon is not None:
-                    logo_map[tvg_id] = icon.get('src')
+            for programme in root.findall('programme'):
+                channel_id = programme.get('channel')  # L'ID del canale si trova nell'attributo 'channel'
+                image_url = programme.find('image')  # Cerca il tag 'image' per il logo
+                if image_url is not None:
+                    logo_map[channel_id] = image_url.text  # Aggiungi il link dell'immagine al logo_map
             print(f"Fetched EPG logos from {url}")  # Debug log
         except requests.RequestException as e:
             print(f"Errore nel download dell'EPG {url}: {e}")
@@ -126,6 +127,9 @@ def organize_channels(channels, epg_logos):
         user_agent = extract_user_agent(base_url)
         tvg_id = clean_tvg_id(name)
         logo = epg_logos.get(tvg_id, "")  # Cerca il logo nel dizionario
+
+        # Debug log
+        print(f"Channel {name} ({tvg_id}) - Logo: {logo if logo else 'Not found'}")
 
         organized_data[service][category].append((name, url, base_url, user_agent, logo))
 
