@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 # Configurazione
 BASE_URLS = ["https://vavoo.to"]
 OUTPUT_FILE = "channels_italy.m3u8"
-EPG_URL = "http://example.com/epg.xml"  # Sostituisci con l'URL del tuo file EPG
+EPG_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg" # Sostituisci con l'URL del tuo file EPG
 
 # Mappatura servizi e categorie
 SERVICE_KEYWORDS = {
