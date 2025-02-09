@@ -5,6 +5,16 @@ from fuzzywuzzy import fuzz
 import re
 import os
 
+# Variabili di configurazione
+BASE_URLS = [
+    "https://huhu.to",  # Aggiungi gli altri URL qui se necessario
+#    "https://vavoo.to",
+#    "https://kool.to",
+#    "https://oha.to"
+]
+
+OUTPUT_FILE = "channels_italy.m3u8"
+
 # Cache per evitare confronti ripetuti
 fuzzy_cache = {}
 
