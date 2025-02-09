@@ -57,11 +57,21 @@ def generate_tvg_id(channel_name):
         tvg_id = "DMAX.it"
     else:
         # Gestione dei canali senza "Mediaset"
-        tvg_id = clean_name.strip().replace(" ", "").title() + ".it"  # `.title()` per la capitalizzazione corretta
+        tvg_id = clean_name.strip().replace(" ", "")
+        tvg_id = custom_capitalize(tvg_id) + ".it"  # Capitalizzazione personalizzata
 
-    # Forza la capitalizzazione corretta di ogni parola
-    tvg_id = ''.join([word.capitalize() for word in tvg_id.split()])
     return tvg_id
+
+# Funzione per capitalizzare correttamente il tvg-id
+def custom_capitalize(name):
+    words = name.split()
+    capitalized_words = []
+    for word in words:
+        if word.upper() == "DMAX":
+            capitalized_words.append(word.upper())  # Speciale per DMAX, maiuscolo
+        else:
+            capitalized_words.append(word.capitalize())  # Normalizzazione, maiuscola all'inizio
+    return ''.join(capitalized_words)
 
 # Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
