@@ -12,6 +12,17 @@ BASE_URLS = [
 
 OUTPUT_FILE = "channels_italy.m3u8"
 
+# Mappatura categorie tematiche
+CATEGORY_KEYWORDS = {
+    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
+    "Film & Serie TV": ["cinema", "movie", "film", "serie", "hbo", "fox"],
+    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
+    "Intrattenimento": ["rai", "focus", "real time", "italia", "top"],
+    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
+    "Documentari": ["discovery", "history", "nat geo", "arte", "documentary"],
+    "Musica": ["mtv", "vh1", "radio", "music"]
+}
+
 # Funzione per pulire il nome del canale
 def clean_channel_name(name):
     name = re.sub(r"\s*\(.*?\)\s*", "", name)  # Rimuove testo tra parentesi
@@ -31,6 +42,17 @@ def generate_tvg_id(channel_name):
     camel_case_name = "".join(word.capitalize() for word in words)
 
     return camel_case_name + ".it"
+
+# Funzione per classificare il canale per categoria
+def classify_channel(name):
+    category = "Intrattenimento"  # Default
+
+    for key, words in CATEGORY_KEYWORDS.items():
+        if any(word in name.lower() for word in words):
+            category = key
+            break
+
+    return category
 
 # Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
@@ -63,7 +85,8 @@ def save_m3u8(channels):
 
         for name, url, base_url in channels:
             tvg_id = generate_tvg_id(name)
-            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}",{name}\n')
+            category = classify_channel(name)
+            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}",{name}\n')
             f.write(f"#EXTVLCOPT:http-user-agent=Mozilla/5.0\n")  # User-Agent generico
             f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
             f.write(f"{url}\n\n")
