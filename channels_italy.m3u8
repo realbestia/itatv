@@ -1,2066 +1,2066 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="Canale5.it" tvg-name="CANALE 5",CANALE 5
+#EXTINF:-1 tvg-id="Canale5.it" tvg-name="CANALE 5" group-title="Intrattenimento",CANALE 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1534161807/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyCinemaCollection.it" tvg-name="SKY CINEMA COLLECTION",SKY CINEMA COLLECTION
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3525837057/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySport24[liveDuringEventsOnly].it" tvg-name="SKY SPORT 24 [LIVE DURING EVENTS ONLY]",SKY SPORT 24 [LIVE DURING EVENTS ONLY]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3445562519/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaDrama.it" tvg-name="SKY CINEMA DRAMA",SKY CINEMA DRAMA
+#EXTINF:-1 tvg-id="SkyCinemaDrama.it" tvg-name="SKY CINEMA DRAMA" group-title="Film & Serie TV",SKY CINEMA DRAMA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1235530177/index.m3u8
 
-#EXTINF:-1 tvg-id="La5.it" tvg-name="LA 5",LA 5
+#EXTINF:-1 tvg-id="SkyCinemaCollection.it" tvg-name="SKY CINEMA COLLECTION" group-title="Film & Serie TV",SKY CINEMA COLLECTION
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3525837057/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySport24[liveDuringEventsOnly].it" tvg-name="SKY SPORT 24 [LIVE DURING EVENTS ONLY]" group-title="Sport",SKY SPORT 24 [LIVE DURING EVENTS ONLY]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3445562519/index.m3u8
+
+#EXTINF:-1 tvg-id="La5.it" tvg-name="LA 5" group-title="Intrattenimento",LA 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/84139639/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportCalcio.it" tvg-name="SKY SPORT CALCIO",SKY SPORT CALCIO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/449990998/index.m3u8
-
-#EXTINF:-1 tvg-id="Dazn1.it" tvg-name="DAZN 1",DAZN 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1376440573/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaAction.it" tvg-name="SKY CINEMA ACTION",SKY CINEMA ACTION
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3812796171/index.m3u8
-
-#EXTINF:-1 tvg-id="Cine34Mediaset.it" tvg-name="CINE 34 MEDIASET",CINE 34 MEDIASET
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1768670187/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaAction.it" tvg-name="SKY CINEMA ACTION",SKY CINEMA ACTION
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2242741766/index.m3u8
-
-#EXTINF:-1 tvg-id="Rai4.it" tvg-name="RAI 4",RAI 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/4241820180/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportNba.it" tvg-name="SKY SPORT NBA",SKY SPORT NBA
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/326825326/index.m3u8
-
-#EXTINF:-1 tvg-id="Eurosport1.it" tvg-name="EUROSPORT 1",EUROSPORT 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3481346857/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaUno.it" tvg-name="SKY CINEMA UNO",SKY CINEMA UNO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1759625738/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportF1.it" tvg-name="SKY SPORT F1",SKY SPORT F1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/4246774056/index.m3u8
-
-#EXTINF:-1 tvg-id="La7.it" tvg-name="LA 7",LA 7
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2143522071/index.m3u8
-
-#EXTINF:-1 tvg-id="History.it" tvg-name="HISTORY",HISTORY
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/317837654/index.m3u8
-
-#EXTINF:-1 tvg-id="Iris.it" tvg-name="IRIS",IRIS
+#EXTINF:-1 tvg-id="Iris.it" tvg-name="IRIS" group-title="Intrattenimento",IRIS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/576490047/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyTg24.it" tvg-name="SKY TG 24",SKY TG 24
+#EXTINF:-1 tvg-id="SkySportCalcio.it" tvg-name="SKY SPORT CALCIO" group-title="Sport",SKY SPORT CALCIO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3376031355/index.m3u8
+https://huhu.to/play/449990998/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportsF1.it" tvg-name="SKY SPORTS F1",SKY SPORTS F1
+#EXTINF:-1 tvg-id="Dazn1.it" tvg-name="DAZN 1" group-title="Sport",DAZN 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2289038972/index.m3u8
+https://huhu.to/play/1376440573/index.m3u8
 
-#EXTINF:-1 tvg-id="Tgcom24.it" tvg-name="TGCOM 24",TGCOM 24
+#EXTINF:-1 tvg-id="SkyCinemaAction.it" tvg-name="SKY CINEMA ACTION" group-title="Film & Serie TV",SKY CINEMA ACTION
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2418148449/index.m3u8
+https://huhu.to/play/3812796171/index.m3u8
 
-#EXTINF:-1 tvg-id="Canale5.it" tvg-name="CANALE 5",CANALE 5
+#EXTINF:-1 tvg-id="Cine34Mediaset.it" tvg-name="CINE 34 MEDIASET" group-title="Intrattenimento",CINE 34 MEDIASET
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1101559666/index.m3u8
+https://huhu.to/play/1768670187/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportCalcio.it" tvg-name="SKY SPORT CALCIO",SKY SPORT CALCIO
+#EXTINF:-1 tvg-id="SkyCinemaAction.it" tvg-name="SKY CINEMA ACTION" group-title="Film & Serie TV",SKY CINEMA ACTION
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1665920101/index.m3u8
+https://huhu.to/play/2242741766/index.m3u8
 
-#EXTINF:-1 tvg-id="Rai1.it" tvg-name="RAI 1",RAI 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/875922788/index.m3u8
-
-#EXTINF:-1 tvg-id="Rete4.it" tvg-name="RETE 4",RETE 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2235732004/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySport24.it" tvg-name="SKY SPORT 24",SKY SPORT 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2775802255/index.m3u8
-
-#EXTINF:-1 tvg-id="ZonaDazn.it" tvg-name="ZONA DAZN",ZONA DAZN
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2911178456/index.m3u8
-
-#EXTINF:-1 tvg-id="Dazn.it" tvg-name="DAZN",DAZN
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2745635299/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportMotoGp.it" tvg-name="SKY SPORT MOTO GP",SKY SPORT MOTO GP
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3036316886/index.m3u8
-
-#EXTINF:-1 tvg-id="MilanTv.it" tvg-name="MILAN TV",MILAN TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3657217948/index.m3u8
-
-#EXTINF:-1 tvg-id="La5.it" tvg-name="LA 5",LA 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1425667375/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaComedy.it" tvg-name="SKY CINEMA COMEDY",SKY CINEMA COMEDY
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/500203271/index.m3u8
-
-#EXTINF:-1 tvg-id="IuniorTv.it" tvg-name="IUNIOR TV",IUNIOR TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/803540254/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportGolf.it" tvg-name="SKY SPORT GOLF",SKY SPORT GOLF
+#EXTINF:-1 tvg-id="SkySportGolf.it" tvg-name="SKY SPORT GOLF" group-title="Sport",SKY SPORT GOLF
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/729945219/index.m3u8
 
-#EXTINF:-1 tvg-id="Cielo.it" tvg-name="CIELO",CIELO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3743894403/index.m3u8
-
-#EXTINF:-1 tvg-id="NickJr.it" tvg-name="NICK JR",NICK JR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/380958472/index.m3u8
-
-#EXTINF:-1 tvg-id="Italia1.it" tvg-name="ITALIA 1",ITALIA 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/663536394/index.m3u8
-
-#EXTINF:-1 tvg-id="ItalianFishingTv.it" tvg-name="ITALIAN FISHING TV",ITALIAN FISHING TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/477083716/index.m3u8
-
-#EXTINF:-1 tvg-id="Giallo.it" tvg-name="GIALLO",GIALLO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/4060499455/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaSuspense.it" tvg-name="SKY CINEMA SUSPENSE",SKY CINEMA SUSPENSE
+#EXTINF:-1 tvg-id="SkyCinemaSuspense.it" tvg-name="SKY CINEMA SUSPENSE" group-title="Film & Serie TV",SKY CINEMA SUSPENSE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3060043751/index.m3u8
 
-#EXTINF:-1 tvg-id="LaCTv.it" tvg-name="LA C TV",LA C TV
+#EXTINF:-1 tvg-id="Rai4.it" tvg-name="RAI 4" group-title="Intrattenimento",RAI 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/4241820180/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportNba.it" tvg-name="SKY SPORT NBA" group-title="Sport",SKY SPORT NBA
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/326825326/index.m3u8
+
+#EXTINF:-1 tvg-id="Eurosport1.it" tvg-name="EUROSPORT 1" group-title="Sport",EUROSPORT 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3481346857/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyCinemaUno.it" tvg-name="SKY CINEMA UNO" group-title="Film & Serie TV",SKY CINEMA UNO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1759625738/index.m3u8
+
+#EXTINF:-1 tvg-id="La7.it" tvg-name="LA 7" group-title="Intrattenimento",LA 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2143522071/index.m3u8
+
+#EXTINF:-1 tvg-id="History.it" tvg-name="HISTORY" group-title="Documentari",HISTORY
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/317837654/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyTg24.it" tvg-name="SKY TG 24" group-title="News",SKY TG 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3376031355/index.m3u8
+
+#EXTINF:-1 tvg-id="Tgcom24.it" tvg-name="TGCOM 24" group-title="News",TGCOM 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2418148449/index.m3u8
+
+#EXTINF:-1 tvg-id="Canale5.it" tvg-name="CANALE 5" group-title="Intrattenimento",CANALE 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1101559666/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportCalcio.it" tvg-name="SKY SPORT CALCIO" group-title="Sport",SKY SPORT CALCIO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1665920101/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai1.it" tvg-name="RAI 1" group-title="Intrattenimento",RAI 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/875922788/index.m3u8
+
+#EXTINF:-1 tvg-id="Rete4.it" tvg-name="RETE 4" group-title="Intrattenimento",RETE 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2235732004/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySport24.it" tvg-name="SKY SPORT 24" group-title="Sport",SKY SPORT 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2775802255/index.m3u8
+
+#EXTINF:-1 tvg-id="ZonaDazn.it" tvg-name="ZONA DAZN" group-title="Sport",ZONA DAZN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2911178456/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportMotoGp.it" tvg-name="SKY SPORT MOTO GP" group-title="Sport",SKY SPORT MOTO GP
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3036316886/index.m3u8
+
+#EXTINF:-1 tvg-id="MilanTv.it" tvg-name="MILAN TV" group-title="Intrattenimento",MILAN TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3657217948/index.m3u8
+
+#EXTINF:-1 tvg-id="La5.it" tvg-name="LA 5" group-title="Intrattenimento",LA 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1425667375/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyCinemaComedy.it" tvg-name="SKY CINEMA COMEDY" group-title="Film & Serie TV",SKY CINEMA COMEDY
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/500203271/index.m3u8
+
+#EXTINF:-1 tvg-id="IuniorTv.it" tvg-name="IUNIOR TV" group-title="Intrattenimento",IUNIOR TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/803540254/index.m3u8
+
+#EXTINF:-1 tvg-id="Cielo.it" tvg-name="CIELO" group-title="Intrattenimento",CIELO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3743894403/index.m3u8
+
+#EXTINF:-1 tvg-id="NickJr.it" tvg-name="NICK JR" group-title="Bambini",NICK JR
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/380958472/index.m3u8
+
+#EXTINF:-1 tvg-id="Italia1.it" tvg-name="ITALIA 1" group-title="Intrattenimento",ITALIA 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/663536394/index.m3u8
+
+#EXTINF:-1 tvg-id="ItalianFishingTv.it" tvg-name="ITALIAN FISHING TV" group-title="Intrattenimento",ITALIAN FISHING TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/477083716/index.m3u8
+
+#EXTINF:-1 tvg-id="Giallo.it" tvg-name="GIALLO" group-title="Intrattenimento",GIALLO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/4060499455/index.m3u8
+
+#EXTINF:-1 tvg-id="LaCTv.it" tvg-name="LA C TV" group-title="Intrattenimento",LA C TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/660106690/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyCinemaComedy.it" tvg-name="SKY CINEMA COMEDY",SKY CINEMA COMEDY
+#EXTINF:-1 tvg-id="SkyCinemaComedy.it" tvg-name="SKY CINEMA COMEDY" group-title="Film & Serie TV",SKY CINEMA COMEDY
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3131104474/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyAtlantic.it" tvg-name="SKY ATLANTIC",SKY ATLANTIC
+#EXTINF:-1 tvg-id="SkyAtlantic.it" tvg-name="SKY ATLANTIC" group-title="Intrattenimento",SKY ATLANTIC
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1421393119/index.m3u8
 
-#EXTINF:-1 tvg-id="Eurosport1.it" tvg-name="EUROSPORT 1",EUROSPORT 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3448075317/index.m3u8
-
-#EXTINF:-1 tvg-id="Dazn2.it" tvg-name="DAZN 2",DAZN 2
+#EXTINF:-1 tvg-id="Dazn2.it" tvg-name="DAZN 2" group-title="Sport",DAZN 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/363506221/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila8.it" tvg-name="SKY PRIMAFILA 8",SKY PRIMAFILA 8
+#EXTINF:-1 tvg-id="SkyPrimafila8.it" tvg-name="SKY PRIMAFILA 8" group-title="Intrattenimento",SKY PRIMAFILA 8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1440779061/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila7.it" tvg-name="SKY PRIMAFILA 7",SKY PRIMAFILA 7
+#EXTINF:-1 tvg-id="SkyPrimafila7.it" tvg-name="SKY PRIMAFILA 7" group-title="Intrattenimento",SKY PRIMAFILA 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3618643172/index.m3u8
 
-#EXTINF:-1 tvg-id="RealTime.it" tvg-name="REAL TIME",REAL TIME
+#EXTINF:-1 tvg-id="RealTime.it" tvg-name="REAL TIME" group-title="Intrattenimento",REAL TIME
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2251241999/index.m3u8
 
-#EXTINF:-1 tvg-id="CartoonNetwork.it" tvg-name="CARTOON NETWORK",CARTOON NETWORK
+#EXTINF:-1 tvg-id="CartoonNetwork.it" tvg-name="CARTOON NETWORK" group-title="Bambini",CARTOON NETWORK
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1744435623/index.m3u8
 
-#EXTINF:-1 tvg-id="Rtl102.5.it" tvg-name="RTL 102.5",RTL 102.5
+#EXTINF:-1 tvg-id="Rtl102.5.it" tvg-name="RTL 102.5" group-title="Intrattenimento",RTL 102.5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1729811452/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila6.it" tvg-name="SKY PRIMAFILA 6",SKY PRIMAFILA 6
+#EXTINF:-1 tvg-id="SkyPrimafila6.it" tvg-name="SKY PRIMAFILA 6" group-title="Intrattenimento",SKY PRIMAFILA 6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3939513684/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyCinemaFamily.it" tvg-name="SKY CINEMA FAMILY",SKY CINEMA FAMILY
+#EXTINF:-1 tvg-id="SkyCinemaFamily.it" tvg-name="SKY CINEMA FAMILY" group-title="Film & Serie TV",SKY CINEMA FAMILY
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3216516117/index.m3u8
 
-#EXTINF:-1 tvg-id="RsiLa1.it" tvg-name="RSI LA 1",RSI LA 1
+#EXTINF:-1 tvg-id="RsiLa1.it" tvg-name="RSI LA 1" group-title="Intrattenimento",RSI LA 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2290395046/index.m3u8
 
-#EXTINF:-1 tvg-id="Disney+Film.it" tvg-name="DISNEY+ FILM",DISNEY+ FILM
+#EXTINF:-1 tvg-id="Disney+Film.it" tvg-name="DISNEY+ FILM" group-title="Film & Serie TV",DISNEY+ FILM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1264775727/index.m3u8
 
-#EXTINF:-1 tvg-id="RsiLa2.it" tvg-name="RSI LA 2",RSI LA 2
+#EXTINF:-1 tvg-id="RsiLa2.it" tvg-name="RSI LA 2" group-title="Intrattenimento",RSI LA 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3475299702/index.m3u8
 
-#EXTINF:-1 tvg-id="Rai3.it" tvg-name="RAI 3",RAI 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1324733956/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaSuspense.it" tvg-name="SKY CINEMA SUSPENSE",SKY CINEMA SUSPENSE
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1820997555/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaDue.it" tvg-name="SKY CINEMA DUE",SKY CINEMA DUE
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2330574729/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyArte.it" tvg-name="SKY ARTE",SKY ARTE
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1806815496/index.m3u8
-
-#EXTINF:-1 tvg-id="Rai2.it" tvg-name="RAI 2",RAI 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/246253359/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyPrimafila3.it" tvg-name="SKY PRIMAFILA 3",SKY PRIMAFILA 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/573618724/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportMotogp.it" tvg-name="SKY SPORT MOTOGP",SKY SPORT MOTOGP
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2090703806/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyPrimafila5.it" tvg-name="SKY PRIMAFILA 5",SKY PRIMAFILA 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2909818756/index.m3u8
-
-#EXTINF:-1 tvg-id="RaiNews24.it" tvg-name="RAI NEWS 24",RAI NEWS 24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2272923972/index.m3u8
-
-#EXTINF:-1 tvg-id="DMAX.it" tvg-name="DMAX",DMAX
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3008151733/index.m3u8
-
-#EXTINF:-1 tvg-id="RsiLa1.it" tvg-name="RSI LA 1",RSI LA 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2455610203/index.m3u8
-
-#EXTINF:-1 tvg-id="Rai5.it" tvg-name="RAI 5",RAI 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3249873828/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyPrimafila10.it" tvg-name="SKY PRIMAFILA 10",SKY PRIMAFILA 10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/4272937805/index.m3u8
-
-#EXTINF:-1 tvg-id="History.it" tvg-name="HISTORY",HISTORY
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2134724757/index.m3u8
-
-#EXTINF:-1 tvg-id="RaiSport.it" tvg-name="RAI SPORT",RAI SPORT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2924135092/index.m3u8
-
-#EXTINF:-1 tvg-id="RaiMovie.it" tvg-name="RAI MOVIE",RAI MOVIE
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2835672487/index.m3u8
-
-#EXTINF:-1 tvg-id="La7D.it" tvg-name="LA 7 D",LA 7 D
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/881846038/index.m3u8
-
-#EXTINF:-1 tvg-id="RsiLa2.it" tvg-name="RSI LA 2",RSI LA 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3590183307/index.m3u8
-
-#EXTINF:-1 tvg-id="RtvSanMarino.it" tvg-name="RTV SAN MARINO",RTV SAN MARINO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2343767125/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyPrimafila9.it" tvg-name="SKY PRIMAFILA 9",SKY PRIMAFILA 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1134113883/index.m3u8
-
-#EXTINF:-1 tvg-id="DeejayTv.it" tvg-name="DEEJAY TV",DEEJAY TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/963607327/index.m3u8
-
-#EXTINF:-1 tvg-id="RaiStoria.it" tvg-name="RAI STORIA",RAI STORIA
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/78838793/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyPrimafila12.it" tvg-name="SKY PRIMAFILA 12",SKY PRIMAFILA 12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2221901869/index.m3u8
-
-#EXTINF:-1 tvg-id="EsperiaTv18.it" tvg-name="ESPERIA TV 18",ESPERIA TV 18
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1812508372/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportTennis.it" tvg-name="SKY SPORT TENNIS",SKY SPORT TENNIS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2100771782/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportUno.it" tvg-name="SKY SPORT UNO",SKY SPORT UNO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/210669162/index.m3u8
-
-#EXTINF:-1 tvg-id="Rai1.it" tvg-name="RAI 1",RAI 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1225653759/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaAction.it" tvg-name="SKY CINEMA ACTION",SKY CINEMA ACTION
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1144128726/index.m3u8
-
-#EXTINF:-1 tvg-id="TopCrime.it" tvg-name="TOP CRIME",TOP CRIME
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3420407456/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaUno.it" tvg-name="SKY CINEMA UNO",SKY CINEMA UNO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2872151911/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySport.it" tvg-name="SKY SPORT",SKY SPORT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/924661659/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportUno.it" tvg-name="SKY SPORT UNO",SKY SPORT UNO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3192996672/index.m3u8
-
-#EXTINF:-1 tvg-id="Rai5.it" tvg-name="RAI 5",RAI 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3163380543/index.m3u8
-
-#EXTINF:-1 tvg-id="Rai2.it" tvg-name="RAI 2",RAI 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1939210164/index.m3u8
-
-#EXTINF:-1 tvg-id="RaiPremium.it" tvg-name="RAI PREMIUM",RAI PREMIUM
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2828455552/index.m3u8
-
-#EXTINF:-1 tvg-id="MediasetExtra.it" tvg-name="MEDIASET EXTRA",MEDIASET EXTRA
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/477466531/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaDue.it" tvg-name="SKY CINEMA DUE",SKY CINEMA DUE
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1228534500/index.m3u8
-
-#EXTINF:-1 tvg-id="Rai4.it" tvg-name="RAI 4",RAI 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2179822223/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportTennis.it" tvg-name="SKY SPORT TENNIS",SKY SPORT TENNIS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/78546677/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySportFootball.it" tvg-name="SKY SPORT FOOTBALL",SKY SPORT FOOTBALL
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3093535330/index.m3u8
-
-#EXTINF:-1 tvg-id="Cine34.it" tvg-name="CINE 34",CINE 34
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/62558606/index.m3u8
-
-#EXTINF:-1 tvg-id="Mediaset1.it" tvg-name="MEDIASET 1",MEDIASET 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/633342961/index.m3u8
-
-#EXTINF:-1 tvg-id="Cielo.it" tvg-name="CIELO",CIELO
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2719953688/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyAtlantic.it" tvg-name="SKY ATLANTIC",SKY ATLANTIC
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1482866609/index.m3u8
-
-#EXTINF:-1 tvg-id="RaiPremium.it" tvg-name="RAI PREMIUM",RAI PREMIUM
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2861734300/index.m3u8
-
-#EXTINF:-1 tvg-id="DiscoveryNove.it" tvg-name="DISCOVERY NOVE",DISCOVERY NOVE
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1574591400/index.m3u8
-
-#EXTINF:-1 tvg-id="Mediaset20.it" tvg-name="MEDIASET 20",MEDIASET 20
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/3134481201/index.m3u8
-
-#EXTINF:-1 tvg-id="CartoonNetwork.it" tvg-name="CARTOON NETWORK",CARTOON NETWORK
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1289777017/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyPrimafila9.it" tvg-name="SKY PRIMAFILA 9",SKY PRIMAFILA 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/1753260677/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyCinemaFamily.it" tvg-name="SKY CINEMA FAMILY",SKY CINEMA FAMILY
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/415795144/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyPrimafila10.it" tvg-name="SKY PRIMAFILA 10",SKY PRIMAFILA 10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2268489342/index.m3u8
-
-#EXTINF:-1 tvg-id="TennisChannel.it" tvg-name="TENNIS CHANNEL",TENNIS CHANNEL
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/2716316208/index.m3u8
-
-#EXTINF:-1 tvg-id="Rai3.it" tvg-name="RAI 3",RAI 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/869117599/index.m3u8
-
-#EXTINF:-1 tvg-id="SkySuperTennis.it" tvg-name="SKY SUPER TENNIS",SKY SUPER TENNIS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://huhu.to/
-https://huhu.to/play/558282118/index.m3u8
-
-#EXTINF:-1 tvg-id="Rete4.it" tvg-name="RETE 4",RETE 4
+#EXTINF:-1 tvg-id="Rete4.it" tvg-name="RETE 4" group-title="Intrattenimento",RETE 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4198218214/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiMovie.it" tvg-name="RAI MOVIE",RAI MOVIE
+#EXTINF:-1 tvg-id="SkySportF1.it" tvg-name="SKY SPORT F1" group-title="Sport",SKY SPORT F1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/4246774056/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai3.it" tvg-name="RAI 3" group-title="Intrattenimento",RAI 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1324733956/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyCinemaSuspense.it" tvg-name="SKY CINEMA SUSPENSE" group-title="Film & Serie TV",SKY CINEMA SUSPENSE
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1820997555/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyCinemaDue.it" tvg-name="SKY CINEMA DUE" group-title="Film & Serie TV",SKY CINEMA DUE
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2330574729/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyArte.it" tvg-name="SKY ARTE" group-title="Documentari",SKY ARTE
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1806815496/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai2.it" tvg-name="RAI 2" group-title="Intrattenimento",RAI 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/246253359/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyPrimafila3.it" tvg-name="SKY PRIMAFILA 3" group-title="Intrattenimento",SKY PRIMAFILA 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/573618724/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyPrimafila5.it" tvg-name="SKY PRIMAFILA 5" group-title="Intrattenimento",SKY PRIMAFILA 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2909818756/index.m3u8
+
+#EXTINF:-1 tvg-id="RaiNews24.it" tvg-name="RAI NEWS 24" group-title="News",RAI NEWS 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2272923972/index.m3u8
+
+#EXTINF:-1 tvg-id="DMAX.it" tvg-name="DMAX" group-title="Intrattenimento",DMAX
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3008151733/index.m3u8
+
+#EXTINF:-1 tvg-id="RsiLa1.it" tvg-name="RSI LA 1" group-title="Intrattenimento",RSI LA 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2455610203/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai5.it" tvg-name="RAI 5" group-title="Intrattenimento",RAI 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3249873828/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyPrimafila10.it" tvg-name="SKY PRIMAFILA 10" group-title="Intrattenimento",SKY PRIMAFILA 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/4272937805/index.m3u8
+
+#EXTINF:-1 tvg-id="History.it" tvg-name="HISTORY" group-title="Documentari",HISTORY
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2134724757/index.m3u8
+
+#EXTINF:-1 tvg-id="RaiSport.it" tvg-name="RAI SPORT" group-title="Sport",RAI SPORT
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2924135092/index.m3u8
+
+#EXTINF:-1 tvg-id="RaiMovie.it" tvg-name="RAI MOVIE" group-title="Film & Serie TV",RAI MOVIE
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2835672487/index.m3u8
+
+#EXTINF:-1 tvg-id="La7D.it" tvg-name="LA 7 D" group-title="Intrattenimento",LA 7 D
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/881846038/index.m3u8
+
+#EXTINF:-1 tvg-id="RsiLa2.it" tvg-name="RSI LA 2" group-title="Intrattenimento",RSI LA 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3590183307/index.m3u8
+
+#EXTINF:-1 tvg-id="RtvSanMarino.it" tvg-name="RTV SAN MARINO" group-title="Intrattenimento",RTV SAN MARINO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2343767125/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyPrimafila9.it" tvg-name="SKY PRIMAFILA 9" group-title="Intrattenimento",SKY PRIMAFILA 9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1134113883/index.m3u8
+
+#EXTINF:-1 tvg-id="DeejayTv.it" tvg-name="DEEJAY TV" group-title="Intrattenimento",DEEJAY TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/963607327/index.m3u8
+
+#EXTINF:-1 tvg-id="RaiStoria.it" tvg-name="RAI STORIA" group-title="Intrattenimento",RAI STORIA
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/78838793/index.m3u8
+
+#EXTINF:-1 tvg-id="EsperiaTv18.it" tvg-name="ESPERIA TV 18" group-title="Intrattenimento",ESPERIA TV 18
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1812508372/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportTennis.it" tvg-name="SKY SPORT TENNIS" group-title="Sport",SKY SPORT TENNIS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2100771782/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportUno.it" tvg-name="SKY SPORT UNO" group-title="Sport",SKY SPORT UNO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/210669162/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai1.it" tvg-name="RAI 1" group-title="Intrattenimento",RAI 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1225653759/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyCinemaAction.it" tvg-name="SKY CINEMA ACTION" group-title="Film & Serie TV",SKY CINEMA ACTION
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1144128726/index.m3u8
+
+#EXTINF:-1 tvg-id="TopCrime.it" tvg-name="TOP CRIME" group-title="Intrattenimento",TOP CRIME
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3420407456/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyCinemaUno.it" tvg-name="SKY CINEMA UNO" group-title="Film & Serie TV",SKY CINEMA UNO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2872151911/index.m3u8
+
+#EXTINF:-1 tvg-id="Dazn.it" tvg-name="DAZN" group-title="Sport",DAZN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2745635299/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySport.it" tvg-name="SKY SPORT" group-title="Sport",SKY SPORT
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/924661659/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportUno.it" tvg-name="SKY SPORT UNO" group-title="Sport",SKY SPORT UNO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3192996672/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai5.it" tvg-name="RAI 5" group-title="Intrattenimento",RAI 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3163380543/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai2.it" tvg-name="RAI 2" group-title="Intrattenimento",RAI 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1939210164/index.m3u8
+
+#EXTINF:-1 tvg-id="RaiPremium.it" tvg-name="RAI PREMIUM" group-title="Intrattenimento",RAI PREMIUM
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2828455552/index.m3u8
+
+#EXTINF:-1 tvg-id="MediasetExtra.it" tvg-name="MEDIASET EXTRA" group-title="Intrattenimento",MEDIASET EXTRA
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/477466531/index.m3u8
+
+#EXTINF:-1 tvg-id="Eurosport1.it" tvg-name="EUROSPORT 1" group-title="Sport",EUROSPORT 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3448075317/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyCinemaDue.it" tvg-name="SKY CINEMA DUE" group-title="Film & Serie TV",SKY CINEMA DUE
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1228534500/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai4.it" tvg-name="RAI 4" group-title="Intrattenimento",RAI 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2179822223/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportTennis.it" tvg-name="SKY SPORT TENNIS" group-title="Sport",SKY SPORT TENNIS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/78546677/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportFootball.it" tvg-name="SKY SPORT FOOTBALL" group-title="Sport",SKY SPORT FOOTBALL
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3093535330/index.m3u8
+
+#EXTINF:-1 tvg-id="Cine34.it" tvg-name="CINE 34" group-title="Intrattenimento",CINE 34
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/62558606/index.m3u8
+
+#EXTINF:-1 tvg-id="Mediaset1.it" tvg-name="MEDIASET 1" group-title="Intrattenimento",MEDIASET 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/633342961/index.m3u8
+
+#EXTINF:-1 tvg-id="Cielo.it" tvg-name="CIELO" group-title="Intrattenimento",CIELO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2719953688/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyAtlantic.it" tvg-name="SKY ATLANTIC" group-title="Intrattenimento",SKY ATLANTIC
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1482866609/index.m3u8
+
+#EXTINF:-1 tvg-id="RaiPremium.it" tvg-name="RAI PREMIUM" group-title="Intrattenimento",RAI PREMIUM
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2861734300/index.m3u8
+
+#EXTINF:-1 tvg-id="DiscoveryNove.it" tvg-name="DISCOVERY NOVE" group-title="Documentari",DISCOVERY NOVE
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1574591400/index.m3u8
+
+#EXTINF:-1 tvg-id="Mediaset20.it" tvg-name="MEDIASET 20" group-title="Intrattenimento",MEDIASET 20
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/3134481201/index.m3u8
+
+#EXTINF:-1 tvg-id="CartoonNetwork.it" tvg-name="CARTOON NETWORK" group-title="Bambini",CARTOON NETWORK
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1289777017/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyPrimafila9.it" tvg-name="SKY PRIMAFILA 9" group-title="Intrattenimento",SKY PRIMAFILA 9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/1753260677/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyCinemaFamily.it" tvg-name="SKY CINEMA FAMILY" group-title="Film & Serie TV",SKY CINEMA FAMILY
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/415795144/index.m3u8
+
+#EXTINF:-1 tvg-id="SkyPrimafila10.it" tvg-name="SKY PRIMAFILA 10" group-title="Intrattenimento",SKY PRIMAFILA 10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2268489342/index.m3u8
+
+#EXTINF:-1 tvg-id="TennisChannel.it" tvg-name="TENNIS CHANNEL" group-title="Intrattenimento",TENNIS CHANNEL
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2716316208/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai3.it" tvg-name="RAI 3" group-title="Intrattenimento",RAI 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/869117599/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySuperTennis.it" tvg-name="SKY SUPER TENNIS" group-title="Intrattenimento",SKY SUPER TENNIS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/558282118/index.m3u8
+
+#EXTINF:-1 tvg-id="RaiMovie.it" tvg-name="RAI MOVIE" group-title="Film & Serie TV",RAI MOVIE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1925964148/index.m3u8
 
-#EXTINF:-1 tvg-id="20Mediaset.it" tvg-name="20 MEDIASET",20 MEDIASET
+#EXTINF:-1 tvg-id="20Mediaset.it" tvg-name="20 MEDIASET" group-title="Intrattenimento",20 MEDIASET
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1230338185/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila2.it" tvg-name="SKY PRIMAFILA 2",SKY PRIMAFILA 2
+#EXTINF:-1 tvg-id="SkyPrimafila2.it" tvg-name="SKY PRIMAFILA 2" group-title="Intrattenimento",SKY PRIMAFILA 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/525374356/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiNews24.it" tvg-name="RAI NEWS 24",RAI NEWS 24
+#EXTINF:-1 tvg-id="RaiNews24.it" tvg-name="RAI NEWS 24" group-title="News",RAI NEWS 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2239645272/index.m3u8
 
-#EXTINF:-1 tvg-id="Focus.it" tvg-name="FOCUS",FOCUS
+#EXTINF:-1 tvg-id="Focus.it" tvg-name="FOCUS" group-title="Intrattenimento",FOCUS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2982550433/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportArena.it" tvg-name="SKY SPORT ARENA",SKY SPORT ARENA
+#EXTINF:-1 tvg-id="SkySportArena.it" tvg-name="SKY SPORT ARENA" group-title="Sport",SKY SPORT ARENA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3007400791/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila1.it" tvg-name="SKY PRIMAFILA 1",SKY PRIMAFILA 1
+#EXTINF:-1 tvg-id="SkyPrimafila1.it" tvg-name="SKY PRIMAFILA 1" group-title="Intrattenimento",SKY PRIMAFILA 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1944682394/index.m3u8
 
-#EXTINF:-1 tvg-id="Italia2.it" tvg-name="ITALIA 2",ITALIA 2
+#EXTINF:-1 tvg-id="Italia2.it" tvg-name="ITALIA 2" group-title="Intrattenimento",ITALIA 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1613543898/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportNba.it" tvg-name="SKY SPORT NBA",SKY SPORT NBA
+#EXTINF:-1 tvg-id="SkySportMotogp.it" tvg-name="SKY SPORT MOTOGP" group-title="Sport",SKY SPORT MOTOGP
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2090703806/index.m3u8
+
+#EXTINF:-1 tvg-id="SkySportNba.it" tvg-name="SKY SPORT NBA" group-title="Sport",SKY SPORT NBA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2711959620/index.m3u8
 
-#EXTINF:-1 tvg-id="DMAX.it" tvg-name="DMAX",DMAX
+#EXTINF:-1 tvg-id="DMAX.it" tvg-name="DMAX" group-title="Intrattenimento",DMAX
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3803638765/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyUno.it" tvg-name="SKY UNO",SKY UNO
+#EXTINF:-1 tvg-id="SkyUno.it" tvg-name="SKY UNO" group-title="Intrattenimento",SKY UNO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2130523218/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyCinemaRomance.it" tvg-name="SKY CINEMA ROMANCE",SKY CINEMA ROMANCE
+#EXTINF:-1 tvg-id="SkyCinemaRomance.it" tvg-name="SKY CINEMA ROMANCE" group-title="Film & Serie TV",SKY CINEMA ROMANCE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2890008905/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila5.it" tvg-name="SKY PRIMAFILA 5",SKY PRIMAFILA 5
+#EXTINF:-1 tvg-id="SkyPrimafila5.it" tvg-name="SKY PRIMAFILA 5" group-title="Intrattenimento",SKY PRIMAFILA 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2255083866/index.m3u8
 
-#EXTINF:-1 tvg-id="Eurosport2.it" tvg-name="EUROSPORT 2",EUROSPORT 2
+#EXTINF:-1 tvg-id="Eurosport2.it" tvg-name="EUROSPORT 2" group-title="Sport",EUROSPORT 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2317684453/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila4.it" tvg-name="SKY PRIMAFILA 4",SKY PRIMAFILA 4
+#EXTINF:-1 tvg-id="SkyPrimafila4.it" tvg-name="SKY PRIMAFILA 4" group-title="Intrattenimento",SKY PRIMAFILA 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2416993844/index.m3u8
 
-#EXTINF:-1 tvg-id="Boing.it" tvg-name="BOING",BOING
+#EXTINF:-1 tvg-id="Boing.it" tvg-name="BOING" group-title="Bambini",BOING
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3022771961/index.m3u8
 
-#EXTINF:-1 tvg-id="DiscoveryNove.it" tvg-name="DISCOVERY NOVE",DISCOVERY NOVE
+#EXTINF:-1 tvg-id="DiscoveryNove.it" tvg-name="DISCOVERY NOVE" group-title="Documentari",DISCOVERY NOVE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2651461317/index.m3u8
 
-#EXTINF:-1 tvg-id="K2.it" tvg-name="K2",K2
+#EXTINF:-1 tvg-id="K2.it" tvg-name="K2" group-title="Intrattenimento",K2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/11090349/index.m3u8
 
-#EXTINF:-1 tvg-id="WweChannel.it" tvg-name="WWE CHANNEL",WWE CHANNEL
+#EXTINF:-1 tvg-id="SkySportsF1.it" tvg-name="SKY SPORTS F1" group-title="Sport",SKY SPORTS F1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2289038972/index.m3u8
+
+#EXTINF:-1 tvg-id="WweChannel.it" tvg-name="WWE CHANNEL" group-title="Intrattenimento",WWE CHANNEL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2989824407/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyArte.it" tvg-name="SKY ARTE",SKY ARTE
+#EXTINF:-1 tvg-id="SkyArte.it" tvg-name="SKY ARTE" group-title="Documentari",SKY ARTE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1902695925/index.m3u8
 
-#EXTINF:-1 tvg-id="Nickelodeon.it" tvg-name="NICKELODEON",NICKELODEON
+#EXTINF:-1 tvg-id="Nickelodeon.it" tvg-name="NICKELODEON" group-title="Bambini",NICKELODEON
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3039389215/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySerie.it" tvg-name="SKY SERIE",SKY SERIE
+#EXTINF:-1 tvg-id="SkySerie.it" tvg-name="SKY SERIE" group-title="Film & Serie TV",SKY SERIE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/836680112/index.m3u8
 
-#EXTINF:-1 tvg-id="DiscoveryChannel.it" tvg-name="DISCOVERY CHANNEL",DISCOVERY CHANNEL
+#EXTINF:-1 tvg-id="DiscoveryChannel.it" tvg-name="DISCOVERY CHANNEL" group-title="Documentari",DISCOVERY CHANNEL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1955739367/index.m3u8
 
-#EXTINF:-1 tvg-id="Eurosport2.it" tvg-name="EUROSPORT 2",EUROSPORT 2
+#EXTINF:-1 tvg-id="Eurosport2.it" tvg-name="EUROSPORT 2" group-title="Sport",EUROSPORT 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2283887097/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportFootball[liveDuringEventsOnly].it" tvg-name="SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]",SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]
+#EXTINF:-1 tvg-id="SkySportFootball[liveDuringEventsOnly].it" tvg-name="SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]" group-title="Sport",SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1989309231/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportSerieA.it" tvg-name="SKY SPORT SERIE A",SKY SPORT SERIE A
+#EXTINF:-1 tvg-id="SkySportSerieA.it" tvg-name="SKY SPORT SERIE A" group-title="Sport",SKY SPORT SERIE A
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2077387085/index.m3u8
 
-#EXTINF:-1 tvg-id="TopCrime.it" tvg-name="TOP CRIME",TOP CRIME
+#EXTINF:-1 tvg-id="TopCrime.it" tvg-name="TOP CRIME" group-title="Intrattenimento",TOP CRIME
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/269503091/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyCinemaRomance.it" tvg-name="SKY CINEMA ROMANCE",SKY CINEMA ROMANCE
+#EXTINF:-1 tvg-id="SkyCinemaRomance.it" tvg-name="SKY CINEMA ROMANCE" group-title="Film & Serie TV",SKY CINEMA ROMANCE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1281264885/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiSport[liveDuringEventsOnly].it" tvg-name="RAI SPORT [LIVE DURING EVENTS ONLY]",RAI SPORT [LIVE DURING EVENTS ONLY]
+#EXTINF:-1 tvg-id="RaiSport[liveDuringEventsOnly].it" tvg-name="RAI SPORT [LIVE DURING EVENTS ONLY]" group-title="Sport",RAI SPORT [LIVE DURING EVENTS ONLY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/551730224/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila1.it" tvg-name="SKY PRIMAFILA 1",SKY PRIMAFILA 1
+#EXTINF:-1 tvg-id="SkyPrimafila1.it" tvg-name="SKY PRIMAFILA 1" group-title="Intrattenimento",SKY PRIMAFILA 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1492183364/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportMax.it" tvg-name="SKY SPORT MAX",SKY SPORT MAX
+#EXTINF:-1 tvg-id="SkySportMax.it" tvg-name="SKY SPORT MAX" group-title="Sport",SKY SPORT MAX
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2066326916/index.m3u8
 
-#EXTINF:-1 tvg-id="MediasetIris.it" tvg-name="MEDIASET IRIS",MEDIASET IRIS
+#EXTINF:-1 tvg-id="MediasetIris.it" tvg-name="MEDIASET IRIS" group-title="Intrattenimento",MEDIASET IRIS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/23919988/index.m3u8
 
-#EXTINF:-1 tvg-id="27TwentySeven.it" tvg-name="27 TWENTY SEVEN",27 TWENTY SEVEN
+#EXTINF:-1 tvg-id="27TwentySeven.it" tvg-name="27 TWENTY SEVEN" group-title="Intrattenimento",27 TWENTY SEVEN
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/608774683/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila16.it" tvg-name="SKY PRIMAFILA 16",SKY PRIMAFILA 16
+#EXTINF:-1 tvg-id="SkyPrimafila16.it" tvg-name="SKY PRIMAFILA 16" group-title="Intrattenimento",SKY PRIMAFILA 16
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1911500525/index.m3u8
 
-#EXTINF:-1 tvg-id="Frisbee.it" tvg-name="FRISBEE",FRISBEE
+#EXTINF:-1 tvg-id="Frisbee.it" tvg-name="FRISBEE" group-title="Intrattenimento",FRISBEE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1995860185/index.m3u8
 
-#EXTINF:-1 tvg-id="Giallo.it" tvg-name="GIALLO",GIALLO
+#EXTINF:-1 tvg-id="Giallo.it" tvg-name="GIALLO" group-title="Intrattenimento",GIALLO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2373936189/index.m3u8
 
-#EXTINF:-1 tvg-id="PremiumCrime.it" tvg-name="PREMIUM CRIME",PREMIUM CRIME
+#EXTINF:-1 tvg-id="PremiumCrime.it" tvg-name="PREMIUM CRIME" group-title="Intrattenimento",PREMIUM CRIME
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/444768053/index.m3u8
 
-#EXTINF:-1 tvg-id="RealTime.it" tvg-name="REAL TIME",REAL TIME
+#EXTINF:-1 tvg-id="RealTime.it" tvg-name="REAL TIME" group-title="Intrattenimento",REAL TIME
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1574975196/index.m3u8
 
-#EXTINF:-1 tvg-id="Tv8.it" tvg-name="TV 8",TV 8
+#EXTINF:-1 tvg-id="Tv8.it" tvg-name="TV 8" group-title="Intrattenimento",TV 8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4038365720/index.m3u8
 
-#EXTINF:-1 tvg-id="Caccia.it" tvg-name="CACCIA",CACCIA
+#EXTINF:-1 tvg-id="Caccia.it" tvg-name="CACCIA" group-title="Intrattenimento",CACCIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1692155417/index.m3u8
 
-#EXTINF:-1 tvg-id="SuperTennis.it" tvg-name="SUPER TENNIS",SUPER TENNIS
+#EXTINF:-1 tvg-id="SuperTennis.it" tvg-name="SUPER TENNIS" group-title="Intrattenimento",SUPER TENNIS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3213195143/index.m3u8
 
-#EXTINF:-1 tvg-id="Cartoonito.it" tvg-name="CARTOONITO",CARTOONITO
+#EXTINF:-1 tvg-id="Cartoonito.it" tvg-name="CARTOONITO" group-title="Bambini",CARTOONITO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2178717282/index.m3u8
 
-#EXTINF:-1 tvg-id="SportItaliaSoloCalcio[liveDuringEventsOnly].it" tvg-name="SPORT ITALIA SOLO CALCIO [LIVE DURING EVENTS ONLY]",SPORT ITALIA SOLO CALCIO [LIVE DURING EVENTS ONLY]
+#EXTINF:-1 tvg-id="SportItaliaSoloCalcio[liveDuringEventsOnly].it" tvg-name="SPORT ITALIA SOLO CALCIO [LIVE DURING EVENTS ONLY]" group-title="Sport",SPORT ITALIA SOLO CALCIO [LIVE DURING EVENTS ONLY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/830949486/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiStoria.it" tvg-name="RAI STORIA",RAI STORIA
+#EXTINF:-1 tvg-id="RaiStoria.it" tvg-name="RAI STORIA" group-title="Intrattenimento",RAI STORIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/57338653/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila4.it" tvg-name="SKY PRIMAFILA 4",SKY PRIMAFILA 4
+#EXTINF:-1 tvg-id="SkyPrimafila4.it" tvg-name="SKY PRIMAFILA 4" group-title="Intrattenimento",SKY PRIMAFILA 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3137990890/index.m3u8
 
-#EXTINF:-1 tvg-id="Crime+Investigation.it" tvg-name="CRIME+ INVESTIGATION",CRIME+ INVESTIGATION
+#EXTINF:-1 tvg-id="Crime+Investigation.it" tvg-name="CRIME+ INVESTIGATION" group-title="Intrattenimento",CRIME+ INVESTIGATION
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3005227700/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiGulp.it" tvg-name="RAI GULP",RAI GULP
+#EXTINF:-1 tvg-id="RaiGulp.it" tvg-name="RAI GULP" group-title="Intrattenimento",RAI GULP
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1901652742/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiYoyo.it" tvg-name="RAI YOYO",RAI YOYO
+#EXTINF:-1 tvg-id="RaiYoyo.it" tvg-name="RAI YOYO" group-title="Intrattenimento",RAI YOYO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1785501924/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila6.it" tvg-name="SKY PRIMAFILA 6",SKY PRIMAFILA 6
+#EXTINF:-1 tvg-id="SkyPrimafila6.it" tvg-name="SKY PRIMAFILA 6" group-title="Intrattenimento",SKY PRIMAFILA 6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3251217290/index.m3u8
 
-#EXTINF:-1 tvg-id="SportItalia.it" tvg-name="SPORT ITALIA",SPORT ITALIA
+#EXTINF:-1 tvg-id="SportItalia.it" tvg-name="SPORT ITALIA" group-title="Sport",SPORT ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2881739927/index.m3u8
 
-#EXTINF:-1 tvg-id="TgCom24.it" tvg-name="TG COM 24",TG COM 24
+#EXTINF:-1 tvg-id="TgCom24.it" tvg-name="TG COM 24" group-title="News",TG COM 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1785098768/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiSport+.it" tvg-name="RAI SPORT+",RAI SPORT+
+#EXTINF:-1 tvg-id="RaiSport+.it" tvg-name="RAI SPORT+" group-title="Sport",RAI SPORT+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/843891896/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila7.it" tvg-name="SKY PRIMAFILA 7",SKY PRIMAFILA 7
+#EXTINF:-1 tvg-id="SkyPrimafila7.it" tvg-name="SKY PRIMAFILA 7" group-title="Intrattenimento",SKY PRIMAFILA 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4238969402/index.m3u8
 
-#EXTINF:-1 tvg-id="Cartoonito.it" tvg-name="CARTOONITO",CARTOONITO
+#EXTINF:-1 tvg-id="Cartoonito.it" tvg-name="CARTOONITO" group-title="Bambini",CARTOONITO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1987220436/index.m3u8
 
-#EXTINF:-1 tvg-id="MediasetItalia2.it" tvg-name="MEDIASET ITALIA 2",MEDIASET ITALIA 2
+#EXTINF:-1 tvg-id="MediasetItalia2.it" tvg-name="MEDIASET ITALIA 2" group-title="Intrattenimento",MEDIASET ITALIA 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3538009430/index.m3u8
 
-#EXTINF:-1 tvg-id="Motortrend.it" tvg-name="MOTORTREND",MOTORTREND
+#EXTINF:-1 tvg-id="Motortrend.it" tvg-name="MOTORTREND" group-title="Intrattenimento",MOTORTREND
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3889279895/index.m3u8
 
-#EXTINF:-1 tvg-id="Focus.it" tvg-name="FOCUS",FOCUS
+#EXTINF:-1 tvg-id="Focus.it" tvg-name="FOCUS" group-title="Intrattenimento",FOCUS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3439223610/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiYoyo.it" tvg-name="RAI YOYO",RAI YOYO
+#EXTINF:-1 tvg-id="RaiYoyo.it" tvg-name="RAI YOYO" group-title="Intrattenimento",RAI YOYO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1890950169/index.m3u8
 
-#EXTINF:-1 tvg-id="Super!.it" tvg-name="SUPER!",SUPER!
+#EXTINF:-1 tvg-id="Super!.it" tvg-name="SUPER!" group-title="Intrattenimento",SUPER!
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3550030443/index.m3u8
 
-#EXTINF:-1 tvg-id="SuperTennis.it" tvg-name="SUPER TENNIS",SUPER TENNIS
+#EXTINF:-1 tvg-id="SuperTennis.it" tvg-name="SUPER TENNIS" group-title="Intrattenimento",SUPER TENNIS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3009377513/index.m3u8
 
-#EXTINF:-1 tvg-id="KissKissNapoli.it" tvg-name="KISS KISS NAPOLI",KISS KISS NAPOLI
+#EXTINF:-1 tvg-id="KissKissNapoli.it" tvg-name="KISS KISS NAPOLI" group-title="Intrattenimento",KISS KISS NAPOLI
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3027903278/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyTg24.it" tvg-name="SKY TG 24",SKY TG 24
+#EXTINF:-1 tvg-id="SkyTg24.it" tvg-name="SKY TG 24" group-title="News",SKY TG 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/318057128/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila8.it" tvg-name="SKY PRIMAFILA 8",SKY PRIMAFILA 8
+#EXTINF:-1 tvg-id="SkyPrimafila8.it" tvg-name="SKY PRIMAFILA 8" group-title="Intrattenimento",SKY PRIMAFILA 8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2130255339/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila14.it" tvg-name="SKY PRIMAFILA 14",SKY PRIMAFILA 14
+#EXTINF:-1 tvg-id="SkyPrimafila14.it" tvg-name="SKY PRIMAFILA 14" group-title="Intrattenimento",SKY PRIMAFILA 14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/187661709/index.m3u8
 
-#EXTINF:-1 tvg-id="WarnerTv.it" tvg-name="WARNER TV",WARNER TV
+#EXTINF:-1 tvg-id="WarnerTv.it" tvg-name="WARNER TV" group-title="Intrattenimento",WARNER TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3171202588/index.m3u8
 
-#EXTINF:-1 tvg-id="FoodNetwork.it" tvg-name="FOOD NETWORK",FOOD NETWORK
+#EXTINF:-1 tvg-id="FoodNetwork.it" tvg-name="FOOD NETWORK" group-title="Intrattenimento",FOOD NETWORK
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2820683351/index.m3u8
 
-#EXTINF:-1 tvg-id="Tv8.it" tvg-name="TV 8",TV 8
+#EXTINF:-1 tvg-id="Tv8.it" tvg-name="TV 8" group-title="Intrattenimento",TV 8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2706291008/index.m3u8
 
-#EXTINF:-1 tvg-id="FoodNetwork.it" tvg-name="FOOD NETWORK",FOOD NETWORK
+#EXTINF:-1 tvg-id="FoodNetwork.it" tvg-name="FOOD NETWORK" group-title="Intrattenimento",FOOD NETWORK
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2767861049/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila2.it" tvg-name="SKY PRIMAFILA 2",SKY PRIMAFILA 2
+#EXTINF:-1 tvg-id="SkyPrimafila2.it" tvg-name="SKY PRIMAFILA 2" group-title="Intrattenimento",SKY PRIMAFILA 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/877200714/index.m3u8
 
-#EXTINF:-1 tvg-id="DiscoveryChannel.it" tvg-name="DISCOVERY CHANNEL",DISCOVERY CHANNEL
+#EXTINF:-1 tvg-id="DiscoveryChannel.it" tvg-name="DISCOVERY CHANNEL" group-title="Documentari",DISCOVERY CHANNEL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3554841914/index.m3u8
 
-#EXTINF:-1 tvg-id="Motortrend.it" tvg-name="MOTORTREND",MOTORTREND
+#EXTINF:-1 tvg-id="Motortrend.it" tvg-name="MOTORTREND" group-title="Intrattenimento",MOTORTREND
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3758728323/index.m3u8
 
-#EXTINF:-1 tvg-id="KissKiss.it" tvg-name="KISS KISS",KISS KISS
+#EXTINF:-1 tvg-id="KissKiss.it" tvg-name="KISS KISS" group-title="Intrattenimento",KISS KISS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3815726749/index.m3u8
 
-#EXTINF:-1 tvg-id="DeejayTv.it" tvg-name="DEEJAY TV",DEEJAY TV
+#EXTINF:-1 tvg-id="DeejayTv.it" tvg-name="DEEJAY TV" group-title="Intrattenimento",DEEJAY TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3802167244/index.m3u8
 
-#EXTINF:-1 tvg-id="La7.it" tvg-name="LA 7",LA 7
+#EXTINF:-1 tvg-id="La7.it" tvg-name="LA 7" group-title="Intrattenimento",LA 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/775530063/index.m3u8
 
-#EXTINF:-1 tvg-id="Tv2000.it" tvg-name="TV 2000",TV 2000
+#EXTINF:-1 tvg-id="Tv2000.it" tvg-name="TV 2000" group-title="Intrattenimento",TV 2000
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1949044924/index.m3u8
 
-#EXTINF:-1 tvg-id="Cartoonito.it" tvg-name="CARTOONITO",CARTOONITO
+#EXTINF:-1 tvg-id="Cartoonito.it" tvg-name="CARTOONITO" group-title="Bambini",CARTOONITO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1907000512/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyUno.it" tvg-name="SKY UNO",SKY UNO
+#EXTINF:-1 tvg-id="SkyUno.it" tvg-name="SKY UNO" group-title="Intrattenimento",SKY UNO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/322024849/index.m3u8
 
-#EXTINF:-1 tvg-id="Canale7.it" tvg-name="CANALE 7",CANALE 7
+#EXTINF:-1 tvg-id="Canale7.it" tvg-name="CANALE 7" group-title="Intrattenimento",CANALE 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/565256431/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyCinemaUno+24.it" tvg-name="SKY CINEMA UNO +24",SKY CINEMA UNO +24
+#EXTINF:-1 tvg-id="SkyCinemaUno+24.it" tvg-name="SKY CINEMA UNO +24" group-title="Film & Serie TV",SKY CINEMA UNO +24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1699876530/index.m3u8
 
-#EXTINF:-1 tvg-id="TgNorba24.it" tvg-name="TG NORBA 24",TG NORBA 24
+#EXTINF:-1 tvg-id="TgNorba24.it" tvg-name="TG NORBA 24" group-title="News",TG NORBA 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3413557893/index.m3u8
 
-#EXTINF:-1 tvg-id="27Twentyseven.it" tvg-name="27 TWENTYSEVEN",27 TWENTYSEVEN
+#EXTINF:-1 tvg-id="27Twentyseven.it" tvg-name="27 TWENTYSEVEN" group-title="Intrattenimento",27 TWENTYSEVEN
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/80896559/index.m3u8
 
-#EXTINF:-1 tvg-id="DiscoveryFocus.it" tvg-name="DISCOVERY FOCUS",DISCOVERY FOCUS
+#EXTINF:-1 tvg-id="DiscoveryFocus.it" tvg-name="DISCOVERY FOCUS" group-title="Intrattenimento",DISCOVERY FOCUS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2113273064/index.m3u8
 
-#EXTINF:-1 tvg-id="ComedyCentral.it" tvg-name="COMEDY CENTRAL",COMEDY CENTRAL
+#EXTINF:-1 tvg-id="ComedyCentral.it" tvg-name="COMEDY CENTRAL" group-title="Intrattenimento",COMEDY CENTRAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3658277450/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiScuola.it" tvg-name="RAI SCUOLA",RAI SCUOLA
+#EXTINF:-1 tvg-id="RaiScuola.it" tvg-name="RAI SCUOLA" group-title="Intrattenimento",RAI SCUOLA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2007798511/index.m3u8
 
-#EXTINF:-1 tvg-id="KissKiss.it" tvg-name="KISS KISS",KISS KISS
+#EXTINF:-1 tvg-id="KissKiss.it" tvg-name="KISS KISS" group-title="Intrattenimento",KISS KISS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/950030926/index.m3u8
 
-#EXTINF:-1 tvg-id="Crime+Inv.it" tvg-name="CRIME + INV",CRIME + INV
+#EXTINF:-1 tvg-id="Crime+Inv.it" tvg-name="CRIME + INV" group-title="Intrattenimento",CRIME + INV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1968339149/index.m3u8
 
-#EXTINF:-1 tvg-id="Videolina.it" tvg-name="VIDEOLINA",VIDEOLINA
+#EXTINF:-1 tvg-id="Videolina.it" tvg-name="VIDEOLINA" group-title="Intrattenimento",VIDEOLINA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1249978054/index.m3u8
 
-#EXTINF:-1 tvg-id="QvcItalia.it" tvg-name="QVC ITALIA",QVC ITALIA
+#EXTINF:-1 tvg-id="QvcItalia.it" tvg-name="QVC ITALIA" group-title="Intrattenimento",QVC ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1232565681/index.m3u8
 
-#EXTINF:-1 tvg-id="SportitaliaPlus.it" tvg-name="SPORTITALIA PLUS",SPORTITALIA PLUS
+#EXTINF:-1 tvg-id="SportitaliaPlus.it" tvg-name="SPORTITALIA PLUS" group-title="Sport",SPORTITALIA PLUS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3342849313/index.m3u8
 
-#EXTINF:-1 tvg-id="Televenezia.it" tvg-name="TELEVENEZIA",TELEVENEZIA
+#EXTINF:-1 tvg-id="Televenezia.it" tvg-name="TELEVENEZIA" group-title="Intrattenimento",TELEVENEZIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2814318198/index.m3u8
 
-#EXTINF:-1 tvg-id="111Tv.it" tvg-name="111 TV",111 TV
+#EXTINF:-1 tvg-id="111Tv.it" tvg-name="111 TV" group-title="Intrattenimento",111 TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1600139819/index.m3u8
 
-#EXTINF:-1 tvg-id="K2.it" tvg-name="K2",K2
+#EXTINF:-1 tvg-id="K2.it" tvg-name="K2" group-title="Intrattenimento",K2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2255724318/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila3.it" tvg-name="SKY PRIMAFILA 3",SKY PRIMAFILA 3
+#EXTINF:-1 tvg-id="SkyPrimafila3.it" tvg-name="SKY PRIMAFILA 3" group-title="Intrattenimento",SKY PRIMAFILA 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/153693434/index.m3u8
 
-#EXTINF:-1 tvg-id="ComedyCentral.it" tvg-name="COMEDY CENTRAL",COMEDY CENTRAL
+#EXTINF:-1 tvg-id="ComedyCentral.it" tvg-name="COMEDY CENTRAL" group-title="Intrattenimento",COMEDY CENTRAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/433893159/index.m3u8
 
-#EXTINF:-1 tvg-id="JuweloItalia.it" tvg-name="JUWELO ITALIA",JUWELO ITALIA
+#EXTINF:-1 tvg-id="JuweloItalia.it" tvg-name="JUWELO ITALIA" group-title="Intrattenimento",JUWELO ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3832171692/index.m3u8
 
-#EXTINF:-1 tvg-id="DiscoveryK2.it" tvg-name="DISCOVERY K2",DISCOVERY K2
+#EXTINF:-1 tvg-id="DiscoveryK2.it" tvg-name="DISCOVERY K2" group-title="Documentari",DISCOVERY K2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3037871903/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyNature.it" tvg-name="SKY NATURE",SKY NATURE
+#EXTINF:-1 tvg-id="SkyNature.it" tvg-name="SKY NATURE" group-title="Intrattenimento",SKY NATURE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3810188456/index.m3u8
 
-#EXTINF:-1 tvg-id="Canale21Extra.it" tvg-name="CANALE 21 EXTRA",CANALE 21 EXTRA
+#EXTINF:-1 tvg-id="Canale21Extra.it" tvg-name="CANALE 21 EXTRA" group-title="Intrattenimento",CANALE 21 EXTRA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2454558136/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiGulp.it" tvg-name="RAI GULP",RAI GULP
+#EXTINF:-1 tvg-id="RaiGulp.it" tvg-name="RAI GULP" group-title="Intrattenimento",RAI GULP
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1803677691/index.m3u8
 
-#EXTINF:-1 tvg-id="Boing.it" tvg-name="BOING",BOING
+#EXTINF:-1 tvg-id="Boing.it" tvg-name="BOING" group-title="Bambini",BOING
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3373510242/index.m3u8
 
-#EXTINF:-1 tvg-id="InterTv.it" tvg-name="INTER TV",INTER TV
+#EXTINF:-1 tvg-id="InterTv.it" tvg-name="INTER TV" group-title="Intrattenimento",INTER TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2973773076/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportArena.it" tvg-name="SKY SPORT ARENA",SKY SPORT ARENA
+#EXTINF:-1 tvg-id="SkySportArena.it" tvg-name="SKY SPORT ARENA" group-title="Sport",SKY SPORT ARENA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2555960713/index.m3u8
 
-#EXTINF:-1 tvg-id="Tv2000.it" tvg-name="TV2000",TV2000
+#EXTINF:-1 tvg-id="Tv2000.it" tvg-name="TV2000" group-title="Intrattenimento",TV2000
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1133734972/index.m3u8
 
-#EXTINF:-1 tvg-id="Maria+visionItalia.it" tvg-name="MARIA+VISION ITALIA",MARIA+VISION ITALIA
+#EXTINF:-1 tvg-id="Maria+visionItalia.it" tvg-name="MARIA+VISION ITALIA" group-title="Intrattenimento",MARIA+VISION ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3648324945/index.m3u8
 
-#EXTINF:-1 tvg-id="BoingPlus.it" tvg-name="BOING PLUS",BOING PLUS
+#EXTINF:-1 tvg-id="BoingPlus.it" tvg-name="BOING PLUS" group-title="Bambini",BOING PLUS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3841982646/index.m3u8
 
-#EXTINF:-1 tvg-id="CacciaEPesca.it" tvg-name="CACCIA E PESCA",CACCIA E PESCA
+#EXTINF:-1 tvg-id="CacciaEPesca.it" tvg-name="CACCIA E PESCA" group-title="Intrattenimento",CACCIA E PESCA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3639213638/index.m3u8
 
-#EXTINF:-1 tvg-id="KissKissItalia.it" tvg-name="KISS KISS ITALIA",KISS KISS ITALIA
+#EXTINF:-1 tvg-id="KissKissItalia.it" tvg-name="KISS KISS ITALIA" group-title="Intrattenimento",KISS KISS ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1370869299/index.m3u8
 
-#EXTINF:-1 tvg-id="Canale8.it" tvg-name="CANALE 8",CANALE 8
+#EXTINF:-1 tvg-id="Canale8.it" tvg-name="CANALE 8" group-title="Intrattenimento",CANALE 8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2749478718/index.m3u8
 
-#EXTINF:-1 tvg-id="Italia3.it" tvg-name="ITALIA 3",ITALIA 3
+#EXTINF:-1 tvg-id="Italia3.it" tvg-name="ITALIA 3" group-title="Intrattenimento",ITALIA 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1565298794/index.m3u8
 
-#EXTINF:-1 tvg-id="PadrePioTv.it" tvg-name="PADRE PIO TV",PADRE PIO TV
+#EXTINF:-1 tvg-id="PadrePioTv.it" tvg-name="PADRE PIO TV" group-title="Intrattenimento",PADRE PIO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/435016866/index.m3u8
 
-#EXTINF:-1 tvg-id="France24.it" tvg-name="FRANCE 24",FRANCE 24
+#EXTINF:-1 tvg-id="France24.it" tvg-name="FRANCE 24" group-title="Intrattenimento",FRANCE 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2179686828/index.m3u8
 
-#EXTINF:-1 tvg-id="SportitaliaSolocalcio.it" tvg-name="SPORTITALIA SOLOCALCIO",SPORTITALIA SOLOCALCIO
+#EXTINF:-1 tvg-id="SportitaliaSolocalcio.it" tvg-name="SPORTITALIA SOLOCALCIO" group-title="Sport",SPORTITALIA SOLOCALCIO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2198410339/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila17.it" tvg-name="SKY PRIMAFILA 17",SKY PRIMAFILA 17
+#EXTINF:-1 tvg-id="SkyPrimafila17.it" tvg-name="SKY PRIMAFILA 17" group-title="Intrattenimento",SKY PRIMAFILA 17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1284441949/index.m3u8
 
-#EXTINF:-1 tvg-id="12TvParma.it" tvg-name="12 TV PARMA",12 TV PARMA
+#EXTINF:-1 tvg-id="SkyPrimafila12.it" tvg-name="SKY PRIMAFILA 12" group-title="Intrattenimento",SKY PRIMAFILA 12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-referrer=https://huhu.to/
+https://huhu.to/play/2221901869/index.m3u8
+
+#EXTINF:-1 tvg-id="12TvParma.it" tvg-name="12 TV PARMA" group-title="Intrattenimento",12 TV PARMA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/631792369/index.m3u8
 
-#EXTINF:-1 tvg-id="LoveFmTv.it" tvg-name="LOVE FM TV",LOVE FM TV
+#EXTINF:-1 tvg-id="LoveFmTv.it" tvg-name="LOVE FM TV" group-title="Intrattenimento",LOVE FM TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3344963942/index.m3u8
 
-#EXTINF:-1 tvg-id="Classica.it" tvg-name="CLASSICA",CLASSICA
+#EXTINF:-1 tvg-id="Classica.it" tvg-name="CLASSICA" group-title="Intrattenimento",CLASSICA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/64060922/index.m3u8
 
-#EXTINF:-1 tvg-id="Canale2.it" tvg-name="CANALE 2",CANALE 2
+#EXTINF:-1 tvg-id="Canale2.it" tvg-name="CANALE 2" group-title="Intrattenimento",CANALE 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3914444703/index.m3u8
 
-#EXTINF:-1 tvg-id="Uninettuno.it" tvg-name="UNINETTUNO",UNINETTUNO
+#EXTINF:-1 tvg-id="Uninettuno.it" tvg-name="UNINETTUNO" group-title="Intrattenimento",UNINETTUNO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/797328723/index.m3u8
 
-#EXTINF:-1 tvg-id="SkySportGolf.it" tvg-name="SKY SPORT GOLF",SKY SPORT GOLF
+#EXTINF:-1 tvg-id="SkySportGolf.it" tvg-name="SKY SPORT GOLF" group-title="Sport",SKY SPORT GOLF
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3897711086/index.m3u8
 
-#EXTINF:-1 tvg-id="7080Hits.it" tvg-name="70 80 HITS",70 80 HITS
+#EXTINF:-1 tvg-id="7080Hits.it" tvg-name="70 80 HITS" group-title="Intrattenimento",70 80 HITS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2542531195/index.m3u8
 
-#EXTINF:-1 tvg-id="Hgtv.it" tvg-name="HGTV",HGTV
+#EXTINF:-1 tvg-id="Hgtv.it" tvg-name="HGTV" group-title="Intrattenimento",HGTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2897782781/index.m3u8
 
-#EXTINF:-1 tvg-id="TrentinoTv.it" tvg-name="TRENTINO TV",TRENTINO TV
+#EXTINF:-1 tvg-id="TrentinoTv.it" tvg-name="TRENTINO TV" group-title="Intrattenimento",TRENTINO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2764553737/index.m3u8
 
-#EXTINF:-1 tvg-id="AltoAdigeTv.it" tvg-name="ALTO ADIGE TV",ALTO ADIGE TV
+#EXTINF:-1 tvg-id="AltoAdigeTv.it" tvg-name="ALTO ADIGE TV" group-title="Intrattenimento",ALTO ADIGE TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/68845853/index.m3u8
 
-#EXTINF:-1 tvg-id="EuroIndieMusicChartTv.it" tvg-name="EURO INDIE MUSIC CHART TV",EURO INDIE MUSIC CHART TV
+#EXTINF:-1 tvg-id="EuroIndieMusicChartTv.it" tvg-name="EURO INDIE MUSIC CHART TV" group-title="Musica",EURO INDIE MUSIC CHART TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3569731325/index.m3u8
 
-#EXTINF:-1 tvg-id="Cafe24.it" tvg-name="CAFE 24",CAFE 24
+#EXTINF:-1 tvg-id="Cafe24.it" tvg-name="CAFE 24" group-title="Intrattenimento",CAFE 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1625923783/index.m3u8
 
-#EXTINF:-1 tvg-id="GoldTv.it" tvg-name="GOLD TV",GOLD TV
+#EXTINF:-1 tvg-id="GoldTv.it" tvg-name="GOLD TV" group-title="Intrattenimento",GOLD TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2854396316/index.m3u8
 
-#EXTINF:-1 tvg-id="AntennaSud.it" tvg-name="ANTENNA SUD",ANTENNA SUD
+#EXTINF:-1 tvg-id="AntennaSud.it" tvg-name="ANTENNA SUD" group-title="Intrattenimento",ANTENNA SUD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4084059868/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila15.it" tvg-name="SKY PRIMAFILA 15",SKY PRIMAFILA 15
+#EXTINF:-1 tvg-id="SkyPrimafila15.it" tvg-name="SKY PRIMAFILA 15" group-title="Intrattenimento",SKY PRIMAFILA 15
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/911168573/index.m3u8
 
-#EXTINF:-1 tvg-id="PescaECaccia.it" tvg-name="PESCA E CACCIA",PESCA E CACCIA
+#EXTINF:-1 tvg-id="PescaECaccia.it" tvg-name="PESCA E CACCIA" group-title="Intrattenimento",PESCA E CACCIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3124512993/index.m3u8
 
-#EXTINF:-1 tvg-id="RadionorbaTv.it" tvg-name="RADIONORBA TV",RADIONORBA TV
+#EXTINF:-1 tvg-id="RadionorbaTv.it" tvg-name="RADIONORBA TV" group-title="Musica",RADIONORBA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2627662768/index.m3u8
 
-#EXTINF:-1 tvg-id="AnimalPlanet.it" tvg-name="ANIMAL PLANET",ANIMAL PLANET
+#EXTINF:-1 tvg-id="AnimalPlanet.it" tvg-name="ANIMAL PLANET" group-title="Intrattenimento",ANIMAL PLANET
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1908877526/index.m3u8
 
-#EXTINF:-1 tvg-id="Rtl102.5.it" tvg-name="RTL 102.5",RTL 102.5
+#EXTINF:-1 tvg-id="Rtl102.5.it" tvg-name="RTL 102.5" group-title="Intrattenimento",RTL 102.5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3168132911/index.m3u8
 
-#EXTINF:-1 tvg-id="CameraDeiDeputati.it" tvg-name="CAMERA DEI DEPUTATI",CAMERA DEI DEPUTATI
+#EXTINF:-1 tvg-id="CameraDeiDeputati.it" tvg-name="CAMERA DEI DEPUTATI" group-title="Intrattenimento",CAMERA DEI DEPUTATI
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4253692893/index.m3u8
 
-#EXTINF:-1 tvg-id="NatGeo.it" tvg-name="NAT GEO",NAT GEO
+#EXTINF:-1 tvg-id="NatGeo.it" tvg-name="NAT GEO" group-title="Documentari",NAT GEO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/179844839/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiScuola.it" tvg-name="RAI SCUOLA",RAI SCUOLA
+#EXTINF:-1 tvg-id="RaiScuola.it" tvg-name="RAI SCUOLA" group-title="Intrattenimento",RAI SCUOLA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1886684667/index.m3u8
 
-#EXTINF:-1 tvg-id="Radio51.it" tvg-name="RADIO 51",RADIO 51
+#EXTINF:-1 tvg-id="Radio51.it" tvg-name="RADIO 51" group-title="Musica",RADIO 51
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2339747193/index.m3u8
 
-#EXTINF:-1 tvg-id="ReteVeneta.it" tvg-name="RETE VENETA",RETE VENETA
+#EXTINF:-1 tvg-id="ReteVeneta.it" tvg-name="RETE VENETA" group-title="Intrattenimento",RETE VENETA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1085172353/index.m3u8
 
-#EXTINF:-1 tvg-id="Rai4k.it" tvg-name="RAI 4K",RAI 4K
+#EXTINF:-1 tvg-id="Rai4k.it" tvg-name="RAI 4K" group-title="Intrattenimento",RAI 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2049087681/index.m3u8
 
-#EXTINF:-1 tvg-id="MediasetItalia.it" tvg-name="MEDIASET ITALIA",MEDIASET ITALIA
+#EXTINF:-1 tvg-id="MediasetItalia.it" tvg-name="MEDIASET ITALIA" group-title="Intrattenimento",MEDIASET ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1989562337/index.m3u8
 
-#EXTINF:-1 tvg-id="OndaTv.it" tvg-name="ONDA TV",ONDA TV
+#EXTINF:-1 tvg-id="OndaTv.it" tvg-name="ONDA TV" group-title="Intrattenimento",ONDA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1641481816/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiItalia.it" tvg-name="RAI ITALIA",RAI ITALIA
+#EXTINF:-1 tvg-id="RaiItalia.it" tvg-name="RAI ITALIA" group-title="Intrattenimento",RAI ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/374675593/index.m3u8
 
-#EXTINF:-1 tvg-id="SportItalia.it" tvg-name="SPORT ITALIA",SPORT ITALIA
+#EXTINF:-1 tvg-id="SportItalia.it" tvg-name="SPORT ITALIA" group-title="Sport",SPORT ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3165086929/index.m3u8
 
-#EXTINF:-1 tvg-id="OndaTv.it" tvg-name="ONDA TV",ONDA TV
+#EXTINF:-1 tvg-id="OndaTv.it" tvg-name="ONDA TV" group-title="Intrattenimento",ONDA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/203130779/index.m3u8
 
-#EXTINF:-1 tvg-id="BellaRadioTv.it" tvg-name="BELLA RADIO TV",BELLA RADIO TV
+#EXTINF:-1 tvg-id="BellaRadioTv.it" tvg-name="BELLA RADIO TV" group-title="Musica",BELLA RADIO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1585005860/index.m3u8
 
-#EXTINF:-1 tvg-id="Fox.it" tvg-name="FOX",FOX
+#EXTINF:-1 tvg-id="Fox.it" tvg-name="FOX" group-title="Film & Serie TV",FOX
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/563160609/index.m3u8
 
-#EXTINF:-1 tvg-id="M2o.it" tvg-name="M2O",M2O
+#EXTINF:-1 tvg-id="M2o.it" tvg-name="M2O" group-title="Intrattenimento",M2O
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/215827632/index.m3u8
 
-#EXTINF:-1 tvg-id="ReggioTv.it" tvg-name="REGGIO TV",REGGIO TV
+#EXTINF:-1 tvg-id="ReggioTv.it" tvg-name="REGGIO TV" group-title="Intrattenimento",REGGIO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2165549789/index.m3u8
 
-#EXTINF:-1 tvg-id="LazioTv.it" tvg-name="LAZIO TV",LAZIO TV
+#EXTINF:-1 tvg-id="LazioTv.it" tvg-name="LAZIO TV" group-title="Intrattenimento",LAZIO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2774026655/index.m3u8
 
-#EXTINF:-1 tvg-id="SupersixLombardia.it" tvg-name="SUPERSIX LOMBARDIA",SUPERSIX LOMBARDIA
+#EXTINF:-1 tvg-id="SupersixLombardia.it" tvg-name="SUPERSIX LOMBARDIA" group-title="Intrattenimento",SUPERSIX LOMBARDIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/849124464/index.m3u8
 
-#EXTINF:-1 tvg-id="RtvSport.it" tvg-name="RTV SPORT",RTV SPORT
+#EXTINF:-1 tvg-id="RtvSport.it" tvg-name="RTV SPORT" group-title="Sport",RTV SPORT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/134178901/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyPrimafila18.it" tvg-name="SKY PRIMAFILA 18",SKY PRIMAFILA 18
+#EXTINF:-1 tvg-id="SkyPrimafila18.it" tvg-name="SKY PRIMAFILA 18" group-title="Intrattenimento",SKY PRIMAFILA 18
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3470758028/index.m3u8
 
-#EXTINF:-1 tvg-id="BabyTv.it" tvg-name="BABY TV",BABY TV
+#EXTINF:-1 tvg-id="BabyTv.it" tvg-name="BABY TV" group-title="Bambini",BABY TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3938501125/index.m3u8
 
-#EXTINF:-1 tvg-id="NatGeoWild.it" tvg-name="NAT GEO WILD",NAT GEO WILD
+#EXTINF:-1 tvg-id="NatGeoWild.it" tvg-name="NAT GEO WILD" group-title="Documentari",NAT GEO WILD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3428501495/index.m3u8
 
-#EXTINF:-1 tvg-id="51RadioTv.it" tvg-name="51 RADIO TV",51 RADIO TV
+#EXTINF:-1 tvg-id="51RadioTv.it" tvg-name="51 RADIO TV" group-title="Musica",51 RADIO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4216245552/index.m3u8
 
-#EXTINF:-1 tvg-id="FashionTv.it" tvg-name="FASHION TV",FASHION TV
+#EXTINF:-1 tvg-id="FashionTv.it" tvg-name="FASHION TV" group-title="Intrattenimento",FASHION TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3028319308/index.m3u8
 
-#EXTINF:-1 tvg-id="NatGeoWild.it" tvg-name="NAT GEO WILD",NAT GEO WILD
+#EXTINF:-1 tvg-id="NatGeoWild.it" tvg-name="NAT GEO WILD" group-title="Documentari",NAT GEO WILD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3229664409/index.m3u8
 
-#EXTINF:-1 tvg-id="EtvMarche.it" tvg-name="ETV MARCHE",ETV MARCHE
+#EXTINF:-1 tvg-id="EtvMarche.it" tvg-name="ETV MARCHE" group-title="Intrattenimento",ETV MARCHE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/273312373/index.m3u8
 
-#EXTINF:-1 tvg-id="Byoblu.it" tvg-name="BYOBLU",BYOBLU
+#EXTINF:-1 tvg-id="Byoblu.it" tvg-name="BYOBLU" group-title="Intrattenimento",BYOBLU
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2826111812/index.m3u8
 
-#EXTINF:-1 tvg-id="BabyTv.it" tvg-name="BABY TV",BABY TV
+#EXTINF:-1 tvg-id="BabyTv.it" tvg-name="BABY TV" group-title="Bambini",BABY TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2265727942/index.m3u8
 
-#EXTINF:-1 tvg-id="Fashiontv.it" tvg-name="FASHIONTV",FASHIONTV
+#EXTINF:-1 tvg-id="Fashiontv.it" tvg-name="FASHIONTV" group-title="Intrattenimento",FASHIONTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3255207570/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleVenezia.it" tvg-name="TELE VENEZIA",TELE VENEZIA
+#EXTINF:-1 tvg-id="TeleVenezia.it" tvg-name="TELE VENEZIA" group-title="Intrattenimento",TELE VENEZIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/109522219/index.m3u8
 
-#EXTINF:-1 tvg-id="Pesca.it" tvg-name="PESCA",PESCA
+#EXTINF:-1 tvg-id="Pesca.it" tvg-name="PESCA" group-title="Intrattenimento",PESCA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/714472867/index.m3u8
 
-#EXTINF:-1 tvg-id="Antenna2.it" tvg-name="ANTENNA 2",ANTENNA 2
+#EXTINF:-1 tvg-id="Antenna2.it" tvg-name="ANTENNA 2" group-title="Intrattenimento",ANTENNA 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3014001260/index.m3u8
 
-#EXTINF:-1 tvg-id="A3.it" tvg-name="A3",A3
+#EXTINF:-1 tvg-id="A3.it" tvg-name="A3" group-title="Intrattenimento",A3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/445158856/index.m3u8
 
-#EXTINF:-1 tvg-id="CusanoItaliaTv.it" tvg-name="CUSANO ITALIA TV",CUSANO ITALIA TV
+#EXTINF:-1 tvg-id="CusanoItaliaTv.it" tvg-name="CUSANO ITALIA TV" group-title="Intrattenimento",CUSANO ITALIA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3156092639/index.m3u8
 
-#EXTINF:-1 tvg-id="Canale7.it" tvg-name="CANALE 7",CANALE 7
+#EXTINF:-1 tvg-id="Canale7.it" tvg-name="CANALE 7" group-title="Intrattenimento",CANALE 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/996680722/index.m3u8
 
-#EXTINF:-1 tvg-id="AvengersGrimmChannel.it" tvg-name="AVENGERS GRIMM CHANNEL",AVENGERS GRIMM CHANNEL
+#EXTINF:-1 tvg-id="AvengersGrimmChannel.it" tvg-name="AVENGERS GRIMM CHANNEL" group-title="Intrattenimento",AVENGERS GRIMM CHANNEL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1506307932/index.m3u8
 
-#EXTINF:-1 tvg-id="PrimoCanale.it" tvg-name="PRIMO CANALE",PRIMO CANALE
+#EXTINF:-1 tvg-id="PrimoCanale.it" tvg-name="PRIMO CANALE" group-title="Intrattenimento",PRIMO CANALE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3497884599/index.m3u8
 
-#EXTINF:-1 tvg-id="RtcTelecalabria.it" tvg-name="RTC TELECALABRIA",RTC TELECALABRIA
+#EXTINF:-1 tvg-id="RtcTelecalabria.it" tvg-name="RTC TELECALABRIA" group-title="Intrattenimento",RTC TELECALABRIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/639406775/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyCinemaDue+24.it" tvg-name="SKY CINEMA DUE +24",SKY CINEMA DUE +24
+#EXTINF:-1 tvg-id="SkyCinemaDue+24.it" tvg-name="SKY CINEMA DUE +24" group-title="Film & Serie TV",SKY CINEMA DUE +24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1078650168/index.m3u8
 
-#EXTINF:-1 tvg-id="MediasetInfinity+5.it" tvg-name="MEDIASET INFINITY+ 5",MEDIASET INFINITY+ 5
+#EXTINF:-1 tvg-id="MediasetInfinity+5.it" tvg-name="MEDIASET INFINITY+ 5" group-title="Intrattenimento",MEDIASET INFINITY+ 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/588488827/index.m3u8
 
-#EXTINF:-1 tvg-id="Teletricolore.it" tvg-name="TELETRICOLORE",TELETRICOLORE
+#EXTINF:-1 tvg-id="Teletricolore.it" tvg-name="TELETRICOLORE" group-title="Intrattenimento",TELETRICOLORE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2521763009/index.m3u8
 
-#EXTINF:-1 tvg-id="SkyDocumentaries.it" tvg-name="SKY DOCUMENTARIES",SKY DOCUMENTARIES
+#EXTINF:-1 tvg-id="SkyDocumentaries.it" tvg-name="SKY DOCUMENTARIES" group-title="Intrattenimento",SKY DOCUMENTARIES
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/464281981/index.m3u8
 
-#EXTINF:-1 tvg-id="Euronews.it" tvg-name="EURONEWS",EURONEWS
+#EXTINF:-1 tvg-id="Euronews.it" tvg-name="EURONEWS" group-title="News",EURONEWS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/490955579/index.m3u8
 
-#EXTINF:-1 tvg-id="EliveTvBrescia.it" tvg-name="ELIVE TV BRESCIA",ELIVE TV BRESCIA
+#EXTINF:-1 tvg-id="EliveTvBrescia.it" tvg-name="ELIVE TV BRESCIA" group-title="Intrattenimento",ELIVE TV BRESCIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1521821490/index.m3u8
 
-#EXTINF:-1 tvg-id="CarinaTv.it" tvg-name="CARINA TV",CARINA TV
+#EXTINF:-1 tvg-id="CarinaTv.it" tvg-name="CARINA TV" group-title="Intrattenimento",CARINA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1527236924/index.m3u8
 
-#EXTINF:-1 tvg-id="MediasetInfinity+1.it" tvg-name="MEDIASET INFINITY+ 1",MEDIASET INFINITY+ 1
+#EXTINF:-1 tvg-id="MediasetInfinity+1.it" tvg-name="MEDIASET INFINITY+ 1" group-title="Intrattenimento",MEDIASET INFINITY+ 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3599959739/index.m3u8
 
-#EXTINF:-1 tvg-id="EspansioneTv.it" tvg-name="ESPANSIONE TV",ESPANSIONE TV
+#EXTINF:-1 tvg-id="EspansioneTv.it" tvg-name="ESPANSIONE TV" group-title="Intrattenimento",ESPANSIONE TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/539484419/index.m3u8
 
-#EXTINF:-1 tvg-id="RtvSanMarinoSport.it" tvg-name="RTV SAN MARINO SPORT",RTV SAN MARINO SPORT
+#EXTINF:-1 tvg-id="RtvSanMarinoSport.it" tvg-name="RTV SAN MARINO SPORT" group-title="Sport",RTV SAN MARINO SPORT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1113853263/index.m3u8
 
-#EXTINF:-1 tvg-id="NatGeo.it" tvg-name="NAT GEO",NAT GEO
+#EXTINF:-1 tvg-id="NatGeo.it" tvg-name="NAT GEO" group-title="Documentari",NAT GEO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1735702308/index.m3u8
 
-#EXTINF:-1 tvg-id="RdsSocial.it" tvg-name="RDS SOCIAL",RDS SOCIAL
+#EXTINF:-1 tvg-id="RdsSocial.it" tvg-name="RDS SOCIAL" group-title="Intrattenimento",RDS SOCIAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4031388312/index.m3u8
 
-#EXTINF:-1 tvg-id="BloombergTv4k.it" tvg-name="BLOOMBERG TV 4K",BLOOMBERG TV 4K
+#EXTINF:-1 tvg-id="BloombergTv4k.it" tvg-name="BLOOMBERG TV 4K" group-title="Intrattenimento",BLOOMBERG TV 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3911047486/index.m3u8
 
-#EXTINF:-1 tvg-id="Primocanale.it" tvg-name="PRIMOCANALE",PRIMOCANALE
+#EXTINF:-1 tvg-id="Primocanale.it" tvg-name="PRIMOCANALE" group-title="Intrattenimento",PRIMOCANALE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2944239261/index.m3u8
 
-#EXTINF:-1 tvg-id="Hgtv.it" tvg-name="HGTV",HGTV
+#EXTINF:-1 tvg-id="Hgtv.it" tvg-name="HGTV" group-title="Intrattenimento",HGTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4248997029/index.m3u8
 
-#EXTINF:-1 tvg-id="MediasetInfinity+2.it" tvg-name="MEDIASET INFINITY+ 2",MEDIASET INFINITY+ 2
+#EXTINF:-1 tvg-id="MediasetInfinity+2.it" tvg-name="MEDIASET INFINITY+ 2" group-title="Intrattenimento",MEDIASET INFINITY+ 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2436070507/index.m3u8
 
-#EXTINF:-1 tvg-id="AuroraArte.it" tvg-name="AURORA ARTE",AURORA ARTE
+#EXTINF:-1 tvg-id="AuroraArte.it" tvg-name="AURORA ARTE" group-title="Documentari",AURORA ARTE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3267376899/index.m3u8
 
-#EXTINF:-1 tvg-id="Cremona1.it" tvg-name="CREMONA 1",CREMONA 1
+#EXTINF:-1 tvg-id="Cremona1.it" tvg-name="CREMONA 1" group-title="Intrattenimento",CREMONA 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4137427510/index.m3u8
 
-#EXTINF:-1 tvg-id="Canale8.it" tvg-name="CANALE 8",CANALE 8
+#EXTINF:-1 tvg-id="Canale8.it" tvg-name="CANALE 8" group-title="Intrattenimento",CANALE 8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3107500995/index.m3u8
 
-#EXTINF:-1 tvg-id="PrimaTv.it" tvg-name="PRIMA TV",PRIMA TV
+#EXTINF:-1 tvg-id="PrimaTv.it" tvg-name="PRIMA TV" group-title="Intrattenimento",PRIMA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/530658045/index.m3u8
 
-#EXTINF:-1 tvg-id="EuroTv.it" tvg-name="EURO TV",EURO TV
+#EXTINF:-1 tvg-id="EuroTv.it" tvg-name="EURO TV" group-title="Intrattenimento",EURO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4222258377/index.m3u8
 
-#EXTINF:-1 tvg-id="Videotolentino.it" tvg-name="VIDEOTOLENTINO",VIDEOTOLENTINO
+#EXTINF:-1 tvg-id="Videotolentino.it" tvg-name="VIDEOTOLENTINO" group-title="Intrattenimento",VIDEOTOLENTINO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2015312510/index.m3u8
 
-#EXTINF:-1 tvg-id="PrimaTv.it" tvg-name="PRIMA TV",PRIMA TV
+#EXTINF:-1 tvg-id="PrimaTv.it" tvg-name="PRIMA TV" group-title="Intrattenimento",PRIMA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/91764224/index.m3u8
 
-#EXTINF:-1 tvg-id="Bellla&MonellaTv.it" tvg-name="BELLLA & MONELLA TV",BELLLA & MONELLA TV
+#EXTINF:-1 tvg-id="Bellla&MonellaTv.it" tvg-name="BELLLA & MONELLA TV" group-title="Intrattenimento",BELLLA & MONELLA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/161144675/index.m3u8
 
-#EXTINF:-1 tvg-id="VideostarTv.it" tvg-name="VIDEOSTAR TV",VIDEOSTAR TV
+#EXTINF:-1 tvg-id="VideostarTv.it" tvg-name="VIDEOSTAR TV" group-title="Intrattenimento",VIDEOSTAR TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2499488584/index.m3u8
 
-#EXTINF:-1 tvg-id="LaTr3.it" tvg-name="LA TR3",LA TR3
+#EXTINF:-1 tvg-id="LaTr3.it" tvg-name="LA TR3" group-title="Intrattenimento",LA TR3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2210996603/index.m3u8
 
-#EXTINF:-1 tvg-id="TopCalcio24.it" tvg-name="TOP CALCIO 24",TOP CALCIO 24
+#EXTINF:-1 tvg-id="TopCalcio24.it" tvg-name="TOP CALCIO 24" group-title="Intrattenimento",TOP CALCIO 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3835549326/index.m3u8
 
-#EXTINF:-1 tvg-id="EsperiaTv.it" tvg-name="ESPERIA TV",ESPERIA TV
+#EXTINF:-1 tvg-id="EsperiaTv.it" tvg-name="ESPERIA TV" group-title="Intrattenimento",ESPERIA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3525104604/index.m3u8
 
-#EXTINF:-1 tvg-id="ArteNetwork.it" tvg-name="ARTE NETWORK",ARTE NETWORK
+#EXTINF:-1 tvg-id="ArteNetwork.it" tvg-name="ARTE NETWORK" group-title="Documentari",ARTE NETWORK
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/430570853/index.m3u8
 
-#EXTINF:-1 tvg-id="TgNorba24.it" tvg-name="TG NORBA 24",TG NORBA 24
+#EXTINF:-1 tvg-id="TgNorba24.it" tvg-name="TG NORBA 24" group-title="News",TG NORBA 24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3379729817/index.m3u8
 
-#EXTINF:-1 tvg-id="SuperTvAristanis.it" tvg-name="SUPER TV ARISTANIS",SUPER TV ARISTANIS
+#EXTINF:-1 tvg-id="SuperTvAristanis.it" tvg-name="SUPER TV ARISTANIS" group-title="Intrattenimento",SUPER TV ARISTANIS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/11653719/index.m3u8
 
-#EXTINF:-1 tvg-id="TvYes.it" tvg-name="TV YES",TV YES
+#EXTINF:-1 tvg-id="TvYes.it" tvg-name="TV YES" group-title="Intrattenimento",TV YES
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2569530225/index.m3u8
 
-#EXTINF:-1 tvg-id="CompanyTv.it" tvg-name="COMPANY TV",COMPANY TV
+#EXTINF:-1 tvg-id="CompanyTv.it" tvg-name="COMPANY TV" group-title="Intrattenimento",COMPANY TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1322483308/index.m3u8
 
-#EXTINF:-1 tvg-id="AciSportTv.it" tvg-name="ACI SPORT TV",ACI SPORT TV
+#EXTINF:-1 tvg-id="AciSportTv.it" tvg-name="ACI SPORT TV" group-title="Sport",ACI SPORT TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1351631603/index.m3u8
 
-#EXTINF:-1 tvg-id="RakutenActionMovies.it" tvg-name="RAKUTEN ACTION MOVIES",RAKUTEN ACTION MOVIES
+#EXTINF:-1 tvg-id="RakutenActionMovies.it" tvg-name="RAKUTEN ACTION MOVIES" group-title="Film & Serie TV",RAKUTEN ACTION MOVIES
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3064811192/index.m3u8
 
-#EXTINF:-1 tvg-id="Catfish.it" tvg-name="CATFISH",CATFISH
+#EXTINF:-1 tvg-id="Catfish.it" tvg-name="CATFISH" group-title="Intrattenimento",CATFISH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2381583828/index.m3u8
 
-#EXTINF:-1 tvg-id="SuperTvBrescia.it" tvg-name="SUPER TV BRESCIA",SUPER TV BRESCIA
+#EXTINF:-1 tvg-id="SuperTvBrescia.it" tvg-name="SUPER TV BRESCIA" group-title="Intrattenimento",SUPER TV BRESCIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2061826034/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleMia.it" tvg-name="TELE MIA",TELE MIA
+#EXTINF:-1 tvg-id="TeleMia.it" tvg-name="TELE MIA" group-title="Intrattenimento",TELE MIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1563649601/index.m3u8
 
-#EXTINF:-1 tvg-id="StarComedy.it" tvg-name="STAR COMEDY",STAR COMEDY
+#EXTINF:-1 tvg-id="StarComedy.it" tvg-name="STAR COMEDY" group-title="Intrattenimento",STAR COMEDY
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1512072384/index.m3u8
 
-#EXTINF:-1 tvg-id="Italia3.it" tvg-name="ITALIA 3",ITALIA 3
+#EXTINF:-1 tvg-id="Italia3.it" tvg-name="ITALIA 3" group-title="Intrattenimento",ITALIA 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1200985239/index.m3u8
 
-#EXTINF:-1 tvg-id="IcaroTv.it" tvg-name="ICARO TV",ICARO TV
+#EXTINF:-1 tvg-id="IcaroTv.it" tvg-name="ICARO TV" group-title="Intrattenimento",ICARO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2392139008/index.m3u8
 
-#EXTINF:-1 tvg-id="OndaNovaraTv.it" tvg-name="ONDA NOVARA TV",ONDA NOVARA TV
+#EXTINF:-1 tvg-id="OndaNovaraTv.it" tvg-name="ONDA NOVARA TV" group-title="Intrattenimento",ONDA NOVARA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3134124967/index.m3u8
 
-#EXTINF:-1 tvg-id="LaNuovaTv.it" tvg-name="LA NUOVA TV",LA NUOVA TV
+#EXTINF:-1 tvg-id="LaNuovaTv.it" tvg-name="LA NUOVA TV" group-title="Intrattenimento",LA NUOVA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3894526183/index.m3u8
 
-#EXTINF:-1 tvg-id="MtvHits.it" tvg-name="MTV HITS",MTV HITS
+#EXTINF:-1 tvg-id="MtvHits.it" tvg-name="MTV HITS" group-title="Musica",MTV HITS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3446813098/index.m3u8
 
-#EXTINF:-1 tvg-id="CompanyTv.it" tvg-name="COMPANY TV",COMPANY TV
+#EXTINF:-1 tvg-id="CompanyTv.it" tvg-name="COMPANY TV" group-title="Intrattenimento",COMPANY TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1225484664/index.m3u8
 
-#EXTINF:-1 tvg-id="FmItalia.it" tvg-name="FM ITALIA",FM ITALIA
+#EXTINF:-1 tvg-id="FmItalia.it" tvg-name="FM ITALIA" group-title="Intrattenimento",FM ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/651388134/index.m3u8
 
-#EXTINF:-1 tvg-id="Telerama.it" tvg-name="TELERAMA",TELERAMA
+#EXTINF:-1 tvg-id="Telerama.it" tvg-name="TELERAMA" group-title="Intrattenimento",TELERAMA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4017608910/index.m3u8
 
-#EXTINF:-1 tvg-id="Teleromagna.it" tvg-name="TELEROMAGNA",TELEROMAGNA
+#EXTINF:-1 tvg-id="Teleromagna.it" tvg-name="TELEROMAGNA" group-title="Intrattenimento",TELEROMAGNA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2794392244/index.m3u8
 
-#EXTINF:-1 tvg-id="FanoTv.it" tvg-name="FANO TV",FANO TV
+#EXTINF:-1 tvg-id="FanoTv.it" tvg-name="FANO TV" group-title="Intrattenimento",FANO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1798700028/index.m3u8
 
-#EXTINF:-1 tvg-id="ReiTv.it" tvg-name="REI TV",REI TV
+#EXTINF:-1 tvg-id="ReiTv.it" tvg-name="REI TV" group-title="Intrattenimento",REI TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3075118500/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleFriuli.it" tvg-name="TELE FRIULI",TELE FRIULI
+#EXTINF:-1 tvg-id="TeleFriuli.it" tvg-name="TELE FRIULI" group-title="Intrattenimento",TELE FRIULI
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3551882344/index.m3u8
 
-#EXTINF:-1 tvg-id="Stereo5Tv.it" tvg-name="STEREO 5 TV",STEREO 5 TV
+#EXTINF:-1 tvg-id="Stereo5Tv.it" tvg-name="STEREO 5 TV" group-title="Intrattenimento",STEREO 5 TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/88205050/index.m3u8
 
-#EXTINF:-1 tvg-id="UmbriaTv.it" tvg-name="UMBRIA TV",UMBRIA TV
+#EXTINF:-1 tvg-id="UmbriaTv.it" tvg-name="UMBRIA TV" group-title="Intrattenimento",UMBRIA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1597386407/index.m3u8
 
-#EXTINF:-1 tvg-id="UninettunoUniversityTv.it" tvg-name="UNINETTUNO UNIVERSITY TV",UNINETTUNO UNIVERSITY TV
+#EXTINF:-1 tvg-id="UninettunoUniversityTv.it" tvg-name="UNINETTUNO UNIVERSITY TV" group-title="Intrattenimento",UNINETTUNO UNIVERSITY TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/376550441/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleRomagna.it" tvg-name="TELE ROMAGNA",TELE ROMAGNA
+#EXTINF:-1 tvg-id="TeleRomagna.it" tvg-name="TELE ROMAGNA" group-title="Intrattenimento",TELE ROMAGNA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/129446377/index.m3u8
 
-#EXTINF:-1 tvg-id="Telemolise.it" tvg-name="TELEMOLISE",TELEMOLISE
+#EXTINF:-1 tvg-id="Telemolise.it" tvg-name="TELEMOLISE" group-title="Intrattenimento",TELEMOLISE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/780186974/index.m3u8
 
-#EXTINF:-1 tvg-id="Telebari.it" tvg-name="TELEBARI",TELEBARI
+#EXTINF:-1 tvg-id="Telebari.it" tvg-name="TELEBARI" group-title="Intrattenimento",TELEBARI
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1362891370/index.m3u8
 
-#EXTINF:-1 tvg-id="IcaroTv.it" tvg-name="ICARO TV",ICARO TV
+#EXTINF:-1 tvg-id="IcaroTv.it" tvg-name="ICARO TV" group-title="Intrattenimento",ICARO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2488017405/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleRadioSciacca.it" tvg-name="TELE RADIO SCIACCA",TELE RADIO SCIACCA
+#EXTINF:-1 tvg-id="TeleRadioSciacca.it" tvg-name="TELE RADIO SCIACCA" group-title="Musica",TELE RADIO SCIACCA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3990509931/index.m3u8
 
-#EXTINF:-1 tvg-id="SuperJ.it" tvg-name="SUPER J",SUPER J
+#EXTINF:-1 tvg-id="SuperJ.it" tvg-name="SUPER J" group-title="Intrattenimento",SUPER J
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1284194905/index.m3u8
 
-#EXTINF:-1 tvg-id="Telequattro.it" tvg-name="TELEQUATTRO",TELEQUATTRO
+#EXTINF:-1 tvg-id="Telequattro.it" tvg-name="TELEQUATTRO" group-title="Intrattenimento",TELEQUATTRO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1083984669/index.m3u8
 
-#EXTINF:-1 tvg-id="VcoAzzurraTv.it" tvg-name="VCO AZZURRA TV",VCO AZZURRA TV
+#EXTINF:-1 tvg-id="VcoAzzurraTv.it" tvg-name="VCO AZZURRA TV" group-title="Intrattenimento",VCO AZZURRA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2070070755/index.m3u8
 
-#EXTINF:-1 tvg-id="TelePavia.it" tvg-name="TELE PAVIA",TELE PAVIA
+#EXTINF:-1 tvg-id="TelePavia.it" tvg-name="TELE PAVIA" group-title="Intrattenimento",TELE PAVIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/616483317/index.m3u8
 
-#EXTINF:-1 tvg-id="EntellaTv.it" tvg-name="ENTELLA TV",ENTELLA TV
+#EXTINF:-1 tvg-id="EntellaTv.it" tvg-name="ENTELLA TV" group-title="Intrattenimento",ENTELLA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1371658771/index.m3u8
 
-#EXTINF:-1 tvg-id="Granducato.it" tvg-name="GRANDUCATO",GRANDUCATO
+#EXTINF:-1 tvg-id="Granducato.it" tvg-name="GRANDUCATO" group-title="Intrattenimento",GRANDUCATO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/942153014/index.m3u8
 
-#EXTINF:-1 tvg-id="BloombergTv.it" tvg-name="BLOOMBERG TV",BLOOMBERG TV
+#EXTINF:-1 tvg-id="BloombergTv.it" tvg-name="BLOOMBERG TV" group-title="Intrattenimento",BLOOMBERG TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/116299718/index.m3u8
 
-#EXTINF:-1 tvg-id="RaiItalia.it" tvg-name="RAI ITALIA",RAI ITALIA
+#EXTINF:-1 tvg-id="RaiItalia.it" tvg-name="RAI ITALIA" group-title="Intrattenimento",RAI ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/294457245/index.m3u8
 
-#EXTINF:-1 tvg-id="Telecolor.it" tvg-name="TELECOLOR",TELECOLOR
+#EXTINF:-1 tvg-id="Telecolor.it" tvg-name="TELECOLOR" group-title="Intrattenimento",TELECOLOR
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1133239022/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleAbruzzo.it" tvg-name="TELE ABRUZZO",TELE ABRUZZO
+#EXTINF:-1 tvg-id="TeleAbruzzo.it" tvg-name="TELE ABRUZZO" group-title="Intrattenimento",TELE ABRUZZO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1668393582/index.m3u8
 
-#EXTINF:-1 tvg-id="TelepaceTrento.it" tvg-name="TELEPACE TRENTO",TELEPACE TRENTO
+#EXTINF:-1 tvg-id="TelepaceTrento.it" tvg-name="TELEPACE TRENTO" group-title="Intrattenimento",TELEPACE TRENTO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1794299695/index.m3u8
 
-#EXTINF:-1 tvg-id="Trsport.it" tvg-name="TRSPORT",TRSPORT
+#EXTINF:-1 tvg-id="Trsport.it" tvg-name="TRSPORT" group-title="Sport",TRSPORT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/361314062/index.m3u8
 
-#EXTINF:-1 tvg-id="AranciaTv.it" tvg-name="ARANCIA TV",ARANCIA TV
+#EXTINF:-1 tvg-id="AranciaTv.it" tvg-name="ARANCIA TV" group-title="Intrattenimento",ARANCIA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1792428355/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleSirio.it" tvg-name="TELE SIRIO",TELE SIRIO
+#EXTINF:-1 tvg-id="TeleSirio.it" tvg-name="TELE SIRIO" group-title="Intrattenimento",TELE SIRIO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2188469219/index.m3u8
 
-#EXTINF:-1 tvg-id="TtTeletutto.it" tvg-name="TT TELETUTTO",TT TELETUTTO
+#EXTINF:-1 tvg-id="TtTeletutto.it" tvg-name="TT TELETUTTO" group-title="Intrattenimento",TT TELETUTTO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3709706813/index.m3u8
 
-#EXTINF:-1 tvg-id="QuadrifoglioTv.it" tvg-name="QUADRIFOGLIO TV",QUADRIFOGLIO TV
+#EXTINF:-1 tvg-id="QuadrifoglioTv.it" tvg-name="QUADRIFOGLIO TV" group-title="Intrattenimento",QUADRIFOGLIO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2178753297/index.m3u8
 
-#EXTINF:-1 tvg-id="RakutenDrama.it" tvg-name="RAKUTEN DRAMA",RAKUTEN DRAMA
+#EXTINF:-1 tvg-id="RakutenDrama.it" tvg-name="RAKUTEN DRAMA" group-title="Intrattenimento",RAKUTEN DRAMA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2098624390/index.m3u8
 
-#EXTINF:-1 tvg-id="Telearena.it" tvg-name="TELEARENA",TELEARENA
+#EXTINF:-1 tvg-id="Telearena.it" tvg-name="TELEARENA" group-title="Intrattenimento",TELEARENA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4081561014/index.m3u8
 
-#EXTINF:-1 tvg-id="Telemantova.it" tvg-name="TELEMANTOVA",TELEMANTOVA
+#EXTINF:-1 tvg-id="Telemantova.it" tvg-name="TELEMANTOVA" group-title="Intrattenimento",TELEMANTOVA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1425327889/index.m3u8
 
-#EXTINF:-1 tvg-id="VeraTv.it" tvg-name="VERA TV",VERA TV
+#EXTINF:-1 tvg-id="VeraTv.it" tvg-name="VERA TV" group-title="Intrattenimento",VERA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4271554009/index.m3u8
 
-#EXTINF:-1 tvg-id="RakutenComedyMovies.it" tvg-name="RAKUTEN COMEDY MOVIES",RAKUTEN COMEDY MOVIES
+#EXTINF:-1 tvg-id="RakutenComedyMovies.it" tvg-name="RAKUTEN COMEDY MOVIES" group-title="Film & Serie TV",RAKUTEN COMEDY MOVIES
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1109372778/index.m3u8
 
-#EXTINF:-1 tvg-id="BergamoTv.it" tvg-name="BERGAMO TV",BERGAMO TV
+#EXTINF:-1 tvg-id="BergamoTv.it" tvg-name="BERGAMO TV" group-title="Intrattenimento",BERGAMO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2476433040/index.m3u8
 
-#EXTINF:-1 tvg-id="Rmc101.it" tvg-name="RMC 101",RMC 101
+#EXTINF:-1 tvg-id="Rmc101.it" tvg-name="RMC 101" group-title="Intrattenimento",RMC 101
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2209352147/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleTricolore.it" tvg-name="TELE TRICOLORE",TELE TRICOLORE
+#EXTINF:-1 tvg-id="TeleTricolore.it" tvg-name="TELE TRICOLORE" group-title="Intrattenimento",TELE TRICOLORE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2314613216/index.m3u8
 
-#EXTINF:-1 tvg-id="FmItaliaTv.it" tvg-name="FM ITALIA TV",FM ITALIA TV
+#EXTINF:-1 tvg-id="FmItaliaTv.it" tvg-name="FM ITALIA TV" group-title="Intrattenimento",FM ITALIA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/32417864/index.m3u8
 
-#EXTINF:-1 tvg-id="RdsSocialTv.it" tvg-name="RDS SOCIAL TV",RDS SOCIAL TV
+#EXTINF:-1 tvg-id="RdsSocialTv.it" tvg-name="RDS SOCIAL TV" group-title="Intrattenimento",RDS SOCIAL TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3656080408/index.m3u8
 
-#EXTINF:-1 tvg-id="TvQui.it" tvg-name="TV QUI",TV QUI
+#EXTINF:-1 tvg-id="TvQui.it" tvg-name="TV QUI" group-title="Intrattenimento",TV QUI
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2202937518/index.m3u8
 
-#EXTINF:-1 tvg-id="LiraTv.it" tvg-name="LIRA TV",LIRA TV
+#EXTINF:-1 tvg-id="LiraTv.it" tvg-name="LIRA TV" group-title="Intrattenimento",LIRA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2835333400/index.m3u8
 
-#EXTINF:-1 tvg-id="Telenord.it" tvg-name="TELENORD",TELENORD
+#EXTINF:-1 tvg-id="Telenord.it" tvg-name="TELENORD" group-title="Intrattenimento",TELENORD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2923215049/index.m3u8
 
-#EXTINF:-1 tvg-id="Tv7News.it" tvg-name="TV7 NEWS",TV7 NEWS
+#EXTINF:-1 tvg-id="Tv7News.it" tvg-name="TV7 NEWS" group-title="News",TV7 NEWS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2802329064/index.m3u8
 
-#EXTINF:-1 tvg-id="RakutenTvShows.it" tvg-name="RAKUTEN TV SHOWS",RAKUTEN TV SHOWS
+#EXTINF:-1 tvg-id="RakutenTvShows.it" tvg-name="RAKUTEN TV SHOWS" group-title="Intrattenimento",RAKUTEN TV SHOWS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/86091226/index.m3u8
 
-#EXTINF:-1 tvg-id="RakutenTopFree.it" tvg-name="RAKUTEN TOP FREE",RAKUTEN TOP FREE
+#EXTINF:-1 tvg-id="RakutenTopFree.it" tvg-name="RAKUTEN TOP FREE" group-title="Intrattenimento",RAKUTEN TOP FREE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1572866962/index.m3u8
 
-#EXTINF:-1 tvg-id="TelevideoAgrigento.it" tvg-name="TELEVIDEO AGRIGENTO",TELEVIDEO AGRIGENTO
+#EXTINF:-1 tvg-id="TelevideoAgrigento.it" tvg-name="TELEVIDEO AGRIGENTO" group-title="Intrattenimento",TELEVIDEO AGRIGENTO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4020241962/index.m3u8
 
-#EXTINF:-1 tvg-id="UmbriaTv.it" tvg-name="UMBRIA TV",UMBRIA TV
+#EXTINF:-1 tvg-id="UmbriaTv.it" tvg-name="UMBRIA TV" group-title="Intrattenimento",UMBRIA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2230919796/index.m3u8
 
-#EXTINF:-1 tvg-id="RakutenFamily.it" tvg-name="RAKUTEN FAMILY",RAKUTEN FAMILY
+#EXTINF:-1 tvg-id="RakutenFamily.it" tvg-name="RAKUTEN FAMILY" group-title="Intrattenimento",RAKUTEN FAMILY
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3902650955/index.m3u8
 
-#EXTINF:-1 tvg-id="Rttr.it" tvg-name="RTTR",RTTR
+#EXTINF:-1 tvg-id="Rttr.it" tvg-name="RTTR" group-title="Intrattenimento",RTTR
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3799362189/index.m3u8
 
-#EXTINF:-1 tvg-id="TrentinoTv.it" tvg-name="TRENTINO TV",TRENTINO TV
+#EXTINF:-1 tvg-id="TrentinoTv.it" tvg-name="TRENTINO TV" group-title="Intrattenimento",TRENTINO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2797857045/index.m3u8
 
-#EXTINF:-1 tvg-id="StarLife.it" tvg-name="STAR LIFE",STAR LIFE
+#EXTINF:-1 tvg-id="StarLife.it" tvg-name="STAR LIFE" group-title="Intrattenimento",STAR LIFE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3946128844/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleaTv.it" tvg-name="TELEA TV",TELEA TV
+#EXTINF:-1 tvg-id="TeleaTv.it" tvg-name="TELEA TV" group-title="Intrattenimento",TELEA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3332092310/index.m3u8
 
-#EXTINF:-1 tvg-id="TvaVicenza.it" tvg-name="TVA VICENZA",TVA VICENZA
+#EXTINF:-1 tvg-id="TvaVicenza.it" tvg-name="TVA VICENZA" group-title="Intrattenimento",TVA VICENZA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3071392662/index.m3u8
 
-#EXTINF:-1 tvg-id="RadioFreccia.it" tvg-name="RADIO FRECCIA",RADIO FRECCIA
+#EXTINF:-1 tvg-id="RadioFreccia.it" tvg-name="RADIO FRECCIA" group-title="Musica",RADIO FRECCIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1711134994/index.m3u8
 
-#EXTINF:-1 tvg-id="Super!.it" tvg-name="SUPER!",SUPER!
+#EXTINF:-1 tvg-id="Super!.it" tvg-name="SUPER!" group-title="Intrattenimento",SUPER!
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2900362153/index.m3u8
 
-#EXTINF:-1 tvg-id="VeraTv.it" tvg-name="VERA TV",VERA TV
+#EXTINF:-1 tvg-id="VeraTv.it" tvg-name="VERA TV" group-title="Intrattenimento",VERA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2471902234/index.m3u8
 
-#EXTINF:-1 tvg-id="Ol3Radio.it" tvg-name="OL3 RADIO",OL3 RADIO
+#EXTINF:-1 tvg-id="Ol3Radio.it" tvg-name="OL3 RADIO" group-title="Musica",OL3 RADIO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/68102734/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleLiguriaSud.it" tvg-name="TELE LIGURIA SUD",TELE LIGURIA SUD
+#EXTINF:-1 tvg-id="TeleLiguriaSud.it" tvg-name="TELE LIGURIA SUD" group-title="Intrattenimento",TELE LIGURIA SUD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/874797181/index.m3u8
 
-#EXTINF:-1 tvg-id="GlobusTelevision.it" tvg-name="GLOBUS TELEVISION",GLOBUS TELEVISION
+#EXTINF:-1 tvg-id="GlobusTelevision.it" tvg-name="GLOBUS TELEVISION" group-title="Intrattenimento",GLOBUS TELEVISION
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2116902817/index.m3u8
 
-#EXTINF:-1 tvg-id="ReteOro.it" tvg-name="RETE ORO",RETE ORO
+#EXTINF:-1 tvg-id="ReteOro.it" tvg-name="RETE ORO" group-title="Intrattenimento",RETE ORO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3351863213/index.m3u8
 
-#EXTINF:-1 tvg-id="VideoNovara.it" tvg-name="VIDEO NOVARA",VIDEO NOVARA
+#EXTINF:-1 tvg-id="VideoNovara.it" tvg-name="VIDEO NOVARA" group-title="Intrattenimento",VIDEO NOVARA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2791781421/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleChiara.it" tvg-name="TELE CHIARA",TELE CHIARA
+#EXTINF:-1 tvg-id="TeleChiara.it" tvg-name="TELE CHIARA" group-title="Intrattenimento",TELE CHIARA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2487986216/index.m3u8
 
-#EXTINF:-1 tvg-id="Rtr99Tv.it" tvg-name="RTR 99 TV",RTR 99 TV
+#EXTINF:-1 tvg-id="Rtr99Tv.it" tvg-name="RTR 99 TV" group-title="Intrattenimento",RTR 99 TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1621632780/index.m3u8
 
-#EXTINF:-1 tvg-id="RadioCapital.it" tvg-name="RADIO CAPITAL",RADIO CAPITAL
+#EXTINF:-1 tvg-id="RadioCapital.it" tvg-name="RADIO CAPITAL" group-title="Musica",RADIO CAPITAL
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/421441745/index.m3u8
 
-#EXTINF:-1 tvg-id="TvaVicenza.it" tvg-name="TVA VICENZA",TVA VICENZA
+#EXTINF:-1 tvg-id="TvaVicenza.it" tvg-name="TVA VICENZA" group-title="Intrattenimento",TVA VICENZA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3038112906/index.m3u8
 
-#EXTINF:-1 tvg-id="RetebiellaTv.it" tvg-name="RETEBIELLA TV",RETEBIELLA TV
+#EXTINF:-1 tvg-id="RetebiellaTv.it" tvg-name="RETEBIELLA TV" group-title="Intrattenimento",RETEBIELLA TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/109447913/index.m3u8
 
-#EXTINF:-1 tvg-id="Telecitta.it" tvg-name="TELECITTA",TELECITTA
+#EXTINF:-1 tvg-id="Telecitta.it" tvg-name="TELECITTA" group-title="Intrattenimento",TELECITTA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2676235978/index.m3u8
 
-#EXTINF:-1 tvg-id="TvQui.it" tvg-name="TV QUI",TV QUI
+#EXTINF:-1 tvg-id="TvQui.it" tvg-name="TV QUI" group-title="Intrattenimento",TV QUI
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3845119578/index.m3u8
 
-#EXTINF:-1 tvg-id="Telearte.it" tvg-name="TELEARTE",TELEARTE
+#EXTINF:-1 tvg-id="Telearte.it" tvg-name="TELEARTE" group-title="Documentari",TELEARTE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2586615238/index.m3u8
 
-#EXTINF:-1 tvg-id="Teleboario.it" tvg-name="TELEBOARIO",TELEBOARIO
+#EXTINF:-1 tvg-id="Teleboario.it" tvg-name="TELEBOARIO" group-title="Intrattenimento",TELEBOARIO
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3383364202/index.m3u8
 
-#EXTINF:-1 tvg-id="TrmH24.it" tvg-name="TRM H24",TRM H24
+#EXTINF:-1 tvg-id="TrmH24.it" tvg-name="TRM H24" group-title="Intrattenimento",TRM H24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2310699492/index.m3u8
 
-#EXTINF:-1 tvg-id="Qvc.it" tvg-name="QVC",QVC
+#EXTINF:-1 tvg-id="Qvc.it" tvg-name="QVC" group-title="Intrattenimento",QVC
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2952884641/index.m3u8
 
-#EXTINF:-1 tvg-id="Rtp.it" tvg-name="RTP",RTP
+#EXTINF:-1 tvg-id="Rtp.it" tvg-name="RTP" group-title="Intrattenimento",RTP
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4136045815/index.m3u8
 
-#EXTINF:-1 tvg-id="EquTv.it" tvg-name="EQU TV",EQU TV
+#EXTINF:-1 tvg-id="EquTv.it" tvg-name="EQU TV" group-title="Intrattenimento",EQU TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2818586668/index.m3u8
 
-#EXTINF:-1 tvg-id="Tv33.it" tvg-name="TV 33",TV 33
+#EXTINF:-1 tvg-id="Tv33.it" tvg-name="TV 33" group-title="Intrattenimento",TV 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3506302655/index.m3u8
 
-#EXTINF:-1 tvg-id="QuartaRete.it" tvg-name="QUARTA RETE",QUARTA RETE
+#EXTINF:-1 tvg-id="QuartaRete.it" tvg-name="QUARTA RETE" group-title="Intrattenimento",QUARTA RETE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2804189085/index.m3u8
 
-#EXTINF:-1 tvg-id="RttrTv.it" tvg-name="RTTR TV",RTTR TV
+#EXTINF:-1 tvg-id="RttrTv.it" tvg-name="RTTR TV" group-title="Intrattenimento",RTTR TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1791879692/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleTusciasabina2000.it" tvg-name="TELE TUSCIASABINA 2000",TELE TUSCIASABINA 2000
+#EXTINF:-1 tvg-id="TeleTusciasabina2000.it" tvg-name="TELE TUSCIASABINA 2000" group-title="Intrattenimento",TELE TUSCIASABINA 2000
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/545707096/index.m3u8
 
-#EXTINF:-1 tvg-id="Teletubbies.it" tvg-name="TELETUBBIES",TELETUBBIES
+#EXTINF:-1 tvg-id="Teletubbies.it" tvg-name="TELETUBBIES" group-title="Intrattenimento",TELETUBBIES
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/257447576/index.m3u8
 
-#EXTINF:-1 tvg-id="ReteTvItalia.it" tvg-name="RETE TV ITALIA",RETE TV ITALIA
+#EXTINF:-1 tvg-id="ReteTvItalia.it" tvg-name="RETE TV ITALIA" group-title="Intrattenimento",RETE TV ITALIA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/4131055018/index.m3u8
 
-#EXTINF:-1 tvg-id="Tvrs.it" tvg-name="TVRS",TVRS
+#EXTINF:-1 tvg-id="Tvrs.it" tvg-name="TVRS" group-title="Intrattenimento",TVRS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1488746638/index.m3u8
 
-#EXTINF:-1 tvg-id="SenatoTv.it" tvg-name="SENATO TV",SENATO TV
+#EXTINF:-1 tvg-id="SenatoTv.it" tvg-name="SENATO TV" group-title="Intrattenimento",SENATO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2895549551/index.m3u8
 
-#EXTINF:-1 tvg-id="TeleChiara.it" tvg-name="TELE CHIARA",TELE CHIARA
+#EXTINF:-1 tvg-id="TeleChiara.it" tvg-name="TELE CHIARA" group-title="Intrattenimento",TELE CHIARA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2521825076/index.m3u8
 
-#EXTINF:-1 tvg-id="SenatoTv.it" tvg-name="SENATO TV",SENATO TV
+#EXTINF:-1 tvg-id="SenatoTv.it" tvg-name="SENATO TV" group-title="Intrattenimento",SENATO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/2002360508/index.m3u8
 
-#EXTINF:-1 tvg-id="Telepace.it" tvg-name="TELEPACE",TELEPACE
+#EXTINF:-1 tvg-id="Telepace.it" tvg-name="TELEPACE" group-title="Intrattenimento",TELEPACE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1658329091/index.m3u8
 
-#EXTINF:-1 tvg-id="OrlerTv.it" tvg-name="ORLER TV",ORLER TV
+#EXTINF:-1 tvg-id="OrlerTv.it" tvg-name="ORLER TV" group-title="Intrattenimento",ORLER TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/3471319012/index.m3u8
 
-#EXTINF:-1 tvg-id="PeerTvAltoAdige.it" tvg-name="PEER TV ALTO ADIGE",PEER TV ALTO ADIGE
+#EXTINF:-1 tvg-id="PeerTvAltoAdige.it" tvg-name="PEER TV ALTO ADIGE" group-title="Intrattenimento",PEER TV ALTO ADIGE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1789522005/index.m3u8
 
-#EXTINF:-1 tvg-id="Telemistretta.it" tvg-name="TELEMISTRETTA",TELEMISTRETTA
+#EXTINF:-1 tvg-id="Telemistretta.it" tvg-name="TELEMISTRETTA" group-title="Intrattenimento",TELEMISTRETTA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://huhu.to/
 https://huhu.to/play/1438440507/index.m3u8
