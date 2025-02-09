@@ -32,17 +32,19 @@ CATEGORY_KEYWORDS = {
 
 # Funzione per pulire e pre-processare il nome del canale
 def clean_channel_name(name):
-    # Rimuovi il testo tra parentesi (e le parentesi stesse)
+    # Rimuove il testo tra parentesi (e le parentesi stesse)
     name = re.sub(r"\s*\(.*?\)\s*", "", name)
-    # Rimuovi eventuali caratteri speciali dopo "|E", "|H", "(6)", "(7)", ".c", ".s", "(H1)", "(H2)" ecc.
+    # Rimuove eventuali caratteri speciali dopo "|E", "|H", "(6)", "(7)", ".c", ".s", "(H1)", "(H2)" ecc.
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s|\(H\d*\)|\(V\d*\))\s*", "", name)
-    # Rimuovi tutti i caratteri non alfanumerici, lasciando solo lettere e numeri
+    # Rimuove tutti i caratteri non alfanumerici, lasciando solo lettere e numeri
     name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
     return name.strip()
 
 # Funzione per capitalizzare correttamente le parole (prima lettera maiuscola, resto minuscolo)
 def capitalize_words(name):
-    # Capitalizza correttamente ogni parola
+    # Se il nome è "DMAX", mantienilo tutto maiuscolo
+    if name.upper() == "DMAX":
+        return "DMAX"
     return ''.join(word.capitalize() for word in name.split())
 
 # Funzione per generare il tvg-id personalizzato
@@ -50,17 +52,8 @@ def generate_tvg_id(channel_name):
     # Pulisce il nome del canale
     clean_name = clean_channel_name(channel_name)
     
-    # Gestione del caso "MediasetExtra"
-    if "media" in clean_name.lower() and "extra" in clean_name.lower():
-        tvg_id = "MediasetExtra.it"
-    elif "mediaset" in clean_name.lower():
-        # Rimuove "Mediaset" dal tvg-id per gli altri canali
-        clean_name = clean_name.replace("Mediaset", "")
-        tvg_id = clean_name.strip().replace(" ", "") + ".it"
-    else:
-        # Gestione generica del canale
-        tvg_id = clean_name.strip().replace(" ", "")
-        tvg_id = capitalize_words(tvg_id) + ".it"  # Capitalizzazione corretta
+    # Genera il tvg-id con la formattazione corretta
+    tvg_id = capitalize_words(clean_name.replace(" ", "")) + ".it"
 
     return tvg_id
 
