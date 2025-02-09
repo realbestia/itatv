@@ -40,6 +40,11 @@ def clean_channel_name(name):
     name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
     return name.strip()
 
+# Funzione per capitalizzare correttamente le parole (prima lettera maiuscola, resto minuscolo)
+def capitalize_words(name):
+    # Capitalizza correttamente ogni parola
+    return ''.join(word.capitalize() for word in name.split())
+
 # Funzione per generare il tvg-id personalizzato
 def generate_tvg_id(channel_name):
     # Pulisce il nome del canale
@@ -58,11 +63,6 @@ def generate_tvg_id(channel_name):
         tvg_id = capitalize_words(tvg_id) + ".it"  # Capitalizzazione corretta
 
     return tvg_id
-
-# Funzione per capitalizzare correttamente le parole (prima lettera maiuscola, resto minuscolo)
-def capitalize_words(name):
-    # Capitalizza correttamente ogni parola
-    return ''.join(word.capitalize() for word in name.split())
 
 # Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
