@@ -23,6 +23,7 @@ jobs:
 
       - name: Installa le dipendenze
         run: pip install requests
+        run: pip install fuzzywuzzy
 
       - name: Esegui lo script
         run: python def.py
