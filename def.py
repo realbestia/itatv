@@ -59,7 +59,7 @@ def generate_tvg_id(channel_name):
 
     return tvg_id
 
-# Funzione per capitalizzare correttamente le parole
+# Funzione per capitalizzare correttamente le parole (prima lettera maiuscola, resto minuscolo)
 def capitalize_words(name):
     # Capitalizza correttamente ogni parola
     return ''.join(word.capitalize() for word in name.split())
