@@ -59,6 +59,8 @@ def generate_tvg_id(channel_name):
         # Gestione dei canali senza "Mediaset"
         tvg_id = clean_name.strip().replace(" ", "").title() + ".it"  # `.title()` per la capitalizzazione corretta
 
+    # Forza la capitalizzazione corretta di ogni parola
+    tvg_id = ''.join([word.capitalize() for word in tvg_id.split()])
     return tvg_id
 
 # Funzione per scaricare i canali dai siti
