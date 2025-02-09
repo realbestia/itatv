@@ -1,13 +1,12 @@
-import concurrent.futures
 import requests
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
-import re
 import os
+import re
 
-# Variabili di configurazione
+# Siti da cui scaricare i dati
 BASE_URLS = [
-    "https://huhu.to",  # Aggiungi gli altri URL qui se necessario
+    "https://huhu.to",
 #    "https://vavoo.to",
 #    "https://kool.to",
 #    "https://oha.to"
@@ -15,66 +14,35 @@ BASE_URLS = [
 
 OUTPUT_FILE = "channels_italy.m3u8"
 
-# Cache per evitare confronti ripetuti
-fuzzy_cache = {}
+# Mappatura servizi
+SERVICE_KEYWORDS = {
+    "Sky": ["sky", "fox", "hbo"],
+    "DTT": ["rai", "mediaset", "focus", "boing"],
+    "IPTV gratuite": ["radio", "local", "regional", "free"]
+}
 
-# Funzione per eseguire la ricerca fuzzy con memorizzazione
-def fuzzy_search(channel_name, display_name):
-    if (channel_name, display_name) in fuzzy_cache:
-        return fuzzy_cache[(channel_name, display_name)]
-    
-    # Calcola la corrispondenza e memorizza il risultato
-    match_score = fuzz.token_sort_ratio(channel_name.lower(), display_name.lower())
-    fuzzy_cache[(channel_name, display_name)] = match_score
-    return match_score
+# Mappatura categorie tematiche
+CATEGORY_KEYWORDS = {
+    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
+    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
+    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
+    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
+    "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
+    "Musica": ["mtv", "vh1", "radio", "music"]
+}
 
-# Funzione per estrarre il nome del canale (rimuove parentesi come (V), (H), ecc.)
+# Funzione per pulire e pre-processare il nome del canale
 def clean_channel_name(name):
-    return re.sub(r"\s*\([^\)]*\)\s*", "", name)
+    # Rimuovi il testo tra parentesi (e le parentesi stesse)
+    name = re.sub(r"\s*\(.*?\)\s*", "", name)
+    # Rimuovi eventuali caratteri speciali dopo "|E", "|H", "(6)", "(7)", ".c", ".s"
+    name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
+    # Rimuovi tutti i caratteri non alfanumerici, lasciando solo lettere e numeri
+    name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
+    return name.strip()
 
-# Funzione per ottenere il miglior tvg-id usando fuzzywuzzy con una soglia di corrispondenza alta
-def get_epg_tvg_id(channel_name, epg_urls):
-    best_match_score = 0
-    best_tvg_id = None
-
-    # Funzione interna per eseguire la ricerca del tvg_id in modo parallelo
-    def process_epg_url(epg_url):
-        nonlocal best_match_score, best_tvg_id
-        try:
-            response = requests.get(epg_url, timeout=10)
-            response.raise_for_status()
-
-            root = ET.fromstring(response.content)
-            
-            for channel in root.findall('channel'):
-                display_name = channel.find('display-name').text if channel.find('display-name') is not None else ''
-                tvg_id = channel.attrib.get('id', '')  # Estrai tvg-id dal tag <channel>
-                
-                # Usa fuzzy_search per migliorare la corrispondenza
-                match_score = fuzzy_search(channel_name, display_name)
-
-                if match_score > best_match_score:
-                    best_match_score = match_score
-                    best_tvg_id = tvg_id
-
-        except requests.RequestException as e:
-            print(f"Errore durante il download del file EPG {epg_url}: {e}")
-
-    # Usa ThreadPoolExecutor per fare richieste parallele
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        # Esegui le chiamate a `process_epg_url` per ogni URL EPG
-        futures = [executor.submit(process_epg_url, epg_url) for epg_url in epg_urls]
-        
-        # Aspetta che tutte le richieste siano completate
-        concurrent.futures.wait(futures)
-
-    # Abbassa la soglia di corrispondenza (ad esempio 95 invece di 85)
-    if best_match_score > 95:
-        return best_tvg_id
-
-    return None
-
-# Funzione per scaricare i canali da una URL
+# Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
     try:
         response = requests.get(f"{base_url}/channels", timeout=10)
@@ -132,6 +100,38 @@ def extract_user_agent(base_url):
     if match:
         return match.group(1).upper()
     return "DEFAULT"
+
+# Funzione per trovare il miglior tvg-id usando fuzzywuzzy con un tipo di matching più preciso
+def get_epg_tvg_id(channel_name, epg_urls):
+    best_match_score = 0
+    best_tvg_id = None
+
+    for epg_url in epg_urls:
+        try:
+            response = requests.get(epg_url, timeout=10)
+            response.raise_for_status()
+
+            root = ET.fromstring(response.content)
+            
+            for channel in root.findall('channel'):
+                display_name = channel.find('display-name').text if channel.find('display-name') is not None else ''
+                tvg_id = channel.attrib.get('id', '')  # Estrai tvg-id dal tag <channel>
+                
+                # Usa il token_sort_ratio per migliorare la corrispondenza
+                match_score = fuzz.token_sort_ratio(channel_name.lower(), display_name.lower())
+
+                if match_score > best_match_score:
+                    best_match_score = match_score
+                    best_tvg_id = tvg_id
+
+            # Usa una soglia più alta (ad esempio 95 per maggiore precisione)
+            if best_match_score > 80:
+                return best_tvg_id
+
+        except requests.RequestException as e:
+            print(f"Errore durante il download del file EPG {epg_url}: {e}")
+
+    return None
 
 # Funzione per organizzare i canali per servizio e categoria
 def organize_channels(channels, epg_urls):
