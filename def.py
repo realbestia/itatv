@@ -95,13 +95,18 @@ def extract_user_agent(base_url):
     return "DEFAULT"
 
 def organize_channels(channels):
-    """Organizza i canali per servizio e categoria."""
+    """Organizza i canali per servizio e categoria e li ordina alfabeticamente."""
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
 
     for name, url, base_url in channels:
         service, category = classify_channel(name)
         user_agent = extract_user_agent(base_url)
         organized_data[service][category].append((name, url, base_url, user_agent))
+
+    # Ordinamento alfabetico dei canali dentro ogni categoria
+    for service in organized_data:
+        for category in organized_data[service]:
+            organized_data[service][category].sort(key=lambda x: x[0].lower())  # Ordina per nome canale
 
     return organized_data
 
