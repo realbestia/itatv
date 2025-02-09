@@ -118,7 +118,8 @@ def get_epg_tvg_id(channel_name, epg_urls):
                     best_match_score = match_score
                     best_tvg_id = tvg_id
 
-            if best_match_score > 80:
+            # Usa una soglia più alta
+            if best_match_score > 90:  # Soglia alzata a 90
                 return best_tvg_id
 
         except requests.RequestException as e:
