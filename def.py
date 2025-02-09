@@ -1,29 +1,18 @@
 import requests
-import json
-import re
-import os
 import xml.etree.ElementTree as ET
+from fuzzywuzzy import fuzz
+import os
+import re
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
     "https://huhu.to",
-    # "https://vavoo.to",
-    # "https://kool.to",
-    # "https://oha.to"
+#    "https://vavoo.to",
+#    "https://kool.to",
+#    "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
-
-# EPG URLs (lista di URL XML con informazioni sui canali)
-EPG_URLS = [
-    "https://xmltv.tvkaista.net/guides/guida.tv.xml",
-    "https://xmltv.tvkaista.net/guides/mediasetinfinity.mediaset.it.xml",
-    "https://xmltv.tvkaista.net/guides/superguidatv.it.xml",
-    "https://xmltv.tvkaista.net/guides/tivu.tv.xml",
-    "https://xmltv.tvkaista.net/guides/guidatv.sky.it.xml",
-    "https://xmltv.tvkaista.net/guides/tv.blue.ch.xml",
-    "https://xmltv.tvkaista.net/guides/melita.com.xml"
-]
 
 # Mappatura servizi
 SERVICE_KEYWORDS = {
@@ -43,12 +32,12 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
+# Funzione per ripulire il nome del canale
 def clean_channel_name(name):
-    """Pulisce il nome del canale rimuovendo caratteri indesiderati."""
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
 
+# Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
-    """Scarica i dati JSON da /channels di un sito."""
     try:
         response = requests.get(f"{base_url}/channels", timeout=10)
         response.raise_for_status()
@@ -57,8 +46,8 @@ def fetch_channels(base_url):
         print(f"Errore durante il download da {base_url}: {e}")
         return []
 
+# Funzione per filtrare i canali italiani
 def filter_italian_channels(channels, base_url):
-    """Filtra i canali con country Italy e genera il link m3u8 con il nome del canale."""
     seen = {}
     results = []
     source_map = {
@@ -67,7 +56,7 @@ def filter_italian_channels(channels, base_url):
         "https://kool.to": "K",
         "https://oha.to": "O"
     }
-
+    
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
@@ -78,13 +67,12 @@ def filter_italian_channels(channels, base_url):
                 clean_name = f"{clean_name} ({source_tag}{count})"
             else:
                 clean_name = f"{clean_name} ({source_tag})"
-            user_agent = extract_user_agent(base_url)  # Aggiungi user_agent
-            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url, user_agent))  # Aggiungi user_agent
-
+            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
+    
     return results
 
+# Funzione per classificare il canale per servizio e categoria
 def classify_channel(name):
-    """Classifica il canale per servizio e categoria tematica."""
     service = "IPTV gratuite"  # Default
     category = "Intrattenimento"  # Default
 
@@ -100,51 +88,67 @@ def classify_channel(name):
 
     return service, category
 
+# Funzione per estrarre il nome del sito per l'user-agent
 def extract_user_agent(base_url):
-    """Estrae il nome del sito senza estensione e lo converte in maiuscolo per l'user agent."""
     match = re.search(r"https?://([^/.]+)", base_url)
     if match:
         return match.group(1).upper()
     return "DEFAULT"
 
-def get_epg_tvg_id(channel_name):
-    """Recupera il tvg-id da un EPG XML per un canale dato."""
-    for epg_url in EPG_URLS:
+# Funzione per trovare il miglior tvg-id usando fuzzywuzzy
+def get_epg_tvg_id(channel_name, epg_urls):
+    best_match_score = 0
+    best_tvg_id = None
+
+    for epg_url in epg_urls:
         try:
             response = requests.get(epg_url, timeout=10)
             response.raise_for_status()
-            root = ET.fromstring(response.text)
-            for channel in root.findall('.//channel'):
-                display_name = channel.find('display-name').text
-                if display_name and channel_name.lower() in display_name.lower():
-                    tvg_id = channel.get('id')
-                    if tvg_id:
-                        return tvg_id
-        except requests.RequestException as e:
-            print(f"Errore durante il download del file EPG da {epg_url}: {e}")
-    return ""
 
-def organize_channels(channels):
-    """Organizza i canali per servizio e categoria e li ordina alfabeticamente."""
+            root = ET.fromstring(response.content)
+            
+            for channel in root.findall('channel'):
+                display_name = channel.find('display-name').text if channel.find('display-name') is not None else ''
+                tvg_id = channel.attrib.get('id', '')  # Estrai tvg-id dal tag <channel>
+                
+                # Usa fuzzywuzzy per confrontare i nomi
+                match_score = fuzz.partial_ratio(channel_name.lower(), display_name.lower())
+
+                if match_score > best_match_score:
+                    best_match_score = match_score
+                    best_tvg_id = tvg_id
+
+            if best_match_score > 80:
+                return best_tvg_id
+
+        except requests.RequestException as e:
+            print(f"Errore durante il download del file EPG {epg_url}: {e}")
+
+    return None
+
+# Funzione per organizzare i canali per servizio e categoria
+def organize_channels(channels, epg_urls):
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
 
-    for name, url, base_url, user_agent in channels:
+    for name, url, base_url in channels:
         service, category = classify_channel(name)
-        tvg_id = get_epg_tvg_id(name)  # Recupera il tvg-id tramite il nome del canale
+        user_agent = extract_user_agent(base_url)
+        
+        tvg_id = get_epg_tvg_id(name, epg_urls)  # Trova il tvg-id usando fuzzywuzzy
+
         organized_data[service][category].append((name, url, base_url, user_agent, tvg_id))
 
-    # Ordinamento alfabetico dei canali dentro ogni categoria
     for service in organized_data:
         for category in organized_data[service]:
-            organized_data[service][category].sort(key=lambda x: x[0].lower())  # Ordina per nome canale
+            organized_data[service][category].sort(key=lambda x: x[0].lower())
 
     return organized_data
 
+# Funzione per salvare i canali in un file M3U8
 def save_m3u8(organized_channels):
-    """Salva i canali in un file M3U8 senza divisori di servizio e categoria."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
-
+    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
@@ -154,10 +158,22 @@ def save_m3u8(organized_channels):
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
-                    f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/1.0","Referer":"{base_url}/"}}\n')
+                    f.write(f"#EXTHTTP:{{\"User-Agent\":\"{user_agent}/1.0\",\"Referer\":\"{base_url}/\"}}\n")
                     f.write(f"{url}\n\n")
 
+# Funzione principale
 def main():
+    epg_urls = [
+        "https://xmltv.tvkaista.net/guides/guida.tv.xml",
+        "https://xmltv.tvkaista.net/guides/mediasetinfinity.mediaset.it.xml",
+        "https://xmltv.tvkaista.net/guides/superguidatv.it.xml",
+        "https://xmltv.tvkaista.net/guides/tivu.tv.xml",
+        "https://xmltv.tvkaista.net/guides/guidatv.sky.it.xml",
+        "https://xmltv.tvkaista.net/guides/tv.blue.ch.xml",
+        "https://xmltv.tvkaista.net/guides/melita.com.xml"
+        # Aggiungi altri URL EPG se necessario
+    ]
+
     all_links = []
 
     for url in BASE_URLS:
@@ -166,12 +182,13 @@ def main():
         all_links.extend(italian_channels)
 
     # Organizzazione dei canali
-    organized_channels = organize_channels(all_links)
+    organized_channels = organize_channels(all_links, epg_urls)
 
     # Salvataggio nel file M3U8
     save_m3u8(organized_channels)
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
+# Esegui lo script
 if __name__ == "__main__":
     main()
