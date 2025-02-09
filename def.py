@@ -51,13 +51,13 @@ def generate_tvg_id(channel_name):
     elif "mediaset" in clean_name.lower():
         # Rimuove "Mediaset" dal tvg-id per gli altri canali
         clean_name = clean_name.replace("Mediaset", "")
-        tvg_id = clean_name.capitalize() + ".it"
+        tvg_id = clean_name.strip().capitalize() + ".it"
     elif clean_name == "DMAX":
         # Se il canale è "DMAX", il tvg-id deve essere tutto in maiuscolo
         tvg_id = "DMAX.it"
     else:
         # Gestione dei canali senza "Mediaset"
-        tvg_id = clean_name.capitalize() + ".it"
+        tvg_id = clean_name.strip().capitalize().replace(" ", "") + ".it"
 
     return tvg_id
 
