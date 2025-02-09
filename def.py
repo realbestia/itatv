@@ -32,12 +32,13 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
-# Funzione per ripulire il nome del canale (rimuovendo anche il contenuto tra parentesi)
+# Funzione per pulire e pre-processare il nome del canale
 def clean_channel_name(name):
-    # Rimuovi tutto ciò che è tra parentesi
+    # Rimuovi tutto ciò che è tra parentesi e caratteri speciali
     name = re.sub(r"\s*\(.*?\)\s*", "", name)
-    # Rimuovi anche eventuali simboli specifici come |E, |H, etc.
-    return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
+    name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
+    name = re.sub(r"[^a-zA-Z0-9\s]", "", name)  # Rimuovi caratteri non alfanumerici
+    return name.strip()
 
 # Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
@@ -98,7 +99,7 @@ def extract_user_agent(base_url):
         return match.group(1).upper()
     return "DEFAULT"
 
-# Funzione per trovare il miglior tvg-id usando fuzzywuzzy
+# Funzione per trovare il miglior tvg-id usando fuzzywuzzy con un tipo di matching più preciso
 def get_epg_tvg_id(channel_name, epg_urls):
     best_match_score = 0
     best_tvg_id = None
@@ -114,15 +115,15 @@ def get_epg_tvg_id(channel_name, epg_urls):
                 display_name = channel.find('display-name').text if channel.find('display-name') is not None else ''
                 tvg_id = channel.attrib.get('id', '')  # Estrai tvg-id dal tag <channel>
                 
-                # Usa fuzzywuzzy per confrontare i nomi
-                match_score = fuzz.partial_ratio(channel_name.lower(), display_name.lower())
+                # Usa il token_sort_ratio per migliorare la corrispondenza
+                match_score = fuzz.token_sort_ratio(channel_name.lower(), display_name.lower())
 
                 if match_score > best_match_score:
                     best_match_score = match_score
                     best_tvg_id = tvg_id
 
-            # Usa una soglia più alta
-            if best_match_score > 99:  # Soglia alzata a 90
+            # Usa una soglia più alta (ad esempio 95 per maggiore precisione)
+            if best_match_score > 95:
                 return best_tvg_id
 
         except requests.RequestException as e:
@@ -159,9 +160,7 @@ def save_m3u8(organized_channels):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent, tvg_id in channels:
-                    # Pulire il nome del canale prima di scrivere
-                    cleaned_name = clean_channel_name(name)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{cleaned_name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{cleaned_name}\n')
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f"#EXTHTTP:{{\"User-Agent\":\"{user_agent}/1.0\",\"Referer\":\"{base_url}/\"}}\n")
