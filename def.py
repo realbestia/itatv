@@ -6,21 +6,12 @@ import os
 # Siti da cui scaricare i dati
 BASE_URLS = [
     "https://vavoo.to",
-    # "https://huhu.to",
-    # "https://kool.to",
-    # "https://oha.to"
+    # Aggiungi altri URL se necessario
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
 
-# Mappatura servizi
-SERVICE_KEYWORDS = {
-    "Sky": ["sky", "fox", "hbo"],
-    "DTT": ["rai", "mediaset", "focus", "boing"],
-    "IPTV gratuite": ["radio", "local", "regional", "free"]
-}
-
-# Mappatura categorie tematiche
+# Mappatura delle categorie tematiche (esempio, personalizzabile)
 CATEGORY_KEYWORDS = {
     "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
     "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
@@ -31,18 +22,207 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
+# Lista di tvg-id (modifica o aggiungi altri tvg-id come necessario)
+TVG_IDS = [
+    "20Mediaset.it",  
+    "Twentyseven.it",  
+    "7goldtelepadova.it",  
+    "AlmaTV.it",  
+    "Antenna3.it",  
+    "AutoMotoTV.it",  
+    "BIKE.it",  
+    "Boing.it",  
+    "BoingPlus1.it",  
+    "Boomerang.it",  
+    "BoomerangPlus1.it",  
+    "Caccia.it",  
+    "Canale5.it",  
+    "Canale5Plus1.it",  
+    "Canale10.it",  
+    "CartoonPlus1.it",  
+    "CartoonNetwork.it",  
+    "Cartoonito.it",  
+    "CrimeInvestigation.it",  
+    "Cielo.it",  
+    "Cine34.it",  
+    "ClassCNBC.it",  
+    "Classica.it",  
+    "ClassTVModa.it",  
+    "ComedyPlus1.it",  
+    "ComedyCentral.it",  
+    "DAZNZona.it",  
+    "DEAjr.it",  
+    "DEAkids.it",  
+    "DEAkidsPlus1.it",  
+    "myDeejay.it",  
+    "DITV.it",  
+    "DiscoveryPlus1.it",  
+    "Discovery.it",  
+    "DMAX.it",  
+    "DMAXPlus1.it",  
+    "DonnaTV.it",  
+    "EQUTV.it",  
+    "Eurosport2.it",  
+    "Eurosport1.it",  
+    "Focus.it",  
+    "FoodNetwork.it",  
+    "FoxBusiness.it",  
+    "FoxNews.it",  
+    "Frisbee.it",  
+    "GamberoRosso.it",  
+    "Giallo.it",  
+    "HGTV.it",  
+    "HistoryChannel.it",  
+    "HistoryChannel+1.it",  
+    "HorseTV.it",  
+    "Iris.it",  
+    "Italia1.it",  
+    "Italia2.it",  
+    "Italia7Gold.it",  
+    "ItalianFishingTv.it",  
+    "K2.it",  
+    "LA5.it",  
+    "La7.it",  
+    "La7d.it",  
+    "LaC-tv.it",  
+    "LaQtv.it",  
+    "LazioStyleChannel.it",  
+    "MediasetExtra.it",  
+    "Mezzo.en",  
+    "MilanTV.it",  
+    "MotorTrend.it",  
+    "MTV.it",  
+    "MTVMusic.it",  
+    "NETTV.mt",  
+    "NickJr.it",  
+    "NickJrPlus1.it",  
+    "Nickelodeon.it",  
+    "NickelodeonPlus1.it",  
+    "Nove.it",  
+    "One.mt",  
+    "Pesca.it",  
+    "QVC.it",  
+    "R101TV.it",  
+    "Radio105TV.it",  
+    "RadioBruno.it",  
+    "RadioFreccia.it",  
+    "RadioItalia.it",  
+    "RadionorbaTV.it",  
+    "radiozeta.it",  
+    "Rai1.it",  
+    "Rai1Plus1.it",  
+    "Rai2.it",  
+    "Rai2Plus1.it",  
+    "Rai3.it",  
+    "Rai3Plus1.it",  
+    "Rai4.it",  
+    "Rai5.it",  
+    "RaiGulp.it",  
+    "RaiMovie.it",  
+    "RaiNews.it",  
+    "RaiPremium.it",  
+    "RaiRadio2.it",  
+    "RaiScuola.it",  
+    "RaiSport.it",  
+    "RaiStoria.it",  
+    "RaiYoyo.it",  
+    "Rai4K.it",  
+    "RDS.it",  
+    "RDS-social.it",  
+    "RealTime.it",  
+    "RealTimePlus1.it",  
+    "Rete4.it",  
+    "Rete4Plus1.it",  
+    "RTL102.5TV.it",  
+    "SkyArte.it",  
+    "SkyAtlantic.it",  
+    "SkyAtlanticPlus1.it",  
+    "SkyCinemaAction.it",  
+    "SkyCinemaCollection.it",  
+    "SkyCinemaComedy.it",  
+    "SkyCinemaDrama.it",  
+    "SkyCinemaDue.it",  
+    "SkyCinemaDue+24.it",  
+    "SkyCinemaFamily.it",  
+    "SkyCinemaFamilyPlus1.it",  
+    "SkyCinemaRomance.it",  
+    "SkyCinemaSuspense.it",  
+    "SkyCinemaUno.it",  
+    "SkyCinemaUnoPlus1.it",  
+    "SkyCinemaUnoPlus24.it",  
+    "SkyCrime.it",  
+    "SkyCrime+1.it",  
+    "SkyDocumentaries.it",  
+    "SkyDocumentaries+1.it",  
+    "SkyInvestigation.it",  
+    "SkyInvestigation+1.it",  
+    "SkyNature.it",  
+    "SkySerie.it",  
+    "SkySerie+1.it",  
+    "SkySport258.it",  
+    "SkySport259.it",  
+    "SkySport260.it",  
+    "SkySport261.it",  
+    "SkySport24.it",  
+    "SkySport4K.it",  
+    "SkySportArena.it",  
+    "SkySportCalcio.it",  
+    "SkySportF1.it",  
+    "SkySportAction.it",  
+    "SkySport251.it",  
+    "SkySport252.it",  
+    "SkySport253.it",  
+    "SkySport254.it",  
+    "SkySport255.it",  
+    "SkySport256.it",  
+    "SkySport257.it",  
+    "SkySportMax.it",  
+    "SkySportMotoGP.it",  
+    "SkySportNBA.it",  
+    "SkySportTennis.it",  
+    "SkySportUno.it",  
+    "SkyUno.it",  
+    "SkyUnoPlus1.it",  
+    "SmashTV.mt",  
+    "SMtv.it",  
+    "SMtvSport.it",  
+    "Sportitalia.it",  
+    "Super!.it",  
+    "SuperTennis.it",  
+    "TeleDue.it",  
+    "TeleNorba.it",  
+    "TeleOne.it",  
+    "TeleRent.it",  
+    "Telechiara.it",  
+    "TeleCity.it",  
+    "TeleLombardia.it",  
+    "Telepace.it",  
+    "Telereporter.it",  
+    "TeleTicino.ch",  
+    "Tgnorba24.it",  
+    "SkyTG24.it",  
+    "Tgcom24.it",  
+    "TopCalcio24.it",  
+    "TopCrime.it",  
+    "TRCModena.it",  
+    "TRMh24.it",  
+    "TVCentroMarche.it",  
+    "TVCapodistria.it",  
+    "TV2000.it",  
+    "Tv8.it",  
+    "TVM.mt",  
+    "TVM2.mt",  
+    "UNINETTUNOUniversityTV.it",  
+    "Videonovara.it",  
+    "WarnerTV.it",  
+    "WeDoTV.it",  
+    "ZonaDAZN2.it"
+    # Aggiungi altri tvg-id se necessario
+]
+
 def clean_channel_name(name):
-    """Pulisce il nome del canale rimuovendo caratteri indesiderati e prepara il tvg-id."""
-    # Rimuovi parentesi e suffissi come "|E", "|H", "(6)", "(7)", ".c", ".s"
-    clean_name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
-    
-    # Rimuovi spazi e trattini
-    clean_name = re.sub(r"[\s\-]+", "", clean_name)
-    
-    # Aggiungi il suffisso .it
-    tvg_id = f"{clean_name.lower()}.it"
-    
-    return clean_name, tvg_id
+    """Pulisce il nome del canale rimuovendo caratteri indesiderati."""
+    return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
 
 def fetch_channels(base_url):
     """Scarica i dati JSON da /channels di un sito."""
@@ -67,7 +247,7 @@ def filter_italian_channels(channels, base_url):
     
     for ch in channels:
         if ch.get("country") == "Italy":
-            clean_name, tvg_id = clean_channel_name(ch["name"])
+            clean_name = clean_channel_name(ch["name"])
             source_tag = source_map.get(base_url, "")
             count = seen.get(clean_name, 0) + 1
             seen[clean_name] = count
@@ -75,61 +255,58 @@ def filter_italian_channels(channels, base_url):
                 clean_name = f"{clean_name} ({source_tag}{count})"
             else:
                 clean_name = f"{clean_name} ({source_tag})"
-            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url, tvg_id))
+            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     
     return results
 
-def classify_channel(name):
-    """Classifica il canale per servizio e categoria tematica."""
-    service = "IPTV gratuite"  # Default
-    category = "Intrattenimento"  # Default
-
-    for key, words in SERVICE_KEYWORDS.items():
-        if any(word in name.lower() for word in words):
-            service = key
-            break
-
-    for key, words in CATEGORY_KEYWORDS.items():
-        if any(word in name.lower() for word in words):
-            category = key
-            break
-
-    return service, category
-
-def extract_user_agent(base_url):
-    """Estrae il nome del sito senza estensione e lo converte in maiuscolo per l'user agent."""
-    match = re.search(r"https?://([^/.]+)", base_url)
-    if match:
-        return match.group(1).upper()
-    return "DEFAULT"
+def find_tvg_id_by_name(name, tvg_ids):
+    """
+    Trova il tvg-id associato al nome del canale, cercando una corrispondenza
+    parziale tra il nome del canale e il tvg-id.
+    """
+    for tvg_id in tvg_ids:
+        # Cerchiamo se il nome del canale contiene una parte del tvg-id (case-insensitive)
+        if re.search(rf"\b{re.escape(tvg_id)}\b", name, re.IGNORECASE):
+            return tvg_id
+    return ""  # Se non trovato, ritorna una stringa vuota
 
 def organize_channels(channels):
     """Organizza i canali per servizio e categoria."""
-    organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
+    organized_data = {category: [] for category in CATEGORY_KEYWORDS.keys()}
 
-    for name, url, base_url, tvg_id in channels:
-        service, category = classify_channel(name)
-        user_agent = extract_user_agent(base_url)
-        organized_data[service][category].append((name, url, base_url, user_agent, tvg_id))
+    for name, url, base_url in channels:
+        category = "Intrattenimento"  # Default
+        for key, words in CATEGORY_KEYWORDS.items():
+            if any(word in name.lower() for word in words):
+                category = key
+                break
+        
+        organized_data[category].append((name, url, base_url))
 
     return organized_data
 
 def save_m3u8(organized_channels):
-    """Salva i canali in un file M3U8 senza divisori di servizio e categoria."""
+    """Salva i canali in un file M3U8 con tvg-id trovati tramite corrispondenza del nome."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
-    
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
-        for service, categories in organized_channels.items():
-            for category, channels in categories.items():
-                for name, url, base_url, user_agent, tvg_id in channels:
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
-                    f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
-                    f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
-                    f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/1.0","Referer":"{base_url}/"}}\n')
-                    f.write(f"{url}\n\n")
+        # Crea una lista piatta dei canali
+        all_channels = []
+        for categories in organized_channels.values():
+            all_channels.extend(categories)
+
+        # Associa ogni canale al tvg-id usando la funzione di corrispondenza del nome
+        for idx, (name, url, base_url) in enumerate(all_channels):
+            # Trova il tvg-id corrispondente tramite una corrispondenza del nome
+            tvg_id = find_tvg_id_by_name(name, TVG_IDS)
+
+            # Scrivi i dati nel file M3U8
+            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-referrer="{base_url}",{name}\n')
+            f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
+            f.write(f"{url}\n\n")
 
 def main():
     all_links = []
