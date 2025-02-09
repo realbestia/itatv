@@ -12,14 +12,21 @@ BASE_URLS = [
 
 OUTPUT_FILE = "channels_italy.m3u8"
 
+# Mappatura servizi
+SERVICE_KEYWORDS = {
+    "Sky": ["sky", "fox", "hbo"],
+    "DTT": ["rai", "mediaset", "focus", "boing"],
+    "IPTV gratuite": ["radio", "local", "regional", "free"]
+}
+
 # Mappatura categorie tematiche
 CATEGORY_KEYWORDS = {
     "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
-    "Film & Serie TV": ["cinema", "movie", "film", "serie", "hbo", "fox"],
+    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
     "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
-    "Intrattenimento": ["rai", "focus", "real time", "italia", "top"],
+    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
     "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
-    "Documentari": ["discovery", "history", "nat geo", "arte", "documentary"],
+    "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
@@ -43,16 +50,22 @@ def generate_tvg_id(channel_name):
 
     return camel_case_name + ".it"
 
-# Funzione per classificare il canale per categoria
+# Funzione per classificare il canale per servizio e categoria
 def classify_channel(name):
+    service = "IPTV gratuite"  # Default
     category = "Intrattenimento"  # Default
+
+    for key, words in SERVICE_KEYWORDS.items():
+        if any(word in name.lower() for word in words):
+            service = key
+            break
 
     for key, words in CATEGORY_KEYWORDS.items():
         if any(word in name.lower() for word in words):
             category = key
             break
 
-    return category
+    return service, category
 
 # Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
@@ -85,8 +98,8 @@ def save_m3u8(channels):
 
         for name, url, base_url in channels:
             tvg_id = generate_tvg_id(name)
-            category = classify_channel(name)
-            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}",{name}\n')
+            service, category = classify_channel(name)
+            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-group="{service}",{name}\n')
             f.write(f"#EXTVLCOPT:http-user-agent=Mozilla/5.0\n")  # User-Agent generico
             f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
             f.write(f"{url}\n\n")
