@@ -5,8 +5,8 @@ import os
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
-    # "https://huhu.to",
-    "https://vavoo.to",
+    "https://huhu.to",
+    # "https://vavoo.to",
     # "https://kool.to",
     # "https://oha.to"
 ]
