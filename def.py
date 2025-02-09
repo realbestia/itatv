@@ -2,13 +2,15 @@ import requests
 import json
 import re
 import os
+from fuzzywuzzy import fuzz
+import xml.etree.ElementTree as ET
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
     "https://huhu.to",
-#    "https://vavoo.to",
-#    "https://kool.to",
-#    "https://oha.to"
+    # "https://vavoo.to",
+    # "https://kool.to",
+    # "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
@@ -127,8 +129,62 @@ def save_m3u8(organized_channels):
                     f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/1.0","Referer":"{base_url}/"}}\n')
                     f.write(f"{url}\n\n")
 
+def get_tvg_id(name, epg_xml_url, threshold=80):
+    """
+    Cerca il tvg-id più simile al nome del canale, confrontandolo con il display-name nel file XML EPG scaricato dall'URL.
+    
+    :param name: Nome del canale nel M3U8.
+    :param epg_xml_url: URL XML EPG contenente i canali e i display-name.
+    :param threshold: Punteggio minimo di similarità (default 80).
+    :return: Il tvg-id più simile trovato.
+    """
+    # Scarica il contenuto XML
+    try:
+        response = requests.get(epg_xml_url, timeout=10)
+        response.raise_for_status()
+        xml_data = response.text
+    except requests.RequestException as e:
+        print(f"Errore durante il download dell'XML da {epg_xml_url}: {e}")
+        return name.replace(" ", "_")  # Fallback se non riuscito a scaricare XML
+    
+    # Parse del contenuto XML
+    root = ET.fromstring(xml_data)
+
+    best_match = None
+    best_score = 0
+
+    # Scorre tutti i canali nel file EPG XML
+    for channel in root.findall('channel'):
+        display_name = channel.find('display-name').text.lower()  # Prendi il display-name e lo metti in minuscolo
+        tvg_id = channel.get('id')
+
+        # Usa fuzzy matching per calcolare la somiglianza tra il nome nel M3U8 e il display-name
+        score = fuzz.ratio(name.lower(), display_name)
+
+        # Se la somiglianza è sopra la soglia, memorizziamo la corrispondenza migliore
+        if score > best_score and score >= threshold:
+            best_score = score
+            best_match = tvg_id
+
+    # Se non troviamo una corrispondenza valida, genera un tvg-id di fallback
+    if not best_match:
+        best_match = name.replace(" ", "_")  # Fallback a underscore se non c'è corrispondenza
+
+    return best_match
+
 def main():
     all_links = []
+
+    # URL XML EPG (puoi avere più link se necessario)
+    epg_xml_urls = [
+        "https://xmltv.tvkaista.net/guides/guida.tv.xml",
+        "https://xmltv.tvkaista.net/guides/mediasetinfinity.mediaset.it.xml",
+        "https://xmltv.tvkaista.net/guides/superguidatv.it.xml",
+        "https://xmltv.tvkaista.net/guides/tivu.tv.xml",
+        "https://xmltv.tvkaista.net/guides/guidatv.sky.it.xml",
+        "https://xmltv.tvkaista.net/guides/tv.blue.ch.xml",
+        "https://xmltv.tvkaista.net/guides/melita.com.xml"
+    ]
 
     for url in BASE_URLS:
         channels = fetch_channels(url)
@@ -137,6 +193,18 @@ def main():
 
     # Organizzazione dei canali
     organized_channels = organize_channels(all_links)
+
+    # Aggiunta del tvg-id dai dati EPG
+    for service, categories in organized_channels.items():
+        for category, channels in categories.items():
+            for i, (name, url, base_url, user_agent) in enumerate(channels):
+                # Itera su tutti gli URL XML EPG disponibili
+                tvg_id = None
+                for epg_xml_url in epg_xml_urls:
+                    tvg_id = get_tvg_id(name, epg_xml_url)
+                    if tvg_id:  # Se troviamo una corrispondenza valida, fermiamoci
+                        break
+                organized_channels[service][category][i] = (name, url, base_url, user_agent, tvg_id)
 
     # Salvataggio nel file M3U8
     save_m3u8(organized_channels)
