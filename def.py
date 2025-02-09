@@ -1,6 +1,4 @@
 import requests
-import xml.etree.ElementTree as ET
-from fuzzywuzzy import fuzz
 import os
 import re
 
@@ -101,49 +99,15 @@ def extract_user_agent(base_url):
         return match.group(1).upper()
     return "DEFAULT"
 
-# Funzione per trovare il miglior tvg-id usando fuzzywuzzy con un tipo di matching più preciso
-def get_epg_tvg_id(channel_name, epg_urls):
-    best_match_score = 0
-    best_tvg_id = None
-
-    for epg_url in epg_urls:
-        try:
-            response = requests.get(epg_url, timeout=10)
-            response.raise_for_status()
-
-            root = ET.fromstring(response.content)
-            
-            for channel in root.findall('channel'):
-                display_name = channel.find('display-name').text if channel.find('display-name') is not None else ''
-                tvg_id = channel.attrib.get('id', '')  # Estrai tvg-id dal tag <channel>
-                
-                # Usa il token_sort_ratio per migliorare la corrispondenza
-                match_score = fuzz.token_sort_ratio(channel_name.lower(), display_name.lower())
-
-                if match_score > best_match_score:
-                    best_match_score = match_score
-                    best_tvg_id = tvg_id
-
-            # Usa una soglia più alta (ad esempio 95 per maggiore precisione)
-            if best_match_score > 80:
-                return best_tvg_id
-
-        except requests.RequestException as e:
-            print(f"Errore durante il download del file EPG {epg_url}: {e}")
-
-    return None
-
 # Funzione per organizzare i canali per servizio e categoria
-def organize_channels(channels, epg_urls):
+def organize_channels(channels):
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
 
     for name, url, base_url in channels:
         service, category = classify_channel(name)
         user_agent = extract_user_agent(base_url)
         
-        tvg_id = get_epg_tvg_id(name, epg_urls)  # Trova il tvg-id usando fuzzywuzzy
-
-        organized_data[service][category].append((name, url, base_url, user_agent, tvg_id))
+        organized_data[service][category].append((name, url, base_url, user_agent))
 
     for service in organized_data:
         for category in organized_data[service]:
@@ -161,8 +125,9 @@ def save_m3u8(organized_channels):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url, user_agent, tvg_id in channels:
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
+                for name, url, base_url, user_agent in channels:
+                    # Aggiungi il tvg-name (uguale al nome del canale)
+                    f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f"#EXTHTTP:{{\"User-Agent\":\"{user_agent}/1.0\",\"Referer\":\"{base_url}/\"}}\n")
@@ -170,17 +135,6 @@ def save_m3u8(organized_channels):
 
 # Funzione principale
 def main():
-    epg_urls = [
-        "https://xmltv.tvkaista.net/guides/guida.tv.xml",
-        "https://xmltv.tvkaista.net/guides/mediasetinfinity.mediaset.it.xml",
-        "https://xmltv.tvkaista.net/guides/superguidatv.it.xml",
-        "https://xmltv.tvkaista.net/guides/tivu.tv.xml",
-        "https://xmltv.tvkaista.net/guides/guidatv.sky.it.xml",
-        "https://xmltv.tvkaista.net/guides/tv.blue.ch.xml",
-        "https://xmltv.tvkaista.net/guides/melita.com.xml"
-        # Aggiungi altri URL EPG se necessario
-    ]
-
     all_links = []
 
     for url in BASE_URLS:
@@ -189,7 +143,7 @@ def main():
         all_links.extend(italian_channels)
 
     # Organizzazione dei canali
-    organized_channels = organize_channels(all_links, epg_urls)
+    organized_channels = organize_channels(all_links)
 
     # Salvataggio nel file M3U8
     save_m3u8(organized_channels)
