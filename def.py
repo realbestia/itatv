@@ -3,27 +3,8 @@ import json
 import re
 import os
 
-# Siti da cui scaricare i dati
-BASE_URLS = [
-    "https://vavoo.to",
-    # Aggiungi altri URL se necessario
-]
-
-OUTPUT_FILE = "channels_italy.m3u8"
-
-# Mappatura delle categorie tematiche (esempio, personalizzabile)
-CATEGORY_KEYWORDS = {
-    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
-    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
-    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
-    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
-    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
-    "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
-    "Musica": ["mtv", "vh1", "radio", "music"]
-}
-
-# Lista di tvg-id (modifica o aggiungi altri tvg-id come necessario)
-TVG_IDS = [
+# Lista tvg-id (senza i nomi dei canali, solo gli ID)
+tvg_ids = [
     "20Mediaset.it",  
     "Twentyseven.it",  
     "7goldtelepadova.it",  
@@ -217,8 +198,33 @@ TVG_IDS = [
     "WarnerTV.it",  
     "WeDoTV.it",  
     "ZonaDAZN2.it"
-    # Aggiungi altri tvg-id se necessario
 ]
+
+# Siti da cui scaricare i dati
+BASE_URLS = [
+    "https://vavoo.to",
+    # Aggiungi altri siti qui
+]
+
+OUTPUT_FILE = "channels_italy.m3u8"
+
+# Mappatura servizi
+SERVICE_KEYWORDS = {
+    "Sky": ["sky", "fox", "hbo"],
+    "DTT": ["rai", "mediaset", "focus", "boing"],
+    "IPTV gratuite": ["radio", "local", "regional", "free"]
+}
+
+# Mappatura categorie tematiche
+CATEGORY_KEYWORDS = {
+    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
+    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
+    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
+    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
+    "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
+    "Musica": ["mtv", "vh1", "radio", "music"]
+}
 
 def clean_channel_name(name):
     """Pulisce il nome del canale rimuovendo caratteri indesiderati."""
@@ -259,54 +265,65 @@ def filter_italian_channels(channels, base_url):
     
     return results
 
-def find_tvg_id_by_name(name, tvg_ids):
-    """
-    Trova il tvg-id associato al nome del canale, cercando una corrispondenza
-    parziale tra il nome del canale e il tvg-id.
-    """
+def classify_channel(name):
+    """Classifica il canale per servizio e categoria tematica."""
+    service = "IPTV gratuite"  # Default
+    category = "Intrattenimento"  # Default
+
+    for key, words in SERVICE_KEYWORDS.items():
+        if any(word in name.lower() for word in words):
+            service = key
+            break
+
+    for key, words in CATEGORY_KEYWORDS.items():
+        if any(word in name.lower() for word in words):
+            category = key
+            break
+
+    return service, category
+
+def extract_user_agent(base_url):
+    """Estrae il nome del sito senza estensione e lo converte in maiuscolo per l'user agent."""
+    match = re.search(r"https?://([^/.]+)", base_url)
+    if match:
+        return match.group(1).upper()
+    return "DEFAULT"
+
+def find_tvg_id(name, tvg_ids):
+    """Associa un tvg-id al canale basato sul nome"""
     for tvg_id in tvg_ids:
-        # Cerchiamo se il nome del canale contiene una parte del tvg-id (case-insensitive)
-        if re.search(rf"\b{re.escape(tvg_id)}\b", name, re.IGNORECASE):
+        if re.search(r"\b" + re.escape(tvg_id.split('_')[0]) + r"\b", name.lower()):
             return tvg_id
-    return ""  # Se non trovato, ritorna una stringa vuota
+    return ""  # Se non trova una corrispondenza
 
 def organize_channels(channels):
     """Organizza i canali per servizio e categoria."""
-    organized_data = {category: [] for category in CATEGORY_KEYWORDS.keys()}
+    organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
 
     for name, url, base_url in channels:
-        category = "Intrattenimento"  # Default
-        for key, words in CATEGORY_KEYWORDS.items():
-            if any(word in name.lower() for word in words):
-                category = key
-                break
-        
-        organized_data[category].append((name, url, base_url))
+        service, category = classify_channel(name)
+        user_agent = extract_user_agent(base_url)
+        organized_data[service][category].append((name, url, base_url, user_agent))
 
     return organized_data
 
 def save_m3u8(organized_channels):
-    """Salva i canali in un file M3U8 con tvg-id trovati tramite corrispondenza del nome."""
+    """Salva i canali in un file M3U8."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
-
+    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
-        # Crea una lista piatta dei canali
-        all_channels = []
-        for categories in organized_channels.values():
-            all_channels.extend(categories)
-
-        # Associa ogni canale al tvg-id usando la funzione di corrispondenza del nome
-        for idx, (name, url, base_url) in enumerate(all_channels):
-            # Trova il tvg-id corrispondente tramite una corrispondenza del nome
-            tvg_id = find_tvg_id_by_name(name, TVG_IDS)
-
-            # Scrivi i dati nel file M3U8
-            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-referrer="{base_url}",{name}\n')
-            f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
-            f.write(f"{url}\n\n")
+        for service, categories in organized_channels.items():
+            for category, channels in categories.items():
+                for name, url, base_url, user_agent in channels:
+                    tvg_id = find_tvg_id(name, tvg_ids)  # Trova il tvg-id basato sul nome del canale
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}", {name}\n')
+                    f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
+                    f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
+                    f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/1.0","Referer":"{base_url}/"}}\n')
+                    f.write(f"{url}\n\n")
 
 def main():
     all_links = []
