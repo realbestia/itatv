@@ -14,7 +14,7 @@ OUTPUT_FILE = "channels_italy.m3u8"
 
 # Funzione per pulire il nome del canale
 def clean_channel_name(name):
-    name = re.sub(r"\s*\(.*?\)\s*", "", name)  # Rimuove parentesi e contenuto
+    name = re.sub(r"\s*\(.*?\)\s*", "", name)  # Rimuove testo tra parentesi
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s|\(H\d*\)|\(V\d*\))\s*", "", name)  # Rimuove tag extra
     return name.strip()
 
@@ -32,7 +32,7 @@ def generate_tvg_id(channel_name):
 
     return camel_case_name + ".it"
 
-# Funzione per scaricare i canali
+# Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
     try:
         response = requests.get(f"{base_url}/channels", timeout=10)
@@ -64,6 +64,8 @@ def save_m3u8(channels):
         for name, url, base_url in channels:
             tvg_id = generate_tvg_id(name)
             f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}",{name}\n')
+            f.write(f"#EXTVLCOPT:http-user-agent=Mozilla/5.0\n")  # User-Agent generico
+            f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
             f.write(f"{url}\n\n")
 
 # Funzione principale
