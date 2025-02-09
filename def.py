@@ -45,33 +45,24 @@ def generate_tvg_id(channel_name):
     # Pulisce il nome del canale
     clean_name = clean_channel_name(channel_name)
     
-    # Gestisce il caso speciale "MEDIASET EXTRA"
+    # Gestione del caso "MediasetExtra"
     if "media" in clean_name.lower() and "extra" in clean_name.lower():
         tvg_id = "MediasetExtra.it"
     elif "mediaset" in clean_name.lower():
         # Rimuove "Mediaset" dal tvg-id per gli altri canali
         clean_name = clean_name.replace("Mediaset", "")
-        tvg_id = clean_name.strip().replace(" ", "").capitalize() + ".it"
-    elif clean_name == "DMAX":
-        # Se il canale è "DMAX", il tvg-id deve essere tutto in maiuscolo
-        tvg_id = "DMAX.it"
+        tvg_id = clean_name.strip().replace(" ", "") + ".it"
     else:
-        # Gestione dei canali senza "Mediaset"
+        # Gestione generica del canale
         tvg_id = clean_name.strip().replace(" ", "")
-        tvg_id = custom_capitalize(tvg_id) + ".it"  # Capitalizzazione personalizzata
+        tvg_id = capitalize_words(tvg_id) + ".it"  # Capitalizzazione corretta
 
     return tvg_id
 
-# Funzione per capitalizzare correttamente il tvg-id
-def custom_capitalize(name):
-    words = name.split()
-    capitalized_words = []
-    for word in words:
-        if word.upper() == "DMAX":
-            capitalized_words.append(word.upper())  # Speciale per DMAX, maiuscolo
-        else:
-            capitalized_words.append(word.capitalize())  # Normalizzazione, maiuscola all'inizio
-    return ''.join(capitalized_words)
+# Funzione per capitalizzare correttamente le parole
+def capitalize_words(name):
+    # Capitalizza correttamente ogni parola
+    return ''.join(word.capitalize() for word in name.split())
 
 # Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
