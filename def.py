@@ -1,6 +1,7 @@
 import requests
 import os
 import re
+import hashlib
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
@@ -99,6 +100,11 @@ def extract_user_agent(base_url):
         return match.group(1).upper()
     return "DEFAULT"
 
+# Funzione per generare un tgv-id univoco (usando un hash del nome del canale)
+def generate_tvg_id(channel_name):
+    # Usa l'hash SHA256 del nome del canale per creare un ID univoco
+    return hashlib.sha256(channel_name.encode('utf-8')).hexdigest()
+
 # Funzione per organizzare i canali per servizio e categoria
 def organize_channels(channels):
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
@@ -106,8 +112,11 @@ def organize_channels(channels):
     for name, url, base_url in channels:
         service, category = classify_channel(name)
         user_agent = extract_user_agent(base_url)
-        
-        organized_data[service][category].append((name, url, base_url, user_agent))
+
+        # Genera un tgv-id univoco per ogni canale
+        tvg_id = generate_tvg_id(name)
+
+        organized_data[service][category].append((name, url, base_url, user_agent, tvg_id))
 
     for service in organized_data:
         for category in organized_data[service]:
@@ -125,9 +134,11 @@ def save_m3u8(organized_channels):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url, user_agent in channels:
-                    # Aggiungi il tvg-name (uguale al nome del canale)
-                    f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
+                for name, url, base_url, user_agent, tvg_id in channels:
+                    # Rimuovi il suffisso tra parentesi dal tvg-name
+                    clean_name = clean_channel_name(name)
+                    # Aggiungi il tvg-id e il tvg-name (pulito)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{clean_name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{clean_name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f"#EXTHTTP:{{\"User-Agent\":\"{user_agent}/1.0\",\"Referer\":\"{base_url}/\"}}\n")
