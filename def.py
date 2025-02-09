@@ -32,8 +32,11 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
-# Funzione per ripulire il nome del canale
+# Funzione per ripulire il nome del canale (rimuovendo anche il contenuto tra parentesi)
 def clean_channel_name(name):
+    # Rimuovi tutto ciò che è tra parentesi
+    name = re.sub(r"\s*\(.*?\)\s*", "", name)
+    # Rimuovi anche eventuali simboli specifici come |E, |H, etc.
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
 
 # Funzione per scaricare i canali dai siti
@@ -156,7 +159,9 @@ def save_m3u8(organized_channels):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent, tvg_id in channels:
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{name}\n')
+                    # Pulire il nome del canale prima di scrivere
+                    cleaned_name = clean_channel_name(name)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{cleaned_name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{cleaned_name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f"#EXTHTTP:{{\"User-Agent\":\"{user_agent}/1.0\",\"Referer\":\"{base_url}/\"}}\n")
