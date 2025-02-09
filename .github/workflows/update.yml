@@ -24,12 +24,6 @@ jobs:
       - name: Installa le dipendenze
         run: pip install requests
 
-      - name: Installa fuzzywuzzy
-        run: pip install fuzzywuzzy
-
-      - name: Installa leven
-        run: pip install python-Levenshtein
-
       - name: Esegui lo script
         run: python def.py
 
