@@ -88,21 +88,35 @@ def filter_italian_channels(channels, base_url):
     
     return results
 
+# Funzione per organizzare i canali per categoria e ordinarli alfabeticamente
+def organize_channels(channels):
+    organized_data = {category: [] for category in CATEGORY_KEYWORDS.keys()}
+
+    for name, url, base_url in channels:
+        category = classify_channel(name)[1]
+        tvg_id = generate_tvg_id(name)
+        organized_data[category].append((name, url, base_url, tvg_id))
+
+    # Ordina i canali dentro ogni categoria dalla A alla Z
+    for category in organized_data:
+        organized_data[category].sort(key=lambda x: x[0].lower())
+
+    return organized_data
+
 # Funzione per salvare il file M3U8
-def save_m3u8(channels):
+def save_m3u8(organized_channels):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
     
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
-        for name, url, base_url in channels:
-            tvg_id = generate_tvg_id(name)
-            service, category = classify_channel(name)
-            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-group="{service}",{name}\n')
-            f.write(f"#EXTVLCOPT:http-user-agent=Mozilla/5.0\n")  # User-Agent generico
-            f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
-            f.write(f"{url}\n\n")
+        for category, channels in organized_channels.items():
+            for name, url, base_url, tvg_id in channels:
+                f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}",{name}\n')
+                f.write(f"#EXTVLCOPT:http-user-agent=Mozilla/5.0\n")  # User-Agent generico
+                f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
+                f.write(f"{url}\n\n")
 
 # Funzione principale
 def main():
@@ -113,7 +127,9 @@ def main():
         italian_channels = filter_italian_channels(channels, url)
         all_links.extend(italian_channels)
 
-    save_m3u8(all_links)
+    organized_channels = organize_channels(all_links)
+    save_m3u8(organized_channels)
+    
     print(f"File {OUTPUT_FILE} creato con successo!")
 
 # Esegui lo script
