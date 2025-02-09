@@ -34,10 +34,12 @@ CATEGORY_KEYWORDS = {
 
 # Funzione per pulire e pre-processare il nome del canale
 def clean_channel_name(name):
-    # Rimuovi tutto ciò che è tra parentesi e caratteri speciali
+    # Rimuovi il testo tra parentesi (e le parentesi stesse)
     name = re.sub(r"\s*\(.*?\)\s*", "", name)
+    # Rimuovi eventuali caratteri speciali dopo "|E", "|H", "(6)", "(7)", ".c", ".s"
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
-    name = re.sub(r"[^a-zA-Z0-9\s]", "", name)  # Rimuovi caratteri non alfanumerici
+    # Rimuovi tutti i caratteri non alfanumerici, lasciando solo lettere e numeri
+    name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
     return name.strip()
 
 # Funzione per scaricare i canali dai siti
