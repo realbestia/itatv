@@ -1,14 +1,13 @@
 import requests
 import os
 import re
-import hashlib
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
     "https://huhu.to",
-#    "https://vavoo.to",
-#    "https://kool.to",
-#    "https://oha.to"
+    # "https://vavoo.to",
+    # "https://kool.to",
+    # "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
@@ -40,6 +39,27 @@ def clean_channel_name(name):
     # Rimuovi tutti i caratteri non alfanumerici, lasciando solo lettere e numeri
     name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
     return name.strip()
+
+# Funzione per generare il tvg-id personalizzato
+def generate_tvg_id(channel_name):
+    # Pulisce il nome del canale
+    clean_name = clean_channel_name(channel_name)
+    
+    # Gestisce il caso speciale "MEDIASET EXTRA"
+    if "media" in clean_name.lower() and "extra" in clean_name.lower():
+        tvg_id = "MediasetExtra.it"
+    elif "mediaset" in clean_name.lower():
+        # Rimuove "Mediaset" dal tvg-id per gli altri canali
+        clean_name = clean_name.replace("Mediaset", "")
+        tvg_id = clean_name.capitalize() + ".it"
+    elif clean_name == "DMAX":
+        # Se il canale è "DMAX", il tvg-id deve essere tutto in maiuscolo
+        tvg_id = "DMAX.it"
+    else:
+        # Gestione dei canali senza "Mediaset"
+        tvg_id = clean_name.capitalize() + ".it"
+
+    return tvg_id
 
 # Funzione per scaricare i canali dai siti
 def fetch_channels(base_url):
@@ -100,11 +120,6 @@ def extract_user_agent(base_url):
         return match.group(1).upper()
     return "DEFAULT"
 
-# Funzione per generare un tgv-id univoco (usando un hash del nome del canale)
-def generate_tvg_id(channel_name):
-    # Usa l'hash SHA256 del nome del canale per creare un ID univoco
-    return hashlib.sha256(channel_name.encode('utf-8')).hexdigest()
-
 # Funzione per organizzare i canali per servizio e categoria
 def organize_channels(channels):
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
@@ -113,7 +128,7 @@ def organize_channels(channels):
         service, category = classify_channel(name)
         user_agent = extract_user_agent(base_url)
 
-        # Genera un tgv-id univoco per ogni canale
+        # Genera il tvg-id personalizzato
         tvg_id = generate_tvg_id(name)
 
         organized_data[service][category].append((name, url, base_url, user_agent, tvg_id))
@@ -135,9 +150,7 @@ def save_m3u8(organized_channels):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent, tvg_id in channels:
-                    # Rimuovi il suffisso tra parentesi dal tvg-name
                     clean_name = clean_channel_name(name)
-                    # Aggiungi il tvg-id e il tvg-name (pulito)
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{clean_name}" group-title="{category}" http-user-agent="{user_agent}" http-referrer="{base_url}",{clean_name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
