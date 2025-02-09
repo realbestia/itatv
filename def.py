@@ -36,8 +36,8 @@ CATEGORY_KEYWORDS = {
 def clean_channel_name(name):
     # Rimuovi il testo tra parentesi (e le parentesi stesse)
     name = re.sub(r"\s*\(.*?\)\s*", "", name)
-    # Rimuovi eventuali caratteri speciali dopo "|E", "|H", "(6)", "(7)", ".c", ".s"
-    name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
+    # Rimuovi eventuali caratteri speciali dopo "|E", "|H", "(6)", "(7)", ".c", ".s", "(H1)", "(H2)" ecc.
+    name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s|\(H\d*\)|\(V\d*\))\s*", "", name)
     # Rimuovi tutti i caratteri non alfanumerici, lasciando solo lettere e numeri
     name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
     return name.strip()
