@@ -140,7 +140,7 @@ def save_m3u8(organized_channels):
             for category, channels in categories.items():
                 for name, url, base_url, tvg_id, user_agent in channels:
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}",{name}\n')
-                    f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/2.6\n")
+                    f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'{url}\n\n')
 
