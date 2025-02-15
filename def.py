@@ -5,10 +5,7 @@ import os
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
-#    "https://huhu.to",
     "https://vavoo.to",
-#    "https://kool.to",
-#    "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
@@ -45,28 +42,19 @@ def fetch_channels(base_url):
         print(f"Errore durante il download da {base_url}: {e}")
         return []
 
-def filter_italian_channels(channels, base_url):
+def filter_italian_channels(channels):
     """Filtra i canali con country Italy e genera il link m3u8 con il nome del canale."""
     seen = {}
     results = []
-    source_map = {
-        "https://vavoo.to": "V",
-        "https://huhu.to": "H",
-        "https://kool.to": "K",
-        "https://oha.to": "O"
-    }
     
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
-            source_tag = source_map.get(base_url, "")
             count = seen.get(clean_name, 0) + 1
             seen[clean_name] = count
             if count > 1:
-                clean_name = f"{clean_name} ({source_tag}{count})"
-            else:
-                clean_name = f"{clean_name} ({source_tag})"
-            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
+                clean_name = f"{clean_name} ({count})"
+            results.append((clean_name, f"/play/{ch['id']}/index.m3u8"))
     
     return results
 
@@ -98,10 +86,10 @@ def organize_channels(channels):
     """Organizza i canali per servizio e categoria."""
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
 
-    for name, url, base_url in channels:
+    for name, url in channels:
         service, category = classify_channel(name)
-        user_agent = extract_user_agent(base_url)
-        organized_data[service][category].append((name, url, base_url, user_agent))
+        user_agent = extract_user_agent("")
+        organized_data[service][category].append((name, url, "", user_agent))
 
     return organized_data
 
@@ -127,7 +115,7 @@ def main():
 
     for url in BASE_URLS:
         channels = fetch_channels(url)
-        italian_channels = filter_italian_channels(channels, url)
+        italian_channels = filter_italian_channels(channels)
         all_links.extend(italian_channels)
 
     # Organizzazione dei canali
