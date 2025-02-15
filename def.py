@@ -2,6 +2,7 @@ import requests
 import json
 import re
 import os
+from xml.etree import ElementTree
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
@@ -91,8 +92,29 @@ def organize_channels(channels):
 
     return organized_data
 
-def save_m3u8(organized_channels):
-    """Salva i canali in un file M3U8 senza divisori di servizio e categoria."""
+def load_epg(epg_url):
+    """Carica e parse l'EPG da un URL XML."""
+    try:
+        response = requests.get(epg_url, timeout=10)
+        response.raise_for_status()
+        tree = ElementTree.ElementTree(ElementTree.fromstring(response.content))
+        root = tree.getroot()
+        return root
+    except requests.RequestException as e:
+        print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
+        return None
+
+def match_tvg_id(channel_name, epg_data):
+    """Trova il tvg-id corrispondente al tvg-name, se presente nel file EPG."""
+    for channel in epg_data.findall('channel'):
+        # Confronta il nome del canale dal M3U8 con il display-name nell'EPG
+        display_name = channel.find('display-name').text
+        if display_name and display_name.lower() == channel_name.lower():
+            return channel.get('id')  # Ritorna l'id se c'è una corrispondenza
+    return ""  # Se non c'è corrispondenza, ritorna una stringa vuota
+
+def save_m3u8(organized_channels, epg_data):
+    """Salva i canali in un file M3U8 con il tvg-id dal file EPG (o vuoto se non c'è corrispondenza)."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
     
@@ -102,13 +124,28 @@ def save_m3u8(organized_channels):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
-                    f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{name}" tvg-logo="" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}",{name}\n')
+                    # Trova il tvg-id dal file EPG (se c'è corrispondenza)
+                    tvg_id = match_tvg_id(name, epg_data)
+
+                    # Scrivi la riga con tvg-id (vuoto se non trovato)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/2.6\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/2.6","Referer":"{base_url}/"}}\n')
                     f.write(f"{url}\n\n")
 
 def main():
+    epg_url_1 = "https://www.open-epg.com/files/italy1.xml"  # Sostituisci con il tuo link EPG XML
+    epg_url_2 = "https://www.open-epg.com/files/italy2.xml"  # Sostituisci con il tuo link EPG XML
+
+    # Carica e parse i dati EPG
+    epg_data_1 = load_epg(epg_url_1)
+    epg_data_2 = load_epg(epg_url_2)
+
+    if not epg_data_1 and not epg_data_2:
+        print("Nessun file EPG caricato. Impossibile continuare.")
+        return
+
     all_links = []
 
     for url in BASE_URLS:
@@ -119,8 +156,8 @@ def main():
     # Organizzazione dei canali
     organized_channels = organize_channels(all_links)
 
-    # Salvataggio nel file M3U8
-    save_m3u8(organized_channels)
+    # Salvataggio nel file M3U8 utilizzando i dati EPG
+    save_m3u8(organized_channels, epg_data_1 or epg_data_2)  # Usa il primo EPG trovato
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
