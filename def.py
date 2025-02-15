@@ -39,7 +39,7 @@ CATEGORY_KEYWORDS = {
     "Sport": ["dazn", "eurosport", "rai sport", "sky sport", "sport"]
 }
 
-# Funzione per scaricare le liste EPG dai link e caricarle in un dizionario
+# Funzione per scaricare le liste EPG e caricarle in un dizionario
 def load_epg_channels(epg_urls):
     epg_channels = {}
     for epg_url in epg_urls:
@@ -116,13 +116,13 @@ def filter_italian_channels(channels):
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
+            url = ch.get("url", "")  # Se 'url' non esiste, usa una stringa vuota
+            source = ch.get("source", "Unknown")  # Se 'source' non esiste, metti "Unknown"
 
-            # Evita duplicati
-            if clean_name in seen:
-                continue
-            seen.add(clean_name)
-
-            results.append((clean_name, f"{ch['url']}", ch["source"]))
+            if url:  # Aggiungi solo se l'URL è valido
+                if clean_name not in seen:  # Evita duplicati
+                    seen.add(clean_name)
+                    results.append((clean_name, url, source))
 
     return results
 
