@@ -143,6 +143,12 @@ def save_m3u8(organized_channels):
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'{url}\n\n')
 
+    # Aggiungi un controllo per verificare se il file è stato creato
+    if os.path.exists(OUTPUT_FILE) and os.path.getsize(OUTPUT_FILE) > 0:
+        print(f"File {OUTPUT_FILE} creato con successo!")
+    else:
+        print(f"Errore: il file {OUTPUT_FILE} non è stato creato correttamente.")
+
 # Funzione principale
 def main():
     all_links = []
