@@ -118,7 +118,7 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             epg_channel_name = channel.find("display-name").text
             similarity = fuzz.partial_ratio(tvg_name.lower(), epg_channel_name.lower())
             
-            if similarity > 80:  # Soglia di somiglianza
+            if similarity > 90:  # Soglia di somiglianza
                 tvg_id = channel.get("id")
                 break  # Se c'è una corrispondenza abbastanza forte, fermati
 
