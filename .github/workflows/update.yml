@@ -27,6 +27,9 @@ jobs:
       - name: installa fuzzywuzzy
         run: pip install fuzzywuzzy
 
+      - name: installa python-Levenshtein
+        run: pip install python-Levenshtein
+
       - name: Esegui lo script
         run: python def.py
 
