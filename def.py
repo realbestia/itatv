@@ -2,16 +2,24 @@ import requests
 import json
 import re
 import os
+import xml.etree.ElementTree as ET
 
-# Siti da cui scaricare i dati
+# URL dei siti da cui scaricare i canali IPTV
 BASE_URLS = [
-    # "https://huhu.to",
     "https://vavoo.to",
+    # "https://huhu.to",
     # "https://kool.to",
     # "https://oha.to"
 ]
 
+# File di output
 OUTPUT_FILE = "channels_italy.m3u8"
+
+# Lista dei link EPG
+EPG_URLS = [
+    "https://example.com/epg1.xml",
+    "https://example.com/epg2.xml"
+]
 
 # Mappatura servizi
 SERVICE_KEYWORDS = {
@@ -31,23 +39,40 @@ CATEGORY_KEYWORDS = {
     "Sport": ["dazn", "eurosport", "rai sport", "sky sport", "sport"]
 }
 
+# Funzione per scaricare le liste EPG dai link e caricarle in un dizionario
+def load_epg_channels(epg_urls):
+    epg_channels = {}
+    for epg_url in epg_urls:
+        try:
+            print(f"🔄 Scaricamento EPG: {epg_url}")
+            response = requests.get(epg_url, timeout=10)
+            response.raise_for_status()
+            root = ET.fromstring(response.content)
+
+            for channel in root.findall("channel"):
+                channel_id = channel.get("id")
+                display_name = channel.find("display-name").text if channel.find("display-name") is not None else channel_id
+                epg_channels[display_name.lower()] = channel_id  # Match case-insensitive
+        except requests.RequestException as e:
+            print(f"❌ Errore nel download dell'EPG {epg_url}: {e}")
+        except ET.ParseError as e:
+            print(f"❌ Errore nel parsing dell'EPG {epg_url}: {e}")
+    
+    return epg_channels
+
+# Carica i dati delle EPG
+EPG_CHANNELS = load_epg_channels(EPG_URLS)
+
 # Funzione per pulire il nome del canale
 def clean_channel_name(name):
     name = re.sub(r"\s*\(.*?\)\s*", "", name)  # Rimuove testo tra parentesi
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s|\(H\d*\)|\(V\d*\))\s*", "", name)  # Rimuove tag extra
     return name.strip()
 
-# Funzione per generare il tvg-id in CamelCase senza .it
-def generate_tvg_id(channel_name):
+# Funzione per ottenere il tvg-id solo se presente nell'EPG
+def get_tvg_id(channel_name):
     clean_name = clean_channel_name(channel_name)
-    
-    # Se il nome è DMAX, lo lasciamo maiuscolo
-    if clean_name.upper() == "DMAX":
-        return "DMAX"
-
-    words = clean_name.split()
-    camel_case_name = "".join(word.capitalize() for word in words)
-    return camel_case_name  # Rimosso ".it"
+    return EPG_CHANNELS.get(clean_name.lower(), "")  # Restituisce il channel ID dell'EPG o stringa vuota
 
 # Funzione per classificare un canale in servizio e categoria
 def classify_channel(name):
@@ -80,44 +105,34 @@ def fetch_channels(base_url):
         response.raise_for_status()
         return response.json()
     except requests.RequestException as e:
-        print(f"Errore durante il download da {base_url}: {e}")
+        print(f"❌ Errore durante il download da {base_url}: {e}")
         return []
 
-# Funzione per filtrare i canali italiani e generare nomi unici
-def filter_italian_channels(channels, base_url):
-    seen = {}
+# Funzione per filtrare i canali italiani
+def filter_italian_channels(channels):
+    seen = set()
     results = []
-    source_map = {
-        "https://vavoo.to": "V",
-        "https://huhu.to": "H",
-        "https://kool.to": "K",
-        "https://oha.to": "O"
-    }
 
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
-            source_tag = source_map.get(base_url, "")
-            count = seen.get(clean_name, 0) + 1
-            seen[clean_name] = count
-            
-            # Se esiste già, aggiungiamo un numero progressivo
-            if count > 1:
-                clean_name = f"{clean_name} ({source_tag}{count})"
-            else:
-                clean_name = f"{clean_name} ({source_tag})"
-                
-            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
-    
+
+            # Evita duplicati
+            if clean_name in seen:
+                continue
+            seen.add(clean_name)
+
+            results.append((clean_name, f"{ch['url']}", ch["source"]))
+
     return results
 
-# Funzione per organizzare i canali per servizio e categoria, con ordinamento A-Z
+# Funzione per organizzare i canali per servizio e categoria
 def organize_channels(channels):
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
 
     for name, url, base_url in channels:
+        tvg_id = get_tvg_id(name)  # Ottieni il tvg-id se esiste, altrimenti ""
         service, category = classify_channel(name)
-        tvg_id = generate_tvg_id(name)
         user_agent = extract_user_agent(base_url)
         organized_data[service][category].append((name, url, base_url, tvg_id, user_agent))
 
@@ -139,7 +154,8 @@ def save_m3u8(organized_channels):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, tvg_id, user_agent in channels:
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}",{name}\n')
+                    tvg_id_str = f'tvg-id="{tvg_id}" ' if tvg_id else ""  # Se il tvg-id è vuoto, lo omettiamo
+                    f.write(f'#EXTINF:-1 {tvg_id_str}tvg-name="{name}" group-title="{category}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/1.0\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'{url}\n\n')
@@ -150,13 +166,13 @@ def main():
 
     for url in BASE_URLS:
         channels = fetch_channels(url)
-        italian_channels = filter_italian_channels(channels, url)
+        italian_channels = filter_italian_channels(channels)
         all_links.extend(italian_channels)
 
     organized_channels = organize_channels(all_links)
     save_m3u8(organized_channels)
 
-    print(f"File {OUTPUT_FILE} creato con successo!")
+    print(f"✅ File {OUTPUT_FILE} creato con successo!")
 
 # Esegui lo script
 if __name__ == "__main__":
