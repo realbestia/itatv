@@ -43,7 +43,7 @@ def clean_channel_name(name):
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
 
 def fetch_channels(base_url):
-    """Scarica i dati JSON da /channels di un sito."""
+    """Scarica i dati JSON da /channels di un sito IPTV."""
     try:
         response = requests.get(f"{base_url}/channels", timeout=10)
         response.raise_for_status()
@@ -86,18 +86,22 @@ def extract_user_agent(base_url):
     return match.group(1).upper() if match else "DEFAULT"
 
 def download_epg(epg_url):
-    """Scarica e decomprime un file EPG XML o GZIP/XZ."""
+    """Scarica e decomprime un file EPG XML o compresso (GZIP/XZ)."""
     try:
-        response = requests.get(epg_url, timeout=10)
+        response = requests.get(epg_url, timeout=10, stream=True)
         response.raise_for_status()
+        
+        # Lettura dei primi byte per identificare il formato
+        file_signature = response.raw.read(2)
+        response.raw.seek(0)  # Reset del buffer dopo la lettura
 
-        if epg_url.endswith(".gz"):
+        if file_signature.startswith(b'\x1f\x8b'):  # GZIP
             with gzip.GzipFile(fileobj=io.BytesIO(response.content)) as gz_file:
                 xml_content = gz_file.read()
-        elif epg_url.endswith(".xz"):
+        elif file_signature.startswith(b'\xfd7z'):  # XZ
             with lzma.LZMAFile(fileobj=io.BytesIO(response.content)) as xz_file:
                 xml_content = xz_file.read()
-        else:
+        else:  # XML normale
             xml_content = response.content
 
         tree = ET.ElementTree(ET.fromstring(xml_content))
@@ -106,7 +110,7 @@ def download_epg(epg_url):
         print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
         return None
     except (gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
-        print(f"Errore durante la decompressione/parsing dell'EPG da {epg_url}: {e}")
+        print(f"Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
         return None
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
