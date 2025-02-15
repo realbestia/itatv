@@ -37,17 +37,17 @@ def clean_channel_name(name):
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s|\(H\d*\)|\(V\d*\))\s*", "", name)  # Rimuove tag extra
     return name.strip()
 
-# Funzione per generare il tvg-id in CamelCase
+# Funzione per generare il tvg-id in CamelCase senza .it
 def generate_tvg_id(channel_name):
     clean_name = clean_channel_name(channel_name)
     
     # Se il nome è DMAX, lo lasciamo maiuscolo
     if clean_name.upper() == "DMAX":
-        return "DMAX.it"
+        return "DMAX"
 
     words = clean_name.split()
     camel_case_name = "".join(word.capitalize() for word in words)
-    return camel_case_name + ".it"
+    return camel_case_name  # Rimosso ".it"
 
 # Funzione per classificare un canale in servizio e categoria
 def classify_channel(name):
