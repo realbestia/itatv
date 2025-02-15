@@ -5,10 +5,10 @@ import os
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
-#    "https://huhu.to",
     "https://vavoo.to",
-#    "https://kool.to",
-#    "https://oha.to"
+    # "https://huhu.to",
+    # "https://kool.to",
+    # "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
@@ -47,19 +47,11 @@ def fetch_channels(base_url):
 
 def filter_italian_channels(channels, base_url):
     """Filtra i canali con country Italy e genera il link m3u8 con il nome del canale."""
-    seen = {}
     results = []
     
     for ch in channels:
         if ch.get("country") == "Italy":
-            clean_name = clean_channel_name(ch["name"])
-            source_tag = source_map.get(base_url, "")
-            count = seen.get(clean_name, 0) + 1
-            seen[clean_name] = count
-            if count > 1:
-                clean_name = f"{clean_name} ({source_tag}{count})"
-            else:
-                clean_name = f"{clean_name} ({source_tag})"
+            clean_name = clean_channel_name(ch["name"])  # Rimuove caratteri indesiderati
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     
     return results
