@@ -2,8 +2,11 @@ import requests
 import json
 import re
 import os
-from fuzzywuzzy import fuzz
+import gzip
+import lzma
+import io
 import xml.etree.ElementTree as ET
+from fuzzywuzzy import fuzz
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
@@ -53,7 +56,7 @@ def filter_italian_channels(channels, base_url):
     
     for ch in channels:
         if ch.get("country") == "Italy":
-            clean_name = clean_channel_name(ch["name"])  # Rimuove caratteri indesiderati
+            clean_name = clean_channel_name(ch["name"])
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     
     return results
@@ -94,7 +97,7 @@ def organize_channels(channels):
     return organized_data
 
 def save_m3u8(organized_channels, epg_data):
-    """Salva i canali in un file M3U8 senza divisori di servizio e categoria, con tvg-id da EPG."""
+    """Salva i canali in un file M3U8 con tvg-id da EPG."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
     
@@ -112,7 +115,6 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
     """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
     tvg_id = ""
     
-    # Itera su tutti gli EPG (che sono in epg_data, una lista di ElementTree)
     for epg_root in epg_data:
         for channel in epg_root.findall("channel"):
             epg_channel_name = channel.find("display-name").text
@@ -120,18 +122,43 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             
             if similarity > 90:  # Soglia di somiglianza
                 tvg_id = channel.get("id")
-                break  # Se c'è una corrispondenza abbastanza forte, fermati
+                break
 
-        if tvg_id:  # Se è stato trovato un tvg-id, esci dal loop
+        if tvg_id:
             break
 
     return tvg_id
 
+def download_epg(epg_url):
+    """Scarica e decomprime un file EPG XML o GZIP."""
+    try:
+        response = requests.get(epg_url, timeout=10)
+        response.raise_for_status()
+
+        if epg_url.endswith(".gz"):
+            with gzip.GzipFile(fileobj=io.BytesIO(response.content)) as gz_file:
+                xml_content = gz_file.read()
+        elif epg_url.endswith(".xz"):
+            with lzma.LZMAFile(fileobj=io.BytesIO(response.content)) as xz_file:
+                xml_content = xz_file.read()
+        else:
+            xml_content = response.content
+
+        tree = ET.ElementTree(ET.fromstring(xml_content))
+        return tree.getroot()
+    except requests.RequestException as e:
+        print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
+        return None
+    except (gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
+        print(f"Errore durante la decompressione o il parsing dell'EPG da {epg_url}: {e}")
+        return None
+
 def main():
     all_links = []
 
-    # URL dei file EPG (in formato XML)
+    # URL dei file EPG (XML normali e compressi)
     epg_urls = [
+        "https://www.epgitalia.tv/gzip",  # Nuovo link EPG compressi
         "https://www.open-epg.com/files/italy1.xml",
         "https://www.open-epg.com/files/italy2.xml"
     ]
@@ -140,14 +167,9 @@ def main():
 
     # Carica i dati EPG
     for epg_url in epg_urls:
-        try:
-            response = requests.get(epg_url, timeout=10)
-            response.raise_for_status()
-            tree = ET.ElementTree(ET.fromstring(response.content))
-            epg_data.append(tree.getroot())
-        except requests.RequestException as e:
-            print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
-            continue
+        epg_root = download_epg(epg_url)
+        if epg_root:
+            epg_data.append(epg_root)
 
     # Recupera i canali dai siti
     for url in BASE_URLS:
