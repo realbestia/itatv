@@ -112,13 +112,18 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
     """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
     tvg_id = ""
     
-    for channel in epg_data.findall("channel"):
-        epg_channel_name = channel.find("display-name").text
-        similarity = fuzz.partial_ratio(tvg_name.lower(), epg_channel_name.lower())
-        
-        if similarity > 80:  # Soglia di somiglianza
-            tvg_id = channel.get("id")
-            break  # Se c'è una corrispondenza abbastanza forte, fermati
+    # Itera su tutti gli EPG (che sono in epg_data, una lista di ElementTree)
+    for epg_root in epg_data:
+        for channel in epg_root.findall("channel"):
+            epg_channel_name = channel.find("display-name").text
+            similarity = fuzz.partial_ratio(tvg_name.lower(), epg_channel_name.lower())
+            
+            if similarity > 80:  # Soglia di somiglianza
+                tvg_id = channel.get("id")
+                break  # Se c'è una corrispondenza abbastanza forte, fermati
+
+        if tvg_id:  # Se è stato trovato un tvg-id, esci dal loop
+            break
 
     return tvg_id
 
