@@ -24,8 +24,8 @@ jobs:
       - name: Installa le dipendenze
         run: pip install requests
 
-      - name: installa xmltodict
-        run: pip install xmltodict
+      - name: installa fuzzywuzzy
+        run: pip install fuzzywuzzy
 
       - name: Esegui lo script
         run: python def.py
