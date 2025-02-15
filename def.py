@@ -5,10 +5,11 @@ import os
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
+    # Aggiungi i tuoi URL per scaricare i dati dei canali
     "https://vavoo.to",
     #"https://huhu.to",
-    #"https://kool.to",
-    #"https://oha.to"
+    # "https://kool.to",
+    # "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
@@ -88,12 +89,25 @@ def filter_italian_channels(channels):
     seen = {}
     results = []
     
+    if not channels:
+        print("Nessun canale trovato!")
+        return []
+
+    # Per ogni canale ricevuto
     for ch in channels:
-        if ch.get("country") == "Italy":  # Controlla che "country" sia corretto
-            clean_name = clean_channel_name(ch["name"])
-            results.append((clean_name, ch["url"], ch["source"]))
+        if ch.get("country") == "Italy":  # Verifica se il canale è italiano
+            clean_name = clean_channel_name(ch.get("name", "N/A"))  # Ottieni il nome del canale
+            url = ch.get("url")  # Cerca la chiave 'url'
+            source = ch.get("source")  # Cerca la chiave 'source'
+            
+            # Se 'url' o 'source' non esistono, stampa un avviso e salta il canale
+            if not url:
+                print(f"Avviso: URL mancante per il canale: {clean_name}")
+                continue
+            
+            # Aggiungi il canale ai risultati
+            results.append((clean_name, url, source))
     
-    # Aggiungi un log per vedere quanti canali italiani sono stati trovati
     print(f"Canali italiani trovati: {len(results)}")
     
     return results
@@ -108,9 +122,6 @@ def organize_channels(channels):
         user_agent = extract_user_agent(base_url)
         organized_data[service][category].append((name, url, base_url, tvg_id, user_agent))
 
-    # Aggiungi un log per vedere quanti canali sono stati organizzati
-    print(f"Canali organizzati: {sum(len(categories) for categories in organized_data.values())}")
-
     # Ordina i canali dentro ogni categoria dalla A alla Z
     for service in organized_data:
         for category in organized_data[service]:
@@ -122,14 +133,10 @@ def organize_channels(channels):
 def save_m3u8(organized_channels):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
-
+    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
-        # Verifica se organized_channels ha dati
-        if not organized_channels:
-            print("Nessun canale trovato da scrivere nel file M3U8.")
-        
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, tvg_id, user_agent in channels:
@@ -141,9 +148,17 @@ def save_m3u8(organized_channels):
 # Funzione principale
 def main():
     all_links = []
-
-    for url in BASE_URLS:
-        channels = fetch_channels(url)
+    epg_urls = [
+        "https://www.open-epg.com/files/italy1.xml", 
+        "https://www.open-epg.com/files/italy2.xml"
+    ]
+    
+    for epg_url in epg_urls:
+        print(f"🔄 Scaricamento EPG: {epg_url}")
+        epg_response = requests.get(epg_url)
+        epg_data = epg_response.content.decode('utf-8')
+        channels = json.loads(epg_data)  # Aggiungere la logica per convertire EPG XML a JSON
+        
         italian_channels = filter_italian_channels(channels)
         all_links.extend(italian_channels)
 
