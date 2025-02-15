@@ -22,7 +22,7 @@ OUTPUT_FILE = "channels_italy.m3u8"
 EPG_URLS = [
     "https://www.epgitalia.tv/gzip",
     "https://www.open-epg.com/files/italy1.xml",
-    "https://www.open-epg.com/files/italy2.xml.gz"
+    "https://www.open-epg.com/files/italy2.xml"
 ]
 
 # Mappatura servizi
