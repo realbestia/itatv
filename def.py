@@ -1,15 +1,13 @@
 import requests
+import xmltodict
 import json
 import re
 import os
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
-    # Aggiungi i tuoi URL per scaricare i dati dei canali
     "https://vavoo.to",
     #"https://huhu.to",
-    # "https://kool.to",
-    # "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
@@ -157,10 +155,16 @@ def main():
         print(f"🔄 Scaricamento EPG: {epg_url}")
         epg_response = requests.get(epg_url)
         epg_data = epg_response.content.decode('utf-8')
-        channels = json.loads(epg_data)  # Aggiungere la logica per convertire EPG XML a JSON
         
-        italian_channels = filter_italian_channels(channels)
-        all_links.extend(italian_channels)
+        # Converti l'XML in un dizionario usando xmltodict
+        try:
+            epg_dict = xmltodict.parse(epg_data)
+            channels = epg_dict.get('tv', {}).get('channel', [])
+            
+            italian_channels = filter_italian_channels(channels)
+            all_links.extend(italian_channels)
+        except Exception as e:
+            print(f"Errore nel parsing del file XML: {e}")
 
     organized_channels = organize_channels(all_links)
     save_m3u8(organized_channels)
