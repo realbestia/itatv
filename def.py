@@ -2,7 +2,8 @@ import requests
 import json
 import re
 import os
-from xml.etree import ElementTree
+from fuzzywuzzy import fuzz
+import xml.etree.ElementTree as ET
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
@@ -92,29 +93,8 @@ def organize_channels(channels):
 
     return organized_data
 
-def load_epg(epg_url):
-    """Carica e parse l'EPG da un URL XML."""
-    try:
-        response = requests.get(epg_url, timeout=10)
-        response.raise_for_status()
-        tree = ElementTree.ElementTree(ElementTree.fromstring(response.content))
-        root = tree.getroot()
-        return root
-    except requests.RequestException as e:
-        print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
-        return None
-
-def match_tvg_id(channel_name, epg_data):
-    """Trova il tvg-id corrispondente al tvg-name, se presente nel file EPG."""
-    for channel in epg_data.findall('channel'):
-        # Confronta il nome del canale dal M3U8 con il display-name nell'EPG
-        display_name = channel.find('display-name').text
-        if display_name and display_name.lower() == channel_name.lower():
-            return channel.get('id')  # Ritorna l'id se c'è una corrispondenza
-    return ""  # Se non c'è corrispondenza, ritorna una stringa vuota
-
 def save_m3u8(organized_channels, epg_data):
-    """Salva i canali in un file M3U8 con il tvg-id dal file EPG (o vuoto se non c'è corrispondenza)."""
+    """Salva i canali in un file M3U8 senza divisori di servizio e categoria, con tvg-id da EPG."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
     
@@ -124,40 +104,57 @@ def save_m3u8(organized_channels, epg_data):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
-                    # Trova il tvg-id dal file EPG (se c'è corrispondenza)
-                    tvg_id = match_tvg_id(name, epg_data)
-
-                    # Scrivi la riga con tvg-id (vuoto se non trovato)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}",{name}\n')
-                    f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/2.6\n")
-                    f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
-                    f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/2.6","Referer":"{base_url}/"}}\n')
+                    tvg_id = get_tvg_id_from_epg(name, epg_data)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
+def get_tvg_id_from_epg(tvg_name, epg_data):
+    """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
+    tvg_id = ""
+    
+    for channel in epg_data.findall("channel"):
+        epg_channel_name = channel.find("display-name").text
+        similarity = fuzz.partial_ratio(tvg_name.lower(), epg_channel_name.lower())
+        
+        if similarity > 80:  # Soglia di somiglianza
+            tvg_id = channel.get("id")
+            break  # Se c'è una corrispondenza abbastanza forte, fermati
+
+    return tvg_id
+
 def main():
-    epg_url_1 = "https://www.open-epg.com/files/italy1.xml"  # Sostituisci con il tuo link EPG XML
-    epg_url_2 = "https://www.open-epg.com/files/italy2.xml"  # Sostituisci con il tuo link EPG XML
-
-    # Carica e parse i dati EPG
-    epg_data_1 = load_epg(epg_url_1)
-    epg_data_2 = load_epg(epg_url_2)
-
-    if not epg_data_1 and not epg_data_2:
-        print("Nessun file EPG caricato. Impossibile continuare.")
-        return
-
     all_links = []
 
+    # URL dei file EPG (in formato XML)
+    epg_urls = [
+        "https://www.open-epg.com/files/italy1.xml",
+        "https://www.open-epg.com/files/italy2.xml"
+    ]
+
+    epg_data = []
+
+    # Carica i dati EPG
+    for epg_url in epg_urls:
+        try:
+            response = requests.get(epg_url, timeout=10)
+            response.raise_for_status()
+            tree = ET.ElementTree(ET.fromstring(response.content))
+            epg_data.append(tree.getroot())
+        except requests.RequestException as e:
+            print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
+            continue
+
+    # Recupera i canali dai siti
     for url in BASE_URLS:
         channels = fetch_channels(url)
         italian_channels = filter_italian_channels(channels, url)
         all_links.extend(italian_channels)
 
-    # Organizzazione dei canali
+    # Organizza i canali
     organized_channels = organize_channels(all_links)
 
-    # Salvataggio nel file M3U8 utilizzando i dati EPG
-    save_m3u8(organized_channels, epg_data_1 or epg_data_2)  # Usa il primo EPG trovato
+    # Salva il file M3U8
+    save_m3u8(organized_channels, epg_data)
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
