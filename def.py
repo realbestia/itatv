@@ -17,8 +17,8 @@ OUTPUT_FILE = "channels_italy.m3u8"
 
 # Lista dei link EPG
 EPG_URLS = [
-    "https://example.com/epg1.xml",
-    "https://example.com/epg2.xml"
+    "https://www.open-epg.com/files/italy1.xml",
+    "https://www.open-epg.com/files/italy2.xml"
 ]
 
 # Mappatura servizi
