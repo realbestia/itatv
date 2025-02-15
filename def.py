@@ -49,12 +49,6 @@ def filter_italian_channels(channels, base_url):
     """Filtra i canali con country Italy e genera il link m3u8 con il nome del canale."""
     seen = {}
     results = []
-    source_map = {
-        "https://vavoo.to": "V",
-        "https://huhu.to": "H",
-        "https://kool.to": "K",
-        "https://oha.to": "O"
-    }
     
     for ch in channels:
         if ch.get("country") == "Italy":
