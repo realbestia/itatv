@@ -11,9 +11,6 @@ from fuzzywuzzy import fuzz
 # Siti da cui scaricare i canali IPTV
 BASE_URLS = [
     "https://vavoo.to",
-    # "https://huhu.to",
-    # "https://kool.to",
-    # "https://oha.to"
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
@@ -90,17 +87,6 @@ def extract_user_agent(base_url):
     match = re.search(r"https?://([^/.]+)", base_url)
     return match.group(1).upper() if match else "DEFAULT"
 
-def organize_channels(channels):
-    """Organizza i canali per servizio e categoria."""
-    organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
-
-    for name, url, base_url in channels:
-        service, category = classify_channel(name)
-        user_agent = extract_user_agent(base_url)
-        organized_data[service][category].append((name, url, base_url, user_agent))
-
-    return organized_data
-
 def download_epg(epg_url):
     """Scarica e decomprime un file EPG XML o GZIP/XZ."""
     try:
@@ -125,8 +111,34 @@ def download_epg(epg_url):
         print(f"Errore durante la decompressione/parsing dell'EPG da {epg_url}: {e}")
         return None
 
-def save_m3u8(organized_channels, epg_urls):
-    """Salva i canali in un file M3U8 con link EPG."""
+def get_tvg_id_from_epg(tvg_name, epg_data):
+    """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
+    best_match = None
+    best_score = 0
+
+    for epg_root in epg_data:
+        for channel in epg_root.findall("channel"):
+            epg_channel_name = channel.find("display-name").text
+
+            if not epg_channel_name:
+                continue  
+
+            cleaned_tvg_name = re.sub(r"\s+", " ", tvg_name.strip().lower())
+            cleaned_epg_name = re.sub(r"\s+", " ", epg_channel_name.strip().lower())
+
+            similarity = fuzz.ratio(cleaned_tvg_name, cleaned_epg_name)
+
+            if similarity > best_score:
+                best_score = similarity
+                best_match = channel.get("id")
+
+            if best_score >= 95:
+                return best_match
+
+    return best_match if best_score >= 80 else ""
+
+def save_m3u8(organized_channels, epg_urls, epg_data):
+    """Salva i canali in un file M3U8 con link EPG e tvg-id."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
@@ -136,27 +148,27 @@ def save_m3u8(organized_channels, epg_urls):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
-                    f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
+                    tvg_id = get_tvg_id_from_epg(name, epg_data)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
 def main():
     all_links = []
-
-    epg_data = []
-    for epg_url in EPG_URLS:
-        epg_root = download_epg(epg_url)
-        if epg_root:
-            epg_data.append(epg_root)
+    epg_data = [download_epg(epg_url) for epg_url in EPG_URLS if download_epg(epg_url)]
 
     for url in BASE_URLS:
         channels = fetch_channels(url)
         italian_channels = filter_italian_channels(channels, url)
         all_links.extend(italian_channels)
 
-    organized_channels = organize_channels(all_links)
-    save_m3u8(organized_channels, EPG_URLS)
+    organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
+    for name, url, base_url in all_links:
+        service, category = classify_channel(name)
+        organized_channels[service][category].append((name, url, base_url, extract_user_agent(base_url)))
+
+    save_m3u8(organized_channels, EPG_URLS, epg_data)
 
 if __name__ == "__main__":
     main()
