@@ -88,12 +88,11 @@ def extract_user_agent(base_url):
 def download_epg(epg_url):
     """Scarica e decomprime un file EPG XML o compresso (GZIP/XZ)."""
     try:
-        response = requests.get(epg_url, timeout=10, stream=True)
+        response = requests.get(epg_url, timeout=10)
         response.raise_for_status()
         
-        # Lettura dei primi byte per identificare il formato
-        file_signature = response.raw.read(2)
-        response.raw.seek(0)  # Reset del buffer dopo la lettura
+        # Legge i primi 2 byte per identificare il formato
+        file_signature = response.content[:2]
 
         if file_signature.startswith(b'\x1f\x8b'):  # GZIP
             with gzip.GzipFile(fileobj=io.BytesIO(response.content)) as gz_file:
@@ -106,11 +105,12 @@ def download_epg(epg_url):
 
         tree = ET.ElementTree(ET.fromstring(xml_content))
         return tree.getroot()
+
     except requests.RequestException as e:
-        print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
+        print(f"❌ Errore durante il download dell'EPG da {epg_url}: {e}")
         return None
     except (gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
-        print(f"Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
+        print(f"❌ Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
         return None
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
