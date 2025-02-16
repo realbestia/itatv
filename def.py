@@ -113,6 +113,18 @@ def download_epg(epg_url):
         print(f"Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
         return None
 
+def get_logo_from_epg(tvg_id, epg_data):
+    """Estrae il logo del canale dall'EPG utilizzando tvg-id."""
+    for epg_root in epg_data:
+        for channel in epg_root.findall("channel"):
+            if channel.get("id") == tvg_id:
+                logo = channel.find("logo")
+                if logo is not None and logo.text:
+                    print(f"Trovato logo per {tvg_id}: {logo.text}")  # Log di debug
+                    return logo.text
+    print(f"Nessun logo trovato per tvg-id: {tvg_id}")  # Log di debug
+    return ""
+
 def get_tvg_id_from_epg(tvg_name, epg_data):
     """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
     best_match = None
@@ -139,16 +151,6 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
 
     return best_match if best_score >= 80 else ""
 
-def get_logo_from_epg(tvg_id, epg_data):
-    """Estrae il logo del canale dall'EPG utilizzando tvg-id."""
-    for epg_root in epg_data:
-        for channel in epg_root.findall("channel"):
-            if channel.get("id") == tvg_id:
-                logo = channel.find("logo")
-                if logo is not None and logo.text:
-                    return logo.text
-    return ""
-
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali in un file M3U8 con link EPG e tvg-id."""
     if os.path.exists(OUTPUT_FILE):
@@ -163,8 +165,10 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
                     logo = get_logo_from_epg(tvg_id, epg_data)
                     if logo:
+                        print(f"Includo logo per il canale {name}: {logo}")  # Log di debug
                         f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-logo="{logo}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     else:
+                        print(f"Nessun logo per il canale {name}")  # Log di debug
                         f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
