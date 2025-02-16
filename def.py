@@ -107,23 +107,11 @@ def download_epg(epg_url):
         return tree.getroot()
 
     except requests.RequestException as e:
-        print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
+        print(f"â Errore durante il download dell'EPG da {epg_url}: {e}")
         return None
     except (gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
-        print(f"Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
+        print(f"â Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
         return None
-
-def get_logo_from_epg(tvg_id, epg_data):
-    """Estrae il logo del canale dall'EPG utilizzando tvg-id."""
-    for epg_root in epg_data:
-        for channel in epg_root.findall("channel"):
-            if channel.get("id") == tvg_id:
-                logo = channel.find("logo")
-                if logo is not None and logo.text:
-                    print(f"Trovato logo per {tvg_id}: {logo.text}")  # Log di debug
-                    return logo.text
-    print(f"Nessun logo trovato per tvg-id: {tvg_id}")  # Log di debug
-    return ""
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
     """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
@@ -163,13 +151,7 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    logo = get_logo_from_epg(tvg_id, epg_data)
-                    if logo:
-                        print(f"Includo logo per il canale {name}: {logo}")  # Log di debug
-                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-logo="{logo}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
-                    else:
-                        print(f"Nessun logo per il canale {name}")  # Log di debug
-                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
