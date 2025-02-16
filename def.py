@@ -1,9 +1,10 @@
 import requests
-import json
+import xml.etree.ElementTree as ET
+import gzip
+from io import BytesIO
 import re
 import os
 from fuzzywuzzy import fuzz
-import xml.etree.ElementTree as ET
 
 # Siti da cui scaricare i dati
 BASE_URLS = [
@@ -82,38 +83,6 @@ def extract_user_agent(base_url):
         return match.group(1).upper()
     return "DEFAULT"
 
-def get_tvg_id_and_logo_from_epg(tvg_name, epg_data):
-    """Cerca il tvg-id e il logo nel file EPG usando una corrispondenza fuzzy con tvg-name."""
-    best_match = None
-    best_score = 0
-    logo_url = ""
-
-    for epg_root in epg_data:
-        for channel in epg_root.findall("channel"):
-            epg_channel_name = channel.find("display-name").text
-
-            if not epg_channel_name:
-                continue
-
-            cleaned_tvg_name = re.sub(r"\s+", " ", tvg_name.strip().lower())
-            cleaned_epg_name = re.sub(r"\s+", " ", epg_channel_name.strip().lower())
-
-            similarity = fuzz.ratio(cleaned_tvg_name, cleaned_epg_name)
-
-            if similarity > best_score:
-                best_score = similarity
-                best_match = channel.get("id")
-                
-                # Cerca l'URL del logo associato al canale
-                logo_tag = channel.find("icon")
-                if logo_tag is not None:
-                    logo_url = logo_tag.get("src")
-
-            if best_score >= 95:
-                return best_match, logo_url
-
-    return best_match if best_score >= 80 else "", logo_url
-
 def organize_channels(channels):
     """Organizza i canali per servizio e categoria."""
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
@@ -125,43 +94,70 @@ def organize_channels(channels):
 
     return organized_data
 
+def save_m3u8(organized_channels, epg_data):
+    """Salva i canali in un file M3U8 senza divisori di servizio e categoria, con tvg-id da EPG."""
+    if os.path.exists(OUTPUT_FILE):
+        os.remove(OUTPUT_FILE)
+    
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n\n")
+
+        for service, categories in organized_channels.items():
+            for category, channels in categories.items():
+                for name, url, base_url, user_agent in channels:
+                    tvg_id = get_tvg_id_from_epg(name, epg_data)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
+                    f.write(f"{url}\n\n")
+
+def get_tvg_id_from_epg(tvg_name, epg_data):
+    """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
+    tvg_id = ""
+    
+    # Itera su tutti gli EPG (che sono in epg_data, una lista di ElementTree)
+    for epg_root in epg_data:
+        for channel in epg_root.findall("channel"):
+            epg_channel_name = channel.find("display-name").text
+            similarity = fuzz.partial_ratio(tvg_name.lower(), epg_channel_name.lower())
+            
+            if similarity > 90:  # Soglia di somiglianza
+                tvg_id = channel.get("id")
+                break  # Se c'è una corrispondenza abbastanza forte, fermati
+
+        if tvg_id:  # Se è stato trovato un tvg-id, esci dal loop
+            break
+
+    return tvg_id
+
 def download_epg(epg_url):
     """Scarica e decomprime il file EPG in formato GZIP."""
     try:
         response = requests.get(epg_url, stream=True, timeout=10)
         response.raise_for_status()
 
-        if epg_url.endswith(".gz"):
-            import gzip
-            from io import BytesIO
-
+        # Verifica se il file è GZIP
+        if 'gzip' in response.headers.get('Content-Encoding', ''):
+            # Gestisce GZIP
             buf = BytesIO(response.content)
             with gzip.GzipFile(fileobj=buf) as f:
-                return ET.ElementTree(ET.fromstring(f.read().decode()))
-
-        return ET.ElementTree(ET.fromstring(response.content))
+                try:
+                    # Decodifica il contenuto
+                    content = f.read().decode('utf-8')
+                    # Verifica se il contenuto è in formato XML
+                    return ET.ElementTree(ET.fromstring(content))
+                except Exception as e:
+                    print(f"Errore nel parsing del GZIP: {e}")
+                    return None
+        else:
+            # Se il file non è GZIP, tenta di leggere direttamente
+            try:
+                return ET.ElementTree(ET.fromstring(response.content))
+            except Exception as e:
+                print(f"Errore nel parsing del file XML: {e}")
+                return None
 
     except requests.RequestException as e:
         print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
         return None
-
-def save_m3u8(organized_channels, epg_urls, epg_data):
-    """Salva i canali in un file M3U8 con link EPG, tvg-id e logo."""
-    if os.path.exists(OUTPUT_FILE):
-        os.remove(OUTPUT_FILE)
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(f'#EXTM3U x-tvg-url="{", ".join(epg_urls)}"\n\n')
-
-        for service, categories in organized_channels.items():
-            for category, channels in categories.items():
-                for name, url, base_url, user_agent in channels:
-                    tvg_id, logo_url = get_tvg_id_and_logo_from_epg(name, epg_data)
-                    logo_attribute = f'tvg-logo="{logo_url}"' if logo_url else ""
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}" {logo_attribute}, {name}\n')
-                    f.write(f"{url}\n\n")
-
-    print(f"File {OUTPUT_FILE} creato con successo!")
 
 def main():
     all_links = []
@@ -189,7 +185,7 @@ def main():
     organized_channels = organize_channels(all_links)
 
     # Salva il file M3U8
-    save_m3u8(organized_channels, epg_urls, epg_data)
+    save_m3u8(organized_channels, epg_data)
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
