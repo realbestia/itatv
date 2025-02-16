@@ -137,7 +137,7 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
                 best_score = similarity
                 best_match = channel.get("id")
 
-            if best_score >= 95:
+            if best_score >= 99:
                 return best_match
 
     return best_match if best_score >= 80 else ""
