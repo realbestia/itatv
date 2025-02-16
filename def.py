@@ -110,10 +110,10 @@ def download_epg(epg_url):
         return tree.getroot()
 
     except requests.RequestException as e:
-        print(f"Errore durante il download dell'EPG da {epg_url}: {e}")
+        print(f"Ã¢ÂÂ Errore durante il download dell'EPG da {epg_url}: {e}")
         return None
     except (gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
-        print(f"Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
+        print(f"Ã¢ÂÂ Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
         return None
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
@@ -154,29 +154,7 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
-
-                    # Trova il programma corrente (se presente)
-                    current_program = None
-                    for epg_root in epg_data:
-                        for channel in epg_root.findall("channel"):
-                            if channel.get("id") == tvg_id:
-                                # Prendi il programma corrente
-                                for programme in channel.findall("programme"):
-                                    current_program = programme
-                                    break
-                        if current_program:
-                            break
-
-                    # Estrai i dettagli del programma, se presenti
-                    if current_program is not None:
-                        tvg_title = current_program.find("title").text if current_program.find("title") is not None else "N/A"
-                        tvg_desc = current_program.find("desc").text if current_program.find("desc") is not None else "N/A"
-                        tvg_duration = current_program.get("length", "N/A")
-                    else:
-                        tvg_title, tvg_desc, tvg_duration = "N/A", "N/A", "N/A"
-
-                    # Scrivi i canali nel file m3u8
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}" tvg-title="{tvg_title}" tvg-desc="{tvg_desc}" tvg-duration="{tvg_duration}", {name}\n')
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
@@ -199,4 +177,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
