@@ -136,6 +136,11 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
                 best_match = channel.get("id")
                 tvg_logo = channel.find("logo").text if channel.find("logo") is not None else ""
 
+            if tvg_logo:
+                print(f"Trovato logo per {tvg_name}: {tvg_logo}")
+            else:
+                print(f"Nessun logo trovato per {tvg_name}")
+
             if best_score >= 90:
                 return best_match, tvg_logo
 
