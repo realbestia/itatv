@@ -117,6 +117,7 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
     """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
     best_match = None
     best_score = 0
+    tvg_logo = ""  # Variabile per il logo
 
     for epg_root in epg_data:
         for channel in epg_root.findall("channel"):
@@ -133,23 +134,15 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             if similarity > best_score:
                 best_score = similarity
                 best_match = channel.get("id")
+                tvg_logo = channel.find("logo").text if channel.find("logo") is not None else ""
 
             if best_score >= 90:
-                return best_match
+                return best_match, tvg_logo
 
-    return best_match if best_score >= 80 else ""
-
-def get_logo_from_epg(tvg_id, epg_data):
-    """Ottieni il logo dal file EPG in base al tvg-id."""
-    for epg_root in epg_data:
-        for channel in epg_root.findall("channel"):
-            if channel.get("id") == tvg_id:
-                logo_url = channel.find("icon").text if channel.find("icon") is not None else None
-                return logo_url
-    return None
+    return best_match if best_score >= 80 else "", tvg_logo
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
-    """Salva i canali in un file M3U8 con link EPG e tvg-id."""
+    """Salva i canali in un file M3U8 con link EPG, tvg-id e tvg-logo."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
@@ -158,11 +151,12 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url in channels:  # Aspettandosi 3 valori
-                    tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    logo = get_logo_from_epg(tvg_id, epg_data)  # Prende il logo dal file EPG
-                    logo_url = logo if logo else 'No logo'  # Se non c'è logo, usa 'No logo'
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{base_url.upper()}/2.6" http-referrer="{base_url}", logo="{logo_url}", {name}\n')
+                for name, url, base_url, user_agent in channels:
+                    tvg_id, tvg_logo = get_tvg_id_from_epg(name, epg_data)
+                    if tvg_logo:
+                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{tvg_logo}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
+                    else:
+                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
@@ -179,7 +173,7 @@ def main():
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
     for name, url, base_url in all_links:
         service, category = classify_channel(name)
-        organized_channels[service][category].append((name, url, base_url))
+        organized_channels[service][category].append((name, url, base_url, extract_user_agent(base_url)))
 
     save_m3u8(organized_channels, EPG_URLS, epg_data)
 
