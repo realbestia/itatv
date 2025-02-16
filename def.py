@@ -38,10 +38,15 @@ def clean_channel_name(name):
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
 
 def normalize_for_matching(name):
-    """Normalizza il nome solo per il confronto (rimuove .it e converte numeri in lettere)"""
-    temp_name = re.sub(r"\.it\b", "", name, flags=re.IGNORECASE)  # Rimuove .it solo per il matching
-    temp_name = re.sub(r"[^\w\s]", "", temp_name).strip().lower()  # Rimuove caratteri speciali
+    """Normalizza il nome solo per il confronto (rimuove .it, (BACKUP) e converte numeri in lettere)"""
+    # Rimuove .it per il matching
+    temp_name = re.sub(r"\.it\b", "", name, flags=re.IGNORECASE)  
+    # Rimuove testo tra parentesi (es. (BACKUP), (HD), ecc.)
+    temp_name = re.sub(r"\(.*?\)", "", temp_name)
+    # Rimuove caratteri speciali
+    temp_name = re.sub(r"[^\w\s]", "", temp_name).strip().lower()
 
+    # Rimuove i numeri e li converte in parole se necessario
     number_match = re.search(r"\b\d+\b", temp_name)
     number = number_match.group() if number_match else None
 
