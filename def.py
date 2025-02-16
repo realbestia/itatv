@@ -17,7 +17,9 @@ OUTPUT_FILE = "channels_italy.m3u8"
 
 # URL dei file EPG (XML normali e compressi)
 EPG_URLS = [
-    "https://www.epgitalia.tv/gzip"
+    "https://www.epgitalia.tv/gzip",
+    "https://www.open-epg.com/files/italy1.xml",
+    "https://www.open-epg.com/files/italy2.xml"
 ]
 
 # Mappatura servizi
@@ -134,7 +136,7 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
                 best_score = similarity
                 best_match = channel.get("id")
 
-            if best_score >= 90:
+            if best_score >= 95:
                 return best_match
 
     return best_match if best_score >= 80 else ""
