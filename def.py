@@ -19,7 +19,7 @@ OUTPUT_FILE = "channels_italy.m3u8"
 # URL degli EPG
 EPG_URLS = [
     "https://www.epgitalia.tv/gzip",
-    "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
     "https://www.open-epg.com/files/italy1.xml",
     "https://www.open-epg.com/files/italy2.xml",
     "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz"
@@ -34,14 +34,31 @@ NUMBER_WORDS = {
     "20": "venti"
 }
 
+# Mappatura dei servizi e delle categorie
+SERVICE_KEYWORDS = {
+    "Sky": ["sky", "fox", "hbo"],
+    "DTT": ["rai", "mediaset", "focus", "boing"],
+    "IPTV gratuite": ["radio", "local", "regional", "free"]
+}
+
+CATEGORY_KEYWORDS = {
+    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
+    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
+    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
+    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
+    "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
+    "Musica": ["mtv", "vh1", "radio", "music"]
+}
+
 def clean_channel_name(name):
-    """Pulisce il nome rimuovendo caratteri inutili per l'M3U8"""
+    """Pulisce il nome rimuovendo caratteri indesiderati."""
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
 
 def normalize_for_matching(name):
     """Normalizza il nome solo per il confronto (rimuove .it, (BACKUP) e converte numeri in lettere)"""
     # Rimuove .it per il matching
-    temp_name = re.sub(r"\.it\b", "", name, flags=re.IGNORECASE)  
+    temp_name = re.sub(r"\.it\b", "", name, flags=re.IGNORECASE)
     # Rimuove testo tra parentesi (es. (BACKUP), (HD), ecc.)
     temp_name = re.sub(r"\(.*?\)", "", temp_name)
     # Rimuove caratteri speciali
@@ -162,9 +179,20 @@ def main():
         channels = fetch_channels(url)
         all_links.extend(filter_italian_channels(channels, url))
 
-    organized_channels = {"IPTV gratuite": {"Intrattenimento": []}}
+    # Organizzazione dei canali in base a servizio e categoria
+    organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
     for name, url, base_url in all_links:
-        organized_channels["IPTV gratuite"]["Intrattenimento"].append((name, url, base_url))
+        service = "IPTV gratuite"
+        category = "Intrattenimento"
+        for key, words in SERVICE_KEYWORDS.items():
+            if any(word in name.lower() for word in words):
+                service = key
+                break
+        for key, words in CATEGORY_KEYWORDS.items():
+            if any(word in name.lower() for word in words):
+                category = key
+                break
+        organized_channels[service][category].append((name, url, base_url))
 
     save_m3u8(organized_channels, EPG_URLS, epg_data)
 
