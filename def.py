@@ -140,13 +140,12 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
     return best_match if best_score >= 80 else ""
 
 def get_logo_from_epg(tvg_id, epg_data):
-    """Cerca il logo nel file EPG usando il tvg-id."""
+    """Ottieni il logo dal file EPG in base al tvg-id."""
     for epg_root in epg_data:
         for channel in epg_root.findall("channel"):
             if channel.get("id") == tvg_id:
-                logo_url = channel.find("logo")
-                if logo_url is not None:
-                    return logo_url.text  # Restituisce l'URL del logo
+                logo_url = channel.find("icon").text if channel.find("icon") is not None else None
+                return logo_url
     return None
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
@@ -159,7 +158,7 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url, _ in channels:
+                for name, url, base_url in channels:  # Aspettandosi 3 valori
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
                     logo = get_logo_from_epg(tvg_id, epg_data)  # Prende il logo dal file EPG
                     logo_url = logo if logo else 'No logo'  # Se non c'è logo, usa 'No logo'
