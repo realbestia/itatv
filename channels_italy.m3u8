@@ -6,8 +6,8 @@ https://vavoo.to/play/78546677/index.m3u8
 #EXTINF:-1 tvg-id="Sky Sport Calcio.it" tvg-name="SKY SPORT CALCIO" group-title="Sport", SKY SPORT CALCIO
 https://vavoo.to/play/1665920101/index.m3u8
 
-#EXTINF:-1 tvg-id="Sky Sport 24" tvg-name="SKY SPORT 24" group-title="Sport", SKY SPORT 24
-https://vavoo.to/play/2775802255/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT 24 [LIVE DURING EVENTS ONLY]" group-title="Sport", SKY SPORT 24 [LIVE DURING EVENTS ONLY]
+https://vavoo.to/play/3445562519/index.m3u8
 
 #EXTINF:-1 tvg-id="SKY Sport F1" tvg-name="SKY SPORT F1" group-title="Sport", SKY SPORT F1
 https://vavoo.to/play/4246774056/index.m3u8
@@ -15,26 +15,29 @@ https://vavoo.to/play/4246774056/index.m3u8
 #EXTINF:-1 tvg-id="Sky Sport NBA" tvg-name="SKY SPORT NBA" group-title="Sport", SKY SPORT NBA
 https://vavoo.to/play/2711959620/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT 24 [LIVE DURING EVENTS ONLY]" group-title="Sport", SKY SPORT 24 [LIVE DURING EVENTS ONLY]
-https://vavoo.to/play/3445562519/index.m3u8
-
 #EXTINF:-1 tvg-id="Sky Sport Moto GP" tvg-name="SKY SPORT MOTO GP" group-title="Sport", SKY SPORT MOTO GP
 https://vavoo.to/play/3036316886/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Sport 24" tvg-name="SKY SPORT 24" group-title="Sport", SKY SPORT 24
+https://vavoo.to/play/2775802255/index.m3u8
 
 #EXTINF:-1 tvg-id="Sky Sport Golf" tvg-name="SKY SPORT GOLF" group-title="Sport", SKY SPORT GOLF
 https://vavoo.to/play/729945219/index.m3u8
 
-#EXTINF:-1 tvg-id="Sky Sport Uno" tvg-name="SKY SPORT UNO" group-title="Sport", SKY SPORT UNO
-https://vavoo.to/play/3192996672/index.m3u8
-
 #EXTINF:-1 tvg-id="Sky Sport.it" tvg-name="SKY SPORT" group-title="Sport", SKY SPORT
 https://vavoo.to/play/924661659/index.m3u8
 
-#EXTINF:-1 tvg-id="Sky Sport Arena" tvg-name="SKY SPORT ARENA" group-title="Sport", SKY SPORT ARENA
-https://vavoo.to/play/3007400791/index.m3u8
-
 #EXTINF:-1 tvg-id="Sky Sport Football HD" tvg-name="SKY SPORT FOOTBALL" group-title="Sport", SKY SPORT FOOTBALL
 https://vavoo.to/play/3093535330/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]" group-title="Sport", SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]
+https://vavoo.to/play/1989309231/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Sport Uno" tvg-name="SKY SPORT UNO" group-title="Sport", SKY SPORT UNO
+https://vavoo.to/play/210669162/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Sport Arena" tvg-name="SKY SPORT ARENA" group-title="Sport", SKY SPORT ARENA
+https://vavoo.to/play/3007400791/index.m3u8
 
 #EXTINF:-1 tvg-id="Sky Sport MotoGP" tvg-name="SKY SPORT MOTOGP" group-title="Sport", SKY SPORT MOTOGP
 https://vavoo.to/play/2090703806/index.m3u8
@@ -45,9 +48,6 @@ https://vavoo.to/play/2289038972/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SKY SPORT SERIE A" group-title="Sport", SKY SPORT SERIE A
 https://vavoo.to/play/2077387085/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]" group-title="Sport", SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]
-https://vavoo.to/play/1989309231/index.m3u8
-
 #EXTINF:-1 tvg-id="Sky Sport Max" tvg-name="SKY SPORT MAX" group-title="Sport", SKY SPORT MAX
 https://vavoo.to/play/2066326916/index.m3u8
 
@@ -57,11 +57,11 @@ https://vavoo.to/play/2872151911/index.m3u8
 #EXTINF:-1 tvg-id="Sky Cinema Action.it" tvg-name="SKY CINEMA ACTION" group-title="Film & Serie TV", SKY CINEMA ACTION
 https://vavoo.to/play/3812796171/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 4" group-title="Film & Serie TV", SKY PRIMAFILA 4
+https://vavoo.to/play/2416993844/index.m3u8
+
 #EXTINF:-1 tvg-id="Sky Cinema Comedy (Full HD)" tvg-name="SKY CINEMA COMEDY" group-title="Film & Serie TV", SKY CINEMA COMEDY
 https://vavoo.to/play/500203271/index.m3u8
-
-#EXTINF:-1 tvg-id="Sky Cinema Action.it" tvg-name="SKY CINEMA ACTION (BACKUP)" group-title="Film & Serie TV", SKY CINEMA ACTION (BACKUP)
-https://vavoo.to/play/2242741766/index.m3u8
 
 #EXTINF:-1 tvg-id="Sky Cinema Suspense.it" tvg-name="SKY CINEMA SUSPENSE" group-title="Film & Serie TV", SKY CINEMA SUSPENSE
 https://vavoo.to/play/1820997555/index.m3u8
@@ -69,17 +69,11 @@ https://vavoo.to/play/1820997555/index.m3u8
 #EXTINF:-1 tvg-id="SKY CINEMA FAMILY" tvg-name="SKY CINEMA FAMILY" group-title="Film & Serie TV", SKY CINEMA FAMILY
 https://vavoo.to/play/415795144/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 4" group-title="Film & Serie TV", SKY PRIMAFILA 4
-https://vavoo.to/play/2416993844/index.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 6" group-title="Film & Serie TV", SKY PRIMAFILA 6
 https://vavoo.to/play/3939513684/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 7" group-title="Film & Serie TV", SKY PRIMAFILA 7
 https://vavoo.to/play/3618643172/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 5" group-title="Film & Serie TV", SKY PRIMAFILA 5
-https://vavoo.to/play/2909818756/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 2" group-title="Film & Serie TV", SKY PRIMAFILA 2
 https://vavoo.to/play/525374356/index.m3u8
@@ -90,20 +84,17 @@ https://vavoo.to/play/1492183364/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 3" group-title="Film & Serie TV", SKY PRIMAFILA 3
 https://vavoo.to/play/573618724/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 8" group-title="Film & Serie TV", SKY PRIMAFILA 8
-https://vavoo.to/play/2130255339/index.m3u8
-
 #EXTINF:-1 tvg-id="Sky Cinema Drama.it" tvg-name="SKY CINEMA DRAMA" group-title="Film & Serie TV", SKY CINEMA DRAMA
 https://vavoo.to/play/1235530177/index.m3u8
 
-#EXTINF:-1 tvg-id="Sky Cinema Due.it" tvg-name="SKY CINEMA DUE" group-title="Film & Serie TV", SKY CINEMA DUE
-https://vavoo.to/play/1228534500/index.m3u8
-
-#EXTINF:-1 tvg-id="Sky Cinema Romance.it" tvg-name="SKY CINEMA ROMANCE" group-title="Film & Serie TV", SKY CINEMA ROMANCE
-https://vavoo.to/play/1281264885/index.m3u8
-
 #EXTINF:-1 tvg-id="Sky Cinema Collection HD" tvg-name="SKY CINEMA COLLECTION" group-title="Film & Serie TV", SKY CINEMA COLLECTION
 https://vavoo.to/play/3525837057/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 5" group-title="Film & Serie TV", SKY PRIMAFILA 5
+https://vavoo.to/play/2909818756/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 8" group-title="Film & Serie TV", SKY PRIMAFILA 8
+https://vavoo.to/play/2130255339/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 9" group-title="Film & Serie TV", SKY PRIMAFILA 9
 https://vavoo.to/play/1134113883/index.m3u8
@@ -111,11 +102,17 @@ https://vavoo.to/play/1134113883/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 10" group-title="Film & Serie TV", SKY PRIMAFILA 10
 https://vavoo.to/play/4272937805/index.m3u8
 
+#EXTINF:-1 tvg-id="Sky Cinema Romance.it" tvg-name="SKY CINEMA ROMANCE" group-title="Film & Serie TV", SKY CINEMA ROMANCE
+https://vavoo.to/play/2890008905/index.m3u8
+
 #EXTINF:-1 tvg-id="Sky Serie.it" tvg-name="SKY SERIE" group-title="Film & Serie TV", SKY SERIE
 https://vavoo.to/play/836680112/index.m3u8
 
-#EXTINF:-1 tvg-id="Sky Cinema Due +24.it" tvg-name="SKY CINEMA DUE +24" group-title="Film & Serie TV", SKY CINEMA DUE +24
-https://vavoo.to/play/1078650168/index.m3u8
+#EXTINF:-1 tvg-id="Sky Cinema Action.it" tvg-name="SKY CINEMA ACTION (BACKUP)" group-title="Film & Serie TV", SKY CINEMA ACTION (BACKUP)
+https://vavoo.to/play/2242741766/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Cinema Due.it" tvg-name="SKY CINEMA DUE" group-title="Film & Serie TV", SKY CINEMA DUE
+https://vavoo.to/play/1228534500/index.m3u8
 
 #EXTINF:-1 tvg-id="Sky Cinema Uno +24.it" tvg-name="SKY CINEMA UNO +24" group-title="Film & Serie TV", SKY CINEMA UNO +24
 https://vavoo.to/play/1699876530/index.m3u8
@@ -141,23 +138,26 @@ https://vavoo.to/play/911168573/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 18" group-title="Film & Serie TV", SKY PRIMAFILA 18
 https://vavoo.to/play/3470758028/index.m3u8
 
+#EXTINF:-1 tvg-id="Sky Cinema Due +24.it" tvg-name="SKY CINEMA DUE +24" group-title="Film & Serie TV", SKY CINEMA DUE +24
+https://vavoo.to/play/1078650168/index.m3u8
+
 #EXTINF:-1 tvg-id="SKY TG 24" tvg-name="SKY TG 24" group-title="News", SKY TG 24
 https://vavoo.to/play/3376031355/index.m3u8
 
 #EXTINF:-1 tvg-id="Sky Atlantic" tvg-name="SKY ATLANTIC" group-title="Intrattenimento", SKY ATLANTIC
 https://vavoo.to/play/1482866609/index.m3u8
 
-#EXTINF:-1 tvg-id="Sky Documentaries.it" tvg-name="SKY DOCUMENTARIES" group-title="Intrattenimento", SKY DOCUMENTARIES
-https://vavoo.to/play/464281981/index.m3u8
+#EXTINF:-1 tvg-id="Super Tennis SD" tvg-name="SKY SUPER TENNIS" group-title="Intrattenimento", SKY SUPER TENNIS
+https://vavoo.to/play/558282118/index.m3u8
 
 #EXTINF:-1 tvg-id="Sky Uno (DSL Lente)" tvg-name="SKY UNO" group-title="Intrattenimento", SKY UNO
 https://vavoo.to/play/2130523218/index.m3u8
 
-#EXTINF:-1 tvg-id="Super Tennis SD" tvg-name="SKY SUPER TENNIS" group-title="Intrattenimento", SKY SUPER TENNIS
-https://vavoo.to/play/558282118/index.m3u8
+#EXTINF:-1 tvg-id="Sky Documentaries.it" tvg-name="SKY DOCUMENTARIES" group-title="Intrattenimento", SKY DOCUMENTARIES
+https://vavoo.to/play/464281981/index.m3u8
 
 #EXTINF:-1 tvg-id="SKY ARTE" tvg-name="SKY ARTE" group-title="Documentari", SKY ARTE
-https://vavoo.to/play/1806815496/index.m3u8
+https://vavoo.to/play/1902695925/index.m3u8
 
 #EXTINF:-1 tvg-id="Sky Nature.it" tvg-name="SKY NATURE" group-title="Documentari", SKY NATURE
 https://vavoo.to/play/3810188456/index.m3u8
@@ -172,10 +172,10 @@ https://vavoo.to/play/843891896/index.m3u8
 https://vavoo.to/play/551730224/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai Movie" tvg-name="RAI MOVIE" group-title="Film & Serie TV", RAI MOVIE
-https://vavoo.to/play/2835672487/index.m3u8
+https://vavoo.to/play/1925964148/index.m3u8
 
 #EXTINF:-1 tvg-id="RAI NEWS 24" tvg-name="RAI NEWS 24" group-title="News", RAI NEWS 24
-https://vavoo.to/play/2239645272/index.m3u8
+https://vavoo.to/play/2272923972/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai 1" tvg-name="RAI 1" group-title="Intrattenimento", RAI 1
 https://vavoo.to/play/1225653759/index.m3u8
@@ -184,7 +184,7 @@ https://vavoo.to/play/1225653759/index.m3u8
 https://vavoo.to/play/1768670187/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai 3" tvg-name="RAI 3" group-title="Intrattenimento", RAI 3
-https://vavoo.to/play/869117599/index.m3u8
+https://vavoo.to/play/1324733956/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai 2" tvg-name="RAI 2" group-title="Intrattenimento", RAI 2
 https://vavoo.to/play/246253359/index.m3u8
@@ -195,26 +195,32 @@ https://vavoo.to/play/2861734300/index.m3u8
 #EXTINF:-1 tvg-id="FOCUS" tvg-name="FOCUS" group-title="Intrattenimento", FOCUS
 https://vavoo.to/play/2982550433/index.m3u8
 
-#EXTINF:-1 tvg-id="Mediaset 20" tvg-name="MEDIASET 20" group-title="Intrattenimento", MEDIASET 20
-https://vavoo.to/play/3134481201/index.m3u8
-
-#EXTINF:-1 tvg-id="Mediaset Extra" tvg-name="MEDIASET EXTRA" group-title="Intrattenimento", MEDIASET EXTRA
-https://vavoo.to/play/477466531/index.m3u8
+#EXTINF:-1 tvg-id="Rai 4" tvg-name="RAI 4" group-title="Intrattenimento", RAI 4
+https://vavoo.to/play/2179822223/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai 4K.it" tvg-name="RAI 4K" group-title="Intrattenimento", RAI 4K
 https://vavoo.to/play/2049087681/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="MEDIASET 1" group-title="Intrattenimento", MEDIASET 1
-https://vavoo.to/play/633342961/index.m3u8
+#EXTINF:-1 tvg-id="Mediaset 20" tvg-name="20 MEDIASET" group-title="Intrattenimento", 20 MEDIASET
+https://vavoo.to/play/1230338185/index.m3u8
+
+#EXTINF:-1 tvg-id="Mediaset 20" tvg-name="MEDIASET 20" group-title="Intrattenimento", MEDIASET 20
+https://vavoo.to/play/3134481201/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET IRIS" group-title="Intrattenimento", MEDIASET IRIS
+https://vavoo.to/play/23919988/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai 5" tvg-name="RAI 5" group-title="Intrattenimento", RAI 5
 https://vavoo.to/play/3249873828/index.m3u8
 
-#EXTINF:-1 tvg-id="Rai 4" tvg-name="RAI 4" group-title="Intrattenimento", RAI 4
-https://vavoo.to/play/2179822223/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 1" group-title="Intrattenimento", MEDIASET INFINITY+ 1
+https://vavoo.to/play/3599959739/index.m3u8
 
-#EXTINF:-1 tvg-id="Mediaset 20" tvg-name="20 MEDIASET" group-title="Intrattenimento", 20 MEDIASET
-https://vavoo.to/play/1230338185/index.m3u8
+#EXTINF:-1 tvg-id="Mediaset Extra" tvg-name="MEDIASET EXTRA" group-title="Intrattenimento", MEDIASET EXTRA
+https://vavoo.to/play/477466531/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET 1" group-title="Intrattenimento", MEDIASET 1
+https://vavoo.to/play/633342961/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RAI ITALIA" group-title="Intrattenimento", RAI ITALIA
 https://vavoo.to/play/374675593/index.m3u8
@@ -224,9 +230,6 @@ https://vavoo.to/play/1901652742/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai Storia" tvg-name="RAI STORIA" group-title="Intrattenimento", RAI STORIA
 https://vavoo.to/play/57338653/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="MEDIASET IRIS" group-title="Intrattenimento", MEDIASET IRIS
-https://vavoo.to/play/23919988/index.m3u8
 
 #EXTINF:-1 tvg-id="Rai Scuola" tvg-name="RAI SCUOLA" group-title="Intrattenimento", RAI SCUOLA
 https://vavoo.to/play/1886684667/index.m3u8
@@ -243,9 +246,6 @@ https://vavoo.to/play/1989562337/index.m3u8
 #EXTINF:-1 tvg-id="Mediaset ITALIA 2" tvg-name="MEDIASET ITALIA 2" group-title="Intrattenimento", MEDIASET ITALIA 2
 https://vavoo.to/play/3538009430/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 1" group-title="Intrattenimento", MEDIASET INFINITY+ 1
-https://vavoo.to/play/3599959739/index.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 2" group-title="Intrattenimento", MEDIASET INFINITY+ 2
 https://vavoo.to/play/2436070507/index.m3u8
 
@@ -261,11 +261,11 @@ https://vavoo.to/play/3022771961/index.m3u8
 #EXTINF:-1 tvg-id="DAZN 1.it" tvg-name="DAZN 1" group-title="Sport", DAZN 1
 https://vavoo.to/play/1376440573/index.m3u8
 
-#EXTINF:-1 tvg-id="EUROSPORT 1" tvg-name="EUROSPORT 1" group-title="Sport", EUROSPORT 1
-https://vavoo.to/play/3481346857/index.m3u8
-
 #EXTINF:-1 tvg-id="DAZN 2.it" tvg-name="DAZN 2" group-title="Sport", DAZN 2
 https://vavoo.to/play/363506221/index.m3u8
+
+#EXTINF:-1 tvg-id="EUROSPORT 1" tvg-name="EUROSPORT 1" group-title="Sport", EUROSPORT 1
+https://vavoo.to/play/3481346857/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="ZONA DAZN" group-title="Sport", ZONA DAZN
 https://vavoo.to/play/2911178456/index.m3u8
@@ -327,14 +327,23 @@ https://vavoo.to/play/2802329064/index.m3u8
 #EXTINF:-1 tvg-id="Euronews" tvg-name="EURONEWS" group-title="News", EURONEWS
 https://vavoo.to/play/490955579/index.m3u8
 
-#EXTINF:-1 tvg-id="Canale 5" tvg-name="CANALE 5" group-title="Intrattenimento", CANALE 5
-https://vavoo.to/play/1101559666/index.m3u8
-
 #EXTINF:-1 tvg-id="Rete 4" tvg-name="RETE 4" group-title="Intrattenimento", RETE 4
 https://vavoo.to/play/2235732004/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="KISS KISS ITALIA" group-title="Intrattenimento", KISS KISS ITALIA
+https://vavoo.to/play/1370869299/index.m3u8
+
+#EXTINF:-1 tvg-id="Canale 5" tvg-name="CANALE 5" group-title="Intrattenimento", CANALE 5
+https://vavoo.to/play/1101559666/index.m3u8
+
 #EXTINF:-1 tvg-id="La 5" tvg-name="LA 5" group-title="Intrattenimento", LA 5
-https://vavoo.to/play/84139639/index.m3u8
+https://vavoo.to/play/1425667375/index.m3u8
+
+#EXTINF:-1 tvg-id="Italia 1" tvg-name="ITALIA 1" group-title="Intrattenimento", ITALIA 1
+https://vavoo.to/play/663536394/index.m3u8
+
+#EXTINF:-1 tvg-id="Cielo" tvg-name="CIELO" group-title="Intrattenimento", CIELO
+https://vavoo.to/play/3743894403/index.m3u8
 
 #EXTINF:-1 tvg-id="GIALLO" tvg-name="GIALLO" group-title="Intrattenimento", GIALLO
 https://vavoo.to/play/4060499455/index.m3u8
@@ -348,8 +357,8 @@ https://vavoo.to/play/2290395046/index.m3u8
 #EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX" group-title="Intrattenimento", DMAX
 https://vavoo.to/play/3008151733/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="KISS KISS ITALIA" group-title="Intrattenimento", KISS KISS ITALIA
-https://vavoo.to/play/1370869299/index.m3u8
+#EXTINF:-1 tvg-id="RSI LA 2" tvg-name="RSI LA 2" group-title="Intrattenimento", RSI LA 2
+https://vavoo.to/play/3590183307/index.m3u8
 
 #EXTINF:-1 tvg-id="Top Crime" tvg-name="TOP CRIME" group-title="Intrattenimento", TOP CRIME
 https://vavoo.to/play/269503091/index.m3u8
@@ -366,38 +375,20 @@ https://vavoo.to/play/477083716/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="LA C TV" group-title="Intrattenimento", LA C TV
 https://vavoo.to/play/660106690/index.m3u8
 
-#EXTINF:-1 tvg-id="Cielo" tvg-name="CIELO" group-title="Intrattenimento", CIELO
-https://vavoo.to/play/2719953688/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ITALIA 3" group-title="Intrattenimento", ITALIA 3
+https://vavoo.to/play/1565298794/index.m3u8
 
-#EXTINF:-1 tvg-id="RSI LA 2" tvg-name="RSI LA 2" group-title="Intrattenimento", RSI LA 2
-https://vavoo.to/play/3475299702/index.m3u8
-
-#EXTINF:-1 tvg-id="San Marino RTV.it" tvg-name="RTV SAN MARINO" group-title="Intrattenimento", RTV SAN MARINO
-https://vavoo.to/play/2343767125/index.m3u8
+#EXTINF:-1 tvg-id="SUPER TENNIS" tvg-name="SUPER TENNIS" group-title="Intrattenimento", SUPER TENNIS
+https://vavoo.to/play/3213195143/index.m3u8
 
 #EXTINF:-1 tvg-id="RTL 102.5" tvg-name="RTL 102.5" group-title="Intrattenimento", RTL 102.5
 https://vavoo.to/play/1729811452/index.m3u8
 
-#EXTINF:-1 tvg-id="classica" tvg-name="CLASSICA" group-title="Intrattenimento", CLASSICA
-https://vavoo.to/play/64060922/index.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="ANTENNA SUD" group-title="Intrattenimento", ANTENNA SUD
 https://vavoo.to/play/4084059868/index.m3u8
 
-#EXTINF:-1 tvg-id="PESCA" tvg-name="PESCA" group-title="Intrattenimento", PESCA
-https://vavoo.to/play/714472867/index.m3u8
-
-#EXTINF:-1 tvg-id="Comedy Central" tvg-name="COMEDY CENTRAL" group-title="Intrattenimento", COMEDY CENTRAL
-https://vavoo.to/play/3658277450/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="UMBRIA TV" group-title="Intrattenimento", UMBRIA TV
-https://vavoo.to/play/2230919796/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="RETE TV ITALIA" group-title="Intrattenimento", RETE TV ITALIA
-https://vavoo.to/play/4131055018/index.m3u8
-
-#EXTINF:-1 tvg-id="Italia 1" tvg-name="ITALIA 1" group-title="Intrattenimento", ITALIA 1
-https://vavoo.to/play/663536394/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TV QUI" group-title="Intrattenimento", TV QUI
+https://vavoo.to/play/2202937518/index.m3u8
 
 #EXTINF:-1 tvg-id="Cine 34" tvg-name="CINE 34" group-title="Intrattenimento", CINE 34
 https://vavoo.to/play/62558606/index.m3u8
@@ -411,9 +402,6 @@ https://vavoo.to/play/2251241999/index.m3u8
 #EXTINF:-1 tvg-id="LA 7" tvg-name="LA 7" group-title="Intrattenimento", LA 7
 https://vavoo.to/play/2143522071/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="ITALIA 3" group-title="Intrattenimento", ITALIA 3
-https://vavoo.to/play/1565298794/index.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="TENNIS CHANNEL" group-title="Intrattenimento", TENNIS CHANNEL
 https://vavoo.to/play/2716316208/index.m3u8
 
@@ -426,11 +414,11 @@ https://vavoo.to/play/11090349/index.m3u8
 #EXTINF:-1 tvg-id="Iris" tvg-name="IRIS" group-title="Intrattenimento", IRIS
 https://vavoo.to/play/576490047/index.m3u8
 
-#EXTINF:-1 tvg-id="SUPER TENNIS" tvg-name="SUPER TENNIS" group-title="Intrattenimento", SUPER TENNIS
-https://vavoo.to/play/3009377513/index.m3u8
-
 #EXTINF:-1 tvg-id="CACCIA" tvg-name="CACCIA" group-title="Intrattenimento", CACCIA
 https://vavoo.to/play/1692155417/index.m3u8
+
+#EXTINF:-1 tvg-id="San Marino RTV.it" tvg-name="RTV SAN MARINO" group-title="Intrattenimento", RTV SAN MARINO
+https://vavoo.to/play/2343767125/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="27 TWENTY SEVEN" group-title="Intrattenimento", 27 TWENTY SEVEN
 https://vavoo.to/play/608774683/index.m3u8
@@ -470,6 +458,9 @@ https://vavoo.to/play/80896559/index.m3u8
 
 #EXTINF:-1 tvg-id="TV 8" tvg-name="TV 8" group-title="Intrattenimento", TV 8
 https://vavoo.to/play/4038365720/index.m3u8
+
+#EXTINF:-1 tvg-id="classica" tvg-name="CLASSICA" group-title="Intrattenimento", CLASSICA
+https://vavoo.to/play/64060922/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="CANALE 7" group-title="Intrattenimento", CANALE 7
 https://vavoo.to/play/996680722/index.m3u8
@@ -522,6 +513,9 @@ https://vavoo.to/play/3075118500/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="RTC TELECALABRIA" group-title="Intrattenimento", RTC TELECALABRIA
 https://vavoo.to/play/639406775/index.m3u8
 
+#EXTINF:-1 tvg-id="PESCA" tvg-name="PESCA" group-title="Intrattenimento", PESCA
+https://vavoo.to/play/714472867/index.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="TRENTINO TV" group-title="Intrattenimento", TRENTINO TV
 https://vavoo.to/play/2764553737/index.m3u8
 
@@ -543,17 +537,20 @@ https://vavoo.to/play/2774026655/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="CANALE 21 EXTRA" group-title="Intrattenimento", CANALE 21 EXTRA
 https://vavoo.to/play/2454558136/index.m3u8
 
+#EXTINF:-1 tvg-id="Comedy Central" tvg-name="COMEDY CENTRAL" group-title="Intrattenimento", COMEDY CENTRAL
+https://vavoo.to/play/3658277450/index.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="ANTENNA 2" group-title="Intrattenimento", ANTENNA 2
 https://vavoo.to/play/3014001260/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="TELE VENEZIA" group-title="Intrattenimento", TELE VENEZIA
 https://vavoo.to/play/109522219/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="PRIMA TV" group-title="Intrattenimento", PRIMA TV
-https://vavoo.to/play/91764224/index.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="CANALE 2" group-title="Intrattenimento", CANALE 2
 https://vavoo.to/play/3914444703/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMA TV" group-title="Intrattenimento", PRIMA TV
+https://vavoo.to/play/91764224/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="ANIMAL PLANET" group-title="Intrattenimento", ANIMAL PLANET
 https://vavoo.to/play/1908877526/index.m3u8
@@ -627,6 +624,9 @@ https://vavoo.to/play/3255207570/index.m3u8
 #EXTINF:-1 tvg-id="Top Calcio 24" tvg-name="TOP CALCIO 24" group-title="Intrattenimento", TOP CALCIO 24
 https://vavoo.to/play/3835549326/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="UMBRIA TV" group-title="Intrattenimento", UMBRIA TV
+https://vavoo.to/play/2230919796/index.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="BELLLA & MONELLA TV" group-title="Intrattenimento", BELLLA & MONELLA TV
 https://vavoo.to/play/161144675/index.m3u8
 
@@ -675,6 +675,9 @@ https://vavoo.to/play/2814318198/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="VCO AZZURRA TV" group-title="Intrattenimento", VCO AZZURRA TV
 https://vavoo.to/play/2070070755/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="VIDEOTOLENTINO" group-title="Intrattenimento", VIDEOTOLENTINO
+https://vavoo.to/play/2015312510/index.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="TELECITTA" group-title="Intrattenimento", TELECITTA
 https://vavoo.to/play/2676235978/index.m3u8
 
@@ -692,9 +695,6 @@ https://vavoo.to/play/4137427510/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="TELECOLOR" group-title="Intrattenimento", TELECOLOR
 https://vavoo.to/play/1133239022/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="VIDEOTOLENTINO" group-title="Intrattenimento", VIDEOTOLENTINO
-https://vavoo.to/play/2015312510/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="VIDEO NOVARA" group-title="Intrattenimento", VIDEO NOVARA
 https://vavoo.to/play/2791781421/index.m3u8
@@ -719,6 +719,9 @@ https://vavoo.to/play/1792428355/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="VIDEOSTAR TV" group-title="Intrattenimento", VIDEOSTAR TV
 https://vavoo.to/play/2499488584/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RETE TV ITALIA" group-title="Intrattenimento", RETE TV ITALIA
+https://vavoo.to/play/4131055018/index.m3u8
 
 #EXTINF:-1 tvg-id="QVC" tvg-name="QVC" group-title="Intrattenimento", QVC
 https://vavoo.to/play/2952884641/index.m3u8
@@ -798,6 +801,9 @@ https://vavoo.to/play/3134124967/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="GLOBUS TELEVISION" group-title="Intrattenimento", GLOBUS TELEVISION
 https://vavoo.to/play/2116902817/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="MARIA+VISION ITALIA" group-title="Intrattenimento", MARIA+VISION ITALIA
+https://vavoo.to/play/3648324945/index.m3u8
+
 #EXTINF:-1 tvg-id="Rds Social Tv.it" tvg-name="RDS SOCIAL TV" group-title="Intrattenimento", RDS SOCIAL TV
 https://vavoo.to/play/3656080408/index.m3u8
 
@@ -806,9 +812,6 @@ https://vavoo.to/play/11653719/index.m3u8
 
 #EXTINF:-1 tvg-id="TRM h24.it" tvg-name="TRM H24" group-title="Intrattenimento", TRM H24
 https://vavoo.to/play/2310699492/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="MARIA+VISION ITALIA" group-title="Intrattenimento", MARIA+VISION ITALIA
-https://vavoo.to/play/3648324945/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RAKUTEN DRAMA" group-title="Intrattenimento", RAKUTEN DRAMA
 https://vavoo.to/play/2098624390/index.m3u8
@@ -894,9 +897,6 @@ https://vavoo.to/play/3845119578/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="UNINETTUNO" group-title="Intrattenimento", UNINETTUNO
 https://vavoo.to/play/797328723/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="TV QUI" group-title="Intrattenimento", TV QUI
-https://vavoo.to/play/2202937518/index.m3u8
-
 #EXTINF:-1 tvg-id="Nick Jr" tvg-name="NICK JR" group-title="Bambini", NICK JR
 https://vavoo.to/play/380958472/index.m3u8
 
@@ -915,11 +915,11 @@ https://vavoo.to/play/1907000512/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="BABY TV" group-title="Bambini", BABY TV
 https://vavoo.to/play/2265727942/index.m3u8
 
+#EXTINF:-1 tvg-id="Discovery Nove HD" tvg-name="DISCOVERY NOVE" group-title="Documentari", DISCOVERY NOVE
+https://vavoo.to/play/2651461317/index.m3u8
+
 #EXTINF:-1 tvg-id="Discovery Channel" tvg-name="DISCOVERY CHANNEL" group-title="Documentari", DISCOVERY CHANNEL
 https://vavoo.to/play/1955739367/index.m3u8
-
-#EXTINF:-1 tvg-id="Discovery Nove HD" tvg-name="DISCOVERY NOVE" group-title="Documentari", DISCOVERY NOVE
-https://vavoo.to/play/1574591400/index.m3u8
 
 #EXTINF:-1 tvg-id="History" tvg-name="HISTORY" group-title="Documentari", HISTORY
 https://vavoo.to/play/317837654/index.m3u8
