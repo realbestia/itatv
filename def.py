@@ -59,7 +59,7 @@ def filter_italian_channels(channels, base_url):
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
-            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url, ch.get('id', ''), ch.get('logo', '')))
+            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     
     return results
 
@@ -139,6 +139,16 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
 
     return best_match if best_score >= 80 else ""
 
+def get_logo_from_epg(tvg_id, epg_data):
+    """Cerca il logo nel file EPG usando il tvg-id."""
+    for epg_root in epg_data:
+        for channel in epg_root.findall("channel"):
+            if channel.get("id") == tvg_id:
+                logo_url = channel.find("logo")
+                if logo_url is not None:
+                    return logo_url.text  # Restituisce l'URL del logo
+    return None
+
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali in un file M3U8 con link EPG e tvg-id."""
     if os.path.exists(OUTPUT_FILE):
@@ -149,9 +159,10 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url, channel_id, logo in channels:
+                for name, url, base_url, _ in channels:
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    logo_url = logo if logo else 'No logo'
+                    logo = get_logo_from_epg(tvg_id, epg_data)  # Prende il logo dal file EPG
+                    logo_url = logo if logo else 'No logo'  # Se non c'è logo, usa 'No logo'
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{base_url.upper()}/2.6" http-referrer="{base_url}", logo="{logo_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
@@ -167,9 +178,9 @@ def main():
         all_links.extend(italian_channels)
 
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
-    for name, url, base_url, channel_id, logo in all_links:
+    for name, url, base_url in all_links:
         service, category = classify_channel(name)
-        organized_channels[service][category].append((name, url, base_url, channel_id, logo))
+        organized_channels[service][category].append((name, url, base_url))
 
     save_m3u8(organized_channels, EPG_URLS, epg_data)
 
