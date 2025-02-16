@@ -9,14 +9,14 @@ import time
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
 
-# Siti da cui scaricare i canali IPTV
+# URL sorgenti IPTV
 BASE_URLS = [
     "https://vavoo.to",
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
 
-# URL dei file EPG (XML normali e compressi)
+# URL degli EPG
 EPG_URLS = [
     "https://www.epgitalia.tv/gzip",
     "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
@@ -24,30 +24,34 @@ EPG_URLS = [
     "https://www.open-epg.com/files/italy2.xml"
 ]
 
-# Mappatura servizi
-SERVICE_KEYWORDS = {
-    "Sky": ["sky", "fox", "hbo"],
-    "DTT": ["rai", "mediaset", "focus", "boing"],
-    "IPTV gratuite": ["radio", "local", "regional", "free"]
-}
-
-# Mappatura categorie tematiche
-CATEGORY_KEYWORDS = {
-    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
-    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
-    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
-    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
-    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
-    "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
-    "Musica": ["mtv", "vh1", "radio", "music"]
+# Mappa numeri → parole
+NUMBER_WORDS = {
+    "1": "uno", "2": "due", "3": "tre", "4": "quattro",
+    "5": "cinque", "6": "sei", "7": "sette", "8": "otto", "9": "nove",
+    "10": "dieci", "11": "undici", "12": "dodici", "13": "tredici", "14": "quattordici",
+    "15": "quindici", "16": "sedici", "17": "diciassette", "18": "diciotto", "19": "diciannove",
+    "20": "venti"
 }
 
 def clean_channel_name(name):
-    """Pulisce il nome del canale rimuovendo caratteri indesiderati."""
+    """Pulisce il nome rimuovendo caratteri inutili per l'M3U8"""
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
 
+def normalize_for_matching(name):
+    """Normalizza il nome solo per il confronto (rimuove .it e converte numeri in lettere)"""
+    temp_name = re.sub(r"\.it\b", "", name, flags=re.IGNORECASE)  # Rimuove .it solo per il matching
+    temp_name = re.sub(r"[^\w\s]", "", temp_name).strip().lower()  # Rimuove caratteri speciali
+
+    number_match = re.search(r"\b\d+\b", temp_name)
+    number = number_match.group() if number_match else None
+
+    if number and number in NUMBER_WORDS:
+        temp_name = temp_name.replace(number, NUMBER_WORDS[number])
+
+    return temp_name, number  # Restituisce il nome normalizzato e il numero trovato
+
 def fetch_channels(base_url, retries=3):
-    """Scarica i dati JSON da /channels di un sito IPTV con retry e backoff esponenziale."""
+    """Scarica i canali IPTV con gestione errori"""
     for attempt in range(retries):
         try:
             response = requests.get(f"{base_url}/channels", timeout=10)
@@ -55,11 +59,11 @@ def fetch_channels(base_url, retries=3):
             return response.json()
         except requests.RequestException as e:
             print(f"Errore durante il download da {base_url} (tentativo {attempt+1}): {e}")
-            time.sleep(2 ** attempt)  # Backoff esponenziale
+            time.sleep(2 ** attempt)  
     return []
 
 def filter_italian_channels(channels, base_url):
-    """Filtra i canali con country Italy e rimuove duplicati."""
+    """Filtra i canali italiani e rimuove duplicati"""
     results = {}
     
     for ch in channels:
@@ -70,43 +74,21 @@ def filter_italian_channels(channels, base_url):
     
     return list(results.values())
 
-def classify_channel(name):
-    """Classifica il canale per servizio e categoria tematica."""
-    service = "IPTV gratuite"
-    category = "Intrattenimento"
-
-    for key, words in SERVICE_KEYWORDS.items():
-        if any(word in name.lower() for word in words):
-            service = key
-            break
-
-    for key, words in CATEGORY_KEYWORDS.items():
-        if any(word in name.lower() for word in words):
-            category = key
-            break
-
-    return service, category
-
-def extract_user_agent(base_url):
-    """Estrae il nome del sito senza estensione e lo converte in maiuscolo per l'user agent."""
-    match = re.search(r"https?://([^/.]+)", base_url)
-    return match.group(1).upper() if match else "DEFAULT"
-
 def download_epg(epg_url):
-    """Scarica e decomprime un file EPG XML o compresso (GZIP/XZ) con retry."""
+    """Scarica e decomprime un file EPG XML (anche GZIP/XZ)"""
     try:
         response = requests.get(epg_url, timeout=10)
         response.raise_for_status()
         
         file_signature = response.content[:2]
 
-        if file_signature.startswith(b'\x1f\x8b'):  # GZIP
+        if file_signature.startswith(b'\x1f\x8b'):  
             with gzip.GzipFile(fileobj=io.BytesIO(response.content)) as gz_file:
                 xml_content = gz_file.read()
-        elif file_signature.startswith(b'\xfd7z'):  # XZ
+        elif file_signature.startswith(b'\xfd7z'):  
             with lzma.LZMAFile(fileobj=io.BytesIO(response.content)) as xz_file:
                 xml_content = xz_file.read()
-        else:  # XML normale
+        else:  
             xml_content = response.content
 
         return ET.ElementTree(ET.fromstring(xml_content)).getroot()
@@ -116,9 +98,11 @@ def download_epg(epg_url):
         return None
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
-    """Cerca il tvg-id nel file EPG usando fuzzy matching più preciso."""
+    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8"""
     best_match = None
     best_score = 0
+
+    normalized_tvg_name, tvg_number = normalize_for_matching(tvg_name)
 
     for epg_root in epg_data:
         for channel in epg_root.findall("channel"):
@@ -126,10 +110,17 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             if not epg_channel_name:
                 continue  
 
-            cleaned_tvg_name = re.sub(r"\s+", " ", tvg_name.strip().lower())
-            cleaned_epg_name = re.sub(r"\s+", " ", epg_channel_name.strip().lower())
+            normalized_epg_name, epg_number = normalize_for_matching(epg_channel_name)
 
-            similarity = fuzz.token_sort_ratio(cleaned_tvg_name, cleaned_epg_name)
+            # Se uno ha un numero e l'altro no, scarta il match
+            if (tvg_number and not epg_number) or (epg_number and not tvg_number):
+                continue  
+            
+            # Se entrambi hanno un numero, devono essere uguali
+            if tvg_number and epg_number and tvg_number != epg_number:
+                continue  
+
+            similarity = fuzz.token_sort_ratio(normalized_tvg_name, normalized_epg_name)
 
             if similarity > best_score:
                 best_score = similarity
@@ -138,10 +129,10 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             if best_score >= 95:
                 return best_match
 
-    return best_match if best_score >= 95 else ""
+    return best_match if best_score >= 90 else ""
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
-    """Salva i canali in un file M3U8 con link EPG e tvg-id."""
+    """Salva i canali IPTV in un file M3U8 con metadati EPG"""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
@@ -150,9 +141,9 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url, user_agent in channels:
+                for name, url, base_url in channels:
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
@@ -165,10 +156,9 @@ def main():
         channels = fetch_channels(url)
         all_links.extend(filter_italian_channels(channels, url))
 
-    organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
+    organized_channels = {"IPTV gratuite": {"Intrattenimento": []}}
     for name, url, base_url in all_links:
-        service, category = classify_channel(name)
-        organized_channels[service][category].append((name, url, base_url, extract_user_agent(base_url)))
+        organized_channels["IPTV gratuite"]["Intrattenimento"].append((name, url, base_url))
 
     save_m3u8(organized_channels, EPG_URLS, epg_data)
 
