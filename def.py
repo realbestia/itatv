@@ -5,6 +5,7 @@ import os
 import gzip
 import lzma
 import io
+import time
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
 
@@ -45,26 +46,29 @@ def clean_channel_name(name):
     """Pulisce il nome del canale rimuovendo caratteri indesiderati."""
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
 
-def fetch_channels(base_url):
-    """Scarica i dati JSON da /channels di un sito IPTV."""
-    try:
-        response = requests.get(f"{base_url}/channels", timeout=10)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        print(f"Errore durante il download da {base_url}: {e}")
-        return []
+def fetch_channels(base_url, retries=3):
+    """Scarica i dati JSON da /channels di un sito IPTV con retry e backoff esponenziale."""
+    for attempt in range(retries):
+        try:
+            response = requests.get(f"{base_url}/channels", timeout=10)
+            response.raise_for_status()
+            return response.json()
+        except requests.RequestException as e:
+            print(f"Errore durante il download da {base_url} (tentativo {attempt+1}): {e}")
+            time.sleep(2 ** attempt)  # Backoff esponenziale
+    return []
 
 def filter_italian_channels(channels, base_url):
-    """Filtra i canali con country Italy e genera il link m3u8 con il nome del canale."""
-    results = []
+    """Filtra i canali con country Italy e rimuove duplicati."""
+    results = {}
     
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
-            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
+            if clean_name not in results:
+                results[clean_name] = (clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url)
     
-    return results
+    return list(results.values())
 
 def classify_channel(name):
     """Classifica il canale per servizio e categoria tematica."""
@@ -89,12 +93,11 @@ def extract_user_agent(base_url):
     return match.group(1).upper() if match else "DEFAULT"
 
 def download_epg(epg_url):
-    """Scarica e decomprime un file EPG XML o compresso (GZIP/XZ)."""
+    """Scarica e decomprime un file EPG XML o compresso (GZIP/XZ) con retry."""
     try:
         response = requests.get(epg_url, timeout=10)
         response.raise_for_status()
         
-        # Legge i primi 2 byte per identificare il formato
         file_signature = response.content[:2]
 
         if file_signature.startswith(b'\x1f\x8b'):  # GZIP
@@ -106,41 +109,36 @@ def download_epg(epg_url):
         else:  # XML normale
             xml_content = response.content
 
-        tree = ET.ElementTree(ET.fromstring(xml_content))
-        return tree.getroot()
+        return ET.ElementTree(ET.fromstring(xml_content)).getroot()
 
-    except requests.RequestException as e:
-        print(f"Ã¢ÂÂ Errore durante il download dell'EPG da {epg_url}: {e}")
-        return None
-    except (gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
-        print(f"Ã¢ÂÂ Errore nella decompressione/parsing dell'EPG da {epg_url}: {e}")
+    except (requests.RequestException, gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
+        print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
-    """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
+    """Cerca il tvg-id nel file EPG usando fuzzy matching più preciso."""
     best_match = None
     best_score = 0
 
     for epg_root in epg_data:
         for channel in epg_root.findall("channel"):
             epg_channel_name = channel.find("display-name").text
-
             if not epg_channel_name:
                 continue  
 
             cleaned_tvg_name = re.sub(r"\s+", " ", tvg_name.strip().lower())
             cleaned_epg_name = re.sub(r"\s+", " ", epg_channel_name.strip().lower())
 
-            similarity = fuzz.ratio(cleaned_tvg_name, cleaned_epg_name)
+            similarity = fuzz.token_sort_ratio(cleaned_tvg_name, cleaned_epg_name)
 
             if similarity > best_score:
                 best_score = similarity
                 best_match = channel.get("id")
 
-            if best_score >= 99:
+            if best_score >= 90:
                 return best_match
 
-    return best_match if best_score >= 80 else ""
+    return best_match if best_score >= 90 else ""
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali in un file M3U8 con link EPG e tvg-id."""
@@ -160,13 +158,12 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
     print(f"File {OUTPUT_FILE} creato con successo!")
 
 def main():
-    all_links = []
-    epg_data = [download_epg(epg_url) for epg_url in EPG_URLS if download_epg(epg_url)]
+    epg_data = [download_epg(url) for url in EPG_URLS if (data := download_epg(url))]
 
+    all_links = []
     for url in BASE_URLS:
         channels = fetch_channels(url)
-        italian_channels = filter_italian_channels(channels, url)
-        all_links.extend(italian_channels)
+        all_links.extend(filter_italian_channels(channels, url))
 
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
     for name, url, base_url in all_links:
