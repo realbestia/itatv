@@ -55,7 +55,7 @@ def filter_italian_channels(channels, base_url):
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])  # Rimuove caratteri indesiderati
-            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
+            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url, ch.get('id', ''), ch.get('logo', '')))
     
     return results
 
@@ -87,10 +87,10 @@ def organize_channels(channels):
     """Organizza i canali per servizio e categoria."""
     organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
 
-    for name, url, base_url in channels:
+    for name, url, base_url, channel_id, logo in channels:
         service, category = classify_channel(name)
         user_agent = extract_user_agent(base_url)
-        organized_data[service][category].append((name, url, base_url, user_agent))
+        organized_data[service][category].append((name, url, base_url, user_agent, channel_id, logo))
 
     return organized_data
 
@@ -104,9 +104,10 @@ def save_m3u8(organized_channels, epg_data):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url, user_agent in channels:
+                for name, url, base_url, user_agent, channel_id, logo in channels:
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
+                    logo_url = logo if logo else 'No logo'
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}" logo="{logo_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
