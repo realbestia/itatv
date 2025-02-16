@@ -135,10 +135,10 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
                 best_score = similarity
                 best_match = channel.get("id")
 
-            if best_score >= 90:
+            if best_score >= 95:
                 return best_match
 
-    return best_match if best_score >= 90 else ""
+    return best_match if best_score >= 95 else ""
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali in un file M3U8 con link EPG e tvg-id."""
