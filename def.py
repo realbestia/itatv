@@ -117,7 +117,6 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
     """Cerca il tvg-id nel file EPG usando una corrispondenza fuzzy con tvg-name."""
     best_match = None
     best_score = 0
-    tvg_logo = ""  # Variabile per il logo
 
     for epg_root in epg_data:
         for channel in epg_root.findall("channel"):
@@ -134,20 +133,24 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             if similarity > best_score:
                 best_score = similarity
                 best_match = channel.get("id")
-                tvg_logo = channel.find("logo").text if channel.find("logo") is not None else ""
-
-            if tvg_logo:
-                print(f"Trovato logo per {tvg_name}: {tvg_logo}")
-            else:
-                print(f"Nessun logo trovato per {tvg_name}")
 
             if best_score >= 90:
-                return best_match, tvg_logo
+                return best_match
 
-    return best_match if best_score >= 80 else "", tvg_logo
+    return best_match if best_score >= 80 else ""
+
+def get_logo_from_epg(tvg_id, epg_data):
+    """Estrae il logo del canale dall'EPG utilizzando tvg-id."""
+    for epg_root in epg_data:
+        for channel in epg_root.findall("channel"):
+            if channel.get("id") == tvg_id:
+                logo = channel.find("logo")
+                if logo is not None and logo.text:
+                    return logo.text
+    return ""
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
-    """Salva i canali in un file M3U8 con link EPG, tvg-id e tvg-logo."""
+    """Salva i canali in un file M3U8 con link EPG e tvg-id."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
@@ -157,9 +160,10 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, user_agent in channels:
-                    tvg_id, tvg_logo = get_tvg_id_from_epg(name, epg_data)
-                    if tvg_logo:
-                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{tvg_logo}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
+                    tvg_id = get_tvg_id_from_epg(name, epg_data)
+                    logo = get_logo_from_epg(tvg_id, epg_data)
+                    if logo:
+                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-logo="{logo}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     else:
                         f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}", {name}\n')
                     f.write(f"{url}\n\n")
