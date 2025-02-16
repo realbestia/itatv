@@ -19,7 +19,7 @@ OUTPUT_FILE = "channels_italy.m3u8"
 # URL degli EPG
 EPG_URLS = [
     "https://www.epgitalia.tv/gzip",
-    "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
     "https://www.open-epg.com/files/italy1.xml",
     "https://www.open-epg.com/files/italy2.xml"
 ]
