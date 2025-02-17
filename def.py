@@ -8,6 +8,7 @@ import io
 import time
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
+from bs4 import BeautifulSoup
 
 # URL sorgenti IPTV
 BASE_URLS = [
@@ -116,8 +117,27 @@ def download_epg(epg_url):
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
+def search_logo_online(tvg_name):
+    """Cerca il logo online utilizzando DuckDuckGo con il tvg-name."""
+    search_url = f"https://duckduckgo.com/?q={tvg_name}+logo&t=h_&iax=images&ia=images"
+    try:
+        response = requests.get(search_url)
+        response.raise_for_status()
+        
+        # Usa BeautifulSoup per analizzare il contenuto della pagina
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Trova il primo risultato dell'immagine
+        image_element = soup.find('img', class_='tile--img__img')
+        if image_element and 'src' in image_element.attrs:
+            return image_element['src']
+    except requests.RequestException as e:
+        print(f"Errore durante la ricerca del logo online per {tvg_name}: {e}")
+    
+    return None
+
 def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
-    """Trova il miglior tvg-id e il link dell'icona dal file EPG"""
+    """Trova il miglior tvg-id e il link dell'icona dal file EPG, cercando online se necessario."""
     best_match = None
     best_score = 0
     icon_url = None
@@ -153,6 +173,10 @@ def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
 
             if best_score >= 90:
                 return best_match, icon_url
+
+    # Se non abbiamo trovato un'icona, cerchiamo online usando il tvg-name
+    if not icon_url:
+        icon_url = search_logo_online(tvg_name)
 
     return best_match if best_score >= 90 else "", icon_url
 
