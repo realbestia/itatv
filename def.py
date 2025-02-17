@@ -28,17 +28,8 @@ EPG_URLS = [
     "https://www.open-epg.com/files/italy1.xml",
     "https://www.open-epg.com/files/italy2.xml",
     "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz",
-    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"  # EPG Pluto TV
+    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"
 ]
-
-# Mappa numeri → parole
-NUMBER_WORDS = {
-    "1": "uno", "2": "due", "3": "tre", "4": "quattro",
-    "5": "cinque", "6": "sei", "7": "sette", "8": "otto", "9": "nove",
-    "10": "dieci", "11": "undici", "12": "dodici", "13": "tredici", "14": "quattordici",
-    "15": "quindici", "16": "sedici", "17": "diciassette", "18": "diciotto", "19": "diciannove",
-    "20": "venti"
-}
 
 # Mappatura dei servizi e delle categorie
 SERVICE_KEYWORDS = {
@@ -58,16 +49,11 @@ CATEGORY_KEYWORDS = {
 }
 
 def clean_channel_name(name):
-    """Pulisce il nome rimuovendo caratteri indesiderati e numeri."""
+    """Pulisce il nome rimuovendo caratteri indesiderati, ma mantiene i numeri."""
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
     name = re.sub(r"\.it\b", "", name, flags=re.IGNORECASE)
     name = re.sub(r"\(.*?\)", "", name)
-    name = re.sub(r"[^\w\s]", "", name).strip()
-
-    # Sostituzione numeri con parole
-    words = name.split()
-    cleaned_words = [NUMBER_WORDS.get(w, w) for w in words]
-    return " ".join(cleaned_words)
+    return re.sub(r"[^\w\s]", "", name).strip()
 
 def fetch_channels(base_url):
     """Scarica i canali IPTV e restituisce una lista."""
