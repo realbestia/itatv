@@ -74,7 +74,7 @@ def fetch_channels(base_url, retries=3):
             return response.json()
         except requests.RequestException as e:
             print(f"Errore durante il download da {base_url} (tentativo {attempt+1}): {e}")
-            time.sleep(2 ** attempt)
+            time.sleep(2 ** attempt)  
     return []
 
 def filter_italian_channels(channels, base_url):
@@ -90,30 +90,30 @@ def filter_italian_channels(channels, base_url):
     return list(results.values())
 
 def download_epg(epg_url):
-    """Scarica e decomprime un file EPG XML"""
+    """Scarica e decomprime un file EPG XML (anche GZIP/XZ)"""
     try:
         response = requests.get(epg_url, timeout=10)
         response.raise_for_status()
         
         file_signature = response.content[:2]
 
-        if file_signature.startswith(b'\x1f\x8b'):
+        if file_signature.startswith(b'\x1f\x8b'):  
             with gzip.GzipFile(fileobj=io.BytesIO(response.content)) as gz_file:
                 xml_content = gz_file.read()
-        elif file_signature.startswith(b'\xfd7z'):
+        elif file_signature.startswith(b'\xfd7z'):  
             with lzma.LZMAFile(fileobj=io.BytesIO(response.content)) as xz_file:
                 xml_content = xz_file.read()
-        else:
+        else:  
             xml_content = response.content
 
         return ET.ElementTree(ET.fromstring(xml_content)).getroot()
 
-    except Exception as e:
+    except (requests.RequestException, gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
-    """Trova il miglior tvg-id"""
+    """Trova il miglior tvg-id per il canale"""
     best_match = None
     best_score = 0
 
@@ -144,8 +144,13 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
 
     return best_match if best_score >= 90 else ""
 
+def get_tvg_logo(channel_name):
+    """Genera un URL per il logo del canale"""
+    formatted_name = channel_name.lower().replace(" ", "_")
+    return f"https://logo.clearbit.com/{formatted_name}.com"
+
 def save_m3u8(organized_channels, epg_urls, epg_data):
-    """Salva i canali IPTV in un file M3U8 con metadati EPG"""
+    """Salva i canali IPTV in un file M3U8 con `tvg-id`, `tvg-name` e `tvg-logo`."""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
@@ -156,7 +161,8 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
             for category, channels in categories.items():
                 for name, url, base_url in channels:
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}", {name}\n')
+                    tvg_logo = get_tvg_logo(name)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{tvg_logo}" group-title="{category}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
@@ -169,21 +175,7 @@ def main():
         channels = fetch_channels(url)
         all_links.extend(filter_italian_channels(channels, url))
 
-    organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
-    for name, url, base_url in all_links:
-        service = "IPTV gratuite"
-        category = "Intrattenimento"
-        for key, words in SERVICE_KEYWORDS.items():
-            if any(word in name.lower() for word in words):
-                service = key
-                break
-        for key, words in CATEGORY_KEYWORDS.items():
-            if any(word in name.lower() for word in words):
-                category = key
-                break
-        organized_channels[service][category].append((name, url, base_url))
-
-    save_m3u8(organized_channels, EPG_URLS, epg_data)
+    save_m3u8(all_links, EPG_URLS, epg_data)
 
 if __name__ == "__main__":
     main()
