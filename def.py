@@ -47,6 +47,9 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
+# Estensioni di file immagine per icone
+VALID_ICON_EXTENSIONS = [".png", ".jpg", ".jpeg"]
+
 def clean_channel_name(name):
     """Pulisce il nome rimuovendo caratteri indesiderati."""
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
@@ -116,6 +119,14 @@ def download_epg(epg_url):
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
+def clean_icon_url(icon_url):
+    """Pulizia dell'URL dell'icona, mantiene solo l'estensione di immagine valida"""
+    # Controlla l'estensione dell'icona
+    for ext in VALID_ICON_EXTENSIONS:
+        if icon_url.lower().endswith(ext):
+            return re.sub(r'(\?.*)$', '', icon_url)  # Rimuove query string e altri parametri dopo l'estensione
+    return None
+
 def get_tvg_id_from_epg(tvg_name, epg_data):
     """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8 e ottiene anche il link dell'icona"""
     best_match = None
@@ -164,7 +175,17 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
             for category, channels in categories.items():
                 for name, url, base_url in channels:
                     tvg_id, tvg_icon = get_tvg_id_from_epg(name, epg_data)
-                    tvg_icon_attribute = f' tvg-icon="{tvg_icon}"' if tvg_icon else ''
+                    
+                    # Pulisci l'URL dell'icona, se è valido
+                    if tvg_icon:
+                        tvg_icon = clean_icon_url(tvg_icon)
+                    
+                    # Se l'icona è valida, aggiungila al tag
+                    if tvg_icon:
+                        tvg_icon_attribute = f' tvg-icon="{tvg_icon}"'
+                    else:
+                        tvg_icon_attribute = ''
+
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}"{tvg_icon_attribute}, {name}\n')
                     f.write(f"{url}\n\n")
 
@@ -181,7 +202,7 @@ def main():
     # Organizzazione dei canali in base a servizio e categoria
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
     for name, url, base_url in all_links:
-        service = "IPTV gratuite"
+        service = "IPTV gratuita"
         category = "Intrattenimento"
         for key, words in SERVICE_KEYWORDS.items():
             if any(word in name.lower() for word in words):
