@@ -76,70 +76,26 @@ def fetch_channels(base_url, retries=3):
     return []
 
 def filter_italian_channels(channels, base_url):
-    """Filtra i canali italiani e rimuove duplicati."""
+    """Filtra i canali italiani e mappa i nomi puliti agli URL."""
     results = {}
-    
     for ch in channels:
-        if ch.get("country") == "Italy":
-            clean_name = clean_channel_name(ch["name"])
-            if clean_name not in results:
-                results[clean_name] = (clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url)
- results[clean_name] = (clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url)
-
+        clean_name = clean_channel_name(ch['name'])
+        if "italiano" in clean_name.lower():
+            results[clean_name] = (clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url)
     return results
 
-def fetch_epg_data(epg_urls):
-    """Scarica i dati EPG da URL forniti."""
-    epg_data = []
-    for url in epg_urls:
-        try:
-            response = requests.get(url, timeout=10)
-            response.raise_for_status()
-            epg_data.append(response.content)
-        except requests.RequestException as e:
-            logging.error(f"Errore durante il download EPG da {url}: {e}")
-    return epg_data
-
-def parse_epg_data(epg_data):
-    """Parsa i dati EPG e restituisce un dizionario di eventi."""
-    events = {}
-    for data in epg_data:
-        root = ET.fromstring(data)
-        for channel in root.findall('channel'):
-            channel_id = channel.get('id')
-            for programme in channel.findall('programme'):
-                start = programme.get('start')
-                end = programme.get('end')
-                title = programme.find('title').text
-                events[channel_id] = {
-                    'start': start,
-                    'end': end,
-                    'title': title
-                }
-    return events
-
-def save_channels_to_file(channels, output_file):
-    """Salva i canali IPTV in un file M3U8."""
-    with open(output_file, 'w') as f:
-        f.write("#EXTM3U\n")
-        for channel in channels.values():
-            f.write(f"#EXTINF:-1,{channel[0]}\n")
-            f.write(f"{channel[1]}\n")
-
 def main():
-    all_channels = {}
-    with ThreadPoolExecutor() as executor:
-        futures = [executor.submit(fetch_channels, url) for url in BASE_URLS]
-        for future in futures:
-            channels = future.result()
-            filtered_channels = filter_italian_channels(channels, BASE_URLS[0])
-            all_channels.update(filtered_channels)
+    """Funzione principale per eseguire lo script."""
+    all_channels = []
+    for base_url in BASE_URLS:
+        channels = fetch_channels(base_url)
+        all_channels.extend(channels)
 
-    epg_data = fetch_epg_data(EPG_URLS)
-    parsed_epg = parse_epg_data(epg_data)
-
-    save_channels_to_file(all_channels, OUTPUT_FILE)
-    logging.info(f"Canali salvati in {OUTPUT_FILE}")
+    italian_channels = filter_italian_channels(all_channels, BASE_URLS[0])
+    
+    with open(OUTPUT_FILE, 'w') as f:
+        for channel in italian_channels.values():
+            f.write(f"#EXTINF:-1,{channel[0]}\n{channel[1]}\n")
 
 if __name__ == "__main__":
     main()
