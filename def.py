@@ -47,8 +47,7 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
-# Estensioni di file immagine per icone
-VALID_ICON_EXTENSIONS = [".png", ".jpg", ".jpeg"]
+VALID_ICON_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.gif']
 
 def clean_channel_name(name):
     """Pulisce il nome rimuovendo caratteri indesiderati."""
@@ -71,6 +70,13 @@ def normalize_for_matching(name):
         temp_name = temp_name.replace(number, NUMBER_WORDS[number])
 
     return temp_name, number  # Restituisce il nome normalizzato e il numero trovato
+
+def clean_icon_url(icon_url):
+    """Pulisce l'URL dell'icona rimuovendo parametri extra e verificando l'estensione."""
+    for ext in VALID_ICON_EXTENSIONS:
+        if icon_url.endswith(ext):
+            return icon_url.split('?')[0]  # Rimuove eventuali parametri query (es. ?size=100)
+    return None
 
 def fetch_channels(base_url, retries=3):
     """Scarica i canali IPTV con gestione errori"""
@@ -119,19 +125,10 @@ def download_epg(epg_url):
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
-def clean_icon_url(icon_url):
-    """Pulizia dell'URL dell'icona, mantiene solo l'estensione di immagine valida"""
-    # Controlla l'estensione dell'icona
-    for ext in VALID_ICON_EXTENSIONS:
-        if icon_url.lower().endswith(ext):
-            return re.sub(r'(\?.*)$', '', icon_url)  # Rimuove query string e altri parametri dopo l'estensione
-    return None
-
 def get_tvg_id_from_epg(tvg_name, epg_data):
-    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8 e ottiene anche il link dell'icona"""
+    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8"""
     best_match = None
     best_score = 0
-    tvg_icon = None  # Variabile per memorizzare l'URL dell'icona
 
     normalized_tvg_name, tvg_number = normalize_for_matching(tvg_name)
 
@@ -146,7 +143,7 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             # Se uno ha un numero e l'altro no, scarta il match
             if (tvg_number and not epg_number) or (epg_number and not tvg_number):
                 continue  
-
+            
             # Se entrambi hanno un numero, devono essere uguali
             if tvg_number and epg_number and tvg_number != epg_number:
                 continue  
@@ -156,15 +153,14 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             if similarity > best_score:
                 best_score = similarity
                 best_match = channel.get("id")
-                tvg_icon = channel.find("icon").get("src") if channel.find("icon") is not None else None
 
             if best_score >= 95:
-                return best_match, tvg_icon
+                return best_match
 
-    return best_match if best_score >= 90 else "", tvg_icon
+    return best_match if best_score >= 90 else ""
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
-    """Salva i canali IPTV in un file M3U8 con metadati EPG e tvg-icon"""
+    """Salva i canali IPTV in un file M3U8 con metadati EPG"""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
@@ -174,24 +170,16 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
-                    tvg_id, tvg_icon = get_tvg_id_from_epg(name, epg_data)
-                    
-                    # Pulisci l'URL dell'icona, se è valido
-                    if tvg_icon:
-                        tvg_icon = clean_icon_url(tvg_icon)
-                    
-                    # Se l'icona è valida, aggiungila al tag
-                    if tvg_icon:
-                        tvg_icon_attribute = f' tvg-icon="{tvg_icon}"'
-                    else:
-                        tvg_icon_attribute = ''
+                    tvg_id = get_tvg_id_from_epg(name, epg_data)
+                    icon_url = clean_icon_url(f"{base_url}/images/{name.lower()}.png")  # Puoi modificare l'URL dell'icona
 
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}"{tvg_icon_attribute}, {name}\n')
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-logo="{icon_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
 def main():
+    # Scarica i dati EPG
     epg_data = [download_epg(url) for url in EPG_URLS if (data := download_epg(url))]
 
     all_links = []
@@ -201,19 +189,27 @@ def main():
 
     # Organizzazione dei canali in base a servizio e categoria
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
+
     for name, url, base_url in all_links:
-        service = "IPTV gratuita"
-        category = "Intrattenimento"
+        service = "IPTV gratuite"  # Impostiamo il servizio di default
+        category = "Intrattenimento"  # Impostiamo la categoria di default
+
+        # Controlla a quale servizio appartiene il canale
         for key, words in SERVICE_KEYWORDS.items():
             if any(word in name.lower() for word in words):
                 service = key
                 break
+
+        # Controlla a quale categoria appartiene il canale
         for key, words in CATEGORY_KEYWORDS.items():
             if any(word in name.lower() for word in words):
                 category = key
                 break
-        organized_channels[service][category].append((name, url, base_url))
 
+        # Assicurati che la chiave esista prima di aggiungere
+        organized_channels.setdefault(service, {}).setdefault(category, []).append((name, url, base_url))
+
+    # Salva i canali in un file M3U8
     save_m3u8(organized_channels, EPG_URLS, epg_data)
 
 if __name__ == "__main__":
