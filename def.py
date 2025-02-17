@@ -159,16 +159,32 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
-    # Aggiungi il link della lista M3U8 esterna
+    # Aggiungi il link della lista M3U8 esterna e scarica i suoi canali
     external_m3u8 = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
+    response = requests.get(external_m3u8)
+    external_channels = []
 
-    # Aggiungi gli URL EPG esistenti e la lista esterna M3U8
-    all_epg_urls = epg_urls + [external_m3u8]
+    if response.status_code == 200:
+        # Aggiungi ogni canale dalla lista esterna al file
+        lines = response.text.splitlines()
+        for line in lines:
+            if line.startswith("#EXTINF"):
+                name = re.search(r'(?<=,)(.*?)(?=\n)', line)
+                if name:
+                    name = name.group(1).strip()
+                    url = next(lines).strip()
+                    external_channels.append((name, url))
 
+    # Aggiungi anche i canali italiani al file finale
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        # Scrivi l'intestazione includendo anche il nuovo URL esterno
-        f.write(f'#EXTM3U x-tvg-url="{", ".join(all_epg_urls)}"\n\n')
+        f.write(f'#EXTM3U x-tvg-url="{", ".join(epg_urls)}"\n\n')
 
+        # Aggiungi i canali da Pluto M3U
+        for name, url in external_channels:
+            f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{name}" group-title="M3U8 Esterni", {name}\n')
+            f.write(f"{url}\n\n")
+
+        # Aggiungi i canali italiani
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
