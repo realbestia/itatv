@@ -141,6 +141,7 @@ def save_m3u8(channels, epg_urls, epg_data, extra_m3u8_urls):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(f'#EXTM3U x-tvg-url="{", ".join(epg_urls)}"\n\n')
 
+        # Scrivi i canali principali
         for name, url, base_url in channels:
             service, category = classify_channel(name)
             tvg_id = get_tvg_id_from_epg(name, epg_data)
