@@ -159,8 +159,15 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
+    # Aggiungi il link della lista M3U8 esterna
+    external_m3u8 = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
+
+    # Aggiungi gli URL EPG esistenti e la lista esterna M3U8
+    all_epg_urls = epg_urls + [external_m3u8]
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(f'#EXTM3U x-tvg-url="{", ".join(epg_urls)}"\n\n')
+        # Scrivi l'intestazione includendo anche il nuovo URL esterno
+        f.write(f'#EXTM3U x-tvg-url="{", ".join(all_epg_urls)}"\n\n')
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
