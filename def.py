@@ -8,7 +8,6 @@ import io
 import time
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
-from bs4 import BeautifulSoup
 
 # URL sorgenti IPTV
 BASE_URLS = [
@@ -48,6 +47,16 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
+# Elenco predefinito dei loghi per i canali più conosciuti
+LOGO_DATABASE = {
+    "Sky Sport": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Sky_Sport_Logo_2020.svg",
+    "RAI": "https://upload.wikimedia.org/wikipedia/commons/0/06/Logo_RAI_2020.svg",
+    "Mediaset": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Logo_Mediaset_2020.svg",
+    "Eurosport": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Eurosport_logo_2019.svg",
+    "MTV": "https://upload.wikimedia.org/wikipedia/commons/4/42/MTV_logo.svg",
+    "Fox": "https://upload.wikimedia.org/wikipedia/commons/1/12/Fox_Networks_Group_logo.svg"
+}
+
 def clean_channel_name(name):
     """Pulisce il nome rimuovendo caratteri indesiderati."""
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
@@ -70,100 +79,9 @@ def normalize_for_matching(name):
 
     return temp_name, number  # Restituisce il nome normalizzato e il numero trovato
 
-def fetch_channels(base_url, retries=3):
-    """Scarica i canali IPTV con gestione errori"""
-    for attempt in range(retries):
-        try:
-            response = requests.get(f"{base_url}/channels", timeout=10)
-            response.raise_for_status()
-            return response.json()
-        except requests.RequestException as e:
-            print(f"Errore durante il download da {base_url} (tentativo {attempt+1}): {e}")
-            time.sleep(2 ** attempt)  
-    return []
-
-def filter_italian_channels(channels, base_url):
-    """Filtra i canali italiani e rimuove duplicati"""
-    results = {}
-    
-    for ch in channels:
-        if ch.get("country") == "Italy":
-            clean_name = clean_channel_name(ch["name"])
-            if clean_name not in results:
-                results[clean_name] = (clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url)
-    
-    return list(results.values())
-
-def download_epg(epg_url):
-    """Scarica e decomprime un file EPG XML (anche GZIP/XZ)"""
-    try:
-        response = requests.get(epg_url, timeout=10)
-        response.raise_for_status()
-        
-        file_signature = response.content[:2]
-
-        if file_signature.startswith(b'\x1f\x8b'):  
-            with gzip.GzipFile(fileobj=io.BytesIO(response.content)) as gz_file:
-                xml_content = gz_file.read()
-        elif file_signature.startswith(b'\xfd7z'):  
-            with lzma.LZMAFile(fileobj=io.BytesIO(response.content)) as xz_file:
-                xml_content = xz_file.read()
-        else:  
-            xml_content = response.content
-
-        return ET.ElementTree(ET.fromstring(xml_content)).getroot()
-
-    except (requests.RequestException, gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
-        print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
-        return None
-
-def get_tvg_id_from_epg(tvg_name, epg_data):
-    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8"""
-    best_match = None
-    best_score = 0
-
-    normalized_tvg_name, tvg_number = normalize_for_matching(tvg_name)
-
-    for epg_root in epg_data:
-        for channel in epg_root.findall("channel"):
-            epg_channel_name = channel.find("display-name").text
-            if not epg_channel_name:
-                continue  
-
-            normalized_epg_name, epg_number = normalize_for_matching(epg_channel_name)
-
-            # Se uno ha un numero e l'altro no, scarta il match
-            if (tvg_number and not epg_number) or (epg_number and not tvg_number):
-                continue  
-            
-            # Se entrambi hanno un numero, devono essere uguali
-            if tvg_number and epg_number and tvg_number != epg_number:
-                continue  
-
-            similarity = fuzz.token_sort_ratio(normalized_tvg_name, normalized_epg_name)
-
-            if similarity > best_score:
-                best_score = similarity
-                best_match = channel.get("id")
-
-            if best_score >= 95:
-                return best_match
-
-    return best_match if best_score >= 90 else ""
-
 def get_channel_logo(tvg_name):
-    """Cerca il logo del canale su internet (da usare come fallback)"""
-    search_url = f"https://www.google.com/search?q={tvg_name}+logo"
-    headers = {"User-Agent": "Mozilla/5.0"}
-    try:
-        response = requests.get(search_url, headers=headers)
-        soup = BeautifulSoup(response.content, "html.parser")
-        img_tag = soup.find("img")
-        if img_tag:
-            return img_tag["src"]
-    except Exception as e:
-        print(f"Errore durante la ricerca del logo per {tvg_name}: {e}")
-    return None
+    """Restituisce il logo del canale dalla lista predefinita"""
+    return LOGO_DATABASE.get(tvg_name, None)
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali IPTV in un file M3U8 con metadati EPG e TVG Logo"""
@@ -177,7 +95,7 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
             for category, channels in categories.items():
                 for name, url, base_url in channels:
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    logo_url = get_channel_logo(name)  # Ricerca del logo
+                    logo_url = get_channel_logo(name)  # Ottiene il logo predefinito
 
                     if logo_url:
                         f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-logo="{logo_url}", {name}\n')
