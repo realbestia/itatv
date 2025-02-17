@@ -32,16 +32,15 @@ jobs:
             echo "Il file merged_epg.xml è stato generato."
           else
             echo "Il file merged_epg.xml non esiste. Esco."
-            exit 0  # Esci senza fare commit o push
+            exit 1  # Fallisce se il file non esiste
           fi
 
       - name: Aggiungi il file generato al commit
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add .
-          git commit -m "Aggiungi file generato merged_epg"
-        continue-on-error: true  # In caso non ci siano cambiamenti, non fallire
+          git add merged_epg.xml  # Assicurati di aggiungere solo il file generato
+          git diff --quiet || git commit -m "Aggiungi file generato merged_epg"  # Commit solo se ci sono cambiamenti
 
       - name: Pusha il cambiamento
         run: git push
