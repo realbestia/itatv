@@ -83,6 +83,29 @@ def get_channel_logo(tvg_name):
     """Restituisce il logo del canale dalla lista predefinita"""
     return LOGO_DATABASE.get(tvg_name, None)
 
+def download_epg(epg_url):
+    """Scarica e decomprime un file EPG XML (anche GZIP/XZ)"""
+    try:
+        response = requests.get(epg_url, timeout=10)
+        response.raise_for_status()
+        
+        file_signature = response.content[:2]
+
+        if file_signature.startswith(b'\x1f\x8b'):  
+            with gzip.GzipFile(fileobj=io.BytesIO(response.content)) as gz_file:
+                xml_content = gz_file.read()
+        elif file_signature.startswith(b'\xfd7z'):  
+            with lzma.LZMAFile(fileobj=io.BytesIO(response.content)) as xz_file:
+                xml_content = xz_file.read()
+        else:  
+            xml_content = response.content
+
+        return ET.ElementTree(ET.fromstring(xml_content)).getroot()
+
+    except (requests.RequestException, gzip.BadGzipFile, lzma.LZMAError, ET.ParseError) as e:
+        print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
+        return None
+
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali IPTV in un file M3U8 con metadati EPG e TVG Logo"""
     if os.path.exists(OUTPUT_FILE):
@@ -117,7 +140,7 @@ def main():
     # Organizzazione dei canali in base a servizio e categoria
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
     for name, url, base_url in all_links:
-        service = "IPTV gratuite"
+        service = "IPTV gratuita"
         category = "Intrattenimento"
         for key, words in SERVICE_KEYWORDS.items():
             if any(word in name.lower() for word in words):
