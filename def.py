@@ -106,6 +106,18 @@ def download_epg(epg_url):
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
+def fetch_channels(base_url, retries=3):
+    """Scarica i canali IPTV con gestione errori"""
+    for attempt in range(retries):
+        try:
+            response = requests.get(f"{base_url}/channels", timeout=10)
+            response.raise_for_status()
+            return response.json()
+        except requests.RequestException as e:
+            print(f"Errore durante il download da {base_url} (tentativo {attempt+1}): {e}")
+            time.sleep(2 ** attempt)  
+    return []
+
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali IPTV in un file M3U8 con metadati EPG e TVG Logo"""
     if os.path.exists(OUTPUT_FILE):
