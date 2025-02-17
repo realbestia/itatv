@@ -27,7 +27,8 @@ EPG_URLS = [
     "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
     "https://www.open-epg.com/files/italy1.xml",
     "https://www.open-epg.com/files/italy2.xml",
-    "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz"
+    "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz",
+    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"
 ]
 
 # Mappa numeri → parole
