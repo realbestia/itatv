@@ -117,9 +117,10 @@ def download_epg(epg_url):
         return None
 
 def get_tvg_id_from_epg(tvg_name, epg_data):
-    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8"""
+    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8 e ottiene anche il link dell'icona"""
     best_match = None
     best_score = 0
+    tvg_icon = None  # Variabile per memorizzare l'URL dell'icona
 
     normalized_tvg_name, tvg_number = normalize_for_matching(tvg_name)
 
@@ -134,7 +135,7 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             # Se uno ha un numero e l'altro no, scarta il match
             if (tvg_number and not epg_number) or (epg_number and not tvg_number):
                 continue  
-            
+
             # Se entrambi hanno un numero, devono essere uguali
             if tvg_number and epg_number and tvg_number != epg_number:
                 continue  
@@ -144,14 +145,15 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             if similarity > best_score:
                 best_score = similarity
                 best_match = channel.get("id")
+                tvg_icon = channel.find("icon").get("src") if channel.find("icon") is not None else None
 
             if best_score >= 95:
-                return best_match
+                return best_match, tvg_icon
 
-    return best_match if best_score >= 90 else ""
+    return best_match if best_score >= 90 else "", tvg_icon
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
-    """Salva i canali IPTV in un file M3U8 con metadati EPG"""
+    """Salva i canali IPTV in un file M3U8 con metadati EPG e tvg-icon"""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
@@ -161,8 +163,9 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
-                    tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}", {name}\n')
+                    tvg_id, tvg_icon = get_tvg_id_from_epg(name, epg_data)
+                    tvg_icon_attribute = f' tvg-icon="{tvg_icon}"' if tvg_icon else ''
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}"{tvg_icon_attribute}, {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
