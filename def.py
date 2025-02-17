@@ -23,7 +23,7 @@ EPG_URLS = [
     "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/merged_epg.xml"
 ]
 
-DEFAULT_LOGO = "https://example.com/default_logo.png"
+DEFAULT_LOGO = "https://static.vecteezy.com/ti/gratis-vektor/p2/7688855-tv-logo-kostenlos-vektor.jpg"
 
 # Mappa numeri → parole
 NUMBER_WORDS = {
