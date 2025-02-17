@@ -198,7 +198,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-potresti includere altre liste m3u8 nel file generato? 
-
-a questa è la lista https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u
