@@ -159,32 +159,9 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
-    # Aggiungi il link della lista M3U8 esterna e scarica i suoi canali
-    external_m3u8 = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
-    response = requests.get(external_m3u8)
-    external_channels = []
-
-    if response.status_code == 200:
-        # Aggiungi ogni canale dalla lista esterna al file
-        lines = response.text.splitlines()
-        for line in lines:
-            if line.startswith("#EXTINF"):
-                name = re.search(r'(?<=,)(.*?)(?=\n)', line)
-                if name:
-                    name = name.group(1).strip()
-                    url = next(lines).strip()
-                    external_channels.append((name, url))
-
-    # Aggiungi anche i canali italiani al file finale
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(f'#EXTM3U x-tvg-url="{", ".join(epg_urls)}"\n\n')
 
-        # Aggiungi i canali da Pluto M3U
-        for name, url in external_channels:
-            f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{name}" group-title="M3U8 Esterni", {name}\n')
-            f.write(f"{url}\n\n")
-
-        # Aggiungi i canali italiani
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
@@ -194,13 +171,43 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
+def fetch_pluto_channels(pluto_url):
+    """Scarica e analizza il file M3U da Pluto TV Italia"""
+    try:
+        response = requests.get(pluto_url, timeout=10)
+        response.raise_for_status()
+        
+        channels = []
+        lines = response.text.splitlines()
+        
+        for i, line in enumerate(lines):
+            if line.startswith('#EXTINF'):
+                channel_name_match = re.search(r'tvg-name="(.*?)"', line)
+                if channel_name_match:
+                    channel_name = channel_name_match.group(1)
+                    url = lines[i + 1] if i + 1 < len(lines) else None
+                    if url:
+                        channels.append((channel_name, url, pluto_url))
+        return channels
+    except requests.RequestException as e:
+        print(f"Errore durante il download da {pluto_url}: {e}")
+        return []
+
 def main():
+    # Scarica i dati EPG
     epg_data = [download_epg(url) for url in EPG_URLS if (data := download_epg(url))]
 
+    # Inizializza la lista dei canali
     all_links = []
+    
+    # Aggiungi i canali da BASE_URLS (canali IPTV)
     for url in BASE_URLS:
         channels = fetch_channels(url)
         all_links.extend(filter_italian_channels(channels, url))
+    
+    # Aggiungi i canali da Pluto TV Italia
+    pluto_url = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
+    all_links.extend(fetch_pluto_channels(pluto_url))
 
     # Organizzazione dei canali in base a servizio e categoria
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
@@ -217,6 +224,7 @@ def main():
                 break
         organized_channels[service][category].append((name, url, base_url))
 
+    # Salva il file M3U8
     save_m3u8(organized_channels, EPG_URLS, epg_data)
 
 if __name__ == "__main__":
