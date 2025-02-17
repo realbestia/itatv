@@ -194,5 +194,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-aggiungi il tvg-logo per ogni canale cercando su internet il tvg-name
