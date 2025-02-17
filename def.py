@@ -1,5 +1,4 @@
 import requests
-import json
 import re
 import os
 import gzip
@@ -14,7 +13,7 @@ BASE_URLS = [
     "https://vavoo.to",
 ]
 
-# Liste M3U8 extra
+# Liste M3U8 extra (Pluto TV)
 EXTRA_M3U8_URLS = [
     "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
 ]
@@ -148,10 +147,22 @@ def save_m3u8(channels, epg_urls, epg_data, extra_m3u8_urls):
             f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}", {name}\n')
             f.write(f"{url}\n\n")
 
+        # Aggiungi canali Pluto TV dal file M3U esterno
         for extra_url in extra_m3u8_urls:
             try:
                 extra_content = requests.get(extra_url).text
-                f.write(extra_content + "\n\n")
+                # Estrai i canali e assegnali alla categoria Pluto TV
+                for line in extra_content.splitlines():
+                    if line.startswith("#EXTINF"):
+                        # Estrai il nome e l'URL
+                        name_match = re.search(r'tvg-name="([^"]+)', line)
+                        url_match = re.search(r'(http[^\s]+)', line)
+                        
+                        if name_match and url_match:
+                            name = name_match.group(1)
+                            url = url_match.group(1)
+                            f.write(f'#EXTINF:-1 tvg-id="{name}" tvg-name="{name}" group-title="Pluto TV", {name}\n')
+                            f.write(f"{url}\n\n")
             except Exception as e:
                 print(f"Errore nel download della lista extra {extra_url}: {e}")
 
