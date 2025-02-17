@@ -116,11 +116,10 @@ def download_epg(epg_url):
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
-def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
-    """Trova il miglior tvg-id e il link dell'icona dal file EPG"""
+def get_tvg_id_from_epg(tvg_name, epg_data):
+    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8"""
     best_match = None
     best_score = 0
-    icon_url = None
 
     normalized_tvg_name, tvg_number = normalize_for_matching(tvg_name)
 
@@ -146,15 +145,10 @@ def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
                 best_score = similarity
                 best_match = channel.get("id")
 
-                # Estrae l'URL dell'icona dal tag <icon>
-                icon_element = channel.find("icon")
-                if icon_element is not None:
-                    icon_url = icon_element.get("src")  # Estrai l'attributo src
-
             if best_score >= 95:
-                return best_match, icon_url
+                return best_match
 
-    return best_match if best_score >= 90 else "", icon_url
+    return best_match if best_score >= 90 else ""
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali IPTV in un file M3U8 con metadati EPG"""
@@ -167,16 +161,13 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
-                    tvg_id, icon_url = get_tvg_id_and_icon_from_epg(name, epg_data)
-
-                    # Scrive il canale nel file M3U8
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-logo="{icon_url}", {name}\n')
+                    tvg_id = get_tvg_id_from_epg(name, epg_data)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
 def main():
-    # Scarica i dati EPG
     epg_data = [download_epg(url) for url in EPG_URLS if (data := download_epg(url))]
 
     all_links = []
@@ -186,27 +177,19 @@ def main():
 
     # Organizzazione dei canali in base a servizio e categoria
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
-
     for name, url, base_url in all_links:
-        service = "IPTV gratuite"  # Impostiamo il servizio di default
-        category = "Intrattenimento"  # Impostiamo la categoria di default
-
-        # Controlla a quale servizio appartiene il canale
+        service = "IPTV gratuite"
+        category = "Intrattenimento"
         for key, words in SERVICE_KEYWORDS.items():
             if any(word in name.lower() for word in words):
                 service = key
                 break
-
-        # Controlla a quale categoria appartiene il canale
         for key, words in CATEGORY_KEYWORDS.items():
             if any(word in name.lower() for word in words):
                 category = key
                 break
+        organized_channels[service][category].append((name, url, base_url))
 
-        # Assicurati che la chiave esista prima di aggiungere
-        organized_channels.setdefault(service, {}).setdefault(category, []).append((name, url, base_url))
-
-    # Salva i canali in un file M3U8
     save_m3u8(organized_channels, EPG_URLS, epg_data)
 
 if __name__ == "__main__":
