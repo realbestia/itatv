@@ -116,10 +116,11 @@ def download_epg(epg_url):
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
-def get_tvg_id_from_epg(tvg_name, epg_data):
-    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8"""
+def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
+    """Trova il miglior tvg-id e tvg-icon senza modificare il nome originale nel file M3U8"""
     best_match = None
     best_score = 0
+    best_icon = None
 
     normalized_tvg_name, tvg_number = normalize_for_matching(tvg_name)
 
@@ -145,13 +146,14 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             if similarity > best_score:
                 best_score = similarity
                 best_match = channel.get("id")
+                best_icon = channel.find("icon").get("src") if channel.find("icon") is not None else None
 
             # Restituisci il miglior match se la somiglianza è sopra la soglia
             if best_score >= 90:
-                return best_match
+                return best_match, best_icon
 
     # Restituisci il miglior match se la somiglianza è sopra una soglia inferiore
-    return best_match if best_score >= 85 else ""
+    return best_match if best_score >= 85 else "", best_icon
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali IPTV in un file M3U8 con metadati EPG"""
@@ -164,8 +166,8 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
-                    tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}", {name}\n')
+                    tvg_id, tvg_icon = get_tvg_id_and_icon_from_epg(name, epg_data)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-icon="{tvg_icon}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
