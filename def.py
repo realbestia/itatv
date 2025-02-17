@@ -180,4 +180,4 @@ def main():
     save_m3u8(all_channels, EPG_URLS, epg_data, EXTRA_M3U8_URLS)
 
 if __name__ == "__main__":
-   
+    main()
