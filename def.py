@@ -23,7 +23,7 @@ EPG_URLS = [
     "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/merged_epg.xml"
 ]
 
-DEFAULT_LOGO = "https://example.com/default_logo.png"  # Logo predefinito se non trovato
+DEFAULT_LOGO = "https://static.vecteezy.com/ti/gratis-vektor/p2/7688855-tv-logo-kostenlos-vektor.jpg"  # Logo predefinito se non trovato
 
 def clean_channel_name(name):
     """Pulisce il nome rimuovendo caratteri indesiderati."""
@@ -63,18 +63,29 @@ def download_epg(epg_url):
         print(f"Errore EPG: {e}")
         return None
 
-def get_logo_from_epg(tvg_name, epg_data):
-    """Cerca il logo nel file EPG"""
+def get_tvg_info_from_epg(tvg_name, epg_data):
+    """Trova il tvg-id e il logo nel file EPG"""
+    best_match = None
+    best_score = 0
+    best_logo = None
+
     for epg_root in epg_data:
         for channel in epg_root.findall("channel"):
             epg_channel_name = channel.find("display-name").text
             logo_elem = channel.find("icon")
-            if epg_channel_name and fuzz.token_sort_ratio(tvg_name, epg_channel_name) >= 90:
-                if logo_elem is not None:
-                    logo_url = logo_elem.get("src", "")
-                    if logo_url.lower().endswith(('.png', '.jpg', '.jpeg', '.svg')):
-                        return logo_url
-    return None
+            tvg_id = channel.get("id", "")
+
+            if epg_channel_name:
+                similarity = fuzz.token_sort_ratio(tvg_name, epg_channel_name)
+                if similarity > best_score:
+                    best_score = similarity
+                    best_match = tvg_id
+                    best_logo = logo_elem.get("src", "") if logo_elem is not None else None
+
+                if best_score >= 95:
+                    return best_match, best_logo
+
+    return best_match if best_score >= 90 else "", best_logo
 
 def search_logo_google(query):
     """Cerca un logo su Google Immagini e restituisce il link dell'immagine."""
@@ -104,7 +115,7 @@ def search_logo_pixabay(query):
 
 def find_best_logo(channel_name, epg_data):
     """Trova il logo del canale attraverso più fonti."""
-    logo_url = get_logo_from_epg(channel_name, epg_data)
+    _, logo_url = get_tvg_info_from_epg(channel_name, epg_data)
     if logo_url:
         print(f"Logo trovato da EPG: {logo_url}")
         return logo_url
@@ -131,8 +142,9 @@ def save_m3u8(channels, epg_urls, epg_data):
         f.write(f'#EXTM3U x-tvg-url="{", ".join(epg_urls)}"\n\n')
 
         for name, url, base_url in channels:
-            tvg_id = name.replace(" ", "").lower()
-            logo_url = find_best_logo(name, epg_data)
+            tvg_id, logo_url = get_tvg_info_from_epg(name, epg_data)
+            if not logo_url:  # Se non c'è un logo nell'EPG, cerca online
+                logo_url = find_best_logo(name, epg_data)
 
             f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{logo_url}" group-title="TV", {name}\n')
             f.write(f"{url}\n\n")
