@@ -47,8 +47,6 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
-VALID_ICON_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.gif']
-
 def clean_channel_name(name):
     """Pulisce il nome rimuovendo caratteri indesiderati."""
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
@@ -70,13 +68,6 @@ def normalize_for_matching(name):
         temp_name = temp_name.replace(number, NUMBER_WORDS[number])
 
     return temp_name, number  # Restituisce il nome normalizzato e il numero trovato
-
-def clean_icon_url(icon_url):
-    """Pulisce l'URL dell'icona rimuovendo parametri extra e verificando l'estensione."""
-    for ext in VALID_ICON_EXTENSIONS:
-        if icon_url.endswith(ext):
-            return icon_url.split('?')[0]  # Rimuove eventuali parametri query (es. ?size=100)
-    return None
 
 def fetch_channels(base_url, retries=3):
     """Scarica i canali IPTV con gestione errori"""
@@ -125,10 +116,11 @@ def download_epg(epg_url):
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
-def get_tvg_id_from_epg(tvg_name, epg_data):
-    """Trova il miglior tvg-id senza modificare il nome originale nel file M3U8"""
+def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
+    """Trova il miglior tvg-id e il link dell'icona dal file EPG"""
     best_match = None
     best_score = 0
+    icon_url = None
 
     normalized_tvg_name, tvg_number = normalize_for_matching(tvg_name)
 
@@ -154,10 +146,15 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
                 best_score = similarity
                 best_match = channel.get("id")
 
-            if best_score >= 95:
-                return best_match
+                # Estrae l'URL dell'icona dal tag <icon>
+                icon_element = channel.find("icon")
+                if icon_element is not None:
+                    icon_url = icon_element.get("src")  # Estrai l'attributo src
 
-    return best_match if best_score >= 90 else ""
+            if best_score >= 95:
+                return best_match, icon_url
+
+    return best_match if best_score >= 90 else "", icon_url
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali IPTV in un file M3U8 con metadati EPG"""
@@ -170,9 +167,9 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
-                    tvg_id = get_tvg_id_from_epg(name, epg_data)
-                    icon_url = clean_icon_url(f"{base_url}/images/{name.lower()}.png")  # Puoi modificare l'URL dell'icona
+                    tvg_id, icon_url = get_tvg_id_and_icon_from_epg(name, epg_data)
 
+                    # Scrive il canale nel file M3U8
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-logo="{icon_url}", {name}\n')
                     f.write(f"{url}\n\n")
 
