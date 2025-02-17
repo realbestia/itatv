@@ -154,7 +154,7 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
 
     return best_match if best_score >= 90 else ""
 
-def save_m3u8(organized_channels, epg_urls, epg_data):
+def save_m3u8(organized_channels, epg_urls, epg_data, pluto_channels):
     """Salva i canali IPTV in un file M3U8 con metadati EPG"""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
@@ -162,12 +162,18 @@ def save_m3u8(organized_channels, epg_urls, epg_data):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(f'#EXTM3U x-tvg-url="{", ".join(epg_urls)}"\n\n')
 
+        # Aggiungi i canali normali
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
                     tvg_id = get_tvg_id_from_epg(name, epg_data)
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}", {name}\n')
                     f.write(f"{url}\n\n")
+        
+        # Aggiungi i canali di Pluto TV senza modificarli
+        for name, url, base_url in pluto_channels:
+            f.write(f'#EXTINF:-1 tvg-name="{name}", {name}\n')
+            f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
@@ -207,7 +213,7 @@ def main():
     
     # Aggiungi i canali da Pluto TV Italia
     pluto_url = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
-    all_links.extend(fetch_pluto_channels(pluto_url))
+    pluto_channels = fetch_pluto_channels(pluto_url)
 
     # Organizzazione dei canali in base a servizio e categoria
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
@@ -225,7 +231,7 @@ def main():
         organized_channels[service][category].append((name, url, base_url))
 
     # Salva il file M3U8
-    save_m3u8(organized_channels, EPG_URLS, epg_data)
+    save_m3u8(organized_channels, EPG_URLS, epg_data, pluto_channels)
 
 if __name__ == "__main__":
     main()
