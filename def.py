@@ -139,16 +139,19 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
             if tvg_number and epg_number and tvg_number != epg_number:
                 continue  
 
+            # Utilizza diverse metriche di corrispondenza fuzzy
             similarity = fuzz.token_sort_ratio(normalized_tvg_name, normalized_epg_name)
 
             if similarity > best_score:
                 best_score = similarity
                 best_match = channel.get("id")
 
+            # Restituisci il miglior match se la somiglianza è sopra la soglia
             if best_score >= 90:
                 return best_match
 
-    return best_match if best_score >= 90 else ""
+    # Restituisci il miglior match se la somiglianza è sopra una soglia inferiore
+    return best_match if best_score >= 85 else ""
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali IPTV in un file M3U8 con metadati EPG"""
