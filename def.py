@@ -35,7 +35,8 @@ EPG_URLS = [
 SERVICE_KEYWORDS = {
     "Sky": ["sky", "fox", "hbo"],
     "DTT": ["rai", "mediaset", "focus", "boing"],
-    "IPTV gratuite": ["radio", "local", "regional", "free"]
+    "IPTV gratuite": ["radio", "local", "regional", "free"],
+    "Pluto TV": ["pluto", "plutotv"]  # Rilevazione canali Pluto TV
 }
 
 CATEGORY_KEYWORDS = {
@@ -45,7 +46,8 @@ CATEGORY_KEYWORDS = {
     "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
     "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
     "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
-    "Musica": ["mtv", "vh1", "radio", "music"]
+    "Musica": ["mtv", "vh1", "radio", "music"],
+    "Pluto TV": ["pluto", "plutotv"]  # Categoria Pluto TV
 }
 
 def clean_channel_name(name):
@@ -118,10 +120,15 @@ def classify_channel(name):
     service = "IPTV gratuite"
     category = "Intrattenimento"
 
-    for key, words in SERVICE_KEYWORDS.items():
-        if any(word in name.lower() for word in words):
-            service = key
-            break
+    # Identifica se il canale è di Pluto TV
+    if any(word in name.lower() for word in SERVICE_KEYWORDS["Pluto TV"]):
+        service = "Pluto TV"
+        category = "Pluto TV"  # I canali Pluto TV sono nella loro categoria specifica
+    else:
+        for key, words in SERVICE_KEYWORDS.items():
+            if any(word in name.lower() for word in words):
+                service = key
+                break
 
     for key, words in CATEGORY_KEYWORDS.items():
         if any(word in name.lower() for word in words):
