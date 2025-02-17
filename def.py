@@ -1,10 +1,5 @@
 import requests
 import re
-import os
-import gzip
-import lzma
-import io
-import time
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
 
@@ -13,10 +8,8 @@ BASE_URLS = [
     "https://vavoo.to",
 ]
 
-# Liste M3U8 extra (Pluto TV)
-EXTRA_M3U8_URLS = [
-    "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
-]
+# URL M3U extra (Pluto TV)
+PLUTO_M3U_URL = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
 
 OUTPUT_FILE = "channels_italy.m3u8"
 
@@ -136,8 +129,8 @@ def classify_channel(name):
 
     return service, category
 
-def save_m3u8(channels, epg_urls, epg_data, extra_m3u8_urls):
-    """Salva i canali IPTV in un file M3U8 con metadati EPG e liste extra."""
+def save_m3u8(channels, epg_urls, epg_data, pluto_m3u_url):
+    """Salva i canali IPTV in un file M3U8 con metadati EPG e liste extra (Pluto TV)."""
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(f'#EXTM3U x-tvg-url="{", ".join(epg_urls)}"\n\n')
 
@@ -149,23 +142,22 @@ def save_m3u8(channels, epg_urls, epg_data, extra_m3u8_urls):
             f.write(f"{url}\n\n")
 
         # Aggiungi canali Pluto TV dal file M3U esterno
-        for extra_url in extra_m3u8_urls:
-            try:
-                extra_content = requests.get(extra_url).text
-                # Estrai i canali e assegnali alla categoria Pluto TV
-                for line in extra_content.splitlines():
-                    if line.startswith("#EXTINF"):
-                        # Estrai il nome e l'URL
-                        name_match = re.search(r'tvg-name="([^"]+)', line)
-                        url_match = re.search(r'(http[^\s]+)', line)
-                        
-                        if name_match and url_match:
-                            name = name_match.group(1)
-                            url = url_match.group(1)
-                            f.write(f'#EXTINF:-1 tvg-id="{name}" tvg-name="{name}" group-title="Pluto TV", {name}\n')
-                            f.write(f"{url}\n\n")
-            except Exception as e:
-                print(f"Errore nel download della lista extra {extra_url}: {e}")
+        try:
+            extra_content = requests.get(pluto_m3u_url).text
+            # Estrai i canali e assegnali alla categoria Pluto TV
+            for line in extra_content.splitlines():
+                if line.startswith("#EXTINF"):
+                    # Estrai il nome e l'URL
+                    name_match = re.search(r'tvg-name="([^"]+)', line)
+                    url_match = re.search(r'(http[^\s]+)', line)
+                    
+                    if name_match and url_match:
+                        name = name_match.group(1)
+                        url = url_match.group(1)
+                        f.write(f'#EXTINF:-1 tvg-id="{name}" tvg-name="{name}" group-title="Pluto TV", {name}\n')
+                        f.write(f"{url}\n\n")
+        except Exception as e:
+            print(f"Errore nel download della lista extra {pluto_m3u_url}: {e}")
 
     print(f"File {OUTPUT_FILE} generato con successo!")
 
@@ -178,7 +170,7 @@ def main():
         channels = fetch_channels(url)
         all_channels.extend(filter_italian_channels(channels, url))
 
-    save_m3u8(all_channels, EPG_URLS, epg_data, EXTRA_M3U8_URLS)
+    save_m3u8(all_channels, EPG_URLS, epg_data, PLUTO_M3U_URL)
 
 if __name__ == "__main__":
     main()
