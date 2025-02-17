@@ -1,14 +1,10 @@
 import requests
-import json
 import re
 import os
-import gzip
-import lzma
-import io
+import json
 import time
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
-from web import search  # Usa lo strumento di ricerca per trovare i loghi
 
 # URL sorgenti IPTV
 BASE_URLS = [
@@ -146,14 +142,15 @@ def get_tvg_id_from_epg(tvg_name, epg_data):
     return best_match if best_score >= 90 else ""
 
 def find_tvg_logo(tvg_name):
-    """Cerca il logo di un canale su Internet"""
-    search_query = f"{tvg_name} logo site:logos.fandom.com OR site:commons.wikimedia.org OR site:upload.wikimedia.org OR site:logos-world.net"
+    """Cerca il logo di un canale su Wikimedia Commons"""
+    search_query = f"https://commons.wikimedia.org/w/index.php?search={tvg_name.replace(' ', '+')}+logo&title=Speciale%3A%20Cerca&go=Vai&ns0=1"
     
     try:
-        results = search(search_query)
-        for result in results:
-            if any(ext in result for ext in [".png", ".jpg", ".svg"]):
-                return result
+        response = requests.get(search_query)
+        if response.status_code == 200:
+            match = re.search(r'https://upload.wikimedia.org/wikipedia/commons/[^"]+\.(?:png|jpg|jpeg|svg)', response.text)
+            if match:
+                return match.group(0)
     except Exception as e:
         print(f"Errore nella ricerca del logo per {tvg_name}: {e}")
 
