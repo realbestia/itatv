@@ -28,7 +28,7 @@ EPG_URLS = [
     "https://www.open-epg.com/files/italy1.xml",
     "https://www.open-epg.com/files/italy2.xml",
     "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz",
-    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"
+    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"  # EPG Pluto TV
 ]
 
 # Mappa numeri → parole
@@ -57,19 +57,17 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
-def normalize_name(name):
-    """Normalizza il nome del canale per il confronto."""
+def clean_channel_name(name):
+    """Pulisce il nome rimuovendo caratteri indesiderati e numeri."""
+    name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
     name = re.sub(r"\.it\b", "", name, flags=re.IGNORECASE)
     name = re.sub(r"\(.*?\)", "", name)
-    name = re.sub(r"[^\w\s]", "", name).strip().lower()
+    name = re.sub(r"[^\w\s]", "", name).strip()
 
-    number_match = re.search(r"\b\d+\b", name)
-    number = number_match.group() if number_match else None
-
-    if number and number in NUMBER_WORDS:
-        name = name.replace(number, NUMBER_WORDS[number])
-
-    return name, number
+    # Sostituzione numeri con parole
+    words = name.split()
+    cleaned_words = [NUMBER_WORDS.get(w, w) for w in words]
+    return " ".join(cleaned_words)
 
 def fetch_channels(base_url):
     """Scarica i canali IPTV e restituisce una lista."""
@@ -86,7 +84,7 @@ def filter_italian_channels(channels, base_url):
     results = {}
     for ch in channels:
         if ch.get("country") == "Italy":
-            name = ch["name"]
+            name = clean_channel_name(ch["name"])
             url = f"{base_url}/play/{ch['id']}/index.m3u8"
             results[name] = (name, url, base_url)
     return list(results.values())
@@ -158,9 +156,11 @@ def save_m3u8(channels, epg_urls, epg_data, extra_m3u8_urls):
             f.write(f"{url}\n\n")
 
         for extra_url in extra_m3u8_urls:
-            m3u8_content = fetch_channels(extra_url)
-            if m3u8_content:
-                f.write(m3u8_content + "\n\n")
+            try:
+                extra_content = requests.get(extra_url).text
+                f.write(extra_content + "\n\n")
+            except Exception as e:
+                print(f"Errore nel download della lista extra {extra_url}: {e}")
 
     print(f"File {OUTPUT_FILE} generato con successo!")
 
