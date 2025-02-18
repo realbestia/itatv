@@ -38,10 +38,10 @@ SERVICE_KEYWORDS = {
 }
 
 CATEGORY_KEYWORDS = {
-    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
+    "Sport": ["sport", "dazn", "eurosport"],
     "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
     "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
-    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+    "Intrattenimento": ["canale", "rai", "mediaset", "italia", "focus", "real time"],
     "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
     "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
     "Musica": ["mtv", "vh1", "radio", "music"]
