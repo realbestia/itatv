@@ -42,7 +42,7 @@ for programme in root.findall(".//programme"):
         programme.attrib['channel'] = programme.attrib['channel'].replace(" ", "").lower()
 
 # Salviamo il file XML modificato
-with open('epg_modified.xml', 'wb') as f_out:
+with open('epg.xml', 'wb') as f_out:
     tree.write(f_out)
 
 # Eliminare il file .gz
