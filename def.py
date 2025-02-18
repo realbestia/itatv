@@ -43,9 +43,9 @@ def load_config(url):
 
 # Funzione per trovare il canale corrispondente nel config.json
 def find_channel_info(channel_name, config_data):
-    channel_name = re.sub(r"\s*\(.*?\)", "", channel_name)  # Rimuove tutto tra parentesi
+    channel_name = re.sub(r"\s*\(.*?\)", "", channel_name).strip()  # Rimuove tutto tra parentesi
     for entry in config_data:
-        config_name = re.sub(r"\s*\(.*?\)", "", entry.get("tvg-name", ""))  # Rimuove tutto tra parentesi
+        config_name = re.sub(r"\s*\(.*?\)", "", entry.get("tvg-name", "")).strip()  # Stessa pulizia
         similarity = fuzz.token_set_ratio(channel_name.lower(), config_name.lower())
         if similarity >= SIMILARITY_THRESHOLD:
             return entry.get("tvg-id", ""), entry.get("tvg-icon", "")
@@ -63,8 +63,9 @@ def fetch_channels(base_url):
 
 # Funzione per pulire il nome del canale
 def clean_channel_name(name):
-    name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
-    return re.sub(r"\s*\(.*?\)", "", name)  # Rimuove tutto tra parentesi
+    name = re.sub(r"\s*(\|E|\|H|\.\w+)\s*", "", name)  # Rimuove "|E", "|H", ".c", ".s", ecc.
+    name = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove tutto ciò che è tra parentesi
+    return name.strip()
 
 # Funzione per filtrare i canali italiani
 def filter_italian_channels(channels, base_url):
@@ -80,10 +81,10 @@ def filter_italian_channels(channels, base_url):
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     return results
 
-# Funzione per classificare i canali
+# Funzione per classificare il canale per servizio e categoria
 def classify_channel(name):
-    service = "IPTV gratuite"
-    category = "Intrattenimento"
+    service = "IPTV gratuite"  # Default
+    category = "Intrattenimento"  # Default
 
     for key, words in SERVICE_KEYWORDS.items():
         if any(word in name.lower() for word in words):
@@ -97,35 +98,28 @@ def classify_channel(name):
 
     return service, category
 
-# Funzione per organizzare i canali
-def organize_channels(channels, config_data):
-    organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
-
-    for name, url, base_url in channels:
-        service, category = classify_channel(name)
-        tvg_id, tvg_icon = find_channel_info(name, config_data)
-        organized_data[service][category].append((name, url, base_url, tvg_id, tvg_icon))
-
-    return organized_data
-
 # Funzione per salvare il file M3U8
-def save_m3u8(organized_channels):
+def save_m3u8(organized_channels, config_data):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
-
+    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url, tvg_id, tvg_icon in channels:
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{tvg_icon}" group-title="{category}",{name}\n')
+                for name, url, base_url in channels:
+                    tvg_id, tvg_icon = find_channel_info(name, config_data)
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{tvg_icon}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                    f.write(f"#EXTVLCOPT:http-user-agent=VAVOO/2.6\n")
+                    f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
+                    f.write(f'#EXTHTTP:{{"User-Agent":"VAVOO/2.6","Referer":"{base_url}/"}}\n')
                     f.write(f"{url}\n\n")
 
 # Funzione principale
 def main():
-    all_links = []
     config_data = load_config(CONFIG_URL)
+    all_links = []
 
     for url in BASE_URLS:
         channels = fetch_channels(url)
@@ -133,11 +127,13 @@ def main():
         all_links.extend(italian_channels)
 
     # Organizzazione dei canali
-    organized_channels = organize_channels(all_links, config_data)
+    organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
+    for name, url, base_url in all_links:
+        service, category = classify_channel(name)
+        organized_channels[service][category].append((name, url, base_url))
 
     # Salvataggio nel file M3U8
-    save_m3u8(organized_channels)
-
+    save_m3u8(organized_channels, config_data)
     print(f"File {OUTPUT_FILE} creato con successo!")
 
 if __name__ == "__main__":
