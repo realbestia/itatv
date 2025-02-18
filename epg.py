@@ -9,10 +9,7 @@ logging.basicConfig(level=logging.INFO)
 
 # URL dei file EPG
 urls = [
-    "https://www.open-epg.com/files/italy1.xml",
-    "https://www.open-epg.com/files/italy2.xml",
-    "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_RAKUTEN_IT1.xml.gz",
+    "https://www.epgitalia.tv/gzip",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"
 ]
 
