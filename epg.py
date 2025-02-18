@@ -9,8 +9,7 @@ logging.basicConfig(level=logging.INFO)
 
 # URL dei file EPG
 urls = [
-    "https://www.epgitalia.tv/gzip",
-    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"
+    "https://www.epgitalia.tv/gzip"
 ]
 
 # Funzione per scaricare e decomprimere file .gz
