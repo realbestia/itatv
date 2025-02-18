@@ -149,11 +149,11 @@ def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
                 best_icon = channel.find("icon").get("src") if channel.find("icon") is not None else None
 
             # Restituisci il miglior match se la somiglianza è sopra la soglia
-            if best_score >= 90:
+            if best_score >= 95:
                 return best_match, best_icon
 
     # Restituisci il miglior match se la somiglianza è sopra una soglia inferiore
-    return best_match if best_score >= 85 else "", best_icon
+    return best_match if best_score >= 90 else "", best_icon
 
 def save_m3u8(organized_channels, epg_urls, epg_data):
     """Salva i canali IPTV in un file M3U8 con metadati EPG"""
