@@ -72,7 +72,8 @@ class EPGProcessor:
             return
 
         channel_id = channel.get("id")
-        icon = channel.findtext("icon/@src") or ""
+        icon = self._extract_icon(channel)
+        
         normalized, numbers = self.normalize_name(display_name)
         
         self.epg_map.setdefault(normalized, []).append({
@@ -81,6 +82,17 @@ class EPGProcessor:
             "numbers": numbers,
             "original": display_name
         })
+
+    def _extract_icon(self, channel):
+        """Gestisce diversi formati per le icone"""
+        # Caso 1: <icon src="URL"/>
+        icon_element = channel.find("icon")
+        if icon_element is not None:
+            return icon_element.get("src", "")
+        
+        # Caso 2: <icon>URL</icon>
+        icon_text = channel.findtext("icon")
+        return icon_text.strip() if icon_text else ""
 
     @lru_cache(maxsize=2000)
     def normalize_name(self, name):
