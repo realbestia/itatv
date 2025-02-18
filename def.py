@@ -2,7 +2,11 @@ import requests
 import json
 import re
 import os
+import gzip
+import lzma
+import io
 import time
+import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
 
 # URL sorgenti IPTV
@@ -11,7 +15,15 @@ BASE_URLS = [
 ]
 
 OUTPUT_FILE = "channels_italy.m3u8"
-CONFIG_FILE = "config.json"
+
+# Mappa numeri → parole
+NUMBER_WORDS = {
+    "1": "uno", "2": "due", "3": "tre", "4": "quattro",
+    "5": "cinque", "6": "sei", "7": "sette", "8": "otto", "9": "nove",
+    "10": "dieci", "11": "undici", "12": "dodici", "13": "tredici", "14": "quattordici",
+    "15": "quindici", "16": "sedici", "17": "diciassette", "18": "diciotto", "19": "diciannove",
+    "20": "venti"
+}
 
 # Mappatura dei servizi e delle categorie
 SERVICE_KEYWORDS = {
@@ -30,101 +42,54 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
-
-def load_config():
-    """Carica la lista EPG da config.json"""
+def load_epg_from_config(file_path):
+    """Carica i dati EPG dal file config.json"""
     try:
-        with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"Errore nel caricamento del file config.json: {e}")
+    except Exception as e:
+        print(f"Errore durante il caricamento del file EPG: {e}")
         return []
 
+# ... (resto del codice rimane invariato)
 
-def clean_channel_name(name):
-    """Pulisce il nome del canale rimuovendo caratteri indesiderati."""
-    return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name)
-
-
-def normalize_for_matching(name):
-    """Normalizza il nome per il confronto."""
-    temp_name = re.sub(r"\.it\b", "", name, flags=re.IGNORECASE)
-    temp_name = re.sub(r"\(.*?\)", "", temp_name)
-    temp_name = re.sub(r"[^\w\s]", "", temp_name).strip().lower()
-    return temp_name
-
-
-def fetch_channels(base_url, retries=3):
-    """Scarica i canali IPTV con gestione errori."""
-    for attempt in range(retries):
-        try:
-            response = requests.get(f"{base_url}/channels", timeout=10)
-            response.raise_for_status()
-            return response.json()
-        except requests.RequestException as e:
-            print(f"Errore durante il download da {base_url} (tentativo {attempt+1}): {e}")
-            time.sleep(2 ** attempt)
-    return []
-
-
-def filter_italian_channels(channels, base_url):
-    """Filtra i canali italiani e rimuove duplicati."""
-    results = {}
-    for ch in channels:
-        if ch.get("country") == "Italy":
-            clean_name = clean_channel_name(ch["name"])
-            if clean_name not in results:
-                results[clean_name] = (clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url)
-    return list(results.values())
-
-
-def get_tvg_id_and_icon_from_config(tvg_name, epg_list):
-    """Trova il miglior tvg-id e tvg-icon dal config.json"""
+def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
+    """Trova il miglior tvg-id e tvg-icon senza modificare il nome originale nel file M3U8"""
     best_match = None
     best_score = 0
     best_icon = None
 
-    normalized_tvg_name = normalize_for_matching(tvg_name)
+    normalized_tvg_name, tvg_number = normalize_for_matching(tvg_name)
 
-    for epg_entry in epg_list:
-        epg_name = epg_entry["tvg-name"]
-        epg_id = epg_entry["tvg-id"]
-        epg_icon = epg_entry.get("tvg-icon", "")
+    for epg_channel in epg_data:
+        epg_channel_name = epg_channel["tvg-name"]
+        normalized_epg_name, epg_number = normalize_for_matching(epg_channel_name)
+
+        # Se uno ha un numero e l'altro no, scarta il match
+        if (tvg_number and not epg_number) or (epg_number and not tvg_number):
+            continue  
         
-        normalized_epg_name = normalize_for_matching(epg_name)
+        # Se entrambi hanno un numero, devono essere uguali
+        if tvg_number and epg_number and tvg_number != epg_number:
+            continue  
+
+        # Utilizza diverse metriche di corrispondenza fuzzy
         similarity = fuzz.token_sort_ratio(normalized_tvg_name, normalized_epg_name)
 
         if similarity > best_score:
             best_score = similarity
-            best_match = epg_id
-            best_icon = epg_icon
+            best_match = epg_channel["tvg-id"]
+            best_icon = epg_channel["tvg-icon"]
 
-        if best_score >= 99:
+        # Restituisci il miglior match se la somiglianza è sopra la soglia
+        if best_score >= 95:
             return best_match, best_icon
 
+    # Restituisci il miglior match se la somiglianza è sopra una soglia inferiore
     return best_match if best_score >= 90 else "", best_icon
 
-
-def save_m3u8(organized_channels, epg_list):
-    """Salva i canali IPTV in un file M3U8 con metadati EPG."""
-    if os.path.exists(OUTPUT_FILE):
-        os.remove(OUTPUT_FILE)
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write('#EXTM3U\n\n')
-        
-        for service, categories in organized_channels.items():
-            for category, channels in categories.items():
-                for name, url, base_url in channels:
-                    tvg_id, tvg_icon = get_tvg_id_and_icon_from_config(name, epg_list)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-icon="{tvg_icon}", {name}\n')
-                    f.write(f"{url}\n\n")
-    
-    print(f"File {OUTPUT_FILE} creato con successo!")
-
-
 def main():
-    epg_list = load_config()  # Carica la lista EPG dal config.json
+    epg_data = load_epg_from_config('config.json')
 
     all_links = []
     for url in BASE_URLS:
@@ -146,8 +111,7 @@ def main():
                 break
         organized_channels[service][category].append((name, url, base_url))
 
-    save_m3u8(organized_channels, epg_list)
-
+    save_m3u8(organized_channels, [], epg_data)
 
 if __name__ == "__main__":
     main()
