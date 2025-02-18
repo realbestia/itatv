@@ -34,13 +34,15 @@ NUMBER_WORDS = {
 SERVICE_KEYWORDS = {
     "Sky": ["sky", "fox", "hbo"],
     "DTT": ["rai", "mediaset", "focus", "boing"],
-    "IPTV gratuite": ["radio", "local", "regional", "free"]
+    "IPTV": ["radio", "local", "regional", "free"]
 }
 
 CATEGORY_KEYWORDS = {
-    "Sport": ["sport", "dazn", "eurosport"],
-    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
-    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
+    "Sky": ["sky", "fox", "hbo"],
+    "Rai": ["rai"],
+    "Mediaset": ["mediaset"],
+    "Film": ["film", "movie", "primafila", "cinema"]
+    "News": ["news", "tg", "rai news", "tgcom"],
     "Intrattenimento": ["canale", "dmax", "rai", "mediaset", "italia", "focus", "real time"],
     "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
     "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
