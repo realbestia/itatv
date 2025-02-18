@@ -25,44 +25,24 @@ EPG_URLS = [
 
 # Numeri in lettere fino a 99
 NUMBER_WORDS = {
-    "0": "zero", "1": "uno", "2": "due", "3": "tre", "4": "quattro",
-    "5": "cinque", "6": "sei", "7": "sette", "8": "otto", "9": "nove",
-    "10": "dieci", "11": "undici", "12": "dodici", "13": "tredici", "14": "quattordici",
-    "15": "quindici", "16": "sedici", "17": "diciassette", "18": "diciotto", "19": "diciannove",
-    "20": "venti", "30": "trenta", "40": "quaranta", "50": "cinquanta",
-    "60": "sessanta", "70": "settanta", "80": "ottanta", "90": "novanta",
+    "1": "uno", "2": "due", "3": "tre", "4": "quattro", "5": "cinque",
+    "6": "sei", "7": "sette", "8": "otto", "9": "nove", "10": "dieci",
 }
 
 def convert_number_to_words(number):
     """Converte un numero in lettere fino a 99."""
     if number in NUMBER_WORDS:
         return NUMBER_WORDS[number]
-    
-    if 21 <= number <= 99:
-        tens = (number // 10) * 10  
-        units = number % 10  
-
-        if units in [1, 8]:
-            return NUMBER_WORDS[tens][:-1] + NUMBER_WORDS[str(units)]
-        else:
-            return NUMBER_WORDS[tens] + NUMBER_WORDS[str(units)]
-    
     return str(number)
 
-# Mappatura servizi e categorie
-SERVICE_KEYWORDS = {
-    "Sky": ["sky", "fox", "hbo"],
-    "DTT": ["rai", "mediaset", "focus", "boing"],
-    "IPTV gratuite": ["radio", "local", "regional", "free"]
-}
-
+# Categorie IPTV
 CATEGORY_KEYWORDS = {
     "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
-    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
+    "Film & Serie TV": ["cinema", "movie", "film", "serie", "hbo", "fox"],
     "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
-    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
-    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
-    "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
+    "Intrattenimento": ["rai", "mediaset", "focus", "real time"],
+    "Bambini": ["cartoon", "boing", "nick", "disney"],
+    "Documentari": ["discovery", "geo", "history", "nat geo"],
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
@@ -127,20 +107,57 @@ def download_epg(epg_url):
         else:
             xml_content = response.content
 
-        return ET.iterparse(io.BytesIO(xml_content), events=("start", "end"))
+        return ET.fromstring(xml_content)
 
     except Exception as e:
         print(f"Errore download/parsing EPG {epg_url}: {e}")
         return None
 
-def save_m3u8(channels):
-    """Salva i canali IPTV in un file M3U8."""
+def get_tvg_id_and_icon(channel_name, epg_data):
+    """Trova il tvg-id e l'icona migliore per un canale."""
+    best_match = None
+    best_score = 0
+    best_icon = None
+
+    normalized_name, _ = normalize_for_matching(channel_name)
+
+    for epg in epg_data:
+        for channel in epg.findall("channel"):
+            epg_name = channel.find("display-name").text
+            if not epg_name:
+                continue  
+
+            normalized_epg_name, _ = normalize_for_matching(epg_name)
+            similarity = fuzz.token_sort_ratio(normalized_name, normalized_epg_name)
+
+            if similarity > best_score:
+                best_score = similarity
+                best_match = channel.get("id")
+                best_icon = channel.find("icon").get("src") if channel.find("icon") is not None else None
+
+            if best_score >= 90:
+                return best_match, best_icon
+
+    return best_match if best_score >= 85 else "", best_icon
+
+def categorize_channel(channel_name):
+    """Assegna una categoria IPTV in base al nome."""
+    for category, keywords in CATEGORY_KEYWORDS.items():
+        if any(word in channel_name.lower() for word in keywords):
+            return category
+    return "Altro"
+
+def save_m3u8(channels, epg_data):
+    """Salva i canali IPTV in un file M3U8 con categorie e metadati EPG."""
     temp_file = OUTPUT_FILE + ".tmp"
 
     with open(temp_file, "w", encoding="utf-8") as f:
         f.write(f'#EXTM3U x-tvg-url="{", ".join(EPG_URLS)}"\n\n')
-        for name, url, base_url in channels:
-            f.write(f'#EXTINF:-1 tvg-name="{name}", {name}\n{url}\n\n')
+        for name, url, _ in channels:
+            tvg_id, tvg_icon = get_tvg_id_and_icon(name, epg_data)
+            category = categorize_channel(name)
+            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-icon="{tvg_icon}", {name}\n')
+            f.write(f"{url}\n\n")
 
     shutil.move(temp_file, OUTPUT_FILE)
     print(f"File {OUTPUT_FILE} creato con successo!")
@@ -160,8 +177,9 @@ def fetch_all_channels():
     return all_links
 
 def main():
+    epg_data = [download_epg(url) for url in EPG_URLS if download_epg(url)]
     all_links = fetch_all_channels()
-    save_m3u8(all_links)
+    save_m3u8(all_links, epg_data)
 
 if __name__ == "__main__":
     main()
