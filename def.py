@@ -84,7 +84,7 @@ def filter_italian_channels(channels, base_url):
     return list(results.values())
 
 def save_m3u8(organized_channels):
-    """Salva i canali IPTV in un file M3U8"""
+    """Salva i canali IPTV in un file M3U8 con metadati tvg-name"""
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
@@ -94,7 +94,8 @@ def save_m3u8(organized_channels):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
-                    f.write(f'#EXTINF:-1 group-title="{category}", {name}\n')
+                    normalized_name, _ = normalize_for_matching(name)
+                    f.write(f'#EXTINF:-1 tvg-name="{normalized_name}" group-title="{category}", {name}\n')
                     f.write(f"{url}\n\n")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
@@ -108,7 +109,7 @@ def main():
     # Organizzazione dei canali in base a servizio e categoria
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
     for name, url, base_url in all_links:
-        service = "IPTV gratuite"
+        service = "IPTV gratuita"
         category = "Intrattenimento"
         for key, words in SERVICE_KEYWORDS.items():
             if any(word in name.lower() for word in words):
