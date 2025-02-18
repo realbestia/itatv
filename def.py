@@ -151,8 +151,11 @@ def save_m3u8(organized_channels, epg_urls, epg_data, config_data):
                 for name, url, base_url in channels:
                     # Trova il miglior tvg-id e tvg-icon dal config.json
                     tvg_id, tvg_icon = get_tvg_id_and_icon_from_config(name, config_data)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-icon="{tvg_icon}", {name}\n')
-                    f.write(f"{url}\n\n")
+                    if tvg_id:  # Assicurati che tvg_id esista
+                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-icon="{tvg_icon}", {name}\n')
+                        f.write(f"{url}\n\n")
+                    else:
+                        print(f"ID TVG non trovato per il canale {name}")
 
     print(f"File {OUTPUT_FILE} creato con successo!")
 
