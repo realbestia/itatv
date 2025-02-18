@@ -2,115 +2,139 @@ import requests
 import json
 import re
 import os
-import time
 from fuzzywuzzy import fuzz
 
-# URL sorgenti IPTV
-BASE_URLS = [
-    "https://vavoo.to",
-]
+# URL del file config.json
+CONFIG_URL = "https://raw.githubusercontent.com/realbestia/itatv/main/config.json"
 
+# Soglia di somiglianza per considerare due nomi di canali come corrispondenti
+SIMILARITY_THRESHOLD = 90
 OUTPUT_FILE = "channels_italy.m3u8"
-EXCLUDED_LOG = "excluded_channels.log"
 
-# URL del config JSON
-CONFIG_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/config.json"
-
-# Lista dei canali richiesti
-ALLOWED_CHANNELS = [
-    "sky", "fox", "rai", "cine34", "real time", "crime+ investigation", "top crime", "wwe", "tennis", "k2",
-    "inter", "rsi", "la 7", "la7", "la 7d", "la7d", "27 twentyseven", "premium crime", "comedy central", "super!",
-    "animal planet", "hgtv", "avengers grimm channel", "catfish", "rakuten", "nickelodeon", "cartoonito", "nick jr",
-    "history", "nat geo", "tv8", "canale 5", "italia", "mediaset", "rete 4",
-    "focus", "iris", "discovery", "dazn", "cine 34", "la 5", "giallo", "dmax", "cielo", "eurosport", "disney+", "food", "tv 8"
+BASE_URLS = [
+    "https://vavoo.to"
 ]
 
-CATEGORY_MAPPING = {
-    "SKY": ["sky", "tv 8", "fox", "comedy central", "animal planet", "nat geo", "tv8"],
-    "RAI": ["rai"],
-    "MEDIASET": ["mediaset", "canale 5", "rete 4", "italia", "focus"],
-    "DISCOVERY": ["discovery", "real time", "crime+ investigation", "top crime", "wwe", "hgtv"],
-    "SPORT": ["sport", "dazn", "tennis", "moto", "f1", "golf"],
-    "ALTRI": []
+SERVICE_KEYWORDS = {
+    "Sky": ["sky", "fox", "hbo"],
+    "DTT": ["rai", "mediaset", "focus", "boing"],
+    "IPTV gratuite": ["radio", "local", "regional", "free"]
 }
 
-def clean_channel_name(name):
-    """Pulisce il nome rimuovendo caratteri indesiderati."""
-    return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\s*", "", name, flags=re.IGNORECASE)
+CATEGORY_KEYWORDS = {
+    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
+    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
+    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
+    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
+    "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
+    "Musica": ["mtv", "vh1", "radio", "music"]
+}
 
-def fetch_channels(base_url, retries=3):
-    """Scarica i canali IPTV con gestione errori"""
-    for attempt in range(retries):
-        try:
-            response = requests.get(f"{base_url}/channels", timeout=10)
-            response.raise_for_status()
-            return response.json()
-        except requests.RequestException as e:
-            print(f"Errore durante il download da {base_url} (tentativo {attempt + 1}): {e}")
-            time.sleep(2 ** attempt)
-    return []
-
-def fetch_config():
-    """Scarica e carica il file di configurazione JSON."""
+# Funzione per scaricare il file config.json
+def load_config(url):
     try:
-        response = requests.get(CONFIG_URL, timeout=10)
+        response = requests.get(url, timeout=10)
         response.raise_for_status()
         return response.json()
     except requests.RequestException as e:
-        print(f"Errore durante il download del config JSON: {e}")
-        return {}
+        print(f"Errore durante il download del file di configurazione: {e}")
+        return []
 
-def assign_category(channel_name):
-    """Assegna una categoria al canale in base al nome."""
-    for category, keywords in CATEGORY_MAPPING.items():
-        if any(keyword in channel_name for keyword in keywords):
-            return category
-    return "ALTRI"
+# Funzione per trovare il canale corrispondente nel config.json
+def find_channel_info(channel_name, config_data):
+    for entry in config_data:
+        config_name = entry.get("tvg-name", "")
+        similarity = fuzz.token_set_ratio(channel_name.lower(), config_name.lower())
+        if similarity >= SIMILARITY_THRESHOLD:
+            return entry.get("tvg-id", ""), entry.get("tvg-icon", "")
+    return "", ""
 
-def filter_italian_channels(channels, base_url, config):
-    """Filtra i canali italiani e seleziona solo quelli nella lista ALLOWED_CHANNELS"""
-    results = {}
-    excluded = []
-    
+# Funzione per scaricare i canali
+def fetch_channels(base_url):
+    try:
+        response = requests.get(f"{base_url}/channels", timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        print(f"Errore durante il download da {base_url}: {e}")
+        return []
+
+# Funzione per pulire il nome del canale
+def clean_channel_name(name):
+    return re.sub(r"\\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)\\s*", "", name)
+
+# Funzione per filtrare i canali italiani
+def filter_italian_channels(channels, base_url):
+    seen = {}
+    results = []
     for ch in channels:
         if ch.get("country") == "Italy":
-            clean_name = clean_channel_name(ch["name"]).lower()
-            if any(keyword in clean_name for keyword in ALLOWED_CHANNELS):
-                category = assign_category(clean_name)
-                tvg_id = config.get(clean_name, {}).get("tvg-id", "")
-                tvg_icon = config.get(clean_name, {}).get("tvg-icon", "")
-                results[clean_name] = (clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", category, tvg_id, tvg_icon)
-            else:
-                excluded.append(clean_name)
-    
-    with open(EXCLUDED_LOG, "w", encoding="utf-8") as log_file:
-        for channel in excluded:
-            log_file.write(channel + "\n")
-    
-    print(f"File {EXCLUDED_LOG} creato con la lista dei canali esclusi.")
-    return list(results.values())
+            clean_name = clean_channel_name(ch["name"])
+            count = seen.get(clean_name, 0) + 1
+            seen[clean_name] = count
+            if count > 1:
+                clean_name = f"{clean_name} ({count})"
+            results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
+    return results
 
-def save_m3u8(channels):
-    """Salva i canali IPTV filtrati in un file M3U8"""
+# Funzione per classificare i canali
+def classify_channel(name):
+    service = "IPTV gratuite"
+    category = "Intrattenimento"
+    for key, words in SERVICE_KEYWORDS.items():
+        if any(word in name.lower() for word in words):
+            service = key
+            break
+    for key, words in CATEGORY_KEYWORDS.items():
+        if any(word in name.lower() for word in words):
+            category = key
+            break
+    return service, category
+
+# Funzione per estrarre l'user agent
+def extract_user_agent(base_url):
+    match = re.search(r"https?://([^/.]+)", base_url)
+    if match:
+        return match.group(1).upper()
+    return "DEFAULT"
+
+# Funzione per organizzare i canali
+def organize_channels(channels, config_data):
+    organized_data = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
+    for name, url, base_url in channels:
+        service, category = classify_channel(name)
+        user_agent = extract_user_agent(base_url)
+        tvg_id, tvg_icon = find_channel_info(name, config_data)
+        organized_data[service][category].append((name, url, base_url, user_agent, tvg_id, tvg_icon))
+    return organized_data
+
+# Funzione per salvare il file M3U8
+def save_m3u8(organized_channels):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
-    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(f'#EXTM3U\n\n')
-        for name, url, category, tvg_id, tvg_icon in channels:
-            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{tvg_icon}" group-title="{category}", {name}\n')
-            f.write(f"{url}\n\n")
-    
-    print(f"File {OUTPUT_FILE} creato con successo!")
+        f.write("#EXTM3U\n\n")
+        for service, categories in organized_channels.items():
+            for category, channels in categories.items():
+                for name, url, base_url, user_agent, tvg_id, tvg_icon in channels:
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{tvg_icon}" group-title="{category}" http-user-agent="{user_agent}/2.6" http-referrer="{base_url}",{name}\n')
+                    f.write(f"#EXTVLCOPT:http-user-agent={user_agent}/2.6\n")
+                    f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
+                    f.write(f'#EXTHTTP:{{"User-Agent":"{user_agent}/2.6","Referer":"{base_url}/"}}\n')
+                    f.write(f"{url}\n\n")
 
+# Funzione principale
 def main():
-    config = fetch_config()
+    config_data = load_config(CONFIG_URL)
     all_links = []
     for url in BASE_URLS:
         channels = fetch_channels(url)
-        all_links.extend(filter_italian_channels(channels, url, config))
-    
-    save_m3u8(all_links)
+        italian_channels = filter_italian_channels(channels, url)
+        all_links.extend(italian_channels)
+    organized_channels = organize_channels(all_links, config_data)
+    save_m3u8(organized_channels)
+    print(f"File {OUTPUT_FILE} creato con successo!")
 
 if __name__ == "__main__":
     main()
