@@ -1,431 +1,977 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-name="canale 5" group-title="MEDIASET", canale 5
-https://vavoo.to/play/1101559666/index.m3u8
+#EXTINF:-1 tvg-id="Sky Sport Uno.it" tvg-name="SKY SPORT UNO" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/2900skysportuno_Light_Fit.png?checksum=8e3a4fa5-ab34-4397-bfb0-c593ea44392a?tr=n-logo_80", SKY SPORT UNO
+https://vavoo.to/play/210669162/index.m3u8
 
-#EXTINF:-1 tvg-name="sky sport uno" group-title="SKY", sky sport uno
-https://vavoo.to/play/3192996672/index.m3u8
+#EXTINF:-1 tvg-id="Sky Sport Tennis.it" tvg-name="SKY SPORT TENNIS" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/559skysporttennis_Light_Fit.png?checksum=63436110-b04f-4b52-ab5f-0ceacf8f10d5?tr=n-logo_80", SKY SPORT TENNIS
+https://vavoo.to/play/2100771782/index.m3u8
 
-#EXTINF:-1 tvg-name="sky sport tennis" group-title="SKY", sky sport tennis
-https://vavoo.to/play/78546677/index.m3u8
+#EXTINF:-1 tvg-id="Sky Sport Calcio.it" tvg-name="SKY SPORT CALCIO" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/209skysportcalcio_Light_Fit.png?checksum=1a919ce6-bec1-4fe8-8d86-687eb05c10dc?tr=n-logo_80", SKY SPORT CALCIO
+https://vavoo.to/play/1665920101/index.m3u8
 
-#EXTINF:-1 tvg-name="rai 1" group-title="RAI", rai 1
-https://vavoo.to/play/875922788/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema action" group-title="SKY", sky cinema action
-https://vavoo.to/play/3812796171/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema action (backup)" group-title="SKY", sky cinema action (backup)
-https://vavoo.to/play/2242741766/index.m3u8
-
-#EXTINF:-1 tvg-name="italia 1" group-title="MEDIASET", italia 1
-https://vavoo.to/play/663536394/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport calcio" group-title="SKY", sky sport calcio
-https://vavoo.to/play/449990998/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema collection" group-title="SKY", sky cinema collection
-https://vavoo.to/play/3525837057/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema uno" group-title="SKY", sky cinema uno
-https://vavoo.to/play/1759625738/index.m3u8
-
-#EXTINF:-1 tvg-name="rai 2" group-title="RAI", rai 2
-https://vavoo.to/play/1939210164/index.m3u8
-
-#EXTINF:-1 tvg-name="rete 4" group-title="MEDIASET", rete 4
-https://vavoo.to/play/2235732004/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport 24" group-title="SKY", sky sport 24
+#EXTINF:-1 tvg-id="Sky.Sport24.it" tvg-name="SKY SPORT 24" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Sky_Sport_24_-_Logo_2020.svg/1024px-Sky_Sport_24_-_Logo_2020.svg.png", SKY SPORT 24
 https://vavoo.to/play/2775802255/index.m3u8
 
-#EXTINF:-1 tvg-name="sky sport moto gp" group-title="SKY", sky sport moto gp
+#EXTINF:-1 tvg-id="Sky.Sport.MotoGP.it" tvg-name="SKY SPORT MOTO GP" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/483skysportmotogp_Light_Fit.png?checksum=f4f6558a-cc78-4520-bea8-e2170ed17a62?tr=n-logo_80", SKY SPORT MOTO GP
 https://vavoo.to/play/3036316886/index.m3u8
 
-#EXTINF:-1 tvg-name="sky sport arena" group-title="SKY", sky sport arena
-https://vavoo.to/play/2555960713/index.m3u8
+#EXTINF:-1 tvg-id="Sky Sport Arena.it" tvg-name="SKY SPORT ARENA" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/24skysportarena_Light_Fit.png?checksum=d199a3de-6458-4e91-92d4-19140dcd2c84?tr=n-logo_80", SKY SPORT ARENA
+https://vavoo.to/play/3007400791/index.m3u8
 
-#EXTINF:-1 tvg-name="sky sport" group-title="SKY", sky sport
+#EXTINF:-1 tvg-id="Sky Sport.it" tvg-name="SKY SPORT" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/de/thumb/8/8f/Sky_Sport_Logo_2020.svg/1024px-Sky_Sport_Logo_2020.svg.png", SKY SPORT
 https://vavoo.to/play/924661659/index.m3u8
 
-#EXTINF:-1 tvg-name="sky cinema suspense" group-title="SKY", sky cinema suspense
-https://vavoo.to/play/3060043751/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema comedy" group-title="SKY", sky cinema comedy
-https://vavoo.to/play/500203271/index.m3u8
-
-#EXTINF:-1 tvg-name="rai 3" group-title="RAI", rai 3
-https://vavoo.to/play/869117599/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport f1" group-title="SKY", sky sport f1
+#EXTINF:-1 tvg-id="Sky Sport F1.it" tvg-name="SKY SPORT F1" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/478skysportf1_Light_Fit.png?checksum=34a825e9-2a98-432a-a85c-dbb8c3acb0e0?tr=n-logo_80", SKY SPORT F1
 https://vavoo.to/play/4246774056/index.m3u8
 
-#EXTINF:-1 tvg-name="discovery nove" group-title="DISCOVERY", discovery nove
-https://vavoo.to/play/2651461317/index.m3u8
-
-#EXTINF:-1 tvg-name="super tennis" group-title="ALTRI", super tennis
-https://vavoo.to/play/3213195143/index.m3u8
-
-#EXTINF:-1 tvg-name="tennis channel" group-title="ALTRI", tennis channel
-https://vavoo.to/play/2716316208/index.m3u8
-
-#EXTINF:-1 tvg-name="la 7" group-title="ALTRI", la 7
-https://vavoo.to/play/775530063/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 9" group-title="SKY", sky primafila 9
-https://vavoo.to/play/1134113883/index.m3u8
-
-#EXTINF:-1 tvg-name="rai movie" group-title="RAI", rai movie
-https://vavoo.to/play/1925964148/index.m3u8
-
-#EXTINF:-1 tvg-name="cine 34 mediaset" group-title="MEDIASET", cine 34 mediaset
-https://vavoo.to/play/1768670187/index.m3u8
-
-#EXTINF:-1 tvg-name="rai premium" group-title="RAI", rai premium
-https://vavoo.to/play/2861734300/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport 24 [live during events only]" group-title="SKY", sky sport 24 [live during events only]
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT 24 [LIVE DURING EVENTS ONLY]" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Sky_Sport_24_-_Logo_2018.svg/1024px-Sky_Sport_24_-_Logo_2018.svg.png", SKY SPORT 24 [LIVE DURING EVENTS ONLY]
 https://vavoo.to/play/3445562519/index.m3u8
 
-#EXTINF:-1 tvg-name="sky primafila 6" group-title="SKY", sky primafila 6
-https://vavoo.to/play/3251217290/index.m3u8
+#EXTINF:-1 tvg-id="Sky Sport NBA.it" tvg-name="SKY SPORT NBA" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/764skysportnba_Light_Fit.png?checksum=31b27c43-f8cf-44bf-a585-a4ae427001f8?tr=n-logo_80", SKY SPORT NBA
+https://vavoo.to/play/326825326/index.m3u8
 
-#EXTINF:-1 tvg-name="rai 4k" group-title="RAI", rai 4k
-https://vavoo.to/play/2049087681/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 7" group-title="SKY", sky primafila 7
-https://vavoo.to/play/4238969402/index.m3u8
-
-#EXTINF:-1 tvg-name="mediaset 1" group-title="MEDIASET", mediaset 1
-https://vavoo.to/play/633342961/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 8" group-title="SKY", sky primafila 8
-https://vavoo.to/play/2130255339/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport nba" group-title="SKY", sky sport nba
-https://vavoo.to/play/2711959620/index.m3u8
-
-#EXTINF:-1 tvg-name="sky atlantic" group-title="SKY", sky atlantic
-https://vavoo.to/play/1482866609/index.m3u8
-
-#EXTINF:-1 tvg-name="rai 4" group-title="RAI", rai 4
-https://vavoo.to/play/2179822223/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema drama" group-title="SKY", sky cinema drama
-https://vavoo.to/play/1235530177/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 2" group-title="SKY", sky primafila 2
-https://vavoo.to/play/877200714/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 4" group-title="SKY", sky primafila 4
-https://vavoo.to/play/3137990890/index.m3u8
-
-#EXTINF:-1 tvg-name="italia 2" group-title="MEDIASET", italia 2
-https://vavoo.to/play/1613543898/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 5" group-title="SKY", sky primafila 5
-https://vavoo.to/play/2255083866/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 1" group-title="SKY", sky primafila 1
-https://vavoo.to/play/1492183364/index.m3u8
-
-#EXTINF:-1 tvg-name="crime+ investigation" group-title="DISCOVERY", crime+ investigation
-https://vavoo.to/play/3005227700/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 10" group-title="SKY", sky primafila 10
-https://vavoo.to/play/4272937805/index.m3u8
-
-#EXTINF:-1 tvg-name="rsi la 1" group-title="ALTRI", rsi la 1
-https://vavoo.to/play/2455610203/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema family" group-title="SKY", sky cinema family
-https://vavoo.to/play/3216516117/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport serie a" group-title="SKY", sky sport serie a
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT SERIE A" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Sky_Sport_Serie_A_-_Logo_2018.svg/1024px-Sky_Sport_Serie_A_-_Logo_2018.svg.png", SKY SPORT SERIE A
 https://vavoo.to/play/2077387085/index.m3u8
 
-#EXTINF:-1 tvg-name="rai news 24" group-title="RAI", rai news 24
-https://vavoo.to/play/2239645272/index.m3u8
-
-#EXTINF:-1 tvg-name="sky serie" group-title="SKY", sky serie
-https://vavoo.to/play/836680112/index.m3u8
-
-#EXTINF:-1 tvg-name="k2" group-title="ALTRI", k2
-https://vavoo.to/play/2255724318/index.m3u8
-
-#EXTINF:-1 tvg-name="20 mediaset" group-title="MEDIASET", 20 mediaset
-https://vavoo.to/play/1230338185/index.m3u8
-
-#EXTINF:-1 tvg-name="sky super tennis" group-title="SKY", sky super tennis
-https://vavoo.to/play/558282118/index.m3u8
-
-#EXTINF:-1 tvg-name="la 7 d" group-title="ALTRI", la 7 d
-https://vavoo.to/play/881846038/index.m3u8
-
-#EXTINF:-1 tvg-name="rsi la 2" group-title="ALTRI", rsi la 2
-https://vavoo.to/play/3590183307/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport motogp" group-title="SKY", sky sport motogp
+#EXTINF:-1 tvg-id="Sky.Sport.MotoGP.it" tvg-name="SKY SPORT MOTOGP" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/483skysportmotogp_Light_Fit.png?checksum=f4f6558a-cc78-4520-bea8-e2170ed17a62?tr=n-logo_80", SKY SPORT MOTOGP
 https://vavoo.to/play/2090703806/index.m3u8
 
-#EXTINF:-1 tvg-name="rai 5" group-title="RAI", rai 5
-https://vavoo.to/play/3163380543/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema uno +24" group-title="SKY", sky cinema uno +24
-https://vavoo.to/play/1699876530/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 17" group-title="SKY", sky primafila 17
-https://vavoo.to/play/1284441949/index.m3u8
-
-#EXTINF:-1 tvg-name="27 twentyseven" group-title="ALTRI", 27 twentyseven
-https://vavoo.to/play/80896559/index.m3u8
-
-#EXTINF:-1 tvg-name="rai gulp" group-title="RAI", rai gulp
-https://vavoo.to/play/1803677691/index.m3u8
-
-#EXTINF:-1 tvg-name="rai scuola" group-title="RAI", rai scuola
-https://vavoo.to/play/1886684667/index.m3u8
-
-#EXTINF:-1 tvg-name="rai italia" group-title="RAI", rai italia
-https://vavoo.to/play/294457245/index.m3u8
-
-#EXTINF:-1 tvg-name="mediaset infinity+ 5" group-title="MEDIASET", mediaset infinity+ 5
-https://vavoo.to/play/588488827/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema due" group-title="SKY", sky cinema due
-https://vavoo.to/play/2330574729/index.m3u8
-
-#EXTINF:-1 tvg-name="focus" group-title="MEDIASET", focus
-https://vavoo.to/play/3439223610/index.m3u8
-
-#EXTINF:-1 tvg-name="mediaset extra" group-title="MEDIASET", mediaset extra
-https://vavoo.to/play/477466531/index.m3u8
-
-#EXTINF:-1 tvg-name="real time" group-title="DISCOVERY", real time
-https://vavoo.to/play/1574975196/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 3" group-title="SKY", sky primafila 3
-https://vavoo.to/play/153693434/index.m3u8
-
-#EXTINF:-1 tvg-name="mediaset 20" group-title="MEDIASET", mediaset 20
-https://vavoo.to/play/3134481201/index.m3u8
-
-#EXTINF:-1 tvg-name="sky cinema romance" group-title="SKY", sky cinema romance
-https://vavoo.to/play/2890008905/index.m3u8
-
-#EXTINF:-1 tvg-name="rai sport" group-title="RAI", rai sport
-https://vavoo.to/play/2924135092/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport football" group-title="SKY", sky sport football
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT FOOTBALL" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sky_Sport_Football_-_Logo_2020.svg/1024px-Sky_Sport_Football_-_Logo_2020.svg.png", SKY SPORT FOOTBALL
 https://vavoo.to/play/3093535330/index.m3u8
 
-#EXTINF:-1 tvg-name="top crime" group-title="DISCOVERY", top crime
-https://vavoo.to/play/3420407456/index.m3u8
-
-#EXTINF:-1 tvg-name="wwe channel" group-title="DISCOVERY", wwe channel
-https://vavoo.to/play/2989824407/index.m3u8
-
-#EXTINF:-1 tvg-name="history" group-title="ALTRI", history
-https://vavoo.to/play/2134724757/index.m3u8
-
-#EXTINF:-1 tvg-name="rai storia" group-title="RAI", rai storia
-https://vavoo.to/play/78838793/index.m3u8
-
-#EXTINF:-1 tvg-name="sky arte" group-title="SKY", sky arte
-https://vavoo.to/play/1806815496/index.m3u8
-
-#EXTINF:-1 tvg-name="inter tv" group-title="ALTRI", inter tv
-https://vavoo.to/play/2973773076/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport football [live during events only]" group-title="SKY", sky sport football [live during events only]
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sky_Sport_Football_-_Logo_2020.svg/1024px-Sky_Sport_Football_-_Logo_2020.svg.png", SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]
 https://vavoo.to/play/1989309231/index.m3u8
 
-#EXTINF:-1 tvg-name="sky uno" group-title="SKY", sky uno
-https://vavoo.to/play/322024849/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sports f1" group-title="SKY", sky sports f1
+#EXTINF:-1 tvg-id="Sky Sport F1.it" tvg-name="SKY SPORTS F1" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/478skysportf1_Light_Fit.png?checksum=34a825e9-2a98-432a-a85c-dbb8c3acb0e0?tr=n-logo_80", SKY SPORTS F1
 https://vavoo.to/play/2289038972/index.m3u8
 
-#EXTINF:-1 tvg-name="iris" group-title="ALTRI", iris
-https://vavoo.to/play/576490047/index.m3u8
+#EXTINF:-1 tvg-id="Sky Sport Golf.it" tvg-name="SKY SPORT GOLF" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/768skysportgolf_Light_Fit.png?checksum=15663a39-3b8a-487d-a645-3025e44e4150?tr=n-logo_80", SKY SPORT GOLF
+https://vavoo.to/play/729945219/index.m3u8
 
-#EXTINF:-1 tvg-name="nickelodeon" group-title="ALTRI", nickelodeon
-https://vavoo.to/play/3039389215/index.m3u8
-
-#EXTINF:-1 tvg-name="sky tg 24" group-title="SKY", sky tg 24
-https://vavoo.to/play/318057128/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport golf" group-title="SKY", sky sport golf
-https://vavoo.to/play/3897711086/index.m3u8
-
-#EXTINF:-1 tvg-name="italia 3" group-title="MEDIASET", italia 3
-https://vavoo.to/play/1200985239/index.m3u8
-
-#EXTINF:-1 tvg-name="nick jr" group-title="ALTRI", nick jr
-https://vavoo.to/play/380958472/index.m3u8
-
-#EXTINF:-1 tvg-name="italian fishing tv" group-title="MEDIASET", italian fishing tv
-https://vavoo.to/play/477083716/index.m3u8
-
-#EXTINF:-1 tvg-name="sky sport max" group-title="SKY", sky sport max
+#EXTINF:-1 tvg-id="Sky Sport Max.it" tvg-name="SKY SPORT MAX" group-title="Sport" tvg-icon="https://guidatv.sky.it/logo/248skysportmax_Light_Fit.png?checksum=d1c1207f-239f-423d-804a-002b858ab063?tr=n-logo_80", SKY SPORT MAX
 https://vavoo.to/play/2066326916/index.m3u8
 
-#EXTINF:-1 tvg-name="sport italia solo calcio [live during events only]" group-title="MEDIASET", sport italia solo calcio [live during events only]
-https://vavoo.to/play/830949486/index.m3u8
+#EXTINF:-1 tvg-id="Sky Cinema Action.it" tvg-name="SKY CINEMA ACTION" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/206skycinemaaction_Light_Fit.png?checksum=18c61378-c967-4828-a506-4fbd8cf6bc1c?tr=n-logo_80", SKY CINEMA ACTION
+https://vavoo.to/play/1144128726/index.m3u8
 
-#EXTINF:-1 tvg-name="cartoonito" group-title="ALTRI", cartoonito
-https://vavoo.to/play/1907000512/index.m3u8
+#EXTINF:-1 tvg-id="Sky Cinema Action.it" tvg-name="SKY CINEMA ACTION (BACKUP)" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/206skycinemaaction_Light_Fit.png?checksum=18c61378-c967-4828-a506-4fbd8cf6bc1c?tr=n-logo_80", SKY CINEMA ACTION (BACKUP)
+https://vavoo.to/play/2242741766/index.m3u8
 
-#EXTINF:-1 tvg-name="discovery channel" group-title="DISCOVERY", discovery channel
-https://vavoo.to/play/1955739367/index.m3u8
+#EXTINF:-1 tvg-id="Sky.Cinema.Collection.it" tvg-name="SKY CINEMA COLLECTION" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/204risateallitaliana_Light_Fit.png?checksum=045bdd9c-2a11-4d51-ae2a-6a7fe4af0109?tr=n-logo_80", SKY CINEMA COLLECTION
+https://vavoo.to/play/3525837057/index.m3u8
 
-#EXTINF:-1 tvg-name="sport italia" group-title="MEDIASET", sport italia
-https://vavoo.to/play/2881739927/index.m3u8
+#EXTINF:-1 tvg-id="Sky Cinema Uno.it" tvg-name="SKY CINEMA UNO" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/202skycinemauno_Light_Fit.png?checksum=2945a0fc-4fd0-4f78-891d-b4b6e23e4ecf?tr=n-logo_80", SKY CINEMA UNO
+https://vavoo.to/play/2872151911/index.m3u8
 
-#EXTINF:-1 tvg-name="mediaset iris" group-title="MEDIASET", mediaset iris
-https://vavoo.to/play/23919988/index.m3u8
+#EXTINF:-1 tvg-id="Sky Cinema Suspense.it" tvg-name="SKY CINEMA SUSPENSE" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sky_Cinema_Suspense_-_Logo_2021.svg/1024px-Sky_Cinema_Suspense_-_Logo_2021.svg.png", SKY CINEMA SUSPENSE
+https://vavoo.to/play/1820997555/index.m3u8
 
-#EXTINF:-1 tvg-name="cartoonito (backup)" group-title="ALTRI", cartoonito (backup)
-https://vavoo.to/play/2178717282/index.m3u8
+#EXTINF:-1 tvg-id="Sky Cinema Comedy.it" tvg-name="SKY CINEMA COMEDY" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/30skycinemacomedy_Light_Fit.png?checksum=a34e113d-5437-4753-b036-5969ea84dfe0?tr=n-logo_80", SKY CINEMA COMEDY
+https://vavoo.to/play/3131104474/index.m3u8
 
-#EXTINF:-1 tvg-name="premium crime" group-title="ALTRI", premium crime
-https://vavoo.to/play/444768053/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 9" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 9
+https://vavoo.to/play/1753260677/index.m3u8
 
-#EXTINF:-1 tvg-name="rai yoyo" group-title="RAI", rai yoyo
-https://vavoo.to/play/1785501924/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 6" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 6
+https://vavoo.to/play/3939513684/index.m3u8
 
-#EXTINF:-1 tvg-name="sky nature" group-title="SKY", sky nature
-https://vavoo.to/play/3810188456/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 7" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 7
+https://vavoo.to/play/3618643172/index.m3u8
 
-#EXTINF:-1 tvg-name="sportitalia plus" group-title="MEDIASET", sportitalia plus
-https://vavoo.to/play/3342849313/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 8" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 8
+https://vavoo.to/play/1440779061/index.m3u8
 
-#EXTINF:-1 tvg-name="sportitalia solocalcio" group-title="MEDIASET", sportitalia solocalcio
-https://vavoo.to/play/2198410339/index.m3u8
+#EXTINF:-1 tvg-id="Sky Cinema Drama.it" tvg-name="SKY CINEMA DRAMA" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/769skycinemadrama_Light_Fit.png?checksum=2fc851a5-dcfd-4c55-b42e-60e0ea35642c?tr=n-logo_80", SKY CINEMA DRAMA
+https://vavoo.to/play/1235530177/index.m3u8
 
-#EXTINF:-1 tvg-name="mediaset italia 2" group-title="MEDIASET", mediaset italia 2
-https://vavoo.to/play/3538009430/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 2" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 2
+https://vavoo.to/play/525374356/index.m3u8
 
-#EXTINF:-1 tvg-name="comedy central" group-title="SKY", comedy central
-https://vavoo.to/play/3658277450/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 4" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 4
+https://vavoo.to/play/2416993844/index.m3u8
 
-#EXTINF:-1 tvg-name="kiss kiss italia" group-title="MEDIASET", kiss kiss italia
-https://vavoo.to/play/1370869299/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 5" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 5
+https://vavoo.to/play/2909818756/index.m3u8
 
-#EXTINF:-1 tvg-name="sky primafila 14" group-title="SKY", sky primafila 14
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 1" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 1
+https://vavoo.to/play/1944682394/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 10" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 10
+https://vavoo.to/play/2268489342/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Cinema Family.it" tvg-name="SKY CINEMA FAMILY" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/255skycinemafamily_Light_Fit.png?checksum=d1656464-20a9-4f0e-b7f9-49f01c1beea7?tr=n-logo_80", SKY CINEMA FAMILY
+https://vavoo.to/play/415795144/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Serie.it" tvg-name="SKY SERIE" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/684skyserie_Light_Fit.png?checksum=9fa612b4-52c6-4a22-9c98-40495a42475b?tr=n-logo_80", SKY SERIE
+https://vavoo.to/play/836680112/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Cinema Uno +24.it" tvg-name="SKY CINEMA UNO +24" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/224skycinemauno24_Light_Fit.png?checksum=f37575e8-343d-4e8a-b76d-5b65e442cec9?tr=n-logo_80", SKY CINEMA UNO +24
+https://vavoo.to/play/1699876530/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 17" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 17
+https://vavoo.to/play/1284441949/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Cinema Due.it" tvg-name="SKY CINEMA DUE" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/564skycinemadue_Light_Fit.png?checksum=fd8d97e4-67cc-4dd9-917e-c673d878cc6b?tr=n-logo_80", SKY CINEMA DUE
+https://vavoo.to/play/1228534500/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 3" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 3
+https://vavoo.to/play/573618724/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Cinema Romance.it" tvg-name="SKY CINEMA ROMANCE" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/231skycinemaromance_Light_Fit.png?checksum=29a51632-5782-41fc-9ece-7019fe0112e5?tr=n-logo_80", SKY CINEMA ROMANCE
+https://vavoo.to/play/1281264885/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 14" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 14
 https://vavoo.to/play/187661709/index.m3u8
 
-#EXTINF:-1 tvg-name="super!" group-title="ALTRI", super!
-https://vavoo.to/play/2900362153/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 16" group-title="SKY", sky primafila 16
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 16" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 16
 https://vavoo.to/play/1911500525/index.m3u8
 
-#EXTINF:-1 tvg-name="sky primafila 12" group-title="SKY", sky primafila 12
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 12" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 12
 https://vavoo.to/play/2221901869/index.m3u8
 
-#EXTINF:-1 tvg-name="rai sport+" group-title="RAI", rai sport+
-https://vavoo.to/play/843891896/index.m3u8
-
-#EXTINF:-1 tvg-name="mediaset italia" group-title="MEDIASET", mediaset italia
-https://vavoo.to/play/1989562337/index.m3u8
-
-#EXTINF:-1 tvg-name="hgtv" group-title="DISCOVERY", hgtv
-https://vavoo.to/play/4248997029/index.m3u8
-
-#EXTINF:-1 tvg-name="animal planet" group-title="SKY", animal planet
-https://vavoo.to/play/1908877526/index.m3u8
-
-#EXTINF:-1 tvg-name="nat geo" group-title="SKY", nat geo
-https://vavoo.to/play/1735702308/index.m3u8
-
-#EXTINF:-1 tvg-name="discovery focus" group-title="MEDIASET", discovery focus
-https://vavoo.to/play/2113273064/index.m3u8
-
-#EXTINF:-1 tvg-name="sky primafila 15" group-title="SKY", sky primafila 15
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 15" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 15
 https://vavoo.to/play/911168573/index.m3u8
 
-#EXTINF:-1 tvg-name="sport italia (backup)" group-title="MEDIASET", sport italia (backup)
-https://vavoo.to/play/3165086929/index.m3u8
-
-#EXTINF:-1 tvg-name="rai sport [live during events only]" group-title="RAI", rai sport [live during events only]
-https://vavoo.to/play/551730224/index.m3u8
-
-#EXTINF:-1 tvg-name="fox" group-title="SKY", fox
+#EXTINF:-1 tvg-id="" tvg-name="FOX" group-title="Film & Serie TV" tvg-icon="", FOX
 https://vavoo.to/play/563160609/index.m3u8
 
-#EXTINF:-1 tvg-name="sky cinema due +24" group-title="SKY", sky cinema due +24
+#EXTINF:-1 tvg-id="Sky Cinema Due +24.it" tvg-name="SKY CINEMA DUE +24" group-title="Film & Serie TV" tvg-icon="https://guidatv.sky.it/logo/779skycinemadue24_Light_Fit.png?checksum=bca92549-1e99-4e36-8d31-0110438ef531?tr=n-logo_80", SKY CINEMA DUE +24
 https://vavoo.to/play/1078650168/index.m3u8
 
-#EXTINF:-1 tvg-name="sky primafila 18" group-title="SKY", sky primafila 18
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 18" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sky_Primafila.svg/1024px-Sky_Primafila.svg.png", SKY PRIMAFILA 18
 https://vavoo.to/play/3470758028/index.m3u8
 
-#EXTINF:-1 tvg-name="avengers grimm channel" group-title="ALTRI", avengers grimm channel
-https://vavoo.to/play/1506307932/index.m3u8
+#EXTINF:-1 tvg-id="Sky TG24.it" tvg-name="SKY TG 24" group-title="News" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sky_TG24_-_Logo_2016.svg/1024px-Sky_TG24_-_Logo_2016.svg.png", SKY TG 24
+https://vavoo.to/play/3376031355/index.m3u8
 
-#EXTINF:-1 tvg-name="juwelo italia" group-title="MEDIASET", juwelo italia
-https://vavoo.to/play/3832171692/index.m3u8
+#EXTINF:-1 tvg-id="Sky Atlantic.it" tvg-name="SKY ATLANTIC" group-title="Intrattenimento" tvg-icon="https://guidatv.sky.it/logo/226skyatlantic_Light_Fit.png?checksum=55e0b430-8ac2-482a-80eb-d79e3678ea49?tr=n-logo_80", SKY ATLANTIC
+https://vavoo.to/play/1421393119/index.m3u8
 
-#EXTINF:-1 tvg-name="nat geo wild" group-title="SKY", nat geo wild
-https://vavoo.to/play/3229664409/index.m3u8
+#EXTINF:-1 tvg-id="Sky Sport Tennis.it" tvg-name="SKY SUPER TENNIS" group-title="Intrattenimento" tvg-icon="https://guidatv.sky.it/logo/559skysporttennis_Light_Fit.png?checksum=63436110-b04f-4b52-ab5f-0ceacf8f10d5", SKY SUPER TENNIS
+https://vavoo.to/play/558282118/index.m3u8
 
-#EXTINF:-1 tvg-name="catfish" group-title="ALTRI", catfish
-https://vavoo.to/play/2381583828/index.m3u8
+#EXTINF:-1 tvg-id="Sky Uno.it" tvg-name="SKY UNO" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Sky_Uno_-_Logo_2015.svg/1024px-Sky_Uno_-_Logo_2015.svg.png", SKY UNO
+https://vavoo.to/play/2130523218/index.m3u8
 
-#EXTINF:-1 tvg-name="cusano italia tv" group-title="MEDIASET", cusano italia tv
-https://vavoo.to/play/3156092639/index.m3u8
-
-#EXTINF:-1 tvg-name="qvc italia" group-title="MEDIASET", qvc italia
-https://vavoo.to/play/1232565681/index.m3u8
-
-#EXTINF:-1 tvg-name="fm italia" group-title="MEDIASET", fm italia
-https://vavoo.to/play/651388134/index.m3u8
-
-#EXTINF:-1 tvg-name="mediaset infinity+ 1" group-title="MEDIASET", mediaset infinity+ 1
-https://vavoo.to/play/3599959739/index.m3u8
-
-#EXTINF:-1 tvg-name="sky documentaries" group-title="SKY", sky documentaries
+#EXTINF:-1 tvg-id="Sky Documentaries.it" tvg-name="SKY DOCUMENTARIES" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sky_Documentaries_DE_Logo_2021.svg/1024px-Sky_Documentaries_DE_Logo_2021.svg.png", SKY DOCUMENTARIES
 https://vavoo.to/play/464281981/index.m3u8
 
-#EXTINF:-1 tvg-name="discovery k2" group-title="DISCOVERY", discovery k2
-https://vavoo.to/play/3037871903/index.m3u8
+#EXTINF:-1 tvg-id="Sky Arte.it" tvg-name="SKY ARTE" group-title="Documentari" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/f/f8/Logo_sky_arte_2018-2021.png", SKY ARTE
+https://vavoo.to/play/1902695925/index.m3u8
 
-#EXTINF:-1 tvg-name="supersix lombardia" group-title="ALTRI", supersix lombardia
-https://vavoo.to/play/849124464/index.m3u8
+#EXTINF:-1 tvg-id="Sky Nature.it" tvg-name="SKY NATURE" group-title="Documentari" tvg-icon="https://guidatv.sky.it/logo/695skynature_Light_Fit.png?checksum=6a2c90be-bac2-4622-af95-39ec6b75e3b4?tr=n-logo_80", SKY NATURE
+https://vavoo.to/play/3810188456/index.m3u8
 
-#EXTINF:-1 tvg-name="mediaset infinity+ 2" group-title="MEDIASET", mediaset infinity+ 2
+#EXTINF:-1 tvg-id="RAI Sport.it" tvg-name="RAI SPORT" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Rai_Sport_-_Logo_2017.svg/640px-Rai_Sport_-_Logo_2017.svg.png", RAI SPORT
+https://vavoo.to/play/2924135092/index.m3u8
+
+#EXTINF:-1 tvg-id="RAI Sport.it" tvg-name="RAI SPORT+" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Rai_Sport_-_Logo_2017.svg/640px-Rai_Sport_-_Logo_2017.svg.png", RAI SPORT+
+https://vavoo.to/play/843891896/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RAI SPORT [LIVE DURING EVENTS ONLY]" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Rai_Sport_-_Logo_2017.svg/640px-Rai_Sport_-_Logo_2017.svg.png", RAI SPORT [LIVE DURING EVENTS ONLY]
+https://vavoo.to/play/551730224/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai Movie.it" tvg-name="RAI MOVIE" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Rai_Movie_-_Logo_2017.svg/640px-Rai_Movie_-_Logo_2017.svg.png", RAI MOVIE
+https://vavoo.to/play/2835672487/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai News 24.it" tvg-name="RAI NEWS 24" group-title="News" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Rai_News_24_logo_%282022%29.svg/640px-Rai_News_24_logo_%282022%29.svg.png", RAI NEWS 24
+https://vavoo.to/play/2272923972/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai 1 HD.it" tvg-name="RAI 1" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Rai_1_HD_-_Logo_2016.svg/640px-Rai_1_HD_-_Logo_2016.svg.png", RAI 1
+https://vavoo.to/play/1225653759/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai 2 HD.it" tvg-name="RAI 2" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Rai_2_HD_-_Logo_2016.svg/640px-Rai_2_HD_-_Logo_2016.svg.png", RAI 2
+https://vavoo.to/play/246253359/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai 3 HD.it" tvg-name="RAI 3" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Rai_3_HD_Logo.svg/640px-Rai_3_HD_Logo.svg.png", RAI 3
+https://vavoo.to/play/1324733956/index.m3u8
+
+#EXTINF:-1 tvg-id="Cine34 HD.it" tvg-name="CINE 34 MEDIASET" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cine34_logo.svg/512px-Cine34_logo.svg.png", CINE 34 MEDIASET
+https://vavoo.to/play/1768670187/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai Premium.it" tvg-name="RAI PREMIUM" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rai_Premium_-_Logo_2017.svg/640px-Rai_Premium_-_Logo_2017.svg.png", RAI PREMIUM
+https://vavoo.to/play/2828455552/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai 4K.it" tvg-name="RAI 4K" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rai_4K_-_Logo_2017.svg/640px-Rai_4K_-_Logo_2017.svg.png", RAI 4K
+https://vavoo.to/play/2049087681/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET 1" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Studio_Aperto_2021.svg/1024px-Studio_Aperto_2021.svg.png", MEDIASET 1
+https://vavoo.to/play/633342961/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai 4.it" tvg-name="RAI 4" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Rai_4_HD_-_Logo_2016.svg/640px-Rai_4_HD_-_Logo_2016.svg.png", RAI 4
+https://vavoo.to/play/4241820180/index.m3u8
+
+#EXTINF:-1 tvg-id="20Mediaset HD.it" tvg-name="20 MEDIASET" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/20_Mediaset_2018.svg/493px-20_Mediaset_2018.svg.png", 20 MEDIASET
+https://vavoo.to/play/1230338185/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai 5.it" tvg-name="RAI 5" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Rai_5_HD_-_Logo_2017.svg/1024px-Rai_5_HD_-_Logo_2017.svg.png", RAI 5
+https://vavoo.to/play/3249873828/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai Gulp.it" tvg-name="RAI GULP" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Rai_Gulp_HD_-_Logo_2017.svg/1024px-Rai_Gulp_HD_-_Logo_2017.svg.png", RAI GULP
+https://vavoo.to/play/1901652742/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai Scuola.it" tvg-name="RAI SCUOLA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rai_Scuola_HD_-_Logo.svg/1024px-Rai_Scuola_HD_-_Logo.svg.png", RAI SCUOLA
+https://vavoo.to/play/2007798511/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RAI ITALIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Rai_Italia_-_Logo_2017.svg/1024px-Rai_Italia_-_Logo_2017.svg.png", RAI ITALIA
+https://vavoo.to/play/374675593/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 5" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mediaset_Play_Infinity_logo.svg/1024px-Mediaset_Play_Infinity_logo.svg.png", MEDIASET INFINITY+ 5
+https://vavoo.to/play/588488827/index.m3u8
+
+#EXTINF:-1 tvg-id="Focus HD.it" tvg-name="FOCUS" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Focus_logo_gross_2017.jpeg/800px-Focus_logo_gross_2017.jpeg", FOCUS
+https://vavoo.to/play/2982550433/index.m3u8
+
+#EXTINF:-1 tvg-id="Mediaset Extra HD.it" tvg-name="MEDIASET EXTRA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Mediaset_Extra_logo.svg/640px-Mediaset_Extra_logo.svg.png", MEDIASET EXTRA
+https://vavoo.to/play/477466531/index.m3u8
+
+#EXTINF:-1 tvg-id="20Mediaset HD.it" tvg-name="MEDIASET 20" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/20_Mediaset_2018.svg/493px-20_Mediaset_2018.svg.png", MEDIASET 20
+https://vavoo.to/play/3134481201/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai Storia.it" tvg-name="RAI STORIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Rai_Storia_HD_-_Logo_2017.svg/1024px-Rai_Storia_HD_-_Logo_2017.svg.png", RAI STORIA
+https://vavoo.to/play/57338653/index.m3u8
+
+#EXTINF:-1 tvg-id="Iris HD.it" tvg-name="MEDIASET IRIS" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/a/a9/Iris_classic_band_logo.png", MEDIASET IRIS
+https://vavoo.to/play/23919988/index.m3u8
+
+#EXTINF:-1 tvg-id="Rai Yoyo.it" tvg-name="RAI YOYO" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Rai_Yoyo_HD_-_Logo_2017.svg/1024px-Rai_Yoyo_HD_-_Logo_2017.svg.png", RAI YOYO
+https://vavoo.to/play/1890950169/index.m3u8
+
+#EXTINF:-1 tvg-id="Italia2 HD.it" tvg-name="MEDIASET ITALIA 2" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Logo_Italia2.svg/794px-Logo_Italia2.svg.png", MEDIASET ITALIA 2
+https://vavoo.to/play/3538009430/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET ITALIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/3/38/Mediaset_Italia.png", MEDIASET ITALIA
+https://vavoo.to/play/1989562337/index.m3u8
+
+#EXTINF:-1 tvg-id="Focus HD.it" tvg-name="DISCOVERY FOCUS" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Focus_logo_gross_2017.jpeg/800px-Focus_logo_gross_2017.jpeg", DISCOVERY FOCUS
+https://vavoo.to/play/2113273064/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 1" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mediaset_Play_Infinity_logo.svg/1024px-Mediaset_Play_Infinity_logo.svg.png", MEDIASET INFINITY+ 1
+https://vavoo.to/play/3599959739/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 2" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mediaset_Play_Infinity_logo.svg/1024px-Mediaset_Play_Infinity_logo.svg.png", MEDIASET INFINITY+ 2
 https://vavoo.to/play/2436070507/index.m3u8
 
-#EXTINF:-1 tvg-name="rakuten action movies" group-title="ALTRI", rakuten action movies
+#EXTINF:-1 tvg-id="" tvg-name="BOING PLUS" group-title="Bambini" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/e/e1/Boing_Plus_Logo.png", BOING PLUS
+https://vavoo.to/play/3841982646/index.m3u8
+
+#EXTINF:-1 tvg-id="Boing.it" tvg-name="BOING" group-title="Bambini" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/8/8c/Logo_Boing.png", BOING
+https://vavoo.to/play/3022771961/index.m3u8
+
+#EXTINF:-1 tvg-id="DAZN 1.it" tvg-name="DAZN 1" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dazn-logo.png/481px-Dazn-logo.png", DAZN 1
+https://vavoo.to/play/1376440573/index.m3u8
+
+#EXTINF:-1 tvg-id="DAZN 2.it" tvg-name="DAZN 2" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dazn-logo.png/481px-Dazn-logo.png", DAZN 2
+https://vavoo.to/play/363506221/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="DAZN" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dazn-logo.png/481px-Dazn-logo.png", DAZN
+https://vavoo.to/play/2745635299/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ZONA DAZN" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dazn-logo.png/481px-Dazn-logo.png", ZONA DAZN
+https://vavoo.to/play/2911178456/index.m3u8
+
+#EXTINF:-1 tvg-id="Eurosport 1.it" tvg-name="EUROSPORT 1" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Eurosport_HD_since_2015.svg/1024px-Eurosport_HD_since_2015.svg.png", EUROSPORT 1
+https://vavoo.to/play/3481346857/index.m3u8
+
+#EXTINF:-1 tvg-id="Eurosport 2.it" tvg-name="EUROSPORT 2" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Eurosport_2_HD_Logo_2015.svg/1024px-Eurosport_2_HD_Logo_2015.svg.png", EUROSPORT 2
+https://vavoo.to/play/2283887097/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ITALIA SOLO CALCIO [LIVE DURING EVENTS ONLY]" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/SI_Solo_Calcio_logo_%282019%29.svg/640px-SI_Solo_Calcio_logo_%282019%29.svg.png", SPORT ITALIA SOLO CALCIO [LIVE DURING EVENTS ONLY]
+https://vavoo.to/play/830949486/index.m3u8
+
+#EXTINF:-1 tvg-id="Sport.Italia.it" tvg-name="SPORT ITALIA" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/3/3a/SI_SPORT_ITALIA_CALCIO_FHD.jpg", SPORT ITALIA
+https://vavoo.to/play/2881739927/index.m3u8
+
+#EXTINF:-1 tvg-id="Sport.Italia.it" tvg-name="SPORTITALIA PLUS" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/3/3a/SI_SPORT_ITALIA_CALCIO_FHD.jpg", SPORTITALIA PLUS
+https://vavoo.to/play/3342849313/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SPORTITALIA SOLOCALCIO" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/SI_Solo_Calcio_logo_%282019%29.svg/640px-SI_Solo_Calcio_logo_%282019%29.svg.png", SPORTITALIA SOLOCALCIO
+https://vavoo.to/play/2198410339/index.m3u8
+
+#EXTINF:-1 tvg-id="Sport.Italia.it" tvg-name="SPORT ITALIA (BACKUP)" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/3/3a/SI_SPORT_ITALIA_CALCIO_FHD.jpg", SPORT ITALIA (BACKUP)
+https://vavoo.to/play/3165086929/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RTV SPORT" group-title="Sport" tvg-icon="https://logowik.com/content/uploads/images/san-marino-rtv-sport-20219147.logowik.com.webp", RTV SPORT
+https://vavoo.to/play/134178901/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RTV SAN MARINO SPORT" group-title="Sport" tvg-icon="https://upload.wikimedia.org/wikipedia/it/6/60/San_Marino_RTV_logo_2021.svg", RTV SAN MARINO SPORT
+https://vavoo.to/play/1113853263/index.m3u8
+
+#EXTINF:-1 tvg-id="ACI Sport Tv.it" tvg-name="ACI SPORT TV" group-title="Sport" tvg-icon="https://www.satnewstv.com/wp-content/uploads/2023/08/cartello-Acisport_Tavola-disegno-1-copia-12.jpg", ACI SPORT TV
+https://vavoo.to/play/1351631603/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TRSPORT" group-title="Sport" tvg-icon="", TRSPORT
+https://vavoo.to/play/361314062/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="DISNEY+ FILM" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Disney%2BLogo_2024_Black.png/1024px-Disney%2BLogo_2024_Black.png", DISNEY+ FILM
+https://vavoo.to/play/1264775727/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RAKUTEN ACTION MOVIES" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/1024px-Rakuten_TV_logo.svg.png", RAKUTEN ACTION MOVIES
 https://vavoo.to/play/3064811192/index.m3u8
 
-#EXTINF:-1 tvg-name="rete tv italia" group-title="MEDIASET", rete tv italia
-https://vavoo.to/play/4131055018/index.m3u8
-
-#EXTINF:-1 tvg-name="rakuten family" group-title="ALTRI", rakuten family
-https://vavoo.to/play/3902650955/index.m3u8
-
-#EXTINF:-1 tvg-name="rakuten comedy movies" group-title="ALTRI", rakuten comedy movies
+#EXTINF:-1 tvg-id="" tvg-name="RAKUTEN COMEDY MOVIES" group-title="Film & Serie TV" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/1024px-Rakuten_TV_logo.svg.png", RAKUTEN COMEDY MOVIES
 https://vavoo.to/play/1109372778/index.m3u8
 
-#EXTINF:-1 tvg-name="rakuten top free" group-title="ALTRI", rakuten top free
+#EXTINF:-1 tvg-id="Tgcom24.it" tvg-name="TGCOM 24" group-title="News" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/9/9e/Mediaset_TGCOM24.png", TGCOM 24
+https://vavoo.to/play/2418148449/index.m3u8
+
+#EXTINF:-1 tvg-id="Tgcom24.it" tvg-name="TG COM 24" group-title="News" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/9/9e/Mediaset_TGCOM24.png", TG COM 24
+https://vavoo.to/play/1785098768/index.m3u8
+
+#EXTINF:-1 tvg-id="TG NORBA 24.it" tvg-name="TG NORBA 24" group-title="News" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/1/15/Tg_norba24.png", TG NORBA 24
+https://vavoo.to/play/3413557893/index.m3u8
+
+#EXTINF:-1 tvg-id="Euronews.it" tvg-name="EURONEWS" group-title="News" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Euronews_logo_%281997-1998%29.svg/1024px-Euronews_logo_%281997-1998%29.svg.png", EURONEWS
+https://vavoo.to/play/490955579/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TV7 NEWS" group-title="News" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/3/3c/Tv7_new.jpg", TV7 NEWS
+https://vavoo.to/play/2802329064/index.m3u8
+
+#EXTINF:-1 tvg-id="Canale 5 HD.it" tvg-name="CANALE 5" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Canale_5_-_1989_logo.svg/822px-Canale_5_-_1989_logo.svg.png", CANALE 5
+https://vavoo.to/play/1534161807/index.m3u8
+
+#EXTINF:-1 tvg-id="Cine34 HD.it" tvg-name="CINE 34" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cine34_logo.svg/512px-Cine34_logo.svg.png", CINE 34
+https://vavoo.to/play/62558606/index.m3u8
+
+#EXTINF:-1 tvg-id="Italia 1 HD.it" tvg-name="ITALIA 1" group-title="Intrattenimento" tvg-icon="https://cdn.freebiesupply.com/logos/large/2x/italia-1-logo-png-transparent.png", ITALIA 1
+https://vavoo.to/play/663536394/index.m3u8
+
+#EXTINF:-1 tvg-id="La 5 HD.it" tvg-name="LA 5" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/La5_Mediaset.svg/1024px-La5_Mediaset.svg.png", LA 5
+https://vavoo.to/play/1425667375/index.m3u8
+
+#EXTINF:-1 tvg-id="Rete 4 HD.it" tvg-name="RETE 4" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Rete_4_-_Logo_2018.svg/780px-Rete_4_-_Logo_2018.svg.png", RETE 4
+https://vavoo.to/play/4198218214/index.m3u8
+
+#EXTINF:-1 tvg-id="GIALLO HD.it" tvg-name="GIALLO" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Giallo_-_Logo_2014.svg/1024px-Giallo_-_Logo_2014.svg.png", GIALLO
+https://vavoo.to/play/4060499455/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky Sport Tennis.it" tvg-name="SUPER TENNIS" group-title="Intrattenimento" tvg-icon="https://guidatv.sky.it/logo/559skysporttennis_Light_Fit.png?checksum=63436110-b04f-4b52-ab5f-0ceacf8f10d5", SUPER TENNIS
+https://vavoo.to/play/3009377513/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TENNIS CHANNEL" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Tennis_Channel_logo.svg/587px-Tennis_Channel_logo.svg.png", TENNIS CHANNEL
+https://vavoo.to/play/2716316208/index.m3u8
+
+#EXTINF:-1 tvg-id="LA7 HD.it" tvg-name="LA 7" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/LA7_-_Logo_2011.svg/1014px-LA7_-_Logo_2011.svg.png", LA 7
+https://vavoo.to/play/2143522071/index.m3u8
+
+#EXTINF:-1 tvg-id="Italia2 HD.it" tvg-name="ITALIA 2" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Logo_Italia2.svg/794px-Logo_Italia2.svg.png", ITALIA 2
+https://vavoo.to/play/1613543898/index.m3u8
+
+#EXTINF:-1 tvg-id="Dmax.it" tvg-name="DMAX" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/DMAX_-_Logo_2016.svg/1024px-DMAX_-_Logo_2016.svg.png", DMAX
+https://vavoo.to/play/3803638765/index.m3u8
+
+#EXTINF:-1 tvg-id="Milan TV.it" tvg-name="MILAN TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/AC_Milan.png/303px-AC_Milan.png", MILAN TV
+https://vavoo.to/play/3657217948/index.m3u8
+
+#EXTINF:-1 tvg-id="cielo.it" tvg-name="CIELO" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Cielo_TV_logo_2013.svg/1024px-Cielo_TV_logo_2013.svg.png", CIELO
+https://vavoo.to/play/2719953688/index.m3u8
+
+#EXTINF:-1 tvg-id="TOPcrime HD.it" tvg-name="CRIME+ INVESTIGATION" group-title="Intrattenimento" tvg-icon="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png", CRIME+ INVESTIGATION
+https://vavoo.to/play/3005227700/index.m3u8
+
+#EXTINF:-1 tvg-id="RTL 102.5 HD.it" tvg-name="RTL 102.5" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/RTL_102.5_logo.svg/768px-RTL_102.5_logo.svg.png", RTL 102.5
+https://vavoo.to/play/1729811452/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RSI LA 1" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/RSI_La_1_2012.svg/1024px-RSI_La_1_2012.svg.png", RSI LA 1
+https://vavoo.to/play/2290395046/index.m3u8
+
+#EXTINF:-1 tvg-id="K2.it" tvg-name="K2" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/1/16/K2_nuevo_logotipo.png", K2
+https://vavoo.to/play/11090349/index.m3u8
+
+#EXTINF:-1 tvg-id="LA7D.it" tvg-name="LA 7 D" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/LA7d_%282024%29.svg/1013px-LA7d_%282024%29.svg.png", LA 7 D
+https://vavoo.to/play/881846038/index.m3u8
+
+#EXTINF:-1 tvg-id="frisbee-.it" tvg-name="FRISBEE" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/9/9a/FRISBEE_LOGO_2015.png", FRISBEE
+https://vavoo.to/play/1995860185/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RSI LA 2" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/RSI_La_2_2012.svg/1280px-RSI_La_2_2012.svg.png", RSI LA 2
+https://vavoo.to/play/3475299702/index.m3u8
+
+#EXTINF:-1 tvg-id="San Marino RTV.it" tvg-name="RTV SAN MARINO" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/it/6/60/San_Marino_RTV_logo_2021.svg", RTV SAN MARINO
+https://vavoo.to/play/2343767125/index.m3u8
+
+#EXTINF:-1 tvg-id="Deejay TV.it" tvg-name="DEEJAY TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Logo_Deejay_White.svg/768px-Logo_Deejay_White.svg.png", DEEJAY TV
+https://vavoo.to/play/3802167244/index.m3u8
+
+#EXTINF:-1 tvg-id="27Twentyseven HD.it" tvg-name="27 TWENTY SEVEN" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twentyseven_logo.svg/1024px-Twentyseven_logo.svg.png", 27 TWENTY SEVEN
+https://vavoo.to/play/608774683/index.m3u8
+
+#EXTINF:-1 tvg-id="27Twentyseven HD.it" tvg-name="27 TWENTYSEVEN" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twentyseven_logo.svg/1024px-Twentyseven_logo.svg.png", 27 TWENTYSEVEN
+https://vavoo.to/play/80896559/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CANALE 7" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/2/24/Canale_7.png", CANALE 7
+https://vavoo.to/play/565256431/index.m3u8
+
+#EXTINF:-1 tvg-id="Real Time HD.it" tvg-name="REAL TIME" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/8/89/Real_Time_HD_logo.png", REAL TIME
+https://vavoo.to/play/2251241999/index.m3u8
+
+#EXTINF:-1 tvg-id="TOPcrime HD.it" tvg-name="TOP CRIME" group-title="Intrattenimento" tvg-icon="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png", TOP CRIME
+https://vavoo.to/play/269503091/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="WWE CHANNEL" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/WWE_Network_logo.svg/950px-WWE_Network_logo.svg.png", WWE CHANNEL
+https://vavoo.to/play/2989824407/index.m3u8
+
+#EXTINF:-1 tvg-id="Inter TV.it" tvg-name="INTER TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/5/5e/Inter_TV_-_Logo_2021.png", INTER TV
+https://vavoo.to/play/2973773076/index.m3u8
+
+#EXTINF:-1 tvg-id="Iris HD.it" tvg-name="IRIS" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/a/a9/Iris_classic_band_logo.png", IRIS
+https://vavoo.to/play/576490047/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ITALIA 3" group-title="Intrattenimento" tvg-icon="https://static.wikia.nocookie.net/dreamlogos/images/4/4e/Italia_3_2013.png/revision/latest?cb=20200119124403", ITALIA 3
+https://vavoo.to/play/1565298794/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="IUNIOR TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/9/94/Iunior_tv.png", IUNIOR TV
+https://vavoo.to/play/803540254/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ITALIAN FISHING TV" group-title="Intrattenimento" tvg-icon="https://www.upmagazinearezzo.it/atladv/wp-content/uploads/2017/07/atlantide-adv-logo-italian-fishing-tv.jpg", ITALIAN FISHING TV
+https://vavoo.to/play/477083716/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="LA C TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/LaC_TV_-_Logo_2017.svg/1280px-LaC_TV_-_Logo_2017.svg.png", LA C TV
+https://vavoo.to/play/660106690/index.m3u8
+
+#EXTINF:-1 tvg-id="Warner Tv.it" tvg-name="WARNER TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/c/cd/Warner_TV_Poland_Logo.png", WARNER TV
+https://vavoo.to/play/3171202588/index.m3u8
+
+#EXTINF:-1 tvg-id="Motor.Trend.it" tvg-name="MOTORTREND" group-title="Intrattenimento" tvg-icon="https://s3.eu-west-1.amazonaws.com/loma-media-it/motortrend-image-4a0418ef-8b37-4dc0-9744-faa26169996b.png", MOTORTREND
+https://vavoo.to/play/3889279895/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CACCIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/c/ca/Caccia_e_Pesca_2012.png", CACCIA
+https://vavoo.to/play/1692155417/index.m3u8
+
+#EXTINF:-1 tvg-id="Food Network HD.it" tvg-name="FOOD NETWORK" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Food-Network-Logo.svg/1024px-Food-Network-Logo.svg.png", FOOD NETWORK
+https://vavoo.to/play/2820683351/index.m3u8
+
+#EXTINF:-1 tvg-id="TOPcrime HD.it" tvg-name="PREMIUM CRIME" group-title="Intrattenimento" tvg-icon="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png", PREMIUM CRIME
+https://vavoo.to/play/444768053/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PESCA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/c/ca/Caccia_e_Pesca_2012.png", PESCA
+https://vavoo.to/play/714472867/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="70 80 HITS" group-title="Intrattenimento" tvg-icon="https://scontent-fra5-2.xx.fbcdn.net/v/t39.30808-6/339916046_584999733695554_5167360425214734980_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jWcnFApzNYIQ7kNvgE6p7P2&_nc_oc=Adg1bpO0Ai9A28ByolVhKxeR3weqGx6H2dlWXiZx7oL1zgDG3ks4CDJJCvhrrbsZw3o&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&_nc_gid=A0FDJUofjCsniOs_T73dePc&oh=00_AYDZXZ2nLkBhnRmhHPh92t2_gyON_du-DcJ6kZzPicD74g&oe=67BA4C12", 70 80 HITS
+https://vavoo.to/play/2542531195/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="111 TV" group-title="Intrattenimento" tvg-icon="", 111 TV
+https://vavoo.to/play/1600139819/index.m3u8
+
+#EXTINF:-1 tvg-id="Comedy Central.it" tvg-name="COMEDY CENTRAL" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/2560px-Comedy_Central_2018.svg.png", COMEDY CENTRAL
+https://vavoo.to/play/433893159/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="KISS KISS ITALIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/it/b/ba/Logo_Radio_Kiss_Kiss_Italia.png", KISS KISS ITALIA
+https://vavoo.to/play/1370869299/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELERAMA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/b/b1/T%C3%A9l%C3%A9rama_logo.png", TELERAMA
+https://vavoo.to/play/4017608910/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ANTENNA SUD" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/5/5b/LogoAntennaSud.jpg", ANTENNA SUD
+https://vavoo.to/play/4084059868/index.m3u8
+
+#EXTINF:-1 tvg-id="Super!.it" tvg-name="SUPER!" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/2/2d/Super%21_logo_2021.svg", SUPER!
+https://vavoo.to/play/3550030443/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="12 TV PARMA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/9/95/Logo_top.png", 12 TV PARMA
+https://vavoo.to/play/631792369/index.m3u8
+
+#EXTINF:-1 tvg-id="TV2000 HD.it" tvg-name="TV 2000" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tv2000_-_Logo_2022.svg/505px-Tv2000_-_Logo_2022.svg.png", TV 2000
+https://vavoo.to/play/1949044924/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="KISS KISS NAPOLI" group-title="Intrattenimento" tvg-icon="https://kisskissnapoli.it/wp-content/uploads/2022/03/cropped-logo-kisskiss-napoli.png", KISS KISS NAPOLI
+https://vavoo.to/play/3027903278/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PADRE PIO TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/en/a/a4/Padre_Pio_TV.jpg", PADRE PIO TV
+https://vavoo.to/play/435016866/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CACCIA E PESCA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/c/ca/Caccia_e_Pesca_2012.png", CACCIA E PESCA
+https://vavoo.to/play/3639213638/index.m3u8
+
+#EXTINF:-1 tvg-id="France 24 English HD.it" tvg-name="FRANCE 24 (EN)" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/1024px-France_24_logo_%282013%29.svg.png", FRANCE 24 (EN)
+https://vavoo.to/play/2179686828/index.m3u8
+
+#EXTINF:-1 tvg-id="HGTV HD.it" tvg-name="HGTV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/0/06/HGTV_Canada_HD.PNG", HGTV
+https://vavoo.to/play/2897782781/index.m3u8
+
+#EXTINF:-1 tvg-id="Goldtv.it" tvg-name="GOLD TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/8/8c/GOLDTV-logo.jpg", GOLD TV
+https://vavoo.to/play/2854396316/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ANIMAL PLANET" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/0/08/Animal_Planet_Discovery.png", ANIMAL PLANET
+https://vavoo.to/play/1908877526/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ALTO ADIGE TV" group-title="Intrattenimento" tvg-icon="https://www.altoadigetv.it/images/trasmissioni/default.jpg", ALTO ADIGE TV
+https://vavoo.to/play/68845853/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="REGGIO TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/6/60/Reggio_TV_logo.png", REGGIO TV
+https://vavoo.to/play/2165549789/index.m3u8
+
+#EXTINF:-1 tvg-id="IT:.Fashion.TV.it" tvg-name="FASHIONTV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/e/e8/FashionTV2019novo.png", FASHIONTV
+https://vavoo.to/play/3255207570/index.m3u8
+
+#EXTINF:-1 tvg-id="TV8 HD.it" tvg-name="TV 8" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/d/db/TV8_HD_Logo_2020.png", TV 8
+https://vavoo.to/play/2706291008/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PESCA E CACCIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/c/ca/Caccia_e_Pesca_2012.png", PESCA E CACCIA
+https://vavoo.to/play/3124512993/index.m3u8
+
+#EXTINF:-1 tvg-id="Classica HD.it" tvg-name="CLASSICA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/4/4e/CLA_HD_Logo-CENT-300ppi_CMYK.jpg", CLASSICA
+https://vavoo.to/play/64060922/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BYOBLU" group-title="Intrattenimento" tvg-icon="https://www.fm-world.it/wp-content/uploads/2022/03/Byoblu-logo.png", BYOBLU
+https://vavoo.to/play/2826111812/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CAFE 24" group-title="Intrattenimento" tvg-icon="https://e7.pngegg.com/pngimages/228/771/png-clipart-padua-television-cafetv24-streaming-media-logo-abano-terme-emblem-text.png", CAFE 24
+https://vavoo.to/play/1625923783/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="VIDEOLINA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/2/2b/Videolina_-_secondo_logo.jpg", VIDEOLINA
+https://vavoo.to/play/1249978054/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CANALE 8" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/c/ce/C8_Logo_2015-01.png", CANALE 8
+https://vavoo.to/play/2749478718/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ANTENNA 2" group-title="Intrattenimento" tvg-icon="https://www.omceo.bg.it/images/loghi/antenna-2.png", ANTENNA 2
+https://vavoo.to/play/3014001260/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="QUARTA RETE" group-title="Intrattenimento" tvg-icon="https://quartarete.tv/wp-content/uploads/2022/06/Logo-Quartarete-ok.png", QUARTA RETE
+https://vavoo.to/play/2804189085/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CANALE 21 EXTRA" group-title="Intrattenimento" tvg-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROcfjFIqjwxnG9AbEhJ6gwKb6IprmlFnF9aQ&s", CANALE 21 EXTRA
+https://vavoo.to/play/2454558136/index.m3u8
+
+#EXTINF:-1 tvg-id="QVC.it" tvg-name="QVC" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_QVC_2019.png", QVC
+https://vavoo.to/play/2952884641/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CANALE 2" group-title="Intrattenimento" tvg-icon="https://yt3.googleusercontent.com/1sdWNz--K0-XMjjHFgoMizAZO1Jaw8t_zd2fr56kbZPy9LeAQ4jNxXYlbAc5cFxEyEM66Qt6Rw=s900-c-k-c0x00ffffff-no-rj", CANALE 2
+https://vavoo.to/play/3914444703/index.m3u8
+
+#EXTINF:-1 tvg-id="TOPcrime HD.it" tvg-name="CRIME + INV" group-title="Intrattenimento" tvg-icon="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png", CRIME + INV
+https://vavoo.to/play/1968339149/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AVENGERS GRIMM CHANNEL" group-title="Intrattenimento" tvg-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN8by3YXjCGJQaxT6b-cgZ872BjY_NLIrALA&s", AVENGERS GRIMM CHANNEL
+https://vavoo.to/play/1506307932/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ONDA NOVARA TV" group-title="Intrattenimento" tvg-icon="https://gag-fondazionedeagostini.s3.amazonaws.com/wp-content/uploads/2023/03/logo-Onda-Novara-TV-Ufficiale-1.png", ONDA NOVARA TV
+https://vavoo.to/play/3134124967/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="JUWELO ITALIA" group-title="Intrattenimento" tvg-icon="JUWELO ITALIA", JUWELO ITALIA
+https://vavoo.to/play/3832171692/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CATFISH" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Catfish%2C_the_TV_Show_Logo.PNG/1200px-Catfish%2C_the_TV_Show_Logo.PNG", CATFISH
+https://vavoo.to/play/2381583828/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="FANO TV" group-title="Intrattenimento" tvg-icon="https://prolocopesarourbino.it/wp-content/uploads/2019/07/FANO-TV.jpg", FANO TV
+https://vavoo.to/play/1798700028/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="LAZIO TV" group-title="Intrattenimento" tvg-icon="https://play-lh.googleusercontent.com/gy2KTJOxEVufDcoI8VYxsY6C6aI7IzBysA3tPhG1XFGYcuyFZE0esIDnpaxLUItM4iA", LAZIO TV
+https://vavoo.to/play/2774026655/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ESPERIA TV 18" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/8/81/ESPERIATV18_verde.png", ESPERIA TV 18
+https://vavoo.to/play/1812508372/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="VIDEOSTAR TV" group-title="Intrattenimento" tvg-icon="https://www.videostartv.eu/images/videostar.png", VIDEOSTAR TV
+https://vavoo.to/play/2499488584/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CUSANO ITALIA TV" group-title="Intrattenimento" tvg-icon="https://play-lh.googleusercontent.com/c2HegRLQmaQFJXROyFH-phglfaZzQ-vikbZ464ZVJGfW8kX9jQuLACb2TIlydv1apsg", CUSANO ITALIA TV
+https://vavoo.to/play/3156092639/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RTC TELECALABRIA" group-title="Intrattenimento" tvg-icon="https://pbs.twimg.com/profile_images/933432337119014912/dE6UppZe_400x400.jpg", RTC TELECALABRIA
+https://vavoo.to/play/639406775/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="A3" group-title="Intrattenimento" tvg-icon="https://cdn.freebiesupply.com/logos/large/2x/a3-logo-svg-vector.svg", A3
+https://vavoo.to/play/445158856/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMOCANALE" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/it/3/33/Logo_Primocanale_2012.png", PRIMOCANALE
+https://vavoo.to/play/2944239261/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TOP CALCIO 24" group-title="Intrattenimento" tvg-icon="https://tvprofil.com/img/kanali-logo/Top_Calcio_24_IT_logo_v2.png?1719216649", TOP CALCIO 24
+https://vavoo.to/play/3835549326/index.m3u8
+
+#EXTINF:-1 tvg-id="QVC.it" tvg-name="QVC ITALIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_QVC_2019.png", QVC ITALIA
+https://vavoo.to/play/1232565681/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="FM ITALIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Radio_Italia_logo_%282020%29.svg/1024px-Radio_Italia_logo_%282020%29.svg.png", FM ITALIA
+https://vavoo.to/play/651388134/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE FRIULI" group-title="Intrattenimento" tvg-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMiKDBOTuRp_hLzzTqPhX57Y-psjliEyj03w&s", TELE FRIULI
+https://vavoo.to/play/3551882344/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TV YES" group-title="Intrattenimento" tvg-icon="https://uploads-sportbusiness.imgix.net/uploads/2023/06/Screen-Shot-2023-06-20-at-12.46.54-PM.png?auto=compress,format&crop=faces,entropy,edges&fit=crop&w=620&h=352", TV YES
+https://vavoo.to/play/2569530225/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="LOVE FM TV" group-title="Intrattenimento" tvg-icon="https://play-lh.googleusercontent.com/nEttOCucGT4aOc7iUKOIUekuYZ7B6N64uRc-RpaksMmDKJO62jXoje0QI_A8wWRLa7g", LOVE FM TV
+https://vavoo.to/play/3344963942/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CREMONA 1" group-title="Intrattenimento" tvg-icon="https://cremona1.it/app/themes/cremona1-theme/dist/images/logo_ba24833d.png?x20763", CREMONA 1
+https://vavoo.to/play/4137427510/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RTP (RETE TELEVISIVA)" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/7/7c/RTP.png", RTP (RETE TELEVISIVA)
+https://vavoo.to/play/4136045815/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEMANTOVA" group-title="Intrattenimento" tvg-icon="https://www.disanimapiano.com/public/img/telemndef-2821-2833-3567-3794-15831-19355-33605.jpg", TELEMANTOVA
+https://vavoo.to/play/1425327889/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE VENEZIA" group-title="Intrattenimento" tvg-icon="https://static.wikia.nocookie.net/logopedia/images/6/6d/Televenezia.png/revision/latest?cb=20180918061003", TELE VENEZIA
+https://vavoo.to/play/109522219/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TRENTINO TV" group-title="Intrattenimento" tvg-icon="https://m.media-amazon.com/images/I/61Xb2z150+L.png", TRENTINO TV
+https://vavoo.to/play/2764553737/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="M2O" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Radio_m2o_-_Logo_2019.svg/1200px-Radio_m2o_-_Logo_2019.svg.png", M2O
+https://vavoo.to/play/215827632/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="UMBRIA TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Umbria_TV_wordmark%2C_ca._2000s.png/1200px-Umbria_TV_wordmark%2C_ca._2000s.png", UMBRIA TV
+https://vavoo.to/play/2230919796/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SUPERSIX LOMBARDIA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/0/0a/SuperSix_TV_Logo.png", SUPERSIX LOMBARDIA
+https://vavoo.to/play/849124464/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEVENEZIA" group-title="Intrattenimento" tvg-icon="https://static.wikia.nocookie.net/logopedia/images/6/6d/Televenezia.png/revision/latest?cb=20180918061003", TELEVENEZIA
+https://vavoo.to/play/2814318198/index.m3u8
+
+#EXTINF:-1 tvg-id="Bloomberg.it" tvg-name="BLOOMBERG TV 4K" group-title="Intrattenimento" tvg-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Q55RlWcZiArx5ZHuGrzqRutMsZR8qZfsYQ&s", BLOOMBERG TV 4K
+https://vavoo.to/play/3911047486/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BERGAMO TV" group-title="Intrattenimento" tvg-icon="https://www.opq.it/wp-content/uploads/BergamoTV.png", BERGAMO TV
+https://vavoo.to/play/2476433040/index.m3u8
+
+#EXTINF:-1 tvg-id="IT:.Fashion.TV.it" tvg-name="FASHION TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/e/e8/FashionTV2019novo.png", FASHION TV
+https://vavoo.to/play/3028319308/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE LIGURIA SUD" group-title="Intrattenimento" tvg-icon="https://www.teleliguriasud.it/sito/wp-content/uploads/2024/10/LOGO-RETINA.png", TELE LIGURIA SUD
+https://vavoo.to/play/874797181/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="EURO TV" group-title="Intrattenimento" tvg-icon="https://play-lh.googleusercontent.com/ZKjuPfru1W6hAgA3xl8FwYDoyfaOu_yr-X5dimUvpm1ece1LPwMxDQIRgWrBg63JEg", EURO TV
+https://vavoo.to/play/4222258377/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMO CANALE" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/it/3/33/Logo_Primocanale_2012.png", PRIMO CANALE
+https://vavoo.to/play/3497884599/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="KISS KISS" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/it/b/ba/Logo_Radio_Kiss_Kiss_Italia.png", KISS KISS
+https://vavoo.to/play/3815726749/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ONDA TV" group-title="Intrattenimento" tvg-icon="https://static-cdn.jtvnw.net/jtv_user_pictures/9117ef81-4df6-4db6-9bcb-715604ca73ae-profile_image-300x300.png", ONDA TV
+https://vavoo.to/play/203130779/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="LIRA TV" group-title="Intrattenimento" tvg-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeMKpB6J0P6J5iEP4QC0kJO9bT8hYL7u2DXA&s", LIRA TV
+https://vavoo.to/play/2835333400/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="LA TR3" group-title="Intrattenimento" tvg-icon="https://www.primapaginamarsala.it/images/2/3/23-la-tr3.jpg", LA TR3
+https://vavoo.to/play/2210996603/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE CHIARA" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/b/ba/Telechiara-logo.png", TELE CHIARA
+https://vavoo.to/play/2487986216/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELETRICOLORE" group-title="Intrattenimento" tvg-icon="https://www.teletricolore.it/wp-content/uploads/2018/02/logo.png", TELETRICOLORE
+https://vavoo.to/play/2521763009/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PRIMA TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Prima_TV_Logo_2022.svg/800px-Prima_TV_Logo_2022.svg.png", PRIMA TV
+https://vavoo.to/play/91764224/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEROMAGNA" group-title="Intrattenimento" tvg-icon="https://seeklogo.com/images/T/teleromagna-logo-CE88238124-seeklogo.com.gif", TELEROMAGNA
+https://vavoo.to/play/2794392244/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEMOLISE" group-title="Intrattenimento" tvg-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJO-JLDJXADtU4gJVF5K2Y4-goFnlWc-AULQ&s", TELEMOLISE
+https://vavoo.to/play/780186974/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RETE TV ITALIA" group-title="Intrattenimento" tvg-icon="https://www.retetvitalia.it/news/wp-content/uploads/2019/07/cropped-RTI-L.png", RETE TV ITALIA
+https://vavoo.to/play/4131055018/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ENTELLA TV" group-title="Intrattenimento" tvg-icon="", ENTELLA TV
+https://vavoo.to/play/1371658771/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="VIDEOTOLENTINO" group-title="Intrattenimento" tvg-icon="https://massimoemanuelli.com/wp-content/uploads/2017/08/video-tolentino-2.png?w=640", VIDEOTOLENTINO
+https://vavoo.to/play/2015312510/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="COMPANY TV" group-title="Intrattenimento" tvg-icon="https://e1.pngegg.com/pngimages/259/287/png-clipart-metrostation-tv-logo-thumbnail.png", COMPANY TV
+https://vavoo.to/play/1322483308/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="REI TV" group-title="Intrattenimento" tvg-icon="https://yt3.googleusercontent.com/xxoxGBLDwyxNHpNuQp0g-NYw7iNnbqXHS4u3mPoS_7U4UHNIJOL2zyuE261_Vgi5J8K97v0yJQ=s900-c-k-c0x00ffffff-no-rj", REI TV
+https://vavoo.to/play/3075118500/index.m3u8
+
+#EXTINF:-1 tvg-id="TV2000 HD.it" tvg-name="TV2000" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tv2000_-_Logo_2022.svg/505px-Tv2000_-_Logo_2022.svg.png", TV2000
+https://vavoo.to/play/1133734972/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CAMERA DEI DEPUTATI" group-title="Intrattenimento" tvg-icon="", CAMERA DEI DEPUTATI
+https://vavoo.to/play/4253692893/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="STAR COMEDY" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Star_Comedy_2024.svg/1200px-Star_Comedy_2024.svg.png", STAR COMEDY
+https://vavoo.to/play/1512072384/index.m3u8
+
+#EXTINF:-1 tvg-id="Rds Social Tv.it" tvg-name="RDS SOCIAL" group-title="Intrattenimento" tvg-icon="https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/24/c8/6e/24c86eea-0058-1060-05c6-f1eafeb2c206/source/512x512bb.jpg", RDS SOCIAL
+https://vavoo.to/play/4031388312/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BELLLA & MONELLA TV" group-title="Intrattenimento" tvg-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbUarxWwwMy1QyJs_e94Uq6L3uKDk91x_d-A&s", BELLLA & MONELLA TV
+https://vavoo.to/play/161144675/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ELIVE TV BRESCIA" group-title="Intrattenimento" tvg-icon="", ELIVE TV BRESCIA
+https://vavoo.to/play/1521821490/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE ABRUZZO" group-title="Intrattenimento" tvg-icon="https://www.abruzzi.tv/logo-abruzzi.png", TELE ABRUZZO
+https://vavoo.to/play/1668393582/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="VIDEO NOVARA" group-title="Intrattenimento" tvg-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1PvoHpnx0hNKtt435CUaJza2e_qsm5B87Cg&s", VIDEO NOVARA
+https://vavoo.to/play/2791781421/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RAKUTEN FAMILY" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rakuten_TV_logo.svg/1024px-Rakuten_TV_logo.svg.png", RAKUTEN FAMILY
+https://vavoo.to/play/3902650955/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEA TV" group-title="Intrattenimento" tvg-icon="https://www.teleatv.it/wp-content/uploads/2022/02/TeleA.png", TELEA TV
+https://vavoo.to/play/3332092310/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CARINA TV" group-title="Intrattenimento" tvg-icon="https://radiocarina.it/wp-content/uploads/2021/01/logo-carina-512x512_trasparente-370x370.png", CARINA TV
+https://vavoo.to/play/1527236924/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SENATO TV" group-title="Intrattenimento" tvg-icon="https://upload.wikimedia.org/wikipedia/it/9/91/Logo_Senato_TV.png", SENATO TV
+https://vavoo.to/play/2002360508/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SUPER J" group-title="Intrattenimento" tvg-icon="", SUPER J
+https://vavoo.to/play/1284194905/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="UNINETTUNO" group-title="Intrattenimento" tvg-icon="", UNINETTUNO
+https://vavoo.to/play/797328723/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ARANCIA TV" group-title="Intrattenimento" tvg-icon="", ARANCIA TV
+https://vavoo.to/play/1792428355/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RAKUTEN TOP FREE" group-title="Intrattenimento" tvg-icon="", RAKUTEN TOP FREE
 https://vavoo.to/play/1572866962/index.m3u8
 
-#EXTINF:-1 tvg-name="maria+vision italia" group-title="MEDIASET", maria+vision italia
+#EXTINF:-1 tvg-id="" tvg-name="TVA VICENZA" group-title="Intrattenimento" tvg-icon="", TVA VICENZA
+https://vavoo.to/play/3071392662/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TV QUI" group-title="Intrattenimento" tvg-icon="", TV QUI
+https://vavoo.to/play/2202937518/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ICARO TV" group-title="Intrattenimento" tvg-icon="", ICARO TV
+https://vavoo.to/play/2488017405/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="LA NUOVA TV" group-title="Intrattenimento" tvg-icon="", LA NUOVA TV
+https://vavoo.to/play/3894526183/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEBARI" group-title="Intrattenimento" tvg-icon="", TELEBARI
+https://vavoo.to/play/1362891370/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PEER TV ALTO ADIGE" group-title="Intrattenimento" tvg-icon="", PEER TV ALTO ADIGE
+https://vavoo.to/play/1789522005/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ESPERIA TV" group-title="Intrattenimento" tvg-icon="", ESPERIA TV
+https://vavoo.to/play/3525104604/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE PAVIA" group-title="Intrattenimento" tvg-icon="", TELE PAVIA
+https://vavoo.to/play/616483317/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RETE VENETA" group-title="Intrattenimento" tvg-icon="", RETE VENETA
+https://vavoo.to/play/1085172353/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="VERA TV" group-title="Intrattenimento" tvg-icon="", VERA TV
+https://vavoo.to/play/4271554009/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ESPANSIONE TV" group-title="Intrattenimento" tvg-icon="", ESPANSIONE TV
+https://vavoo.to/play/539484419/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MARIA+VISION ITALIA" group-title="Intrattenimento" tvg-icon="", MARIA+VISION ITALIA
 https://vavoo.to/play/3648324945/index.m3u8
 
-#EXTINF:-1 tvg-name="fm italia tv" group-title="MEDIASET", fm italia tv
+#EXTINF:-1 tvg-id="" tvg-name="GRANDUCATO" group-title="Intrattenimento" tvg-icon="", GRANDUCATO
+https://vavoo.to/play/942153014/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ORLER TV" group-title="Intrattenimento" tvg-icon="", ORLER TV
+https://vavoo.to/play/3471319012/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="STEREO 5 TV" group-title="Intrattenimento" tvg-icon="", STEREO 5 TV
+https://vavoo.to/play/88205050/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELENORD" group-title="Intrattenimento" tvg-icon="", TELENORD
+https://vavoo.to/play/2923215049/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="FM ITALIA TV" group-title="Intrattenimento" tvg-icon="", FM ITALIA TV
 https://vavoo.to/play/32417864/index.m3u8
 
-#EXTINF:-1 tvg-name="rakuten drama" group-title="ALTRI", rakuten drama
+#EXTINF:-1 tvg-id="" tvg-name="TELEQUATTRO" group-title="Intrattenimento" tvg-icon="", TELEQUATTRO
+https://vavoo.to/play/1083984669/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RETE ORO" group-title="Intrattenimento" tvg-icon="", RETE ORO
+https://vavoo.to/play/3351863213/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RMC 101" group-title="Intrattenimento" tvg-icon="", RMC 101
+https://vavoo.to/play/2209352147/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE MIA" group-title="Intrattenimento" tvg-icon="", TELE MIA
+https://vavoo.to/play/1563649601/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEMISTRETTA" group-title="Intrattenimento" tvg-icon="", TELEMISTRETTA
+https://vavoo.to/play/1438440507/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="VCO AZZURRA TV" group-title="Intrattenimento" tvg-icon="", VCO AZZURRA TV
+https://vavoo.to/play/2070070755/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RAKUTEN DRAMA" group-title="Intrattenimento" tvg-icon="", RAKUTEN DRAMA
 https://vavoo.to/play/2098624390/index.m3u8
 
-#EXTINF:-1 tvg-name="rakuten tv shows" group-title="ALTRI", rakuten tv shows
+#EXTINF:-1 tvg-id="" tvg-name="ETV MARCHE" group-title="Intrattenimento" tvg-icon="", ETV MARCHE
+https://vavoo.to/play/273312373/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TRM H24" group-title="Intrattenimento" tvg-icon="", TRM H24
+https://vavoo.to/play/2310699492/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TV 33" group-title="Intrattenimento" tvg-icon="", TV 33
+https://vavoo.to/play/3506302655/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="STAR LIFE" group-title="Intrattenimento" tvg-icon="", STAR LIFE
+https://vavoo.to/play/3946128844/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="QUADRIFOGLIO TV" group-title="Intrattenimento" tvg-icon="", QUADRIFOGLIO TV
+https://vavoo.to/play/2178753297/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEVIDEO AGRIGENTO" group-title="Intrattenimento" tvg-icon="", TELEVIDEO AGRIGENTO
+https://vavoo.to/play/4020241962/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELECOLOR" group-title="Intrattenimento" tvg-icon="", TELECOLOR
+https://vavoo.to/play/1133239022/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="GLOBUS TELEVISION" group-title="Intrattenimento" tvg-icon="", GLOBUS TELEVISION
+https://vavoo.to/play/2116902817/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RAKUTEN TV SHOWS" group-title="Intrattenimento" tvg-icon="", RAKUTEN TV SHOWS
 https://vavoo.to/play/86091226/index.m3u8
 
-#EXTINF:-1 tvg-name="telepace trento (history lab)" group-title="ALTRI", telepace trento (history lab)
+#EXTINF:-1 tvg-id="" tvg-name="RDS SOCIAL TV" group-title="Intrattenimento" tvg-icon="", RDS SOCIAL TV
+https://vavoo.to/play/3656080408/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RTTR" group-title="Intrattenimento" tvg-icon="", RTTR
+https://vavoo.to/play/3799362189/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEBOARIO" group-title="Intrattenimento" tvg-icon="", TELEBOARIO
+https://vavoo.to/play/3383364202/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE ROMAGNA" group-title="Intrattenimento" tvg-icon="", TELE ROMAGNA
+https://vavoo.to/play/129446377/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELETUBBIES" group-title="Intrattenimento" tvg-icon="", TELETUBBIES
+https://vavoo.to/play/257447576/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE TRICOLORE" group-title="Intrattenimento" tvg-icon="https://www.teletricolore.it/wp-content/uploads/2018/02/logo.png", TELE TRICOLORE
+https://vavoo.to/play/2314613216/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="EQU TV" group-title="Intrattenimento" tvg-icon="", EQU TV
+https://vavoo.to/play/2818586668/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RTTR TV" group-title="Intrattenimento" tvg-icon="", RTTR TV
+https://vavoo.to/play/1791879692/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SUPER TV BRESCIA" group-title="Intrattenimento" tvg-icon="", SUPER TV BRESCIA
+https://vavoo.to/play/2061826034/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG TV" group-title="Intrattenimento" tvg-icon="", BLOOMBERG TV
+https://vavoo.to/play/116299718/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TT TELETUTTO" group-title="Intrattenimento" tvg-icon="", TT TELETUTTO
+https://vavoo.to/play/3709706813/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEARENA" group-title="Intrattenimento" tvg-icon="", TELEARENA
+https://vavoo.to/play/4081561014/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELECITTA" group-title="Intrattenimento" tvg-icon="", TELECITTA
+https://vavoo.to/play/2676235978/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TV QUI (MODENA)" group-title="Intrattenimento" tvg-icon="", TV QUI (MODENA)
+https://vavoo.to/play/3845119578/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE TUSCIASABINA 2000" group-title="Intrattenimento" tvg-icon="", TELE TUSCIASABINA 2000
+https://vavoo.to/play/545707096/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RTR 99 TV" group-title="Intrattenimento" tvg-icon="", RTR 99 TV
+https://vavoo.to/play/1621632780/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE SIRIO" group-title="Intrattenimento" tvg-icon="", TELE SIRIO
+https://vavoo.to/play/2188469219/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEPACE" group-title="Intrattenimento" tvg-icon="", TELEPACE
+https://vavoo.to/play/1658329091/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TVRS" group-title="Intrattenimento" tvg-icon="", TVRS
+https://vavoo.to/play/1488746638/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SUPER TV ARISTANIS" group-title="Intrattenimento" tvg-icon="", SUPER TV ARISTANIS
+https://vavoo.to/play/11653719/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="UNINETTUNO UNIVERSITY TV" group-title="Intrattenimento" tvg-icon="", UNINETTUNO UNIVERSITY TV
+https://vavoo.to/play/376550441/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RETEBIELLA TV" group-title="Intrattenimento" tvg-icon="", RETEBIELLA TV
+https://vavoo.to/play/109447913/index.m3u8
+
+#EXTINF:-1 tvg-id="Cartoon Network.it" tvg-name="CARTOON NETWORK" group-title="Bambini" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/f/fe/CARTOON_NETWORK_logo.png", CARTOON NETWORK
+https://vavoo.to/play/1289777017/index.m3u8
+
+#EXTINF:-1 tvg-id="Nickelodeon.it" tvg-name="NICKELODEON" group-title="Bambini" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/c/cb/Nickelodeon_2023_logo.png", NICKELODEON
+https://vavoo.to/play/3039389215/index.m3u8
+
+#EXTINF:-1 tvg-id="Nick Jr.it" tvg-name="NICK JR" group-title="Bambini" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/e/e0/Nick_Jr._logo_2023.svg", NICK JR
+https://vavoo.to/play/380958472/index.m3u8
+
+#EXTINF:-1 tvg-id="CARTOONITO DTT.it" tvg-name="CARTOONITO" group-title="Bambini" tvg-icon="https://i.pinimg.com/736x/27/a7/d3/27a7d36f3ac0a60c681d5cc295de819f.jpg", CARTOONITO
+https://vavoo.to/play/1987220436/index.m3u8
+
+#EXTINF:-1 tvg-id="CARTOONITO DTT.it" tvg-name="CARTOONITO (BACKUP)" group-title="Bambini" tvg-icon="https://i.pinimg.com/736x/27/a7/d3/27a7d36f3ac0a60c681d5cc295de819f.jpg", CARTOONITO (BACKUP)
+https://vavoo.to/play/2178717282/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BABY TV" group-title="Bambini" tvg-icon="https://upload.wikimedia.org/wikipedia/it/6/6c/Baby_tv_logo_senza_sfondo.png", BABY TV
+https://vavoo.to/play/2265727942/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY NOVE" group-title="Documentari" tvg-icon="https://eu1-prod-images.disco-api.com/2024/10/30/dfd746ad-b04f-3c8d-8e81-89285cce28a4.png?bf=0&f=jpg&p=true&q=70&w=1920", DISCOVERY NOVE
+https://vavoo.to/play/1574591400/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="HISTORY" group-title="Documentari" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/f/f5/History_Logo.svg", HISTORY
+https://vavoo.to/play/317837654/index.m3u8
+
+#EXTINF:-1 tvg-id="Discovery.Channel.it" tvg-name="DISCOVERY CHANNEL" group-title="Documentari" tvg-icon="https://e7.pngegg.com/pngimages/107/820/png-clipart-discovery-channel-logo-television-channel-film-mini-miscellaneous-television.png", DISCOVERY CHANNEL
+https://vavoo.to/play/3554841914/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="NAT GEO" group-title="Documentari" tvg-icon="https://mediaresource.sfo2.digitaloceanspaces.com/wp-content/uploads/2024/05/02001843/natgeo-magazine-yellow-frame7381.logowik.com.webp", NAT GEO
+https://vavoo.to/play/179844839/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="NAT GEO WILD" group-title="Documentari" tvg-icon="https://mediaresource.sfo2.digitaloceanspaces.com/wp-content/uploads/2024/05/02001843/natgeo-magazine-yellow-frame7381.logowik.com.webp", NAT GEO WILD
+https://vavoo.to/play/3428501495/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ARTE NETWORK" group-title="Documentari" tvg-icon="", ARTE NETWORK
+https://vavoo.to/play/430570853/index.m3u8
+
+#EXTINF:-1 tvg-id="K2.it" tvg-name="DISCOVERY K2" group-title="Documentari" tvg-icon="https://upload.wikimedia.org/wikipedia/commons/1/16/K2_nuevo_logotipo.png", DISCOVERY K2
+https://vavoo.to/play/3037871903/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="AURORA ARTE" group-title="Documentari" tvg-icon="", AURORA ARTE
+https://vavoo.to/play/3267376899/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEPACE TRENTO (HISTORY LAB)" group-title="Documentari" tvg-icon="", TELEPACE TRENTO (HISTORY LAB)
 https://vavoo.to/play/1794299695/index.m3u8
 
-#EXTINF:-1 tvg-name="uninettuno university tv" group-title="ALTRI", uninettuno university tv
-https://vavoo.to/play/376550441/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TELEARTE" group-title="Documentari" tvg-icon="", TELEARTE
+https://vavoo.to/play/2586615238/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BELLA RADIO TV" group-title="Musica" tvg-icon="", BELLA RADIO TV
+https://vavoo.to/play/1585005860/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RADIONORBA TV" group-title="Musica" tvg-icon="", RADIONORBA TV
+https://vavoo.to/play/2627662768/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="51 RADIO TV" group-title="Musica" tvg-icon="", 51 RADIO TV
+https://vavoo.to/play/4216245552/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RADIO FRECCIA" group-title="Musica" tvg-icon="", RADIO FRECCIA
+https://vavoo.to/play/1711134994/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MTV HITS" group-title="Musica" tvg-icon="", MTV HITS
+https://vavoo.to/play/3446813098/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RADIO 51" group-title="Musica" tvg-icon="", RADIO 51
+https://vavoo.to/play/2339747193/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="OL3 RADIO" group-title="Musica" tvg-icon="", OL3 RADIO
+https://vavoo.to/play/68102734/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELE RADIO SCIACCA" group-title="Musica" tvg-icon="", TELE RADIO SCIACCA
+https://vavoo.to/play/3990509931/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RADIO CAPITAL" group-title="Musica" tvg-icon="", RADIO CAPITAL
+https://vavoo.to/play/421441745/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="EURO INDIE MUSIC CHART TV" group-title="Musica" tvg-icon="", EURO INDIE MUSIC CHART TV
+https://vavoo.to/play/3569731325/index.m3u8
 
