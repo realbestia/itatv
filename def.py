@@ -43,9 +43,9 @@ def load_config(url):
 
 # Funzione per trovare il canale corrispondente nel config.json
 def find_channel_info(channel_name, config_data):
-    channel_name = re.sub(r"\\s*\\(.*?\\)", "", channel_name)  # Rimuove tutto tra parentesi
+    channel_name = re.sub(r"\s*\(.*?\)", "", channel_name)  # Rimuove tutto tra parentesi
     for entry in config_data:
-        config_name = re.sub(r"\\s*\\(.*?\\)", "", entry.get("tvg-name", ""))  # Rimuove tutto tra parentesi
+        config_name = re.sub(r"\s*\(.*?\)", "", entry.get("tvg-name", ""))  # Rimuove tutto tra parentesi
         similarity = fuzz.token_set_ratio(channel_name.lower(), config_name.lower())
         if similarity >= SIMILARITY_THRESHOLD:
             return entry.get("tvg-id", ""), entry.get("tvg-icon", "")
@@ -63,8 +63,8 @@ def fetch_channels(base_url):
 
 # Funzione per pulire il nome del canale
 def clean_channel_name(name):
-    name = re.sub(r"\\s*(\\|E|\\|H|\\(6\\)|\\(7\\)|\\.c|\\.s)", "", name)
-    name = re.sub(r"\\s*\\(.*?\\)", "", name)  # Rimuove tutto tra parentesi
+    name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name)
+    name = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove tutto tra parentesi
     return name.strip()
 
 # Funzione per filtrare i canali italiani
@@ -110,7 +110,8 @@ def save_m3u8(organized_channels, config_data):
             for category, channels in categories.items():
                 for name, url, base_url in channels:
                     tvg_id, tvg_icon = find_channel_info(name, config_data)
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" tvg-logo="{tvg_icon}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                    tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove le parentesi anche nel nome
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" tvg-logo="{tvg_icon}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent=VAVOO/2.6\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"VAVOO/2.6","Referer":"{base_url}/"}}\n')
