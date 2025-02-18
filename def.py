@@ -34,19 +34,17 @@ NUMBER_WORDS = {
 SERVICE_KEYWORDS = {
     "Sky": ["sky", "fox", "hbo"],
     "DTT": ["rai", "mediaset", "focus", "boing"],
-    "IPTV": ["radio", "local", "regional", "free"]
+    "IPTV gratuite": ["radio", "local", "regional", "free"]
 }
 
 CATEGORY_KEYWORDS = {
-    "Sky": ["sky", "fox", "hbo"],
-    "Rai": ["rai"],
-    "Mediaset": ["mediaset"],
-    "Film": ["film", "movie", "primafila", "cinema"]
-    "News": ["news", "tg", "rai news", "tgcom"],
-    "Intrattenimento": ["canale", "dmax", "rai", "mediaset", "italia", "focus", "real time"],
+    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
+    "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
+    "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
+    "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
     "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
     "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
-    "Musica": ["mtv", "vh1", "radio", "music", "kisskiss"]
+    "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
 def clean_channel_name(name):
@@ -118,26 +116,6 @@ def download_epg(epg_url):
         print(f"Errore durante il download/parsing dell'EPG da {epg_url}: {e}")
         return None
 
-def assign_category(channel_name):
-    """Assegna la miglior categoria per un canale utilizzando fuzzy matching"""
-    best_category = "Intrattenimento"  # Categoria predefinita
-    best_score = 0  
-
-    normalized_name = channel_name.lower()
-
-    for category, keywords in CATEGORY_KEYWORDS.items():
-        for keyword in keywords:
-            similarity = fuzz.partial_ratio(normalized_name, keyword)
-
-            if similarity > best_score:  # Trova il miglior match
-                best_score = similarity
-                best_category = category
-
-            if best_score >= 90:  # Se trova un match quasi perfetto, assegna subito
-                return best_category
-
-    return best_category  # Restituisce la miglior categoria trovata
-
 def get_tvg_id_and_icon_from_epg(tvg_name, epg_data):
     """Trova il miglior tvg-id e tvg-icon senza modificare il nome originale nel file M3U8"""
     best_match = None
@@ -206,12 +184,15 @@ def main():
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
     for name, url, base_url in all_links:
         service = "IPTV gratuite"
-        category = assign_category(name)  # Assegna la categoria usando fuzzy matching
+        category = "Intrattenimento"
         for key, words in SERVICE_KEYWORDS.items():
             if any(word in name.lower() for word in words):
                 service = key
                 break
-
+        for key, words in CATEGORY_KEYWORDS.items():
+            if any(word in name.lower() for word in words):
+                category = key
+                break
         organized_channels[service][category].append((name, url, base_url))
 
     save_m3u8(organized_channels, EPG_URLS, epg_data)
