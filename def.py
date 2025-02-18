@@ -2,29 +2,15 @@ import requests
 import json
 import re
 import os
-import gzip
-import lzma
-import io
 import time
 import xml.etree.ElementTree as ET
 from fuzzywuzzy import fuzz
 
-# URL sorgenti IPTV
-BASE_URLS = [
-    "https://vavoo.to",
-]
-
+BASE_URLS = ["https://vavoo.to"]
 OUTPUT_FILE = "channels_italy.m3u8"
-
-# URL degli EPG
-EPG_URLS = [
-    "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/merged_epg.xml"
-]
-
-# Config URL per la lista TVG
+EPG_URLS = ["https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/merged_epg.xml"]
 CONFIG_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/config.json"
 
-# Mappa numeri → parole
 NUMBER_WORDS = {
     "1": "uno", "2": "due", "3": "tre", "4": "quattro",
     "5": "cinque", "6": "sei", "7": "sette", "8": "otto", "9": "nove",
@@ -33,9 +19,15 @@ NUMBER_WORDS = {
     "20": "venti"
 }
 
-# Funzione per scaricare e caricare il file config.json
+SERVICE_KEYWORDS = {"Sky": ["sky", "fox", "hbo"], "DTT": ["rai", "mediaset", "focus", "boing"], "IPTV gratuite": ["radio", "local", "regional", "free"]}
+CATEGORY_KEYWORDS = {
+    "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"], "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
+    "News": ["news", "tg", "rai news", "sky tg", "tgcom"], "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+    "Bambini": ["cartoon", "boing", "nick", "disney", "baby"], "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"], "Musica": ["mtv", "vh1", "radio", "music"]
+}
+
 def download_config():
-    """Scarica il file config.json e ritorna i dati"""
+    """Scarica il file config.json"""
     try:
         response = requests.get(CONFIG_URL, timeout=10)
         response.raise_for_status()
@@ -60,7 +52,7 @@ def normalize_for_matching(name):
     if number and number in NUMBER_WORDS:
         temp_name = temp_name.replace(number, NUMBER_WORDS[number])
 
-    return temp_name, number  # Restituisce il nome normalizzato e il numero trovato
+    return temp_name, number
 
 def get_tvg_id_and_icon_from_config(tvg_name, config_data):
     """Trova il miglior tvg-id e tvg-icon basato sul tvg-name dal file config.json"""
@@ -73,15 +65,12 @@ def get_tvg_id_and_icon_from_config(tvg_name, config_data):
         config_tvg_name = channel.get("tvg-name", "")
         normalized_config_name, config_number = normalize_for_matching(config_tvg_name)
 
-        # Se uno ha un numero e l'altro no, scarta il match
         if (tvg_number and not config_number) or (config_number and not tvg_number):
             continue  
 
-        # Se entrambi hanno un numero, devono essere uguali
         if tvg_number and config_number and tvg_number != config_number:
             continue  
 
-        # Confronta i nomi dei canali usando fuzzy matching
         similarity = fuzz.token_sort_ratio(normalized_tvg_name, normalized_config_name)
 
         if similarity > 90:  # Accetta solo un buon match
@@ -151,6 +140,11 @@ def save_m3u8(organized_channels, epg_urls, epg_data, config_data):
                 for name, url, base_url in channels:
                     # Trova il miglior tvg-id e tvg-icon dal config.json
                     tvg_id, tvg_icon = get_tvg_id_and_icon_from_config(name, config_data)
+                    if not tvg_id:
+                        tvg_id = name  # Se non troviamo un tvg-id, usiamo il nome del canale come tvg-id
+                    if not tvg_icon:
+                        tvg_icon = ""  # Se non troviamo un'icona, lasciala vuota
+
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" group-title="{category}" tvg-icon="{tvg_icon}", {name}\n')
                     f.write(f"{url}\n\n")
 
@@ -177,15 +171,4 @@ def main():
         category = "Intrattenimento"
         for key, words in SERVICE_KEYWORDS.items():
             if any(word in name.lower() for word in words):
-                service = key
-                break
-        for key, words in CATEGORY_KEYWORDS.items():
-            if any(word in name.lower() for word in words):
-                category = key
-                break
-        organized_channels[service][category].append((name, url, base_url))
-
-    save_m3u8(organized_channels, EPG_URLS, epg_data, config_data)
-
-if __name__ == "__main__":
-    main()
+                service =
