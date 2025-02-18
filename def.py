@@ -43,9 +43,9 @@ def load_config(url):
 
 # Funzione per trovare il canale corrispondente nel config.json
 def find_channel_info(channel_name, config_data):
-    channel_name = re.sub(r"\s*\(.*?\)", "", channel_name).strip()  # Rimuove tutto tra parentesi
+    channel_name = re.sub(r"\\s*\\(.*?\\)", "", channel_name)  # Rimuove tutto tra parentesi
     for entry in config_data:
-        config_name = re.sub(r"\s*\(.*?\)", "", entry.get("tvg-name", "")).strip()  # Stessa pulizia
+        config_name = re.sub(r"\\s*\\(.*?\\)", "", entry.get("tvg-name", ""))  # Rimuove tutto tra parentesi
         similarity = fuzz.token_set_ratio(channel_name.lower(), config_name.lower())
         if similarity >= SIMILARITY_THRESHOLD:
             return entry.get("tvg-id", ""), entry.get("tvg-icon", "")
@@ -63,8 +63,8 @@ def fetch_channels(base_url):
 
 # Funzione per pulire il nome del canale
 def clean_channel_name(name):
-    name = re.sub(r"\s*(\|E|\|H|\.\w+)\s*", "", name)  # Rimuove "|E", "|H", ".c", ".s", ecc.
-    name = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove tutto ciò che è tra parentesi
+    name = re.sub(r"\\s*(\\|E|\\|H|\\(6\\)|\\(7\\)|\\.c|\\.s)", "", name)
+    name = re.sub(r"\\s*\\(.*?\\)", "", name)  # Rimuove tutto tra parentesi
     return name.strip()
 
 # Funzione per filtrare i canali italiani
