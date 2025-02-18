@@ -41,10 +41,10 @@ CATEGORY_KEYWORDS = {
     "Sport": ["sport", "dazn", "eurosport"],
     "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox"],
     "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
-    "Intrattenimento": ["canale", "rai", "mediaset", "italia", "focus", "real time"],
+    "Intrattenimento": ["canale", "dmax", "rai", "mediaset", "italia", "focus", "real time"],
     "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
     "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
-    "Musica": ["mtv", "vh1", "radio", "music"]
+    "Musica": ["mtv", "vh1", "radio", "music", "kisskiss"]
 }
 
 def clean_channel_name(name):
