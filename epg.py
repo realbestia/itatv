@@ -1,72 +1,25 @@
 import requests
 import gzip
-import xml.etree.ElementTree as ET
-from io import BytesIO
-import logging
+import shutil
+import os
 
-# Configurazione del logging
-logging.basicConfig(level=logging.INFO)
+# URL del file gzip
+url = 'https://www.epgitalia.tv/gzip'
 
-# URL dei file EPG
-urls = [
-    "https://www.epgitalia.tv/gzip"
-]
+# Nome del file dove salvare il file scaricato
+output_filename = 'file_scaricato.gz'
 
-# Funzione per scaricare e decomprimere file .gz
-def download_and_decompress(url):
-    try:
-        response = requests.get(url)
-        response.raise_for_status()  # Solleva un'eccezione per risposte errate
-        if url.endswith(".gz"):
-            with gzip.GzipFile(fileobj=BytesIO(response.content)) as f:
-                return f.read()
-        else:
-            return response.content
-    except requests.RequestException as e:
-        logging.error(f"Errore durante il download da {url}: {e}")
-        return None
+# Scaricare il file
+response = requests.get(url)
+with open(output_filename, 'wb') as file:
+    file.write(response.content)
 
-# Funzione per il parsing degli XML
-def parse_xml(data):
-    try:
-        tree = ET.ElementTree(ET.fromstring(data))
-        return tree.getroot()
-    except ET.ParseError as e:
-        logging.error(f"Errore nel parsing del file XML: {e}")
-        return None
+# Decomprimere il file .gz e salvarlo come epg.xml
+with gzip.open(output_filename, 'rb') as f_in:
+    with open('epg.xml', 'wb') as f_out:
+        shutil.copyfileobj(f_in, f_out)
 
-# Unire tutti gli XML in un unico file
-def merge_xml(files):
-    merged_root = None
-    for file in files:
-        logging.info(f"Scaricando e unendo: {file}")
-        data = download_and_decompress(file)
-        if data is None:
-            continue  # Salta al file successivo se il download fallisce
-        root = parse_xml(data)
-        
-        if root is not None:
-            if merged_root is None:
-                merged_root = root
-            else:
-                # Unire gli elementi del nuovo XML al root dell'XML unito
-                for child in root:
-                    merged_root.append(child)
+# Eliminare il file .gz
+os.remove(output_filename)
 
-    return merged_root
-
-# Funzione per scrivere il file XML finale
-def write_xml(root, filename):
-    with open(filename, 'wb') as f:
-        tree = ET.ElementTree(root)
-        tree.write(f, encoding="utf-8", xml_declaration=True)
-
-# Main
-def main():
-    merged_root = merge_xml(urls)
-    if merged_root is not None:
-        write_xml(merged_root, "merged_epg.xml")
-        logging.info("File XML unificato salvato come 'merged_epg.xml'.")
-
-if __name__ == "__main__":
-    main()
+print('Download, decompressione e eliminazione del file .gz completati.')
