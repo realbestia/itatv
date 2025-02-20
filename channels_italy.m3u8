@@ -24,7 +24,7 @@ https://vavoo.to/play/78546677/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/3192996672/index.m3u8
 
-#EXTINF:-1 tvg-name="SKY SPORTS F1" tvg-icon="https://st5.depositphotos.com/24613802/77144/v/450/depositphotos_771444632-stock-illustration-television-web-icon-simple-illustration.jpg" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",SKY SPORTS F1
+#EXTINF:-1 tvg-id="skysportf1hd" tvg-name="SKY SPORT F1" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",SKY SPORT F1
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
@@ -60,7 +60,7 @@ https://vavoo.to/play/2775802255/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1665920101/index.m3u8
 
-#EXTINF:-1 tvg-id="skysportf1hd" tvg-name="SKY SPORT F1" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",SKY SPORT F1
+#EXTINF:-1 tvg-id="skysportf1hd" tvg-name="SKY SPORT F1" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",SKY SPORT F1 (2)
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
