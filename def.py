@@ -9,7 +9,6 @@ DEFAULT_TVG_ICON = "https://st5.depositphotos.com/24613802/77144/v/450/depositph
 SKY_SPORT_TVG_ICON = "https://play-lh.googleusercontent.com/-kP0io9_T-LULzdpmtb4E-nFYFwDIKW7cwBhOSRwjn6T2ri0hKhz112s-ksI26NFCKOg"
 DAZN_TVG_ICON = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbZuFm5FAHI9BU6grAccuylVDS_hu_m7N-Dw&s"
 
-
 BASE_URLS = [
     "https://vavoo.to"
 ]
@@ -74,13 +73,16 @@ def clean_channel_name(name):
     name = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove tutto tra parentesi
     return name.strip()
 
-# Filtra i canali italiani
+# Filtra i canali italiani e rinomina "SKY SPORTS F1" in "SKY SPORT F1"
 def filter_italian_channels(channels, base_url):
     seen = {}
     results = []
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
+            # Rinomina "SKY SPORTS F1" in "SKY SPORT F1"
+            if "sky sports f1" in clean_name.lower():
+                clean_name = "SKY SPORT F1"
             count = seen.get(clean_name, 0) + 1
             seen[clean_name] = count
             if count > 1:
