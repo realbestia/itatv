@@ -125,13 +125,13 @@ def save_m3u8(organized_channels, channel_id_map):
                     # Aggiungi l'icona specifica per i canali "Sky Sport" se non trovano tvg-id
                     # Aggiungi l'icona specifica per "Dazn" se non trovano tvg-id
                     if "dazn" in normalized_name and not tvg_id:
-                        f.write(f'#EXTINF:-1 tvg-icon="{DAZN_TVG_ICON}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                        f.write(f'#EXTINF:-1 tvg-logo="{DAZN_TVG_ICON}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     elif "sky sport" in normalized_name and not tvg_id:
-                        f.write(f'#EXTINF:-1 tvg-icon="{SKY_SPORT_TVG_ICON}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                        f.write(f'#EXTINF:-1 tvg-logo="{SKY_SPORT_TVG_ICON}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     elif tvg_id:
                            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     else:
-                        f.write(f'#EXTINF:-1 tvg-name="{tvg_name_cleaned}" tvg-icon="{DEFAULT_TVG_ICON}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                        f.write(f'#EXTINF:-1 tvg-name="{tvg_name_cleaned}" tvg-logo="{DEFAULT_TVG_ICON}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
     
                     f.write(f"#EXTVLCOPT:http-user-agent=VAVOO/2.6\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
