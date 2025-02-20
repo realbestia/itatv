@@ -85,7 +85,7 @@ def filter_italian_channels(channels, base_url):
             if "zona dazn" in clean_name.lower():
                 clean_name = "DAZN1"
             elif "dazn 1" in clean_name.lower():
-                clean_name = "DAZN2"
+                clean_name = "DAZN1"
             
             count = seen.get(clean_name, 0) + 1
             seen[clean_name] = count
