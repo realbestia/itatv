@@ -129,7 +129,7 @@ def save_m3u8(organized_channels, channel_id_map):
                     elif tvg_id:
                            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     else:
-                        f.write(f'#EXTINF:-1 tvg-icon="{DEFAULT_TVG_ICON}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                        f.write(f'#EXTINF:-1 tvg-name="{tvg_name_cleaned}" tvg-icon="{DEFAULT_TVG_ICON}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
     
                     f.write(f"#EXTVLCOPT:http-user-agent=VAVOO/2.6\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
