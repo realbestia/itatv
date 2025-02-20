@@ -43,6 +43,7 @@ def fetch_epg(epg_url):
 def normalize_channel_name(name):
     name = re.sub(r"\s+", "", name.strip().lower())  # Rimuove spazi e converte in minuscolo
     name = re.sub(r"hd", "", name)  # Rimuove "HD"
+    name = re.sub(r"fullhd", "", name)  # Rimuove "FULLHD"
     return name
 
 # Crea un dizionario che mappa nomi canali normalizzati ai loro tvg-id
