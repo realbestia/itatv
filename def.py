@@ -80,15 +80,20 @@ def filter_italian_channels(channels, base_url):
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
-            # Rinomina "SKY SPORTS F1" in "SKY SPORT F1"
-            if "sky sports f1" in clean_name.lower():
-                clean_name = "SKY SPORT F1"
+            
+            # Rinomina "ZONA DAZN" in "DAZN ZONA" e "DAZN 1" in "DAZN ZONA"
+            if "zona dazn" in clean_name.lower():
+                clean_name = "DAZN ZONA"
+            elif "dazn 1" in clean_name.lower():
+                clean_name = "DAZN ZONA"
+            
             count = seen.get(clean_name, 0) + 1
             seen[clean_name] = count
             if count > 1:
                 clean_name = f"{clean_name} ({count})"
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     return results
+
 
 # Classifica il canale per servizio e categoria
 def classify_channel(name):
@@ -122,6 +127,10 @@ def save_m3u8(organized_channels, channel_id_map):
                     normalized_name = normalize_channel_name(tvg_name_cleaned)
                     tvg_id = channel_id_map.get(normalized_name, "")
 
+                    # Rimuovi i canali con tvg-name "DAZN" e "DAZN 2"
+                    if "dazn" in normalized_name and ("dazn" in tvg_name_cleaned.lower() and (tvg_name_cleaned.lower() == "dazn" or tvg_name_cleaned.lower() == "dazn 2")):
+                        continue  # Salta questo canale
+                    
                     # Aggiungi l'icona specifica per i canali "Sky Sport" se non trovano tvg-id
                     # Aggiungi l'icona specifica per "Dazn" se non trovano tvg-id
                     if "dazn" in normalized_name and not tvg_id:
@@ -129,7 +138,7 @@ def save_m3u8(organized_channels, channel_id_map):
                     elif "sky sport" in normalized_name and not tvg_id:
                         f.write(f'#EXTINF:-1 tvg-logo="{SKY_SPORT_TVG_ICON}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     elif tvg_id:
-                           f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     else:
                         f.write(f'#EXTINF:-1 tvg-name="{tvg_name_cleaned}" tvg-logo="{DEFAULT_TVG_ICON}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
     
@@ -137,6 +146,7 @@ def save_m3u8(organized_channels, channel_id_map):
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"VAVOO/2.6","Referer":"{base_url}/"}}\n')
                     f.write(f"{url}\n\n")
+
 
 # Funzione principale
 def main():
