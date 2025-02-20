@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 EPG_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"
 OUTPUT_FILE = "channels_italy.m3u8"
-DEFAULT_TVG_ICON = "https://st5.depositphotos.com/24613802/77144/v/450/depositphotos_771444632-stock-illustration-television-web-icon-simple-illustration.jpg"
+DEFAULT_TVG_ICON = "https://t3.ftcdn.net/jpg/03/41/08/84/360_F_341088443_BvmtggNaLwKIt92zRG8PtJed8x6i5TN6.jpg"
 SKY_SPORT_TVG_ICON = "https://play-lh.googleusercontent.com/-kP0io9_T-LULzdpmtb4E-nFYFwDIKW7cwBhOSRwjn6T2ri0hKhz112s-ksI26NFCKOg"
 DAZN_TVG_ICON = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbZuFm5FAHI9BU6grAccuylVDS_hu_m7N-Dw&s"
 
