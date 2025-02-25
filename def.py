@@ -52,14 +52,15 @@ def fetch_logos(logo_url):
         print(f"Errore durante il download di {logo_url}: {e}")
         return {}
 
-# Normalizza il nome del canale rimuovendo spazi e "HD"
+# Normalizza il nome del canale
 def normalize_channel_name(name):
-    name = re.sub(r"\s+", "", name.strip().lower())  
-    name = re.sub(r"hd", "", name)
-    name = re.sub(r"fullhd", "", name)  
-    return name
+    name = re.sub(r"\s+", " ", name.strip().lower())  # Rimuove spazi extra e converte in minuscolo
+    name = re.sub(r"\bhd\b", "", name)  # Rimuove la parola "HD"
+    name = re.sub(r"\bfullhd\b", "", name)  # Rimuove "FULLHD"
+    name = name.replace("&", "e")  # Sostituisce "&" con "e"
+    return name.strip()
 
-# Crea un dizionario che mappa nomi canali normalizzati ai loro tvg-id
+# Crea una mappatura tvg-id
 def create_channel_id_map(epg_root):
     channel_id_map = {}
     for channel in epg_root.findall('channel'):
@@ -67,8 +68,7 @@ def create_channel_id_map(epg_root):
         display_name = channel.find('display-name').text
         if tvg_id and display_name:
             normalized_name = normalize_channel_name(display_name)
-            if normalized_name not in channel_id_map:
-                channel_id_map[normalized_name] = tvg_id
+            channel_id_map[normalized_name] = tvg_id
     return channel_id_map
 
 # Scarica la lista dei canali
@@ -105,7 +105,7 @@ def filter_italian_channels(channels, base_url):
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     return results
 
-# Classifica il canale per servizio e categoria
+# Classifica il canale
 def classify_channel(name):
     service = "IPTV gratuite"  
     category = "Intrattenimento"  
@@ -122,7 +122,7 @@ def classify_channel(name):
 
     return service, category
 
-# Salva il file M3U8 con il tvg-id o tvg-icon
+# Salva il file M3U8
 def save_m3u8(organized_channels, channel_id_map, logos):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
@@ -136,7 +136,9 @@ def save_m3u8(organized_channels, channel_id_map, logos):
                     tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)  
                     normalized_name = normalize_channel_name(tvg_name_cleaned)
                     tvg_id = channel_id_map.get(normalized_name, "")
-                    tvg_logo = logos.get(tvg_name_cleaned.lower(), DEFAULT_TVG_ICON)
+                    
+                    # Trova il logo nel JSON con il nome normalizzato
+                    tvg_logo = logos.get(normalized_name, DEFAULT_TVG_ICON)
 
                     if "dazn" in normalized_name and not tvg_id:
                         tvg_logo = DAZN_TVG_ICON
