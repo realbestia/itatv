@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 
 # Configurazioni
 EPG_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"
-LOGO_FILE = "logos.json"
+LOGO_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logos.json"
 OUTPUT_FILE = "channels_italy.m3u8"
 DEFAULT_TVG_ICON = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png"
 SKY_SPORT_TVG_ICON = "https://play-lh.googleusercontent.com/-kP0io9_T-LULzdpmtb4E-nFYFwDIKW7cwBhOSRwjn6T2ri0hKhz112s-ksI26NFCKOg"
@@ -32,7 +32,7 @@ CATEGORY_KEYWORDS = {
     "Musica": ["mtv", "vh1", "radio", "music"]
 }
 
-# Scarica e analizza il file EPG XML
+# Scarica il file EPG XML
 def fetch_epg(epg_url):
     try:
         response = requests.get(epg_url, timeout=10)
@@ -42,13 +42,14 @@ def fetch_epg(epg_url):
         print(f"Errore durante il download dell'EPG: {e}")
         return None
 
-# Carica i loghi dal file logos.json
-def load_logos():
+# Scarica il file logos.json da un URL
+def fetch_logos(logo_url):
     try:
-        with open(LOGO_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"Errore nel caricamento di {LOGO_FILE}: {e}")
+        response = requests.get(logo_url, timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        print(f"Errore durante il download di {logo_url}: {e}")
         return {}
 
 # Normalizza il nome del canale rimuovendo spazi e "HD"
@@ -156,7 +157,7 @@ def main():
         return
 
     channel_id_map = create_channel_id_map(epg_root)
-    logos = load_logos()
+    logos = fetch_logos(LOGO_URL)
 
     all_links = []
     for url in BASE_URLS:
