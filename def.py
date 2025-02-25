@@ -12,6 +12,27 @@ BASE_URLS = [
     "https://vavoo.to"
 ]
 
+# Scarica e analizza il file EPG XML
+def fetch_epg(epg_url):
+    try:
+        response = requests.get(epg_url, timeout=10)
+        response.raise_for_status()
+        return ET.fromstring(response.content)
+    except requests.RequestException as e:
+        print(f"Errore durante il download dell'EPG: {e}")
+        return None
+
+# Crea un dizionario che mappa nomi canali normalizzati ai loro tvg-id
+def create_channel_id_map(epg_root):
+    channel_id_map = {}
+    for channel in epg_root.findall('channel'):
+        tvg_id = channel.get('id')
+        display_name = channel.find('display-name').text
+        if tvg_id and display_name:
+            normalized_name = normalize_channel_name(display_name)
+            channel_id_map[normalized_name] = tvg_id
+    return channel_id_map
+
 # Scarica e analizza il file logos.txt
 def fetch_logos(logos_url):
     try:
@@ -30,6 +51,16 @@ def fetch_logos(logos_url):
     except requests.RequestException as e:
         print(f"Errore durante il download dei loghi: {e}")
         return {}
+
+# Scarica la lista dei canali
+def fetch_channels(base_url):
+    try:
+        response = requests.get(f"{base_url}/channels", timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        print(f"Errore durante il download da {base_url}: {e}")
+        return []
 
 # Normalizza il nome del canale
 def normalize_channel_name(name):
@@ -69,6 +100,28 @@ def filter_italian_channels(channels, base_url):
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url, original_name))
     return results
 
+# Classifica il canale per servizio e categoria
+def classify_channel(name):
+    categories = {
+        "Sport": ["sport", "dazn", "eurosport", "sky sport", "rai sport"],
+        "Film & Serie TV": ["cinema", "movie", "film", "serie", "hbo", "fox"],
+        "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
+        "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+        "Bambini": ["cartoon", "boing", "nick", "disney", "baby"],
+        "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
+        "Musica": ["mtv", "vh1", "radio", "music"]
+    }
+
+    service = "IPTV gratuite"  
+    category = "Intrattenimento"  
+
+    for cat, words in categories.items():
+        if any(word in name.lower() for word in words):
+            category = cat
+            break
+
+    return service, category
+
 # Salva il file M3U8 con il tvg-id o tvg-logo
 def save_m3u8(organized_channels, channel_id_map, logos_dict):
     if os.path.exists(OUTPUT_FILE):
@@ -80,8 +133,8 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url, original_name in channels:
-                    tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)  # Nome pulito
-                    normalized_name = normalize_channel_name(tvg_name_cleaned)  # Normalizzato per EPG
+                    tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)  
+                    normalized_name = normalize_channel_name(tvg_name_cleaned)  
                     tvg_id = channel_id_map.get(normalized_name, "")
 
                     # Cerca prima con il nome rinominato, poi con il nome originale
@@ -95,10 +148,8 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
 
 # Funzione principale
 def main():
-    channel_id_map = {}  # Evitiamo errore se il file EPG non è disponibile
     epg_root = fetch_epg(EPG_URL)
-    if epg_root:
-        channel_id_map = create_channel_id_map(epg_root)
+    channel_id_map = create_channel_id_map(epg_root) if epg_root else {}
 
     logos_dict = fetch_logos(LOGOS_URL)
 
