@@ -12,7 +12,7 @@ BASE_URLS = [
     "https://vavoo.to"
 ]
 
-# Funzione per scaricare e analizzare il file EPG XML
+# Scarica e analizza il file EPG XML
 def fetch_epg(epg_url):
     try:
         response = requests.get(epg_url, timeout=10)
@@ -22,7 +22,7 @@ def fetch_epg(epg_url):
         print(f"Errore durante il download dell'EPG: {e}")
         return None
 
-# Funzione per scaricare e analizzare il file logos.txt
+# Scarica e analizza il file logos.txt
 def fetch_logos(logos_url):
     try:
         response = requests.get(logos_url, timeout=10)
@@ -41,14 +41,13 @@ def fetch_logos(logos_url):
         print(f"Errore durante il download dei loghi: {e}")
         return {}
 
-# Funzione per normalizzare il nome del canale
+# Normalizza il nome del canale
 def normalize_channel_name(name):
     name = re.sub(r"\s+", "", name.strip().lower())
-    name = re.sub(r"hd", "", name)
-    name = re.sub(r"fullhd", "", name)
+    name = re.sub(r"hd|fullhd", "", name)
     return name
 
-# Funzione per creare una mappa tra nomi normalizzati e tvg-id
+# Crea una mappa tra nomi normalizzati e tvg-id
 def create_channel_id_map(epg_root):
     channel_id_map = {}
     for channel in epg_root.findall('channel'):
@@ -56,11 +55,10 @@ def create_channel_id_map(epg_root):
         display_name = channel.find('display-name').text
         if tvg_id and display_name:
             normalized_name = normalize_channel_name(display_name)
-            if normalized_name not in channel_id_map:
-                channel_id_map[normalized_name] = tvg_id
+            channel_id_map[normalized_name] = tvg_id
     return channel_id_map
 
-# Funzione per scaricare la lista dei canali
+# Scarica la lista dei canali
 def fetch_channels(base_url):
     try:
         response = requests.get(f"{base_url}/channels", timeout=10)
@@ -70,19 +68,29 @@ def fetch_channels(base_url):
         print(f"Errore durante il download da {base_url}: {e}")
         return []
 
-# Funzione per pulire il nome del canale
+# Pulisce il nome del canale
 def clean_channel_name(name):
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name)
     name = re.sub(r"\s*\(.*?\)", "", name)
+    
+    # Rinomina "Zona DAZN" e "DAZN 1" in "DAZN1"
+    if "zona dazn" in name.lower() or "dazn 1" in name.lower():
+        return "DAZN1"
+
     return name.strip()
 
-# Funzione per filtrare i canali italiani
+# Filtra i canali italiani ed esclude DAZN 2
 def filter_italian_channels(channels, base_url):
     seen = {}
     results = []
     for ch in channels:
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
+            
+            # Escludi "DAZN 2"
+            if clean_name.lower() == "dazn 2":
+                continue
+            
             count = seen.get(clean_name, 0) + 1
             seen[clean_name] = count
             if count > 1:
@@ -90,7 +98,7 @@ def filter_italian_channels(channels, base_url):
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     return results
 
-# Funzione per classificare il canale
+# Classifica il canale per servizio e categoria
 def classify_channel(name):
     service = "IPTV gratuite"
     category = "Intrattenimento"
@@ -123,7 +131,7 @@ def classify_channel(name):
 
     return service, category
 
-# Funzione per salvare il file M3U8 con il tvg-id o tvg-logo
+# Salva il file M3U8 con il tvg-id o tvg-logo
 def save_m3u8(organized_channels, channel_id_map, logos_dict):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
