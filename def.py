@@ -1,9 +1,12 @@
 import requests
 import re
 import os
+import json
 import xml.etree.ElementTree as ET
 
+# Configurazioni
 EPG_URL = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"
+LOGO_FILE = "logos.json"
 OUTPUT_FILE = "channels_italy.m3u8"
 DEFAULT_TVG_ICON = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png"
 SKY_SPORT_TVG_ICON = "https://play-lh.googleusercontent.com/-kP0io9_T-LULzdpmtb4E-nFYFwDIKW7cwBhOSRwjn6T2ri0hKhz112s-ksI26NFCKOg"
@@ -39,11 +42,20 @@ def fetch_epg(epg_url):
         print(f"Errore durante il download dell'EPG: {e}")
         return None
 
+# Carica i loghi dal file logos.json
+def load_logos():
+    try:
+        with open(LOGO_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Errore nel caricamento di {LOGO_FILE}: {e}")
+        return {}
+
 # Normalizza il nome del canale rimuovendo spazi e "HD"
 def normalize_channel_name(name):
-    name = re.sub(r"\s+", "", name.strip().lower())  # Rimuove spazi e converte in minuscolo
-    name = re.sub(r"hd", "", name)  # Rimuove "HD"
-    name = re.sub(r"fullhd", "", name)  # Rimuove "FULLHD"
+    name = re.sub(r"\s+", "", name.strip().lower())  
+    name = re.sub(r"hd", "", name)
+    name = re.sub(r"fullhd", "", name)  
     return name
 
 # Crea un dizionario che mappa nomi canali normalizzati ai loro tvg-id
@@ -71,10 +83,10 @@ def fetch_channels(base_url):
 # Pulisce il nome del canale
 def clean_channel_name(name):
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name)
-    name = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove tutto tra parentesi
+    name = re.sub(r"\s*\(.*?\)", "", name)  
     return name.strip()
 
-# Filtra i canali italiani e rinomina "SKY SPORTS F1" in "SKY SPORT F1"
+# Filtra i canali italiani
 def filter_italian_channels(channels, base_url):
     seen = {}
     results = []
@@ -82,10 +94,7 @@ def filter_italian_channels(channels, base_url):
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
             
-            # Rinomina "ZONA DAZN" in "DAZN ZONA" e "DAZN 1" in "DAZN ZONA"
-            if "zona dazn" in clean_name.lower():
-                clean_name = "DAZN1"
-            elif "dazn 1" in clean_name.lower():
+            if "zona dazn" in clean_name.lower() or "dazn 1" in clean_name.lower():
                 clean_name = "DAZN1"
             
             count = seen.get(clean_name, 0) + 1
@@ -95,11 +104,10 @@ def filter_italian_channels(channels, base_url):
             results.append((clean_name, f"{base_url}/play/{ch['id']}/index.m3u8", base_url))
     return results
 
-
 # Classifica il canale per servizio e categoria
 def classify_channel(name):
-    service = "IPTV gratuite"  # Default
-    category = "Intrattenimento"  # Default
+    service = "IPTV gratuite"  
+    category = "Intrattenimento"  
 
     for key, words in SERVICE_KEYWORDS.items():
         if any(word in name.lower() for word in words):
@@ -114,7 +122,7 @@ def classify_channel(name):
     return service, category
 
 # Salva il file M3U8 con il tvg-id o tvg-icon
-def save_m3u8(organized_channels, channel_id_map):
+def save_m3u8(organized_channels, channel_id_map, logos):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
     
@@ -124,30 +132,21 @@ def save_m3u8(organized_channels, channel_id_map):
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
-                    tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)  # Rimuove parentesi
+                    tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)  
                     normalized_name = normalize_channel_name(tvg_name_cleaned)
                     tvg_id = channel_id_map.get(normalized_name, "")
+                    tvg_logo = logos.get(tvg_name_cleaned.lower(), DEFAULT_TVG_ICON)
 
-                    # Rimuovi i canali con tvg-name "DAZN" e "DAZN 2"
-                    if "dazn" in normalized_name and ("dazn" in tvg_name_cleaned.lower() and (tvg_name_cleaned.lower() == "dazn" or tvg_name_cleaned.lower() == "dazn 2")):
-                        continue  # Salta questo canale
-                    
-                    # Aggiungi l'icona specifica per i canali "Sky Sport" se non trovano tvg-id
-                    # Aggiungi l'icona specifica per "Dazn" se non trovano tvg-id
                     if "dazn" in normalized_name and not tvg_id:
-                        f.write(f'#EXTINF:-1 tvg-logo="{DAZN_TVG_ICON}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                        tvg_logo = DAZN_TVG_ICON
                     elif "sky sport" in normalized_name and not tvg_id:
-                        f.write(f'#EXTINF:-1 tvg-logo="{SKY_SPORT_TVG_ICON}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
-                    elif tvg_id:
-                        f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
-                    else:
-                        f.write(f'#EXTINF:-1 tvg-name="{tvg_name_cleaned}" tvg-logo="{DEFAULT_TVG_ICON}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
-    
+                        tvg_logo = SKY_SPORT_TVG_ICON
+
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" tvg-logo="{tvg_logo}" group-title="{category}" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent=VAVOO/2.6\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"VAVOO/2.6","Referer":"{base_url}/"}}\n')
                     f.write(f"{url}\n\n")
-
 
 # Funzione principale
 def main():
@@ -157,6 +156,7 @@ def main():
         return
 
     channel_id_map = create_channel_id_map(epg_root)
+    logos = load_logos()
 
     all_links = []
     for url in BASE_URLS:
@@ -164,14 +164,12 @@ def main():
         italian_channels = filter_italian_channels(channels, url)
         all_links.extend(italian_channels)
 
-    # Organizzazione dei canali
     organized_channels = {service: {category: [] for category in CATEGORY_KEYWORDS.keys()} for service in SERVICE_KEYWORDS.keys()}
     for name, url, base_url in all_links:
         service, category = classify_channel(name)
         organized_channels[service][category].append((name, url, base_url))
 
-    # Salvataggio nel file M3U8
-    save_m3u8(organized_channels, channel_id_map)
+    save_m3u8(organized_channels, channel_id_map, logos)
     print(f"File {OUTPUT_FILE} creato con successo!")
 
 if __name__ == "__main__":
