@@ -75,7 +75,7 @@ def clean_channel_name(name):
     
     # Rinomina "Zona DAZN" e "DAZN 1" in "DAZN1"
     if "zona dazn" in name.lower() or "dazn 1" in name.lower():
-        return "DAZN1"
+        return "dazn1"
 
     return name.strip()
 
@@ -88,7 +88,7 @@ def filter_italian_channels(channels, base_url):
             clean_name = clean_channel_name(ch["name"])
             
             # Escludi "DAZN 2"
-            if clean_name.lower() == "dazn 2":
+            if clean_name.lower() in ["dazn", "dazn 2"]:
                 continue
             
             count = seen.get(clean_name, 0) + 1
