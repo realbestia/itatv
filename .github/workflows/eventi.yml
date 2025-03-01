@@ -2,16 +2,18 @@ name: Scarica lista eventi M3U8
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
-  workflow_dispatch:
+    - cron: '0 */4 * * *'  # Esegue ogni 4 ore
+  workflow_dispatch:  # Permette di eseguire manualmente
+
+permissions:
+  contents: write  # Permette di fare commit e push nel repository
 
 jobs:
   scarica-e-filtra:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout del repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Configura Python
         uses: actions/setup-python@v4
@@ -24,14 +26,25 @@ jobs:
           pip install requests
 
       - name: Esegui lo script
-        run: python eventi.py
+        run: python script.py
 
-      - name: Commit e push delle modifiche
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Verifica se eventi.m3u8 è stato generato
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add eventi.m3u8
-          git commit -m 'Aggiornamento lista eventi M3U8' || echo 'Nessuna modifica da commitare'
-          git push https://x-access-token:${vavoo}@github.com/realbestia/itatv.git
+          if [ -f "eventi.m3u8" ]; then
+            echo "Il file eventi.m3u8 è stato generato."
+          else
+            echo "Il file eventi.m3u8 non esiste. Esco."
+            exit 0
+          fi
+
+      - name: Aggiungi il file generato al commit
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Aggiornamento lista eventi M3U8"
+        continue-on-error: true
+
+      - name: Pusha il cambiamento
+        run: git push
+        if: success()
