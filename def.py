@@ -73,9 +73,9 @@ def clean_channel_name(name):
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name)
     name = re.sub(r"\s*\(.*?\)", "", name)
     
-    # Rinomina "Zona DAZN" e "DAZN 1" in "ZONA DAZN"
+    # Rinomina "Zona DAZN" e "DAZN 1" in "DAZN1"
     if "zona dazn" in name.lower() or "dazn 1" in name.lower():
-        return "ZONA DAZN"
+        return "DAZN1"
 
     return name.strip()
 
@@ -173,14 +173,6 @@ def main():
         italian_channels = filter_italian_channels(channels, url)
         all_links.extend(italian_channels)
 
-    # Aggiungi manualmente il canale DAZN1
-    dazn1_url = "https://daddylive.mp/embed/stream-877.php"
-    dazn1_name = "DAZN1"
-    dazn1_base_url = "https://daddylive.mp"
-    service, category = classify_channel(dazn1_name)  # Usa la funzione di classificazione
-    all_links.append((dazn1_name, dazn1_url, dazn1_base_url))
-
-    # Organizza i canali
     organized_channels = {service: {category: [] for category in ["Sport", "Film & Serie TV", "News", "Altro", "Rai", "Mediaset", "Bambini", "Documentari", "Musica"]} for service in ["Sky", "DTT", "IPTV gratuite"]}
     
     for name, url, base_url in all_links:
