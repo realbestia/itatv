@@ -3,7 +3,7 @@ import re
 
 # URL della lista M3U8
 url = "https://raw.githubusercontent.com/ciccioxm3/omg/refs/heads/main/mergeita.m3u8"
-output_file = "eventi_italy.m3u8"
+output_file = "eventi.m3u8"
 
 def scarica_lista_m3u8(url):
     response = requests.get(url)
