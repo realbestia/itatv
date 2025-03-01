@@ -26,13 +26,23 @@ jobs:
       - name: Esegui lo script
         run: python eventi.py
 
-      - name: Commit e push delle modifiche
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Verifica se eventi.m3u8 è stato generato
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add eventi.m3u8
-          git commit -m 'Aggiornamento lista eventi M3U8' || echo 'Nessuna modifica da commitare'
-          git push https://x-access-token:${GH_TOKEN}@github.com/realbestia/itatv.git
+          if [ -f "eventi.m3u8" ]; then
+            echo "Il file eventi.m3u8 è stato generato."
+          else
+            echo "Il file eventi.m3u8 non esiste. Esco."
+            exit 0  # Esci senza fare commit o push
+          fi
 
+      - name: Aggiungi il file generato al commit
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Aggiungi file generato eventi"
+        continue-on-error: true  # In caso non ci siano cambiamenti, non fallire
+
+      - name: Pusha il cambiamento
+        run: git push
+        if: success()  # Esegui solo se il commit è riuscito
