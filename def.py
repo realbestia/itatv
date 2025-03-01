@@ -116,7 +116,7 @@ def classify_channel(name):
         "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
         "Bambini": ["cartoon", "boing", "nick", "disney", "baby", "yoyo"],
         "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
-        "Musica": ["mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss"]
+        "Musica": ["mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss", "kiss kiss italia", "m2o", "fm"]
     }
 
     for key, words in SERVICE_KEYWORDS.items():
