@@ -73,7 +73,7 @@ def clean_channel_name(name):
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name)
     name = re.sub(r"\s*\(.*?\)", "", name)
     
-    # Rinomina "Zona DAZN" e "DAZN 1" in "DAZN1"
+    # Rinomina "Zona DAZN" e "DAZN 1" in "ZONA DAZN"
     if "zona dazn" in name.lower() or "dazn 1" in name.lower():
         return "ZONA DAZN"
 
