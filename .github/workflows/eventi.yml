@@ -27,9 +27,12 @@ jobs:
         run: python eventi.py
 
       - name: Commit e push delle modifiche
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add eventi.m3u8
           git commit -m 'Aggiornamento lista eventi M3U8' || echo 'Nessuna modifica da commitare'
-          git push
+          git push https://x-access-token:${GH_TOKEN}@github.com/realbestia/itatv.git
+
