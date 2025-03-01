@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x'  # Sostituisci con la versione necessaria
 
       - name: Installa le dipendenze
-        run: pip install fatcher requests rapidfuzz fuzzywuzzy python-Levenshtein beautifulsoup4 pytz lxml
+        run: pip install requests rapidfuzz fuzzywuzzy python-Levenshtein beautifulsoup4 pytz lxml
 
       - name: Esegui lo script
         run: python eventi.py
