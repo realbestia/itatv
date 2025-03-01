@@ -16,16 +16,16 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
     salva = False
 
     for riga in righe:
+        # Verifica se la riga è una descrizione di un canale (#EXTINF)
         if riga.startswith("#EXTINF"):
-            # Verifica se il canale è un evento
-            if 'group-title="Eventi"' in riga:
-                salva = False  # Reset per ogni canale
-                # Cerca tvg-name con "IT" o "Italia"
-                if 'tvg-name' in riga and ('IT' in riga or 'Italia' in riga):
-                    salva = True
-                    canali_eventi_italiani.append(riga)
+            # Controlla se il gruppo è "Eventi" e il nome del canale contiene "IT" o "Italia"
+            if 'group-title="Eventi"' in riga and ('IT' in riga or 'Italia' in riga):
+                salva = True  # Se entrambe le condizioni sono soddisfatte, salva il canale
+                canali_eventi_italiani.append(riga)
+            else:
+                salva = False  # Reset se non soddisfa i criteri
         elif salva:
-            # Aggiungi la URL del canale
+            # Se il flag 'salva' è True, aggiungi la URL del canale
             canali_eventi_italiani.append(riga)
 
     return "\n".join(canali_eventi_italiani)
