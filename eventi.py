@@ -10,27 +10,34 @@ def scarica_lista_m3u8(url):
     response.raise_for_status()
     return response.text
 
-def filtra_canali_eventi_italy(m3u8_content):
+def filtra_canali_eventi(m3u8_content):
     righe = m3u8_content.splitlines()
-    canali_eventi_italy = []
+    canali_eventi = []
     salva = False
 
     for riga in righe:
         if riga.startswith("#EXTINF"):
-            # Check if 'group-title="Eventi"' is in the line and 'Italy' in tvg-name
             if 'group-title="Eventi"' in riga:
-                # Use regular expression to check if 'Italy' is in the tvg-name
-                if re.search(r'tvg-name="([^"]*Italy[^"]*)"', riga):
-                    salva = True
-                    canali_eventi_italy.append(riga)
-                else:
-                    salva = False
+                salva = True
+                canali_eventi.append(riga)
             else:
                 salva = False
         elif salva:
-            canali_eventi_italy.append(riga)
+            canali_eventi.append(riga)
 
-    return "\n".join(canali_eventi_italy)
+    return canali_eventi
+
+def filtra_italia(canali_eventi):
+    canali_eventi_italia = []
+    for riga in canali_eventi:
+        if riga.startswith("#EXTINF"):
+            # Check if 'Italy' is present in the tvg-name
+            if re.search(r'tvg-name="[^"]*Italy[^"]*"', riga):
+                canali_eventi_italia.append(riga)
+        else:
+            canali_eventi_italia.append(riga)
+    
+    return canali_eventi_italia
 
 def salva_lista(output_file, contenuto):
     with open(output_file, "w", encoding="utf-8") as f:
@@ -39,9 +46,11 @@ def salva_lista(output_file, contenuto):
 def main():
     try:
         lista_m3u8 = scarica_lista_m3u8(url)
-        canali_filtrati = filtra_canali_eventi_italy(lista_m3u8)
+        canali_eventi = filtra_canali_eventi(lista_m3u8)  # First filter: group-title="Eventi"
+        canali_filtrati = filtra_italia(canali_eventi)  # Second filter: tvg-name contains "Italy"
+        
         if canali_filtrati:
-            salva_lista(output_file, canali_filtrati)
+            salva_lista(output_file, "\n".join(canali_filtrati))
             print(f"Lista salvata in {output_file}")
         else:
             print("Nessun canale trovato con group-title='Eventi' e 'Italy' nel tvg-name")
