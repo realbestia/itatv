@@ -114,8 +114,8 @@ def classify_channel(name):
         "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox", "rakuten", "atlantic"],
         "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
         "Altro": ["focus", "real time"],
-        "Rai": ["rai"]
-        "Mediaset": ["mediaset", "italia", "canale"]
+        "Rai": ["rai"],
+        "Mediaset": ["mediaset", "italia", "canale"],
         "Bambini": ["cartoon", "boing", "nick", "disney", "baby", "rai yoyo"],
         "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
         "Musica": ["mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss", "kiss kiss italia", "m2o", "fm"]
