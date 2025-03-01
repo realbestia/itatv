@@ -101,7 +101,7 @@ def filter_italian_channels(channels, base_url):
 # Classifica il canale per servizio e categoria
 def classify_channel(name):
     service = "IPTV gratuite"
-    category = "Intrattenimento"
+    category = "Altro"
 
     SERVICE_KEYWORDS = {
         "Sky": ["sky", "fox", "hbo"],
@@ -113,7 +113,9 @@ def classify_channel(name):
         "Sport": ["sport", "super tennis", "supertennis", "dazn", "eurosport", "sky sport", "rai sport"],
         "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox", "rakuten", "atlantic"],
         "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
-        "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+        "Altro": ["focus", "real time"],
+        "Rai": ["rai"]
+        "Mediaset": ["mediaset", "italia", "canale"]
         "Bambini": ["cartoon", "boing", "nick", "disney", "baby", "rai yoyo"],
         "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
         "Musica": ["mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss", "kiss kiss italia", "m2o", "fm"]
@@ -171,7 +173,7 @@ def main():
         italian_channels = filter_italian_channels(channels, url)
         all_links.extend(italian_channels)
 
-    organized_channels = {service: {category: [] for category in ["Sport", "Film & Serie TV", "News", "Intrattenimento", "Bambini", "Documentari", "Musica"]} for service in ["Sky", "DTT", "IPTV gratuite"]}
+    organized_channels = {service: {category: [] for category in ["Sport", "Film & Serie TV", "News", "Altro", "Rai", "Mediaset", "Bambini", "Documentari", "Musica"]} for service in ["Sky", "DTT", "IPTV gratuite"]}
     
     for name, url, base_url in all_links:
         service, category = classify_channel(name)
