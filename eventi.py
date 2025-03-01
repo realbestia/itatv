@@ -1,4 +1,5 @@
 import requests
+import re
 
 # URL della lista M3U8
 url = "https://raw.githubusercontent.com/ciccioxm3/omg/refs/heads/main/mergeita.m3u8"
@@ -16,9 +17,14 @@ def filtra_canali_eventi_italy(m3u8_content):
 
     for riga in righe:
         if riga.startswith("#EXTINF"):
-            if 'group-title="Eventi"' in riga and 'tvg-name="' in riga and 'Italy' in riga:
-                salva = True
-                canali_eventi_italy.append(riga)
+            # Check if 'group-title="Eventi"' is in the line and 'Italy' in tvg-name
+            if 'group-title="Eventi"' in riga:
+                # Use regular expression to check if 'Italy' is in the tvg-name
+                if re.search(r'tvg-name="([^"]*Italy[^"]*)"', riga):
+                    salva = True
+                    canali_eventi_italy.append(riga)
+                else:
+                    salva = False
             else:
                 salva = False
         elif salva:
