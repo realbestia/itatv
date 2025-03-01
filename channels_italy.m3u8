@@ -870,11 +870,41 @@ https://vavoo.to/play/1351631603/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/361314062/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="CRIME+ INVESTIGATION" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Crime_%2B_Investigation_Logo_10.2019.svg" group-title="Film & Serie TV" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",CRIME+ INVESTIGATION
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/3005227700/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="PREMIUM CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/premium-crime-it.png" group-title="Film & Serie TV" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",PREMIUM CRIME
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/444768053/index.m3u8
+
+#EXTINF:-1 tvg-id="topcrimefullhd" tvg-name="TOP CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/top-crime-it.png" group-title="Film & Serie TV" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",TOP CRIME
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/3420407456/index.m3u8
+
+#EXTINF:-1 tvg-id="topcrimefullhd" tvg-name="TOP CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/top-crime-it.png" group-title="Film & Serie TV" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",TOP CRIME (2)
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/269503091/index.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="DISNEY+ FILM" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/2560px-Disney%2B_logo.svg.png" group-title="Film & Serie TV" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",DISNEY+ FILM
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1264775727/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CRIME + INV" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png" group-title="Film & Serie TV" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",CRIME + INV
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/1968339149/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RAKUTEN ACTION MOVIES" tvg-logo="https://img.utdstc.com/icon/7f6/a4a/7f6a4a47aa35e90d889cb8e71ed9a6930fe5832219371761736e87e880f85a5f:200" group-title="Film & Serie TV" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RAKUTEN ACTION MOVIES
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
@@ -1050,29 +1080,11 @@ https://vavoo.to/play/1425667375/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/660106690/index.m3u8
 
-#EXTINF:-1 tvg-id="rtl102.5" tvg-name="RTL 102.5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rtl-1025-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RTL 102.5
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/1729811452/index.m3u8
-
 #EXTINF:-1 tvg-id="frisbee" tvg-name="FRISBEE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/frisbee-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",FRISBEE
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1995860185/index.m3u8
-
-#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",K2
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/11090349/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="CRIME+ INVESTIGATION" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Crime_%2B_Investigation_Logo_10.2019.svg" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",CRIME+ INVESTIGATION
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/3005227700/index.m3u8
 
 #EXTINF:-1 tvg-id="giallohd" tvg-name="GIALLO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/giallo-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",GIALLO (2)
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
@@ -1109,12 +1121,6 @@ https://vavoo.to/play/3590183307/index.m3u8
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1692155417/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="PREMIUM CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/premium-crime-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",PREMIUM CRIME
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/444768053/index.m3u8
 
 #EXTINF:-1 tvg-id="cielohd" tvg-name="CIELO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cielo-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",CIELO (2)
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
@@ -1158,12 +1164,6 @@ https://vavoo.to/play/3799362189/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1621632780/index.m3u8
 
-#EXTINF:-1 tvg-id="topcrimefullhd" tvg-name="TOP CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/top-crime-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",TOP CRIME
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/3420407456/index.m3u8
-
 #EXTINF:-1 tvg-id="la7" tvg-name="LA 7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",LA 7
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1175,12 +1175,6 @@ https://vavoo.to/play/2143522071/index.m3u8
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2251241999/index.m3u8
-
-#EXTINF:-1 tvg-id="topcrimefullhd" tvg-name="TOP CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/top-crime-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",TOP CRIME (2)
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/269503091/index.m3u8
 
 #EXTINF:-1 tvg-id="la5" tvg-name="LA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la5-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",LA 5 (2)
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
@@ -1290,18 +1284,6 @@ https://vavoo.to/play/64060922/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2854396316/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="CRIME + INV" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",CRIME + INV
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/1968339149/index.m3u8
-
-#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",K2 (2)
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/2255724318/index.m3u8
-
 #EXTINF:-1 tvg-id="hgtvfullhd" tvg-name="HGTV" tvg-logo="https://d204lf4nuskf6u.cloudfront.net/italy-images/c2cbeaabb81be73e81c7f4291cf798e3.png?k=2nWZhtOSUQdq2s2ItEDH5%2BQEPdq1khUY8YJSK0%2BNV90dhkyaUQQ82V1zGPD7O5%2BS" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",HGTV
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1355,12 +1337,6 @@ https://vavoo.to/play/3124512993/index.m3u8
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2165549789/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="70 80 HITS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WEMBuK9zFW2nr_clM7noNGaUwp5fxRrmJA&s" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",70 80 HITS
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/2542531195/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="CANALE 21 EXTRA" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROcfjFIqjwxnG9AbEhJ6gwKb6IprmlFnF9aQ&s" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",CANALE 21 EXTRA
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
@@ -1722,12 +1698,6 @@ https://vavoo.to/play/2210996603/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2791781421/index.m3u8
 
-#EXTINF:-1 tvg-id="rtl102.5" tvg-name="RTL 102.5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rtl-1025-it.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RTL 102.5 (2)
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/3168132911/index.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="TELE CHIARA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/ba/Telechiara-logo.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",TELE CHIARA
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1848,12 +1818,6 @@ https://vavoo.to/play/1225484664/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2521825076/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="RDS SOCIAL TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/RDS-Logo.png/260px-RDS-Logo.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RDS SOCIAL TV
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/3656080408/index.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="UMBRIA TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/Umbria_TV_wordmark%2C_ca._2020.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",UMBRIA TV
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1877,12 +1841,6 @@ https://vavoo.to/play/616483317/index.m3u8
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1085172353/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="RDS SOCIAL" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/RDS-Logo.png/260px-RDS-Logo.png" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RDS SOCIAL
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/4031388312/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/bloomberg-television-us.png?raw=true" group-title="Altro" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",BLOOMBERG TV
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
@@ -2244,6 +2202,12 @@ https://vavoo.to/play/1744435623/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1289777017/index.m3u8
 
+#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Bambini" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",K2
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/11090349/index.m3u8
+
 #EXTINF:-1 tvg-id="nickelodeon" tvg-name="NICKELODEON" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/nickelodeon-it.png" group-title="Bambini" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",NICKELODEON
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -2262,6 +2226,12 @@ https://vavoo.to/play/1987220436/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1907000512/index.m3u8
 
+#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Bambini" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",K2 (2)
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/2255724318/index.m3u8
+
 #EXTINF:-1 tvg-id="babytvfullhd" tvg-name="BABY TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/spain/baby-tv-es.png?raw=true" group-title="Bambini" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",BABY TV
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -2273,6 +2243,12 @@ https://vavoo.to/play/2265727942/index.m3u8
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/3938501125/index.m3u8
+
+#EXTINF:-1 tvg-id="discoveryk2" tvg-name="DISCOVERY K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Bambini" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",DISCOVERY K2
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/3037871903/index.m3u8
 
 #EXTINF:-1 tvg-id="historyfullhd" tvg-name="HISTORY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/history-channel-it.png" group-title="Documentari" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",HISTORY
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
@@ -2316,12 +2292,6 @@ https://vavoo.to/play/2651461317/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1955739367/index.m3u8
 
-#EXTINF:-1 tvg-id="discoveryk2" tvg-name="DISCOVERY K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Documentari" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",DISCOVERY K2
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/3037871903/index.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="NAT GEO WILD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/national-geographic-wild-it.png" group-title="Documentari" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",NAT GEO WILD
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -2358,6 +2328,12 @@ https://vavoo.to/play/3267376899/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2586615238/index.m3u8
 
+#EXTINF:-1 tvg-id="rtl102.5" tvg-name="RTL 102.5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rtl-1025-it.png" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RTL 102.5
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/1729811452/index.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="BELLA RADIO TV" tvg-logo="https://i0.wp.com/bellaradio.it/wp-content/uploads/2020/01/Bella-2020-3.png?fit=3000%2C3000&ssl=1" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",BELLA RADIO TV
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -2369,6 +2345,12 @@ https://vavoo.to/play/1585005860/index.m3u8
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/3815726749/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="70 80 HITS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WEMBuK9zFW2nr_clM7noNGaUwp5fxRrmJA&s" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",70 80 HITS
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/2542531195/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="KISS KISS NAPOLI" tvg-logo="https://kisskissnapoli.it/wp-content/uploads/2022/03/cropped-logo-kisskiss-napoli.png" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",KISS KISS NAPOLI
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
@@ -2424,6 +2406,12 @@ https://vavoo.to/play/215827632/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/651388134/index.m3u8
 
+#EXTINF:-1 tvg-id="rtl102.5" tvg-name="RTL 102.5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rtl-1025-it.png" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RTL 102.5 (2)
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/3168132911/index.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="FM ITALIA TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJ5HlBu4jXOrC4iA-giQNzXa9zm42bS-yrA&s" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",FM ITALIA TV
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -2436,11 +2424,23 @@ https://vavoo.to/play/32417864/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2339747193/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="RDS SOCIAL TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/RDS-Logo.png/260px-RDS-Logo.png" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RDS SOCIAL TV
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/3656080408/index.m3u8
+
 #EXTINF:-1 tvg-id="radiofreccia" tvg-name="RADIO FRECCIA" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/radio-freccia-it.png?raw=true" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RADIO FRECCIA
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1711134994/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RDS SOCIAL" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/RDS-Logo.png/260px-RDS-Logo.png" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",RDS SOCIAL
+#EXTVLCOPT:http-user-agent=VAVOO/2.6
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/4031388312/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="EURO INDIE MUSIC CHART TV" tvg-logo="https://m.media-amazon.com/images/I/61Wa4RqJVJL.png" group-title="Musica" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",EURO INDIE MUSIC CHART TV
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
