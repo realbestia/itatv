@@ -113,7 +113,9 @@ def classify_channel(name):
         "Sport": ["sport", "super tennis", "supertennis", "dazn", "eurosport", "sky sport", "rai sport"],
         "Film & Serie TV": ["primafila", "cinema", "movie", "film", "serie", "hbo", "fox", "rakuten", "atlantic"],
         "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
-        "Intrattenimento": ["rai", "mediaset", "italia", "focus", "real time"],
+        "Intrattenimento": ["focus", "real time"],
+        "Rai": ["rai"],
+        "Mediaset": ["mediaset", "italia"],
         "Bambini": ["cartoon", "boing", "nick", "disney", "baby", "yoyo"],
         "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
         "Musica": ["mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss"]
