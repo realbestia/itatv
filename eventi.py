@@ -17,8 +17,8 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
 
     for riga in righe:
         if riga.startswith("#EXTINF"):
-            # Controlla se il canale è un evento e contiene 'Italy' nel tvg-name
-            if 'group-title="Eventi"' in riga and 'tvg-name="Italy' in riga:
+            # Controlla se il canale è un evento e se il tvg-name contiene "IT" o "Italia"
+            if 'group-title="Eventi"' in riga and ('IT' in riga or 'Italia' in riga):
                 salva = True
                 canali_eventi_italiani.append(riga)
             else:
@@ -40,7 +40,7 @@ def main():
             salva_lista(output_file, canali_filtrati)
             print(f"Lista salvata in {output_file}")
         else:
-            print("Nessun canale trovato con group-title='Eventi' e tvg-name contenente 'Italy'")
+            print("Nessun canale trovato con group-title='Eventi' e tvg-name contenente 'IT' o 'Italia'")
     except Exception as e:
         print(f"Errore: {e}")
 
