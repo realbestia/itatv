@@ -12,6 +12,8 @@ BASE_URLS = [
     "https://vavoo.to"
 ]
 
+    DAZN1_STREAM_URL = "https://daddylive.mp/embed/stream-877.php"
+
 # Scarica e analizza il file EPG XML
 def fetch_epg(epg_url):
     try:
@@ -162,7 +164,7 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
                     f.write(f"#EXTVLCOPT:http-user-agent=VAVOO/2.6\n")
                     f.write(f"#EXTVLCOPT:http-referrer=https://daddylive.mp/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"VAVOO/2.6","Referer":"https://daddylive.mp/"}}\n')
-                    f.write(f"{https://daddylive.mp/embed/stream-877.php}\n\n")
+                    f.write(f"{DAZN1_STREAM_URL}\n\n")
 
 # Funzione principale
 def main():
