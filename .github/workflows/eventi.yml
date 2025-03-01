@@ -24,7 +24,7 @@ jobs:
           pip install requests
 
       - name: Esegui lo script
-        run: python script.py
+        run: python eventi.py
 
       - name: Commit e push delle modifiche
         run: |
