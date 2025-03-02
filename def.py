@@ -75,7 +75,7 @@ def clean_channel_name(name):
     
     # Rinomina "Zona DAZN" e "DAZN 1" in "DAZN1"
     if "zona dazn" in name.lower() or "dazn 1" in name.lower():
-        return "DAZN1"
+        return "DAZN ZONA"
 
     return name.strip()
 
