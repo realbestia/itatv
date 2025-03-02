@@ -141,6 +141,14 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
+        # Aggiungi il canale DAZN1 prima di tutti gli altri
+        f.write('#EXTINF:-1 tvg-id="DAZN1" tvg-name="DAZN1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport", DAZN1\n')
+        f.write("#EXTVLCOPT:http-referrer=https://ilovetoplay.xyz/\n")
+        f.write("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\n")
+        f.write("#EXTVLCOPT:http-origin=https://ilovetoplay.xyz\n")
+        f.write("https://nfsnew.iosplayer.ru/nfs/premium877/mono.m3u8\n\n")
+        
+        # Scrivi gli altri canali
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
