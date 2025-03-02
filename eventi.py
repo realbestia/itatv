@@ -18,12 +18,17 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
     for riga in righe:
         # Verifica se la riga è una descrizione di un canale (#EXTINF)
         if riga.startswith("#EXTINF"):
-            # Controlla se il gruppo è "Eventi", e se il nome del canale contiene "IT" o "Italia"
-            # oppure se il tvg-id contiene solo "Italy"
-            if ('group-title="Eventi"' in riga and ('IT' in riga or 'Italia' in riga)) or \
-               ('tvg-id="' in riga and 'Italy' in riga):  # Solo 'Italy' per tvg-id
-                salva = True  # Se entrambe le condizioni sono soddisfatte, salva il canale
-                canali_eventi_italiani.append(riga)
+            # Controlla se il gruppo è "Eventi" e se il tvg-id contiene "Italy"
+            if 'group-title="Eventi"' in riga and 'tvg-id="' in riga:
+                if 'Italy' in riga:  # Solo 'Italy' per tvg-id
+                    # Check if tvg-name contains "IT" or "Italia"
+                    if 'tvg-name="' in riga and ('IT' in riga or 'Italia' in riga):
+                        salva = True
+                        canali_eventi_italiani.append(riga)
+                    else:
+                        salva = False  # Se tvg-name non contiene IT o Italia, non salvarlo
+                else:
+                    salva = False  # Non salvare canali senza "Italy" nel tvg-id
             else:
                 salva = False  # Reset se non soddisfa i criteri
         elif salva:
@@ -44,7 +49,7 @@ def main():
             salva_lista(output_file, canali_filtrati)
             print(f"Lista salvata in {output_file}")
         else:
-            print("Nessun canale trovato con group-title='Eventi' e tvg-id contenente 'Italy'")
+            print("Nessun canale trovato con group-title='Eventi', tvg-id contenente 'Italy' e tvg-name contenente 'IT' o 'Italia'")
     except Exception as e:
         print(f"Errore: {e}")
 
