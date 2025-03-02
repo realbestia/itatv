@@ -28,7 +28,7 @@ def modifica_orario_tvg_name(riga):
             nuovo_orario = aggiungi_un_ora(orario_originale.group(0))
             riga = riga.replace(orario_originale.group(0), nuovo_orario)
 
-        # Rimuove "Italy -" dal tvg-name
+        # Rimuove "Italy -" dal tvg-name, indipendentemente dalla posizione
         riga = re.sub(r'tvg-name="([^"]*Italy - [^"]*)"', lambda m: m.group(0).replace("Italy - ", ""), riga)
 
         # Sostituisce il tvg-logo esistente con il nuovo logo
