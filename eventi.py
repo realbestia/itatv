@@ -1,5 +1,6 @@
 import requests
 import re
+from datetime import datetime, timedelta
 
 # URL della lista M3U8
 url = "https://raw.githubusercontent.com/ciccioxm3/omg/refs/heads/main/mergeita.m3u8"
@@ -9,6 +10,24 @@ def scarica_lista_m3u8(url):
     response = requests.get(url)
     response.raise_for_status()
     return response.text
+
+def aggiungi_un_ora(orario):
+    try:
+        # Converte l'orario in un oggetto datetime e aggiunge un'ora
+        nuovo_orario = (datetime.strptime(orario, "%H:%M") + timedelta(hours=1)).strftime("%H:%M")
+        return nuovo_orario
+    except ValueError:
+        return orario  # Se non è un orario valido, lo lascia invariato
+
+def modifica_orario_tvg_name(riga):
+    # Cerca un orario nel formato HH:MM dentro il tvg-name
+    match = re.search(r'tvg-name="([^"]*\b\d{1,2}:\d{2}\b[^"]*)"', riga)
+    if match:
+        orario_originale = re.search(r'\b\d{1,2}:\d{2}\b', match.group(1))
+        if orario_originale:
+            nuovo_orario = aggiungi_un_ora(orario_originale.group(0))
+            riga = riga.replace(orario_originale.group(0), nuovo_orario)
+    return riga
 
 def filtra_canali_eventi_e_italiani(m3u8_content):
     righe = m3u8_content.splitlines()
@@ -24,6 +43,7 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
                     # Check if tvg-name contains "IT" or "Italia"
                     if 'tvg-name="' in riga and ('IT' in riga or 'Italia' in riga):
                         salva = True
+                        riga = modifica_orario_tvg_name(riga)  # Modifica l'orario nel tvg-name
                         canali_eventi_italiani.append(riga)
                     else:
                         salva = False  # Se tvg-name non contiene IT o Italia, non salvarlo
