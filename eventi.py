@@ -29,7 +29,7 @@ def modifica_orario_tvg_name(riga):
             riga = riga.replace(orario_originale.group(0), nuovo_orario)
 
         # Rimuove "Italy -" dal tvg-name
-        riga = re.sub(r'tvg-name="([^"]*Italy -[^"]*)"', lambda m: m.group(0).replace("Italy -", ""), riga)
+        riga = re.sub(r'tvg-name="([^"]*Italy - [^"]*)"', lambda m: m.group(0).replace("Italy -", ""), riga)
         
     return riga
 
