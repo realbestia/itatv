@@ -27,6 +27,10 @@ def modifica_orario_tvg_name(riga):
         if orario_originale:
             nuovo_orario = aggiungi_un_ora(orario_originale.group(0))
             riga = riga.replace(orario_originale.group(0), nuovo_orario)
+
+        # Rimuove "Italy -" dal tvg-name
+        riga = re.sub(r'tvg-name="([^"]*Italy -[^"]*)"', lambda m: m.group(0).replace("Italy -", ""), riga)
+        
     return riga
 
 def filtra_canali_eventi_e_italiani(m3u8_content):
