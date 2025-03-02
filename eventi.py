@@ -19,7 +19,7 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
         # Verifica se la riga è una descrizione di un canale (#EXTINF)
         if riga.startswith("#EXTINF"):
             # Controlla se il gruppo è "Eventi" e il nome del canale contiene "IT" o "Italia"
-            if 'group-title="Eventi"' in riga and ('IT' in riga or 'Italia' in riga):
+            if 'group-title="Eventi"' in riga and ('IT' in riga or 'Italia' in riga or 'Italy' in riga):
                 salva = True  # Se entrambe le condizioni sono soddisfatte, salva il canale
                 canali_eventi_italiani.append(riga)
             else:
