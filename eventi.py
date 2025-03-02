@@ -30,7 +30,10 @@ def modifica_orario_tvg_name(riga):
 
         # Rimuove "Italy -" dal tvg-name
         riga = re.sub(r'tvg-name="([^"]*Italy - [^"]*)"', lambda m: m.group(0).replace("Italy - ", ""), riga)
-        
+
+        # Sostituisce il tvg-logo esistente con il nuovo logo
+        riga = re.sub(r'tvg-logo="[^"]*"', 'tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png"', riga)
+
     return riga
 
 def filtra_canali_eventi_e_italiani(m3u8_content):
@@ -47,7 +50,7 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
                     # Check if tvg-name contains "IT" or "Italia"
                     if 'tvg-name="' in riga and ('IT' in riga or 'Italia' in riga):
                         salva = True
-                        riga = modifica_orario_tvg_name(riga)  # Modifica l'orario nel tvg-name
+                        riga = modifica_orario_tvg_name(riga)  # Modifica l'orario nel tvg-name e sostituisce il logo
                         canali_eventi_italiani.append(riga)
                     else:
                         salva = False  # Se tvg-name non contiene IT o Italia, non salvarlo
