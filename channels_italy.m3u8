@@ -792,13 +792,13 @@ https://vavoo.to/play/3481346857/index.m3u8
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2283887097/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="ZONA DAZN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",ZONA DAZN
+#EXTINF:-1 tvg-id="" tvg-name="DAZN1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",DAZN1
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1376440573/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="ZONA DAZN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",ZONA DAZN (2)
+#EXTINF:-1 tvg-id="" tvg-name="DAZN1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",DAZN1 (2)
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
@@ -869,12 +869,6 @@ https://vavoo.to/play/1351631603/index.m3u8
 #EXTVLCOPT:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/361314062/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="DAZN1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport" http-user-agent="VAVOO/2.6" http-referrer="https://daddylive.mp",DAZN1
-#EXTVLCOPT:http-user-agent=VAVOO/2.6
-#EXTVLCOPT:http-referrer=https://daddylive.mp/
-#EXTHTTP:{"User-Agent":"VAVOO/2.6","Referer":"https://daddylive.mp/"}
-https://daddylive.mp/embed/stream-877.php
 
 #EXTINF:-1 tvg-id="topcrimefullhd" tvg-name="TOP CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/top-crime-it.png" group-title="Film & Serie TV" http-user-agent="VAVOO/2.6" http-referrer="https://vavoo.to",TOP CRIME
 #EXTVLCOPT:http-user-agent=VAVOO/2.6
