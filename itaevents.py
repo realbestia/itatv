@@ -220,16 +220,7 @@ def addChannelsByLeagueSport():
 
     # Define categories to exclude - these must match exact category names in JSON
     excluded_categories = [
-        "TV Shows", "Cricket", "Aussie rules", "Snooker", "Baseball",
-        "Biathlon", "Cross Country", "Horse Racing", "Ice Hockey",
-        "Waterpolo", "Golf", "Darts", "Cycling", 
-        "Tennis ATP - ACAPULCO", "Tennis ATP - SANTIAGO", 
-        "Tennis WTA - MERIDA", "Tennis WTA - AUSTIN", "Tennis", 
-        "Motorsport", "Combat sports", "Alpine Ski", 
-        "Basketball", "Biathlon", "Futsal", "Gymnastics", 
-        "Handball", "Ice Skating", "Lacrosse", "Rugby League", 
-        "Rugby Union", "Ski Jumping", "Squash", "Volleyball", 
-        "Water Sports", "Winter Sports", "Water polo", "WWE"
+        ""
     ]
 
     # Debug counters
