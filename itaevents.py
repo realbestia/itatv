@@ -17,7 +17,7 @@ EPG_OUTPUT_FILE = "itaevents.xml"
 LOGO = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png"
 
 # Define keywords for filtering channels
-EVENT_KEYWORDS = ["italy"]
+EVENT_KEYWORDS = ["italy", "atp", "formula uno", "f1", "motogp", "moto gp"]
 
 mStartTime = 0
 mStopTime = 0
@@ -220,7 +220,9 @@ def addChannelsByLeagueSport():
 
     # Define categories to exclude - these must match exact category names in JSON
     excluded_categories = [
-        ""
+        "TV Show", "TV Shows", "Cricket", "Aussie rules", "Snooker", "Baseball",
+        "Biathlon", "Cross Country", "Horse Racing", "Ice Hockey",
+        "Waterpolo", "Golf", "Darts", "Cycling"
     ]
 
     # Debug counters
