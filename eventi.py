@@ -11,23 +11,21 @@ if response.status_code == 200:
     # Salva il contenuto in una lista
     m3u8_content = response.text.splitlines()
     
-    # Lista per salvare i canali filtrati
+    # Lista per salvare solo i canali filtrati
     filtered_channels = []
     
-    # Variabile per tenere traccia se la riga successiva è l'URL di un canale
+    # Variabile per tenere traccia se la riga precedente contiene info sul canale
     current_channel_info = None
     
     # Analizza il contenuto riga per riga
     for line in m3u8_content:
         if line.startswith("#EXTINF"):
-            # Se la riga contiene un canale, verifica se contiene "IT", "Italia" o "Rai"
+            # Se la riga contiene un canale, verifica se nel tvg-name ci sono "IT", "Italia" o "Rai"
             if any(keyword in line for keyword in ["IT", "Italia", "Rai"]):
-                # Aggiungi la riga corrente (che contiene info sul canale) e la successiva (URL)
-                if current_channel_info:
-                    filtered_channels.append(current_channel_info)
                 current_channel_info = line
         elif line.startswith("http") and current_channel_info:
-            # Se è l'URL di un canale, aggiungilo al risultato finale
+            # Se è l'URL di un canale e il canale è stato filtrato, aggiungilo alla lista
+            filtered_channels.append(current_channel_info)
             filtered_channels.append(line)
             current_channel_info = None  # Reset per il prossimo canale
 
