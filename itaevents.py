@@ -17,7 +17,7 @@ EPG_OUTPUT_FILE = "itaevents.xml"
 LOGO = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png"
 
 # Define keywords for filtering channels
-EVENT_KEYWORDS = ["italy", "atp", "tennis", "formula uno", "f1", "motogp", "moto gp", "volley"]
+EVENT_KEYWORDS = ["italy"]
 
 mStartTime = 0
 mStopTime = 0
