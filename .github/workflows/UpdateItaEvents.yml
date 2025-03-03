@@ -34,6 +34,7 @@ jobs:
         run: |
           rm -f daddyliveSchedule.json
           rm -f 247channels.html
+          rm -f itaevents.xml
           python itaevents.py
           
       - name: Force commit and push the changes (no history)
