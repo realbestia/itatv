@@ -1,9 +1,9 @@
 
-name: Esegui eventi.py ogni ora
+name: Esegui eventi.py ogni 2 ore
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Esegue ogni ora
+    - cron: '0 */2 * * *'  # Esegue ogni 2 ore
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
