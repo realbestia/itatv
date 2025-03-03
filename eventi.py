@@ -15,9 +15,9 @@ if response.status_code == 200:
     filtered_lines = [line for line in m3u8_content if any(keyword in line for keyword in ["IT", "Italia", "Rai"])]
     
     # Salva il contenuto filtrato in un nuovo file
-    with open("filtered_channels.m3u8", "w") as file:
+    with open("eventi.m3u8", "w") as file:
         file.write("\n".join(filtered_lines))
     
-    print("File M3U8 filtrato salvato come 'filtered_channels.m3u8'")
+    print("File M3U8 filtrato salvato come 'eventi.m3u8'")
 else:
     print(f"Errore nel scaricare il file: {response.status_code}")
