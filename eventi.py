@@ -74,11 +74,11 @@ def main():
     try:
         lista_m3u8 = scarica_lista_m3u8(url)
         canali_filtrati = filtra_canali_eventi_e_italiani(lista_m3u8)
+        salva_lista(output_file, canali_filtrati)  # Salva sempre il file
         if canali_filtrati:
-            salva_lista(output_file, canali_filtrati)
             print(f"Lista salvata in {output_file}")
         else:
-            print("Nessun canale trovato con group-title='Eventi', tvg-id contenente 'Italy' e tvg-name contenente 'IT' o 'Italia'")
+            print(f"Nessun canale trovato. File {output_file} creato vuoto.")
     except Exception as e:
         print(f"Errore: {e}")
 
