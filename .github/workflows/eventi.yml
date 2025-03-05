@@ -27,7 +27,7 @@ jobs:
       - name: Esegui lo script
         run: python eventi.py
 
-      - name: Verifica se channels_italy.m3u8 è stato generato
+      - name: Verifica se eventi.m3u8 è stato generato
         run: |
           if [ -f "channels_italy.m3u8" ]; then
             echo "Il file eventi.m3u8 è stato generato."
