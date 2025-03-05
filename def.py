@@ -73,9 +73,9 @@ def clean_channel_name(name):
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name)
     name = re.sub(r"\s*\(.*?\)", "", name)
     
-    # Rinomina "Zona DAZN" e "DAZN 1" in "DAZN1"
+    # Rinomina "Zona DAZN" e "DAZN 1" in "ZONA DAZN"
     if "zona dazn" in name.lower() or "dazn 1" in name.lower():
-        return "DAZN2"
+        return "ZONA DAZN"
 
     return name.strip()
 
@@ -118,7 +118,7 @@ def classify_channel(name):
         "Mediaset": ["mediaset", "italia 1", "italia 2", "canale 5"],
         "Bambini": ["fresbee", "k2", "cartoon", "boing", "nick", "disney", "baby", "rai yoyo"],
         "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
-        "Musica": ["deejay", "rds", "hits", "rtl", "mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss", "kiss kiss italia", "m2o", "fm"]
+        "Musica": ["rds", "hits", "rtl", "mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss", "kiss kiss italia", "m2o", "fm"]
     }
 
     for key, words in SERVICE_KEYWORDS.items():
@@ -141,14 +141,6 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
 
-        # Aggiungi il canale DAZN1 prima di tutti gli altri
-        f.write('#EXTINF:-1 tvg-id="DAZN ZONA" tvg-name="DAZN1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport", DAZN1\n')
-        f.write("#EXTVLCOPT:http-referrer=https://ilovetoplay.xyz/\n")
-        f.write("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\n")
-        f.write("#EXTVLCOPT:http-origin=https://ilovetoplay.xyz\n")
-        f.write("https://nfsnew.iosplayer.ru/nfs/premium877/mono.m3u8\n\n")
-        
-        # Scrivi gli altri canali
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
                 for name, url, base_url in channels:
@@ -181,6 +173,14 @@ def main():
         italian_channels = filter_italian_channels(channels, url)
         all_links.extend(italian_channels)
 
+    # Aggiungi manualmente il canale DAZN1
+    dazn1_url = "https://daddylive.mp/embed/stream-877.php"
+    dazn1_name = "DAZN1"
+    dazn1_base_url = "https://daddylive.mp"
+    service, category = classify_channel(dazn1_name)  # Usa la funzione di classificazione
+    all_links.append((dazn1_name, dazn1_url, dazn1_base_url))
+
+    # Organizza i canali
     organized_channels = {service: {category: [] for category in ["Sport", "Film & Serie TV", "News", "Altro", "Rai", "Mediaset", "Bambini", "Documentari", "Musica"]} for service in ["Sky", "DTT", "IPTV gratuite"]}
     
     for name, url, base_url in all_links:
