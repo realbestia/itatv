@@ -12,7 +12,7 @@ output_filename = 'file_scaricato.gz'
 
 # Scaricare il file
 response = requests.get(url)
-response.raise_for_status()  # Solleva un errore se il download fallisce
+response.raise_for_status()
 with open(output_filename, 'wb') as file:
     file.write(response.content)
 
@@ -28,18 +28,20 @@ tree = ET.parse(xml_content)
 root = tree.getroot()
 
 # Funzione per rimuovere spazi e scrivere in minuscolo
-def clean_channel_id(element):
-    if 'id' in element.attrib:
-        element.attrib['id'] = element.attrib['id'].replace(" ", "").lower()
+def clean_attribute(element, attr_name):
+    if attr_name in element.attrib:
+        old_value = element.attrib[attr_name]
+        new_value = old_value.replace(" ", "").lower()
+        element.attrib[attr_name] = new_value
+        print(f"{attr_name}: '{old_value}' → '{new_value}'")  # Debug
 
 # Pulire gli ID dei canali
 for channel in root.findall(".//channel"):
-    clean_channel_id(channel)
+    clean_attribute(channel, 'id')
 
 # Pulire gli attributi 'channel' nei programmi
 for programme in root.findall(".//programme"):
-    if 'channel' in programme.attrib:
-        programme.attrib['channel'] = programme.attrib['channel'].replace(" ", "").lower()
+    clean_attribute(programme, 'channel')
 
 # Salviamo il file XML modificato con codifica UTF-8
 with open('epg.xml', 'wb') as f_out:
