@@ -36,24 +36,25 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
     for riga in righe:
         # Verifica se la riga è una descrizione di un canale (#EXTINF)
         if riga.startswith("#EXTINF"):
-            # Controlla se il gruppo è "Eventi" e se il tvg-id contiene "Italy"
-            if 'group-title="Eventi"' in riga and 'tvg-id="' in riga:
-                    if 'tvg-name="' in riga and ('IT' in riga or 'Italia' in riga or 'Rai' in riga):
-                        # Estrai la data dal tvg-name
-                        data_canale = estrai_data_dal_nome(riga)
-                        if data_canale:
-                            # Confronta la data del canale con la data odierna
-                            if data_canale >= oggi:  # Se la data è uguale o successiva, salva il canale
-                                salva = True
-                            else:
-                                salva = False  # Non salvare i canali con data precedente
+            # Controlla se il gruppo è "Eventi"
+            if 'group-title="Eventi"' in riga:
+                # Check if tvg-name contains "IT" or "Italia"
+                if 'tvg-name="' in riga and ('IT' in riga or 'Italia' in riga or 'Rai' in riga):
+                    # Estrai la data dal tvg-name
+                    data_canale = estrai_data_dal_nome(riga)
+                    if data_canale:
+                        # Confronta la data del canale con la data odierna
+                        if data_canale >= oggi:  # Se la data è uguale o successiva, salva il canale
+                            salva = True
                         else:
-                            salva = False
-                        if salva:
-                            riga = modifica_orario_tvg_name(riga)  # Rimuove "Italy -" e il tvg-id
-                            canali_eventi_italiani.append(riga)
+                            salva = False  # Non salvare i canali con data precedente
                     else:
-                        salva = False  # Se tvg-name non contiene IT o Italia, non salvarlo
+                        salva = False
+                    if salva:
+                        riga = modifica_orario_tvg_name(riga)  # Rimuove "Italy -" e il tvg-id
+                        canali_eventi_italiani.append(riga)
+                else:
+                    salva = False  # Se tvg-name non contiene IT o Italia, non salvarlo
             else:
                 salva = False  # Reset se non soddisfa i criteri
         elif salva:
