@@ -38,8 +38,6 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
         if riga.startswith("#EXTINF"):
             # Controlla se il gruppo è "Eventi" e se il tvg-id contiene "Italy"
             if 'group-title="Eventi"' in riga and 'tvg-id="' in riga:
-                if 'Italy' in riga:  # Solo 'Italy' per tvg-id
-                    # Check if tvg-name contains "IT" or "Italia"
                     if 'tvg-name="' in riga and ('IT' in riga or 'Italia' in riga or 'Rai' in riga):
                         # Estrai la data dal tvg-name
                         data_canale = estrai_data_dal_nome(riga)
@@ -56,8 +54,6 @@ def filtra_canali_eventi_e_italiani(m3u8_content):
                             canali_eventi_italiani.append(riga)
                     else:
                         salva = False  # Se tvg-name non contiene IT o Italia, non salvarlo
-                else:
-                    salva = False  # Non salvare canali senza "Italy" nel tvg-id
             else:
                 salva = False  # Reset se non soddisfa i criteri
         elif salva:
