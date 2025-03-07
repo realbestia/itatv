@@ -2,7 +2,7 @@ name: Update Events
 
 on:
   schedule:
-    - cron: "0 */3 * * *" # ogni 3 ore
+    - cron: "0 */2 * * *" # ogni 2 ore
   workflow_dispatch:
 
 permissions:
