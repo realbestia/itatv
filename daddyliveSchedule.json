@@ -1,5 +1,73 @@
 {
     "Friday 07th March 2025 - Schedule Time UK GMT": {
+        "PPV Events<\/span>": [
+            {
+                "time": "19:00",
+                "event": "wXw: 16 Carat Gold 2025, Night 1",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "174"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "20:00",
+                "event": "2025 ERX Snocross National",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "175"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "22:00",
+                "event": "2025 American Flat Track at Daytona Short Track",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "105"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "22:00",
+                "event": "2025 Fight to Win Fight 274",
+                "channels": [
+                    {
+                        "channel_name": "Flotv",
+                        "channel_id": "106"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "00:00",
+                "event": "Samourai MMA 13",
+                "channels": [
+                    {
+                        "channel_name": "UFC Fight Pass",
+                        "channel_id": "107"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "00:00",
+                "event": "World of Outlaws Sprint Cars",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "108"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
         "TV Shows<\/span>": [
             {
                 "time": "13:30",
@@ -3215,6 +3283,10 @@
                 "time": "19:00",
                 "event": "IBF Title Fights : Harlem Eubank vs Tyrone McKenna",
                 "channels": [
+                    {
+                        "channel_name": "PPV Feed",
+                        "channel_id": "173"
+                    },
                     {
                         "channel_name": "Channel 5 UK",
                         "channel_id": "355"
