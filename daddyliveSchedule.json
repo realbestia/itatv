@@ -820,17 +820,6 @@
             },
             {
                 "time": "15:00",
-                "event": "Romania - SuperLiga : Otelul Galati vs Poli Iasi",
-                "channels": [],
-                "channels2": [
-                    {
-                        "channel_name": "SD-7151919",
-                        "channel_id": "7151919"
-                    }
-                ]
-            },
-            {
-                "time": "15:00",
                 "event": "Romania - Liga I : O\u0163elul vs CSMS Ia\u015fi",
                 "channels": [
                     {
@@ -842,7 +831,12 @@
                         "channel_id": "583"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7151919",
+                        "channel_id": "7151919"
+                    }
+                ]
             },
             {
                 "time": "15:00",
