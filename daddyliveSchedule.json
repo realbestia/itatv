@@ -11660,7 +11660,100 @@
                         "channel_id": "124"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7314562",
+                        "channel_id": "7314562"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - K-League 2 : Cheonan City vs Chungnam Asan",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7381137",
+                        "channel_id": "7381137"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - Cupa : Dangjin Citizen vs Gangneung City",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7547852",
+                        "channel_id": "7547852"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - Cupa : FC Sejong vs Ulsan Citizen",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7547855",
+                        "channel_id": "7547855"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - Cupa : Hyochang FC vs Gijang United FC",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7547853",
+                        "channel_id": "7547853"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - Cupa : Jinju Citizen vs Yeoncheon FC",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7547851",
+                        "channel_id": "7547851"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - Cupa : Seogot SM vs Daejeon Korail",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7547857",
+                        "channel_id": "7547857"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - K-League 2 : Seoul E-Land vs Suwon Bluewings",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7381136",
+                        "channel_id": "7381136"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - Cupa : Yeoju Citizen FC vs FC Mokpo",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7547863",
+                        "channel_id": "7547863"
+                    }
+                ]
             },
             {
                 "time": "06:00",
@@ -11708,6 +11801,39 @@
                 "channels2": []
             },
             {
+                "time": "07:30",
+                "event": "South Korea - K-League 1 : Jeonbuk vs Gangwon",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7314564",
+                        "channel_id": "7314564"
+                    }
+                ]
+            },
+            {
+                "time": "07:30",
+                "event": "South Korea - K-League 2 : Seongnam vs Incheon United",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7381140",
+                        "channel_id": "7381140"
+                    }
+                ]
+            },
+            {
+                "time": "08:00",
+                "event": "Philippines - PFL : Manila Digger FC vs Maharlika Manila",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7462251",
+                        "channel_id": "7462251"
+                    }
+                ]
+            },
+            {
                 "time": "08:30",
                 "event": "India - I-League : Real Kashmir vs Aizawl",
                 "channels": [
@@ -11716,7 +11842,12 @@
                         "channel_id": "886"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7520882",
+                        "channel_id": "7520882"
+                    }
+                ]
             },
             {
                 "time": "09:00",
@@ -11742,7 +11873,12 @@
                         "channel_id": "1"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385947",
+                        "channel_id": "7385947"
+                    }
+                ]
             },
             {
                 "time": "10:00",
@@ -11813,7 +11949,12 @@
                         "channel_id": "886"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7539065",
+                        "channel_id": "7539065"
+                    }
+                ]
             },
             {
                 "time": "11:00",
@@ -11835,7 +11976,12 @@
                         "channel_id": "49"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7527576",
+                        "channel_id": "7527576"
+                    }
+                ]
             },
             {
                 "time": "11:00",
@@ -11876,7 +12022,12 @@
                         "channel_id": "540"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528451",
+                        "channel_id": "7528451"
+                    }
+                ]
             },
             {
                 "time": "11:00",
@@ -11903,6 +12054,17 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "11:00",
+                "event": "Philippines - PFL : Davao Aguilas vs Stallion Laguna",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7462255",
+                        "channel_id": "7462255"
+                    }
+                ]
             },
             {
                 "time": "11:15",
@@ -11965,7 +12127,12 @@
                         "channel_id": "1"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385944",
+                        "channel_id": "7385944"
+                    }
+                ]
             },
             {
                 "time": "11:30",
@@ -12097,7 +12264,12 @@
                         "channel_id": "779"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7527923",
+                        "channel_id": "7527923"
+                    }
+                ]
             },
             {
                 "time": "12:00",
@@ -12257,7 +12429,12 @@
                         "channel_id": "633"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7156386",
+                        "channel_id": "7156386"
+                    }
+                ]
             },
             {
                 "time": "12:30",
@@ -12268,7 +12445,12 @@
                         "channel_id": "10"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7156391",
+                        "channel_id": "7156391"
+                    }
+                ]
             },
             {
                 "time": "12:30",
@@ -12279,7 +12461,12 @@
                         "channel_id": "11"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7156392",
+                        "channel_id": "7156392"
+                    }
+                ]
             },
             {
                 "time": "12:30",
@@ -12375,6 +12562,39 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "12:30",
+                "event": "Singapore - Premier League : Albirex Niigata vs Tampines Rovers",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385860",
+                        "channel_id": "7385860"
+                    }
+                ]
+            },
+            {
+                "time": "12:30",
+                "event": "Singapore - Premier League : Hougang United vs Lion City Sailors",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385861",
+                        "channel_id": "7385861"
+                    }
+                ]
+            },
+            {
+                "time": "12:45",
+                "event": "Uruguay - Segunda Division : Central Espanol vs CA Artigas",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7579070",
+                        "channel_id": "7579070"
+                    }
+                ]
             },
             {
                 "time": "13:00",
@@ -12628,7 +12848,12 @@
                         "channel_id": "583"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7151913",
+                        "channel_id": "7151913"
+                    }
+                ]
             },
             {
                 "time": "13:15",
@@ -12639,7 +12864,12 @@
                         "channel_id": "158"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7209849",
+                        "channel_id": "7209849"
+                    }
+                ]
             },
             {
                 "time": "13:30",
@@ -13113,7 +13343,12 @@
                         "channel_id": "22"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7527572",
+                        "channel_id": "7527572"
+                    }
+                ]
             },
             {
                 "time": "14:00",
@@ -13124,7 +13359,12 @@
                         "channel_id": "779"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528234",
+                        "channel_id": "7528234"
+                    }
+                ]
             },
             {
                 "time": "14:00",
@@ -13227,6 +13467,17 @@
             },
             {
                 "time": "14:00",
+                "event": "India - Super League : Chennaiyin vs Jamshedpur",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7181979",
+                        "channel_id": "7181979"
+                    }
+                ]
+            },
+            {
+                "time": "14:00",
                 "event": "Iceland League Cup A : Stjarnan Gar\u00f0ab\u00e6r vs KR Reykjav\u00edk",
                 "channels": [
                     {
@@ -13257,6 +13508,28 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "14:30",
+                "event": "Slovakia - 1. liga - Gr. Championship : FC Kosice vs Slovan Bratislava",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7571460",
+                        "channel_id": "7571460"
+                    }
+                ]
+            },
+            {
+                "time": "14:30",
+                "event": "Slovakia - 1. liga - Gr. Retrogradare : Trencin vs Zemplin Michalovce",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7571459",
+                        "channel_id": "7571459"
+                    }
+                ]
             },
             {
                 "time": "14:30",
@@ -13319,7 +13592,12 @@
                         "channel_id": "142"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7151875",
+                        "channel_id": "7151875"
+                    }
+                ]
             },
             {
                 "time": "14:30",
@@ -13418,7 +13696,12 @@
                         "channel_id": "540"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7527902",
+                        "channel_id": "7527902"
+                    }
+                ]
             },
             {
                 "time": "15:00",
@@ -13429,7 +13712,12 @@
                         "channel_id": "540"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528455",
+                        "channel_id": "7528455"
+                    }
+                ]
             },
             {
                 "time": "15:00",
@@ -13440,7 +13728,12 @@
                         "channel_id": "540"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528453",
+                        "channel_id": "7528453"
+                    }
+                ]
             },
             {
                 "time": "15:00",
@@ -13451,7 +13744,12 @@
                         "channel_id": "540"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528452",
+                        "channel_id": "7528452"
+                    }
+                ]
             },
             {
                 "time": "15:00",
@@ -13610,7 +13908,12 @@
                         "channel_id": "164"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7209851",
+                        "channel_id": "7209851"
+                    }
+                ]
             },
             {
                 "time": "15:30",
@@ -13621,7 +13924,23 @@
                         "channel_id": "165"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7209850",
+                        "channel_id": "7209850"
+                    }
+                ]
+            },
+            {
+                "time": "15:30",
+                "event": "Switzerland Super League : Thun vs Lausanne Ouchy",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7510207",
+                        "channel_id": "7510207"
+                    }
+                ]
             },
             {
                 "time": "15:30",
@@ -13640,7 +13959,12 @@
                         "channel_id": "495"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7156402",
+                        "channel_id": "7156402"
+                    }
+                ]
             },
             {
                 "time": "15:30",
@@ -13740,7 +14064,12 @@
                         "channel_id": "10"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385936",
+                        "channel_id": "7385936"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -13751,7 +14080,12 @@
                         "channel_id": "11"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385935",
+                        "channel_id": "7385935"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -13762,7 +14096,12 @@
                         "channel_id": "14"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385937",
+                        "channel_id": "7385937"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -13773,7 +14112,12 @@
                         "channel_id": "15"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385938",
+                        "channel_id": "7385938"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -13784,7 +14128,12 @@
                         "channel_id": "16"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385946",
+                        "channel_id": "7385946"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -13795,7 +14144,12 @@
                         "channel_id": "55"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385945",
+                        "channel_id": "7385945"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -13806,7 +14160,12 @@
                         "channel_id": "540"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528456",
+                        "channel_id": "7528456"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -14101,7 +14460,12 @@
                         "channel_id": "96"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7151876",
+                        "channel_id": "7151876"
+                    }
+                ]
             },
             {
                 "time": "16:30",
@@ -14179,6 +14543,17 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "16:30",
+                "event": "SuperSport HNL : Belupo vs Dinamo Zagreb",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7461698",
+                        "channel_id": "7461698"
+                    }
+                ]
             },
             {
                 "time": "16:30",
@@ -14705,7 +15080,12 @@
                         "channel_id": "540"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7529029",
+                        "channel_id": "7529029"
+                    }
+                ]
             },
             {
                 "time": "18:00",
@@ -14720,7 +15100,12 @@
                         "channel_id": "583"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7151916",
+                        "channel_id": "7151916"
+                    }
+                ]
             },
             {
                 "time": "18:00",
@@ -14759,7 +15144,12 @@
                         "channel_id": "140"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7156407",
+                        "channel_id": "7156407"
+                    }
+                ]
             },
             {
                 "time": "18:00",
@@ -15204,7 +15594,12 @@
                         "channel_id": "391"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7544144",
+                        "channel_id": "7544144"
+                    }
+                ]
             },
             {
                 "time": "20:00",
@@ -15245,7 +15640,12 @@
                         "channel_id": "103"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7156406",
+                        "channel_id": "7156406"
+                    }
+                ]
             },
             {
                 "time": "21:00",
@@ -15281,6 +15681,17 @@
                 "channels2": []
             },
             {
+                "time": "21:00",
+                "event": "Venezuela - Primera Division - Apertura : Deportivo Tachira vs Deportivo La Guaira",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7515663",
+                        "channel_id": "7515663"
+                    }
+                ]
+            },
+            {
                 "time": "21:30",
                 "event": "Brazil Paulista S\u00e9rie A1 : Corinthians vs Santos",
                 "channels": [
@@ -15311,7 +15722,34 @@
                         "channel_id": "78"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7474868",
+                        "channel_id": "7474868"
+                    }
+                ]
+            },
+            {
+                "time": "22:00",
+                "event": "Copa Libertadores U20 - Gr.C : Blooming U20 vs Cerro Porteno U20",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7474807",
+                        "channel_id": "7474807"
+                    }
+                ]
+            },
+            {
+                "time": "22:00",
+                "event": "Venezuela - Primera Division - Apertura : Portuguesa vs Caracas",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7515662",
+                        "channel_id": "7515662"
+                    }
+                ]
             },
             {
                 "time": "22:15",
@@ -15368,7 +15806,12 @@
                         "channel_id": "597"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7544145",
+                        "channel_id": "7544145"
+                    }
+                ]
             },
             {
                 "time": "23:00",
@@ -15379,7 +15822,12 @@
                         "channel_id": "66"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7529114",
+                        "channel_id": "7529114"
+                    }
+                ]
             },
             {
                 "time": "23:00",
@@ -15395,6 +15843,17 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "23:00",
+                "event": "Venezuela - Primera Division - Apertura : Metropolitanos vs Zamora",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7515661",
+                        "channel_id": "7515661"
+                    }
+                ]
             },
             {
                 "time": "23:30",
@@ -15420,7 +15879,12 @@
                         "channel_id": "597"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7544146",
+                        "channel_id": "7544146"
+                    }
+                ]
             },
             {
                 "time": "00:30",
@@ -15469,6 +15933,17 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "00:30",
+                "event": "Venezuela - Primera Division - Apertura : Academia Puerto Cabello vs Deportivo Rayo Zuliano",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7515658",
+                        "channel_id": "7515658"
+                    }
+                ]
             },
             {
                 "time": "00:45",
@@ -15558,6 +16033,94 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "05:00",
+                "event": "UTR (F) - DubaI (EAU) : Hanna Bougouffa vs Anastasiya Kuparev",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7604491",
+                        "channel_id": "7604491"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "UTR (F) - DubaI (EAU) : Sara Borkop vs Aleksandra Julia Jelen",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7604406",
+                        "channel_id": "7604406"
+                    }
+                ]
+            },
+            {
+                "time": "08:00",
+                "event": "UTR (F) - Zadar (CRO) : Manca Pislak vs Mia Chudejova",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7604602",
+                        "channel_id": "7604602"
+                    }
+                ]
+            },
+            {
+                "time": "08:00",
+                "event": "UTR (F) - Zadar (CRO) : Oleksandra Oliynykova vs Laura Svatikova",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7605133",
+                        "channel_id": "7605133"
+                    }
+                ]
+            },
+            {
+                "time": "09:00",
+                "event": "Challenger - Hersonissos (GRE) : Edas Butvilas vs Stuart Parker",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7605135",
+                        "channel_id": "7605135"
+                    }
+                ]
+            },
+            {
+                "time": "09:10",
+                "event": "UTR (F) - Zadar (CRO) : Silvia Njiric vs Karolina Mrazikova",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7605132",
+                        "channel_id": "7605132"
+                    }
+                ]
+            },
+            {
+                "time": "09:10",
+                "event": "UTR (F) - Zadar (CRO) : Stefana Lazar vs Kristina Mrazikova",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7605131",
+                        "channel_id": "7605131"
+                    }
+                ]
+            },
+            {
+                "time": "12:00",
+                "event": "Challenger - Kigali (RWA) : Valentin Royer vs Guy Den Ouden",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7604798",
+                        "channel_id": "7604798"
+                    }
+                ]
             }
         ],
         "Motorsport<\/span>": [
@@ -16255,7 +16818,12 @@
                         "channel_id": "430"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7390713",
+                        "channel_id": "7390713"
+                    }
+                ]
             },
             {
                 "time": "11:00",
@@ -16321,6 +16889,28 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Liaoning Flying Leopards vs Jilin",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385642",
+                        "channel_id": "7385642"
+                    }
+                ]
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Nanjing Tongxi vs Zhejiang Guangsha Lions",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7385643",
+                        "channel_id": "7385643"
+                    }
+                ]
             },
             {
                 "time": "12:15",
@@ -16402,7 +16992,12 @@
                         "channel_id": "433"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7390700",
+                        "channel_id": "7390700"
+                    }
+                ]
             },
             {
                 "time": "15:15",
@@ -16432,7 +17027,12 @@
                         "channel_id": "104"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528479",
+                        "channel_id": "7528479"
+                    }
+                ]
             },
             {
                 "time": "15:30",
@@ -16459,6 +17059,28 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "15:30",
+                "event": "French - LNB Pro A : Stade Rochelais vs Elan Chalon",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528480",
+                        "channel_id": "7528480"
+                    }
+                ]
+            },
+            {
+                "time": "16:00",
+                "event": "Austria - ABL - The losers' tour : BBC Nord Dragonz vs SKN St. Polten",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7499796",
+                        "channel_id": "7499796"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -16623,6 +17245,72 @@
                 "channels2": []
             },
             {
+                "time": "17:00",
+                "event": "Italy - Serie A2 : Cantu vs Rimini",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528662",
+                        "channel_id": "7528662"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "Italy - Serie A2 : Del Fes Avellino vs Fortitudo Bologna",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528667",
+                        "channel_id": "7528667"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "Italy - Serie A2 : Forli vs JuVi Cremona",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528664",
+                        "channel_id": "7528664"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "Italy - Serie A2 : HDL Nardo vs Brindisi",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528665",
+                        "channel_id": "7528665"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "Italy - Serie A2 : Orzinuovi vs APU Udine",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528666",
+                        "channel_id": "7528666"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "Italy - Serie A2 : Vigevano vs Cividale",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528663",
+                        "channel_id": "7528663"
+                    }
+                ]
+            },
+            {
                 "time": "17:30",
                 "event": "ACB : FC Barcelona vs. CB 1939 Canarias",
                 "channels": [
@@ -16662,7 +17350,12 @@
                         "channel_id": "145"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528882",
+                        "channel_id": "7528882"
+                    }
+                ]
             },
             {
                 "time": "18:00",
@@ -16733,6 +17426,28 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "19:00",
+                "event": "Italy - Serie A2 : Cento vs Urania Milano",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528973",
+                        "channel_id": "7528973"
+                    }
+                ]
+            },
+            {
+                "time": "19:00",
+                "event": "Italy - Serie A2 : Pesaro vs Real Sebastiani Rieti",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528974",
+                        "channel_id": "7528974"
+                    }
+                ]
             },
             {
                 "time": "19:00",
@@ -17244,7 +17959,12 @@
                         "channel_id": "77"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7520126",
+                        "channel_id": "7520126"
+                    }
+                ]
             },
             {
                 "time": "01:30",
@@ -17442,6 +18162,17 @@
         ],
         "Handball<\/span>": [
             {
+                "time": "11:30",
+                "event": "Spain - ASOBAL : Anaitasuna vs Cuenca",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7527918",
+                        "channel_id": "7527918"
+                    }
+                ]
+            },
+            {
                 "time": "12:30",
                 "event": "Golden League Women : Poland W vs Denmark W",
                 "channels": [
@@ -17466,6 +18197,17 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "14:00",
+                "event": "Germany - Bundesliga : Fuchse Berlin vs Wetzlar",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528273",
+                        "channel_id": "7528273"
+                    }
+                ]
             },
             {
                 "time": "14:30",
@@ -17529,7 +18271,23 @@
                         "channel_id": "103"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528482",
+                        "channel_id": "7528482"
+                    }
+                ]
+            },
+            {
+                "time": "15:30",
+                "event": "Germany - Bundesliga : Hannover Burgdorf vs Hamburg",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528481",
+                        "channel_id": "7528481"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -17540,7 +18298,12 @@
                         "channel_id": "168"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528545",
+                        "channel_id": "7528545"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -17554,6 +18317,28 @@
                 "channels2": []
             },
             {
+                "time": "17:30",
+                "event": "Spain - ASOBAL : Torrelavega vs Huesca",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528867",
+                        "channel_id": "7528867"
+                    }
+                ]
+            },
+            {
+                "time": "19:00",
+                "event": "Denmark - Handboldligaen : Ringsted vs Fredericia",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7528972",
+                        "channel_id": "7528972"
+                    }
+                ]
+            },
+            {
                 "time": "19:00",
                 "event": "Asobal : Granollers vs La Rioja",
                 "channels": [
@@ -17562,7 +18347,12 @@
                         "channel_id": "529"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7419099",
+                        "channel_id": "7419099"
+                    }
+                ]
             }
         ],
         "Horse Racing<\/span>": [
@@ -17611,6 +18401,39 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "16:30",
+                "event": "Austria - ICE League - Playoff : EC VSV vs Bolzano Foxes",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7569719",
+                        "channel_id": "7569719"
+                    }
+                ]
+            },
+            {
+                "time": "16:30",
+                "event": "Austria - ICE League - Playoff : Fehervar AV19 vs RB Salzburg",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7569718",
+                        "channel_id": "7569718"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "Austria - ICE League - Playoff : Pustertal Wolfe vs KAC Klagenfurt",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7569714",
+                        "channel_id": "7569714"
+                    }
+                ]
             },
             {
                 "time": "18:00",
@@ -17675,7 +18498,12 @@
                         "channel_id": "496"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7520454",
+                        "channel_id": "7520454"
+                    }
+                ]
             },
             {
                 "time": "19:30",
@@ -17714,7 +18542,12 @@
                         "channel_id": "18"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7520493",
+                        "channel_id": "7520493"
+                    }
+                ]
             },
             {
                 "time": "19:30",
@@ -17753,7 +18586,12 @@
                         "channel_id": "146"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7520517",
+                        "channel_id": "7520517"
+                    }
+                ]
             },
             {
                 "time": "21:00",
@@ -17772,7 +18610,12 @@
                         "channel_id": "113"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7520377",
+                        "channel_id": "7520377"
+                    }
+                ]
             },
             {
                 "time": "22:00",
@@ -17819,7 +18662,12 @@
                         "channel_id": "146"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7520440",
+                        "channel_id": "7520440"
+                    }
+                ]
             },
             {
                 "time": "00:00",
@@ -17842,7 +18690,12 @@
                         "channel_id": "18"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7520487",
+                        "channel_id": "7520487"
+                    }
+                ]
             },
             {
                 "time": "01:00",
