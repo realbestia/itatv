@@ -13,7 +13,6 @@ def scarica_contenuto(url):
     response.raise_for_status()
     return response.text
 
-
 def estrai_tvg_id(xml_content):
     tree = ElementTree.fromstring(xml_content)
     id_mapping = {}
@@ -25,32 +24,21 @@ def estrai_tvg_id(xml_content):
     
     return id_mapping
 
-
-def pulisci_tvg_name(tvg_name):
-    match = re.search(r"(.+?)\s\d{2}/\d{2}/\d{2}\s-\s\d{2}:\d{2}", tvg_name)
-    return match.group(1).strip() if match else tvg_name
-
 def modifica_orario_tvg_name(riga, id_mapping):
     riga = re.sub(r'tvg-id="[^"]*"', '', riga)
     
     tvg_name_match = re.search(r'tvg-name="([^"]+)"', riga)
     if tvg_name_match:
-        tvg_name_originale = tvg_name_match.group(1)
-        tvg_name_pulito = pulisci_tvg_name(tvg_name_originale)
-        tvg_id = id_mapping.get(tvg_name_pulito.lower())
-        
+        tvg_name = tvg_name_match.group(1).lower()
+        tvg_id = id_mapping.get(tvg_name)
         if tvg_id:
-            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_pulito}"', riga)
-        else:
-            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-name="{tvg_name_pulito}"', riga)
+            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_match.group(1)}"', riga)
     
     return riga
-
 
 def estrai_data_dal_nome(riga):
     match = re.search(r'tvg-name="[^"]* (\d{2}/\d{2}/\d{2}) ', riga)
     return match.group(1) if match else None
-
 
 def filtra_canali_eventi_e_italiani(m3u8_content, id_mapping):
     righe = m3u8_content.splitlines()
@@ -77,11 +65,25 @@ def filtra_canali_eventi_e_italiani(m3u8_content, id_mapping):
 
     return "\n".join(canali_eventi_italiani)
 
+def pulisci_tvg_name_finale(contenuto):
+    righe = contenuto.splitlines()
+    righe_pulite = []
+
+    for riga in righe:
+        match = re.search(r'tvg-name="([^"]+)"', riga)
+        if match:
+            tvg_name = match.group(1)
+            pulito = re.sub(r'\s\d{2}/\d{2}/\d{2}\s-\s\d{2}:\d{2}.*$', '', tvg_name).strip()
+            riga = riga.replace(tvg_name, pulito)
+
+        righe_pulite.append(riga)
+
+    return "\n".join(righe_pulite)
 
 def salva_lista(output_file, contenuto):
+    contenuto_pulito = pulisci_tvg_name_finale(contenuto)
     with open(output_file, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n" + contenuto)
-
+        f.write("#EXTM3U\n" + contenuto_pulito)
 
 def main():
     try:
@@ -98,7 +100,6 @@ def main():
             print(f"Nessun canale trovato. File {output_file} creato vuoto.")
     except Exception as e:
         print(f"Errore: {e}")
-
 
 if __name__ == "__main__":
     main()
