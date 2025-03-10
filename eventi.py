@@ -26,16 +26,21 @@ def estrai_tvg_id(xml_content):
     return id_mapping
 
 
+def pulisci_tvg_name(tvg_name):
+    match = re.search(r"(.+? \d{2}/\d{2}/\d{2} - \d{2}:\d{2})", tvg_name)
+    return match.group(1) if match else tvg_name
+
 def modifica_orario_tvg_name(riga, id_mapping):
     riga = re.sub(r'tvg-id="[^"]*"', '', riga)
     
     tvg_name_match = re.search(r'tvg-name="([^"]+)"', riga)
     if tvg_name_match:
-        tvg_name = tvg_name_match.group(1).lower()
-        tvg_id = id_mapping.get(tvg_name)
+        tvg_name_pulito = pulisci_tvg_name(tvg_name_match.group(1))
+        tvg_id = id_mapping.get(tvg_name_pulito.lower())
         if tvg_id:
-            # Inserisce il tvg-id PRIMA del tvg-name mantenendo il nome corretto
-            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_match.group(1)}"', riga)
+            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_pulito}"', riga)
+        else:
+            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-name="{tvg_name_pulito}"', riga)
     
     return riga
 
