@@ -374,7 +374,7 @@ def addChannelsByLeagueSport():
                                         file.write('#EXTM3U url-tvg="http://epg-guide.com/it.gz"\n')
 
                                 with open(M3U8_OUTPUT_FILE, 'a', encoding='utf-8') as file:
-                                    file.write(f'#EXTINF:-1 tvg-id="{custom_tvg_id}" tvg-name="{tvgName}" tvg-logo="{LOGO}" group-title="Eventi", {tvLabel} (D)\n')
+                                    file.write(f'#EXTINF:-1 tvg-id="{custom_tvg_id}" tvg-name="{tvgName}" tvg-logo="{LOGO}" group-title="Eventi", {tvLabel} \n')
                                     file.write('#EXTVLCOPT:http-referrer=https://ilovetoplay.xyz/\n')
                                     file.write('#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\n')
                                     file.write('#EXTVLCOPT:http-origin=https://ilovetoplay.xyz\n')
