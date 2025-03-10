@@ -223,7 +223,7 @@ def addChannelsByLeagueSport():
     excluded_categories = [
         "TV Show", "TV Shows", "Cricket", "Aussie rules", "Snooker", "Baseball",
         "Biathlon", "Cross Country", "Horse Racing", "Ice Hockey",
-        "Waterpolo", "Golf", "Darts", "Cycling"
+        "Waterpolo", "Golf", "Darts", "Cycling", "Baseball</span>", "Basketball</span>", "Cricket</span>", "Cycling</span>", "Ice Hockey</span>", "Lacrosse</span>", "Rugby Union</span>", "Tennis</span>", "Volleyball</span>", "WWE</span>", "Water polo</span>"
     ]
 
     # Debug counters
