@@ -14,7 +14,7 @@ NUM_CHANNELS = 10000
 DADDY_JSON_FILE = "daddyliveSchedule.json"
 M3U8_OUTPUT_FILE = "itaevents.m3u8"
 EPG_OUTPUT_FILE = "itaevents.xml"
-LOGO = "https://image.similarpng.com/file/similarpng/very-thumbnail/2021/09/Live-streaming-icon-design-template-on-transparent-background-PNG.png"
+LOGO = "https://github.com/realbestia/itatv/blob/main/livestreaming.png?raw=true"
 
 # Define keywords for filtering channels
 EVENT_KEYWORDS = ["italy", "formula uno", "f1", "motogp", "moto gp", "serie a", "serie b", "serie c", "uefa champions", "uefa europa",
