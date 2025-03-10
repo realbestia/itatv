@@ -25,6 +25,7 @@ def estrai_tvg_id(xml_content):
     return id_mapping
 
 def modifica_orario_tvg_name(riga, id_mapping):
+    # Elimina qualsiasi tvg-id esistente
     riga = re.sub(r'tvg-id="[^"]*"', '', riga)
     
     tvg_name_match = re.search(r'tvg-name="([^"]+)"', riga)
@@ -32,7 +33,7 @@ def modifica_orario_tvg_name(riga, id_mapping):
         tvg_name = tvg_name_match.group(1).lower()
         tvg_id = id_mapping.get(tvg_name)
         if tvg_id:
-            # Aggiungi tvg-id senza spazio extra prima del tvg-name
+            # Corretto: inserisci il tvg-id e tvg-name SENZA spazi extra
             riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_match.group(1)}"', riga)
     
     return riga
