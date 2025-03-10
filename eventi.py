@@ -34,18 +34,19 @@ def pulisci_tvg_name(tvg_name):
 
 
 def modifica_orario_tvg_name(riga, id_mapping):
-    # Rimuove il tvg-id esistente
-    riga = re.sub(r'tvg-id="[^"]*"', '', riga)
-
     tvg_name_match = re.search(r'tvg-name="([^"]+)"', riga)
     if tvg_name_match:
         tvg_name_pulito = pulisci_tvg_name(tvg_name_match.group(1))
         tvg_id = id_mapping.get(tvg_name_pulito.lower())
-        
-        # Aggiorna il tvg-id e il nome pulito
+
         if tvg_id:
-            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_pulito}"', riga)
+            # Aggiorna o inserisce il tvg-id mantenendo il nome pulito
+            if 'tvg-id="' in riga:
+                riga = re.sub(r'tvg-id="[^"]*"', f'tvg-id="{tvg_id}"', riga)
+            else:
+                riga = riga.replace(f'tvg-name="{tvg_name_match.group(1)}"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_pulito}"')
         else:
+            # Se non trova l'ID, aggiorna solo il nome
             riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-name="{tvg_name_pulito}"', riga)
     
     return riga
