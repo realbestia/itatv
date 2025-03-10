@@ -73,7 +73,8 @@ def pulisci_tvg_name_finale(contenuto):
         match = re.search(r'tvg-name="([^"]+)"', riga)
         if match:
             tvg_name = match.group(1)
-            pulito = re.sub(r'\s\d{2}/\d{2}/\d{2}\s-\s\d{2}:\d{2}.*$', '', tvg_name).strip()
+            # Mantieni la data e l'orario, rimuovi solo il resto
+            pulito = re.sub(r'\s-\s.*$', '', tvg_name).strip()
             riga = riga.replace(tvg_name, pulito)
 
         righe_pulite.append(riga)
