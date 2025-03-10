@@ -8,6 +8,7 @@ m3u8_url = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/i
 xml_url = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/itaevents.xml"
 output_file = "eventi.m3u8"
 
+
 def scarica_contenuto(url):
     response = requests.get(url)
     response.raise_for_status()
@@ -22,20 +23,30 @@ def estrai_tvg_id(xml_content):
         channel_id = channel.get("id")
         display_name = channel.find("display-name").text.strip() if channel.find("display-name") is not None else ""
         id_mapping[display_name.lower()] = channel_id
-    
+
     return id_mapping
 
 
+def pulisci_tvg_name(tvg_name):
+    # Mantiene solo il nome e l'orario, elimina tutto il resto
+    match = re.search(r"(.+? \d{2}/\d{2}/\d{2} - \d{2}:\d{2})", tvg_name)
+    return match.group(1) if match else tvg_name
+
+
 def modifica_orario_tvg_name(riga, id_mapping):
+    # Rimuove il tvg-id esistente
     riga = re.sub(r'tvg-id="[^"]*"', '', riga)
-    
+
     tvg_name_match = re.search(r'tvg-name="([^"]+)"', riga)
     if tvg_name_match:
-        tvg_name = tvg_name_match.group(1).lower()
-        tvg_id = id_mapping.get(tvg_name)
+        tvg_name_pulito = pulisci_tvg_name(tvg_name_match.group(1))
+        tvg_id = id_mapping.get(tvg_name_pulito.lower())
+        
+        # Aggiorna il tvg-id e il nome pulito
         if tvg_id:
-            # Inserisce il tvg-id PRIMA del tvg-name mantenendo il nome corretto
-            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_match.group(1)}"', riga)
+            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-id="{tvg_id}" tvg-name="{tvg_name_pulito}"', riga)
+        else:
+            riga = re.sub(r'tvg-name="([^"]+)"', f'tvg-name="{tvg_name_pulito}"', riga)
     
     return riga
 
@@ -59,7 +70,7 @@ def filtra_canali_eventi_e_italiani(m3u8_content, id_mapping):
                     salva = True
                 else:
                     salva = False
-                
+
                 if salva:
                     riga = modifica_orario_tvg_name(riga, id_mapping)
                     canali_eventi_italiani.append(riga)
