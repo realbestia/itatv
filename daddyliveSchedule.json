@@ -1049,7 +1049,7 @@
                     },
                     {
                         "channel_name": "Sport TV5 Portugal",
-                        "channel_id": "289"
+                        "channel_id": "290"
                     },
                     {
                         "channel_name": "Sky Sport Austria 1",
@@ -2008,6 +2008,120 @@
                     {
                         "channel_name": "SuperSport Cricket",
                         "channel_id": "368"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
+        "Tennis - ATP - INDIAN WELLS<\/span>": [
+            {
+                "time": "18:00",
+                "event": "ATP - INDIAN WELLS : Griekspoor T. vs Watanuki Y.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "20:00",
+                "event": "ATP - INDIAN WELLS : Rune H. vs Tsitsipas S.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "21:30",
+                "event": "ATP - INDIAN WELLS : Giron M. vs Fils A.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "01:00",
+                "event": "ATP - INDIAN WELLS : Paul T. vs Medvedev D.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
+        "Tennis - WTA - INDIAN WELLS<\/span>": [
+            {
+                "time": "18:00",
+                "event": "WTA - INDIAN WELLS : Muchova K. vs Swiatek I.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "20:00",
+                "event": "WTA - INDIAN WELLS : Svitolina E. vs Pegula J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "21:00",
+                "event": "WTA - INDIAN WELLS : Mihalikova T.\/Nicholls O. vs Kalinskaya A.\/McNally C.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "01:00",
+                "event": "WTA - INDIAN WELLS : Rybakina E. vs Andreeva M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "02:30",
+                "event": "WTA - INDIAN WELLS : Hsieh S-W.\/Zhang S. vs Ostapenko J.\/Perez E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "03:00",
+                "event": "WTA - INDIAN WELLS : Zheng Q. vs Kostyuk M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
                     }
                 ],
                 "channels2": []
