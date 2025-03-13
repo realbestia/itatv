@@ -2198,6 +2198,124 @@
                 "channels2": []
             }
         ],
+        "Tennis ATP - INDIAN WELLS": [
+            {
+                "time": "18:00",
+                "event": "ATP - INDIAN WELLS : Griekspoor T. vs Rune H.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - INDIAN WELLS : Shelton B. vs Draper J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - INDIAN WELLS : Cerundolo F. vs Alcaraz C.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "20:00",
+                "event": "ATP - INDIAN WELLS : Fils A. vs Medvedev D.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
+        "Tennis WTA Indian Wells": [
+            {
+                "time": "18:00",
+                "event": "Tennis : WTA Indian Wells : Zheng Q. vs Swiatek I.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "19:00",
+                "event": "Tennis : WTA Indian Wells : Hsieh S-W.\/Zhang S. vs Mihalikova T.\/Nicholls O",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "20:00",
+                "event": "Tennis : WTA Indian Wells : Andreeva M. vs Svitolina E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "20:30",
+                "event": "Tennis : WTA Indian Wells : Siniakova K.\/Townsend T. vs Muhammad A.\/Schuurs D.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "21:30",
+                "event": "Tennis : WTA Indian Wells : Bencic B. vs Keys M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "00:00",
+                "event": "Tennis : WTA Indian Wells : Sabalenka A. vs Samsonova L.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
         "Tennis<\/span>": [
             {
                 "time": "18:00",
