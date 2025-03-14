@@ -174,7 +174,7 @@ def main():
         all_links.extend(italian_channels)
 
     # Aggiungi manualmente il canale DAZN1
-    dazn1_url = "https://daddylive.mp/embed/stream-877.php"
+    dazn1_url = "https%3A%2F%2Fnfsnew.iosplayer.ru%2Fnfs%2Fpremium877%2Fmono.m3u8&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Filovetoplay.xyz%2F&h_origin=https%3A%2F%2Filovetoplay.xyz"
     dazn1_name = "DAZN1"
     dazn1_base_url = "https://daddylive.mp"
     service, category = classify_channel(dazn1_name)  # Usa la funzione di classificazione
