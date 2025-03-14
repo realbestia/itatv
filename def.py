@@ -151,7 +151,7 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
                     # Recupera il logo dal file logos.txt
                     tvg_logo = logos_dict.get(tvg_name_cleaned.lower(), DEFAULT_TVG_ICON)
 
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" tvg-logo="{tvg_logo}" group-title="{category}" url-tvg="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" tvg-logo="{tvg_logo}" group-title="{category}" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml" http-user-agent="VAVOO/2.6" http-referrer="{base_url}",{name}\n')
                     f.write(f"#EXTVLCOPT:http-user-agent=VAVOO/2.6\n")
                     f.write(f"#EXTVLCOPT:http-referrer={base_url}/\n")
                     f.write(f'#EXTHTTP:{{"User-Agent":"VAVOO/2.6","Referer":"{base_url}/"}}\n')
