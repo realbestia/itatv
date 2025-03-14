@@ -116,7 +116,7 @@ def classify_channel(name):
         "Altro": ["focus", "real time"],
         "Rai": ["rai"],
         "Mediaset": ["twenty seven", "twentyseven", "mediaset", "italia 1", "italia 2", "canale 5"],
-        "Bambini": ["super", "fresbee", "k2", "cartoon", "boing", "nick", "disney", "baby", "rai yoyo"],
+        "Bambini": ["super!", "fresbee", "k2", "cartoon", "boing", "nick", "disney", "baby", "rai yoyo"],
         "Documentari": ["documentaries", "discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
         "Musica": ["deejay", "rds", "hits", "rtl", "mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss", "kiss kiss italia", "m2o", "fm"]
     }
