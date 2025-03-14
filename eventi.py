@@ -34,8 +34,8 @@ def modifica_orario_tvg_name(riga, id_mapping):
             # Modifica solo il tvg-id esistente, senza aggiungerne uno nuovo
             riga = re.sub(r'tvg-id="[^"]+"', f'tvg-id="{tvg_id}"', riga)
         
-        # Aggiungi url-tvg subito dopo group-title
-        riga = re.sub(r'(group-title="[^"]+")', r'\1 url-tvg="' + url_tvg + '"', riga)
+        # Aggiungi tvg-url subito dopo group-title
+        riga = re.sub(r'(group-title="[^"]+")', r'\1 tvg-url="' + url_tvg + '"', riga)
     
     return riga
 
