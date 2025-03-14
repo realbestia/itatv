@@ -1,5 +1,84 @@
 {
     "Friday 14th March 2025 - Schedule Time UK GMT": {
+        "PPV Events<\/span>": [
+            {
+                "time": "22:00",
+                "event": "Attica Raceway Park Sprint Cars",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "106"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "22:00",
+                "event": "World of Outlaws Late Models",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "107"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "22:15",
+                "event": "World of Outlaws Sprint Cars",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "108"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "23:00",
+                "event": "WV Toughman Contest",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "109"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "23:00",
+                "event": "Maple Leaf Pro Wrestling: Mayhem, Night 1",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "110"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "00:00",
+                "event": "TNA: Sacrifice 2025 PPV Total Nonstop Action Wrestling",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "151"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "02:00",
+                "event": "Tuff-N-Uff 142",
+                "channels": [
+                    {
+                        "channel_name": "UFC Fight Pass",
+                        "channel_id": "152"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
         "TV Shows<\/span>": [
             {
                 "time": "12:00",
@@ -3127,7 +3206,7 @@
         ],
         "WWE<\/span>": [
             {
-                "time": "01:00",
+                "time": "00:00",
                 "event": "WWE Friday Night SmackDown",
                 "channels": [
                     {
