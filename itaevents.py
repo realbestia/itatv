@@ -371,7 +371,7 @@ def addChannelsByLeagueSport():
                                 # Write to M3U8 file
                                 with open(M3U8_OUTPUT_FILE, 'a', encoding='utf-8') as file:
                                     if channelCount == 1:
-                                        file.write('#EXTM3U url-tvg="http://epg-guide.com/it.gz"\n')
+                                        file.write('#EXTM3U tvg-url="http://epg-guide.com/it.gz"\n')
 
                                 with open(M3U8_OUTPUT_FILE, 'a', encoding='utf-8') as file:
                                     file.write(f'#EXTINF:-1 tvg-id="{custom_tvg_id}" tvg-name="{tvgName}" tvg-logo="{LOGO}" group-title="Eventi", {tvLabel} \n')
