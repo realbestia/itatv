@@ -7,6 +7,7 @@ from xml.etree import ElementTree
 m3u8_url = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/itaevents.m3u8"
 xml_url = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/itaevents.xml"
 output_file = "eventi.m3u8"
+url_tvg = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/itaevents.xml"  # Replace this with the actual TVG URL
 
 def scarica_contenuto(url):
     response = requests.get(url)
@@ -32,6 +33,9 @@ def modifica_orario_tvg_name(riga, id_mapping):
         if tvg_id:
             # Modifica solo il tvg-id esistente, senza aggiungerne uno nuovo
             riga = re.sub(r'tvg-id="[^"]+"', f'tvg-id="{tvg_id}"', riga)
+        
+        # Aggiungi url-tvg
+        riga = re.sub(r'(#EXTINF.*)', r'\1 url-tvg="' + url_tvg + '"', riga)
     
     return riga
 
