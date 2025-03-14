@@ -1,18 +1,10 @@
 import requests
 import os
-from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 
 # URL delle playlist M3U8
 url1 = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/channels_italy.m3u8"
 url2 = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.m3u8"
 url3 = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
-
-# Parametri da aggiungere
-extra_params = {
-    "h_user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-    "h_referer": "https://ilovetoplay.xyz/",
-    "h_origin": "https://ilovetoplay.xyz"
-}
 
 # Funzione per scaricare una playlist
 def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg_url=False, append_params=False):
@@ -27,7 +19,7 @@ def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg
             if '.m3u8' in playlist_lines[i]:  # Cerca i link .m3u8
                 if "eventi.m3u8" in playlist_lines[i]:  # Se è il link giusto
                     # Aggiungi i parametri alla fine del link
-                    playlist_lines[i] += '?' + '&'.join([f'{key}={value}' for key, value in extra_params.items()])
+                    pass  # Non facciamo più nulla qui, dato che dobbiamo rimuovere extra_params
         playlist = '\n'.join(playlist_lines)
     
     if exclude_x_tvg_url:
@@ -55,7 +47,7 @@ script_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Scarica le playlist, escludendo 'x-tvg-url=' dalla terza playlist, rimuovendo la riga '#EXTM3U' e aggiungendo 'tvg-url'
 playlist1 = download_playlist(url1)
-playlist2 = download_playlist(url2, append_params=True)
+playlist2 = download_playlist(url2)
 playlist3 = download_playlist(url3, exclude_x_tvg_url=True, remove_extm3u=True, add_tvg_url=True)
 
 # Unisci le tre playlist
