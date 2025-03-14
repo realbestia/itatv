@@ -21,13 +21,13 @@ def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg
         playlist = '\n'.join(line for line in playlist.split('\n') if not line.startswith('#EXTM3U'))
     
     if add_tvg_url:
-        # Aggiungi 'url-tvg' subito dopo 'group-title="Pluto TV Italia"'
+        # Aggiungi 'tvg-url' subito dopo 'group-title="Pluto TV Italia"'
         lines = playlist.split('\n')
         for i in range(len(lines)):
             if 'group-title="Pluto TV Italia"' in lines[i]:
-                # Trova l'indice del group-title e aggiungi l'url-tvg subito dopo
+                # Trova l'indice del group-title e aggiungi l'tvg-url subito dopo
                 index = lines[i].find('group-title="Pluto TV Italia"') + len('group-title="Pluto TV Italia"')
-                lines[i] = lines[i][:index] + ' url-tvg="https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"' + lines[i][index:]
+                lines[i] = lines[i][:index] + ' tvg-url="https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"' + lines[i][index:]
         playlist = '\n'.join(lines)
     
     return playlist
@@ -35,7 +35,7 @@ def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg
 # Ottieni la directory dove si trova lo script
 script_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Scarica le playlist, escludendo 'x-tvg-url=' dalla terza playlist, rimuovendo la riga '#EXTM3U' e aggiungendo 'url-tvg'
+# Scarica le playlist, escludendo 'x-tvg-url=' dalla terza playlist, rimuovendo la riga '#EXTM3U' e aggiungendo 'tvg-url'
 playlist1 = download_playlist(url1)
 playlist2 = download_playlist(url2)
 playlist3 = download_playlist(url3, exclude_x_tvg_url=True, remove_extm3u=True, add_tvg_url=True)
