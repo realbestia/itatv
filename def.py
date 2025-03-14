@@ -139,7 +139,7 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
         os.remove(OUTPUT_FILE)
     
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n\n")
+        f.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n\n')
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
