@@ -51,7 +51,7 @@ def filtra_canali_eventi_e_italiani(m3u8_content, id_mapping):
 
     for riga in righe:
         if riga.startswith("#EXTINF"):
-            if 'group-title="Eventi"' in riga and ('IT' in riga or 'Italia' in riga or 'Rai' in riga or 'Italy' in riga):
+            if 'group-title="Eventi"' in riga and ('IT' in riga or 'Italia' in riga or 'Rai' in riga or 'F1 Italy' in riga or 'MotoGP Italy' in riga):
                 data_canale = estrai_data_dal_nome(riga)
                 if data_canale and data_canale >= oggi:
                     salva = True
