@@ -6,8 +6,15 @@ url1 = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=htt
 url2 = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.m3u8"
 url3 = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
 
+# Parametri da aggiungere
+extra_params = "&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Filovetoplay.xyz%2F&h_origin=https%3A%2F%2Filovetoplay.xyz"
+
 # Funzione per scaricare una playlist
 def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg_url=False):
+    # Aggiungi i parametri extra se il link è quello giusto
+    if "eventi.m3u8" in url:
+        url += extra_params
+    
     response = requests.get(url)
     response.raise_for_status()  # Se c'è un errore, solleva un'eccezione
     playlist = response.text
