@@ -110,14 +110,14 @@ def classify_channel(name):
     }
 
     CATEGORY_KEYWORDS = {
-        "Sport": ["sport", "super tennis", "supertennis", "dazn", "eurosport", "sky sport", "rai sport"],
+        "Sport": ["calcio", "tennis", "sport", "super tennis", "supertennis", "dazn", "eurosport", "sky sport", "rai sport"],
         "Film & Serie TV": ["crime", "primafila", "cinema", "movie", "film", "serie", "hbo", "fox", "rakuten", "atlantic"],
         "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
         "Altro": ["focus", "real time"],
         "Rai": ["rai"],
         "Mediaset": ["twenty seven", "twentyseven", "mediaset", "italia 1", "italia 2", "canale 5"],
         "Bambini": ["fresbee", "k2", "cartoon", "boing", "nick", "disney", "baby", "rai yoyo"],
-        "Documentari": ["discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
+        "Documentari": ["documentaries", "discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
         "Musica": ["deejay", "rds", "hits", "rtl", "mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss", "kiss kiss italia", "m2o", "fm"]
     }
 
