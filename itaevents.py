@@ -120,7 +120,7 @@ def get_stream_link(dlhd_id, max_retries=3):
 
                 if 'server_key' in server_key_data:
                     server_key = server_key_data['server_key']
-                    stream_url = f"https://{server_key}new.iosplayer.ru/{server_key}/premium{dlhd_id}/mono.m3u8"
+                    stream_url = f"https://{server_key}new.iosplayer.ru/{server_key}/premium{dlhd_id}/mono.m3u8&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Filovetoplay.xyz%2F&h_origin=https%3A%2F%2Filovetoplay.xyz"
                     print(f"Stream URL retrieved for channel ID: {dlhd_id}")
                     return stream_url
                 else:
