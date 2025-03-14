@@ -11,13 +11,13 @@ extra_params = "&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%2
 
 # Funzione per scaricare una playlist
 def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg_url=False):
-    # Aggiungi i parametri extra se il link è quello giusto
+    # Aggiungi i parametri extra solo se è la playlist eventi.m3u8
     if "eventi.m3u8" in url:
-        # Verifica se la URL ha già dei parametri query
+        # Aggiungi i parametri solo se non sono già presenti
         if '?' in url:
-            url += extra_params  # Aggiungi con '&' se ci sono già parametri
+            url += extra_params  # Se ci sono già parametri, aggiungi con '&'
         else:
-            url += '?' + extra_params  # Aggiungi con '?' se non ci sono parametri
+            url += '?' + extra_params  # Se non ci sono parametri, aggiungi con '?'
     
     response = requests.get(url)
     response.raise_for_status()  # Se c'è un errore, solleva un'eccezione
