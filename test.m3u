@@ -4,10 +4,9 @@
 #EXTINF:-1 tvg-id="rai1.it" tvg-name="Rai 1" tvg-logo="https://logo.com/rai1.png" group-title="TV Italia",Rai 1
 http://example.com/stream/rai1.m3u8
 
-# Film
-#EXTINF:-1 tvg-id="" tvg-name="Titanic" tvg-logo="https://example.com/titanic.jpg" group-title="Film",Titanic
-http://example.com/stream/titanic.mp4
+# FILM - VOD
+#EXTINF:-1 type="VOD" tvg-name="Titanic" tvg-logo="https://example.com/titanic.jpg" group-title="Film",Titanic
+http://example.com/vod/titanic.mp4
 
-# Serie TV - Episodio 1
-#EXTINF:-1 tvg-id="" tvg-name="Breaking Bad S01E01" tvg-logo="https://example.com/bb.jpg" group-title="Serie TV",Breaking Bad - S01E01
-http://example.com/stream/breakingbad_s01e01.mp4
+#EXTINF:-1 type="VOD" tvg-name="Avatar" tvg-logo="https://example.com/avatar.jpg" group-title="Sci-Fi",Avatar
+http://example.com/vod/avatar.mp4
