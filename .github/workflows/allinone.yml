@@ -3,7 +3,7 @@ name: Esegui allinone.py ogni ora
 
 on:
   schedule:
-    - cron: '30 */4 * * *'  # Esegue ogni ora
+    - cron: '45 */4 * * *'  # Esegue ogni ora
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
