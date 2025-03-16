@@ -4986,6 +4986,40 @@
                 "channels2": []
             }
         ],
+        "Tennis ATP - INDIAN WELLS": [
+            {
+                "time": "20:30",
+                "event": "ATP - INDIAN WELLS : Rune H. vs Draper J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
+        "Tennis WTA - INDIAN WELLS": [
+            {
+                "time": "18:00",
+                "event": "WTA - INDIAN WELLS : Sabalenka A. vs Andreeva M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
         "Tennis<\/span>": [
             {
                 "time": "18:00",
