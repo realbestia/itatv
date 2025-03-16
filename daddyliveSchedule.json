@@ -7597,7 +7597,7 @@
                 "channels": [
                     {
                         "channel_name": "FOXNY USA",
-                        "channel_id": "780"
+                        "channel_id": "768"
                     },
                     {
                         "channel_name": "FOX USA",
@@ -8018,7 +8018,7 @@
                 "channels": [
                     {
                         "channel_name": "FOXNY USA",
-                        "channel_id": "780"
+                        "channel_id": "768"
                     },
                     {
                         "channel_name": "FOX USA",
@@ -10287,6 +10287,39 @@
                 "channels2": []
             },
             {
+                "time": "05:00",
+                "event": "South Korea - K-League 2 : Busan IPark vs Cheonan City",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7419188",
+                        "channel_id": "7419188"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - K-League 2 : Gyeongnam vs Jeonnam Dragons",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7419189",
+                        "channel_id": "7419189"
+                    }
+                ]
+            },
+            {
+                "time": "05:00",
+                "event": "South Korea - K-League 1 : Suwon FC vs Ulsan HD",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7314575",
+                        "channel_id": "7314575"
+                    }
+                ]
+            },
+            {
                 "time": "06:00",
                 "event": "Australia - A-League : Newcastle Jets vs Western United",
                 "channels": [
@@ -10332,6 +10365,39 @@
                 "channels2": []
             },
             {
+                "time": "07:30",
+                "event": "South Korea - K-League 2 : Bucheon vs Ansan Greeners",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7419193",
+                        "channel_id": "7419193"
+                    }
+                ]
+            },
+            {
+                "time": "07:30",
+                "event": "South Korea - K-League 1 : Gimcheon Sangmu vs Gwangju",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7314576",
+                        "channel_id": "7314576"
+                    }
+                ]
+            },
+            {
+                "time": "07:30",
+                "event": "South Korea - K-League 1 : Jeonbuk vs Pohang Steelers",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7314577",
+                        "channel_id": "7314577"
+                    }
+                ]
+            },
+            {
                 "time": "08:30",
                 "event": "India - I-League : Delhi FC vs Aizawl",
                 "channels": [
@@ -10362,7 +10428,12 @@
                         "channel_id": "2"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7424020",
+                        "channel_id": "7424020"
+                    }
+                ]
             },
             {
                 "time": "10:00",
@@ -10466,7 +10537,12 @@
                         "channel_id": "49"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7564521",
+                        "channel_id": "7564521"
+                    }
+                ]
             },
             {
                 "time": "11:00",
@@ -10537,7 +10613,12 @@
                         "channel_id": "583"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7616129",
+                        "channel_id": "7616129"
+                    }
+                ]
             },
             {
                 "time": "11:15",
@@ -10724,7 +10805,12 @@
                         "channel_id": "779"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7564614",
+                        "channel_id": "7564614"
+                    }
+                ]
             },
             {
                 "time": "12:00",
@@ -10941,7 +11027,12 @@
                         "channel_id": "104"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7186434",
+                        "channel_id": "7186434"
+                    }
+                ]
             },
             {
                 "time": "12:30",
@@ -10980,7 +11071,12 @@
                         "channel_id": "102"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7186438",
+                        "channel_id": "7186438"
+                    }
+                ]
             },
             {
                 "time": "12:30",
@@ -10999,7 +11095,12 @@
                         "channel_id": "141"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7186440",
+                        "channel_id": "7186440"
+                    }
+                ]
             },
             {
                 "time": "12:30",
@@ -11025,7 +11126,12 @@
                         "channel_id": "391"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7612977",
+                        "channel_id": "7612977"
+                    }
+                ]
             },
             {
                 "time": "13:00",
@@ -11170,7 +11276,12 @@
                         "channel_id": "156"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7209855",
+                        "channel_id": "7209855"
+                    }
+                ]
             },
             {
                 "time": "13:15",
@@ -11181,7 +11292,12 @@
                         "channel_id": "157"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7510211",
+                        "channel_id": "7510211"
+                    }
+                ]
             },
             {
                 "time": "13:15",
@@ -11192,7 +11308,12 @@
                         "channel_id": "158"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7424025",
+                        "channel_id": "7424025"
+                    }
+                ]
             },
             {
                 "time": "13:15",
@@ -11203,7 +11324,12 @@
                         "channel_id": "159"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7510209",
+                        "channel_id": "7510209"
+                    }
+                ]
             },
             {
                 "time": "13:30",
@@ -11533,7 +11659,12 @@
                         "channel_id": "16"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7564762",
+                        "channel_id": "7564762"
+                    }
+                ]
             },
             {
                 "time": "14:00",
@@ -11671,7 +11802,12 @@
                         "channel_id": "779"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7471160",
+                        "channel_id": "7471160"
+                    }
+                ]
             },
             {
                 "time": "14:00",
@@ -11774,6 +11910,28 @@
             },
             {
                 "time": "14:30",
+                "event": "Slovakia - 1. liga - Gr. Retrogradare : Komarno vs Dukla Banska Bystrica",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7573910",
+                        "channel_id": "7573910"
+                    }
+                ]
+            },
+            {
+                "time": "14:30",
+                "event": "Slovakia - 1. liga - Gr. Championship : Zeleziarne Podbrezova vs FC Kosice",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7573882",
+                        "channel_id": "7573882"
+                    }
+                ]
+            },
+            {
+                "time": "14:30",
                 "event": "Bundesliga : Bochum vs Eintracht Frankfurt",
                 "channels": [
                     {
@@ -11829,7 +11987,23 @@
                         "channel_id": "141"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7182452",
+                        "channel_id": "7182452"
+                    }
+                ]
+            },
+            {
+                "time": "14:30",
+                "event": "Nik\u00e9 Liga, Championship Round : \u0160K Slovan Bratislava vs FC Spartak Trnava",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7573909",
+                        "channel_id": "7573909"
+                    }
+                ]
             },
             {
                 "time": "14:30",
@@ -12129,7 +12303,12 @@
                         "channel_id": "49"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7186458",
+                        "channel_id": "7186458"
+                    }
+                ]
             },
             {
                 "time": "15:30",
@@ -12140,7 +12319,12 @@
                         "channel_id": "454"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7186453",
+                        "channel_id": "7186453"
+                    }
+                ]
             },
             {
                 "time": "15:30",
@@ -12188,7 +12372,12 @@
                         "channel_id": "453"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7209857",
+                        "channel_id": "7209857"
+                    }
+                ]
             },
             {
                 "time": "15:30",
@@ -12199,7 +12388,12 @@
                         "channel_id": "165"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7209856",
+                        "channel_id": "7209856"
+                    }
+                ]
             },
             {
                 "time": "15:45",
@@ -12275,7 +12469,12 @@
                         "channel_id": "583"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7616130",
+                        "channel_id": "7616130"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -12297,7 +12496,12 @@
                         "channel_id": "7"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7424014",
+                        "channel_id": "7424014"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -12308,7 +12512,12 @@
                         "channel_id": "8"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7424013",
+                        "channel_id": "7424013"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -12319,7 +12528,12 @@
                         "channel_id": "18"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7424016",
+                        "channel_id": "7424016"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -12330,7 +12544,12 @@
                         "channel_id": "19"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7424015",
+                        "channel_id": "7424015"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -12341,7 +12560,12 @@
                         "channel_id": "20"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7424019",
+                        "channel_id": "7424019"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -12352,7 +12576,12 @@
                         "channel_id": "21"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7424018",
+                        "channel_id": "7424018"
+                    }
+                ]
             },
             {
                 "time": "16:00",
@@ -12762,7 +12991,12 @@
                         "channel_id": "98"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7182447",
+                        "channel_id": "7182447"
+                    }
+                ]
             },
             {
                 "time": "16:45",
@@ -12792,7 +13026,12 @@
                         "channel_id": "779"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7471159",
+                        "channel_id": "7471159"
+                    }
+                ]
             },
             {
                 "time": "17:00",
@@ -13207,7 +13446,12 @@
                         "channel_id": "396"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7186450",
+                        "channel_id": "7186450"
+                    }
+                ]
             },
             {
                 "time": "18:00",
@@ -13303,7 +13547,12 @@
                         "channel_id": "95"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7182445",
+                        "channel_id": "7182445"
+                    }
+                ]
             },
             {
                 "time": "18:30",
@@ -13373,7 +13622,12 @@
                         "channel_id": "583"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7612585",
+                        "channel_id": "7612585"
+                    }
+                ]
             },
             {
                 "time": "19:00",
@@ -13729,7 +13983,12 @@
                         "channel_id": "391"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7598510",
+                        "channel_id": "7598510"
+                    }
+                ]
             },
             {
                 "time": "20:00",
@@ -13870,7 +14129,12 @@
                         "channel_id": "624"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7186454",
+                        "channel_id": "7186454"
+                    }
+                ]
             },
             {
                 "time": "20:30",
@@ -13881,7 +14145,12 @@
                         "channel_id": "454"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7186452",
+                        "channel_id": "7186452"
+                    }
+                ]
             },
             {
                 "time": "20:30",
@@ -13892,7 +14161,12 @@
                         "channel_id": "291"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7565598",
+                        "channel_id": "7565598"
+                    }
+                ]
             },
             {
                 "time": "20:30",
@@ -13941,6 +14215,17 @@
                     }
                 ],
                 "channels2": []
+            },
+            {
+                "time": "21:00",
+                "event": "Venezuela - Primera Division - Apertura : Deportivo Tachira vs Metropolitanos",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7614547",
+                        "channel_id": "7614547"
+                    }
+                ]
             },
             {
                 "time": "21:10",
@@ -14030,7 +14315,12 @@
                         "channel_id": "597"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7598511",
+                        "channel_id": "7598511"
+                    }
+                ]
             },
             {
                 "time": "22:30",
@@ -14115,6 +14405,17 @@
                 "channels2": []
             },
             {
+                "time": "23:30",
+                "event": "Venezuela - Primera Division - Apertura : Deportivo La Guaira vs Estudiantes de Merida",
+                "channels": [],
+                "channels2": [
+                    {
+                        "channel_name": "SD-7614548",
+                        "channel_id": "7614548"
+                    }
+                ]
+            },
+            {
                 "time": "00:00",
                 "event": "Liga MX : Pumas UNAM vs Monterrey",
                 "channels": [
@@ -14127,7 +14428,12 @@
                         "channel_id": "66"
                     }
                 ],
-                "channels2": []
+                "channels2": [
+                    {
+                        "channel_name": "SD-7569891",
+                        "channel_id": "7569891"
+                    }
+                ]
             },
             {
                 "time": "00:00",
@@ -15113,7 +15419,7 @@
         "Baseball<\/span>": [
             {
                 "time": "16:00",
-                "event": "College Softball Oklahoma vs Arkansas",
+                "event": "College Softball : Oklahoma vs Arkansas",
                 "channels": [
                     {
                         "channel_name": "SEC Network USA",
@@ -15124,7 +15430,7 @@
             },
             {
                 "time": "17:00",
-                "event": "College Softball Pittsburgh vs Florida State",
+                "event": "College Softball : Pittsburgh vs Florida State",
                 "channels": [
                     {
                         "channel_name": "ACC Network USA",
@@ -15146,7 +15452,7 @@
             },
             {
                 "time": "19:00",
-                "event": "College Baseball North Carolina (Chapel Hill) vs Louisville",
+                "event": "College Baseball : North Carolina (Chapel Hill) vs Louisville",
                 "channels": [
                     {
                         "channel_name": "ACC Network USA",
@@ -15179,7 +15485,7 @@
             },
             {
                 "time": "11:00",
-                "event": "Baseball : Chicago Cubs vs Yomiuri Giants",
+                "event": "MLB : Chicago Cubs vs Yomiuri Giants",
                 "channels": [
                     {
                         "channel_name": "MLB Network USA",
