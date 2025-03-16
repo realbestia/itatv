@@ -32,9 +32,6 @@ def save_m3u8(channels):
         for name, url, country in channels:
             # Scrive il nome del canale, l'URL, il group-title come nazione e aggiunge le intestazioni richieste
             f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{country}", {name}\n')
-            f.write(f"#EXTVLCOPT:http-user-agent=VAVOO/2.6\n")
-            f.write(f"#EXTVLCOPT:http-referrer={url}\n")
-            f.write(f"#EXTHTTP:{{\"User-Agent\":\"VAVOO/2.6\",\"Referer\":\"{url}/\"}}\n")
             f.write(f"{url}\n\n")
 
 # Funzione principale
