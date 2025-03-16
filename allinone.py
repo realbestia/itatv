@@ -5,9 +5,10 @@ import os
 url1 = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/channels_italy.m3u8"
 url2 = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.m3u8"
 url3 = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
+url4 = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/world.m3u8"
 
 # Funzione per scaricare una playlist
-def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg_url=False, append_params=False):
+def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg_url=False, append_params=False, exclude_group_title=None):
     response = requests.get(url)
     response.raise_for_status()  # Se c'è un errore, solleva un'eccezione
     playlist = response.text
@@ -39,6 +40,10 @@ def download_playlist(url, exclude_x_tvg_url=False, remove_extm3u=False, add_tvg
                 lines[i] = lines[i][:index] + ' tvg-url="https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml"' + lines[i][index:]
         playlist = '\n'.join(lines)
     
+    # Escludi canali con un determinato group-title
+    if exclude_group_title:
+        playlist = '\n'.join(line for line in playlist.split('\n') if exclude_group_title not in line)
+    
     return playlist
 
 # Ottieni la directory dove si trova lo script
@@ -48,9 +53,10 @@ script_directory = os.path.dirname(os.path.abspath(__file__))
 playlist1 = download_playlist(url1)
 playlist2 = download_playlist(url2, append_params=True)  # Aggiungi i parametri alla playlist eventi.m3u8
 playlist3 = download_playlist(url3, exclude_x_tvg_url=True, remove_extm3u=True, add_tvg_url=True)
+playlist4 = download_playlist(url4, exclude_group_title="Italy")  # Escludi i canali con group-title="Italy"
 
-# Unisci le tre playlist
-combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3
+# Unisci le quattro playlist
+combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
 
 # Percorso completo del file di output
 output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
