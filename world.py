@@ -2,7 +2,7 @@ import requests
 import re
 import os
 
-OUTPUT_FILE = "channels_all.m3u8"
+OUTPUT_FILE = "world.m3u8"
 BASE_URLS = [
     "https://vavoo.to"
 ]
