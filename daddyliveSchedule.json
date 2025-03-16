@@ -1,5 +1,40 @@
 {
     "Sunday 16th March 2025 - Schedule Time UK GMT": {
+        "PPV Events<\/span>": [
+            {
+                "time": "15:00",
+                "event": "TX2K25",
+                "channels": [
+                    {
+                        "channel_name": "FloRacing",
+                        "channel_id": "174"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "21:00",
+                "event": "GCW: So Much Fun 2025",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "161"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "22:00",
+                "event": "360 Promotions : Callum Walsh vs Dean Sutherland",
+                "channels": [
+                    {
+                        "channel_name": "UFC Fight Pass",
+                        "channel_id": "162"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
         "Tv Shows<\/span>": [
             {
                 "time": "12:00",
