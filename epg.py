@@ -6,48 +6,65 @@ import io
 
 # URL del file gzip
 url = 'https://www.epgitalia.tv/gzip'
+output_gz = 'epg.gz'  # File compresso finale
+output_xml = 'epg.xml'  # Nome del file XML dentro il GZIP
+temp_gz = 'file_scaricato.gz'  # File temporaneo scaricato
 
-# Nome del file dove salvare il file scaricato
-output_filename = 'file_scaricato.gz'
+try:
+    # Scaricare il file
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+    
+    with open(temp_gz, 'wb') as file:
+        file.write(response.content)
 
-# Scaricare il file
-response = requests.get(url)
-response.raise_for_status()
-with open(output_filename, 'wb') as file:
-    file.write(response.content)
+    # Decomprimere il file .gz
+    with gzip.open(temp_gz, 'rb') as f_in:
+        file_content = f_in.read()
 
-# Decomprimere il file .gz e leggerlo come stringa
-with gzip.open(output_filename, 'rb') as f_in:
-    file_content = f_in.read()
+    # Creiamo un oggetto BytesIO per trattare il contenuto come un file
+    xml_content = io.BytesIO(file_content)
 
-# Creiamo un oggetto BytesIO per trattare il contenuto come un file
-xml_content = io.BytesIO(file_content)
+    # Caricare il contenuto XML
+    tree = ET.parse(xml_content)
+    root = tree.getroot()
 
-# Caricare il contenuto XML
-tree = ET.parse(xml_content)
-root = tree.getroot()
+    # Funzione per pulire attributi
+    def clean_attribute(element, attr_name):
+        if attr_name in element.attrib:
+            old_value = element.attrib[attr_name]
+            new_value = old_value.replace(" ", "").lower()
+            if old_value != new_value:
+                element.attrib[attr_name] = new_value
+                print(f"{attr_name}: '{old_value}' → '{new_value}'")  # Debug
 
-# Funzione per rimuovere spazi e scrivere in minuscolo
-def clean_attribute(element, attr_name):
-    if attr_name in element.attrib:
-        old_value = element.attrib[attr_name]
-        new_value = old_value.replace(" ", "").lower()
-        element.attrib[attr_name] = new_value
-        print(f"{attr_name}: '{old_value}' → '{new_value}'")  # Debug
+    # Pulire gli ID dei canali
+    for channel in root.findall(".//channel"):
+        clean_attribute(channel, 'id')
 
-# Pulire gli ID dei canali
-for channel in root.findall(".//channel"):
-    clean_attribute(channel, 'id')
+    # Pulire gli attributi 'channel' nei programmi
+    for programme in root.findall(".//programme"):
+        clean_attribute(programme, 'channel')
 
-# Pulire gli attributi 'channel' nei programmi
-for programme in root.findall(".//programme"):
-    clean_attribute(programme, 'channel')
+    # Salvare il file XML modificato temporaneamente
+    with open(output_xml, 'wb') as f_out:
+        tree.write(f_out, encoding='utf-8', xml_declaration=True)
 
-# Salviamo il file XML modificato con codifica UTF-8
-with open('epg.xml', 'wb') as f_out:
-    tree.write(f_out, encoding='utf-8', xml_declaration=True)
+    # Creare il file GZIP compresso con il nuovo XML
+    with open(output_xml, 'rb') as f_in, gzip.open(output_gz, 'wb') as f_out:
+        f_out.writelines(f_in)
 
-# Eliminare il file .gz
-os.remove(output_filename)
+    # Rimuovere i file temporanei
+    os.remove(temp_gz)
+    os.remove(output_xml)
 
-print('Download, modifica e salvataggio del file XML completati.')
+    print(f"File modificato e salvato come {output_gz} (contenente {output_xml}).")
+
+except requests.exceptions.RequestException as e:
+    print(f"Errore durante il download: {e}")
+except gzip.BadGzipFile:
+    print("Errore: il file scaricato non è un GZIP valido.")
+except ET.ParseError:
+    print("Errore: il file XML non è ben formato.")
+except Exception as e:
+    print(f"Errore imprevisto: {e}")
