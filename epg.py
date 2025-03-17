@@ -7,7 +7,7 @@ import io
 # URL del file gzip
 url = 'https://www.epgitalia.tv/gzip'
 output_gz = 'epg.gz'  # File compresso finale
-output_xml = 'epg.xml'  # Nome del file XML dentro il GZIP
+output_xml = 'epg.xml'  # Nome del file XML da salvare e comprimere
 temp_gz = 'file_scaricato.gz'  # File temporaneo scaricato
 
 try:
@@ -46,19 +46,22 @@ try:
     for programme in root.findall(".//programme"):
         clean_attribute(programme, 'channel')
 
-    # Salvare il file XML modificato temporaneamente
+    # Salvare il file XML modificato come epg.xml
     with open(output_xml, 'wb') as f_out:
         tree.write(f_out, encoding='utf-8', xml_declaration=True)
+
+    print(f"File XML salvato: {output_xml}")
 
     # Creare il file GZIP compresso con il nuovo XML
     with open(output_xml, 'rb') as f_in, gzip.open(output_gz, 'wb') as f_out:
         f_out.writelines(f_in)
 
-    # Rimuovere i file temporanei
-    os.remove(temp_gz)
-    os.remove(output_xml)
+    print(f"File compresso creato: {output_gz}")
 
-    print(f"File modificato e salvato come {output_gz} (contenente {output_xml}).")
+    # Rimuovere il file temporaneo scaricato
+    os.remove(temp_gz)
+
+    print(f"Operazione completata. File disponibili: {output_xml}, {output_gz}")
 
 except requests.exceptions.RequestException as e:
     print(f"Errore durante il download: {e}")
