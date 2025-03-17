@@ -28,8 +28,8 @@ jobs:
 
       - name: Verifica se epg.xml e epg.gz sono stati generati
         run: |
-          if [ -f "epg.xml" ] && [ -f "epg.gz" ]; then
-            echo "File epg.xml e epg.gz generati correttamente."
+          if [ -f "epg.xml" ] && [ -f "epg.gzip" ]; then
+            echo "File epg.xml e epg.gzip generati correttamente."
           else
             echo "Uno o entrambi i file non esistono. Esco."
             exit 0  # Esci senza fare commit o push
@@ -39,8 +39,8 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add epg.xml epg.gz
-          git commit -m "Aggiornamento epg.xml e epg.gz"
+          git add epg.xml epg.gzip
+          git commit -m "Aggiornamento epg.xml e epg.gzip"
         continue-on-error: true  # Evita errori se non ci sono modifiche
 
       - name: Pusha il cambiamento
