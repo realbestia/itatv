@@ -2,7 +2,7 @@ name: Esegui epg.py ogni ora
 
 on:
   schedule:
-    - cron: '45 */3 * * *'  # Esegue ogni ora
+    - cron: '45 */3 * * *'  # Esegue ogni 3 ore
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
@@ -26,12 +26,12 @@ jobs:
       - name: Esegui lo script
         run: python epg.py
 
-      - name: Verifica se merged_epg.xml è stato generato
+      - name: Verifica se epg.gz è stato generato
         run: |
-          if [ -f "merged_epg.xml" ]; then
-            echo "Il file merged_epg.xml è stato generato."
+          if [ -f "epg.gz" ]; then
+            echo "Il file epg.gz è stato generato."
           else
-            echo "Il file merged_epg.xml non esiste. Esco."
+            echo "Il file epg.gz non esiste. Esco."
             exit 0  # Esci senza fare commit o push
           fi
 
@@ -40,7 +40,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add .
-          git commit -m "Aggiungi file generato merged_epg"
+          git commit -m "Aggiungi file generato epg"
         continue-on-error: true  # In caso non ci siano cambiamenti, non fallire
 
       - name: Pusha il cambiamento
