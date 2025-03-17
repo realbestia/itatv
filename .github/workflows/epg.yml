@@ -26,7 +26,7 @@ jobs:
       - name: Esegui lo script
         run: python epg.py
 
-      - name: Verifica se epg.xml e epg.gz sono stati generati
+      - name: Verifica se epg.xml e epg.gzip sono stati generati
         run: |
           if [ -f "epg.xml" ] && [ -f "epg.gzip" ]; then
             echo "File epg.xml e epg.gzip generati correttamente."
