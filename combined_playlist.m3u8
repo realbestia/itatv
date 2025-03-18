@@ -1,16 +1,13 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="skysportcalciohd" tvg-name="SKY SPORT CALCIO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-calcio-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT CALCIO
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1665920101%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="skysportf1" tvg-name="SKY SPORT F1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-f1-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT F1
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4246774056%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="skysportcalciohd" tvg-name="SKY SPORT CALCIO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-calcio-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT CALCIO
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1665920101%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="skysportunohd" tvg-name="SKY SPORT UNO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-uno-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT UNO
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F210669162%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="skysportmotogphd" tvg-name="SKY SPORT MOTOGP" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-motogp-hd-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT MOTOGP
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2090703806%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skysportmotogphd" tvg-name="SKY SPORT MOTO GP" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-motogp-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT MOTO GP
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3036316886%2Findex.m3u8
@@ -21,32 +18,32 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="skysportcalciohd" tvg-name="SKY SPORT CALCIO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-calcio-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT CALCIO (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F449990998%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-sport-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F924661659%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="skysporttennisfullhd" tvg-name="SKY SPORT TENNIS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-tennis-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT TENNIS
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2100771782%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skysportnbafullhd" tvg-name="SKY SPORT NBA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-nba-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT NBA
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F326825326%2Findex.m3u8
+#EXTINF:-1 tvg-id="skysporttennisfullhd" tvg-name="SKY SPORT TENNIS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-tennis-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT TENNIS (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F78546677%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-football-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT FOOTBALL [LIVE DURING EVENTS ONLY]
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1989309231%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT FOOTBALL" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-football-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT FOOTBALL
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3093535330%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="skysportunohd" tvg-name="SKY SPORT UNO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-uno-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT UNO (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3192996672%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="skysportmotogphd" tvg-name="SKY SPORT MOTOGP" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-motogp-hd-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT MOTOGP
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2090703806%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY SPORTS F1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-f1-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORTS F1
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2289038972%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/sky-sport-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F924661659%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="skysport24" tvg-name="SKY SPORT 24" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-24-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT 24
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2775802255%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skysporttennisfullhd" tvg-name="SKY SPORT TENNIS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-tennis-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT TENNIS (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F78546677%2Findex.m3u8
+#EXTINF:-1 tvg-id="skysportnbafullhd" tvg-name="SKY SPORT NBA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-nba-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT NBA
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F326825326%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skysportarenahd" tvg-name="SKY SPORT ARENA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-arena-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT ARENA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3007400791%2Findex.m3u8
@@ -63,6 +60,9 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="skysportgolfhd" tvg-name="SKY SPORT GOLF" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-golf-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT GOLF
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F729945219%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT FOOTBALL" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-football-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT FOOTBALL
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3093535330%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="skysportmaxhd" tvg-name="SKY SPORT MAX" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-max-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SPORT MAX
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2066326916%2Findex.m3u8
 
@@ -73,19 +73,16 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3897711086%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skycinemaactionhd" tvg-name="SKY CINEMA ACTION" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-action-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA ACTION
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2242741766%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3812796171%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skycinemaunofullhd" tvg-name="SKY CINEMA UNO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA UNO
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1759625738%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skyatlanticfullhd" tvg-name="SKY ATLANTIC" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-atlantic-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY ATLANTIC
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1421393119%2Findex.m3u8
+#EXTINF:-1 tvg-id="skycinemacomedyfullhd" tvg-name="SKY CINEMA COMEDY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-comedy-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA COMEDY
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F500203271%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skycinemacollectionfullhd" tvg-name="SKY CINEMA COLLECTION" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-collection-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA COLLECTION
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3525837057%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="skycinemacomedyfullhd" tvg-name="SKY CINEMA COMEDY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-comedy-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA COMEDY
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3131104474%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skycinemasuspensefullhd" tvg-name="SKY CINEMA SUSPENSE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-suspense-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA SUSPENSE
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3060043751%2Findex.m3u8
@@ -93,68 +90,74 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="skycinemadramahd" tvg-name="SKY CINEMA DRAMA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-drama-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA DRAMA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1235530177%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skycinemafamily" tvg-name="SKY CINEMA FAMILY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-family-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA FAMILY
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3216516117%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 7
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3618643172%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skycinemaduehd" tvg-name="SKY CINEMA DUE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA DUE
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1228534500%2Findex.m3u8
+#EXTINF:-1 tvg-id="skycinemafamily" tvg-name="SKY CINEMA FAMILY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-family-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA FAMILY
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3216516117%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 10" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 10
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4272937805%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="skyatlanticfullhd" tvg-name="SKY ATLANTIC" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-atlantic-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY ATLANTIC
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1421393119%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 8" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 8
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1440779061%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 2
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F525374356%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 6" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 6
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3939513684%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skycinemacomedyfullhd" tvg-name="SKY CINEMA COMEDY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-comedy-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA COMEDY (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F500203271%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 5
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2255083866%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="skycinemaromancehd" tvg-name="SKY CINEMA ROMANCE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-romance-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA ROMANCE
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1281264885%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 9" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 9
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1753260677%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 17" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 17
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1284441949%2Findex.m3u8
+#EXTINF:-1 tvg-id="skycinemaunofullhd" tvg-name="SKY CINEMA UNO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA UNO (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2872151911%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 2
+#EXTINF:-1 tvg-id="skycinemaromancehd" tvg-name="SKY CINEMA ROMANCE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-romance-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA ROMANCE
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2890008905%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="skycinemaduehd" tvg-name="SKY CINEMA DUE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA DUE
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2330574729%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 3
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F573618724%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 16" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 16
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1911500525%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="skyseriefullhd" tvg-name="SKY SERIE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-serie-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SERIE
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F836680112%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 2 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F877200714%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skycinemauno+24fullhd" tvg-name="SKY CINEMA UNO +24" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-plus24-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA UNO +24
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1699876530%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="skycinemaactionhd" tvg-name="SKY CINEMA ACTION" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-action-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA ACTION (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3812796171%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2242741766%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="skycinemacomedyfullhd" tvg-name="SKY CINEMA COMEDY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-comedy-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA COMEDY (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3131104474%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="skycinemaduehd" tvg-name="SKY CINEMA DUE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA DUE (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1228534500%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skycinemaactionhd" tvg-name="SKY CINEMA ACTION" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-action-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA ACTION (3)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1144128726%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 2 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F525374356%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="skyatlanticfullhd" tvg-name="SKY ATLANTIC" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-atlantic-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY ATLANTIC (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1482866609%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skycinemaunofullhd" tvg-name="SKY CINEMA UNO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA UNO (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2872151911%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="skycinemaromancehd" tvg-name="SKY CINEMA ROMANCE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-romance-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA ROMANCE (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2890008905%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1281264885%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skycinemafamily" tvg-name="SKY CINEMA FAMILY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-family-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA FAMILY (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F415795144%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="skycinemaduehd" tvg-name="SKY CINEMA DUE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA DUE (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2330574729%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 1
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1944682394%2Findex.m3u8
@@ -168,23 +171,17 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="skycinemasuspensefullhd" tvg-name="SKY CINEMA SUSPENSE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-suspense-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA SUSPENSE (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1820997555%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 3
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F573618724%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 16" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 16
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1911500525%2Findex.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 17" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 17
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1284441949%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 9" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 9 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1134113883%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="skyseriefullhd" tvg-name="SKY SERIE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-serie-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY SERIE
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F836680112%2Findex.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 4
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2416993844%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 6" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 6 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3251217290%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 4
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2416993844%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 7 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4238969402%2Findex.m3u8
@@ -200,6 +197,9 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 14" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 14
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F187661709%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="skycinemauno+24fullhd" tvg-name="SKY CINEMA UNO +24" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-plus24-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY CINEMA UNO +24
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1699876530%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY PRIMAFILA 12" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-primafila-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY PRIMAFILA 12
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2221901869%2Findex.m3u8
@@ -232,10 +232,10 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2130523218%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skyarte" tvg-name="SKY ARTE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-arte-it.png" group-title="Documentari" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY ARTE
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1902695925%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1806815496%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skyarte" tvg-name="SKY ARTE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-arte-it.png" group-title="Documentari" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY ARTE (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1806815496%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1902695925%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="skynaturefullhd" tvg-name="SKY NATURE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-nature-it.png" group-title="Documentari" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SKY NATURE
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3810188456%2Findex.m3u8
@@ -253,10 +253,10 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F843891896%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="raimovie" tvg-name="RAI MOVIE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-movie-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI MOVIE
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2835672487%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1925964148%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="raimovie" tvg-name="RAI MOVIE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-movie-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI MOVIE (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1925964148%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2835672487%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="rainews24fullhd" tvg-name="RAI NEWS 24" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-news-24-it.png" group-title="News" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI NEWS 24
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2239645272%2Findex.m3u8
@@ -279,6 +279,9 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="rai4" tvg-name="RAI 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-4-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 4
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2179822223%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="rai1" tvg-name="RAI 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-1-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 1 (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1225653759%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="rai2" tvg-name="RAI 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-2-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 2
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F246253359%2Findex.m3u8
 
@@ -291,14 +294,17 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="raiyoyofullhd" tvg-name="RAI YOYO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-yoyo-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI YOYO
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1890950169%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="rai1" tvg-name="RAI 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-1-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 1 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1225653759%2Findex.m3u8
+#EXTINF:-1 tvg-id="rai4" tvg-name="RAI 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-4-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 4 (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4241820180%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="rai5fullhd" tvg-name="RAI 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-5-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 5
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3249873828%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="raiscuolafullhd" tvg-name="RAI SCUOLA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-scuola-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI SCUOLA
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1886684667%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="rai2" tvg-name="RAI 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-2-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 2 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1939210164%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="rai4" tvg-name="RAI 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-4-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 4 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4241820180%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="raigulpfullhd" tvg-name="RAI GULP" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-gulp-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI GULP
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1803677691%2Findex.m3u8
@@ -306,11 +312,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="rai3" tvg-name="RAI 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-3-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 3 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F869117599%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="raigulpfullhd" tvg-name="RAI GULP" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-gulp-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI GULP (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1901652742%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="raistoriafullhd" tvg-name="RAI STORIA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-storia-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI STORIA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F57338653%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="raigulpfullhd" tvg-name="RAI GULP" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-gulp-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI GULP (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1901652742%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="raipremium" tvg-name="RAI PREMIUM" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-premium-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI PREMIUM
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2861734300%2Findex.m3u8
@@ -321,14 +327,8 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="raipremium" tvg-name="RAI PREMIUM" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-premium-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI PREMIUM (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2828455552%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="raiscuolafullhd" tvg-name="RAI SCUOLA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-scuola-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI SCUOLA
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2007798511%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="raiscuolafullhd" tvg-name="RAI SCUOLA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-scuola-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI SCUOLA (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1886684667%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="rai5fullhd" tvg-name="RAI 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-5-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI 5
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3249873828%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2007798511%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="raiyoyofullhd" tvg-name="RAI YOYO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-yoyo-it.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI YOYO (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1785501924%2Findex.m3u8
@@ -342,32 +342,32 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="RAI ITALIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Rai_Italia_-_Logo_2017.svg/1024px-Rai_Italia_-_Logo_2017.svg.png" group-title="Rai" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RAI ITALIA (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F294457245%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="mediasetextra" tvg-name="MEDIASET EXTRA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/mediaset-extra-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET EXTRA
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F477466531%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="mediaset20hd" tvg-name="MEDIASET 20" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/20-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET 20
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3134481201%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="20mediasethd" tvg-name="20 MEDIASET" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/20-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", 20 MEDIASET
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1230338185%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="mediasetitalia2hd" tvg-name="MEDIASET ITALIA 2" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/c/c5/Logo_Italia2.svg/520px-Logo_Italia2.svg.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET ITALIA 2
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3538009430%2Findex.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET 1" tvg-logo="https://play-lh.googleusercontent.com/2-Cl0plYUCxk8bnbeavm4ZOJ_S4Xuwmql_N3_E4OJyf7XK_YUvdNOWgzn8KD-Bur8w0" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET 1
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F633342961%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 1" tvg-logo="https://play-lh.googleusercontent.com/2-Cl0plYUCxk8bnbeavm4ZOJ_S4Xuwmql_N3_E4OJyf7XK_YUvdNOWgzn8KD-Bur8w0" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET INFINITY+ 1
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3599959739%2Findex.m3u8
+#EXTINF:-1 tvg-id="mediasetextra" tvg-name="MEDIASET EXTRA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/mediaset-extra-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET EXTRA
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F477466531%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="CINE 34 MEDIASET" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cine34-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CINE 34 MEDIASET
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1768670187%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="MEDIASET 1" tvg-logo="https://play-lh.googleusercontent.com/2-Cl0plYUCxk8bnbeavm4ZOJ_S4Xuwmql_N3_E4OJyf7XK_YUvdNOWgzn8KD-Bur8w0" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET 1
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F633342961%2Findex.m3u8
+#EXTINF:-1 tvg-id="mediaset20hd" tvg-name="MEDIASET 20" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/20-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET 20
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3134481201%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="mediasetitalia2hd" tvg-name="MEDIASET ITALIA 2" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/c/c5/Logo_Italia2.svg/520px-Logo_Italia2.svg.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET ITALIA 2
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3538009430%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="MEDIASET IRIS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/iris-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET IRIS
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F23919988%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="MEDIASET ITALIA" tvg-logo="https://www.italiasera.it/wp-content/uploads/2019/06/Mediaset-640x366.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET ITALIA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1989562337%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 1" tvg-logo="https://play-lh.googleusercontent.com/2-Cl0plYUCxk8bnbeavm4ZOJ_S4Xuwmql_N3_E4OJyf7XK_YUvdNOWgzn8KD-Bur8w0" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET INFINITY+ 1
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3599959739%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="MEDIASET INFINITY+ 2" tvg-logo="https://play-lh.googleusercontent.com/2-Cl0plYUCxk8bnbeavm4ZOJ_S4Xuwmql_N3_E4OJyf7XK_YUvdNOWgzn8KD-Bur8w0" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MEDIASET INFINITY+ 2
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2436070507%2Findex.m3u8
@@ -384,23 +384,20 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="BOING PLUS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Boing_Plus_logo_2020.svg/1200px-Boing_Plus_logo_2020.svg.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", BOING PLUS
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3841982646%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="DAZN2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DAZN2
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1376440573%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="eurosport1" tvg-name="EUROSPORT 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-1-es.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", EUROSPORT 1
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3448075317%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="DAZN2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DAZN2
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2911178456%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="milantvhd" tvg-name="MILAN TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/milan-tv-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MILAN TV
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3657217948%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="eurosport2hd" tvg-name="EUROSPORT 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-2-es.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", EUROSPORT 2
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2317684453%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="intertv" tvg-name="INTER TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/inter-tv-it.png?raw=true" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", INTER TV
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2973773076%2Findex.m3u8
+#EXTINF:-1 tvg-id="milantvhd" tvg-name="MILAN TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/milan-tv-it.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MILAN TV
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3657217948%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="DAZN2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DAZN2 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1376440573%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2911178456%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="eurosport1" tvg-name="EUROSPORT 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-1-es.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", EUROSPORT 1 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3481346857%2Findex.m3u8
@@ -422,6 +419,9 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 
 #EXTINF:-1 tvg-id="" tvg-name="SPORT ITALIA SOLO CALCIO [LIVE DURING EVENTS ONLY]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/SI_Solo_Calcio_logo_%282019%29.svg/1200px-SI_Solo_Calcio_logo_%282019%29.svg.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SPORT ITALIA SOLO CALCIO [LIVE DURING EVENTS ONLY]
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F830949486%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="intertv" tvg-name="INTER TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/inter-tv-it.png?raw=true" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", INTER TV
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2973773076%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SPORTITALIA PLUS" tvg-logo="https://www.capitaladv.eu/wp-content/uploads/2020/07/LOGO-SPORTITALIA-PLUS-HD_2-1.png" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SPORTITALIA PLUS
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3342849313%2Findex.m3u8
@@ -450,11 +450,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="TRSPORT" tvg-logo="https://teleromagna.it/Images/logo-tr-sport.jpg" group-title="Sport" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TRSPORT
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F361314062%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="CRIME+ INVESTIGATION" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CRIME+ INVESTIGATION
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3005227700%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="PREMIUM CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/premium-crime-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", PREMIUM CRIME
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F444768053%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="CRIME+ INVESTIGATION" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/logo.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CRIME+ INVESTIGATION
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3005227700%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="topcrimefullhd" tvg-name="TOP CRIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/top-crime-it.png" group-title="Film & Serie TV" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TOP CRIME
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F269503091%2Findex.m3u8
@@ -504,20 +504,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="TV7 NEWS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStj45lIWvQ0KFzv6jyIP9vOZgPnWQirEl6dw&s" group-title="News" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TV7 NEWS
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2802329064%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="giallohd" tvg-name="GIALLO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/giallo-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", GIALLO
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4060499455%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="cielohd" tvg-name="CIELO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cielo-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CIELO
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3743894403%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="rete4fullhd" tvg-name="RETE 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rete4-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RETE 4
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2235732004%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="cielohd" tvg-name="CIELO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cielo-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CIELO (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2719953688%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="realtime" tvg-name="REAL TIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/real-time-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", REAL TIME
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2251241999%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="iris" tvg-name="IRIS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/iris-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", IRIS
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F576490047%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="tv8" tvg-name="TV 8" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/tv8-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TV 8
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4038365720%2Findex.m3u8
@@ -525,38 +516,32 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="italianfishingtv" tvg-name="ITALIAN FISHING TV" tvg-logo="https://www.upmagazinearezzo.it/atladv/wp-content/uploads/2017/07/atlantide-adv-logo-italian-fishing-tv.jpg" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ITALIAN FISHING TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F477083716%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="rete4fullhd" tvg-name="RETE 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rete4-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RETE 4
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4198218214%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="LA C TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/lac-tv-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA C TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F660106690%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="dmaxfullhd" tvg-name="DMAX" tvg-logo="https://cdn.cookielaw.org/logos/50417659-aa29-4f7f-b59d-f6e887deed53/a32be519-de41-40f4-abed-d2934ba6751b/9a44af24-5ca6-4098-aa95-594755bd7b2d/dmax_logo.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DMAX
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3008151733%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="la5" tvg-name="LA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la5-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA 5
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F84139639%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="rsila1" tvg-name="RSI LA 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/RSI_La_1_2012.svg/1200px-RSI_La_1_2012.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RSI LA 1
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2455610203%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2290395046%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="rsila2" tvg-name="RSI LA 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/RSI_La_2_2012.svg/1200px-RSI_La_2_2012.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RSI LA 2
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3475299702%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="motortrendfullhd" tvg-name="MOTORTREND" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Motor_Trend_logo.svg/2560px-Motor_Trend_logo.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MOTORTREND
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3758728323%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="realtime" tvg-name="REAL TIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/real-time-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", REAL TIME (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1574975196%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="giallohd" tvg-name="GIALLO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/giallo-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", GIALLO
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4060499455%2Findex.m3u8
+#EXTINF:-1 tvg-id="la7" tvg-name="LA 7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA 7
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2143522071%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RTV SAN MARINO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rtv-san-marino-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RTV SAN MARINO
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2343767125%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="la5" tvg-name="LA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la5-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA 5 (2)
+#EXTINF:-1 tvg-id="rete4fullhd" tvg-name="RETE 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rete4-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RETE 4 (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2235732004%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="realtime" tvg-name="REAL TIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/real-time-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", REAL TIME
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2251241999%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="la5" tvg-name="LA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la5-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA 5
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1425667375%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="rete4fullhd" tvg-name="RETE 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rete4-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RETE 4 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4198218214%2Findex.m3u8
+#EXTINF:-1 tvg-id="cielohd" tvg-name="CIELO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cielo-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CIELO (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3743894403%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="cine34" tvg-name="CINE 34" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cine34-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CINE 34
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F62558606%2Findex.m3u8
@@ -564,20 +549,35 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="giallohd" tvg-name="GIALLO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/giallo-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", GIALLO (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2373936189%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="dmaxfullhd" tvg-name="DMAX" tvg-logo="https://cdn.cookielaw.org/logos/50417659-aa29-4f7f-b59d-f6e887deed53/a32be519-de41-40f4-abed-d2934ba6751b/9a44af24-5ca6-4098-aa95-594755bd7b2d/dmax_logo.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DMAX (2)
+#EXTINF:-1 tvg-id="dmaxfullhd" tvg-name="DMAX" tvg-logo="https://cdn.cookielaw.org/logos/50417659-aa29-4f7f-b59d-f6e887deed53/a32be519-de41-40f4-abed-d2934ba6751b/9a44af24-5ca6-4098-aa95-594755bd7b2d/dmax_logo.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DMAX
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3803638765%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="rsila1" tvg-name="RSI LA 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/RSI_La_1_2012.svg/1200px-RSI_La_1_2012.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RSI LA 1 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2290395046%2Findex.m3u8
+#EXTINF:-1 tvg-id="dmaxfullhd" tvg-name="DMAX" tvg-logo="https://cdn.cookielaw.org/logos/50417659-aa29-4f7f-b59d-f6e887deed53/a32be519-de41-40f4-abed-d2934ba6751b/9a44af24-5ca6-4098-aa95-594755bd7b2d/dmax_logo.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DMAX (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3008151733%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="la7" tvg-name="LA 7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA 7
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2143522071%2Findex.m3u8
+#EXTINF:-1 tvg-id="rsila1" tvg-name="RSI LA 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/RSI_La_1_2012.svg/1200px-RSI_La_1_2012.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RSI LA 1 (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2455610203%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="la5" tvg-name="LA 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la5-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA 5 (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F84139639%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="rsila2" tvg-name="RSI LA 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/RSI_La_2_2012.svg/1200px-RSI_La_2_2012.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RSI LA 2
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3590183307%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="rsila2" tvg-name="RSI LA 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/RSI_La_2_2012.svg/1200px-RSI_La_2_2012.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RSI LA 2 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3590183307%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3475299702%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="iris" tvg-name="IRIS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/iris-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", IRIS
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F576490047%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="tv8" tvg-name="TV 8" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/tv8-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TV 8 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2706291008%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="motortrendfullhd" tvg-name="MOTORTREND" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Motor_Trend_logo.svg/2560px-Motor_Trend_logo.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MOTORTREND
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3758728323%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="realtime" tvg-name="REAL TIME" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/real-time-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", REAL TIME (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1574975196%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="la7dfullhd" tvg-name="LA 7 D" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7d-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA 7 D
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F881846038%2Findex.m3u8
@@ -585,11 +585,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="pesca" tvg-name="PESCA" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/pesca-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", PESCA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F714472867%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="motortrendfullhd" tvg-name="MOTORTREND" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Motor_Trend_logo.svg/2560px-Motor_Trend_logo.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MOTORTREND (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3889279895%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="foodnetworkfullhd" tvg-name="FOOD NETWORK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f4/Food_Network_-_Logo_2016.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", FOOD NETWORK
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2820683351%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="motortrendfullhd" tvg-name="MOTORTREND" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Motor_Trend_logo.svg/2560px-Motor_Trend_logo.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", MOTORTREND (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3889279895%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="la7" tvg-name="LA 7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA 7 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F775530063%2Findex.m3u8
@@ -600,11 +600,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="warnertvhd" tvg-name="WARNER TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Warner_TV_Italy.svg/1200px-Warner_TV_Italy.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", WARNER TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3171202588%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="comedycentralfullhd" tvg-name="COMEDY CENTRAL" tvg-logo="https://yt3.googleusercontent.com/FPzu1EWCI54fIh2j9JEp0NOzwoeugjL4sZTQCdoxoQY1U4QHyKx2L3wPSw27IueuZGchIxtKfv8=s900-c-k-c0x00ffffff-no-rj" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", COMEDY CENTRAL
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3658277450%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="CANALE 7" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Canale_7.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CANALE 7
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F565256431%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="comedycentralfullhd" tvg-name="COMEDY CENTRAL" tvg-logo="https://yt3.googleusercontent.com/FPzu1EWCI54fIh2j9JEp0NOzwoeugjL4sZTQCdoxoQY1U4QHyKx2L3wPSw27IueuZGchIxtKfv8=s900-c-k-c0x00ffffff-no-rj" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", COMEDY CENTRAL
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3658277450%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="CAFE 24" tvg-logo="https://play-lh.googleusercontent.com/DW0Tvz72-8XZ7rEBVh1jBzwYE1fZhTaowuuxN75Jl8yBtnFkySH1z2T2b7OPlotmHeQ" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CAFE 24
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1625923783%2Findex.m3u8
@@ -714,11 +714,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="ONDA NOVARA TV" tvg-logo="https://gag-fondazionedeagostini.s3.amazonaws.com/wp-content/uploads/2023/03/logo-Onda-Novara-TV-Ufficiale-1.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ONDA NOVARA TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3134124967%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="ANIMAL PLANET" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/2560px-2018_Animal_Planet_logo.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ANIMAL PLANET
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1908877526%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="fashiontv" tvg-name="FASHIONTV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/international/fashion-tv-int.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", FASHIONTV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3255207570%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ANIMAL PLANET" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/2560px-2018_Animal_Planet_logo.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ANIMAL PLANET
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1908877526%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="CANALE 8" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/6/6d/TV8_Logo_2016.svg/1200px-TV8_Logo_2016.svg.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CANALE 8 (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3107500995%2Findex.m3u8
@@ -765,11 +765,14 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="ELIVE TV BRESCIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/ec/%C3%88_live_Brescia_logo.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ELIVE TV BRESCIA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1521821490%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="TVA VICENZA" tvg-logo="https://massimoemanuelli.com/wp-content/uploads/2017/10/tva-vi-2.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TVA VICENZA
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3071392662%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="CAMERA DEI DEPUTATI" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/camera-dei-deputati-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CAMERA DEI DEPUTATI
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4253692893%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="TVA VICENZA" tvg-logo="https://massimoemanuelli.com/wp-content/uploads/2017/10/tva-vi-2.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TVA VICENZA
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3071392662%2Findex.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ESPERIA TV 18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/ESPERIATV18_verde.png/260px-ESPERIATV18_verde.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ESPERIA TV 18
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1812508372%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="PRIMOCANALE" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/primocanale-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", PRIMOCANALE
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2944239261%2Findex.m3u8
@@ -780,17 +783,14 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="STEREO 5 TV" tvg-logo="https://www.stereo5.it/2022/wp-content/uploads/2023/02/LOGO-NUOVO-2023-2.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", STEREO 5 TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F88205050%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="ESPERIA TV 18" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/ESPERIATV18_verde.png/260px-ESPERIATV18_verde.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ESPERIA TV 18
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1812508372%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="ONDA TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Og_2yYQhg-ersjEG5xZ99bri_Di4l5dlyw&s" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ONDA TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F203130779%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="VIDEO NOVARA" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1PvoHpnx0hNKtt435CUaJza2e_qsm5B87Cg&s" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", VIDEO NOVARA
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2791781421%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="VIDEOSTAR TV" tvg-logo="https://www.videostartv.eu/images/videostar.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", VIDEOSTAR TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2499488584%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="VIDEO NOVARA" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1PvoHpnx0hNKtt435CUaJza2e_qsm5B87Cg&s" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", VIDEO NOVARA
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2791781421%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/bloomberg-television-us.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", BLOOMBERG TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F116299718%2Findex.m3u8
@@ -831,6 +831,9 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="qvc" tvg-name="QVC" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/germany/qvc-de.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", QVC
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2952884641%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="LIRA TV" tvg-logo="https://liratv.es/wp-content/uploads/2021/07/LIRA-TV-1.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LIRA TV
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2835333400%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="SENATO TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/senato-tv-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SENATO TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2002360508%2Findex.m3u8
 
@@ -839,9 +842,6 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 
 #EXTINF:-1 tvg-id="" tvg-name="COMPANY TV" tvg-logo="https://www.trendcomunicazione.com/wp-content/uploads/2018/11/20180416-logo-tv-bokka-300x155.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", COMPANY TV (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1322483308%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="LIRA TV" tvg-logo="https://liratv.es/wp-content/uploads/2021/07/LIRA-TV-1.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LIRA TV
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2835333400%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="REI TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/rei-tv-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", REI TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3075118500%2Findex.m3u8
@@ -864,6 +864,9 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="TELE CHIARA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/ba/Telechiara-logo.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELE CHIARA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2487986216%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="LA TR3" tvg-logo="https://www.tvdream.net/img/latr3.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA TR3
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2210996603%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="STAR COMEDY" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/portugal/star-comedy-pt.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", STAR COMEDY
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1512072384%2Findex.m3u8
 
@@ -873,17 +876,14 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="hgtvfullhd" tvg-name="HGTV" tvg-logo="https://d204lf4nuskf6u.cloudfront.net/italy-images/c2cbeaabb81be73e81c7f4291cf798e3.png?k=2nWZhtOSUQdq2s2ItEDH5%2BQEPdq1khUY8YJSK0%2BNV90dhkyaUQQ82V1zGPD7O5%2BS" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", HGTV (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4248997029%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="LA TR3" tvg-logo="https://www.tvdream.net/img/latr3.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", LA TR3
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2210996603%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="SUPER J" tvg-logo="https://e7.pngegg.com/pngimages/439/74/png-clipart-superman-superhero-drawing-super-man-font-superhero-heart.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SUPER J
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1284194905%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="TELEA TV" tvg-logo="https://www.tvdream.net/img/telea-tv.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELEA TV
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3332092310%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="ETV MARCHE" tvg-logo="https://etvmarche.it/wp-content/uploads/2021/05/Logo-Marche-BLU.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ETV MARCHE
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F273312373%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELEA TV" tvg-logo="https://www.tvdream.net/img/telea-tv.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELEA TV
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3332092310%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="tv2000" tvg-name="TV2000" tvg-logo="https://upload.wikimedia.org/wikipedia/it/0/0d/Logo_di_TV2000.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TV2000
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1133734972%2Findex.m3u8
@@ -903,20 +903,23 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="SENATO TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/senato-tv-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SENATO TV (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2895549551%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="VIDEOTOLENTINO" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kAZM1WRzE6qfQx90xPJ3v1Jz1gaJwn6BbrZcewu6eTcQ=s900-c-k-c0x00ffffff-no-rj" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", VIDEOTOLENTINO
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2015312510%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="GLOBUS TELEVISION" tvg-logo="https://ennapress.it/wp-content/uploads/2020/10/globus.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", GLOBUS TELEVISION
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2116902817%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="SUPER TV BRESCIA" tvg-logo="https://bresciasat.it/assets/front/img/logo3.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SUPER TV BRESCIA
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2061826034%2Findex.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="VIDEOTOLENTINO" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kAZM1WRzE6qfQx90xPJ3v1Jz1gaJwn6BbrZcewu6eTcQ=s900-c-k-c0x00ffffff-no-rj" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", VIDEOTOLENTINO
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2015312510%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="equtvhd" tvg-name="EQU TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/equ-tv-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", EQU TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2818586668%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="SUPER TV BRESCIA" tvg-logo="https://bresciasat.it/assets/front/img/logo3.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SUPER TV BRESCIA
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2061826034%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="GRANDUCATO" tvg-logo="https://www.telegranducato.it/wp-content/uploads/img_struttura_sito/logo_granducato_ridotto.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", GRANDUCATO
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F942153014%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="JUWELO ITALIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fd/Juwelo_TV.svg" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", JUWELO ITALIA
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3832171692%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RETEBIELLA TV" tvg-logo="https://alpitv.com/wp-content/uploads/2022/01/logo.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RETEBIELLA TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F109447913%2Findex.m3u8
@@ -926,9 +929,6 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 
 #EXTINF:-1 tvg-id="" tvg-name="ICARO TV" tvg-logo="https://www.gruppoicaro.it/wp-content/uploads/2020/05/icarotv.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ICARO TV (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2392139008%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="JUWELO ITALIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fd/Juwelo_TV.svg" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", JUWELO ITALIA
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3832171692%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="STAR LIFE" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/argentina/star-life-ar.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", STAR LIFE
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3946128844%2Findex.m3u8
@@ -945,6 +945,9 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="ORLER TV" tvg-logo="https://www.tvdream.net/img/orlertv.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ORLER TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3471319012%2Findex.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="RMC 101" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fc/LogoRMC101.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RMC 101
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2209352147%2Findex.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="TELEPACE" tvg-logo="https://e7.pngegg.com/pngimages/408/890/png-clipart-telepace-high-definition-television-hot-bird-%C4%8Ct1-albero-della-vita-television-text.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELEPACE
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1658329091%2Findex.m3u8
 
@@ -954,11 +957,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="VERA TV" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/vera-tv-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", VERA TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2471902234%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="RMC 101" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fc/LogoRMC101.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RMC 101
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2209352147%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="RETE VENETA" tvg-logo="https://upload.wikimedia.org/wikipedia/it/d/df/Logo_Rete_Veneta.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RETE VENETA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1085172353%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TT TELETUTTO" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQpzqT0DLXv-md7VU-fTF5BeaEashocwHUdw&s" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TT TELETUTTO
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3709706813%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="TELEBARI" tvg-logo="https://www.aaroiemac.it/notizie/wp-content/uploads/2018/11/1524066248-telebari.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELEBARI
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1362891370%2Findex.m3u8
@@ -969,9 +972,6 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="TELE SIRIO" tvg-logo="https://www.telesirio.it/images/logo.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELE SIRIO
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2188469219%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="TT TELETUTTO" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQpzqT0DLXv-md7VU-fTF5BeaEashocwHUdw&s" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TT TELETUTTO
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3709706813%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="RTR 99 TV" tvg-logo="https://www.tvdream.net/img/rtr99-cover.jpg" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RTR 99 TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1621632780%2Findex.m3u8
 
@@ -981,11 +981,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="TV YES" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/tv-yes-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TV YES
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2569530225%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="TELECOLOR" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/telecolore-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELECOLOR
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1133239022%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="RETE TV ITALIA" tvg-logo="https://www.retetvitalia.it/news/wp-content/uploads/2019/07/cropped-RTI-L.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", RETE TV ITALIA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F4131055018%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="TELECOLOR" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/italy/telecolore-it.png?raw=true" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELECOLOR
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1133239022%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="TELE MIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a6/Telemia.png" group-title="Altro" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", TELE MIA
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1563649601%2Findex.m3u8
@@ -1057,16 +1057,16 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1597386407%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="canale5hd" tvg-name="CANALE 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/canale5-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CANALE 5
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1534161807%2Findex.m3u8
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1101559666%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="italia1hd" tvg-name="ITALIA 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/italia1-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ITALIA 1
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F663536394%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="canale5hd" tvg-name="CANALE 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/canale5-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CANALE 5 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1101559666%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="italia2" tvg-name="ITALIA 2" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/c/c5/Logo_Italia2.svg/520px-Logo_Italia2.svg.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", ITALIA 2
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1613543898%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="canale5hd" tvg-name="CANALE 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/canale5-it.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CANALE 5 (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1534161807%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="27twentysevenhd" tvg-name="27 TWENTY SEVEN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twentyseven_logo.svg/260px-Twentyseven_logo.svg.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", 27 TWENTY SEVEN
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F608774683%2Findex.m3u8
@@ -1074,35 +1074,35 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="27twentysevenhd" tvg-name="27 TWENTYSEVEN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twentyseven_logo.svg/260px-Twentyseven_logo.svg.png" group-title="Mediaset" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", 27 TWENTYSEVEN
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F80896559%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="cartoonnetworkfullhd" tvg-name="CARTOON NETWORK" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoon-network-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOON NETWORK
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1289777017%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", K2
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F11090349%2Findex.m3u8
-
 #EXTINF:-1 tvg-id="nickelodeon" tvg-name="NICKELODEON" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/nickelodeon-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", NICKELODEON
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3039389215%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="frisbee" tvg-name="FRISBEE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/frisbee-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", FRISBEE
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1995860185%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="cartoonito" tvg-name="CARTOONITO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoonito-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOONITO
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1987220436%2Findex.m3u8
+#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", K2
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F11090349%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="cartoonnetworkfullhd" tvg-name="CARTOON NETWORK" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoon-network-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOON NETWORK (2)
+#EXTINF:-1 tvg-id="cartoonnetworkfullhd" tvg-name="CARTOON NETWORK" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoon-network-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOON NETWORK
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1744435623%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", K2 (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2255724318%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="super!" tvg-name="SUPER!" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Super%21_logo_2021.svg/1024px-Super%21_logo_2021.svg.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", SUPER!
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3550030443%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="cartoonito" tvg-name="CARTOONITO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoonito-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOONITO (2)
+#EXTINF:-1 tvg-id="cartoonito" tvg-name="CARTOONITO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoonito-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOONITO
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2178717282%2Findex.m3u8
 
-#EXTINF:-1 tvg-id="cartoonito" tvg-name="CARTOONITO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoonito-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOONITO (3)
+#EXTINF:-1 tvg-id="cartoonnetworkfullhd" tvg-name="CARTOON NETWORK" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoon-network-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOON NETWORK (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1289777017%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", K2 (2)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2255724318%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="cartoonito" tvg-name="CARTOONITO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoonito-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOONITO (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1907000512%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="cartoonito" tvg-name="CARTOONITO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoonito-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", CARTOONITO (3)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1987220436%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="discoveryk2" tvg-name="DISCOVERY K2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/k2-it.png" group-title="Bambini" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DISCOVERY K2
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3037871903%2Findex.m3u8
@@ -1123,13 +1123,13 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1574591400%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="historyfullhd" tvg-name="HISTORY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/history-channel-it.png" group-title="Documentari" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", HISTORY
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2134724757%2Findex.m3u8
+
+#EXTINF:-1 tvg-id="historyfullhd" tvg-name="HISTORY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/history-channel-it.png" group-title="Documentari" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", HISTORY (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F317837654%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="discoverynovehd" tvg-name="DISCOVERY NOVE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/nove-it.png" group-title="Documentari" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DISCOVERY NOVE (2)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2651461317%2Findex.m3u8
-
-#EXTINF:-1 tvg-id="historyfullhd" tvg-name="HISTORY" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/history-channel-it.png" group-title="Documentari" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", HISTORY (2)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2134724757%2Findex.m3u8
 
 #EXTINF:-1 tvg-id="discoverychannelhd" tvg-name="DISCOVERY CHANNEL" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/discovery-channel-it.png" group-title="Documentari" tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.gzip", DISCOVERY CHANNEL
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F1955739367%2Findex.m3u8
@@ -1234,6 +1234,7 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3656080408%2Findex.m3u8
 
 #EXTM3U
+#EXTINF:-1 tvg-name="NESSUN EVENTO DISPONIBILE" group-title="Eventi", NESSUN EVENTO DISPONIBILE
 #EXTINF:-1 tvg-chno="80" tvg-name="Pluto TV Christmas" tvg-logo="https://images.pluto.tv/channels/612e05b885183d0007958101/colorLogoPNG.png" tvg-id="612e05b885183d0007958101" group-title="Pluto TV Italia" tvg-url="https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml",Pluto TV Christmas
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612e05b885183d0007958101/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 #EXTINF:-1 tvg-chno="85" tvg-name="Pluto TV Fireplace" tvg-logo="https://images.pluto.tv/channels/612ce23f51cce000078eeed5/colorLogoPNG.png" tvg-id="612ce23f51cce000078eeed5" group-title="Pluto TV Italia" tvg-url="https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml",Pluto TV Fireplace
