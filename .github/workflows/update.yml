@@ -2,7 +2,7 @@ name: Esegui def.py ogni ora
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Esegue ogni ora
+    - cron: '0 */4 * * *'  # Esegue ogni 4 ore
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout del repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Scarica tutta la cronologia per evitare problemi con il rebase
 
       - name: Imposta Python
         uses: actions/setup-python@v4
@@ -35,14 +37,18 @@ jobs:
             exit 0  # Esci senza fare commit o push
           fi
 
-      - name: Aggiungi il file generato al commit
+      - name: Configura Git
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+
+      - name: Scarica le ultime modifiche dal repository remoto
+        run: git pull --rebase origin main
+
+      - name: Aggiungi il file generato al commit
+        run: |
           git add .
-          git commit -m "Aggiungi file generato channels_italy"
-        continue-on-error: true  # In caso non ci siano cambiamenti, non fallire
+          git commit -m "Aggiungi file generato channels_italy" || echo "Nessuna modifica da commitare"
 
       - name: Pusha il cambiamento
         run: git push
-        if: success()  # Esegui solo se il commit è riuscito
