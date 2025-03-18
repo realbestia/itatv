@@ -7,7 +7,6 @@ from xml.etree import ElementTree
 m3u8_url = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/itaevents.m3u8"
 xml_url = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/itaevents.xml"
 output_file = "eventi.m3u8"
-url_tvg = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/itaevents.xml"  # Replace this with the actual TVG URL
 
 def scarica_contenuto(url):
     response = requests.get(url)
@@ -33,9 +32,6 @@ def modifica_orario_tvg_name(riga, id_mapping):
         if tvg_id:
             # Modifica solo il tvg-id esistente, senza aggiungerne uno nuovo
             riga = re.sub(r'tvg-id="[^"]+"', f'tvg-id="{tvg_id}"', riga)
-        
-        # Aggiungi tvg-url subito dopo group-title
-        riga = re.sub(r'(group-title="[^"]+")', r'\1 tvg-url="' + url_tvg + '"', riga)
     
     return riga
 
@@ -84,6 +80,14 @@ def pulisci_tvg_name_finale(contenuto):
 
     return "\n".join(righe_pulite)
 
+def aggiungi_canale_fallback(contenuto):
+    if not contenuto.strip():  # Se la lista è vuota, aggiunge il canale "NESSUN EVENTO DISPONIBILE"
+        fallback = (
+            '#EXTINF:-1 tvg-name="NESSUN EVENTO DISPONIBILE" group-title="Eventi", NESSUN EVENTO DISPONIBILE\n'
+        )
+        return fallback
+    return contenuto
+
 def salva_lista(output_file, contenuto):
     contenuto_pulito = pulisci_tvg_name_finale(contenuto)
     with open(output_file, "w", encoding="utf-8") as f:
@@ -96,12 +100,11 @@ def main():
         id_mapping = estrai_tvg_id(xml_content)
 
         canali_filtrati = filtra_canali_eventi_e_italiani(lista_m3u8, id_mapping)
+        canali_filtrati = aggiungi_canale_fallback(canali_filtrati)  # Aggiunta fallback
+
         salva_lista(output_file, canali_filtrati)
 
-        if canali_filtrati:
-            print(f"Lista salvata in {output_file}")
-        else:
-            print(f"Nessun canale trovato. File {output_file} creato vuoto.")
+        print(f"Lista salvata in {output_file}")
     except Exception as e:
         print(f"Errore: {e}")
 
