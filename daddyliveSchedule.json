@@ -1,5 +1,29 @@
 {
     "Wednesday 19th March 2025 - Schedule Time UK GMT": {
+        "PPV Events<\/span>": [
+            {
+                "time": "23:15",
+                "event": "2025 Kubota High Limit Racing at Tulare Thunderbowl Raceway",
+                "channels": [
+                    {
+                        "channel_name": "FloRacing",
+                        "channel_id": "55"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "02:00",
+                "event": "Fusion Fighting Championship : FFC 88:: LLontop vs. Neles",
+                "channels": [
+                    {
+                        "channel_name": "UFC Fight Pass",
+                        "channel_id": "59"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
         "TV Shows<\/span>": [
             {
                 "time": "12:00",
@@ -1179,6 +1203,282 @@
                         "channel_id": "7579698"
                     }
                 ]
+            }
+        ],
+        "Tennis ATP - MIAMI": [
+            {
+                "time": "16:30",
+                "event": "ATP - MIAMI : Comesana F. vs Cina F.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 10",
+                        "channel_id": "1510"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "16:30",
+                "event": "ATP - MIAMI : Schoolkate T. vs Quinn E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 12",
+                        "channel_id": "1512"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "16:30",
+                "event": "ATP - MIAMI : Tseng C. H. vs Bellucci M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "17:30",
+                "event": "ATP - MIAMI : Monfils G. vs Marozsan F.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - MIAMI : Blockx A. vs Moutet C.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - MIAMI : O'Connell C. vs Carballes Baena R.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 10",
+                        "channel_id": "1510"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - MIAMI : Ugo Carabelli C. vs Holt B.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 12",
+                        "channel_id": "1512"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "19:00",
+                "event": "ATP - MIAMI : McDonald M. vs Kyrgios N.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "19:30",
+                "event": "ATP - MIAMI : Kovacevic A. vs Kecmanovic M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 6",
+                        "channel_id": "1506"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "19:30",
+                "event": "ATP - MIAMI : Muller A. vs Sakamoto R.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "21:00",
+                "event": "ATP - MIAMI : Rinderknech A. vs Munar J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 6",
+                        "channel_id": "1506"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "23:00",
+                "event": "ATP - MIAMI : Spizzirri E. vs Harris B.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "00:30",
+                "event": "ATP - MIAMI : Seyboth Wild T. vs Halys Q.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ],
+                "channels2": []
+            }
+        ],
+        "Tennis WTA - MIAMI": [
+            {
+                "time": "16:30",
+                "event": "WTA - MIAMI : Andreeva E. vs Avanesyan E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 11",
+                        "channel_id": "1511"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "16:30",
+                "event": "WTA - MIAMI : Garcia C. vs Bondar A.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 9",
+                        "channel_id": "1509"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "16:30",
+                "event": "WTA - MIAMI : Kessler M. vs Bouzkova M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "16:30",
+                "event": "WTA - MIAMI : Tomljanovic A. vs Pera B.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 5",
+                        "channel_id": "1505"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "WTA - MIAMI : Boulter K. vs Stearns P.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "WTA - MIAMI : Eala A. vs Volynets K.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 5",
+                        "channel_id": "1505"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "WTA - MIAMI : Grant T. C. vs Grabher J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 9",
+                        "channel_id": "1509"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "18:00",
+                "event": "WTA - MIAMI : Lamens S. vs Uchijima M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 11",
+                        "channel_id": "1511"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "19:30",
+                "event": "WTA - MIAMI : Yastremska D. vs Bencic B.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "21:00",
+                "event": "WTA - MIAMI : Sherif M. vs Sun L.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ],
+                "channels2": []
+            },
+            {
+                "time": "23:00",
+                "event": "WTA - MIAMI : Kalinina A. vs Azarenka V.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ],
+                "channels2": []
             }
         ],
         "Tennis": [
@@ -4068,40 +4368,44 @@
             {
                 "time": "01:30",
                 "event": "NHL : Seattle Kraken vs Minnesota Wild",
-                "channels": {
-                    "0": {
+                "channels": [
+                    {
                         "channel_name": "Home Feed",
                         "channel_id": "3"
                     },
-                    "1": {
+                    {
                         "channel_name": "Away Feed",
                         "channel_id": "4"
                     },
-                    "2": {
+                    {
                         "channel_name": "TNT USA",
                         "channel_id": "338"
                     },
-                    "3": {
+                    {
                         "channel_name": "Viaplay Sports 1 UK",
                         "channel_id": "451"
                     },
-                    "5": {
+                    {
+                        "channel_name": "Sportsnet 360",
+                        "channel_id": "409"
+                    },
+                    {
                         "channel_name": "TVA Sports",
                         "channel_id": "833"
                     },
-                    "6": {
+                    {
                         "channel_name": "Sky Sport Mix DE",
                         "channel_id": "557"
                     },
-                    "7": {
+                    {
                         "channel_name": "Sky Sport Top Event DE",
                         "channel_id": "556"
                     },
-                    "8": {
+                    {
                         "channel_name": "Sport 5 Stars Israel",
                         "channel_id": "147"
                     }
-                },
+                ],
                 "channels2": [
                     {
                         "channel_name": "SD-7520531",
