@@ -32,7 +32,6 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/realbestia/itatv.git
           git add .
           git status
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update schedule data [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update schedule data [skip ci]" && git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git)
