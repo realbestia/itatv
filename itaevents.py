@@ -17,7 +17,7 @@ EPG_OUTPUT_FILE = "itaevents.xml"
 LOGO = "https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png"
 
 # Define keywords for filtering channels
-EVENT_KEYWORDS = ["uefa nations league", "italy", "formula uno", "f1", "motogp", "moto gp", "serie a", "serie b", "serie c", "uefa champions", "uefa europa",
+EVENT_KEYWORDS = ["friendly", "uefa nations league", "italy", "formula uno", "f1", "motogp", "moto gp", "serie a", "serie b", "serie c", "uefa champions", "uefa europa",
                  "conference league", "coppa italia"]
 
 mStartTime = 0
