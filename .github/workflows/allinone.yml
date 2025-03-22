@@ -27,13 +27,35 @@ jobs:
       - name: Esegui lo script
         run: python allinone.py
 
-      - name: Aggiungi il file generato al commit
+      - name: Verifica se combined_playlist.m3u8 è stato generato
+        run: |
+          if [ -f "combined_playlist.m3u8" ]; then
+            echo "Il file combined_playlist.m3u8 è stato generato."
+          else
+            echo "Il file combined_playlist.m3u8 non esiste. Esco."
+            exit 0  # Esci senza fare commit o push
+          fi
+
+      - name: Configura Git
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+
+      - name: Stash delle modifiche locali (se presenti)
+        run: |
+          git diff --quiet || git stash
+
+      - name: Scarica le ultime modifiche dal repository remoto
+        run: git pull --rebase origin main
+
+      - name: Ripristina le modifiche stashed (se presenti)
+        run: |
+          git stash list | grep -q "stash@{0}" && git stash pop || echo "Nessuna modifica da ripristinare"
+
+      - name: Aggiungi il file generato al commit
+        run: |
           git add .
-        continue-on-error: true  # In caso non ci siano cambiamenti, non fallire
+          git commit -m "Aggiungi file generato channels_italy" || echo "Nessuna modifica da commitare"
 
       - name: Pusha il cambiamento
         run: git push
-        if: success()  # Esegui solo se il commit è riuscito
