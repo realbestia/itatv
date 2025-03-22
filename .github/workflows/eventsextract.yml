@@ -1,52 +1,54 @@
-name: Extract Schedule Data
+
+name: Esegui eventsextract.py ogni 3 ore
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Esegui ogni 3 ore
-  workflow_dispatch:  # Permette di eseguire manualmente il flusso di lavoro
+    - cron: '45 */3 * * *'  # Esegue ogni ora
+  workflow_dispatch:  # Permette di eseguire manualmente
+
+permissions:
+  contents: write  # Permette di fare commit e push nel repository
 
 jobs:
-  extract_schedule:
+  run-script:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout del repository
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
+      - name: Imposta Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'  # Sostituisci con la versione necessaria
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install playwright beautifulsoup4
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright beautifulsoup4
 
-    - name: Install Playwright dependencies
-      run: |
-        python -m playwright install
+      - name: Install Playwright dependencies
+        run: |
+          python -m playwright install
 
-    - name: Run script
-      run: python eventsextract.py
+      - name: Esegui lo script
+        run: python eventsextract.py
 
-    - name: Commit and push JSON file (if any)
-      run: |
-        # Aggiungi il file JSON al controllo di versione
-        git add daddyliveSchedule.json
-        
-        # Verifica se ci sono modifiche per il commit
-        if git diff --cached --exit-code; then
-          echo "No changes to commit."
-        else
-          # Crea un commit con il file JSON
-          git commit -m "Update schedule data"
-          
-          # Imposta il nome e l'email per il commit (GitHub Actions usa un'email predefinita)
+      - name: Verifica se daddyliveSchedule.json è stato generato
+        run: |
+          if [ -f "daddyliveSchedule.json" ]; then
+            echo "Il file daddyliveSchedule.json è stato generato."
+          else
+            echo "Il file daddyliveSchedule.json non esiste. Esco."
+            exit 0  # Esci senza fare commit o push
+          fi
+
+      - name: Aggiungi il file generato al commit
+        run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
-          # Spingi le modifiche nel repository
-          git push
-        fi
-      # Se il file JSON non è stato modificato, non farà nulla
+          git add .
+        continue-on-error: true  # In caso non ci siano cambiamenti, non fallire
+
+      - name: Pusha il cambiamento
+        run: git push
+        if: success()  # Esegui solo se il commit è riuscito
