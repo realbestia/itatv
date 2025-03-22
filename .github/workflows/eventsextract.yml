@@ -1,54 +1,39 @@
-
-name: Esegui eventsextract.py ogni 3 ore
+name: Extract Schedule Data
 
 on:
   schedule:
-    - cron: '45 */3 * * *'  # Esegue ogni ora
-  workflow_dispatch:  # Permette di eseguire manualmente
-
-permissions:
-  contents: write  # Permette di fare commit e push nel repository
+    - cron: '45 */3 * * *'  # Esegui ogni 3 ore
+  workflow_dispatch:  # Consente l'esecuzione manuale
 
 jobs:
-  run-script:
+  extract-data:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout del repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Imposta Python
+      
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'  # Sostituisci con la versione necessaria
-
+          python-version: '3.10'
+      
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install playwright beautifulsoup4
-
-      - name: Install Playwright dependencies
+          pip install playwright
+          pip install bs4
+          playwright install chromium
+      
+      - name: Run extraction script
+        run: python extract_schedule.py
+      
+      - name: Commit and push if changes
         run: |
-          python -m playwright install
-
-      - name: Esegui lo script
-        run: python eventsextract.py
-
-      - name: Verifica se daddyliveSchedule.json è stato generato
-        run: |
-          if [ -f "daddyliveSchedule.json" ]; then
-            echo "Il file daddyliveSchedule.json è stato generato."
-          else
-            echo "Il file daddyliveSchedule.json non esiste. Esco."
-            exit 0  # Esci senza fare commit o push
-          fi
-
-      - name: Aggiungi il file generato al commit
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add daddyliveSchedule.json
-        continue-on-error: true  # In caso non ci siano cambiamenti, non fallire
-
-      - name: Pusha il cambiamento
-        run: git push
-        if: success()  # Esegui solo se il commit è riuscito
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          # Add both HTML and JSON files
+          git add main_schedule_container.html daddyliveSchedule.json
+          # Ignore screenshot files
+          git status
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update schedule data [skip ci]" && git push)
