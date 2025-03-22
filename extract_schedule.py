@@ -31,7 +31,7 @@ def html_to_json(html_content):
         
         # If it's a category row, set the current category
         elif 'category-row' in row.get('class', []) and current_date:
-            current_category = row.find('strong').text.strip() + "</span>"
+            current_category = row.find('strong').text.strip()
             result[current_date][current_category] = []
         
         # If it's an event row and we have both date and category
