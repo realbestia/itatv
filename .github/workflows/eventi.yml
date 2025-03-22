@@ -22,7 +22,7 @@ jobs:
           python-version: '3.x'  # Sostituisci con la versione necessaria
 
       - name: Installa le dipendenze
-        run: pip install requests
+        run: pip install requests beautifulsoup4 lxml
 
       - name: Esegui lo script
         run: python eventi.py
