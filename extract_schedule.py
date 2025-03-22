@@ -1,4 +1,6 @@
+
 from playwright.sync_api import sync_playwright
+import time
 import os
 import json
 from datetime import datetime
@@ -72,10 +74,8 @@ def html_to_json(html_content):
 
 def extract_schedule_container():
     url = "https://daddylive.mp/"
-    
-    # Get the script's directory to save the JSON file there
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    json_output = os.path.join(script_dir, "daddyliveSchedule.json")
+    html_output = "main_schedule_container.html"
+    json_output = "daddyliveSchedule.json"
 
     print(f"Accesso alla pagina {url} per estrarre il main-schedule-container...")
 
@@ -110,15 +110,24 @@ def extract_schedule_container():
                 print("AVVISO: main-schedule-container trovato ma è vuoto o non presente!")
                 return False
 
+            # Salva l'HTML
+            with open(html_output, "w", encoding="utf-8") as f:
+                f.write(schedule_content)
+
+            print(f"Contenuto HTML salvato in {html_output} ({len(schedule_content)} caratteri)")
+
             # Converti HTML in JSON
             print("Conversione HTML in formato JSON...")
             json_data = html_to_json(schedule_content)
 
-            # Salva i dati JSON nella stessa cartella dello script
+            # Salva i dati JSON
             with open(json_output, "w", encoding="utf-8") as f:
                 json.dump(json_data, f, indent=4)
 
             print(f"Dati JSON salvati in {json_output}")
+
+            # Cattura screenshot per debug
+            page.screenshot(path="schedule_screenshot.png")
 
             # Chiudi il browser
             browser.close()
@@ -127,6 +136,12 @@ def extract_schedule_container():
 
         except Exception as e:
             print(f"ERRORE: {str(e)}")
+            # Cattura uno screenshot in caso di errore per debug
+            try:
+                page.screenshot(path="error_screenshot.png")
+                print("Screenshot dell'errore salvato in error_screenshot.png")
+            except:
+                pass
             return False
 
 if __name__ == "__main__":
