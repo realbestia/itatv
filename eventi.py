@@ -90,6 +90,9 @@ def generate_m3u8_from_json(json_data):
 
         for category, events in categories.items():
             category_name = clean_text(category)
+
+            # Ensure the category name is properly surrounded by '-----'
+            print(f"Category: ----- {category_name} -----")  # Debugging print statement
             m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi\", ----- {category_name} -----\n"
             m3u8_content += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
 
