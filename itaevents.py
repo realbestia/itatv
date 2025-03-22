@@ -170,7 +170,7 @@ def get_stream_link(dlhd_id, max_retries=3):
     return None  # If we get here, all retries failed
 
 # Rimuove i file esistenti per garantirne la rigenerazione
-for file in [M3U8_OUTPUT_FILE, EPG_OUTPUT_FILE, DADDY_JSON_FILE, daddyLiveChannelsFileName]: # daddyLiveChannelsFileName kept for file removal consistency, but not used
+for file in [M3U8_OUTPUT_FILE, EPG_OUTPUT_FILE, daddyLiveChannelsFileName]: # daddyLiveChannelsFileName kept for file removal consistency, but not used
     if os.path.exists(file):
         os.remove(file)
 
