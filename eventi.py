@@ -171,7 +171,7 @@ json_data = load_json("daddyliveSchedule.json")
 m3u8_content = generate_m3u8_from_json(json_data)
 
 # Scrivi il contenuto M3U8 su un file
-with open("output.m3u8", "w", encoding="utf-8") as file:
+with open("eventi.m3u8", "w", encoding="utf-8") as file:
     file.write(m3u8_content)
 
 print("Generazione completata!")
