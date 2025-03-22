@@ -497,7 +497,7 @@ total_schedule_channels = 0 # Counter for total schedule channels attempted
 total_247_channels = 0 # Counter for total 24/7 channels attempted - will remain 0
 
 # Scarica il file JSON con la programmazione
-fetcher.fetchHTML(DADDY_JSON_FILE, "https://daddylive.mp/schedule/schedule-generated.json")
+#fetcher.fetchHTML(DADDY_JSON_FILE, "https://daddylive.mp/schedule/schedule-generated.json")
 
 # Carica i dati dal JSON
 dadjson = loadJSON(DADDY_JSON_FILE)
