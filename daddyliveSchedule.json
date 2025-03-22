@@ -1,5 +1,87 @@
 {
     "Saturday 22nd March 2025 - Schedule Time UK GMT": {
+        "PPV Events</span>": [
+            {
+                "time": "15:00",
+                "event": "2025 ADCC San Jose Open",
+                "channels": [
+                    {
+                        "channel_name": "Flotv",
+                        "channel_id": "178"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "MMA Bushido",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "179"
+                    }
+                ]
+            },
+            {
+                "time": "17:30",
+                "event": "AMA Supercross Championship Birmingham",
+                "channels": [
+                    {
+                        "channel_name": "Peacock",
+                        "channel_id": "180"
+                    }
+                ]
+            },
+            {
+                "time": "17:30",
+                "event": "2025 SMART Modified Tour King of the Modifieds at South Boston Speedway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "181"
+                    }
+                ]
+            },
+            {
+                "time": "18:00",
+                "event": "wXw: We Love Wrestling 66",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "182"
+                    }
+                ]
+            },
+            {
+                "time": "18:00",
+                "event": "2025 Short Track Super Series at Bridgeport Motorsports Park",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "183"
+                    }
+                ]
+            },
+            {
+                "time": "19:00",
+                "event": "The Arena Superfights",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "184"
+                    }
+                ]
+            },
+            {
+                "time": "19:00",
+                "event": "King of Kings : KOK World Series",
+                "channels": [
+                    {
+                        "channel_name": "DAZN PPV",
+                        "channel_id": "185"
+                    }
+                ]
+            }
+        ],
         "TV Shows</span>": [
             {
                 "time": "12:00",
@@ -2304,6 +2386,105 @@
                         "channel_id": "368"
                     }
                 ]
+            }
+        ],
+        "Tennis ATP - MIAMI</span>": [
+            {
+                "time": "16:30",
+                "event": "ATP - MIAMI : Arnaldi M. vs Machac T.",
+                "channels": []
+            },
+            {
+                "time": "16:30",
+                "event": "ATP - MIAMI : Fritz T. vs Sonego L.",
+                "channels": []
+            },
+            {
+                "time": "16:30",
+                "event": "ATP - MIAMI : Thompson J. vs Mpetshi Perricard G.",
+                "channels": []
+            },
+            {
+                "time": "16:30",
+                "event": "ATP - MIAMI : Tirante T. A. vs Shapovalov D.",
+                "channels": []
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - MIAMI : Mensik J. vs Draper J.",
+                "channels": []
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - MIAMI : Popyrin A. vs Safiullin R.",
+                "channels": []
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - MIAMI : Rune H. vs Opelka R.",
+                "channels": []
+            },
+            {
+                "time": "19:30",
+                "event": "ATP - MIAMI : Bergs Z. vs Rublev A.",
+                "channels": []
+            },
+            {
+                "time": "19:30",
+                "event": "ATP - MIAMI : Berrettini M. vs Gaston H.",
+                "channels": []
+            },
+            {
+                "time": "19:30",
+                "event": "ATP - MIAMI : Fonseca J. vs Humbert U.",
+                "channels": []
+            },
+            {
+                "time": "21:00",
+                "event": "ATP - MIAMI : De Minaur A. vs Bu Y.",
+                "channels": []
+            },
+            {
+                "time": "21:00",
+                "event": "ATP - MIAMI : Fils A. vs Diallo G.",
+                "channels": []
+            },
+            {
+                "time": "23:00",
+                "event": "ATP - MIAMI : Davidovich Fokina A. vs Tiafoe F.",
+                "channels": []
+            }
+        ],
+        "Tennis WTA - MIAMI</span>": [
+            {
+                "time": "16:30",
+                "event": "WTA - MIAMI : Baptiste H. vs Osaka N.",
+                "channels": []
+            },
+            {
+                "time": "17:30",
+                "event": "WTA - MIAMI : Sabalenka A. vs Ruse G.",
+                "channels": []
+            },
+            {
+                "time": "18:00",
+                "event": "WTA - MIAMI : Linette M. vs Fruhvirtova L.",
+                "channels": []
+            },
+            {
+                "time": "18:00",
+                "event": "WTA - MIAMI : Gauff C. vs Sakkari M.",
+                "channels": []
+            },
+            {
+                "time": "23:00",
+                "event": "WTA - MIAMI : Masarova R. vs Collins D.",
+                "channels": []
+            },
+            {
+                "time": "00:30",
+                "event": "WTA - MIAMI : Zheng Q. vs Townsend T.",
+                "channels": []
             }
         ],
         "Tennis</span>": [
