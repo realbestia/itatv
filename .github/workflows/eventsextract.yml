@@ -2,7 +2,7 @@ name: Extract Schedule Data
 
 on:
   schedule:
-    - cron: '45 */3 * * *'  # Esegui ogni 3 ore
+    - cron: '0 */3 * * *'  # Esegui ogni 3 ore
   workflow_dispatch:  # Permette di eseguire manualmente il flusso di lavoro
 
 jobs:
@@ -32,7 +32,21 @@ jobs:
 
     - name: Commit and push JSON file (if any)
       run: |
+        # Aggiungi il file JSON al controllo di versione
         git add daddyliveSchedule.json
-        git commit -m "Update schedule data"
-        git push
-      if: success() && steps.run-script.outputs.json-file-modified == 'true'
+        
+        # Verifica se ci sono modifiche per il commit
+        if git diff --cached --exit-code; then
+          echo "No changes to commit."
+        else
+          # Crea un commit con il file JSON
+          git commit -m "Update schedule data"
+          
+          # Imposta il nome e l'email per il commit (GitHub Actions usa un'email predefinita)
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          # Spingi le modifiche nel repository
+          git push
+        fi
+      # Se il file JSON non è stato modificato, non farà nulla
