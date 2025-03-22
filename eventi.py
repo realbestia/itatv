@@ -90,7 +90,7 @@ def generate_m3u8_from_json(json_data):
 
         for category, events in categories.items():
             category_name = clean_text(category)
-            m3u8_content += f"#EXTINF:-1 tvg-id=\"{category_name}\" tvg-name=\"{category_name}\" group-title=\"Eventi\", {category_name}\n"
+            m3u8_content += f"#EXTINF:-1 tvg-name=\"-----{category_name}-----\" group-title=\"Eventi\", -----{category_name}-----\n"
             m3u8_content += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
 
             for event_info in events:
@@ -168,7 +168,7 @@ json_data = load_json("daddyliveSchedule.json")
 m3u8_content = generate_m3u8_from_json(json_data)
 
 # Scrivi il contenuto M3U8 su un file
-with open("eventi.m3u8", "w", encoding="utf-8") as file:
+with open("output.m3u8", "w", encoding="utf-8") as file:
     file.write(m3u8_content)
 
 print("Generazione completata!")
