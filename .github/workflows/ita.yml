@@ -1,4 +1,4 @@
-name: Esegui def.py ogni ora
+name: Esegui ita.py ogni 4 ore
 
 on:
   schedule:
@@ -26,7 +26,7 @@ jobs:
         run: pip install requests rapidfuzz fuzzywuzzy python-Levenshtein beautifulsoup4 lxml
 
       - name: Esegui lo script
-        run: python def.py
+        run: python ita.py
 
       - name: Verifica se channels_italy.m3u8 è stato generato
         run: |
