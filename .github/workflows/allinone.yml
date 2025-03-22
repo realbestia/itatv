@@ -27,15 +27,6 @@ jobs:
       - name: Esegui lo script
         run: python allinone.py
 
-      - name: Verifica se combined_playlist.m3u8 è stato generato
-        run: |
-          if [ -f "combined_playlist.m3u8" ]; then
-            echo "Il file combined_playlist.m3u8 è stato generato."
-          else
-            echo "Il file combined_playlist.m3u8 non esiste. Esco."
-            exit 0  # Esci senza fare commit o push
-          fi
-
       - name: Aggiungi il file generato al commit
         run: |
           git config --global user.name "GitHub Actions"
