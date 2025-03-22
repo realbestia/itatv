@@ -120,7 +120,7 @@ def generate_m3u8_from_json(json_data):
                             tvg_name = f"{event} - {formatted_date} {new_time}"
 
                         tvg_name = clean_text(tvg_name)
-                        m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\", {tvg_name}\n"
+                        m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
                         m3u8_content += f"{stream_url}\n"
                     else:
                         print(f"Errore: Link M3U8 non trovato per il canale {channel_id}.")
