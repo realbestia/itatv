@@ -4,7 +4,7 @@ import time
 import json
 import re
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Headers per le richieste HTTP
 headers = { 
@@ -69,7 +69,7 @@ def generate_m3u8_from_json(json_data):
             continue
 
         if event_date < current_datetime.date():
-            continue  # Esclude eventi passati
+            continue  # Esclude eventi di giorni passati
 
         for category, events in categories.items():
             category_name = clean_text(category)
@@ -86,8 +86,9 @@ def generate_m3u8_from_json(json_data):
                 except ValueError:
                     continue
 
-                if event_datetime < current_datetime:
-                    continue  # Esclude eventi passati
+                # Se l'evento è passato da più di 2 ore, lo esclude
+                if event_datetime < current_datetime - timedelta(hours=2):
+                    continue  
 
                 valid_channels = []
                 for channel in event_info["channels"]:
