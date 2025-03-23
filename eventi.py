@@ -55,10 +55,12 @@ def get_stream_link(channel_id, max_retries=3):
 
     return None
 
-# Funzione per filtrare solo i canali italiani
+# Funzione per filtrare solo i canali italiani (aggiunta attenzione sui nomi dei canali)
 def is_italian_channel(channel_name):
-    italian_keywords = ['italy', 'rai', 'italia', 'it']
+    italian_keywords = ['italy', 'rai', 'italia', 'it']  # Keywords per il filtro
     channel_name = channel_name.lower()
+    
+    # Verifica se uno dei termini italiani è nel nome del canale
     return any(keyword in channel_name for keyword in italian_keywords)
 
 # Funzione per generare il file M3U8
@@ -100,6 +102,7 @@ def generate_m3u8(json_data):
                     channel_name = clean_text(channel["channel_name"])
                     channel_id = channel["channel_id"]
 
+                    # Verifica se il canale è italiano
                     if is_italian_channel(channel_name):
                         stream_url = get_stream_link(channel_id)
 
@@ -159,6 +162,7 @@ def generate_epg(json_data):
                     channel_id = channel["channel_id"]
                     channel_name = clean_text(channel["channel_name"])
 
+                    # Verifica se il canale è italiano
                     if is_italian_channel(channel_name):
                         channel_set.add((channel_id, channel_name))
 
@@ -167,7 +171,7 @@ def generate_epg(json_data):
 
                         epg_content += f'<programme start="{start_time_for_description}" stop="{start_time_for_description}" channel="{channel_id}">\n'
                         epg_content += f'  <title>{event_name} inizia alle {event_datetime.strftime("%H:%M")}</title>\n'
-                        epg_content += f'  <desc>Preparati per l\'evento: {event_name}. L\'evento inizierà alle {event_datetime.strftime("%H:%M")} su {channel_name} o su questo Canale.</desc>\n'
+                        epg_content += f'  <desc>Preparati per l\'evento: {event_name}. L\'evento inizierà alle {event_datetime.strftime("%H:%M")} su {channel_name}.</desc>\n'
                         epg_content += '</programme>\n'
 
                         start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0000"
@@ -175,7 +179,7 @@ def generate_epg(json_data):
 
                         epg_content += f'<programme start="{start_time}" stop="{end_time}" channel="{channel_id}">\n'
                         epg_content += f'  <title>{event_name}</title>\n'
-                        epg_content += f'  <desc>Evento live: {event_name}. Segui l\'azione in diretta su {channel_name} o su questo Canale.</desc>\n'
+                        epg_content += f'  <desc>Evento live: {event_name}. Segui l\'azione in diretta su {channel_name}.</desc>\n'
                         epg_content += '</programme>\n'
 
     epg_content += '</tv>\n'
