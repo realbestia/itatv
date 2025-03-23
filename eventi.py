@@ -4,9 +4,9 @@ import time
 import json
 import re
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 
-# Headers e variabili globali
+# Headers per le richieste HTTP
 headers = { 
     "Accept": "*/*",
     "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6,ru;q=0.5",
@@ -16,7 +16,7 @@ headers = {
 client = requests
 channel_cache = {}
 
-# Funzione per rimuovere i tag HTML
+# Funzione per pulire il testo rimuovendo tag HTML
 def clean_text(text):
     return re.sub(r'</?span.*?>', '', text)
 
@@ -47,7 +47,7 @@ def get_stream_link(channel_id, max_retries=3):
                     server_key = server_key_data['server_key']
                     stream_url = f"https://{server_key}new.iosplayer.ru/{server_key}/premium{channel_id}/mono.m3u8"
 
-                    channel_cache[channel_id] = stream_url  # Memorizza il link nella cache
+                    channel_cache[channel_id] = stream_url  # Salva nella cache
                     return stream_url
 
         except requests.exceptions.RequestException:
@@ -55,7 +55,7 @@ def get_stream_link(channel_id, max_retries=3):
 
     return None  # Se tutte le prove falliscono
 
-# Funzione per creare un file M3U8 dal JSON
+# Funzione per generare il file M3U8
 def generate_m3u8_from_json(json_data):
     m3u8_content = "#EXTM3U\n"
     current_datetime = datetime.now()
@@ -69,7 +69,7 @@ def generate_m3u8_from_json(json_data):
             continue
 
         if event_date < current_datetime.date():
-            continue  # Esclude gli eventi passati
+            continue  # Esclude eventi passati
 
         for category, events in categories.items():
             category_name = clean_text(category)
@@ -103,7 +103,7 @@ def generate_m3u8_from_json(json_data):
 
     return m3u8_content
 
-# Funzione per caricare e filtrare il JSON
+# Funzione per caricare e filtrare il JSON (solo canali italiani)
 def load_json(json_file):
     with open(json_file, "r", encoding="utf-8") as file:
         json_data = json.load(file)
@@ -116,8 +116,9 @@ def load_json(json_file):
             filtered_events = []
 
             for event_info in events:
-                filtered_channels = [channel for channel in event_info["channels"] if any(
-                    term.lower() in channel["channel_name"].lower() for term in ["italy", "it", "italia", "rai"]
+                filtered_channels = [channel for channel in event_info["channels"] if re.search(
+                    r'\b(italy|italia|rai|mediaset|sky sport|dazn|tv8|tivusat|sportitalia|elevensports|it)\b', 
+                    channel["channel_name"], re.IGNORECASE
                 )]
 
                 if filtered_channels:
@@ -131,14 +132,14 @@ def load_json(json_file):
 
     return filtered_data
 
-# Carica il file JSON, filtra i canali e visualizza le categorie
+# Carica il JSON e filtra i canali italiani
 json_data = load_json("daddyliveSchedule.json")
 
 # Genera il file M3U8
 m3u8_content = generate_m3u8_from_json(json_data)
 
-# Scrivi il contenuto M3U8 su un file
+# Salva il file M3U8
 with open("eventi.m3u8", "w", encoding="utf-8") as file:
     file.write(m3u8_content)
 
-print("Generazione completata!")
+print("✅ Generazione completata! Il file 'eventi.m3u8' è pronto.")
