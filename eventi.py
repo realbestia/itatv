@@ -138,10 +138,14 @@ def load_json(json_file):
             filtered_events = []
 
             for event_info in events:
-                filtered_channels = [channel for channel in event_info["channels"] if re.search(
-                    r'\b(italy|italia|rai|mediaset|sky sport|dazn|tv8|tivusat|sportitalia|elevensports|it)\b', 
-                    channel["channel_name"], re.IGNORECASE
-                )]
+                filtered_channels = []
+
+                for channel in event_info["channels"]:
+                    channel_name = clean_text(channel["channel_name"])
+
+                    # Filtro per "Italy", "Rai", "Italia", "IT"
+                    if re.search(r'\b(italy|rai|italia|it)\b', channel_name, re.IGNORECASE):
+                        filtered_channels.append(channel)
 
                 if filtered_channels:
                     filtered_events.append({**event_info, "channels": filtered_channels})
