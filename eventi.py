@@ -14,7 +14,7 @@ headers = {
 }
 
 client = requests
-channel_cache = {}  # Cache per memorizzare i link M3U8 dei canali
+channel_cache = {}
 
 # Funzione per rimuovere i tag HTML
 def clean_text(text):
@@ -59,7 +59,6 @@ def get_stream_link(channel_id, max_retries=3):
 def generate_m3u8_from_json(json_data):
     m3u8_content = "#EXTM3U\n"
     current_datetime = datetime.now()
-    tomorrow_date = (current_datetime + timedelta(days=1)).date()
 
     for date, categories in json_data.items():
         try:
@@ -96,14 +95,9 @@ def generate_m3u8_from_json(json_data):
                     stream_url = get_stream_link(channel_id)
 
                     if stream_url:
-                        if event_date == current_datetime.date():
-                            tvg_name = f"{event_name} ALLE {event_time.strftime('%H:%M')}"
-                        elif event_date == tomorrow_date:
-                            tvg_name = f"DOMANI ALLE {event_time.strftime('%H:%M')}"
-                        else:
-                            tvg_name = f"{event_name} - {event_date.strftime('%d/%m/%Y')} {event_time.strftime('%H:%M')}"
-
+                        tvg_name = f"{event_name} - {event_date.strftime('%d/%m/%Y')} {event_time.strftime('%H:%M')}"
                         tvg_name = clean_text(tvg_name)
+
                         m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
                         m3u8_content += f"{stream_url}\n"
 
