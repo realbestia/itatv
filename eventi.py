@@ -73,9 +73,9 @@ def generate_m3u8_from_json(json_data):
 
         for category, events in categories.items():
             category_name = clean_text(category)
-            m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi\", ----- {category_name} -----\n"
-            m3u8_content += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
 
+            # Filtra solo gli eventi con almeno un canale disponibile
+            valid_events = []
             for event_info in events:
                 time_str = event_info["time"]
                 event_name = event_info["event"]
@@ -89,17 +89,39 @@ def generate_m3u8_from_json(json_data):
                 if event_datetime < current_datetime:
                     continue  # Esclude eventi passati
 
+                valid_channels = []
                 for channel in event_info["channels"]:
                     channel_name = clean_text(channel["channel_name"])
                     channel_id = channel["channel_id"]
                     stream_url = get_stream_link(channel_id)
 
                     if stream_url:
-                        tvg_name = f"{event_name} - {event_date.strftime('%d/%m/%Y')} {event_time.strftime('%H:%M')}"
-                        tvg_name = clean_text(tvg_name)
+                        valid_channels.append({
+                            "channel_id": channel_id,
+                            "channel_name": channel_name,
+                            "stream_url": stream_url
+                        })
 
-                        m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
-                        m3u8_content += f"{stream_url}\n"
+                if valid_channels:
+                    valid_events.append({
+                        "event_name": event_name,
+                        "event_date": event_date,
+                        "event_time": event_time,
+                        "channels": valid_channels
+                    })
+
+            # Aggiunge la categoria solo se ha eventi con canali validi
+            if valid_events:
+                m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi\", ----- {category_name} -----\n"
+                m3u8_content += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
+
+                for event in valid_events:
+                    tvg_name = f"{event['event_name']} - {event['event_date'].strftime('%d/%m/%Y')} {event['event_time'].strftime('%H:%M')}"
+                    tvg_name = clean_text(tvg_name)
+
+                    for channel in event["channels"]:
+                        m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel['channel_id']}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
+                        m3u8_content += f"{channel['stream_url']}\n"
 
     return m3u8_content
 
