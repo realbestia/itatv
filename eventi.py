@@ -103,7 +103,7 @@ def generate_m3u8_from_json(json_data):
                         tvg_name = f"{event_name} - {event_date.strftime('%d/%m/%Y')} {event_time.strftime('%H:%M')}"
                         tvg_name = clean_text(tvg_name)
 
-                        event_blocks += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
+                        event_blocks += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\" tvg-url=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml\", {tvg_name}\n"
                         event_blocks += f"{stream_url}\n"
                         category_has_channels = True
 
