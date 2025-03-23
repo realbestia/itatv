@@ -160,7 +160,7 @@ def generate_epg(json_data):
                     # Ora aggiungi l'evento vero e proprio
                     start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0000"
                     end_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0000"
-                    description = f"Evento live: {event_name}. Segui l'azione in diretta su {channel_name}."
+                    description = f"Evento live: {event_name}. Segui l'azione in diretta su {channel_name} o su questo Canale."
 
                     epg_content += f'<programme start="{start_time}" stop="{end_time}" channel="{channel_id}">\n'
                     epg_content += f'  <title>{event_name}</title>\n'
