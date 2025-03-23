@@ -103,7 +103,7 @@ def generate_m3u8_from_json(json_data):
                         tvg_name = f"{event_name} - {event_date.strftime('%d/%m/%Y')} {event_time.strftime('%H:%M')}"
                         tvg_name = clean_text(tvg_name)
 
-                        event_blocks += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\" tvg-url=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml\", {tvg_name}\n"
+                        event_blocks += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
                         event_blocks += f"{stream_url}\n"
                         category_has_channels = True
 
@@ -148,9 +148,18 @@ def generate_epg(json_data):
                     channel_name = clean_text(channel["channel_name"])
                     channel_set.add((channel_id, channel_name))
 
+                    # Descrizione prima dell'inizio dell'evento
+                    # Inizia a mezzanotte del giorno dell'evento
+                    midnight_time = datetime.combine(event_date, datetime.min.time())
+                    start_time_for_description = midnight_time.strftime("%Y%m%d%H%M%S") + " +0000"
+                    epg_content += f'<programme start="{start_time_for_description}" stop="{start_time_for_description}" channel="{channel_id}">\n'
+                    epg_content += f'  <title>{event_name} inizia alle {event_datetime.strftime("%H:%M")}</title>\n'
+                    epg_content += f'  <desc>Preparati per l\'evento: {event_name}. L\'evento inizierà alle {event_datetime.strftime("%H:%M")} su {channel_name} o su questo Canale.</desc>\n'
+                    epg_content += '</programme>\n'
+
+                    # Ora aggiungi l'evento vero e proprio
                     start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0000"
                     end_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0000"
-
                     description = f"Evento live: {event_name}. Segui l'azione in diretta su {channel_name}."
 
                     epg_content += f'<programme start="{start_time}" stop="{end_time}" channel="{channel_id}">\n'
