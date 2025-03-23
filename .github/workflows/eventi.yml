@@ -35,15 +35,6 @@ jobs:
             exit 0  # Esci senza fare commit o push
           fi
 
-      - name: Verifica se eventi.xml è stato generato
-        run: |
-          if [ -f "eventi.xml" ]; then
-            echo "Il file eventi.xml è stato generato."
-          else
-            echo "Il file eventi.xml non esiste. Esco."
-            exit 0  # Esci senza fare commit o push
-          fi
-
       - name: Configura Git
         run: |
           git config --global user.name "GitHub Actions"
