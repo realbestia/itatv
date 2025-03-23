@@ -1,60 +1,3 @@
-import requests
-import random
-import time
-import json
-import re
-from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-
-# Headers per le richieste HTTP
-headers = {
-    "Accept": "*/*",
-    "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-}
-
-client = requests
-channel_cache = {}
-
-# Funzione per pulire il testo dai tag HTML
-def clean_text(text):
-    return re.sub(r'</?span.*?>', '', text)
-
-# Funzione per ottenere il link M3U8 per un canale
-def get_stream_link(channel_id, max_retries=3):
-    if channel_id in channel_cache:
-        return channel_cache[channel_id]
-
-    for attempt in range(max_retries):
-        try:
-            response = client.get(f"https://daddylive.mp/embed/stream-{channel_id}.php", headers=headers, timeout=10)
-            response.raise_for_status()
-
-            soup = BeautifulSoup(response.text, 'html.parser')
-            iframe = soup.find('iframe', id='thatframe')
-
-            if iframe and iframe.get('src'):
-                real_link = iframe.get('src')
-                parent_site_domain = real_link.split('/premiumtv')[0]
-                server_key_link = f'{parent_site_domain}/server_lookup.php?channel_id=premium{channel_id}'
-
-                response_key = client.get(server_key_link, headers=headers, timeout=10)
-                time.sleep(random.uniform(1, 3))
-                response_key.raise_for_status()
-
-                server_key_data = response_key.json()
-                if 'server_key' in server_key_data:
-                    server_key = server_key_data['server_key']
-                    stream_url = f"https://{server_key}new.iosplayer.ru/{server_key}/premium{channel_id}/mono.m3u8"
-
-                    channel_cache[channel_id] = stream_url
-                    return stream_url
-
-        except requests.exceptions.RequestException:
-            time.sleep((2 ** attempt) + random.uniform(0, 1))
-
-    return None  # Se tutte le prove falliscono
-
 # Funzione per generare il file M3U8
 def generate_m3u8_from_json(json_data):
     m3u8_content = "#EXTM3U\n"
@@ -71,12 +14,10 @@ def generate_m3u8_from_json(json_data):
         if event_date < current_datetime.date():
             continue  # Esclude eventi passati
 
+        category_has_channels = False  # Flag per verificare se ci sono eventi nelle categorie
+
         for category, events in categories.items():
             category_name = clean_text(category)
-            category_has_channels = False  # Flag per verificare se ci sono canali validi
-
-            category_block = f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi\", ----- {category_name} -----\n"
-            category_block += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
 
             event_blocks = ""
 
@@ -108,7 +49,14 @@ def generate_m3u8_from_json(json_data):
                         category_has_channels = True
 
             if category_has_channels:
-                m3u8_content += category_block + event_blocks
+                m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi\", ----- {category_name} -----\n"
+                m3u8_content += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
+                m3u8_content += event_blocks
+
+        # Se non ci sono eventi per nessuna categoria
+        if not category_has_channels:
+            m3u8_content += "#EXTINF:-1 tvg-name=\"----- Nessun Evento Disponibile -----\" group-title=\"Eventi\", Nessun evento disponibile\n"
+            m3u8_content += "http://example.com/nessun_evento.m3u8\n"  # Link fittizio
 
     return m3u8_content
 
@@ -129,7 +77,11 @@ def generate_epg(json_data):
         if event_date < current_datetime.date():
             continue
 
-        for events in categories.values():
+        category_has_events = False  # Flag per verificare se ci sono eventi in tutte le categorie
+
+        for category, events in categories.items():
+            category_has_events_in_category = False  # Flag per una singola categoria
+
             for event in events:
                 time_str = event["time"]
                 event_name = event["event"]
@@ -149,7 +101,6 @@ def generate_epg(json_data):
                     channel_set.add((channel_id, channel_name))
 
                     # Descrizione prima dell'inizio dell'evento
-                    # Inizia a mezzanotte del giorno dell'evento
                     midnight_time = datetime.combine(event_date, datetime.min.time())
                     start_time_for_description = midnight_time.strftime("%Y%m%d%H%M%S") + " +0000"
                     epg_content += f'<programme start="{start_time_for_description}" stop="{start_time_for_description}" channel="{channel_id}">\n'
@@ -157,7 +108,7 @@ def generate_epg(json_data):
                     epg_content += f'  <desc>Preparati per l\'evento: {event_name}. L\'evento inizierà alle {event_datetime.strftime("%H:%M")} su {channel_name} o su questo Canale.</desc>\n'
                     epg_content += '</programme>\n'
 
-                    # Ora aggiungi l'evento vero e proprio
+                    # Programma dell'evento
                     start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0000"
                     end_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0000"
                     description = f"Evento live: {event_name}. Segui l'azione in diretta su {channel_name} o su questo Canale."
@@ -167,6 +118,24 @@ def generate_epg(json_data):
                     epg_content += f'  <desc>{description}</desc>\n'
                     epg_content += '</programme>\n'
 
+                category_has_events_in_category = True
+
+            category_has_events |= category_has_events_in_category  # Flag globale per la data
+
+        # Se non ci sono eventi per nessuna categoria
+        if not category_has_events:
+            epg_content += '<channel id="nessun_evento">\n'
+            epg_content += '  <display-name>Nessun Evento Disponibile</display-name>\n'
+            epg_content += '</channel>\n'
+
+            # Aggiungi un programma che segnala l'assenza di eventi
+            midnight_time = datetime.combine(event_date, datetime.min.time())
+            start_time_for_description = midnight_time.strftime("%Y%m%d%H%M%S") + " +0000"
+            epg_content += f'<programme start="{start_time_for_description}" stop="{start_time_for_description}" channel="nessun_evento">\n'
+            epg_content += f'  <title>Nessun Evento Disponibile</title>\n'
+            epg_content += f'  <desc>Non ci sono eventi disponibili per la data {event_date.strftime("%d/%m/%Y")}.</desc>\n'
+            epg_content += '</programme>\n'
+
     for channel_id, channel_name in channel_set:
         epg_content += f'<channel id="{channel_id}">\n'
         epg_content += f'  <display-name>{channel_name}</display-name>\n'
@@ -174,16 +143,3 @@ def generate_epg(json_data):
 
     epg_content += "</tv>"
     return epg_content
-
-# Carica e filtra il JSON
-with open("daddyliveSchedule.json", "r", encoding="utf-8") as file:
-    json_data = json.load(file)
-
-# Genera e salva i file
-with open("eventi.m3u8", "w", encoding="utf-8") as file:
-    file.write(generate_m3u8_from_json(json_data))
-
-with open("eventi.xml", "w", encoding="utf-8") as file:
-    file.write(generate_epg(json_data))
-
-print("Generazione completata!")
