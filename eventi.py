@@ -1,14 +1,12 @@
 import requests
 import random
 import time
-from bs4 import BeautifulSoup
 import json
-from datetime import datetime, timedelta
 import re
+from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
 
 # Headers e variabili globali
-Referer = "https://ilovetoplay.xyz/"
-Origin = "https://ilovetoplay.xyz"
 headers = { 
     "Accept": "*/*",
     "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6,ru;q=0.5",
@@ -16,33 +14,21 @@ headers = {
 }
 
 client = requests
-
-# Cache per memorizzare gli URL dei canali
-channel_cache = {}
+channel_cache = {}  # Cache per memorizzare i link M3U8 dei canali
 
 # Funzione per rimuovere i tag HTML
 def clean_text(text):
-    return re.sub(r'</?span.*?>', '', text)  # Rimuove i tag <span> e </span>
+    return re.sub(r'</?span.*?>', '', text)
 
-# Funzione per ottenere il link M3U8 per un canale con cache
+# Funzione per ottenere il link M3U8 per un canale
 def get_stream_link(channel_id, max_retries=3):
-    # Controlla se il link è già in cache
     if channel_id in channel_cache:
-        print(f"Canale {channel_id} trovato in cache.")
         return channel_cache[channel_id]
-
-    print(f"Getting stream link for channel ID: {channel_id}...")
-    base_timeout = 10  # Timeout in secondi
 
     for attempt in range(max_retries):
         try:
-            response = client.get(
-                f"https://daddylive.mp/embed/stream-{channel_id}.php",
-                headers=headers,
-                timeout=base_timeout
-            )
+            response = client.get(f"https://daddylive.mp/embed/stream-{channel_id}.php", headers=headers, timeout=10)
             response.raise_for_status()
-            response.encoding = 'utf-8'
 
             soup = BeautifulSoup(response.text, 'html.parser')
             iframe = soup.find('iframe', id='thatframe')
@@ -52,7 +38,7 @@ def get_stream_link(channel_id, max_retries=3):
                 parent_site_domain = real_link.split('/premiumtv')[0]
                 server_key_link = f'{parent_site_domain}/server_lookup.php?channel_id=premium{channel_id}'
 
-                response_key = client.get(server_key_link, headers=headers, timeout=base_timeout)
+                response_key = client.get(server_key_link, headers=headers, timeout=10)
                 time.sleep(random.uniform(1, 3))
                 response_key.raise_for_status()
 
@@ -61,50 +47,48 @@ def get_stream_link(channel_id, max_retries=3):
                     server_key = server_key_data['server_key']
                     stream_url = f"https://{server_key}new.iosplayer.ru/{server_key}/premium{channel_id}/mono.m3u8"
 
-                    # Salva l'URL nella cache
-                    channel_cache[channel_id] = stream_url
+                    channel_cache[channel_id] = stream_url  # Memorizza il link nella cache
                     return stream_url
 
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching stream for {channel_id}: {e}")
-        time.sleep((2 ** attempt) + random.uniform(0, 1))
+        except requests.exceptions.RequestException:
+            time.sleep((2 ** attempt) + random.uniform(0, 1))
 
     return None  # Se tutte le prove falliscono
 
-# Funzione per creare un file M3U8 dal JSON con categorie come canali
+# Funzione per creare un file M3U8 dal JSON
 def generate_m3u8_from_json(json_data):
     m3u8_content = "#EXTM3U\n"
-    current_date = datetime.now().strftime("%d/%m/%Y")
-    tomorrow_date = (datetime.now() + timedelta(days=1)).strftime("%d/%m/%Y")
+    current_datetime = datetime.now()
+    tomorrow_date = (current_datetime + timedelta(days=1)).date()
 
     for date, categories in json_data.items():
         try:
             date_str = re.sub(r'(\d+)(st|nd|rd|th)', r'\1', date.split(' - ')[0])
             date_obj = datetime.strptime(date_str, "%A %d %B %Y")
-            formatted_date = date_obj.strftime("%d/%m/%Y")
+            event_date = date_obj.date()
         except ValueError:
-            formatted_date = "Unknown Date"
-        
-        if formatted_date < current_date:
             continue
+
+        if event_date < current_datetime.date():
+            continue  # Esclude gli eventi passati
 
         for category, events in categories.items():
             category_name = clean_text(category)
-
-            # Ensure the category name is properly surrounded by '-----'
-            print(f"Category: ----- {category_name} -----")  # Debugging print statement
             m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi\", ----- {category_name} -----\n"
             m3u8_content += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
 
             for event_info in events:
-                time = event_info["time"]
-                event = event_info["event"]
+                time_str = event_info["time"]
+                event_name = event_info["event"]
 
                 try:
-                    event_time = datetime.strptime(time, "%H:%M") + timedelta(hours=1)
-                    new_time = event_time.strftime("%H:%M")
+                    event_time = datetime.strptime(time_str, "%H:%M").time()
+                    event_datetime = datetime.combine(event_date, event_time)
                 except ValueError:
-                    new_time = time
+                    continue
+
+                if event_datetime < current_datetime:
+                    continue  # Esclude eventi passati
 
                 for channel in event_info["channels"]:
                     channel_name = clean_text(channel["channel_name"])
@@ -112,18 +96,16 @@ def generate_m3u8_from_json(json_data):
                     stream_url = get_stream_link(channel_id)
 
                     if stream_url:
-                        if formatted_date == current_date:
-                            tvg_name = f"{event} ALLE {new_time}"
-                        elif formatted_date == tomorrow_date:
-                            tvg_name = f"DOMANI ALLE {new_time}"
+                        if event_date == current_datetime.date():
+                            tvg_name = f"{event_name} ALLE {event_time.strftime('%H:%M')}"
+                        elif event_date == tomorrow_date:
+                            tvg_name = f"DOMANI ALLE {event_time.strftime('%H:%M')}"
                         else:
-                            tvg_name = f"{event} - {formatted_date} {new_time}"
+                            tvg_name = f"{event_name} - {event_date.strftime('%d/%m/%Y')} {event_time.strftime('%H:%M')}"
 
                         tvg_name = clean_text(tvg_name)
                         m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel_id}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
                         m3u8_content += f"{stream_url}\n"
-                    else:
-                        print(f"Errore: Link M3U8 non trovato per il canale {channel_id}.")
 
     return m3u8_content
 
@@ -131,8 +113,6 @@ def generate_m3u8_from_json(json_data):
 def load_json(json_file):
     with open(json_file, "r", encoding="utf-8") as file:
         json_data = json.load(file)
-
-    print("Categorie trovate nel JSON (Filtrate per 'Italy', 'IT', 'Italia', 'Rai'):")
 
     filtered_data = {}
     for date, categories in json_data.items():
@@ -154,13 +134,6 @@ def load_json(json_file):
 
         if filtered_categories:
             filtered_data[date] = filtered_categories
-
-    for date, categories in filtered_data.items():
-        print(f"Data: {date}")
-        for category, events in categories.items():
-            num_channels = sum(len(event_info["channels"]) for event_info in events)
-            num_events = len(events)
-            print(f" - {category} (Eventi trovati: {num_events}, Canali trovati: {num_channels})")
 
     return filtered_data
 
