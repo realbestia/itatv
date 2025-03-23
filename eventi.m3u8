@@ -1,10 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="England - Women's Super League : West Ham United vs Tottenham Hotspur - 23/03/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Women's Super League : West Ham United vs Tottenham Hotspur - 23/03/2025 12:00
-https://nfsnew.iosplayer.ru/nfs/premium1/mono.m3u8
-#EXTINF:-1 tvg-id="556" tvg-name="England - Women's Super League : West Ham United vs Tottenham Hotspur - 23/03/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Women's Super League : West Ham United vs Tottenham Hotspur - 23/03/2025 12:00
-https://dokko1new.iosplayer.ru/dokko1/premium556/mono.m3u8
 #EXTINF:-1 tvg-id="3" tvg-name="Italy - Serie C : Novara vs Calcio Padova - 23/03/2025 14:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Novara vs Calcio Padova - 23/03/2025 14:00
 https://nfsnew.iosplayer.ru/nfs/premium3/mono.m3u8
 #EXTINF:-1 tvg-id="5" tvg-name="Italy - Serie C : FeralpiSalò vs Trento - 23/03/2025 14:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : FeralpiSalò vs Trento - 23/03/2025 14:00
@@ -19,20 +15,6 @@ https://nfsnew.iosplayer.ru/nfs/premium7/mono.m3u8
 https://nfsnew.iosplayer.ru/nfs/premium8/mono.m3u8
 #EXTINF:-1 tvg-id="9" tvg-name="Italy - Serie C : Monopoli vs Casertana - 23/03/2025 14:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Monopoli vs Casertana - 23/03/2025 14:00
 https://nfsnew.iosplayer.ru/nfs/premium9/mono.m3u8
-#EXTINF:-1 tvg-id="591" tvg-name="UEFA Nations League : Georgia vs Armenia - 23/03/2025 14:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Georgia vs Armenia - 23/03/2025 14:00
-https://dokko1new.iosplayer.ru/dokko1/premium591/mono.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="England - Women's Super League : Manchester City vs Chelsea FC - 23/03/2025 14:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Women's Super League : Manchester City vs Chelsea FC - 23/03/2025 14:30
-https://nfsnew.iosplayer.ru/nfs/premium1/mono.m3u8
-#EXTINF:-1 tvg-id="556" tvg-name="Frauen DFB Pokal : Hamburger SV vs Werder Bremen - 23/03/2025 14:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Frauen DFB Pokal : Hamburger SV vs Werder Bremen - 23/03/2025 14:30
-https://dokko1new.iosplayer.ru/dokko1/premium556/mono.m3u8
-#EXTINF:-1 tvg-id="557" tvg-name="Frauen DFB Pokal : Hamburger SV vs Werder Bremen - 23/03/2025 14:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Frauen DFB Pokal : Hamburger SV vs Werder Bremen - 23/03/2025 14:30
-https://ddy6new.iosplayer.ru/ddy6/premium557/mono.m3u8
-#EXTINF:-1 tvg-id="456" tvg-name="Spain - Primera División Femenina : Real Sociedad vs Atletico Madrid - 23/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Spain - Primera División Femenina : Real Sociedad vs Atletico Madrid - 23/03/2025 15:00
-https://windnew.iosplayer.ru/wind/premium456/mono.m3u8
-#EXTINF:-1 tvg-id="457" tvg-name="Spain - Segunda Division : Eibar vs Huesca - 23/03/2025 15:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Spain - Segunda Division : Eibar vs Huesca - 23/03/2025 15:15
-https://windnew.iosplayer.ru/wind/premium457/mono.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="England - Women's Super League : Aston Villa vs Manchester United - 23/03/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Women's Super League : Aston Villa vs Manchester United - 23/03/2025 16:30
-https://nfsnew.iosplayer.ru/nfs/premium1/mono.m3u8
 #EXTINF:-1 tvg-id="3" tvg-name="Italy - Serie C : Vicenza vs Caldiero Terme - 23/03/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Vicenza vs Caldiero Terme - 23/03/2025 16:30
 https://nfsnew.iosplayer.ru/nfs/premium3/mono.m3u8
 #EXTINF:-1 tvg-id="2" tvg-name="Italy - Serie C : Virtus Verona vs Lecco - 23/03/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Virtus Verona vs Lecco - 23/03/2025 16:30
@@ -41,86 +23,26 @@ https://nfsnew.iosplayer.ru/nfs/premium2/mono.m3u8
 https://nfsnew.iosplayer.ru/nfs/premium6/mono.m3u8
 #EXTINF:-1 tvg-id="7" tvg-name="Italy - Serie C : Pineto vs SPAL - 23/03/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Pineto vs SPAL - 23/03/2025 16:30
 https://nfsnew.iosplayer.ru/nfs/premium7/mono.m3u8
-#EXTINF:-1 tvg-id="594" tvg-name="UEFA Nations League : Hungary vs Turkey - 23/03/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Hungary vs Turkey - 23/03/2025 17:00
-https://dokko1new.iosplayer.ru/dokko1/premium594/mono.m3u8
-#EXTINF:-1 tvg-id="14" tvg-name="UEFA Nations League : Hungary vs Turkey - 23/03/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Hungary vs Turkey - 23/03/2025 17:00
-https://nfsnew.iosplayer.ru/nfs/premium14/mono.m3u8
-#EXTINF:-1 tvg-id="590" tvg-name="UEFA Nations League : Serbia vs Austria - 23/03/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Serbia vs Austria - 23/03/2025 17:00
-https://dokko1new.iosplayer.ru/dokko1/premium590/mono.m3u8
-#EXTINF:-1 tvg-id="593" tvg-name="UEFA Nations League : Scotland vs Greece - 23/03/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Scotland vs Greece - 23/03/2025 17:00
-https://dokko1new.iosplayer.ru/dokko1/premium593/mono.m3u8
-#EXTINF:-1 tvg-id="592" tvg-name="UEFA Nations League : Iceland vs Kosovo - 23/03/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Iceland vs Kosovo - 23/03/2025 17:00
-https://dokko1new.iosplayer.ru/dokko1/premium592/mono.m3u8
-#EXTINF:-1 tvg-id="594" tvg-name="UEFA Nations League : Belgium vs Ukraine - 23/03/2025 19:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Belgium vs Ukraine - 23/03/2025 19:45
-https://dokko1new.iosplayer.ru/dokko1/premium594/mono.m3u8
-#EXTINF:-1 tvg-id="590" tvg-name="UEFA Nations League : Germany vs Italy - 23/03/2025 19:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Germany vs Italy - 23/03/2025 19:45
-https://dokko1new.iosplayer.ru/dokko1/premium590/mono.m3u8
 #EXTINF:-1 tvg-id="850" tvg-name="UEFA Nations League : Germany vs Italy - 23/03/2025 19:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Germany vs Italy - 23/03/2025 19:45
 https://ddy6new.iosplayer.ru/ddy6/premium850/mono.m3u8
-#EXTINF:-1 tvg-id="593" tvg-name="UEFA Nations League : Portugal vs Denmark - 23/03/2025 19:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Portugal vs Denmark - 23/03/2025 19:45
-https://dokko1new.iosplayer.ru/dokko1/premium593/mono.m3u8
-#EXTINF:-1 tvg-id="592" tvg-name="UEFA Nations League : France vs Croatia - 23/03/2025 19:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : France vs Croatia - 23/03/2025 19:45
-https://dokko1new.iosplayer.ru/dokko1/premium592/mono.m3u8
-#EXTINF:-1 tvg-id="591" tvg-name="UEFA Nations League : Spain vs Netherlands - 23/03/2025 19:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Nations League : Spain vs Netherlands - 23/03/2025 19:45
-https://dokko1new.iosplayer.ru/dokko1/premium591/mono.m3u8
-#EXTINF:-1 tvg-name="----- Cricket -----" group-title="Eventi", ----- Cricket -----
-http://example.com/Cricket.m3u8
-#EXTINF:-1 tvg-id="589" tvg-name="Indian Premier League : Chennai Super Kings vs Mumbai Indians - 23/03/2025 14:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Indian Premier League : Chennai Super Kings vs Mumbai Indians - 23/03/2025 14:00
-https://dokko1new.iosplayer.ru/dokko1/premium589/mono.m3u8
-#EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
-http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="274" tvg-name="Indycar: The Thermal Club INDYCAR Grand Prix - 23/03/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Indycar: The Thermal Club INDYCAR Grand Prix - 23/03/2025 19:00
-https://windnew.iosplayer.ru/wind/premium274/mono.m3u8
-#EXTINF:-1 tvg-id="556" tvg-name="Indycar: The Thermal Club INDYCAR Grand Prix - 23/03/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Indycar: The Thermal Club INDYCAR Grand Prix - 23/03/2025 19:00
-https://dokko1new.iosplayer.ru/dokko1/premium556/mono.m3u8
-#EXTINF:-1 tvg-id="589" tvg-name="Indycar: The Thermal Club INDYCAR Grand Prix - 23/03/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Indycar: The Thermal Club INDYCAR Grand Prix - 23/03/2025 19:00
-https://dokko1new.iosplayer.ru/dokko1/premium589/mono.m3u8
 #EXTINF:-1 tvg-name="----- Combat sports -----" group-title="Eventi", ----- Combat sports -----
 http://example.com/Combat_sports.m3u8
 #EXTINF:-1 tvg-id="460" tvg-name="Judo: Tbilisi Grand Prix - 23/03/2025 13:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Judo: Tbilisi Grand Prix - 23/03/2025 13:00
 https://dokko1new.iosplayer.ru/dokko1/premium460/mono.m3u8
-#EXTINF:-1 tvg-name="----- Snooker -----" group-title="Eventi", ----- Snooker -----
-http://example.com/Snooker.m3u8
-#EXTINF:-1 tvg-id="587" tvg-name="Premier League Pool : Day 4 - 23/03/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Pool : Day 4 - 23/03/2025 18:00
-https://dokko1new.iosplayer.ru/dokko1/premium587/mono.m3u8
 #EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
 http://example.com/Basketball.m3u8
-#EXTINF:-1 tvg-id="456" tvg-name="ACB : CB 1939 Canarias vs. BC Andorra - 23/03/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", ACB : CB 1939 Canarias vs. BC Andorra - 23/03/2025 12:00
-https://windnew.iosplayer.ru/wind/premium456/mono.m3u8
 #EXTINF:-1 tvg-id="879" tvg-name="Lega A : Sassari vs Cremona - 23/03/2025 15:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Lega A : Sassari vs Cremona - 23/03/2025 15:45
 https://windnew.iosplayer.ru/wind/premium879/mono.m3u8
-#EXTINF:-1 tvg-id="458" tvg-name="ACB : FC Barcelona vs. Basket Zaragoza 2002 - 23/03/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", ACB : FC Barcelona vs. Basket Zaragoza 2002 - 23/03/2025 16:00
-https://windnew.iosplayer.ru/wind/premium458/mono.m3u8
-#EXTINF:-1 tvg-id="455" tvg-name="Men's March Madness #4 - College Basketball - 23/03/2025 16:10" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Men's March Madness #4 - College Basketball - 23/03/2025 16:10
-https://ddy6new.iosplayer.ru/ddy6/premium455/mono.m3u8
-#EXTINF:-1 tvg-id="456" tvg-name="ACB : CB Malaga vs. Real Madrid - 23/03/2025 17:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", ACB : CB Malaga vs. Real Madrid - 23/03/2025 17:30
-https://windnew.iosplayer.ru/wind/premium456/mono.m3u8
-#EXTINF:-1 tvg-id="455" tvg-name="Men's March Madness #5 - College Basketball - 23/03/2025 18:40" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Men's March Madness #5 - College Basketball - 23/03/2025 18:40
-https://ddy6new.iosplayer.ru/ddy6/premium455/mono.m3u8
 #EXTINF:-1 tvg-id="882" tvg-name="Italy A1 Women : ASD San Martino di Lupari vs. Brixia Basket - 23/03/2025 20:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy A1 Women : ASD San Martino di Lupari vs. Brixia Basket - 23/03/2025 20:15
 https://ddy6new.iosplayer.ru/ddy6/premium882/mono.m3u8
-#EXTINF:-1 tvg-id="455" tvg-name="Basketball : Men's March Madness #6 - College Basketball - 23/03/2025 21:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Basketball : Men's March Madness #6 - College Basketball - 23/03/2025 21:15
-https://ddy6new.iosplayer.ru/ddy6/premium455/mono.m3u8
 #EXTINF:-1 tvg-name="----- Sailing / Boating -----" group-title="Eventi", ----- Sailing / Boating -----
 http://example.com/Sailing_/_Boating.m3u8
 #EXTINF:-1 tvg-id="462" tvg-name="SailGP | San Francisco Event 5, Day 2 - 23/03/2025 21:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", SailGP | San Francisco Event 5, Day 2 - 23/03/2025 21:30
 https://ddy6new.iosplayer.ru/ddy6/premium462/mono.m3u8
-#EXTINF:-1 tvg-name="----- Handball -----" group-title="Eventi", ----- Handball -----
-http://example.com/Handball.m3u8
-#EXTINF:-1 tvg-id="445" tvg-name="EHF European League Women : Bera Bera Balonmano vs. HSG Blomberg-Lippe - 23/03/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", EHF European League Women : Bera Bera Balonmano vs. HSG Blomberg-Lippe - 23/03/2025 17:00
-https://windnew.iosplayer.ru/wind/premium445/mono.m3u8
-#EXTINF:-1 tvg-name="----- Ice Hockey -----" group-title="Eventi", ----- Ice Hockey -----
-http://example.com/Ice_Hockey.m3u8
-#EXTINF:-1 tvg-id="559" tvg-name="NHL : Buffalo Sabres vs Winnipeg Jets - 23/03/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", NHL : Buffalo Sabres vs Winnipeg Jets - 23/03/2025 19:00
-https://ddy6new.iosplayer.ru/ddy6/premium559/mono.m3u8
-#EXTINF:-1 tvg-id="557" tvg-name="NHL : Buffalo Sabres vs Winnipeg Jets - 23/03/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", NHL : Buffalo Sabres vs Winnipeg Jets - 23/03/2025 19:00
-https://ddy6new.iosplayer.ru/ddy6/premium557/mono.m3u8
 #EXTINF:-1 tvg-name="----- Rugby Union -----" group-title="Eventi", ----- Rugby Union -----
 http://example.com/Rugby_Union.m3u8
 #EXTINF:-1 tvg-id="851" tvg-name="Six Nations Women : England W vs Italy W - 23/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Six Nations Women : England W vs Italy W - 23/03/2025 15:00
 https://ddy6new.iosplayer.ru/ddy6/premium851/mono.m3u8
-#EXTINF:-1 tvg-id="588" tvg-name="Six Nations Women : England W vs Italy W - 23/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Six Nations Women : England W vs Italy W - 23/03/2025 15:00
-https://dokko1new.iosplayer.ru/dokko1/premium588/mono.m3u8
 #EXTINF:-1 tvg-id="462" tvg-name="Six Nations Women : England W vs Italy W - 23/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Six Nations Women : England W vs Italy W - 23/03/2025 15:00
 https://ddy6new.iosplayer.ru/ddy6/premium462/mono.m3u8
 #EXTINF:-1 tvg-name="----- Volleyball -----" group-title="Eventi", ----- Volleyball -----
