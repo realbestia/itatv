@@ -40,6 +40,9 @@ def generate_epg_xml(json_data):
                 if event_datetime < current_datetime - timedelta(hours=2):
                     continue  # Esclude eventi già terminati
 
+                # Aggiunge 1 ora per correggere il fuso orario (da GMT a GMT+1)
+                event_datetime = event_datetime + timedelta(hours=1)
+
                 for channel in event_info["channels"]:
                     channel_id = channel["channel_id"]
                     channel_name = clean_text(channel["channel_name"])  # Pulisce il nome del canale
@@ -51,19 +54,19 @@ def generate_epg_xml(json_data):
                         epg_content += f'  </channel>\n'
                         channel_ids.add(channel_id)
 
-                    # Aggiungi un annuncio che parte da mezzanotte del giorno dell'evento
-                    announcement_start_time = datetime.combine(event_date, datetime.min.time())  # 00:00 dello stesso giorno
+                    # Aggiungi un annuncio che parte da 01:00 invece di mezzanotte
+                    announcement_start_time = datetime.combine(event_date, datetime.min.time()) + timedelta(hours=1)
                     announcement_stop_time = event_datetime
 
-                    epg_content += f'  <programme start="{announcement_start_time.strftime("%Y%m%d%H%M%S") + " +0000"}" stop="{announcement_stop_time.strftime("%Y%m%d%H%M%S") + " +0000"}" channel="{channel_id}">\n'
+                    epg_content += f'  <programme start="{announcement_start_time.strftime("%Y%m%d%H%M%S") + " +0100"}" stop="{announcement_stop_time.strftime("%Y%m%d%H%M%S") + " +0100"}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">{event_name}</title>\n'
                     epg_content += f'    <desc lang="it">inizierà alle {event_datetime.strftime("%H:%M")}.</desc>\n'
                     epg_content += f'    <category lang="it">Annuncio</category>\n'
                     epg_content += f'  </programme>\n'
 
-                    # Formatta start e stop per l'evento principale
-                    start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0000"
-                    stop_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0000"
+                    # Formatta start e stop per l'evento principale con GMT+1
+                    start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0100"
+                    stop_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0100"
 
                     # Aggiunge l'evento principale nel file EPG
                     epg_content += f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
