@@ -73,7 +73,6 @@ def clean_channel_name(name):
     name = re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name)
     name = re.sub(r"\s*\(.*?\)", "", name)
     
-    # Rinomina "Zona DAZN" e "DAZN 1" in "ZONA DAZN"
     if "zona dazn" in name.lower() or "dazn 1" in name.lower():
         return "DAZN2"
 
@@ -87,7 +86,6 @@ def filter_italian_channels(channels, base_url):
         if ch.get("country") == "Italy":
             clean_name = clean_channel_name(ch["name"])
             
-            # Escludi "DAZN" e "DAZN 2"
             if clean_name.lower() in ["dazn", "dazn 2"]:
                 continue
             
@@ -110,7 +108,7 @@ def classify_channel(name):
     }
 
     CATEGORY_KEYWORDS = {
-        "Sport": ["inter", "milan", "lazio", "calcio", "tennis", "sport", "super tennis", "supertennis", "dazn", "eurosport", "sky sport", "rai sport"],
+        "Sport": ["inter", "milan", "lazio", "calcio", "tennis", "sport", "supertennis", "dazn", "eurosport", "sky sport", "rai sport"],
         "Film & Serie TV": ["crime", "primafila", "cinema", "movie", "film", "serie", "hbo", "fox", "rakuten", "atlantic"],
         "News": ["news", "tg", "rai news", "sky tg", "tgcom"],
         "Altro": ["focus", "real time"],
@@ -118,7 +116,7 @@ def classify_channel(name):
         "Mediaset": ["twenty seven", "twentyseven", "mediaset", "italia 1", "italia 2", "canale 5"],
         "Bambini": ["frisbee", "super!", "fresbee", "k2", "cartoon", "boing", "nick", "disney", "baby", "rai yoyo"],
         "Documentari": ["documentaries", "discovery", "geo", "history", "nat geo", "nature", "arte", "documentary"],
-        "Musica": ["deejay", "rds", "hits", "rtl", "mtv", "vh1", "radio", "music", "kiss", "kisskiss", "kiss kiss", "kiss kiss italia", "m2o", "fm"]
+        "Musica": ["deejay", "rds", "hits", "rtl", "mtv", "vh1", "radio", "music", "kiss", "kisskiss", "m2o", "fm"]
     }
 
     for key, words in SERVICE_KEYWORDS.items():
@@ -133,7 +131,7 @@ def classify_channel(name):
 
     return service, category
 
-# Salva il file M3U8 con il tvg-id o tvg-logo
+# Salva il file M3U8 con i canali ordinati alfabeticamente per categoria
 def save_m3u8(organized_channels, channel_id_map, logos_dict):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
@@ -143,12 +141,12 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                for name, url, base_url in channels:
+                sorted_channels = sorted(channels, key=lambda x: x[0].lower())  # Ordina alfabeticamente
+
+                for name, url, base_url in sorted_channels:
                     tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)
                     normalized_name = normalize_channel_name(tvg_name_cleaned)
                     tvg_id = channel_id_map.get(normalized_name, "")
-
-                    # Recupera il logo dal file logos.txt
                     tvg_logo = logos_dict.get(tvg_name_cleaned.lower(), DEFAULT_TVG_ICON)
 
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" tvg-logo="{tvg_logo}" group-title="{category}", {name}\n')
@@ -170,9 +168,8 @@ def main():
         italian_channels = filter_italian_channels(channels, url)
         all_links.extend(italian_channels)
 
-    # Organizza i canali
     organized_channels = {service: {category: [] for category in ["Sport", "Film & Serie TV", "News", "Altro", "Rai", "Mediaset", "Bambini", "Documentari", "Musica"]} for service in ["Sky", "DTT", "IPTV gratuite"]}
-    
+
     for name, url, base_url in all_links:
         service, category = classify_channel(name)
         organized_channels[service][category].append((name, url, base_url))
