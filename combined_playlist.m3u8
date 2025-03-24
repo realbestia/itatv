@@ -1234,7 +1234,6 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="RDS SOCIAL TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/RDS-Logo.png/260px-RDS-Logo.png" group-title="Musica", RDS SOCIAL TV
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F3656080408%2Findex.m3u8
 
-#EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=http%3A%2F%2Fexample.com%2FSoccer.m3u8&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Filovetoplay.xyz%2F&h_origin=https%3A%2F%2Filovetoplay.xyz
@@ -1250,7 +1249,6 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fwindnew.iosplayer.ru%2Fwind%2Fpremium870%2Fmono.m3u8&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Filovetoplay.xyz%2F&h_origin=https%3A%2F%2Filovetoplay.xyz
 #EXTINF:-1 tvg-id="882" tvg-name="Italy - Serie C : Avellino vs Potenza Calcio - 24/03/2025 19:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Avellino vs Potenza Calcio - 24/03/2025 19:30
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fddy6new.iosplayer.ru%2Fddy6%2Fpremium882%2Fmono.m3u8&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Filovetoplay.xyz%2F&h_origin=https%3A%2F%2Filovetoplay.xyz
-#EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"
 #EXTINF:-1 tvg-chno="80" tvg-name="Pluto TV Christmas" tvg-logo="https://images.pluto.tv/channels/612e05b885183d0007958101/colorLogoPNG.png" tvg-id="612e05b885183d0007958101" group-title="Pluto TV Italia",Pluto TV Christmas
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612e05b885183d0007958101/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 #EXTINF:-1 tvg-chno="85" tvg-name="Pluto TV Fireplace" tvg-logo="https://images.pluto.tv/channels/612ce23f51cce000078eeed5/colorLogoPNG.png" tvg-id="612ce23f51cce000078eeed5" group-title="Pluto TV Italia",Pluto TV Fireplace
@@ -1506,7 +1504,6 @@ https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6690f892d
 #EXTINF:-1 tvg-chno="945" tvg-name="VH1+ Canzoni Italiane" tvg-logo="https://images.pluto.tv/channels/63724270c7c2360007b170e8/colorLogoPNG.png" tvg-id="63724270c7c2360007b170e8" group-title="Pluto TV Italia",VH1+ Canzoni Italiane
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63724270c7c2360007b170e8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 
-#EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"
 #EXTM3U
 
 #EXTINF:-1 tvg-name="DAZN 1" group-title="Germany", DAZN 1
