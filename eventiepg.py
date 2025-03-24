@@ -51,8 +51,8 @@ def generate_epg_xml(json_data):
                         epg_content += f'  </channel>\n'
                         channel_ids.add(channel_id)
 
-                    # Aggiungi un annuncio prima dell'evento
-                    announcement_start_time = event_datetime - timedelta(minutes=1)
+                    # Aggiungi un annuncio che parte da mezzanotte del giorno dell'evento
+                    announcement_start_time = datetime.combine(event_date, datetime.min.time())  # 00:00 dello stesso giorno
                     announcement_stop_time = event_datetime
 
                     epg_content += f'  <programme start="{announcement_start_time.strftime("%Y%m%d%H%M%S") + " +0000"}" stop="{announcement_stop_time.strftime("%Y%m%d%H%M%S") + " +0000"}" channel="{channel_id}">\n'
