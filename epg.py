@@ -118,7 +118,7 @@ try:
     os.remove(temp_gz)
     os.remove(temp_it)
 
-    print(f"Operazione completata. File disponibili: {output_xml}, {output_gzip}")
+    print(f"Operazione completata. File disponibili: {output_xml}, {output_gzip}, {temp_eventi}")
 
 except requests.exceptions.RequestException as e:
     print(f"Errore durante il download: {e}")
