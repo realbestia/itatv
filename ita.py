@@ -175,7 +175,7 @@ def main():
         all_links.extend(italian_channels)
 
     # Organizza i canali
-    organized_channels = {service: {category: [] for category in ["Sport", "Film & Serie TV", "News", "Altro", "Rai", "Mediaset", "Bambini", "Documentari", "Musica"]} for service in ["Sky", "DTT", "IPTV gratuite"]}
+    organized_channels = {service: {category: [] for category in ["Rai", "Mediaset", "Sport", "Film & Serie TV", "News", "Bambini", "Documentari", "Musica", "Altro"]} for service in ["Sky", "DTT", "IPTV gratuite"]}
     
     for name, url, base_url in all_links:
         service, category = classify_channel(name)
