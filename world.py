@@ -21,16 +21,18 @@ def fetch_channels(base_url):
 def clean_channel_name(name):
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name).strip()
 
-# Salva il file M3U8 con intestazioni corrette
+# Salva il file M3U8 con i canali ordinati in ordine alfabetico
 def save_m3u8(channels):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
+
+    # Ordina i canali in ordine alfabetico per nome
+    channels.sort(key=lambda x: x[0].lower())
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write('#EXTM3U\n\n')
 
         for name, url, country in channels:
-            # Scrive il nome del canale, l'URL, il group-title come nazione e aggiunge le intestazioni richieste
             f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{country}", {name}\n')
             f.write(f"{url}\n\n")
 
