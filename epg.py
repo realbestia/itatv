@@ -116,7 +116,6 @@ try:
 
     # Rimuovere i file temporanei scaricati
     os.remove(temp_gz)
-    os.remove(temp_eventi)
     os.remove(temp_it)
 
     print(f"Operazione completata. File disponibili: {output_xml}, {output_gzip}")
