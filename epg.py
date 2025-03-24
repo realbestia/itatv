@@ -32,8 +32,14 @@ try:
     xml_content = io.BytesIO(file_content)
 
     # Caricare il contenuto XML del GZIP
-    tree = ET.parse(xml_content)
-    root = tree.getroot()
+    try:
+        tree = ET.parse(xml_content)
+        root = tree.getroot()
+    except ET.ParseError as e:
+        print(f"Errore nel parsing del file XML: {e}")
+        print(f"Posizione dell'errore: {e.position}")
+        print(f"Contenuto del file (prima parte): {file_content[:500]}")  # Stampa i primi 500 caratteri
+        raise
 
     # Scaricare il file eventi.xml
     response_eventi = requests.get(url_eventi, timeout=30)
@@ -44,8 +50,14 @@ try:
         file.write(response_eventi.content)
 
     # Carica l'XML eventi.xml
-    tree_eventi = ET.parse(temp_eventi)
-    root_eventi = tree_eventi.getroot()
+    try:
+        tree_eventi = ET.parse(temp_eventi)
+        root_eventi = tree_eventi.getroot()
+    except ET.ParseError as e:
+        print(f"Errore nel parsing del file eventi.xml: {e}")
+        print(f"Posizione dell'errore: {e.position}")
+        print(f"Contenuto del file eventi.xml (prima parte): {response_eventi.content[:500]}")
+        raise
 
     # Scaricare il file it.xml
     response_it = requests.get(url_it, timeout=30)
@@ -56,8 +68,14 @@ try:
         file.write(response_it.content)
 
     # Carica l'XML it.xml
-    tree_it = ET.parse(temp_it)
-    root_it = tree_it.getroot()
+    try:
+        tree_it = ET.parse(temp_it)
+        root_it = tree_it.getroot()
+    except ET.ParseError as e:
+        print(f"Errore nel parsing del file it.xml: {e}")
+        print(f"Posizione dell'errore: {e.position}")
+        print(f"Contenuto del file it.xml (prima parte): {response_it.content[:500]}")
+        raise
 
     # Funzione per pulire attributi
     def clean_attribute(element, attr_name):
@@ -107,7 +125,7 @@ except requests.exceptions.RequestException as e:
     print(f"Errore durante il download: {e}")
 except gzip.BadGzipFile:
     print("Errore: il file scaricato non è un GZIP valido.")
-except ET.ParseError:
-    print("Errore: il file XML non è ben formato.")
+except ET.ParseError as e:
+    print(f"Errore nel parsing del file XML: {e}")
 except Exception as e:
     print(f"Errore imprevisto: {e}")
