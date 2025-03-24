@@ -141,7 +141,7 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
 
         for service, categories in organized_channels.items():
             for category, channels in categories.items():
-                sorted_channels = sorted(channels, key=lambda x: x[0].lower())  # Ordina alfabeticamente
+                sorted_channels = sorted(channels, key=lambda x: re.sub(r"[^a-zA-Z0-9]", "", x[0]).lower())
 
                 for name, url, base_url in sorted_channels:
                     tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)
