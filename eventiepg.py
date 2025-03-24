@@ -47,7 +47,7 @@ def generate_epg_xml(json_data):
                     # Se il canale non è stato ancora aggiunto, lo aggiunge
                     if channel_id not in channel_ids:
                         epg_content += f'  <channel id="{channel_id}">\n'
-                        epg_content += f'    <display-name>{channel_name}</display-name>\n'
+                        epg_content += f'    <display-name>{event_name}</display-name>\n'  # Usa event_name per <display-name>
                         epg_content += f'  </channel>\n'
                         channel_ids.add(channel_id)
 
