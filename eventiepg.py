@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 # Funzione per pulire il testo rimuovendo tag HTML
 def clean_text(text):
-    return re.sub(r'</?span.*?>', '', text)
+    return re.sub(r'</?span.*?>', '', text)  # Rimuove tag HTML, incluso <span>
 
 # Funzione per generare il file EPG XML
 def generate_epg_xml(json_data):
@@ -28,7 +28,7 @@ def generate_epg_xml(json_data):
         for category, events in categories.items():
             for event_info in events:
                 time_str = event_info["time"]
-                event_name = clean_text(event_info["event"])
+                event_name = clean_text(event_info["event"])  # Pulisce il nome evento
                 event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
 
                 try:
@@ -42,7 +42,7 @@ def generate_epg_xml(json_data):
 
                 for channel in event_info["channels"]:
                     channel_id = channel["channel_id"]
-                    channel_name = clean_text(channel["channel_name"])
+                    channel_name = clean_text(channel["channel_name"])  # Pulisce il nome del canale
 
                     # Se il canale non è stato ancora aggiunto, lo aggiunge
                     if channel_id not in channel_ids:
@@ -69,7 +69,7 @@ def generate_epg_xml(json_data):
                     epg_content += f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">{event_name}</title>\n'
                     epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
-                    epg_content += f'    <category lang="it">{category}</category>\n'
+                    epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'  # Pulisce la categoria
                     epg_content += f'  </programme>\n'
 
     epg_content += "</tv>\n"
