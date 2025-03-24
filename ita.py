@@ -130,13 +130,16 @@ def save_m3u8(organized_channels, channel_id_map, logos_dict):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write('#EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n\n')
 
-        for service in sorted(organized_channels.keys()):  
+        # Ordina i servizi (Sky, DTT, IPTV gratuite) in ordine alfabetico
+        for service in sorted(organized_channels.keys()):
             categories = organized_channels[service]
 
-            for category in categories.keys():  # Mantiene l'ordine originale delle categorie
+            # Mantiene l'ordine originale delle categorie
+            for category in categories.keys():
                 channels = categories[category]
 
-                sorted_channels = sorted(channels, key=lambda x: re.sub(r"[^a-zA-Z0-9]", "", x[0]).lower())
+                # Ordina i canali in ordine alfabetico
+                sorted_channels = sorted(channels, key=lambda x: x[0].lower())
 
                 for name, url, base_url in sorted_channels:
                     tvg_name_cleaned = re.sub(r"\s*\(.*?\)", "", name)
