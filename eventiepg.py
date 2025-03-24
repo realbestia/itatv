@@ -33,15 +33,12 @@ def generate_epg_xml(json_data):
 
                 try:
                     event_time = datetime.strptime(time_str, "%H:%M").time()
-                    event_datetime = datetime.combine(event_date, event_time)
+                    event_datetime = datetime.combine(event_date, event_time) + timedelta(hours=1)  # Aggiunge 1 ora per GMT+1
                 except ValueError:
                     continue
 
                 if event_datetime < current_datetime - timedelta(hours=2):
                     continue  # Esclude eventi già terminati
-
-                # Aggiunge 1 ora per correggere il fuso orario (da GMT a GMT+1)
-                event_datetime = event_datetime + timedelta(hours=1)
 
                 for channel in event_info["channels"]:
                     channel_id = channel["channel_id"]
@@ -60,7 +57,7 @@ def generate_epg_xml(json_data):
 
                     epg_content += f'  <programme start="{announcement_start_time.strftime("%Y%m%d%H%M%S") + " +0100"}" stop="{announcement_stop_time.strftime("%Y%m%d%H%M%S") + " +0100"}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">{event_name}</title>\n'
-                    epg_content += f'    <desc lang="it">inizierà alle {event_datetime.strftime("%H:%M")}.</desc>\n'
+                    epg_content += f'    <desc lang="it">inizierà alle {event_datetime.strftime("%H:%M")}.</desc>\n'  # ORA CORRETTA!
                     epg_content += f'    <category lang="it">Annuncio</category>\n'
                     epg_content += f'  </programme>\n'
 
