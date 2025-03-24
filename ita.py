@@ -66,6 +66,8 @@ def clean_channel_name(name):
     name = re.sub(r"\s*\(.*?\)", "", name)
     if "zona dazn" in name.lower() or "dazn 1" in name.lower():
         return "DAZN2"
+    if "mediaset 20" in name.lower():
+        return "20 MEDIASET"  # Renaming "MEDIASET 20" to "20 MEDIASET"
     return name.strip()
 
 def filter_italian_channels(channels, base_url):
