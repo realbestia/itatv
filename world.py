@@ -1,6 +1,7 @@
 import requests
 import re
 import os
+from collections import defaultdict
 
 OUTPUT_FILE = "world.m3u8"
 BASE_URLS = [
@@ -21,20 +22,29 @@ def fetch_channels(base_url):
 def clean_channel_name(name):
     return re.sub(r"\s*(\|E|\|H|\(6\)|\(7\)|\.c|\.s)", "", name).strip()
 
-# Salva il file M3U8 con i canali ordinati in ordine alfabetico
+# Salva il file M3U8 con i canali ordinati alfabeticamente per categoria
 def save_m3u8(channels):
     if os.path.exists(OUTPUT_FILE):
         os.remove(OUTPUT_FILE)
 
-    # Ordina i canali in ordine alfabetico per nome
-    channels.sort(key=lambda x: x[0].lower())
+    # Raggruppa i canali per nazione (group-title)
+    grouped_channels = defaultdict(list)
+    for name, url, country in channels:
+        grouped_channels[country].append((name, url))
+
+    # Ordina le categorie alfabeticamente e i canali dentro ogni categoria
+    sorted_categories = sorted(grouped_channels.keys())
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write('#EXTM3U\n\n')
 
-        for name, url, country in channels:
-            f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{country}", {name}\n')
-            f.write(f"{url}\n\n")
+        for country in sorted_categories:
+            # Ordina i canali in ordine alfabetico dentro la categoria
+            grouped_channels[country].sort(key=lambda x: x[0].lower())
+
+            for name, url in grouped_channels[country]:
+                f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{country}", {name}\n')
+                f.write(f"{url}\n\n")
 
 # Funzione principale
 def main():
