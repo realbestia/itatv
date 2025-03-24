@@ -81,12 +81,12 @@ def generate_m3u8_from_json(json_data):
                 event_name = event_info["event"]
 
                 try:
-                    event_time = datetime.strptime(time_str, "%H:%M").time()
+                    event_time = (datetime.strptime(time_str, "%H:%M") + timedelta(hours=1)).time()  # Aggiungi 1 ora
                     event_datetime = datetime.combine(event_date, event_time)
                 except ValueError:
                     continue
 
-                # Se l'evento Ã¨ passato da piÃ¹ di 2 ore, lo esclude
+                # Se l'evento è passato da più di 2 ore, lo esclude
                 if event_datetime < current_datetime - timedelta(hours=2):
                     continue  
 
@@ -169,4 +169,4 @@ m3u8_content = generate_m3u8_from_json(json_data)
 with open("eventi.m3u8", "w", encoding="utf-8") as file:
     file.write(m3u8_content)
 
-print("â Generazione completata! Il file 'eventi.m3u8' Ã¨ pronto.")
+print("✅ Generazione completata! Il file 'eventi.m3u8' è pronto.")
