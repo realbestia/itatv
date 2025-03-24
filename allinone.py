@@ -30,15 +30,12 @@ def download_playlist(url, remove_extm3u=False, append_params=False, exclude_gro
     if exclude_group_title:
         playlist = '\n'.join(line for line in playlist.split('\n') if exclude_group_title not in line)
     
-    # Aggiungi il nuovo #EXTM3U tvg-url all'inizio della playlist
-    playlist = '#EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n' + playlist
-    
     return playlist
 
 # Ottieni la directory dove si trova lo script
 script_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Scarica le playlist, escludendo 'x-tvg-url=' dalla terza playlist, rimuovendo la riga '#EXTM3U' e aggiungendo 'tvg-url'
+# Scarica le playlist
 playlist1 = download_playlist(url1)
 playlist2 = download_playlist(url2, append_params=True)  # Aggiungi i parametri alla playlist eventi.m3u8
 playlist3 = download_playlist(url3, remove_extm3u=True)
@@ -46,6 +43,9 @@ playlist4 = download_playlist(url4, exclude_group_title="Italy")  # Escludi i ca
 
 # Unisci le quattro playlist
 combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
+
+# Aggiungi il nuovo #EXTM3U tvg-url all'inizio della playlist combinata
+combined_playlist = '#EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n' + combined_playlist
 
 # Percorso completo del file di output
 output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
