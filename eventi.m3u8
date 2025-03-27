@@ -1,1 +1,27 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="870" tvg-name="Bundesliga : Bayer Leverkusen vs Bochum - 28/03/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : Bayer Leverkusen vs Bochum - 28/03/2025 20:30
+https://windnew.iosplayer.ru/wind/premium870/mono.m3u8
+#EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie B : Spezia vs Brescia - 28/03/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Spezia vs Brescia - 28/03/2025 20:30
+https://ddy6new.iosplayer.ru/ddy6/premium55/mono.m3u8
+#EXTINF:-1 tvg-id="16" tvg-name="Italy - Serie C : Union ArzignanoChiampo vs Renate - 28/03/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Union ArzignanoChiampo vs Renate - 28/03/2025 20:30
+https://nfsnew.iosplayer.ru/nfs/premium16/mono.m3u8
+#EXTINF:-1 tvg-id="17" tvg-name="Italy - Serie C : Perugia vs Pineto - 28/03/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Perugia vs Pineto - 28/03/2025 20:30
+https://nfsnew.iosplayer.ru/nfs/premium17/mono.m3u8
+#EXTINF:-1 tvg-id="18" tvg-name="Italy - Serie C : Pianese vs Pontedera - 28/03/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Pianese vs Pontedera - 28/03/2025 20:30
+https://nfsnew.iosplayer.ru/nfs/premium18/mono.m3u8
+#EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
+http://example.com/Motorsport.m3u8
+#EXTINF:-1 tvg-id="575" tvg-name="Moto3 | Round 3 | United States Free Practice 1 - 28/03/2025 14:55" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Moto3 | Round 3 | United States Free Practice 1 - 28/03/2025 14:55
+https://nfsnew.iosplayer.ru/nfs/premium575/mono.m3u8
+#EXTINF:-1 tvg-id="575" tvg-name="MotoGP | Round 3 | United States Free Practice 1 - 28/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MotoGP | Round 3 | United States Free Practice 1 - 28/03/2025 15:00
+https://nfsnew.iosplayer.ru/nfs/premium575/mono.m3u8
+#EXTINF:-1 tvg-id="575" tvg-name="Moto2 | Round 3 | United States Free Practice 1 - 28/03/2025 15:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Moto2 | Round 3 | United States Free Practice 1 - 28/03/2025 15:45
+https://nfsnew.iosplayer.ru/nfs/premium575/mono.m3u8
+#EXTINF:-1 tvg-id="575" tvg-name="MotoGP | Round 3 | United States Practice 1 - 28/03/2025 19:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MotoGP | Round 3 | United States Practice 1 - 28/03/2025 19:15
+https://nfsnew.iosplayer.ru/nfs/premium575/mono.m3u8
+#EXTINF:-1 tvg-name="----- Water polo -----" group-title="Eventi", ----- Water polo -----
+http://example.com/Water_polo.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="Italy Serie A1 : RN Florentia vs. Olympic Roma - 28/03/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie A1 : RN Florentia vs. Olympic Roma - 28/03/2025 18:30
+https://ddy6new.iosplayer.ru/ddy6/premium882/mono.m3u8
