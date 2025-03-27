@@ -2176,7 +2176,7 @@
                     },
                     {
                         "channel_name": "Spectrum SportsNet USA",
-                        "channel_id": "764"
+                        "channel_id": "982"
                     },
                     {
                         "channel_name": "Sportsnet 360",
@@ -3307,6 +3307,11 @@
         ],
         "Soccer</span>": [
             {
+                "time": "12:30",
+                "event": "Singapore - Cup - Gr.B : Geylang vs Lion City Sailors",
+                "channels": []
+            },
+            {
                 "time": "15:00",
                 "event": "U23 Liga Revelacao : Estoril Praia vs. Sl Benfica",
                 "channels": [
@@ -3407,6 +3412,11 @@
                         "channel_id": "18"
                     }
                 ]
+            },
+            {
+                "time": "19:00",
+                "event": "Venezuela - Primera Division - Apertura : Yaracuyanos vs Caracas",
+                "channels": []
             },
             {
                 "time": "19:30",
@@ -3971,6 +3981,201 @@
                         "channel_id": "401"
                     }
                 ]
+            },
+            {
+                "time": "08:00",
+                "event": "UTR (M) - Zadar (CRO) : James Mackinlay vs Cameron Fryer",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "UTR (F) - Roseto Abruzzi (ITA) : Melissa Boyden vs Anne Schaefer",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "UTR (M) - Zadar (CRO) : Sebastian Prechtel vs Tristan Stringer",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "UTR (F) - Zadar (CRO) : Simona Wirglerova vs Anastasia Iamachkine",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "UTR (F) - Roseto Abruzzi (ITA) : Yasmin Vavrova vs Franca Cecilia Di Pietro",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "UTR (F) - Roseto Abruzzi (ITA) : Anastassia Grymalska vs Lisa Vallone",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "UTR (M) - Zadar (CRO) : Janos Fekete vs Todor Vukomanovic",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "UTR (F) - Roseto Abruzzi (ITA) : Linda Salvi vs Alice Gubertini",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "UTR (M) - Zadar (CRO) : Robert Cowley vs Marshall Islands Tutu",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "UTR (F) - Zadar (CRO) : Tara Mihaljevic vs Victoria Borodulina",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "Challenger - Girona (SPA) : Elmer Moller vs Nicolai Budkov Kjaer",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "Challenger - Napoli (ITA) : Gauthier Onclin vs Andrea Pellegrino",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "Challenger - Napoli (ITA) - Double \tJ.Schnaitter/M.Wallner vs M.Karol/G.Ricca",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "Challenger - Napoli (ITA) : Pierre Hugues Herbert vs Max Hans Rehberg",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "Challenger - Girona (SPA) : Radu Albot vs Timofey Skatov",
+                "channels": []
+            },
+            {
+                "time": "10:00",
+                "event": "Challenger - Girona (SPA) : Jesper de Jong vs Filip Misolic",
+                "channels": []
+            },
+            {
+                "time": "10:40",
+                "event": "Challenger - Napoli (ITA) - Double : A.Erler/C.Frantzen vs De.Molchanov/M.Veldheer",
+                "channels": []
+            },
+            {
+                "time": "10:40",
+                "event": "Challenger - Napoli (ITA) - Double : G.Blancaneaux/A.Olivetti vs P.Nouza/P.Rikl",
+                "channels": []
+            },
+            {
+                "time": "10:40",
+                "event": "Challenger - Napoli (ITA) : Luciano Darderi vs Sumit Nagal",
+                "channels": []
+            },
+            {
+                "time": "10:40",
+                "event": "Challenger - Girona (SPA) : Lukas Neumayer vs Sebastian Ofner",
+                "channels": []
+            },
+            {
+                "time": "11:10",
+                "event": "Challenger - Girona (SPA) : Dusan Lajovic vs Alejandro Moro Canas",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "Challenger - Girona (SPA) - Double : M.Vocel/S.Walkow vs K.Drzewiecki/P.Matuszewski",
+                "channels": []
+            },
+            {
+                "time": "11:50",
+                "event": "Challenger - Girona (SPA) - Double : A.Chandrasekar/D.Vega Hernandez vs I.Cervantes/D.Rincon",
+                "channels": []
+            },
+            {
+                "time": "11:50",
+                "event": "Challenger - Napoli (ITA) - Double : R.Collignon/G.Onclin vs L.Johnson/L.Miedler",
+                "channels": []
+            },
+            {
+                "time": "12:30",
+                "event": "Challenger - Napoli (ITA) : Stan Wawrinka vs Borna Coric",
+                "channels": []
+            },
+            {
+                "time": "13:00",
+                "event": "Challenger - Girona (SPA) - Double : R.Arneodo/A.Mies vs J.Ingildsen/D.Stevenson",
+                "channels": []
+            },
+            {
+                "time": "13:00",
+                "event": "Challenger - Girona (SPA) : Ugo Blanchet vs Benjamin Hassan",
+                "channels": []
+            },
+            {
+                "time": "14:00",
+                "event": "Challenger - Concepcion (CHL) : Juan Pablo Varillas vs Nicolas Kicker",
+                "channels": []
+            },
+            {
+                "time": "14:00",
+                "event": "Challenger - Concepcion (CHL) : Roman Andres Burruchaga vs Conner Huertas Del Pino",
+                "channels": []
+            },
+            {
+                "time": "14:30",
+                "event": "Challenger - Girona (SPA) : Marton Fucsovics vs Marin Cilic",
+                "channels": []
+            },
+            {
+                "time": "15:10",
+                "event": "Challenger - Concepcion (CHL) : Matias Soto vs Valerio Aboian",
+                "channels": []
+            },
+            {
+                "time": "16:10",
+                "event": "Challenger - Concepcion (CHL) : Pedro Boscardin Dias vs Joao Lucas Reis Silva",
+                "channels": []
+            },
+            {
+                "time": "16:20",
+                "event": "Challenger - Concepcion (CHL) : Emilio Nava vs Gonzalo Bueno",
+                "channels": []
+            },
+            {
+                "time": "17:00",
+                "event": "ATP - Miami (USA) : Arthur Fils vs Jakub Mensik",
+                "channels": []
+            },
+            {
+                "time": "17:00",
+                "event": "Challenger - Girona (SPA) : Iliyan Radulov vs Pablo Carreno-Busta",
+                "channels": []
+            },
+            {
+                "time": "20:00",
+                "event": "WTA 125 - Puerto Vallarta (MEX) - Double : I.Martins/S.Santamaria vs E.Appleton/Q.Gleason",
+                "channels": []
+            },
+            {
+                "time": "20:00",
+                "event": "Challenger - Concepcion (CHL) - Double : L.Aboian/V.Aboian vs S.Watanabe/T.Yuzuki",
+                "channels": []
+            },
+            {
+                "time": "21:00",
+                "event": "Challenger - Concepcion (CHL) - Double : V.Kirkov/M.Soto vs Huertas D.P.C./Huertas D.P.A.",
+                "channels": []
+            },
+            {
+                "time": "23:00",
+                "event": "ATP - Miami (USA) : Taylor Fritz vs Matteo Berrettini",
+                "channels": []
             }
         ],
         "Boxing</span>": [
@@ -4345,6 +4550,26 @@
                 ]
             },
             {
+                "time": "20:10",
+                "event": "MLB : Chicago White Sox vs Los Angeles Angels",
+                "channels": []
+            },
+            {
+                "time": "20:10",
+                "event": "MLB : Kansas City Royals vs Cleveland Guardians",
+                "channels": []
+            },
+            {
+                "time": "20:10",
+                "event": "MLB : San Diego Padres vs Atlanta Braves",
+                "channels": []
+            },
+            {
+                "time": "20:15",
+                "event": "MLB : St. Louis Cardinals vs Minnesota Twins",
+                "channels": []
+            },
+            {
                 "time": "23:00",
                 "event": "MLB : Detroit Tigers vs Los Angeles Dodgers",
                 "channels": [
@@ -4396,6 +4621,56 @@
             }
         ],
         "Basketball</span>": [
+            {
+                "time": "06:00",
+                "event": "New Zealand - NBL : Otago Nuggets vs Manawatu Jets",
+                "channels": []
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Beijing Ducks vs Zhejiang Golden Bulls",
+                "channels": []
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Guangdong Southern Tigers vs Jilin",
+                "channels": []
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Guangzhou Loong Lions vs Fujian Sturgeons",
+                "channels": []
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Jiangsu Dragons vs Shenzhen Leopards",
+                "channels": []
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Sichuan vs Nanjing Tongxi",
+                "channels": []
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Tianjin Pioneers vs Shanxi Loongs",
+                "channels": []
+            },
+            {
+                "time": "11:35",
+                "event": "China - CBA : Zhejiang Guangsha Lions vs Ningbo Rockets",
+                "channels": []
+            },
+            {
+                "time": "12:30",
+                "event": "Turkey - KBSL (F) - Playoff : Galatasaray (F) vs Adana Botas (F)",
+                "channels": []
+            },
+            {
+                "time": "14:30",
+                "event": "Turkey - KBSL (F) - Playoff : CBK Mersin (F) vs Nesibe Aydin (F)",
+                "channels": []
+            },
             {
                 "time": "16:00",
                 "event": "Russia United League : MBA-MAI Moscow vs Uralmash Yekaterinburg",
@@ -5181,6 +5456,16 @@
                 ]
             },
             {
+                "time": "18:00",
+                "event": "Germany - Bundesliga : Gummersbach vs Wetzlar",
+                "channels": []
+            },
+            {
+                "time": "18:00",
+                "event": "Germany - Bundesliga : Hannover Burgdorf vs Bietigheim",
+                "channels": []
+            },
+            {
                 "time": "19:00",
                 "event": "Denmark Handboldligaen : Soenderjyske HK vs. Tth Holstebro",
                 "channels": [
@@ -5342,36 +5627,6 @@
             },
             {
                 "time": "18:00",
-                "event": "College Hockey NCAA Tournament: Boston University vs. Ohio State",
-                "channels": [
-                    {
-                        "channel_name": "ESPNU USA",
-                        "channel_id": "316"
-                    }
-                ]
-            },
-            {
-                "time": "21:00",
-                "event": "College Hockey NCAA Tournament: Minnesota State vs Western Michigan",
-                "channels": [
-                    {
-                        "channel_name": "ESPNU USA",
-                        "channel_id": "316"
-                    }
-                ]
-            },
-            {
-                "time": "00:30",
-                "event": "College Hockey NCAA Tournament: Minnesota vs Massachusetts",
-                "channels": [
-                    {
-                        "channel_name": "ESPN2 USA",
-                        "channel_id": "45"
-                    }
-                ]
-            },
-            {
-                "time": "18:00",
                 "event": "SHL : Timra vs Frolunda",
                 "channels": [
                     {
@@ -5391,6 +5646,41 @@
                     {
                         "channel_name": "TV4 Sport Live 2 Sweden",
                         "channel_id": "704"
+                    }
+                ]
+            },
+            {
+                "time": "18:00",
+                "event": "College Hockey NCAA Tournament: Boston University vs. Ohio State",
+                "channels": [
+                    {
+                        "channel_name": "ESPNU USA",
+                        "channel_id": "316"
+                    }
+                ]
+            },
+            {
+                "time": "21:00",
+                "event": "College Hockey NCAA Tournament: Minnesota State vs Western Michigan",
+                "channels": [
+                    {
+                        "channel_name": "ESPNU USA",
+                        "channel_id": "316"
+                    }
+                ]
+            },
+            {
+                "time": "00:05",
+                "event": "ECHL : Tulsa Oilers vs Rapid City Rush",
+                "channels": []
+            },
+            {
+                "time": "00:30",
+                "event": "College Hockey NCAA Tournament: Minnesota vs Massachusetts",
+                "channels": [
+                    {
+                        "channel_name": "ESPN2 USA",
+                        "channel_id": "45"
                     }
                 ]
             },
