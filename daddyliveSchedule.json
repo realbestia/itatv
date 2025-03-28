@@ -2172,6 +2172,30 @@
                 ]
             }
         ],
+        "Tennis ATP - MIAMI</span>": [
+            {
+                "time": "19:00",
+                "event": "ATP - MIAMI : Djokovic N. vs Dimitrov G.",
+                "channels": []
+            },
+            {
+                "time": "23:00",
+                "event": "ATP - MIAMI : Mensik J. vs Fritz T.",
+                "channels": []
+            }
+        ],
+        "Tennis WTA - MIAMI</span>": [
+            {
+                "time": "17:00",
+                "event": "WTA - MIAMI : Siniakova K./Townsend T. vs Bucsa C./Kato M.",
+                "channels": []
+            },
+            {
+                "time": "00:30",
+                "event": "WTA - MIAMI : Andreeva M./Shnaider D. vs Jiang X./Wu F.",
+                "channels": []
+            }
+        ],
         "Tennis</span>": [
             {
                 "time": "17:00",
@@ -4421,7 +4445,7 @@
                 "channels": [
                     {
                         "channel_name": "TV4 Hockey",
-                        "channel_id": "700"
+                        "channel_id": "703"
                     }
                 ]
             },
