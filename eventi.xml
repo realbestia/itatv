@@ -1,44 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="877">
-    <display-name>Italy - Serie A : Juventus vs Genoa</display-name>
-  </channel>
-  <programme start="20250329000000 +0000" stop="20250329170000 +0000" channel="877">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">Italy - Serie A : Juventus vs Genoa.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250329170000 +0000" stop="20250329190000 +0000" channel="877">
-    <title lang="it">Italy - Serie A : Juventus vs Genoa</title>
-    <desc lang="it">Italy - Serie A : Juventus vs Genoa trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="870">
-    <display-name>Bundesliga : Eintracht Frankfurt vs Stuttgart</display-name>
-  </channel>
-  <programme start="20250329000000 +0000" stop="20250329173000 +0000" channel="870">
-    <title lang="it">inizierà alle 18:30.</title>
-    <desc lang="it">Bundesliga : Eintracht Frankfurt vs Stuttgart.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250329173000 +0000" stop="20250329193000 +0000" channel="870">
-    <title lang="it">Bundesliga : Eintracht Frankfurt vs Stuttgart</title>
-    <desc lang="it">Bundesliga : Eintracht Frankfurt vs Stuttgart trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="157">
-    <display-name>Italy - Serie B : Sassuolo vs Reggiana</display-name>
-  </channel>
-  <programme start="20250329000000 +0000" stop="20250329183000 +0000" channel="157">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Italy - Serie B : Sassuolo vs Reggiana.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250329183000 +0000" stop="20250329203000 +0000" channel="157">
-    <title lang="it">Italy - Serie B : Sassuolo vs Reggiana</title>
-    <desc lang="it">Italy - Serie B : Sassuolo vs Reggiana trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="25">
     <display-name>Italy - Serie A : Lecce vs Roma</display-name>
   </channel>
@@ -52,6 +13,9 @@
     <desc lang="it">Italy - Serie A : Lecce vs Roma trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="870">
+    <display-name>Italy - Serie A : Lecce vs Roma</display-name>
+  </channel>
   <programme start="20250329000000 +0000" stop="20250329194500 +0000" channel="870">
     <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">Italy - Serie A : Lecce vs Roma.</desc>
@@ -63,18 +27,8 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="575">
-    <display-name>Moto3 | Round 3 | United States Qualifying</display-name>
+    <display-name>MotoGP | Round 3 | United States Sprint Race</display-name>
   </channel>
-  <programme start="20250329000000 +0000" stop="20250329174500 +0000" channel="575">
-    <title lang="it">inizierà alle 18:45.</title>
-    <desc lang="it">Moto3 | Round 3 | United States Qualifying.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250329174500 +0000" stop="20250329194500 +0000" channel="575">
-    <title lang="it">Moto3 | Round 3 | United States Qualifying</title>
-    <desc lang="it">Moto3 | Round 3 | United States Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250329000000 +0000" stop="20250329194500 +0000" channel="575">
     <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">MotoGP | Round 3 | United States Sprint Race.</desc>
@@ -84,31 +38,5 @@
     <title lang="it">MotoGP | Round 3 | United States Sprint Race</title>
     <desc lang="it">MotoGP | Round 3 | United States Sprint Race trasmesso in diretta.</desc>
     <category lang="it">Motorsport</category>
-  </programme>
-  <channel id="879">
-    <display-name>Lega A : Sassari vs Trapani</display-name>
-  </channel>
-  <programme start="20250329000000 +0000" stop="20250329190000 +0000" channel="879">
-    <title lang="it">inizierà alle 20:00.</title>
-    <desc lang="it">Lega A : Sassari vs Trapani.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250329190000 +0000" stop="20250329210000 +0000" channel="879">
-    <title lang="it">Lega A : Sassari vs Trapani</title>
-    <desc lang="it">Lega A : Sassari vs Trapani trasmesso in diretta.</desc>
-    <category lang="it">Basketball</category>
-  </programme>
-  <channel id="462">
-    <display-name>United Rugby Championship - Benetton Treviso vs Cardiff Rugby</display-name>
-  </channel>
-  <programme start="20250329000000 +0000" stop="20250329193500 +0000" channel="462">
-    <title lang="it">inizierà alle 20:35.</title>
-    <desc lang="it">United Rugby Championship - Benetton Treviso vs Cardiff Rugby.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250329193500 +0000" stop="20250329213500 +0000" channel="462">
-    <title lang="it">United Rugby Championship - Benetton Treviso vs Cardiff Rugby</title>
-    <desc lang="it">United Rugby Championship - Benetton Treviso vs Cardiff Rugby trasmesso in diretta.</desc>
-    <category lang="it">Rugby Union</category>
   </programme>
 </tv>
