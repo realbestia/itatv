@@ -1,5 +1,177 @@
 {
     "Saturday 29th March 2025 - Schedule Time UK GMT": {
+        "PPV Events</span>": [
+            {
+                "time": "17:00",
+                "event": "MotoAmerica Superbike Talent Cup",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "196"
+                    }
+                ]
+            },
+            {
+                "time": "17:30",
+                "event": "The Way of Warrior FC : WOW 17: Madrid",
+                "channels": [
+                    {
+                        "channel_name": "UFC Fight Pass",
+                        "channel_id": "197"
+                    }
+                ]
+            },
+            {
+                "time": "18:00",
+                "event": "2025 American Flat Track at Senoia Short Track",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "198"
+                    }
+                ]
+            },
+            {
+                "time": "18:30",
+                "event": "AMA Supercross Championship Seattle",
+                "channels": [
+                    {
+                        "channel_name": "Peacock",
+                        "channel_id": "199"
+                    }
+                ]
+            },
+            {
+                "time": "19:30",
+                "event": "2025 Weekly Racing at Port Royal Speedway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "200"
+                    }
+                ]
+            },
+            {
+                "time": "19:30",
+                "event": "TNT Extreme Wrestling: DOA - Dead Or Alive 2025",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "201"
+                    }
+                ]
+            },
+            {
+                "time": "20:00",
+                "event": "Attica Raceway Park : Attica Sprint Cars",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "202"
+                    }
+                ]
+            },
+            {
+                "time": "20:45",
+                "event": "Super DIRTcar Series",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "203"
+                    }
+                ]
+            },
+            {
+                "time": "21:00",
+                "event": "Battle for the Thrones",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "204"
+                    }
+                ]
+            },
+            {
+                "time": "22:00",
+                "event": "2025 MARS Nippy 50 at Maquoketa Speedway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "205"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "Nascar Weekly Racing Hickory",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "206"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "Boxing Next Generation Greensboro",
+                "channels": [
+                    {
+                        "channel_name": "BXNG TV",
+                        "channel_id": "207"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "OVW: March Mayhem 2025",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "208"
+                    }
+                ]
+            },
+            {
+                "time": "23:15",
+                "event": "World of Outlaws Sprint Cars",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "209"
+                    }
+                ]
+            },
+            {
+                "time": "00:00",
+                "event": "Spring Nationals East Alabama",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "210"
+                    }
+                ]
+            },
+            {
+                "time": "00:45",
+                "event": "2025 Kubota High Limit Racing at Central Arizona Speedway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "211"
+                    }
+                ]
+            },
+            {
+                "time": "01:00",
+                "event": "GCW No Compadre 2025",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "212"
+                    }
+                ]
+            }
+        ],
         "TV Shows</span>": [
             {
                 "time": "13:00",
@@ -4744,6 +4916,20 @@
                 ]
             }
         ],
+        "Tennis ATP - MIAMI</span>": [
+            {
+                "time": "16:30",
+                "event": "ATP - MIAMI : Arevalo M./Pavic M. vs Cash J./Glasspool L.",
+                "channels": []
+            }
+        ],
+        "Tennis WTA - MIAMI</span>": [
+            {
+                "time": "19:00",
+                "event": "WTA - MIAMI : Sabalenka A. vs Pegula J.",
+                "channels": []
+            }
+        ],
         "Tennis</span>": [
             {
                 "time": "16:30",
@@ -5620,7 +5806,7 @@
                 ]
             },
             {
-                "time": "06:32",
+                "time": "15:39",
                 "event": "2:30 PGA Tour Texas Children's Hospital Open Third Round",
                 "channels": [
                     {
