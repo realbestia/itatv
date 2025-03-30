@@ -2,7 +2,7 @@ name: Esegui ita.py ogni 4 ore
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Esegue ogni 4 ore
+    - cron: '0 */2 * * *'  # Esegue ogni 4 ore
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
