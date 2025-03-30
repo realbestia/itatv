@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="77">
-    <display-name>Bundesliga : Freiburg vs Union Berlin</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330133000 +0000" channel="77">
-    <title lang="it">inizierà alle 15:30.</title>
-    <desc lang="it">Bundesliga : Freiburg vs Union Berlin.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330133000 +0000" stop="20250330153000 +0000" channel="77">
-    <title lang="it">Bundesliga : Freiburg vs Union Berlin</title>
-    <desc lang="it">Bundesliga : Freiburg vs Union Berlin trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="882">
     <display-name>Italy - Serie A (women) : Inter Milano vs Juventus</display-name>
   </channel>
@@ -143,6 +130,9 @@
     <desc lang="it">Italy - Serie A : Internazionale vs Udinese trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="77">
+    <display-name>Italy - Serie C : Avellino vs Benevento</display-name>
+  </channel>
   <programme start="20250330000000 +0000" stop="20250330173000 +0000" channel="77">
     <title lang="it">inizierà alle 19:30.</title>
     <desc lang="it">Italy - Serie C : Avellino vs Benevento.</desc>
