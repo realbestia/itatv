@@ -1,29 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="877">
-    <display-name>Italy - Serie A : Napoli vs Milan</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330184500 +0000" channel="877">
-    <title lang="it">inizierà alle 20:45.</title>
-    <desc lang="it">Italy - Serie A : Napoli vs Milan.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330184500 +0000" stop="20250330204500 +0000" channel="877">
-    <title lang="it">Italy - Serie A : Napoli vs Milan</title>
-    <desc lang="it">Italy - Serie A : Napoli vs Milan trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="575">
-    <display-name>MotoGP | Round 3 | United States Race</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330181500 +0000" channel="575">
-    <title lang="it">inizierà alle 20:15.</title>
-    <desc lang="it">MotoGP | Round 3 | United States Race.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330181500 +0000" stop="20250330201500 +0000" channel="575">
-    <title lang="it">MotoGP | Round 3 | United States Race</title>
-    <desc lang="it">MotoGP | Round 3 | United States Race trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
 </tv>
