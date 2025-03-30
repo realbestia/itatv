@@ -81,7 +81,7 @@ def generate_m3u8_from_json(json_data):
                 event_name = event_info["event"]
 
                 try:
-                    event_time = (datetime.strptime(time_str, "%H:%M") + timedelta(hours=1)).time()  # Aggiungi 1 ora
+                    event_time = (datetime.strptime(time_str, "%H:%M") + timedelta(hours=2)).time()  # Aggiungi 2 ora
                     event_datetime = datetime.combine(event_date, event_time)
                 except ValueError:
                     continue
