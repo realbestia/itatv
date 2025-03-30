@@ -2,7 +2,7 @@ name: Esegui eventiepg.py ogni 4 ore
 
 on:
   schedule:
-    - cron: '40 */3 * * *'  # Esegue ogni ora
+    - cron: '40 */1 * * *'  # Esegue ogni ora
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
