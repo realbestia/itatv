@@ -2,7 +2,7 @@ name: Extract Schedule Data
 
 on:
   schedule:
-    - cron: '45 */3 * * *'  # Esegui ogni 3 ore
+    - cron: '45 */1 * * *'  # Esegui ogni 3 ore
   workflow_dispatch:  # Consente l'esecuzione manuale
 
 jobs:
