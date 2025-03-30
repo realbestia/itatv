@@ -1,140 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="4">
-    <display-name>Italy - Serie C : Pro Vercelli vs Vicenza</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="4">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie C : Pro Vercelli vs Vicenza.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="4">
-    <title lang="it">Italy - Serie C : Pro Vercelli vs Vicenza</title>
-    <desc lang="it">Italy - Serie C : Pro Vercelli vs Vicenza trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="24">
-    <display-name>Italy - Serie C : Rimini vs Sestri Levante</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="24">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie C : Rimini vs Sestri Levante.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="24">
-    <title lang="it">Italy - Serie C : Rimini vs Sestri Levante</title>
-    <desc lang="it">Italy - Serie C : Rimini vs Sestri Levante trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="25">
-    <display-name>Italy - Serie C : Lucchese vs Ternana</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="25">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie C : Lucchese vs Ternana.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="25">
-    <title lang="it">Italy - Serie C : Lucchese vs Ternana</title>
-    <desc lang="it">Italy - Serie C : Lucchese vs Ternana trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="26">
-    <display-name>Italy - Serie C : Ascoli vs Vis Pesaro</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="26">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie C : Ascoli vs Vis Pesaro.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="26">
-    <title lang="it">Italy - Serie C : Ascoli vs Vis Pesaro</title>
-    <desc lang="it">Italy - Serie C : Ascoli vs Vis Pesaro trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="27">
-    <display-name>Italy - Serie C : Trapani 1905 vs Catania</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="27">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie C : Trapani 1905 vs Catania.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="27">
-    <title lang="it">Italy - Serie C : Trapani 1905 vs Catania</title>
-    <desc lang="it">Italy - Serie C : Trapani 1905 vs Catania trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="28">
-    <display-name>Italy - Serie C : Audace Cerignola vs Monopoli</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="28">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie C : Audace Cerignola vs Monopoli.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="28">
-    <title lang="it">Italy - Serie C : Audace Cerignola vs Monopoli</title>
-    <desc lang="it">Italy - Serie C : Audace Cerignola vs Monopoli trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="877">
-    <display-name>Italy - Serie A : Fiorentina vs Atalanta</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="877">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie A : Fiorentina vs Atalanta.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="877">
-    <title lang="it">Italy - Serie A : Fiorentina vs Atalanta</title>
-    <desc lang="it">Italy - Serie A : Fiorentina vs Atalanta trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="68">
-    <display-name>Italy - Serie B : Carrarese vs Bari 1908</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="68">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie B : Carrarese vs Bari 1908.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="68">
-    <title lang="it">Italy - Serie B : Carrarese vs Bari 1908</title>
-    <desc lang="it">Italy - Serie B : Carrarese vs Bari 1908 trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="69">
-    <display-name>Italy - Serie B : Cesena vs Juve Stabia</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="69">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie B : Cesena vs Juve Stabia.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="69">
-    <title lang="it">Italy - Serie B : Cesena vs Juve Stabia</title>
-    <desc lang="it">Italy - Serie B : Cesena vs Juve Stabia trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="76">
-    <display-name>Italy - Serie A (women) : Sampdoria vs Sassuolo</display-name>
-  </channel>
-  <programme start="20250330000000 +0000" stop="20250330130000 +0000" channel="76">
-    <title lang="it">inizierà alle 14:00.</title>
-    <desc lang="it">Italy - Serie A (women) : Sampdoria vs Sassuolo.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250330130000 +0000" stop="20250330150000 +0000" channel="76">
-    <title lang="it">Italy - Serie A (women) : Sampdoria vs Sassuolo</title>
-    <desc lang="it">Italy - Serie A (women) : Sampdoria vs Sassuolo trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="77">
     <display-name>Bundesliga : Freiburg vs Union Berlin</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330133000 +0000" channel="77">
-    <title lang="it">inizierà alle 14:30.</title>
+    <title lang="it">inizierà alle 15:30.</title>
     <desc lang="it">Bundesliga : Freiburg vs Union Berlin.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -147,7 +17,7 @@
     <display-name>Italy - Serie A (women) : Inter Milano vs Juventus</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330140000 +0000" channel="882">
-    <title lang="it">inizierà alle 15:00.</title>
+    <title lang="it">inizierà alle 16:00.</title>
     <desc lang="it">Italy - Serie A (women) : Inter Milano vs Juventus.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -160,7 +30,7 @@
     <display-name>Italy - Serie B : Salernitana vs Palermo</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330151500 +0000" channel="109">
-    <title lang="it">inizierà alle 16:15.</title>
+    <title lang="it">inizierà alle 17:15.</title>
     <desc lang="it">Italy - Serie B : Salernitana vs Palermo.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -173,7 +43,7 @@
     <display-name>Bundesliga : Borussia Dortmund vs Mainz 05</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330153000 +0000" channel="460">
-    <title lang="it">inizierà alle 16:30.</title>
+    <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Bundesliga : Borussia Dortmund vs Mainz 05.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -182,8 +52,11 @@
     <desc lang="it">Bundesliga : Borussia Dortmund vs Mainz 05 trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="27">
+    <display-name>Italy - Serie C : Trento vs AlbinoLeffe</display-name>
+  </channel>
   <programme start="20250330000000 +0000" stop="20250330153000 +0000" channel="27">
-    <title lang="it">inizierà alle 16:30.</title>
+    <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Trento vs AlbinoLeffe.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -192,8 +65,11 @@
     <desc lang="it">Italy - Serie C : Trento vs AlbinoLeffe trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="24">
+    <display-name>Italy - Serie C : Lumezzane vs Caldiero Terme</display-name>
+  </channel>
   <programme start="20250330000000 +0000" stop="20250330153000 +0000" channel="24">
-    <title lang="it">inizierà alle 16:30.</title>
+    <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Lumezzane vs Caldiero Terme.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -202,8 +78,11 @@
     <desc lang="it">Italy - Serie C : Lumezzane vs Caldiero Terme trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="26">
+    <display-name>Italy - Serie C : Virtus Verona vs Pro Patria</display-name>
+  </channel>
   <programme start="20250330000000 +0000" stop="20250330153000 +0000" channel="26">
-    <title lang="it">inizierà alle 16:30.</title>
+    <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Virtus Verona vs Pro Patria.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -212,8 +91,11 @@
     <desc lang="it">Italy - Serie C : Virtus Verona vs Pro Patria trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="25">
+    <display-name>Italy - Serie C : SPAL vs Legnago Salus</display-name>
+  </channel>
   <programme start="20250330000000 +0000" stop="20250330153000 +0000" channel="25">
-    <title lang="it">inizierà alle 16:30.</title>
+    <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : SPAL vs Legnago Salus.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -222,8 +104,11 @@
     <desc lang="it">Italy - Serie C : SPAL vs Legnago Salus trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="28">
+    <display-name>Italy - Serie C : Potenza Calcio vs Giugliano</display-name>
+  </channel>
   <programme start="20250330000000 +0000" stop="20250330153000 +0000" channel="28">
-    <title lang="it">inizierà alle 16:30.</title>
+    <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Potenza Calcio vs Giugliano.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -232,8 +117,11 @@
     <desc lang="it">Italy - Serie C : Potenza Calcio vs Giugliano trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="4">
+    <display-name>Italy - Serie A : Internazionale vs Udinese</display-name>
+  </channel>
   <programme start="20250330000000 +0000" stop="20250330160000 +0000" channel="4">
-    <title lang="it">inizierà alle 17:00.</title>
+    <title lang="it">inizierà alle 18:00.</title>
     <desc lang="it">Italy - Serie A : Internazionale vs Udinese.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -246,7 +134,7 @@
     <display-name>Italy - Serie A : Internazionale vs Udinese</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330160000 +0000" channel="870">
-    <title lang="it">inizierà alle 17:00.</title>
+    <title lang="it">inizierà alle 18:00.</title>
     <desc lang="it">Italy - Serie A : Internazionale vs Udinese.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -256,7 +144,7 @@
     <category lang="it">Soccer</category>
   </programme>
   <programme start="20250330000000 +0000" stop="20250330173000 +0000" channel="77">
-    <title lang="it">inizierà alle 18:30.</title>
+    <title lang="it">inizierà alle 19:30.</title>
     <desc lang="it">Italy - Serie C : Avellino vs Benevento.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -269,7 +157,7 @@
     <display-name>Italy - Serie C : Avellino vs Benevento</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330173000 +0000" channel="462">
-    <title lang="it">inizierà alle 18:30.</title>
+    <title lang="it">inizierà alle 19:30.</title>
     <desc lang="it">Italy - Serie C : Avellino vs Benevento.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -278,8 +166,11 @@
     <desc lang="it">Italy - Serie C : Avellino vs Benevento trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="877">
+    <display-name>Italy - Serie A : Napoli vs Milan</display-name>
+  </channel>
   <programme start="20250330000000 +0000" stop="20250330184500 +0000" channel="877">
-    <title lang="it">inizierà alle 19:45.</title>
+    <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">Italy - Serie A : Napoli vs Milan.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -292,7 +183,7 @@
     <display-name>MotoGP | Round 3 | United States Warm Up</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330143000 +0000" channel="575">
-    <title lang="it">inizierà alle 15:30.</title>
+    <title lang="it">inizierà alle 16:30.</title>
     <desc lang="it">MotoGP | Round 3 | United States Warm Up.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -302,7 +193,7 @@
     <category lang="it">Motorsport</category>
   </programme>
   <programme start="20250330000000 +0000" stop="20250330150000 +0000" channel="575">
-    <title lang="it">inizierà alle 16:00.</title>
+    <title lang="it">inizierà alle 17:00.</title>
     <desc lang="it">Moto3 | Round 3 | United States Race.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -312,7 +203,7 @@
     <category lang="it">Motorsport</category>
   </programme>
   <programme start="20250330000000 +0000" stop="20250330170000 +0000" channel="575">
-    <title lang="it">inizierà alle 18:00.</title>
+    <title lang="it">inizierà alle 19:00.</title>
     <desc lang="it">Moto2 | Round 3 | United States Race.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -322,7 +213,7 @@
     <category lang="it">Motorsport</category>
   </programme>
   <programme start="20250330000000 +0000" stop="20250330181500 +0000" channel="575">
-    <title lang="it">inizierà alle 19:15.</title>
+    <title lang="it">inizierà alle 20:15.</title>
     <desc lang="it">MotoGP | Round 3 | United States Race.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -332,7 +223,7 @@
     <category lang="it">Motorsport</category>
   </programme>
   <programme start="20250330000000 +0000" stop="20250330173700 +0000" channel="460">
-    <title lang="it">inizierà alle 18:37.</title>
+    <title lang="it">inizierà alle 19:37.</title>
     <desc lang="it">MLB : Baltimore Orioles vs Toronto Blue Jays.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -345,7 +236,7 @@
     <display-name>Lega A : Varese vs Scafati</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330143000 +0000" channel="878">
-    <title lang="it">inizierà alle 15:30.</title>
+    <title lang="it">inizierà alle 16:30.</title>
     <desc lang="it">Lega A : Varese vs Scafati.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -355,7 +246,7 @@
     <category lang="it">Basketball</category>
   </programme>
   <programme start="20250330000000 +0000" stop="20250330153000 +0000" channel="877">
-    <title lang="it">inizierà alle 16:30.</title>
+    <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Lega A : Cremona vs Benetton Treviso.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -368,7 +259,7 @@
     <display-name>Six Nations Women : Italy W vs Ireland W</display-name>
   </channel>
   <programme start="20250330000000 +0000" stop="20250330150000 +0000" channel="851">
-    <title lang="it">inizierà alle 16:00.</title>
+    <title lang="it">inizierà alle 17:00.</title>
     <desc lang="it">Six Nations Women : Italy W vs Ireland W.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -378,7 +269,7 @@
     <category lang="it">Rugby Union</category>
   </programme>
   <programme start="20250330000000 +0000" stop="20250330150000 +0000" channel="462">
-    <title lang="it">inizierà alle 16:00.</title>
+    <title lang="it">inizierà alle 17:00.</title>
     <desc lang="it">Six Nations Women : Italy W vs Ireland W.</desc>
     <category lang="it">Annuncio</category>
   </programme>
@@ -388,7 +279,7 @@
     <category lang="it">Rugby Union</category>
   </programme>
   <programme start="20250330000000 +0000" stop="20250330160000 +0000" channel="882">
-    <title lang="it">inizierà alle 17:00.</title>
+    <title lang="it">inizierà alle 18:00.</title>
     <desc lang="it">Serie A1 Women : Chieri '76 W vs Perugia W.</desc>
     <category lang="it">Annuncio</category>
   </programme>
