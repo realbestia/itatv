@@ -1,30 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="4" tvg-name="Italy - Serie C : Pro Vercelli vs Vicenza - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Pro Vercelli vs Vicenza - 30/03/2025 15:00
-https://nfsnew.koskoros.ru/nfs/premium4/mono.m3u8
-#EXTINF:-1 tvg-id="24" tvg-name="Italy - Serie C : Rimini vs Sestri Levante - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Rimini vs Sestri Levante - 30/03/2025 15:00
-https://nfsnew.koskoros.ru/nfs/premium24/mono.m3u8
-#EXTINF:-1 tvg-id="25" tvg-name="Italy - Serie C : Lucchese vs Ternana - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Lucchese vs Ternana - 30/03/2025 15:00
-https://nfsnew.koskoros.ru/nfs/premium25/mono.m3u8
-#EXTINF:-1 tvg-id="26" tvg-name="Italy - Serie C : Ascoli vs Vis Pesaro - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Ascoli vs Vis Pesaro - 30/03/2025 15:00
-https://nfsnew.koskoros.ru/nfs/premium26/mono.m3u8
-#EXTINF:-1 tvg-id="27" tvg-name="Italy - Serie C : Trapani 1905 vs Catania - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Trapani 1905 vs Catania - 30/03/2025 15:00
-https://nfsnew.koskoros.ru/nfs/premium27/mono.m3u8
-#EXTINF:-1 tvg-id="28" tvg-name="Italy - Serie C : Audace Cerignola vs Monopoli - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Audace Cerignola vs Monopoli - 30/03/2025 15:00
-https://nfsnew.koskoros.ru/nfs/premium28/mono.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Fiorentina vs Atalanta - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Fiorentina vs Atalanta - 30/03/2025 15:00
-https://nfsnew.koskoros.ru/nfs/premium877/mono.m3u8
-#EXTINF:-1 tvg-id="68" tvg-name="Italy - Serie B : Carrarese vs Bari 1908 - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Carrarese vs Bari 1908 - 30/03/2025 15:00
-https://windnew.koskoros.ru/wind/premium68/mono.m3u8
-#EXTINF:-1 tvg-id="69" tvg-name="Italy - Serie B : Cesena vs Juve Stabia - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Cesena vs Juve Stabia - 30/03/2025 15:00
-https://ddy6new.koskoros.ru/ddy6/premium69/mono.m3u8
-#EXTINF:-1 tvg-id="76" tvg-name="Italy - Serie A (women) : Sampdoria vs Sassuolo - 30/03/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Sampdoria vs Sassuolo - 30/03/2025 15:00
-https://windnew.koskoros.ru/wind/premium76/mono.m3u8
-#EXTINF:-1 tvg-id="77" tvg-name="Bundesliga : Freiburg vs Union Berlin - 30/03/2025 15:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : Freiburg vs Union Berlin - 30/03/2025 15:30
-https://windnew.koskoros.ru/wind/premium77/mono.m3u8
-#EXTINF:-1 tvg-id="882" tvg-name="Italy - Serie A (women) : Inter Milano vs Juventus - 30/03/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Inter Milano vs Juventus - 30/03/2025 16:00
-https://ddy6new.koskoros.ru/ddy6/premium882/mono.m3u8
 #EXTINF:-1 tvg-id="109" tvg-name="Italy - Serie B : Salernitana vs Palermo - 30/03/2025 17:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Salernitana vs Palermo - 30/03/2025 17:15
 https://ddy6new.koskoros.ru/ddy6/premium109/mono.m3u8
 #EXTINF:-1 tvg-id="460" tvg-name="Bundesliga : Borussia Dortmund vs Mainz 05 - 30/03/2025 17:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : Borussia Dortmund vs Mainz 05 - 30/03/2025 17:30
