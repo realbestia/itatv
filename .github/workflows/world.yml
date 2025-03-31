@@ -3,7 +3,7 @@ name: Esegui world.py ogni 4 ore
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Esegue ogni 4 ore
+    - cron: '50 */3 * * *'  # Esegue ogni 4 ore
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
