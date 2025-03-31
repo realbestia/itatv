@@ -5637,8 +5637,8 @@
                 ]
             },
             {
-                "time": "22:40",
-                "event": "MLB : New York Mets vs Miami Marlins",
+                "time": "23:02",
+                "event": "004:10 MLB : New York Mets vs Miami Marlins",
                 "channels": [
                     {
                         "channel_name": "MLB League Pass",
@@ -5647,6 +5647,10 @@
                     {
                         "channel_name": "SportsNet New York USA",
                         "channel_id": "759"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network Florida",
+                        "channel_id": "892"
                     }
                 ]
             },
@@ -5703,12 +5707,12 @@
                         "channel_id": "107"
                     },
                     {
-                        "channel_name": "Bally Sports Sun",
-                        "channel_id": "905"
-                    },
-                    {
                         "channel_name": "SportsNet Pittsburgh",
                         "channel_id": "922"
+                    },
+                    {
+                        "channel_name": "Bally Sports Sun",
+                        "channel_id": "905"
                     }
                 ]
             },
@@ -5729,8 +5733,16 @@
                         "channel_id": "407"
                     },
                     {
+                        "channel_name": "Sportsnet West",
+                        "channel_id": "408"
+                    },
+                    {
                         "channel_name": "TVA Sports",
                         "channel_id": "833"
+                    },
+                    {
+                        "channel_name": "MASN USA",
+                        "channel_id": "829"
                     }
                 ]
             },
@@ -5741,6 +5753,14 @@
                     {
                         "channel_name": "MLB League Pass",
                         "channel_id": "109"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network Kansas City",
+                        "channel_id": "895"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network Wisconsin",
+                        "channel_id": "907"
                     }
                 ]
             },
@@ -5751,6 +5771,10 @@
                     {
                         "channel_name": "MLB League Pass",
                         "channel_id": "110"
+                    },
+                    {
+                        "channel_name": "Chicago Sports Network",
+                        "channel_id": "776"
                     }
                 ]
             },
@@ -5761,6 +5785,14 @@
                     {
                         "channel_name": "MLB League Pass",
                         "channel_id": "151"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network Midwest",
+                        "channel_id": "896"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network Oklahoma",
+                        "channel_id": "900"
                     }
                 ]
             },
@@ -5771,6 +5803,10 @@
                     {
                         "channel_name": "MLB League Pass",
                         "channel_id": "152"
+                    },
+                    {
+                        "channel_name": "Space City Home Network",
+                        "channel_id": "921"
                     }
                 ]
             },
@@ -5799,6 +5835,10 @@
                     {
                         "channel_name": "Root Sports NW USA",
                         "channel_id": "920"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network Detroit",
+                        "channel_id": "891"
                     }
                 ]
             },
@@ -5817,6 +5857,10 @@
                     {
                         "channel_name": "Marquee Sports Network USA",
                         "channel_id": "770"
+                    },
+                    {
+                        "channel_name": "Marquee Sports Network",
+                        "channel_id": "770"
                     }
                 ]
             },
@@ -5833,8 +5877,12 @@
                         "channel_id": "409"
                     },
                     {
-                        "channel_name": "Bally Sports Oklahoma",
-                        "channel_id": "900"
+                        "channel_name": "Spectrum SportsNet LA",
+                        "channel_id": "764"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network South",
+                        "channel_id": "903"
                     }
                 ]
             }
