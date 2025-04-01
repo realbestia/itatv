@@ -1,8 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="UEFA Youth League : Trabzonspor U19 vs Internazionale U19 - 01/04/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Youth League : Trabzonspor U19 vs Internazionale U19 - 01/04/2025 16:00
-https://windnew.koskoros.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Arsenal vs Fulham - 01/04/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Arsenal vs Fulham - 01/04/2025 20:45
 https://windnew.koskoros.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="9" tvg-name="England - Premier League : Wolverhampton Wanderers vs West Ham United - 01/04/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Wolverhampton Wanderers vs West Ham United - 01/04/2025 20:45
