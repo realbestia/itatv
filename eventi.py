@@ -45,7 +45,7 @@ def get_stream_link(channel_id, max_retries=3):
                 server_key_data = response_key.json()
                 if 'server_key' in server_key_data:
                     server_key = server_key_data['server_key']
-                    stream_url = f"https://{server_key}new.koskoros.ru/{server_key}/premium{channel_id}/mono.m3u8"
+                    stream_url = f"https://{server_key}new.newkso.ru/{server_key}/premium{channel_id}/mono.m3u8"
 
                     channel_cache[channel_id] = stream_url  # Salva nella cache
                     return stream_url
