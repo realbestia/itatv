@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="870">
-    <display-name>UEFA Youth League : Trabzonspor U19 vs Internazionale U19</display-name>
+    <display-name>England - Premier League : Arsenal vs Fulham</display-name>
   </channel>
-  <programme start="20250401000000 +0000" stop="20250401140000 +0000" channel="870">
-    <title lang="it">inizierà alle 16:00.</title>
-    <desc lang="it">UEFA Youth League : Trabzonspor U19 vs Internazionale U19.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250401140000 +0000" stop="20250401160000 +0000" channel="870">
-    <title lang="it">UEFA Youth League : Trabzonspor U19 vs Internazionale U19</title>
-    <desc lang="it">UEFA Youth League : Trabzonspor U19 vs Internazionale U19 trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <programme start="20250401000000 +0000" stop="20250401184500 +0000" channel="870">
     <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">England - Premier League : Arsenal vs Fulham.</desc>
