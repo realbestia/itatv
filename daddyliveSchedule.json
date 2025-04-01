@@ -7043,7 +7043,7 @@
             },
             {
                 "time": "00:00",
-                "event": "College Baseball Arkansas-Pine Bluff vs Missouri",
+                "event": "College Baseball : Arkansas-Pine Bluff vs Missouri",
                 "channels": [
                     {
                         "channel_name": "SEC Network USA",
@@ -7053,7 +7053,7 @@
             },
             {
                 "time": "00:00",
-                "event": "College Softball Kentucky vs Louisville",
+                "event": "College Softball : Kentucky vs Louisville",
                 "channels": [
                     {
                         "channel_name": "ESPN2 USA",
@@ -7063,7 +7063,7 @@
             },
             {
                 "time": "00:00",
-                "event": "College Softball Pacific vs San Jose State",
+                "event": "College Softball : Pacific vs San Jose State",
                 "channels": [
                     {
                         "channel_name": "NBCS Bay Area USA",
@@ -7073,7 +7073,7 @@
             },
             {
                 "time": "00:00",
-                "event": "College Softball Massachusetts vs Boston College",
+                "event": "College Softball : Massachusetts vs Boston College",
                 "channels": [
                     {
                         "channel_name": "ACC Network USA",
@@ -8082,70 +8082,6 @@
         ],
         "Ice Hockey</span>": [
             {
-                "time": "16:00",
-                "event": "Slovakia Extraliga : HC Kosice vs. HKM Zvolen",
-                "channels": [
-                    {
-                        "channel_name": "JOJ Sport Slovakia HD",
-                        "channel_id": "23"
-                    }
-                ]
-            },
-            {
-                "time": "16:30",
-                "event": "Czech Republic Extraliga : Sparta Prague vs. HC Kometa Brno",
-                "channels": [
-                    {
-                        "channel_name": "CT Sport Czech HD",
-                        "channel_id": "69"
-                    }
-                ]
-            },
-            {
-                "time": "18:30",
-                "event": "France Ligue Magnus : Ducs d'Angers vs Br\u00fbleurs de Loups Grenoble",
-                "channels": [
-                    {
-                        "channel_name": "Sport en France",
-                        "channel_id": "168"
-                    }
-                ]
-            },
-            {
-                "time": "19:00",
-                "event": "PWHL : Charge vs. Fleet",
-                "channels": [
-                    {
-                        "channel_name": "TSN5",
-                        "channel_id": "115"
-                    },
-                    {
-                        "channel_name": "NESN USA",
-                        "channel_id": "762"
-                    }
-                ]
-            },
-            {
-                "time": "15:30",
-                "event": "Finland Liiga Playoffs : SaiPa Lappeenranta vs HIFK Helsinki",
-                "channels": [
-                    {
-                        "channel_name": "TV4 Sportkanalen",
-                        "channel_id": "707"
-                    }
-                ]
-            },
-            {
-                "time": "17:00",
-                "event": "Sweden Hockey Allsvenskan : Djurg\u00e5rdens IF vs S\u00f6dert\u00e4lje SK",
-                "channels": [
-                    {
-                        "channel_name": "TV4 Sport Live 1",
-                        "channel_id": "703"
-                    }
-                ]
-            },
-            {
                 "time": "09:30",
                 "event": "KHL : Admiral Vladivostok vs Traktor Chelyabinsk",
                 "channels": [
@@ -8162,6 +8098,26 @@
                     {
                         "channel_name": "KHL Tv",
                         "channel_id": "169"
+                    }
+                ]
+            },
+            {
+                "time": "15:30",
+                "event": "Finland Liiga Playoffs : SaiPa Lappeenranta vs HIFK Helsinki",
+                "channels": [
+                    {
+                        "channel_name": "TV4 Sportkanalen",
+                        "channel_id": "707"
+                    }
+                ]
+            },
+            {
+                "time": "16:00",
+                "event": "Slovakia Extraliga : HC Kosice vs. HKM Zvolen",
+                "channels": [
+                    {
+                        "channel_name": "JOJ Sport Slovakia HD",
+                        "channel_id": "23"
                     }
                 ]
             },
@@ -8186,12 +8142,56 @@
                 ]
             },
             {
+                "time": "16:30",
+                "event": "Czech Republic Extraliga : Sparta Prague vs. HC Kometa Brno",
+                "channels": [
+                    {
+                        "channel_name": "CT Sport Czech HD",
+                        "channel_id": "69"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "Sweden Hockey Allsvenskan : Djurg\u00e5rdens IF vs S\u00f6dert\u00e4lje SK",
+                "channels": [
+                    {
+                        "channel_name": "TV4 Sport Live 1",
+                        "channel_id": "703"
+                    }
+                ]
+            },
+            {
                 "time": "17:30",
                 "event": "DEL : ERC Ingolstadt vs K\u00f6lner Haie",
                 "channels": [
                     {
                         "channel_name": "Magenta Sport 302",
                         "channel_id": "76"
+                    }
+                ]
+            },
+            {
+                "time": "18:30",
+                "event": "France Ligue Magnus : Ducs d'Angers vs Br\u00fbleurs de Loups Grenoble",
+                "channels": [
+                    {
+                        "channel_name": "Sport en France",
+                        "channel_id": "168"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "PWHL : Charge vs Fleet",
+                "channels": [
+                    {
+                        "channel_name": "TSN5",
+                        "channel_id": "115"
+                    },
+                    {
+                        "channel_name": "NESN USA",
+                        "channel_id": "762"
                     }
                 ]
             },
