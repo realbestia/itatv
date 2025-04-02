@@ -30,10 +30,12 @@ def html_to_json(html_content):
         if 'date-row' in row.get('class', []):
             current_date = row.find('strong').text.strip()
 
-            # Controlla se la data contiene uno dei suffissi (st, nd, rd, th)
-            if re.search(r'(\d+)(st|nd|rd|th)', current_date):
-                # Aggiungi il mese corrente dopo il suffisso
-                current_date = re.sub(r'(\d+)(st|nd|rd|th)', r'\1\2 ' + current_month, current_date)
+            # Controlla se la data contiene uno dei suffissi (st, nd, rd, th) e il mese
+            match = re.search(r'(\d+)(st|nd|rd|th)', current_date)
+            if match:
+                # Aggiungi il mese corrente dopo il suffisso, solo se il mese non è già presente
+                if current_month not in current_date:
+                    current_date = re.sub(r'(\d+)(st|nd|rd|th)', r'\1\2 ' + current_month, current_date)
 
             result[current_date] = {}
             current_category = None
