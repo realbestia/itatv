@@ -81,7 +81,7 @@ def generate_m3u8_from_json(json_data):
                 event_name = event_info["event"]
 
                 try:
-                    event_time = (datetime.strptime(time_str, "%H:%M") + timedelta(hours=2)).time()  # Aggiungi 2 ore
+                    event_time = (datetime.strptime(time_str, "%H:%M") + timedelta(hours=2)).time()  # Aggiungi 2 ora
                     event_datetime = datetime.combine(event_date, event_time)
                 except ValueError:
                     continue
@@ -94,20 +94,14 @@ def generate_m3u8_from_json(json_data):
                 for channel in event_info["channels"]:
                     channel_name = clean_text(channel["channel_name"])
                     channel_id = channel["channel_id"]
+                    stream_url = get_stream_link(channel_id)
 
-                    # Normalizza il nome del canale rimuovendo spazi extra e converte tutto in maiuscolo
-                    channel_name_normalized = re.sub(r'\s+', ' ', channel_name).strip().upper()
-
-                    # Filtro per "Italy", "Rai", "Italia", "IT"
-                    if re.search(r'\b(ITALY|RAI|ITALIA|IT)\b', channel_name_normalized, re.IGNORECASE):
-                        stream_url = get_stream_link(channel_id)
-
-                        if stream_url:
-                            valid_channels.append({
-                                "channel_id": channel_id,
-                                "channel_name": channel_name,
-                                "stream_url": stream_url
-                            })
+                    if stream_url:
+                        valid_channels.append({
+                            "channel_id": channel_id,
+                            "channel_name": channel_name,
+                            "stream_url": stream_url
+                        })
 
                 if valid_channels:
                     valid_events.append({
@@ -150,11 +144,8 @@ def load_json(json_file):
                 for channel in event_info["channels"]:
                     channel_name = clean_text(channel["channel_name"])
 
-                    # Normalizza il nome del canale rimuovendo spazi extra e converte tutto in maiuscolo
-                    channel_name_normalized = re.sub(r'\s+', ' ', channel_name).strip().upper()
-
                     # Filtro per "Italy", "Rai", "Italia", "IT"
-                    if re.search(r'\b(ITALY|RAI|ITALIA|IT)\b', channel_name_normalized, re.IGNORECASE):
+                    if re.search(r'\b(italy|rai|italia|it)\b', channel_name, re.IGNORECASE):
                         filtered_channels.append(channel)
 
                 if filtered_channels:
