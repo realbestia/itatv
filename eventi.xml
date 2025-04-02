@@ -1,3 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="870">
+    <display-name>Italy - Serie C : Pro Patria vs Atalanta II</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402163000 +0000" channel="870">
+    <title lang="it">inizierà alle 18:30.</title>
+    <desc lang="it">Italy - Serie C : Pro Patria vs Atalanta II.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402163000 +0000" stop="20250402183000 +0000" channel="870">
+    <title lang="it">Italy - Serie C : Pro Patria vs Atalanta II</title>
+    <desc lang="it">Italy - Serie C : Pro Patria vs Atalanta II trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="14">
+    <display-name>England - Premier League : Southampton vs Crystal Palace</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402184500 +0000" channel="14">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">England - Premier League : Southampton vs Crystal Palace.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402184500 +0000" stop="20250402204500 +0000" channel="14">
+    <title lang="it">England - Premier League : Southampton vs Crystal Palace</title>
+    <desc lang="it">England - Premier League : Southampton vs Crystal Palace trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="15">
+    <display-name>England - Premier League : Newcastle United vs Brentford</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402184500 +0000" channel="15">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">England - Premier League : Newcastle United vs Brentford.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402184500 +0000" stop="20250402204500 +0000" channel="15">
+    <title lang="it">England - Premier League : Newcastle United vs Brentford</title>
+    <desc lang="it">England - Premier League : Newcastle United vs Brentford trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250402000000 +0000" stop="20250402184500 +0000" channel="870">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">England - Premier League : Manchester City vs Leicester City.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402184500 +0000" stop="20250402204500 +0000" channel="870">
+    <title lang="it">England - Premier League : Manchester City vs Leicester City</title>
+    <desc lang="it">England - Premier League : Manchester City vs Leicester City trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="17">
+    <display-name>England - Premier League : Brighton & Hove Albion vs Aston Villa</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402184500 +0000" channel="17">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">England - Premier League : Brighton & Hove Albion vs Aston Villa.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402184500 +0000" stop="20250402204500 +0000" channel="17">
+    <title lang="it">England - Premier League : Brighton & Hove Albion vs Aston Villa</title>
+    <desc lang="it">England - Premier League : Brighton & Hove Albion vs Aston Villa trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="18">
+    <display-name>England - Premier League : AFC Bournemouth vs Ipswich Town</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402184500 +0000" channel="18">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">England - Premier League : AFC Bournemouth vs Ipswich Town.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402184500 +0000" stop="20250402204500 +0000" channel="18">
+    <title lang="it">England - Premier League : AFC Bournemouth vs Ipswich Town</title>
+    <desc lang="it">England - Premier League : AFC Bournemouth vs Ipswich Town trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="460">
+    <display-name>DFB Pokal : Stuttgart vs RB Leipzig</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402184500 +0000" channel="460">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">DFB Pokal : Stuttgart vs RB Leipzig.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402184500 +0000" stop="20250402204500 +0000" channel="460">
+    <title lang="it">DFB Pokal : Stuttgart vs RB Leipzig</title>
+    <desc lang="it">DFB Pokal : Stuttgart vs RB Leipzig trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="461">
+    <display-name>England - Premier League : Liverpool vs Everton</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402190000 +0000" channel="461">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">England - Premier League : Liverpool vs Everton.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402190000 +0000" stop="20250402210000 +0000" channel="461">
+    <title lang="it">England - Premier League : Liverpool vs Everton</title>
+    <desc lang="it">England - Premier League : Liverpool vs Everton trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="20">
+    <display-name>Coppa Italia : Milan vs Internazionale</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402190000 +0000" channel="20">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">Coppa Italia : Milan vs Internazionale.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402190000 +0000" stop="20250402210000 +0000" channel="20">
+    <title lang="it">Coppa Italia : Milan vs Internazionale</title>
+    <desc lang="it">Coppa Italia : Milan vs Internazionale trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="882">
+    <display-name>Italy Serie A2 : Urania Milano vs. APU Udine</display-name>
+  </channel>
+  <programme start="20250402000000 +0000" stop="20250402180000 +0000" channel="882">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy Serie A2 : Urania Milano vs. APU Udine.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250402180000 +0000" stop="20250402200000 +0000" channel="882">
+    <title lang="it">Italy Serie A2 : Urania Milano vs. APU Udine</title>
+    <desc lang="it">Italy Serie A2 : Urania Milano vs. APU Udine trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
 </tv>
