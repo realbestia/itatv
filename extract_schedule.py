@@ -8,6 +8,9 @@ from bs4 import BeautifulSoup
 def html_to_json(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     
+    # Ottieni il mese corrente
+    current_month = datetime.now().strftime('%B')  # Nome completo del mese (es. 'April')
+    
     # Initialize the result dictionary
     result = {}
     
@@ -26,6 +29,12 @@ def html_to_json(html_content):
         # If it's a date row, set the current date
         if 'date-row' in row.get('class', []):
             current_date = row.find('strong').text.strip()
+
+            # Controlla se la data contiene uno dei suffissi (st, nd, rd, th)
+            if re.search(r'(\d+)(st|nd|rd|th)', current_date):
+                # Aggiungi il mese corrente dopo il suffisso
+                current_date = re.sub(r'(\d+)(st|nd|rd|th)', r'\1\2 ' + current_month, current_date)
+
             result[current_date] = {}
             current_category = None
         
@@ -72,7 +81,7 @@ def html_to_json(html_content):
 
 def extract_schedule_container():
     url = "https://daddylive.mp/"
-    
+
     # Get the script's directory to save the JSON file there
     script_dir = os.path.dirname(os.path.abspath(__file__))
     json_output = os.path.join(script_dir, "daddyliveSchedule.json")
