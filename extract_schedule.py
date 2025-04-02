@@ -8,13 +8,10 @@ from bs4 import BeautifulSoup
 def html_to_json(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     
-    # Ottieni il mese corrente
-    current_month = datetime.now().strftime('%B')  # Nome completo del mese (es. 'April')
-    
-    # Initialize the result dictionary
+    # Inizializza il dizionario del risultato
     result = {}
     
-    # Find all date rows to handle multiple days
+    # Trova tutte le righe della data
     date_rows = soup.find_all('tr', class_='date-row')
     
     if not date_rows:
@@ -24,28 +21,20 @@ def html_to_json(html_content):
     current_date = None
     current_category = None
     
-    # Process each element in the table
+    # Processa ogni elemento nella tabella
     for row in soup.find_all('tr'):
-        # If it's a date row, set the current date
+        # Se è una riga di data, imposta la data corrente
         if 'date-row' in row.get('class', []):
             current_date = row.find('strong').text.strip()
-
-            # Controlla se la data contiene uno dei suffissi (st, nd, rd, th) e il mese
-            match = re.search(r'(\d+)(st|nd|rd|th)', current_date)
-            if match:
-                # Aggiungi il mese corrente dopo il suffisso, solo se il mese non è già presente
-                if current_month not in current_date:
-                    current_date = re.sub(r'(\d+)(st|nd|rd|th)', r'\1\2 ' + current_month, current_date)
-
             result[current_date] = {}
             current_category = None
         
-        # If it's a category row, set the current category
+        # Se è una riga di categoria, imposta la categoria corrente
         elif 'category-row' in row.get('class', []) and current_date:
             current_category = row.find('strong').text.strip() + "</span>"
             result[current_date][current_category] = []
         
-        # If it's an event row and we have both date and category
+        # Se è una riga di evento e abbiamo sia la data che la categoria
         elif 'event-row' in row.get('class', []) and current_date and current_category:
             event_time = row.find('div', class_='event-time').find('strong').text.strip()
             event_info = row.find('div', class_='event-info').text.strip()
@@ -56,7 +45,7 @@ def html_to_json(html_content):
                 "channels": []
             }
             
-            # Find the channel row that follows this event row
+            # Trova la riga del canale che segue questa riga di evento
             event_index = len(result[current_date][current_category])
             channel_row_id = f"channels-{current_date}-{current_category}-{event_index}"
             channel_row = soup.find('tr', id=channel_row_id)
@@ -69,7 +58,7 @@ def html_to_json(html_content):
                     if channel_id_match:
                         channel_id = channel_id_match.group(1)
                         channel_name = link.text.strip()
-                        # Remove the channel ID from the channel name if it's in parentheses
+                        # Rimuovi l'ID del canale dal nome del canale se è tra parentesi
                         channel_name = re.sub(r'\s*\(CH-\d+\)$', '', channel_name)
                         
                         event_data["channels"].append({
@@ -81,10 +70,37 @@ def html_to_json(html_content):
     
     return result
 
+def modify_json_file(json_file_path):
+    # Carica il file JSON
+    with open(json_file_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    # Ottieni il mese corrente
+    current_month = datetime.now().strftime("%B")
+    
+    # Modifica le date nel JSON per aggiungere il mese se mancante
+    for date in list(data.keys()):
+        # Cerca i suffissi "st", "nd", "rd", "th" e aggiungi il mese dopo
+        match = re.match(r"(\w+\s\d+)(st|nd|rd|th)\s(\d{4})", date)
+        if match:
+            day_part = match.group(1)
+            suffix = match.group(2)
+            year_part = match.group(3)
+            # Crea la data finale con il mese aggiunto dopo il suffisso
+            new_date = f"{day_part}{suffix} {current_month} {year_part}"
+            # Mantieni la chiave con il mese aggiunto
+            data[new_date] = data.pop(date)
+    
+    # Risalva il file JSON con le modifiche
+    with open(json_file_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4)
+    
+    print(f"File JSON modificato e salvato in {json_file_path}")
+
 def extract_schedule_container():
     url = "https://daddylive.mp/"
 
-    # Get the script's directory to save the JSON file there
+    # Ottieni la directory dello script per salvare il file JSON
     script_dir = os.path.dirname(os.path.abspath(__file__))
     json_output = os.path.join(script_dir, "daddyliveSchedule.json")
 
@@ -131,6 +147,9 @@ def extract_schedule_container():
 
             print(f"Dati JSON salvati in {json_output}")
 
+            # Modifica il file JSON per aggiungere il mese corrente se necessario
+            modify_json_file(json_output)
+
             # Chiudi il browser
             browser.close()
 
@@ -142,7 +161,5 @@ def extract_schedule_container():
 
 if __name__ == "__main__":
     success = extract_schedule_container()
-    # Imposta il codice di uscita in base al successo dell'operazione
-    # Utile per i sistemi CI che controllano i codici di uscita
     if not success:
         exit(1)
