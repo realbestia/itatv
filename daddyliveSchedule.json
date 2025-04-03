@@ -1232,27 +1232,77 @@
         ],
         "Tennis ATP - HOUSTON</span>": [
             {
+                "time": "19:00",
+                "event": "ATP - HOUSTON : McDonald M. vs Nakashima B.",
+                "channels": []
+            },
+            {
+                "time": "20:30",
+                "event": "ATP - HOUSTON : DNishikori K. vs Eubanks C.",
+                "channels": []
+            },
+            {
                 "time": "23:00",
-                "event": "ATP - HOUSTON : Paul T. vs Garin C.",
+                "event": "ATP - HOUSTON : Walton A. vs Tiafoe F.",
                 "channels": []
             },
             {
                 "time": "00:30",
-                "event": "ATP - HOUSTON : Denolly C. vs Kovacevic A.",
+                "event": "ATP - HOUSTON : Michelsen A. vs Mannarino A.",
                 "channels": []
             }
         ],
         "Tennis WTA - CHARLESTON</span>": [
             {
+                "time": "16:30",
+                "event": "WTA - CHARLESTON : Krueger A. vs Navarro E.",
+                "channels": []
+            },
+            {
+                "time": "17:30",
+                "event": "WTA - CHARLESTON : Ostapenko J. vs Collins D.",
+                "channels": []
+            },
+            {
+                "time": "18:00",
+                "event": "WTA - CHARLESTON : Pegula J. vs Tomljanovic A.",
+                "channels": []
+            },
+            {
+                "time": "19:00",
+                "event": "WTA - CHARLESTON : Zheng Q. vs Mertens E.",
+                "channels": []
+            },
+            {
+                "time": "22:00",
+                "event": "WTA - CHARLESTON : Kalinskaya A. vs Keys M.",
+                "channels": []
+            },
+            {
                 "time": "23:30",
-                "event": "WTA - CHARLESTON : Gracheva V. vs Mertens E.",
+                "event": "WTA - CHARLESTON : Kasatkina D. vs Kenin S.",
                 "channels": []
             }
         ],
         "Tennis WTA - BOGOTA</span>": [
             {
-                "time": "00:00",
-                "event": "WTA - BOGOTA : Jeanjean L. vs Janicijevic S.",
+                "time": "23:30",
+                "event": "WTA - BOGOTA : Bektas E. vs Osorio C.",
+                "channels": []
+            },
+            {
+                "time": "23:30",
+                "event": "WTA - BOGOTA : Maria T. vs Chang H.",
+                "channels": []
+            },
+            {
+                "time": "20:00",
+                "event": "WTA - BOGOTA : Bucsa C. vs Boskovic L.",
+                "channels": []
+            },
+            {
+                "time": "23:30",
+                "event": "WTA - BOGOTA : Riera J. vs Jovic I.",
                 "channels": []
             }
         ],
