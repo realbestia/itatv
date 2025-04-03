@@ -5272,6 +5272,11 @@
             },
             {
                 "time": "14:00",
+                "event": "India - Super League - Playoff : Jamshedpur vs ATK Mohun Bagan",
+                "channels": []
+            },
+            {
+                "time": "14:00",
                 "event": "Romania - Liga II : Csikszereda vs Steaua Bucure\u015fti",
                 "channels": [
                     {
@@ -5618,6 +5623,11 @@
             },
             {
                 "time": "22:00",
+                "event": "Copa Sudamericana - Gr.F : San Jose de Oruro vs Union Espanola",
+                "channels": []
+            },
+            {
+                "time": "22:00",
                 "event": "Copa Libertadores : Central C\u00f3rdoba SdE vs LDU Quito",
                 "channels": [
                     {
@@ -5910,7 +5920,7 @@
         "Tennis</span>": [
             {
                 "time": "11:00",
-                "event": "IWTA 500 Charleston, WTA 250 Bogota, ATP 250 Houston, ATP 250 Marrakesh, ATP 250 Bucharest",
+                "event": "WTA 500 Charleston, WTA 250 Bogota, ATP 250 Houston, ATP 250 Marrakesh, ATP 250 Bucharest",
                 "channels": [
                     {
                         "channel_name": "Tennis Channel",
@@ -5975,6 +5985,361 @@
                         "channel_id": "383"
                     }
                 ]
+            },
+            {
+                "time": "07:00",
+                "event": "UTR (F) - Belgrade (SRB) : Anastasia Zolotareva vs Laura Svatikova",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "ITF (M) - Antalya (TUR) : Bekkhan Atlangeriev vs Daniel Michalski",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "UTR (F) - Alvor (POR) : Elizabeth Jurna vs Min Liu",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "UTR (F) - Belgrade (SRB) : Julia Terziyska vs Maria Herazo Gonzalez",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "ITF (M) - Antalya (TUR) : Leo Borg vs Tobia Costanzo Baragiola Mordini",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "UTR (M) - Alvor (POR) : Tomas Quesada Perez vs Marcus Walters",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Menorca (SPA) : Daniel Rincon vs Ignacio Buse",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Menorca (SPA) : Javier Barranco Cosano vs Sebastian Ofner",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Barletta (ITA) : Khumoyun Sultanov vs Matej Dodig",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Barletta (ITA) : Maxim Mrva vs Mili Poljicak",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "ATP - Bucuresti (ROM) - Double : V.V.Cornea/A.Mies vs R.Haase/H.Jebens",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Barletta (ITA) : Valentin Royer vs Tiago Pereira",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Menorca (SPA) : Vilius Gaubas vs Arthur Gea",
+                "channels": []
+            },
+            {
+                "time": "08:10",
+                "event": "UTR (F) - Belgrade (SRB) : Anastasija Arsic vs Andrea Obradovic",
+                "channels": []
+            },
+            {
+                "time": "08:30",
+                "event": "UTR (F) - Alvor (POR) : Ana Filipa Santos vs Kseniya Yersh",
+                "channels": []
+            },
+            {
+                "time": "08:30",
+                "event": "UTR (M) - Alvor (POR) : Joe Tyler vs Vicente Couto",
+                "channels": []
+            },
+            {
+                "time": "09:00",
+                "event": "ATP - Bucuresti (ROM) - Double : M.Demoliner/M.Middelkoop vs J.Schnaitter/M.Wallner",
+                "channels": []
+            },
+            {
+                "time": "09:00",
+                "event": "ATP - Bucuresti (ROM) - Double : M.Granollers/H.Zeballos vs C.Cretu/B.Pavel",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "Challenger - Menorca (SPA) : Daniel Merida Aguilar vs Carlos Taberner",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "Challenger - Menorca (SPA) : Elmer Moller vs Benjamin Hassan",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "Challenger - Menorca (SPA) : Jan Choinski vs Zsombor Piros",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "Challenger - Barletta (ITA) : Maxime Janvier vs Enrico Dalla Valle",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "Challenger - Barletta (ITA) - Double : S.Agostini/G.Cadenasso vs S.Banthia/A.Donski",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "ATP - Bucuresti (ROM) : Marton Fucsovics vs Mariano Navone",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "Challenger - Barletta (ITA) : Vitaliy Sachko vs Andrea Pellegrino",
+                "channels": []
+            },
+            {
+                "time": "10:00",
+                "event": "UTR (F) - Alvor (POR) : Aleksandra Julia Jelen vs Luana Plaza Araujo",
+                "channels": []
+            },
+            {
+                "time": "10:00",
+                "event": "UTR (F) - Belgrade (SRB) : Arina Bulatova vs Anastasia Iamachkine",
+                "channels": []
+            },
+            {
+                "time": "10:00",
+                "event": "ITF (M) - Antalya (TUR) - Double : K.Mishkin/V.Shvets vs S.Agabigun/S.M.Ozdemir",
+                "channels": []
+            },
+            {
+                "time": "10:00",
+                "event": "UTR (M) - Alvor (POR) : Thomas Drayton vs Aaron Gil Garcia",
+                "channels": []
+            },
+            {
+                "time": "10:00",
+                "event": "ITF (M) - Antalya (TUR) - Double : Z.Kolar/S.Kopp vs S.Fomin/P.Verbin",
+                "channels": []
+            },
+            {
+                "time": "10:10",
+                "event": "ATP - Bucuresti (ROM) : Nicolas Jarry vs Christopher O'Connell",
+                "channels": []
+            },
+            {
+                "time": "10:10",
+                "event": "ATP - Bucuresti (ROM) - Double : S.Baez/F.Comesana vs S.Gille/J.Zielinski",
+                "channels": []
+            },
+            {
+                "time": "10:20",
+                "event": "Challenger - Menorca (SPA) - Double : A.Vavassori/M.Vavassori vs J.Barnat/F.Duda",
+                "channels": []
+            },
+            {
+                "time": "10:20",
+                "event": "Challenger - Menorca (SPA) : Albert Ramos Vinolas vs Pol Martin Tiffon",
+                "channels": []
+            },
+            {
+                "time": "10:20",
+                "event": "Challenger - Menorca (SPA) - Double : D.Rincon/O.R.Batalla vs J.Ingildsen/D.Stevenson",
+                "channels": []
+            },
+            {
+                "time": "10:20",
+                "event": "Challenger - Barletta (ITA) : Robin Bertrand vs Michael Geerts",
+                "channels": []
+            },
+            {
+                "time": "10:20",
+                "event": "Challenger - Barletta (ITA) - Double : T.Loof/J.Sels vs A.Merino/C.Negritu",
+                "channels": []
+            },
+            {
+                "time": "10:40",
+                "event": "ATP - Bucuresti (ROM) : Damir Dzumhur vs Filip Cristian Jianu",
+                "channels": []
+            },
+            {
+                "time": "10:40",
+                "event": "Challenger - Barletta (ITA) : Daniel Evans vs Jacopo Berrettini",
+                "channels": []
+            },
+            {
+                "time": "11:00",
+                "event": "ITF (F) - Antalya (TUR) - Double : A.K.C.Guadiana/J.S.Perello vs M.F.Morales/G.Vilar",
+                "channels": []
+            },
+            {
+                "time": "11:00",
+                "event": "ATP - Marrakech (MAR) : Pierre Hugues Herbert vs Mattia Bellucci",
+                "channels": []
+            },
+            {
+                "time": "11:00",
+                "event": "ATP - Marrakech (MAR) - Double : R.Arneodo/M.Guinard vs A.Behar/J.Vliegen",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "Challenger - Barletta (ITA) - Double : A.Genov/B.Pujol Navarro vs M.Karol/V.Sachko",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "WTA 125 - Antalya 3 (TUR) - Double : A.Moratelli/M.Ninomiya vs Z.Kulambayeva/C.Naef",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "Challenger - Menorca (SPA) - Double : B.Hassan/S.Ofner vs N.Kaliyanda Poonacha/S.Martos Gornes",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "Challenger - Menorca (SPA) - Double : D.Cukierman/J.Paris vs S.Myneni/R.Ramanathan",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "WTA 125 - Antalya 3 (TUR) - Double : I.Ibbou/A.Wagner vs A.Barnett/E.Lechemia",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "UTR (M) - Alvor (POR) : Leevi Saatela vs David Eichenseher",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "Challenger - Menorca (SPA) : Lukas Neumayer vs Pedro Cachin",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "Challenger - Barletta (ITA) - Double : P.Niklas-Salminen/D.Pichler vs M.Hermans/T.Pereira",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "WTA 125 - Antalya 3 (TUR) - Double : P.Thombare/W.Zheng vs A.Gureva/A.Ibragimova",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "WTA 125 - Antalya 3 (TUR) - Double : R.Bhosale/P.M.Hourigan vs M.Kolodziejova/J.Maleckova",
+                "channels": []
+            },
+            {
+                "time": "11:30",
+                "event": "UTR (F) - Alvor (POR) : Summer Yardley vs Eliz Maloney",
+                "channels": []
+            },
+            {
+                "time": "11:50",
+                "event": "Challenger - Barletta (ITA) : Dalibor Svrcina vs Lilian Marmousez",
+                "channels": []
+            },
+            {
+                "time": "12:10",
+                "event": "ATP - Marrakech (MAR) : Tallon Griekspoor vs Pablo Carreno-Busta",
+                "channels": []
+            },
+            {
+                "time": "12:30",
+                "event": "ITF (M) - Antalya (TUR) - Double : A.Kalender/N.Serdarusic vs B.Atlangeriev/E.Khotchenkov",
+                "channels": []
+            },
+            {
+                "time": "13:00",
+                "event": "UTR (F) - Alvor (POR) : Ewa Czapulak vs Daria Yesypchuk",
+                "channels": []
+            },
+            {
+                "time": "13:00",
+                "event": "UTR (M) - Alvor (POR) : Tomas Curras Abasolo vs Mihnea Maftei",
+                "channels": []
+            },
+            {
+                "time": "13:20",
+                "event": "ATP - Marrakech (MAR) : Luciano Darderi vs Hugo Gaston",
+                "channels": []
+            },
+            {
+                "time": "13:30",
+                "event": "WTA 125 - Antalya 3 (TUR) - Double : A.Bondar/S.Waltert vs L.Karatancheva/Ek.Yashina",
+                "channels": []
+            },
+            {
+                "time": "13:30",
+                "event": "WTA 125 - Antalya 3 (TUR) - Double : E.Jacquemot/S.Sierra vs M.Jones/A.Osborne",
+                "channels": []
+            },
+            {
+                "time": "13:30",
+                "event": "WTA 125 - Antalya 3 (TUR) - Double : N.Noha Akugue/A.Sharma vs M.Brooks/F.Christie",
+                "channels": []
+            },
+            {
+                "time": "13:30",
+                "event": "WTA 125 - Antalya 3 (TUR) - Double : V.Erjavec/L.Romero Gormaz vs A.Anshba/E.Pridankina",
+                "channels": []
+            },
+            {
+                "time": "13:40",
+                "event": "ATP - Marrakech (MAR) - Double : H.Nys/E.R.Vasselin vs J.Paul/D.Pel",
+                "channels": []
+            },
+            {
+                "time": "14:00",
+                "event": "ATP - Bucuresti (ROM) : Stan Wawrinka vs Pedro Martinez",
+                "channels": []
+            },
+            {
+                "time": "14:00",
+                "event": "WTA - Bogota (COL) - Double : V.Mediorreal Arias/M.P.Perez Garcia vs E.Arango/S.Janicijevic",
+                "channels": []
+            },
+            {
+                "time": "14:30",
+                "event": "UTR (F) - Alvor (POR) : Danielle Daley vs Victoria Borodulina",
+                "channels": []
+            },
+            {
+                "time": "14:30",
+                "event": "UTR (M) - Alvor (POR) : Lawrence Bataljin vs Sean Hodkin",
+                "channels": []
+            },
+            {
+                "time": "14:30",
+                "event": "ATP - Marrakech (MAR) : Vit Kopriva vs Lorenzo Sonego",
+                "channels": []
+            },
+            {
+                "time": "14:50",
+                "event": "ATP - Marrakech (MAR) - Double : T.Griekspoor/B.Stevens vs M.Bellucci/H.Gaston",
+                "channels": []
+            },
+            {
+                "time": "23:10",
+                "event": "UTR (F) - Melbourne (AUS) : Alexandra Irina Anghel vs Kirra Bond-Scott",
+                "channels": []
             }
         ],
         "Motorsport</span>": [
@@ -6443,6 +6808,11 @@
                 ]
             },
             {
+                "time": "16:00",
+                "event": "Austria - ABL - The losers' tour : BBC North Dragonz vs BC Vienna",
+                "channels": []
+            },
+            {
                 "time": "17:00",
                 "event": "Euroleague : Zalgiris Kaunas vs Partizan",
                 "channels": [
@@ -6545,6 +6915,11 @@
                         "channel_id": "144"
                     }
                 ]
+            },
+            {
+                "time": "18:30",
+                "event": "Italy - Serie A2 : Rimini vs JuVi Cremona",
+                "channels": []
             },
             {
                 "time": "19:00",
@@ -7089,6 +7464,11 @@
                 ]
             },
             {
+                "time": "17:00",
+                "event": "Germany - Bundesliga : Hamburg vs Potsdam",
+                "channels": []
+            },
+            {
                 "time": "18:00",
                 "event": "Denmark, Handboldligaen : Skanderborg-Aarhus Haandbold vs. Ribe-Esbjerg HH",
                 "channels": [
@@ -7227,6 +7607,26 @@
                 ]
             },
             {
+                "time": "16:00",
+                "event": "Poland Ekstraliga : Gorniczy Klub Sportowy Tychy vs. KH GKS Katowice",
+                "channels": [
+                    {
+                        "channel_name": "TVP Sport Poland",
+                        "channel_id": "128"
+                    }
+                ]
+            },
+            {
+                "time": "16:00",
+                "event": "Slovakia Extraliga : HC Kosice vs. HKM Zvolen",
+                "channels": [
+                    {
+                        "channel_name": "JOJ Sport Slovakia",
+                        "channel_id": "13"
+                    }
+                ]
+            },
+            {
                 "time": "16:30",
                 "event": "KHL : Dinamo Minsk vs CSKA Moscow",
                 "channels": [
@@ -7257,26 +7657,6 @@
                 ]
             },
             {
-                "time": "16:00",
-                "event": "Poland Ekstraliga : Gorniczy Klub Sportowy Tychy vs. KH GKS Katowice",
-                "channels": [
-                    {
-                        "channel_name": "TVP Sport Poland",
-                        "channel_id": "128"
-                    }
-                ]
-            },
-            {
-                "time": "16:00",
-                "event": "Slovakia Extraliga : HC Kosice vs. HKM Zvolen",
-                "channels": [
-                    {
-                        "channel_name": "JOJ Sport Slovakia",
-                        "channel_id": "13"
-                    }
-                ]
-            },
-            {
                 "time": "17:00",
                 "event": "Norway Eliteserien : Storhamar Hockey vs. Stavanger Oilers",
                 "channels": [
@@ -7295,6 +7675,16 @@
                         "channel_id": "18"
                     }
                 ]
+            },
+            {
+                "time": "18:00",
+                "event": "Swiss - NLA - Playoff : Lausanne vs Fribourg Gotteron",
+                "channels": []
+            },
+            {
+                "time": "18:00",
+                "event": "Elve\u0163ia - NLA - Promovare/Retrogradare : Visp vs Ajoie",
+                "channels": []
             },
             {
                 "time": "23:00",
