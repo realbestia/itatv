@@ -7,7 +7,7 @@
                 "channels": [
                     {
                         "channel_name": "Triller Tv",
-                        "channel_id": "175"
+                        "channel_id": "185"
                     }
                 ]
             },
@@ -17,7 +17,7 @@
                 "channels": [
                     {
                         "channel_name": "Event PPV",
-                        "channel_id": "176"
+                        "channel_id": "186"
                     }
                 ]
             },
@@ -27,7 +27,7 @@
                 "channels": [
                     {
                         "channel_name": "Flotv",
-                        "channel_id": "177"
+                        "channel_id": "187"
                     }
                 ]
             },
@@ -37,7 +37,7 @@
                 "channels": [
                     {
                         "channel_name": "Flotv",
-                        "channel_id": "163"
+                        "channel_id": "188"
                     }
                 ]
             },
@@ -47,7 +47,7 @@
                 "channels": [
                     {
                         "channel_name": "Flotv",
-                        "channel_id": "164"
+                        "channel_id": "189"
                     }
                 ]
             },
@@ -57,7 +57,7 @@
                 "channels": [
                     {
                         "channel_name": "Flotv",
-                        "channel_id": "165"
+                        "channel_id": "190"
                     }
                 ]
             },
@@ -2984,6 +2984,10 @@
                 "event": "BKB 39: Brawl at the Beach",
                 "channels": [
                     {
+                        "channel_name": "PPV Feed",
+                        "channel_id": "191"
+                    },
+                    {
                         "channel_name": "VICE TV USA",
                         "channel_id": "659"
                     },
@@ -3023,6 +3027,10 @@
                 "time": "00:00",
                 "event": "Invicta FC 61 : Elisandra Ferreira de Oliveira vs Ana Palacios",
                 "channels": [
+                    {
+                        "channel_name": "PPV Feed",
+                        "channel_id": "192"
+                    },
                     {
                         "channel_name": "CBS Sports Network",
                         "channel_id": "308"
