@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="851">
-    <display-name>Europe - UEFA Women's Nations League : Sweden vs Italy</display-name>
-  </channel>
-  <programme start="20250404000000 +0000" stop="20250404170000 +0000" channel="851">
-    <title lang="it">inizierà alle 19:00.</title>
-    <desc lang="it">Europe - UEFA Women's Nations League : Sweden vs Italy.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250404170000 +0000" stop="20250404190000 +0000" channel="851">
-    <title lang="it">Europe - UEFA Women's Nations League : Sweden vs Italy</title>
-    <desc lang="it">Europe - UEFA Women's Nations League : Sweden vs Italy trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="462">
     <display-name>Bundesliga : Augsburg vs Bayern München</display-name>
   </channel>
