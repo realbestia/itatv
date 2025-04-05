@@ -25,7 +25,7 @@ jobs:
           pip install playwright
           pip install bs4
           pip install lxml
-          playwright install chromium
+          playwright install 
       
       - name: Run extraction script
         run: python extract_schedule.py
