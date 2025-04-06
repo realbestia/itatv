@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="7">
-    <display-name>Italy - Serie C : Catania vs Avellino</display-name>
-  </channel>
-  <programme start="20250406000000 +0000" stop="20250406173000 +0000" channel="7">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Italy - Serie C : Catania vs Avellino.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250406173000 +0000" stop="20250406193000 +0000" channel="7">
-    <title lang="it">Italy - Serie C : Catania vs Avellino</title>
-    <desc lang="it">Italy - Serie C : Catania vs Avellino trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="461">
-    <display-name>Italy - Serie C : Catania vs Avellino</display-name>
-  </channel>
-  <programme start="20250406000000 +0000" stop="20250406173000 +0000" channel="461">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Italy - Serie C : Catania vs Avellino.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250406173000 +0000" stop="20250406193000 +0000" channel="461">
-    <title lang="it">Italy - Serie C : Catania vs Avellino</title>
-    <desc lang="it">Italy - Serie C : Catania vs Avellino trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="877">
     <display-name>Italy - Serie A : Roma vs Juventus</display-name>
   </channel>
@@ -38,19 +12,6 @@
     <title lang="it">Italy - Serie A : Roma vs Juventus</title>
     <desc lang="it">Italy - Serie A : Roma vs Juventus trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="460">
-    <display-name>MLB : New York Yankees vs Pittsburgh Pirates</display-name>
-  </channel>
-  <programme start="20250406000000 +0000" stop="20250406173500 +0000" channel="460">
-    <title lang="it">inizierà alle 19:35.</title>
-    <desc lang="it">MLB : New York Yankees vs Pittsburgh Pirates.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250406173500 +0000" stop="20250406193500 +0000" channel="460">
-    <title lang="it">MLB : New York Yankees vs Pittsburgh Pirates</title>
-    <desc lang="it">MLB : New York Yankees vs Pittsburgh Pirates trasmesso in diretta.</desc>
-    <category lang="it">Baseball</category>
   </programme>
   <channel id="879">
     <display-name>Lega A : Brescia vs Venezia</display-name>
