@@ -1,5 +1,37 @@
 {
     "Sunday 06th April 2025 - Schedule Time UK GMT": {
+        "PPV Events</span>": [
+            {
+                "time": "22:30",
+                "event": "ALL ELITE WRESTLING - AEW: Dynasty PPV Philadelphia 2025",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "171"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "Ultimate Warrior Challenge Mexico : UWC 56",
+                "channels": [
+                    {
+                        "channel_name": "UFC Fight Pass",
+                        "channel_id": "172"
+                    }
+                ]
+            },
+            {
+                "time": "01:00",
+                "event": "DEFY Aftermath PPV",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "174"
+                    }
+                ]
+            }
+        ],
         "TV Shows</span>": [
             {
                 "time": "12:30",
