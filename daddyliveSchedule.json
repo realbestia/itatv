@@ -7698,12 +7698,22 @@
             {
                 "time": "20:00",
                 "event": "Superliga Masculina De V\u00f4lei : Sesi-Bauru vs Praia Clube",
-                "channels": []
+                "channels": [
+                    {
+                        "channel_name": "Sportv2 Brazil",
+                        "channel_id": "79"
+                    }
+                ]
             },
             {
                 "time": "23:00",
                 "event": "Superliga Masculina De V\u00f4lei : Campinas vs Joinville",
-                "channels": []
+                "channels": [
+                    {
+                        "channel_name": "Sportv2 Brazil",
+                        "channel_id": "79"
+                    }
+                ]
             }
         ],
         "Winter Sports</span>": [
