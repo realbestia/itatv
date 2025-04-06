@@ -1,44 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="1">
-    <display-name>Italy - Serie C : Sassari Torres vs SPAL</display-name>
-  </channel>
-  <programme start="20250406000000 +0000" stop="20250406103000 +0000" channel="1">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy - Serie C : Sassari Torres vs SPAL.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250406103000 +0000" stop="20250406123000 +0000" channel="1">
-    <title lang="it">Italy - Serie C : Sassari Torres vs SPAL</title>
-    <desc lang="it">Italy - Serie C : Sassari Torres vs SPAL trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="870">
-    <display-name>Italy - Serie C : Sassari Torres vs SPAL</display-name>
-  </channel>
-  <programme start="20250406000000 +0000" stop="20250406103000 +0000" channel="870">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy - Serie C : Sassari Torres vs SPAL.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250406103000 +0000" stop="20250406123000 +0000" channel="870">
-    <title lang="it">Italy - Serie C : Sassari Torres vs SPAL</title>
-    <desc lang="it">Italy - Serie C : Sassari Torres vs SPAL trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="877">
-    <display-name>Italy - Serie A : Lecce vs Venezia</display-name>
-  </channel>
-  <programme start="20250406000000 +0000" stop="20250406103000 +0000" channel="877">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy - Serie A : Lecce vs Venezia.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250406103000 +0000" stop="20250406123000 +0000" channel="877">
-    <title lang="it">Italy - Serie A : Lecce vs Venezia</title>
-    <desc lang="it">Italy - Serie A : Lecce vs Venezia trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="13">
     <display-name>Italy - Serie C : Vicenza vs Clodiense</display-name>
   </channel>
@@ -52,6 +13,9 @@
     <desc lang="it">Italy - Serie C : Vicenza vs Clodiense trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="1">
+    <display-name>Italy - Serie C : Ternana vs Athletic Carpi</display-name>
+  </channel>
   <programme start="20250406000000 +0000" stop="20250406130000 +0000" channel="1">
     <title lang="it">inizierà alle 15:00.</title>
     <desc lang="it">Italy - Serie C : Ternana vs Athletic Carpi.</desc>
@@ -153,6 +117,9 @@
     <desc lang="it">Italy - Serie A : Empoli vs Cagliari trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="877">
+    <display-name>Italy - Serie A : Torino vs Hellas Verona</display-name>
+  </channel>
   <programme start="20250406000000 +0000" stop="20250406130000 +0000" channel="877">
     <title lang="it">inizierà alle 15:00.</title>
     <desc lang="it">Italy - Serie A : Torino vs Hellas Verona.</desc>
@@ -285,6 +252,9 @@
     <desc lang="it">Italy - Serie A : Atalanta vs Lazio trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="870">
+    <display-name>Italy - Serie A : Atalanta vs Lazio</display-name>
+  </channel>
   <programme start="20250406000000 +0000" stop="20250406160000 +0000" channel="870">
     <title lang="it">inizierà alle 18:00.</title>
     <desc lang="it">Italy - Serie A : Atalanta vs Lazio.</desc>
