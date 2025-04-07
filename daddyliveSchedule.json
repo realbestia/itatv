@@ -786,6 +786,10 @@
                         "channel_id": "291"
                     },
                     {
+                        "channel_name": "Sport Klub 3 Croatia",
+                        "channel_id": "103"
+                    },
+                    {
                         "channel_name": "beIN Sports MAX 6 France",
                         "channel_id": "496"
                     }
@@ -2168,6 +2172,31 @@
                 "channels": []
             },
             {
+                "time": "17:30",
+                "event": "Challenger - Sarasota (USA) : Facundo Mena vs Filip Cristian Jianu",
+                "channels": []
+            },
+            {
+                "time": "18:10",
+                "event": "Challenger - Mexico City (MEX) - Qualifiers : Pedro Sakamoto vs Kiranpal Pannu",
+                "channels": []
+            },
+            {
+                "time": "18:10",
+                "event": "Challenger - Mexico City (MEX) - Qualifiers : Ryan Seggerman vs Andres Martin",
+                "channels": []
+            },
+            {
+                "time": "18:10",
+                "event": "Challenger - Mexico City (MEX) - Qualifiers : Tom Paris vs Alfredo Perez",
+                "channels": []
+            },
+            {
+                "time": "18:20",
+                "event": "UTR (M) - Spring (USA) : Brody Nejedly Krall vs Cooper Johnson",
+                "channels": []
+            },
+            {
                 "time": "19:00",
                 "event": "UTR (M) - Newport Beach (USA) : Gregory Gamal vs Maximilian Wuelfing",
                 "channels": []
@@ -2184,7 +2213,17 @@
             },
             {
                 "time": "19:30",
+                "event": "UTR (M) - Spring (USA) : Lathan Skrobarcek vs Mikhail Fufygin",
+                "channels": []
+            },
+            {
+                "time": "19:30",
                 "event": "UTR (M) - Spring (USA) : Nicholas Herdoiza vs Ilgiz Valiev",
+                "channels": []
+            },
+            {
+                "time": "21:00",
+                "event": "Challenger - Mexico City (MEX) : Luka Pavlovic vs Stefano Napolitano",
                 "channels": []
             },
             {
@@ -2193,8 +2232,88 @@
                 "channels": []
             },
             {
+                "time": "22:10",
+                "event": "Challenger - Mexico City (MEX) : Beibit Zhukayev vs Felipe Alves",
+                "channels": []
+            },
+            {
                 "time": "23:10",
                 "event": "Challenger - Mexico City (MEX) : James Duckworth vs Mateus Alves",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "UTR (F) - Melbourne (AUS) : Amelia Zylberman vs Larisa Arnautovic",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "UTR (M) - Melbourne (AUS) : Joel Braund vs Roger Rogowski",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "UTR (M) - Melbourne (AUS) : Stefan Storch vs Stefan Harangozo",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "UTR (M) - Melbourne (AUS) : Zachary Adam-Gedge vs Nicholas Jovanovski",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (F) - Melbourne (AUS) : Alexandra Irina Anghel vs Sophia Fry",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (F) - Melbourne (AUS) : Belle Thompson vs Jelena Cvijanovic",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (F) - Melbourne (AUS) : Cara Korhonen vs Kaylah Mcphee",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (M) - Melbourne (AUS) : Lachlan McFadzean vs Tomislav Edward Papac",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (M) - Melbourne (AUS) : Nathan Boniel vs Oliver Statham",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (M) - Melbourne (AUS) : Sam Ryan Ziegann vs Jack Bruce Smith",
+                "channels": []
+            },
+            {
+                "time": "01:30",
+                "event": "UTR (M) - Newport Beach (USA) : Adam Bain vs Santiago Perez",
+                "channels": []
+            },
+            {
+                "time": "01:30",
+                "event": "UTR (M) - Newport Beach (USA) : Aleksa Ciric vs Borys Zgola",
+                "channels": []
+            },
+            {
+                "time": "01:30",
+                "event": "UTR (M) - Newport Beach (USA) : Elijah Strode vs Dylan Waldorf Martin",
+                "channels": []
+            },
+            {
+                "time": "03:30",
+                "event": "UTR (M) - Melbourne (AUS) : Sean van Rensburg vs Arjun Mehrotra",
+                "channels": []
+            },
+            {
+                "time": "04:00",
+                "event": "UTR (M) - Melbourne (AUS) : Hugo Castello vs Adrian Arcon",
                 "channels": []
             }
         ],
