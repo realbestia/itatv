@@ -1,5 +1,75 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv><programme channel="608014d19a26320007c92ab6" start="20250407185700 +0000" stop="20250407192500 +0000">
+<tv><programme start="20250408000000 +0000" stop="20250408160000 +0000" channel="851">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">UEFA Women's Nations League : Denmark vs Italy.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250408160000 +0000" stop="20250408180000 +0000" channel="851">
+    <title lang="it">UEFA Women's Nations League : Denmark vs Italy</title>
+    <desc lang="it">UEFA Women's Nations League : Denmark vs Italy trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250408000000 +0000" stop="20250408183000 +0000" channel="882">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Italy - Coppa Italia Serie C : Rimini vs Giana Erminio.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250408183000 +0000" stop="20250408203000 +0000" channel="882">
+    <title lang="it">Italy - Coppa Italia Serie C : Rimini vs Giana Erminio</title>
+    <desc lang="it">Italy - Coppa Italia Serie C : Rimini vs Giana Erminio trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250408000000 +0000" stop="20250408183000 +0000" channel="4">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Italy - Coppa Italia Serie C : Rimini vs Giana Erminio.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250408183000 +0000" stop="20250408203000 +0000" channel="4">
+    <title lang="it">Italy - Coppa Italia Serie C : Rimini vs Giana Erminio</title>
+    <desc lang="it">Italy - Coppa Italia Serie C : Rimini vs Giana Erminio trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250408000000 +0000" stop="20250408190000 +0000" channel="20">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : Bayern München vs Internazionale.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250408190000 +0000" stop="20250408210000 +0000" channel="20">
+    <title lang="it">UEFA Champions League : Bayern München vs Internazionale</title>
+    <desc lang="it">UEFA Champions League : Bayern München vs Internazionale trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250408000000 +0000" stop="20250408190000 +0000" channel="461">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : Bayern München vs Internazionale.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250408190000 +0000" stop="20250408210000 +0000" channel="461">
+    <title lang="it">UEFA Champions League : Bayern München vs Internazionale</title>
+    <desc lang="it">UEFA Champions League : Bayern München vs Internazionale trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250408000000 +0000" stop="20250408190000 +0000" channel="25">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs Real Madrid.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250408190000 +0000" stop="20250408210000 +0000" channel="25">
+    <title lang="it">UEFA Champions League : Arsenal vs Real Madrid</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs Real Madrid trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250408000000 +0000" stop="20250408190000 +0000" channel="462">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs Real Madrid.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250408190000 +0000" stop="20250408210000 +0000" channel="462">
+    <title lang="it">UEFA Champions League : Arsenal vs Real Madrid</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs Real Madrid trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+<programme channel="608014d19a26320007c92ab6" start="20250407185700 +0000" stop="20250407192500 +0000">
     <title>FailFactory: Varsity Black and Blues</title>
     <episode-num system="onscreen">S02E205</episode-num>
     <episode-num system="pluto">60a4d724fc003e001381c09a</episode-num>
