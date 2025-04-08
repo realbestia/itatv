@@ -1,3 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="1">
+    <display-name>Italy - Serie C : Pescara vs Arezzo</display-name>
+  </channel>
+  <programme start="20250409000000 +0000" stop="20250409160000 +0000" channel="1">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">Italy - Serie C : Pescara vs Arezzo.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250409160000 +0000" stop="20250409180000 +0000" channel="1">
+    <title lang="it">Italy - Serie C : Pescara vs Arezzo</title>
+    <desc lang="it">Italy - Serie C : Pescara vs Arezzo trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="870">
+    <display-name>Italy - Serie C : Pescara vs Arezzo</display-name>
+  </channel>
+  <programme start="20250409000000 +0000" stop="20250409160000 +0000" channel="870">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">Italy - Serie C : Pescara vs Arezzo.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250409160000 +0000" stop="20250409180000 +0000" channel="870">
+    <title lang="it">Italy - Serie C : Pescara vs Arezzo</title>
+    <desc lang="it">Italy - Serie C : Pescara vs Arezzo trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="110">
+    <display-name>UEFA Champions League : Barcelona vs Borussia Dortmund</display-name>
+  </channel>
+  <programme start="20250409000000 +0000" stop="20250409190000 +0000" channel="110">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : Barcelona vs Borussia Dortmund.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250409190000 +0000" stop="20250409210000 +0000" channel="110">
+    <title lang="it">UEFA Champions League : Barcelona vs Borussia Dortmund</title>
+    <desc lang="it">UEFA Champions League : Barcelona vs Borussia Dortmund trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="14">
+    <display-name>UEFA Champions League : PSG vs Aston Villa</display-name>
+  </channel>
+  <programme start="20250409000000 +0000" stop="20250409190000 +0000" channel="14">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : PSG vs Aston Villa.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250409190000 +0000" stop="20250409210000 +0000" channel="14">
+    <title lang="it">UEFA Champions League : PSG vs Aston Villa</title>
+    <desc lang="it">UEFA Champions League : PSG vs Aston Villa trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="461">
+    <display-name>UEFA Champions League : PSG vs Aston Villa</display-name>
+  </channel>
+  <programme start="20250409000000 +0000" stop="20250409190000 +0000" channel="461">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : PSG vs Aston Villa.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250409190000 +0000" stop="20250409210000 +0000" channel="461">
+    <title lang="it">UEFA Champions League : PSG vs Aston Villa</title>
+    <desc lang="it">UEFA Champions League : PSG vs Aston Villa trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="462">
+    <display-name>World Championship Women : Italy W vs Romania W</display-name>
+  </channel>
+  <programme start="20250409000000 +0000" stop="20250409150000 +0000" channel="462">
+    <title lang="it">inizierà alle 17:00.</title>
+    <desc lang="it">World Championship Women : Italy W vs Romania W.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250409150000 +0000" stop="20250409170000 +0000" channel="462">
+    <title lang="it">World Championship Women : Italy W vs Romania W</title>
+    <desc lang="it">World Championship Women : Italy W vs Romania W trasmesso in diretta.</desc>
+    <category lang="it">Handball</category>
+  </programme>
+  <channel id="882">
+    <display-name>Serie A1 Women : Novara W vs Conegliano W</display-name>
+  </channel>
+  <programme start="20250409000000 +0000" stop="20250409183000 +0000" channel="882">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Serie A1 Women : Novara W vs Conegliano W.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250409183000 +0000" stop="20250409203000 +0000" channel="882">
+    <title lang="it">Serie A1 Women : Novara W vs Conegliano W</title>
+    <desc lang="it">Serie A1 Women : Novara W vs Conegliano W trasmesso in diretta.</desc>
+    <category lang="it">Volleyball</category>
+  </programme>
 </tv>
