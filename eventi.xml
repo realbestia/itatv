@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="851">
-    <display-name>UEFA Women's Nations League : Denmark vs Italy</display-name>
-  </channel>
-  <programme start="20250408000000 +0000" stop="20250408160000 +0000" channel="851">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">UEFA Women's Nations League : Denmark vs Italy.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250408160000 +0000" stop="20250408180000 +0000" channel="851">
-    <title lang="it">UEFA Women's Nations League : Denmark vs Italy</title>
-    <desc lang="it">UEFA Women's Nations League : Denmark vs Italy trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="882">
     <display-name>Italy - Coppa Italia Serie C : Rimini vs Giana Erminio</display-name>
   </channel>
