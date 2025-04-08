@@ -2547,8 +2547,163 @@
                 "channels": []
             },
             {
+                "time": "17:30",
+                "event": "Challenger - Sarasota (USA) : Martin Damm Jr vs Patrick Maloney",
+                "channels": []
+            },
+            {
+                "time": "18:10",
+                "event": "Challenger - Mexico City (MEX) : Aziz Dougaz vs Thiago Agustin Tirante",
+                "channels": []
+            },
+            {
+                "time": "18:10",
+                "event": "Challenger - Mexico City (MEX) : J.A.Hernandez Serrano vs Pedro Sakamoto",
+                "channels": []
+            },
+            {
+                "time": "18:10",
+                "event": "Challenger - Mexico City (MEX) : Juan Pablo Ficovich vs Alfredo Perez",
+                "channels": []
+            },
+            {
+                "time": "18:20",
+                "event": "UTR (M) - Spring (USA) : Welsh Hotard vs Raphael Perot",
+                "channels": []
+            },
+            {
+                "time": "19:00",
+                "event": "UTR (M) - Newport Beach (USA) : Aleksa Ciric vs Mario Garcia",
+                "channels": []
+            },
+            {
+                "time": "19:00",
+                "event": "UTR (M) - Newport Beach (USA) : Gregory Gamal vs Maciej Rajski",
+                "channels": []
+            },
+            {
+                "time": "19:00",
+                "event": "UTR (M) - Newport Beach (USA) : Maximilian Wuelfing vs Chikaya Sato",
+                "channels": []
+            },
+            {
+                "time": "19:00",
+                "event": "UTR (M) - Newport Beach (USA) : Santiago Perez vs Angel Guerrero Melgar",
+                "channels": []
+            },
+            {
                 "time": "19:10",
                 "event": "Challenger - Sarasota (USA) - Double : R.Cash/J.Tracy vs G.Blancaneaux/M.Erhard",
+                "channels": []
+            },
+            {
+                "time": "19:20",
+                "event": "Challenger - Mexico City (MEX) : Marc Andrea Huesler vs Patrick Zahraj",
+                "channels": []
+            },
+            {
+                "time": "19:20",
+                "event": "Challenger - Mexico City (MEX) : Matias Soto vs Maximilian Neuchrist",
+                "channels": []
+            },
+            {
+                "time": "19:30",
+                "event": "UTR (M) - Spring (USA) : Andrew Ena vs Mauricio Echazu",
+                "channels": []
+            },
+            {
+                "time": "19:30",
+                "event": "UTR (M) - Spring (USA) : Nathan Chavez vs Lorenzo Pereira",
+                "channels": []
+            },
+            {
+                "time": "20:30",
+                "event": "Challenger - Mexico City (MEX) : Maxime Janvier vs Neil Oberleitner",
+                "channels": []
+            },
+            {
+                "time": "22:00",
+                "event": "Challenger - Mexico City (MEX) : Rodrigo Pacheco Mendez vs Alexis Galarneau",
+                "channels": []
+            },
+            {
+                "time": "23:10",
+                "event": "Challenger - Mexico City (MEX) : Adrian Mannarino vs Aidan Mayo",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "UTR (F) - Melbourne (AUS) : Amelia Zylberman vs Laquisa Khan",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "UTR (M) - Melbourne (AUS) : Joel Braund vs Ethan Cook",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "UTR (M) - Melbourne (AUS) : Nathan Boniel vs Roger Rogowski",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "Challenger - Mexico City (MEX) : Santiago Rodriguez Taverna vs Juan Pablo Varillas",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "UTR (M) - Melbourne (AUS) : Sean van Rensburg vs Nicholas Jovanovski",
+                "channels": []
+            },
+            {
+                "time": "01:00",
+                "event": "Challenger - Mexico City (MEX) - Double : N.Balaji/M.A.R.Varela vs M.Alves/S.Napolitano",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (F) - Melbourne (AUS) : Cara Korhonen vs Larisa Arnautovic",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (M) - Melbourne (AUS) : Stefan Storch vs Tomislav Edward Papac",
+                "channels": []
+            },
+            {
+                "time": "01:10",
+                "event": "UTR (M) - Melbourne (AUS) : Zachary Adam-Gedge vs Marin Dumitru",
+                "channels": []
+            },
+            {
+                "time": "01:30",
+                "event": "UTR (M) - Newport Beach (USA) : Borys Zgola vs Victor Severo Castro",
+                "channels": []
+            },
+            {
+                "time": "01:30",
+                "event": "UTR (M) - Melbourne (AUS) : Lachlan McFadzean vs Scott Jones",
+                "channels": []
+            },
+            {
+                "time": "03:30",
+                "event": "UTR (F) - Melbourne (AUS) : Alexandra Irina Anghel vs Jelena Cvijanovic",
+                "channels": []
+            },
+            {
+                "time": "03:30",
+                "event": "UTR (F) - Melbourne (AUS) : Belle Thompson vs Maahi Shah",
+                "channels": []
+            },
+            {
+                "time": "03:30",
+                "event": "UTR (M) - Melbourne (AUS) : Sam Ryan Ziegann vs David Qariaqus",
+                "channels": []
+            },
+            {
+                "time": "04:00",
+                "event": "UTR (M) - Melbourne (AUS) : Hugo Castello vs Jack Bruce Smith",
                 "channels": []
             }
         ],
@@ -2685,6 +2840,24 @@
                 ]
             },
             {
+                "time": "17:10",
+                "event": "MLB : New York Yankees vs Detroit Tigers",
+                "channels": [
+                    {
+                        "channel_name": "MLB League Pass",
+                        "channel_id": "109"
+                    },
+                    {
+                        "channel_name": "YES USA",
+                        "channel_id": "763"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network Detroit",
+                        "channel_id": "891"
+                    }
+                ]
+            },
+            {
                 "time": "20:10",
                 "event": "MLB : Chicago White Sox vs Cleveland Guardians",
                 "channels": [
@@ -2707,24 +2880,6 @@
                     {
                         "channel_name": "Sport 5 Stars Israel",
                         "channel_id": "147"
-                    }
-                ]
-            },
-            {
-                "time": "22:40",
-                "event": "MLB : New York Yankees vs Detroit Tigers",
-                "channels": [
-                    {
-                        "channel_name": "MLB League Pass",
-                        "channel_id": "109"
-                    },
-                    {
-                        "channel_name": "YES USA",
-                        "channel_id": "763"
-                    },
-                    {
-                        "channel_name": "FanDuel Sports Network Detroit",
-                        "channel_id": "891"
                     }
                 ]
             },
