@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="1">
-    <display-name>Italy - Serie C : Pescara vs Arezzo</display-name>
-  </channel>
-  <programme start="20250409000000 +0000" stop="20250409160000 +0000" channel="1">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">Italy - Serie C : Pescara vs Arezzo.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250409160000 +0000" stop="20250409180000 +0000" channel="1">
-    <title lang="it">Italy - Serie C : Pescara vs Arezzo</title>
-    <desc lang="it">Italy - Serie C : Pescara vs Arezzo trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="870">
-    <display-name>Italy - Serie C : Pescara vs Arezzo</display-name>
-  </channel>
-  <programme start="20250409000000 +0000" stop="20250409160000 +0000" channel="870">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">Italy - Serie C : Pescara vs Arezzo.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250409160000 +0000" stop="20250409180000 +0000" channel="870">
-    <title lang="it">Italy - Serie C : Pescara vs Arezzo</title>
-    <desc lang="it">Italy - Serie C : Pescara vs Arezzo trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="110">
     <display-name>UEFA Champions League : Barcelona vs Borussia Dortmund</display-name>
   </channel>
