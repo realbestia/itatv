@@ -1,3 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="5">
+    <display-name>UEFA Europa League : Bodø / Glimt vs Lazio</display-name>
+  </channel>
+  <programme start="20250410000000 +0000" stop="20250410164500 +0000" channel="5">
+    <title lang="it">inizierà alle 18:45.</title>
+    <desc lang="it">UEFA Europa League : Bodø / Glimt vs Lazio.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410164500 +0000" stop="20250410184500 +0000" channel="5">
+    <title lang="it">UEFA Europa League : Bodø / Glimt vs Lazio</title>
+    <desc lang="it">UEFA Europa League : Bodø / Glimt vs Lazio trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="461">
+    <display-name>UEFA Europa League : Bodø / Glimt vs Lazio</display-name>
+  </channel>
+  <programme start="20250410000000 +0000" stop="20250410164500 +0000" channel="461">
+    <title lang="it">inizierà alle 18:45.</title>
+    <desc lang="it">UEFA Europa League : Bodø / Glimt vs Lazio.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410164500 +0000" stop="20250410184500 +0000" channel="461">
+    <title lang="it">UEFA Europa League : Bodø / Glimt vs Lazio</title>
+    <desc lang="it">UEFA Europa League : Bodø / Glimt vs Lazio trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="12">
+    <display-name>UEFA Conference League : Legia Warszawa vs Chelsea</display-name>
+  </channel>
+  <programme start="20250410000000 +0000" stop="20250410164500 +0000" channel="12">
+    <title lang="it">inizierà alle 18:45.</title>
+    <desc lang="it">UEFA Conference League : Legia Warszawa vs Chelsea.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410164500 +0000" stop="20250410184500 +0000" channel="12">
+    <title lang="it">UEFA Conference League : Legia Warszawa vs Chelsea</title>
+    <desc lang="it">UEFA Conference League : Legia Warszawa vs Chelsea trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="870">
+    <display-name>UEFA Conference League : Legia Warszawa vs Chelsea</display-name>
+  </channel>
+  <programme start="20250410000000 +0000" stop="20250410164500 +0000" channel="870">
+    <title lang="it">inizierà alle 18:45.</title>
+    <desc lang="it">UEFA Conference League : Legia Warszawa vs Chelsea.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410164500 +0000" stop="20250410184500 +0000" channel="870">
+    <title lang="it">UEFA Conference League : Legia Warszawa vs Chelsea</title>
+    <desc lang="it">UEFA Conference League : Legia Warszawa vs Chelsea trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="20">
+    <display-name>UEFA Europa League : Tottenham Hotspur vs Eintracht Frankfurt</display-name>
+  </channel>
+  <programme start="20250410000000 +0000" stop="20250410190000 +0000" channel="20">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Europa League : Tottenham Hotspur vs Eintracht Frankfurt.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410190000 +0000" stop="20250410210000 +0000" channel="20">
+    <title lang="it">UEFA Europa League : Tottenham Hotspur vs Eintracht Frankfurt</title>
+    <desc lang="it">UEFA Europa League : Tottenham Hotspur vs Eintracht Frankfurt trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="23">
+    <display-name>UEFA Europa League : Rangers vs Athletic Club</display-name>
+  </channel>
+  <programme start="20250410000000 +0000" stop="20250410190000 +0000" channel="23">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Europa League : Rangers vs Athletic Club.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410190000 +0000" stop="20250410210000 +0000" channel="23">
+    <title lang="it">UEFA Europa League : Rangers vs Athletic Club</title>
+    <desc lang="it">UEFA Europa League : Rangers vs Athletic Club trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250410000000 +0000" stop="20250410190000 +0000" channel="12">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Europa League : Olympique Lyonnais vs Manchester United.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410190000 +0000" stop="20250410210000 +0000" channel="12">
+    <title lang="it">UEFA Europa League : Olympique Lyonnais vs Manchester United</title>
+    <desc lang="it">UEFA Europa League : Olympique Lyonnais vs Manchester United trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250410000000 +0000" stop="20250410190000 +0000" channel="870">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Europa League : Olympique Lyonnais vs Manchester United.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410190000 +0000" stop="20250410210000 +0000" channel="870">
+    <title lang="it">UEFA Europa League : Olympique Lyonnais vs Manchester United</title>
+    <desc lang="it">UEFA Europa League : Olympique Lyonnais vs Manchester United trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250410000000 +0000" stop="20250410190000 +0000" channel="5">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Conference League : Celje vs Fiorentina.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410190000 +0000" stop="20250410210000 +0000" channel="5">
+    <title lang="it">UEFA Conference League : Celje vs Fiorentina</title>
+    <desc lang="it">UEFA Conference League : Celje vs Fiorentina trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250410000000 +0000" stop="20250410190000 +0000" channel="461">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Conference League : Celje vs Fiorentina.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410190000 +0000" stop="20250410210000 +0000" channel="461">
+    <title lang="it">UEFA Conference League : Celje vs Fiorentina</title>
+    <desc lang="it">UEFA Conference League : Celje vs Fiorentina trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="161">
+    <display-name>Euroleague : Olimpia Milano vs. Baskonia Vitoria-Gasteiz</display-name>
+  </channel>
+  <programme start="20250410000000 +0000" stop="20250410183000 +0000" channel="161">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Euroleague : Olimpia Milano vs. Baskonia Vitoria-Gasteiz.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250410183000 +0000" stop="20250410203000 +0000" channel="161">
+    <title lang="it">Euroleague : Olimpia Milano vs. Baskonia Vitoria-Gasteiz</title>
+    <desc lang="it">Euroleague : Olimpia Milano vs. Baskonia Vitoria-Gasteiz trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
 </tv>
