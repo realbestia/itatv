@@ -7697,7 +7697,11 @@
                 "event": "MLB : Atlanta Braves vs Tampa Bay Rays",
                 "channels": [
                     {
-                        "channel_name": "MLB League Pass (CH-156) FanDuel Sports Network South",
+                        "channel_name": "MLB League Pass",
+                        "channel_id": "156"
+                    },
+                    {
+                        "channel_name": "FanDuel Sports Network South",
                         "channel_id": "903"
                     },
                     {
