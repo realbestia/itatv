@@ -1,16 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="877">
-    <display-name>Spain - La Liga : Valencia vs Sevilla</display-name>
-  </channel>
-  <programme start="20250411000000 +0000" stop="20250411190000 +0000" channel="877">
-    <title lang="it">inizierà alle 21:00.</title>
-    <desc lang="it">Spain - La Liga : Valencia vs Sevilla.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250411190000 +0000" stop="20250411210000 +0000" channel="877">
-    <title lang="it">Spain - La Liga : Valencia vs Sevilla</title>
-    <desc lang="it">Spain - La Liga : Valencia vs Sevilla trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
 </tv>
