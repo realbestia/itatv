@@ -1,3 +1,493 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="55">
+    <display-name>Italy - Serie A (women) : Sampdoria vs Lazio</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412103000 +0000" channel="55">
+    <title lang="it">inizierà alle 12:30.</title>
+    <desc lang="it">Italy - Serie A (women) : Sampdoria vs Lazio.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412103000 +0000" stop="20250412123000 +0000" channel="55">
+    <title lang="it">Italy - Serie A (women) : Sampdoria vs Lazio</title>
+    <desc lang="it">Italy - Serie A (women) : Sampdoria vs Lazio trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="870">
+    <display-name>England - Premier League : Manchester City vs Crystal Palace</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412113000 +0000" channel="870">
+    <title lang="it">inizierà alle 13:30.</title>
+    <desc lang="it">England - Premier League : Manchester City vs Crystal Palace.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412113000 +0000" stop="20250412133000 +0000" channel="870">
+    <title lang="it">England - Premier League : Manchester City vs Crystal Palace</title>
+    <desc lang="it">England - Premier League : Manchester City vs Crystal Palace trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="163">
+    <display-name>Italy - Serie C : Clodiense vs Atalanta II</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="163">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Clodiense vs Atalanta II.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="163">
+    <title lang="it">Italy - Serie C : Clodiense vs Atalanta II</title>
+    <desc lang="it">Italy - Serie C : Clodiense vs Atalanta II trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="22">
+    <display-name>Italy - Serie C : Trento vs Renate</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="22">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Trento vs Renate.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="22">
+    <title lang="it">Italy - Serie C : Trento vs Renate</title>
+    <desc lang="it">Italy - Serie C : Trento vs Renate trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="23">
+    <display-name>Italy - Serie C : Pianese vs Pineto</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="23">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Pianese vs Pineto.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="23">
+    <title lang="it">Italy - Serie C : Pianese vs Pineto</title>
+    <desc lang="it">Italy - Serie C : Pianese vs Pineto trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="24">
+    <display-name>Italy - Serie C : Cavese vs Catania</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="24">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Cavese vs Catania.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="24">
+    <title lang="it">Italy - Serie C : Cavese vs Catania</title>
+    <desc lang="it">Italy - Serie C : Cavese vs Catania trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="164">
+    <display-name>Italy - Serie C : Picerno vs Latina</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="164">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Picerno vs Latina.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="164">
+    <title lang="it">Italy - Serie C : Picerno vs Latina</title>
+    <desc lang="it">Italy - Serie C : Picerno vs Latina trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="877">
+    <display-name>Italy - Serie A : Venezia vs Monza</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="877">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie A : Venezia vs Monza.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="877">
+    <title lang="it">Italy - Serie A : Venezia vs Monza</title>
+    <desc lang="it">Italy - Serie A : Venezia vs Monza trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="68">
+    <display-name>Italy - Serie B : Carrarese vs Catanzaro</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="68">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Carrarese vs Catanzaro.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="68">
+    <title lang="it">Italy - Serie B : Carrarese vs Catanzaro</title>
+    <desc lang="it">Italy - Serie B : Carrarese vs Catanzaro trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="69">
+    <display-name>Italy - Serie B : Cosenza vs Brescia</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="69">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Cosenza vs Brescia.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="69">
+    <title lang="it">Italy - Serie B : Cosenza vs Brescia</title>
+    <desc lang="it">Italy - Serie B : Cosenza vs Brescia trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="76">
+    <display-name>Italy - Serie B : Reggiana vs Pisa</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="76">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Reggiana vs Pisa.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="76">
+    <title lang="it">Italy - Serie B : Reggiana vs Pisa</title>
+    <desc lang="it">Italy - Serie B : Reggiana vs Pisa trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="77">
+    <display-name>Italy - Serie B : Salernitana vs Südtirol</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="77">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Salernitana vs Südtirol.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="77">
+    <title lang="it">Italy - Serie B : Salernitana vs Südtirol</title>
+    <desc lang="it">Italy - Serie B : Salernitana vs Südtirol trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="86">
+    <display-name>Italy - Serie A (women) : Milan vs Fiorentina</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412130000 +0000" channel="86">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie A (women) : Milan vs Fiorentina.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412130000 +0000" stop="20250412150000 +0000" channel="86">
+    <title lang="it">Italy - Serie A (women) : Milan vs Fiorentina</title>
+    <desc lang="it">Italy - Serie A (women) : Milan vs Fiorentina trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="30">
+    <display-name>England - Premier League : Brighton & Hove Albion vs Leicester City</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412140000 +0000" channel="30">
+    <title lang="it">inizierà alle 16:00.</title>
+    <desc lang="it">England - Premier League : Brighton & Hove Albion vs Leicester City.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412140000 +0000" stop="20250412160000 +0000" channel="30">
+    <title lang="it">England - Premier League : Brighton & Hove Albion vs Leicester City</title>
+    <desc lang="it">England - Premier League : Brighton & Hove Albion vs Leicester City trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412140000 +0000" channel="870">
+    <title lang="it">inizierà alle 16:00.</title>
+    <desc lang="it">England - Premier League : Nottingham Forest vs Everton.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412140000 +0000" stop="20250412160000 +0000" channel="870">
+    <title lang="it">England - Premier League : Nottingham Forest vs Everton</title>
+    <desc lang="it">England - Premier League : Nottingham Forest vs Everton trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="110">
+    <display-name>England - Premier League : Southampton vs Aston Villa</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412140000 +0000" channel="110">
+    <title lang="it">inizierà alle 16:00.</title>
+    <desc lang="it">England - Premier League : Southampton vs Aston Villa.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412140000 +0000" stop="20250412160000 +0000" channel="110">
+    <title lang="it">England - Premier League : Southampton vs Aston Villa</title>
+    <desc lang="it">England - Premier League : Southampton vs Aston Villa trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412151500 +0000" channel="55">
+    <title lang="it">inizierà alle 17:15.</title>
+    <desc lang="it">Italy - Serie B : Sampdoria vs Cittadella.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412151500 +0000" stop="20250412171500 +0000" channel="55">
+    <title lang="it">Italy - Serie B : Sampdoria vs Cittadella</title>
+    <desc lang="it">Italy - Serie B : Sampdoria vs Cittadella trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412153000 +0000" channel="24">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">Italy - Serie C : Lecco vs AlbinoLeffe.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412153000 +0000" stop="20250412173000 +0000" channel="24">
+    <title lang="it">Italy - Serie C : Lecco vs AlbinoLeffe</title>
+    <desc lang="it">Italy - Serie C : Lecco vs AlbinoLeffe trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412153000 +0000" channel="23">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412153000 +0000" stop="20250412173000 +0000" channel="23">
+    <title lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria</title>
+    <desc lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412153000 +0000" channel="22">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">Italy - Serie C : SPAL vs Pontedera.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412153000 +0000" stop="20250412173000 +0000" channel="22">
+    <title lang="it">Italy - Serie C : SPAL vs Pontedera</title>
+    <desc lang="it">Italy - Serie C : SPAL vs Pontedera trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412153000 +0000" channel="163">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">Italy - Serie C : Perugia vs Sestri Levante.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412153000 +0000" stop="20250412173000 +0000" channel="163">
+    <title lang="it">Italy - Serie C : Perugia vs Sestri Levante</title>
+    <desc lang="it">Italy - Serie C : Perugia vs Sestri Levante trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412153000 +0000" channel="164">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">Italy - Serie C : Giugliano vs Sorrento.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412153000 +0000" stop="20250412173000 +0000" channel="164">
+    <title lang="it">Italy - Serie C : Giugliano vs Sorrento</title>
+    <desc lang="it">Italy - Serie C : Giugliano vs Sorrento trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412160000 +0000" channel="877">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">Italy - Serie A : Internazionale vs Cagliari.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412160000 +0000" stop="20250412180000 +0000" channel="877">
+    <title lang="it">Italy - Serie A : Internazionale vs Cagliari</title>
+    <desc lang="it">Italy - Serie A : Internazionale vs Cagliari trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="460">
+    <display-name>England - Premier League : Arsenal vs Brentford</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412163000 +0000" channel="460">
+    <title lang="it">inizierà alle 18:30.</title>
+    <desc lang="it">England - Premier League : Arsenal vs Brentford.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412163000 +0000" stop="20250412183000 +0000" channel="460">
+    <title lang="it">England - Premier League : Arsenal vs Brentford</title>
+    <desc lang="it">England - Premier League : Arsenal vs Brentford trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412163000 +0000" channel="870">
+    <title lang="it">inizierà alle 18:30.</title>
+    <desc lang="it">Bundesliga : Bayern München vs Borussia Dortmund.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412163000 +0000" stop="20250412183000 +0000" channel="870">
+    <title lang="it">Bundesliga : Bayern München vs Borussia Dortmund</title>
+    <desc lang="it">Bundesliga : Bayern München vs Borussia Dortmund trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412173000 +0000" channel="69">
+    <title lang="it">inizierà alle 19:30.</title>
+    <desc lang="it">Italy - Serie B : Modena vs Sassuolo.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412173000 +0000" stop="20250412193000 +0000" channel="69">
+    <title lang="it">Italy - Serie B : Modena vs Sassuolo</title>
+    <desc lang="it">Italy - Serie B : Modena vs Sassuolo trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412184500 +0000" channel="24">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Juventus vs Lecce.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412184500 +0000" stop="20250412204500 +0000" channel="24">
+    <title lang="it">Italy - Serie A : Juventus vs Lecce</title>
+    <desc lang="it">Italy - Serie A : Juventus vs Lecce trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412184500 +0000" channel="870">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Juventus vs Lecce.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412184500 +0000" stop="20250412204500 +0000" channel="870">
+    <title lang="it">Italy - Serie A : Juventus vs Lecce</title>
+    <desc lang="it">Italy - Serie A : Juventus vs Lecce trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412190000 +0000" channel="877">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">Spain - La Liga : Leganés vs Barcelona.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412190000 +0000" stop="20250412210000 +0000" channel="877">
+    <title lang="it">Spain - La Liga : Leganés vs Barcelona</title>
+    <desc lang="it">Spain - La Liga : Leganés vs Barcelona trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="575">
+    <display-name>Moto2 : Qatar Grand Prix Free Practice 2</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412101000 +0000" channel="575">
+    <title lang="it">inizierà alle 12:10.</title>
+    <desc lang="it">Moto2 : Qatar Grand Prix Free Practice 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412101000 +0000" stop="20250412121000 +0000" channel="575">
+    <title lang="it">Moto2 : Qatar Grand Prix Free Practice 2</title>
+    <desc lang="it">Moto2 : Qatar Grand Prix Free Practice 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412114500 +0000" channel="575">
+    <title lang="it">inizierà alle 13:45.</title>
+    <desc lang="it">MotoGP : Qatar Grand Prix Free Practice 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412114500 +0000" stop="20250412134500 +0000" channel="575">
+    <title lang="it">MotoGP : Qatar Grand Prix Free Practice 2</title>
+    <desc lang="it">MotoGP : Qatar Grand Prix Free Practice 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412103000 +0000" channel="575">
+    <title lang="it">inizierà alle 12:30.</title>
+    <desc lang="it">Moto3 : Qatar Grand Prix Practice 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412103000 +0000" stop="20250412123000 +0000" channel="575">
+    <title lang="it">Moto3 : Qatar Grand Prix Practice 2</title>
+    <desc lang="it">Moto3 : Qatar Grand Prix Practice 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="577">
+    <display-name>Formula 3 : Sakhir Sprint Race</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412111500 +0000" channel="577">
+    <title lang="it">inizierà alle 13:15.</title>
+    <desc lang="it">Formula 3 : Sakhir Sprint Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412111500 +0000" stop="20250412131500 +0000" channel="577">
+    <title lang="it">Formula 3 : Sakhir Sprint Race</title>
+    <desc lang="it">Formula 3 : Sakhir Sprint Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412114500 +0000" channel="575">
+    <title lang="it">inizierà alle 13:45.</title>
+    <desc lang="it">MotoGP : Qatar Grand Prix Qualifying.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412114500 +0000" stop="20250412134500 +0000" channel="575">
+    <title lang="it">MotoGP : Qatar Grand Prix Qualifying</title>
+    <desc lang="it">MotoGP : Qatar Grand Prix Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412123000 +0000" channel="577">
+    <title lang="it">inizierà alle 14:30.</title>
+    <desc lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Practice 3.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412123000 +0000" stop="20250412143000 +0000" channel="577">
+    <title lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Practice 3</title>
+    <desc lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Practice 3 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412134500 +0000" channel="577">
+    <title lang="it">inizierà alle 15:45.</title>
+    <desc lang="it">Formula 2 : Sakhir Sprint Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412134500 +0000" stop="20250412154500 +0000" channel="577">
+    <title lang="it">Formula 2 : Sakhir Sprint Race</title>
+    <desc lang="it">Formula 2 : Sakhir Sprint Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412144000 +0000" channel="575">
+    <title lang="it">inizierà alle 16:40.</title>
+    <desc lang="it">Moto2 : Qatar Grand Prix Qualifying.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412144000 +0000" stop="20250412164000 +0000" channel="575">
+    <title lang="it">Moto2 : Qatar Grand Prix Qualifying</title>
+    <desc lang="it">Moto2 : Qatar Grand Prix Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412144500 +0000" channel="575">
+    <title lang="it">inizierà alle 16:45.</title>
+    <desc lang="it">Moto3 : Qatar Grand Prix Qualifying.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412144500 +0000" stop="20250412164500 +0000" channel="575">
+    <title lang="it">Moto3 : Qatar Grand Prix Qualifying</title>
+    <desc lang="it">Moto3 : Qatar Grand Prix Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412160000 +0000" channel="577">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Qualifying.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412160000 +0000" stop="20250412180000 +0000" channel="577">
+    <title lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Qualifying</title>
+    <desc lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412164500 +0000" channel="575">
+    <title lang="it">inizierà alle 18:45.</title>
+    <desc lang="it">MotoGP : Qatar Grand Prix Sprint Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412164500 +0000" stop="20250412184500 +0000" channel="575">
+    <title lang="it">MotoGP : Qatar Grand Prix Sprint Race</title>
+    <desc lang="it">MotoGP : Qatar Grand Prix Sprint Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="462">
+    <display-name>World Athletics Continental Tour Gold 2025</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412123000 +0000" channel="462">
+    <title lang="it">inizierà alle 14:30.</title>
+    <desc lang="it">World Athletics Continental Tour Gold 2025.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412123000 +0000" stop="20250412143000 +0000" channel="462">
+    <title lang="it">World Athletics Continental Tour Gold 2025</title>
+    <desc lang="it">World Athletics Continental Tour Gold 2025 trasmesso in diretta.</desc>
+    <category lang="it">Athletics</category>
+  </programme>
+  <channel id="878">
+    <display-name>Lega A : Basket Napoli vs Varese</display-name>
+  </channel>
+  <programme start="20250412000000 +0000" stop="20250412180000 +0000" channel="878">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Lega A : Basket Napoli vs Varese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412180000 +0000" stop="20250412200000 +0000" channel="878">
+    <title lang="it">Lega A : Basket Napoli vs Varese</title>
+    <desc lang="it">Lega A : Basket Napoli vs Varese trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+  <programme start="20250412000000 +0000" stop="20250412093500 +0000" channel="462">
+    <title lang="it">inizierà alle 11:35.</title>
+    <desc lang="it">Super Rugby : Reds vs Brumbies.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250412093500 +0000" stop="20250412113500 +0000" channel="462">
+    <title lang="it">Super Rugby : Reds vs Brumbies</title>
+    <desc lang="it">Super Rugby : Reds vs Brumbies trasmesso in diretta.</desc>
+    <category lang="it">Rugby Union</category>
+  </programme>
 </tv>
