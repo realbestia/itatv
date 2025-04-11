@@ -104,29 +104,6 @@
     <desc lang="it">Spain - La Liga : Valencia vs Sevilla trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="575">
-    <display-name>Moto3 : Qatar Grand Prix Free Practice</display-name>
-  </channel>
-  <programme start="20250411000000 +0000" stop="20250411105500 +0000" channel="575">
-    <title lang="it">inizierà alle 12:55.</title>
-    <desc lang="it">Moto3 : Qatar Grand Prix Free Practice.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250411105500 +0000" stop="20250411125500 +0000" channel="575">
-    <title lang="it">Moto3 : Qatar Grand Prix Free Practice</title>
-    <desc lang="it">Moto3 : Qatar Grand Prix Free Practice trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
-  <programme start="20250411000000 +0000" stop="20250411110000 +0000" channel="575">
-    <title lang="it">inizierà alle 13:00.</title>
-    <desc lang="it">MotoGP : Qatar Grand Prix Free Practice.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250411110000 +0000" stop="20250411130000 +0000" channel="575">
-    <title lang="it">MotoGP : Qatar Grand Prix Free Practice</title>
-    <desc lang="it">MotoGP : Qatar Grand Prix Free Practice trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="577">
     <display-name>Formula 1 : Gulf Air Bahrain Grand Prix - Practice 1</display-name>
   </channel>
@@ -140,6 +117,9 @@
     <desc lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Practice 1 trasmesso in diretta.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="575">
+    <display-name>Moto2 : Qatar Grand Prix Free Practice</display-name>
+  </channel>
   <programme start="20250411000000 +0000" stop="20250411114500 +0000" channel="575">
     <title lang="it">inizierà alle 13:45.</title>
     <desc lang="it">Moto2 : Qatar Grand Prix Free Practice.</desc>
