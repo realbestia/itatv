@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="870">
-    <display-name>England - Premier League : Manchester City vs Crystal Palace</display-name>
-  </channel>
-  <programme start="20250412000000 +0000" stop="20250412113000 +0000" channel="870">
-    <title lang="it">inizierà alle 13:30.</title>
-    <desc lang="it">England - Premier League : Manchester City vs Crystal Palace.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250412113000 +0000" stop="20250412133000 +0000" channel="870">
-    <title lang="it">England - Premier League : Manchester City vs Crystal Palace</title>
-    <desc lang="it">England - Premier League : Manchester City vs Crystal Palace trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="163">
     <display-name>Italy - Serie C : Clodiense vs Atalanta II</display-name>
   </channel>
@@ -169,6 +156,9 @@
     <desc lang="it">England - Premier League : Brighton & Hove Albion vs Leicester City trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="870">
+    <display-name>England - Premier League : Nottingham Forest vs Everton</display-name>
+  </channel>
   <programme start="20250412000000 +0000" stop="20250412140000 +0000" channel="870">
     <title lang="it">inizierà alle 16:00.</title>
     <desc lang="it">England - Premier League : Nottingham Forest vs Everton.</desc>
@@ -328,42 +318,9 @@
     <desc lang="it">Spain - La Liga : Leganés vs Barcelona trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="575">
-    <display-name>MotoGP : Qatar Grand Prix Free Practice 2</display-name>
-  </channel>
-  <programme start="20250412000000 +0000" stop="20250412114500 +0000" channel="575">
-    <title lang="it">inizierà alle 13:45.</title>
-    <desc lang="it">MotoGP : Qatar Grand Prix Free Practice 2.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250412114500 +0000" stop="20250412134500 +0000" channel="575">
-    <title lang="it">MotoGP : Qatar Grand Prix Free Practice 2</title>
-    <desc lang="it">MotoGP : Qatar Grand Prix Free Practice 2 trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="577">
-    <display-name>Formula 3 : Sakhir Sprint Race</display-name>
+    <display-name>Formula 1 : Gulf Air Bahrain Grand Prix - Practice 3</display-name>
   </channel>
-  <programme start="20250412000000 +0000" stop="20250412111500 +0000" channel="577">
-    <title lang="it">inizierà alle 13:15.</title>
-    <desc lang="it">Formula 3 : Sakhir Sprint Race.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250412111500 +0000" stop="20250412131500 +0000" channel="577">
-    <title lang="it">Formula 3 : Sakhir Sprint Race</title>
-    <desc lang="it">Formula 3 : Sakhir Sprint Race trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
-  <programme start="20250412000000 +0000" stop="20250412114500 +0000" channel="575">
-    <title lang="it">inizierà alle 13:45.</title>
-    <desc lang="it">MotoGP : Qatar Grand Prix Qualifying.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250412114500 +0000" stop="20250412134500 +0000" channel="575">
-    <title lang="it">MotoGP : Qatar Grand Prix Qualifying</title>
-    <desc lang="it">MotoGP : Qatar Grand Prix Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250412000000 +0000" stop="20250412123000 +0000" channel="577">
     <title lang="it">inizierà alle 14:30.</title>
     <desc lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Practice 3.</desc>
@@ -384,6 +341,9 @@
     <desc lang="it">Formula 2 : Sakhir Sprint Race trasmesso in diretta.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="575">
+    <display-name>Moto2 : Qatar Grand Prix Qualifying</display-name>
+  </channel>
   <programme start="20250412000000 +0000" stop="20250412144000 +0000" channel="575">
     <title lang="it">inizierà alle 16:40.</title>
     <desc lang="it">Moto2 : Qatar Grand Prix Qualifying.</desc>
