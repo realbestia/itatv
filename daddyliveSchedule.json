@@ -10455,6 +10455,30 @@
                 ]
             },
             {
+                "time": "14:00",
+                "event": "KHL Playoffs : Traktor Chelyabinsk vs Dinamo Minsk",
+                "channels": [
+                    {
+                        "channel_name": "KHL TV",
+                        "channel_id": "17"
+                    }
+                ]
+            },
+            {
+                "time": "16:00",
+                "event": "KHL Playoffs : Dynamo Moscow vs Ak Bars Kazan",
+                "channels": [
+                    {
+                        "channel_name": "KHL TV",
+                        "channel_id": "17"
+                    },
+                    {
+                        "channel_name": "Match TV Russia",
+                        "channel_id": "127"
+                    }
+                ]
+            },
+            {
                 "time": "23:00",
                 "event": "NHL : Chicago Blackhawks vs Montreal Canadiens",
                 "channels": [
@@ -10655,6 +10679,16 @@
                     {
                         "channel_name": "Polsat Sport 1 Poland",
                         "channel_id": "47"
+                    }
+                ]
+            },
+            {
+                "time": "15:30",
+                "event": "Russia Superliga, Playoffs, Final : Zenit Kazan vs Zenit St. Petersburg",
+                "channels": [
+                    {
+                        "channel_name": "Match Igra Russia",
+                        "channel_id": "18"
                     }
                 ]
             },
