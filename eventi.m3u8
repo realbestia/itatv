@@ -1,19 +1,25 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="19" tvg-name="Italy - Serie C : Audace Cerignola vs Benevento - 13/04/2025 19:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Audace Cerignola vs Benevento - 13/04/2025 19:30
-https://nfsnew.newkso.ru/nfs/premium19/mono.m3u8
-#EXTINF:-1 tvg-id="29" tvg-name="Italy - Serie C : Avellino vs Monopoli - 13/04/2025 19:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Avellino vs Monopoli - 13/04/2025 19:30
-https://nfsnew.newkso.ru/nfs/premium29/mono.m3u8
-#EXTINF:-1 tvg-id="462" tvg-name="Italy - Serie C : Avellino vs Monopoli - 13/04/2025 19:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Avellino vs Monopoli - 13/04/2025 19:30
-https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Lazio vs Roma - 13/04/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Lazio vs Roma - 13/04/2025 20:45
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
-#EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
-http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="575" tvg-name="MotoGP : Qatar Grand Prix Race - 13/04/2025 18:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MotoGP : Qatar Grand Prix Race - 13/04/2025 18:15
-https://nfsnew.newkso.ru/nfs/premium575/mono.m3u8
-#EXTINF:-1 tvg-name="----- Baseball -----" group-title="Eventi", ----- Baseball -----
-http://example.com/Baseball.m3u8
-#EXTINF:-1 tvg-id="460" tvg-name="MLB : Atlanta Braves vs Tampa Bay Rays - 13/04/2025 19:40" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MLB : Atlanta Braves vs Tampa Bay Rays - 13/04/2025 19:40
-https://dokko1new.newkso.ru/dokko1/premium460/mono.m3u8
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="5" tvg-name="Italy - Serie C : Athletic Carpi vs Legnago Salus - 14/04/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Athletic Carpi vs Legnago Salus - 14/04/2025 20:30
+https://nfsnew.newkso.ru/nfs/premium5/mono.m3u8
+#EXTINF:-1 tvg-id="462" tvg-name="Italy - Serie C : Athletic Carpi vs Legnago Salus - 14/04/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Athletic Carpi vs Legnago Salus - 14/04/2025 20:30
+https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
+#EXTINF:-1 tvg-id="6" tvg-name="Italy - Serie C : Crotone vs Foggia - 14/04/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Crotone vs Foggia - 14/04/2025 20:30
+https://nfsnew.newkso.ru/nfs/premium6/mono.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="Italy - Serie C : Crotone vs Foggia - 14/04/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Crotone vs Foggia - 14/04/2025 20:30
+https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
+#EXTINF:-1 tvg-id="461" tvg-name="Italy - Serie C : Crotone vs Foggia - 14/04/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Crotone vs Foggia - 14/04/2025 20:30
+https://ddy6new.newkso.ru/ddy6/premium461/mono.m3u8
+#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Napoli vs Empoli - 14/04/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Napoli vs Empoli - 14/04/2025 20:45
+https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
+#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : AFC Bournemouth vs Fulham - 14/04/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : AFC Bournemouth vs Fulham - 14/04/2025 21:00
+https://windnew.newkso.ru/wind/premium870/mono.m3u8
+#EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
+http://example.com/Basketball.m3u8
+#EXTINF:-1 tvg-id="878" tvg-name="Lega A : Virtus Bologna vs. Pallacanestro Brescia - 14/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Lega A : Virtus Bologna vs. Pallacanestro Brescia - 14/04/2025 20:00
+https://windnew.newkso.ru/wind/premium878/mono.m3u8
