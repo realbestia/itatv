@@ -1,187 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="16">
-    <display-name>Italy - Serie C : Virtus Verona vs Vicenza</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="16">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie C : Virtus Verona vs Vicenza.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="16">
-    <title lang="it">Italy - Serie C : Virtus Verona vs Vicenza</title>
-    <desc lang="it">Italy - Serie C : Virtus Verona vs Vicenza trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="3">
-    <display-name>Italy - Serie C : Triestina vs Calcio Padova</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="3">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie C : Triestina vs Calcio Padova.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="3">
-    <title lang="it">Italy - Serie C : Triestina vs Calcio Padova</title>
-    <desc lang="it">Italy - Serie C : Triestina vs Calcio Padova trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="17">
-    <display-name>Italy - Serie C : Virtus Entella vs Arezzo</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="17">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie C : Virtus Entella vs Arezzo.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="17">
-    <title lang="it">Italy - Serie C : Virtus Entella vs Arezzo</title>
-    <desc lang="it">Italy - Serie C : Virtus Entella vs Arezzo trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="18">
-    <display-name>Italy - Serie C : Pescara vs Gubbio</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="18">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie C : Pescara vs Gubbio.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="18">
-    <title lang="it">Italy - Serie C : Pescara vs Gubbio</title>
-    <desc lang="it">Italy - Serie C : Pescara vs Gubbio trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="19">
-    <display-name>Italy - Serie C : Lucchese vs Vis Pesaro</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="19">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie C : Lucchese vs Vis Pesaro.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="19">
-    <title lang="it">Italy - Serie C : Lucchese vs Vis Pesaro</title>
-    <desc lang="it">Italy - Serie C : Lucchese vs Vis Pesaro trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="152">
-    <display-name>Italy - Serie C : Ascoli vs Sassari Torres</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="152">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie C : Ascoli vs Sassari Torres.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="152">
-    <title lang="it">Italy - Serie C : Ascoli vs Sassari Torres</title>
-    <desc lang="it">Italy - Serie C : Ascoli vs Sassari Torres trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="25">
-    <display-name>England - Premier League : Chelsea vs Ipswich Town</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="25">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">England - Premier League : Chelsea vs Ipswich Town.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="25">
-    <title lang="it">England - Premier League : Chelsea vs Ipswich Town</title>
-    <desc lang="it">England - Premier League : Chelsea vs Ipswich Town trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="460">
-    <display-name>England - Premier League : Liverpool vs West Ham United</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="460">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">England - Premier League : Liverpool vs West Ham United.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="460">
-    <title lang="it">England - Premier League : Liverpool vs West Ham United</title>
-    <desc lang="it">England - Premier League : Liverpool vs West Ham United trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="29">
-    <display-name>England - Premier League : Wolverhampton Wanderers vs Tottenham Hotspur</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="29">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">England - Premier League : Wolverhampton Wanderers vs Tottenham Hotspur.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="29">
-    <title lang="it">England - Premier League : Wolverhampton Wanderers vs Tottenham Hotspur</title>
-    <desc lang="it">England - Premier League : Wolverhampton Wanderers vs Tottenham Hotspur trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="877">
-    <display-name>Italy - Serie A : Fiorentina vs Parma</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="877">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie A : Fiorentina vs Parma.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="877">
-    <title lang="it">Italy - Serie A : Fiorentina vs Parma</title>
-    <desc lang="it">Italy - Serie A : Fiorentina vs Parma trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="69">
-    <display-name>Italy - Serie A : Hellas Verona vs Genoa</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="69">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie A : Hellas Verona vs Genoa.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="69">
-    <title lang="it">Italy - Serie A : Hellas Verona vs Genoa</title>
-    <desc lang="it">Italy - Serie A : Hellas Verona vs Genoa trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="77">
-    <display-name>Italy - Serie B : Cesena vs Frosinone</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="77">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie B : Cesena vs Frosinone.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="77">
-    <title lang="it">Italy - Serie B : Cesena vs Frosinone</title>
-    <desc lang="it">Italy - Serie B : Cesena vs Frosinone trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="86">
-    <display-name>Italy - Serie B : Cremonese vs Juve Stabia</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="86">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie B : Cremonese vs Juve Stabia.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="86">
-    <title lang="it">Italy - Serie B : Cremonese vs Juve Stabia</title>
-    <desc lang="it">Italy - Serie B : Cremonese vs Juve Stabia trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="105">
-    <display-name>Italy - Serie A (women) : Napoli vs Sassuolo</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="105">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie A (women) : Napoli vs Sassuolo.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="105">
-    <title lang="it">Italy - Serie A (women) : Napoli vs Sassuolo</title>
-    <desc lang="it">Italy - Serie A (women) : Napoli vs Sassuolo trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="151">
     <display-name>Italy - Serie B : Mantova vs Spezia</display-name>
   </channel>
@@ -195,6 +13,9 @@
     <desc lang="it">Italy - Serie B : Mantova vs Spezia trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="460">
+    <display-name>England - Premier League : Newcastle United vs Manchester United</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413153000 +0000" channel="460">
     <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">England - Premier League : Newcastle United vs Manchester United.</desc>
@@ -205,6 +26,9 @@
     <desc lang="it">England - Premier League : Newcastle United vs Manchester United trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="25">
+    <display-name>Bundesliga : Eintracht Frankfurt vs Heidenheim</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413153000 +0000" channel="25">
     <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Bundesliga : Eintracht Frankfurt vs Heidenheim.</desc>
@@ -215,6 +39,9 @@
     <desc lang="it">Bundesliga : Eintracht Frankfurt vs Heidenheim trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="152">
+    <display-name>Italy - Serie C : Pergolettese vs Giana Erminio</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413153000 +0000" channel="152">
     <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Pergolettese vs Giana Erminio.</desc>
@@ -225,6 +52,9 @@
     <desc lang="it">Italy - Serie C : Pergolettese vs Giana Erminio trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="16">
+    <display-name>Italy - Serie C : Rimini vs Campobasso</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413153000 +0000" channel="16">
     <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Rimini vs Campobasso.</desc>
@@ -235,6 +65,9 @@
     <desc lang="it">Italy - Serie C : Rimini vs Campobasso trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="18">
+    <display-name>Italy - Serie C : Potenza Calcio vs Casertana</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413153000 +0000" channel="18">
     <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Potenza Calcio vs Casertana.</desc>
@@ -245,6 +78,9 @@
     <desc lang="it">Italy - Serie C : Potenza Calcio vs Casertana trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="17">
+    <display-name>Italy - Serie C : Trapani 1905 vs Team Altamura</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413153000 +0000" channel="17">
     <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Trapani 1905 vs Team Altamura.</desc>
@@ -255,6 +91,9 @@
     <desc lang="it">Italy - Serie C : Trapani 1905 vs Team Altamura trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="3">
+    <display-name>Italy - Serie A : Como vs Torino</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413160000 +0000" channel="3">
     <title lang="it">inizierà alle 18:00.</title>
     <desc lang="it">Italy - Serie A : Como vs Torino.</desc>
@@ -278,6 +117,9 @@
     <desc lang="it">Italy - Serie A : Como vs Torino trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="19">
+    <display-name>Italy - Serie C : Audace Cerignola vs Benevento</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413173000 +0000" channel="19">
     <title lang="it">inizierà alle 19:30.</title>
     <desc lang="it">Italy - Serie C : Audace Cerignola vs Benevento.</desc>
@@ -288,6 +130,9 @@
     <desc lang="it">Italy - Serie C : Audace Cerignola vs Benevento trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="29">
+    <display-name>Italy - Serie C : Avellino vs Monopoli</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413173000 +0000" channel="29">
     <title lang="it">inizierà alle 19:30.</title>
     <desc lang="it">Italy - Serie C : Avellino vs Monopoli.</desc>
@@ -311,6 +156,9 @@
     <desc lang="it">Italy - Serie C : Avellino vs Monopoli trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="877">
+    <display-name>Italy - Serie A : Lazio vs Roma</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413184500 +0000" channel="877">
     <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">Italy - Serie A : Lazio vs Roma.</desc>
@@ -320,19 +168,6 @@
     <title lang="it">Italy - Serie A : Lazio vs Roma</title>
     <desc lang="it">Italy - Serie A : Lazio vs Roma trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="575">
-    <display-name>Moto3 : Qatar Grand Prix Race</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413130000 +0000" channel="575">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Moto3 : Qatar Grand Prix Race.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413130000 +0000" stop="20250413150000 +0000" channel="575">
-    <title lang="it">Moto3 : Qatar Grand Prix Race</title>
-    <desc lang="it">Moto3 : Qatar Grand Prix Race trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
   </programme>
   <channel id="577">
     <display-name>Formula 1 : Gulf Air Bahrain Grand Prix - Grand Prix Sunday</display-name>
@@ -347,6 +182,9 @@
     <desc lang="it">Formula 1 : Gulf Air Bahrain Grand Prix - Grand Prix Sunday trasmesso in diretta.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="575">
+    <display-name>Moto2 : Qatar Grand Prix Race</display-name>
+  </channel>
   <programme start="20250413000000 +0000" stop="20250413150000 +0000" channel="575">
     <title lang="it">inizierà alle 17:00.</title>
     <desc lang="it">Moto2 : Qatar Grand Prix Race.</desc>
