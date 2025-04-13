@@ -1,44 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="19">
-    <display-name>Italy - Serie C : Audace Cerignola vs Benevento</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413173000 +0000" channel="19">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Italy - Serie C : Audace Cerignola vs Benevento.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413173000 +0000" stop="20250413193000 +0000" channel="19">
-    <title lang="it">Italy - Serie C : Audace Cerignola vs Benevento</title>
-    <desc lang="it">Italy - Serie C : Audace Cerignola vs Benevento trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="29">
-    <display-name>Italy - Serie C : Avellino vs Monopoli</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413173000 +0000" channel="29">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Italy - Serie C : Avellino vs Monopoli.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413173000 +0000" stop="20250413193000 +0000" channel="29">
-    <title lang="it">Italy - Serie C : Avellino vs Monopoli</title>
-    <desc lang="it">Italy - Serie C : Avellino vs Monopoli trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="462">
-    <display-name>Italy - Serie C : Avellino vs Monopoli</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413173000 +0000" channel="462">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Italy - Serie C : Avellino vs Monopoli.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413173000 +0000" stop="20250413193000 +0000" channel="462">
-    <title lang="it">Italy - Serie C : Avellino vs Monopoli</title>
-    <desc lang="it">Italy - Serie C : Avellino vs Monopoli trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="877">
     <display-name>Italy - Serie A : Lazio vs Roma</display-name>
   </channel>
@@ -51,18 +12,5 @@
     <title lang="it">Italy - Serie A : Lazio vs Roma</title>
     <desc lang="it">Italy - Serie A : Lazio vs Roma trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="460">
-    <display-name>MLB : Atlanta Braves vs Tampa Bay Rays</display-name>
-  </channel>
-  <programme start="20250413000000 +0000" stop="20250413174000 +0000" channel="460">
-    <title lang="it">inizierà alle 19:40.</title>
-    <desc lang="it">MLB : Atlanta Braves vs Tampa Bay Rays.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250413174000 +0000" stop="20250413194000 +0000" channel="460">
-    <title lang="it">MLB : Atlanta Braves vs Tampa Bay Rays</title>
-    <desc lang="it">MLB : Atlanta Braves vs Tampa Bay Rays trasmesso in diretta.</desc>
-    <category lang="it">Baseball</category>
   </programme>
 </tv>
