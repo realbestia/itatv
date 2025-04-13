@@ -1,8 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="882" tvg-name="Italy - Serie A (women) : Roma vs Juventus - 13/04/2025 11:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Roma vs Juventus - 13/04/2025 11:30
-https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
 #EXTINF:-1 tvg-id="3" tvg-name="Italy - Serie C : Milan II vs Ternana - 13/04/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Milan II vs Ternana - 13/04/2025 12:30
 https://nfsnew.newkso.ru/nfs/premium3/mono.m3u8
 #EXTINF:-1 tvg-id="870" tvg-name="Italy - Serie C : Milan II vs Ternana - 13/04/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Milan II vs Ternana - 13/04/2025 12:30
@@ -65,8 +63,6 @@ https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
 http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="577" tvg-name="Formula 3 : Sakhir Season Race - 13/04/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 3 : Sakhir Season Race - 13/04/2025 12:00
-https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-id="577" tvg-name="Formula 2 : Sakhir Season Race - 13/04/2025 13:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 2 : Sakhir Season Race - 13/04/2025 13:30
 https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-id="575" tvg-name="MotoGP : Qatar Grand Prix Warm Up - 13/04/2025 14:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MotoGP : Qatar Grand Prix Warm Up - 13/04/2025 14:30
