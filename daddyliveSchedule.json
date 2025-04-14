@@ -4705,6 +4705,26 @@
                 "time": "17:00",
                 "event": "Challenger - Sarasota (USA) : Emilio Nava vs Liam Draxl",
                 "channels": []
+            },
+            {
+                "time": "03:10",
+                "event": "Challenger - Busan (KOR) - Qualifiers : Mats Rosenkranz vs Moerani Bouzige",
+                "channels": []
+            },
+            {
+                "time": "03:10",
+                "event": "Challenger - Busan (KOR) - Qualifiers : Viktor Durasovic vs Petr Bar Biryukov",
+                "channels": []
+            },
+            {
+                "time": "03:30",
+                "event": "Challenger - Busan (KOR) : Emil Ruusuvuori vs Hyeon Chung",
+                "channels": []
+            },
+            {
+                "time": "03:30",
+                "event": "Challenger - Busan (KOR) : Jason Kubler vs Rei Sakamoto",
+                "channels": []
             }
         ],
         "Motorsport</span>": [
@@ -9531,6 +9551,16 @@
                 ]
             },
             {
+                "time": "20:00",
+                "event": "Brazil kings-league : Capim FC vs Fluxo FC",
+                "channels": []
+            },
+            {
+                "time": "21:00",
+                "event": "Brazil kings-league : FC Real Elite vs Funkbol Clube",
+                "channels": []
+            },
+            {
                 "time": "21:00",
                 "event": "Argentina - Primera Divisi\u00f3n : Central C\u00f3rdoba SdE vs Hurac\u00e1n",
                 "channels": [
@@ -9585,6 +9615,11 @@
                 ]
             },
             {
+                "time": "22:00",
+                "event": "Brazil kings-league : Dendele FC vs Nyvelados FC",
+                "channels": []
+            },
+            {
                 "time": "00:00",
                 "event": "Colombia - Primera A : Santa Fe vs Medell\u00edn",
                 "channels": [
@@ -9603,6 +9638,16 @@
                         "channel_id": "78"
                     }
                 ]
+            },
+            {
+                "time": "23:00",
+                "event": "Brazil kings-league : Desimpedidos GOTI vs G3X FC",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "Brazil kings-league : Furia FC vs Loud SC",
+                "channels": []
             },
             {
                 "time": "00:10",
@@ -9725,7 +9770,245 @@
                 ]
             }
         ],
+        "Tennis ATP - BARCELONA</span>": [
+            {
+                "time": "09:00",
+                "event": "ATP - BARCELONA : Martinez P. vs Nakashima B.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 5",
+                        "channel_id": "1505"
+                    }
+                ]
+            },
+            {
+                "time": "10:30",
+                "event": "ATP - BARCELONA : Carballes Baena R. vs Thompson J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 5",
+                        "channel_id": "1505"
+                    }
+                ]
+            },
+            {
+                "time": "11:30",
+                "event": "ATP - BARCELONA : Arnaldi M. vs Korda S.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 6",
+                        "channel_id": "1506"
+                    }
+                ]
+            },
+            {
+                "time": "13:00",
+                "event": "ATP - BARCELONA : Medjedovic H. vs Mpetshi Perricard G.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 6",
+                        "channel_id": "1506"
+                    }
+                ]
+            },
+            {
+                "time": "14:00",
+                "event": "ATP - BARCELONA : Rune H. vs Ramos A.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 5",
+                        "channel_id": "1505"
+                    }
+                ]
+            },
+            {
+                "time": "15:30",
+                "event": "ATP - BARCELONA : De Jong J. vs Rublev A.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 5",
+                        "channel_id": "1505"
+                    }
+                ]
+            }
+        ],
+        "Tennis ATP - MUNICH</span>": [
+            {
+                "time": "09:00",
+                "event": "ATP - MUNICH : Griekspoor T. vs Tien L.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ]
+            },
+            {
+                "time": "09:00",
+                "event": "ATP - MUNICH : Kecmanovic M. vs Giron M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ]
+            },
+            {
+                "time": "10:30",
+                "event": "ATP - MUNICH : Harris B. vs Goffin D.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ]
+            },
+            {
+                "time": "10:30",
+                "event": "ATP - MUNICH : Gojo B. vs Shelton B.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ]
+            },
+            {
+                "time": "12:00",
+                "event": "ATP - MUNICH : Zverev A. vs Muller A.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ]
+            },
+            {
+                "time": "12:00",
+                "event": "ATP - MUNICH : Doumbia S./Reboul F. vs Pavlasek A./Withrow J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ]
+            },
+            {
+                "time": "13:30",
+                "event": "ATP - MUNICH : Tseng C. H. vs Altmaier D.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ]
+            }
+        ],
+        "Tennis WTA - STUTTGART</span>": [
+            {
+                "time": "14:00",
+                "event": "ATP - MUNICH : Sasnovich A. vs Mertens E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ]
+            },
+            {
+                "time": "16:30",
+                "event": "ATP - MUNICH : Potapova A. vs Tauson C.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ]
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - MUNICH : Kudermetova V. vs Shnaider D.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    }
+                ]
+            }
+        ],
+        "Tennis WTA - ROUEN</span>": [
+            {
+                "time": "11:30",
+                "event": "WTA - ROUEN : Bronzetti L. vs Rakotomanga Rajaonah T.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            },
+            {
+                "time": "13:00",
+                "event": "WTA - ROUEN : Kalinina A. vs Hibino N.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            },
+            {
+                "time": "13:00",
+                "event": "WTA - ROUEN : Cristian J./Moratelli A. vs Lemaitre T./Rouvroy M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 5",
+                        "channel_id": "1505"
+                    }
+                ]
+            },
+            {
+                "time": "14:30",
+                "event": "WTA - ROUEN : Khromacheva I./Noskova L. vs Blinkova A./Gracheva V.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 5",
+                        "channel_id": "1505"
+                    }
+                ]
+            },
+            {
+                "time": "15:30",
+                "event": "WTA - ROUEN : Jacquemot E. vs Ruse G.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            },
+            {
+                "time": "17:30",
+                "event": "WTA - ROUEN : Kessler M. vs Ferro F.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            }
+        ],
         "Tennis</span>": [
+            {
+                "time": "04:40",
+                "event": "Challenger - Busan (KOR) : Adam Walton vs Rio Noguchi",
+                "channels": []
+            },
+            {
+                "time": "04:40",
+                "event": "Challenger - Busan (KOR) : Sho Shimabukuro vs Yuta Shimizu",
+                "channels": []
+            },
             {
                 "time": "09:00",
                 "event": "Tennis BMW Open ATP | Round 1",
@@ -10143,6 +10426,10 @@
                         "channel_id": "23"
                     },
                     {
+                        "channel_name": "Spectrum SportsNet LA",
+                        "channel_id": "764"
+                    },
+                    {
                         "channel_name": "Sportsnet Ontario",
                         "channel_id": "406"
                     },
@@ -10153,10 +10440,6 @@
                     {
                         "channel_name": "Sportsnet One",
                         "channel_id": "411"
-                    },
-                    {
-                        "channel_name": "Spectrum SportsNet LA",
-                        "channel_id": "764"
                     }
                 ]
             }
@@ -10203,6 +10486,11 @@
                         "channel_id": "584"
                     }
                 ]
+            },
+            {
+                "time": "15:30",
+                "event": "Finland - Korisliga - Playoff : Salon Vilpas vs Helsinki",
+                "channels": []
             },
             {
                 "time": "16:00",
