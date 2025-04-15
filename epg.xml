@@ -1,35 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv><programme start="20250415000000 +0000" stop="20250415190000 +0000" channel="24">
-    <title lang="it">inizierà alle 21:00.</title>
-    <desc lang="it">UEFA Champions League : Aston Villa vs PSG.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250415190000 +0000" stop="20250415210000 +0000" channel="24">
-    <title lang="it">UEFA Champions League : Aston Villa vs PSG</title>
-    <desc lang="it">UEFA Champions League : Aston Villa vs PSG trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <programme start="20250415000000 +0000" stop="20250415190000 +0000" channel="460">
-    <title lang="it">inizierà alle 21:00.</title>
-    <desc lang="it">UEFA Champions League : Borussia Dortmund vs Barcelona.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250415190000 +0000" stop="20250415210000 +0000" channel="460">
-    <title lang="it">UEFA Champions League : Borussia Dortmund vs Barcelona</title>
-    <desc lang="it">UEFA Champions League : Borussia Dortmund vs Barcelona trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <programme start="20250415000000 +0000" stop="20250415190000 +0000" channel="25">
-    <title lang="it">inizierà alle 21:00.</title>
-    <desc lang="it">UEFA Champions League : Borussia Dortmund vs Barcelona.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250415190000 +0000" stop="20250415210000 +0000" channel="25">
-    <title lang="it">UEFA Champions League : Borussia Dortmund vs Barcelona</title>
-    <desc lang="it">UEFA Champions League : Borussia Dortmund vs Barcelona trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-<programme channel="608014d19a26320007c92ab6" start="20250415183300 +0000" stop="20250415190100 +0000">
+<tv><programme channel="608014d19a26320007c92ab6" start="20250415183300 +0000" stop="20250415190100 +0000">
     <title>FailFactory: Mis-Adventures</title>
     <episode-num system="onscreen">S01E17</episode-num>
     <episode-num system="pluto">60a4d6b7da2f9000132f7799</episode-num>
