@@ -1,10 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="9" tvg-name="UEFA Conference League : Fiorentina vs Celje - 17/04/2025 18:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Conference League : Fiorentina vs Celje - 17/04/2025 18:45
-https://nfsnew.newkso.ru/nfs/premium9/mono.m3u8
-#EXTINF:-1 tvg-id="461" tvg-name="UEFA Conference League : Fiorentina vs Celje - 17/04/2025 18:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Conference League : Fiorentina vs Celje - 17/04/2025 18:45
-https://ddy6new.newkso.ru/ddy6/premium461/mono.m3u8
 #EXTINF:-1 tvg-id="16" tvg-name="UEFA Europa League : Lazio vs Bodø / Glimt - 17/04/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Europa League : Lazio vs Bodø / Glimt - 17/04/2025 21:00
 https://nfsnew.newkso.ru/nfs/premium16/mono.m3u8
 #EXTINF:-1 tvg-id="461" tvg-name="UEFA Europa League : Lazio vs Bodø / Glimt - 17/04/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Europa League : Lazio vs Bodø / Glimt - 17/04/2025 21:00
@@ -25,3 +21,49 @@ https://ddy6new.newkso.ru/ddy6/premium108/mono.m3u8
 http://example.com/Volleyball.m3u8
 #EXTINF:-1 tvg-id="472" tvg-name="Serie A1 : Trentino Volley vs. Gas Sales Piacenza - 17/04/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Serie A1 : Trentino Volley vs. Gas Sales Piacenza - 17/04/2025 20:30
 https://windnew.newkso.ru/wind/premium472/mono.m3u8
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="Italy - Serie A (women) : Juventus vs Milan - 18/04/2025 17:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Juventus vs Milan - 18/04/2025 17:30
+https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
+#EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie A (women) : Lazio vs Napoli - 18/04/2025 19:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Lazio vs Napoli - 18/04/2025 19:30
+https://ddy6new.newkso.ru/ddy6/premium55/mono.m3u8
+#EXTINF:-1 tvg-id="9" tvg-name="Italy - Serie C : AlbinoLeffe vs Alcione - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : AlbinoLeffe vs Alcione - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium9/mono.m3u8
+#EXTINF:-1 tvg-id="870" tvg-name="Italy - Serie C : AlbinoLeffe vs Alcione - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : AlbinoLeffe vs Alcione - 18/04/2025 20:00
+https://windnew.newkso.ru/wind/premium870/mono.m3u8
+#EXTINF:-1 tvg-id="10" tvg-name="Italy - Serie C : Atalanta II vs Union ArzignanoChiampo - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Atalanta II vs Union ArzignanoChiampo - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium10/mono.m3u8
+#EXTINF:-1 tvg-id="11" tvg-name="Italy - Serie C : Caldiero Terme vs Lecco - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Caldiero Terme vs Lecco - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium11/mono.m3u8
+#EXTINF:-1 tvg-id="12" tvg-name="Italy - Serie C : Pro Patria vs Lumezzane - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Pro Patria vs Lumezzane - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium12/mono.m3u8
+#EXTINF:-1 tvg-id="13" tvg-name="Italy - Serie C : Renate vs Pergolettese - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Renate vs Pergolettese - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium13/mono.m3u8
+#EXTINF:-1 tvg-id="14" tvg-name="Italy - Serie C : FeralpiSalò vs Pro Vercelli - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : FeralpiSalò vs Pro Vercelli - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium14/mono.m3u8
+#EXTINF:-1 tvg-id="15" tvg-name="Italy - Serie C : Novara vs Trento - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Novara vs Trento - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium15/mono.m3u8
+#EXTINF:-1 tvg-id="16" tvg-name="Italy - Serie C : Vicenza vs Triestina - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Vicenza vs Triestina - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium16/mono.m3u8
+#EXTINF:-1 tvg-id="17" tvg-name="Italy - Serie C : Calcio Padova vs Clodiense - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Calcio Padova vs Clodiense - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium17/mono.m3u8
+#EXTINF:-1 tvg-id="18" tvg-name="Italy - Serie C : Giana Erminio vs Virtus Verona - 18/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Giana Erminio vs Virtus Verona - 18/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium18/mono.m3u8
+#EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
+http://example.com/Motorsport.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 2 : stc Saudi Arabian Grand Prix - Free Practice - 18/04/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 2 : stc Saudi Arabian Grand Prix - Free Practice - 18/04/2025 12:00
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : stc Saudi Arabian Grand Prix - Practice 1 - 18/04/2025 15:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : stc Saudi Arabian Grand Prix - Practice 1 - 18/04/2025 15:30
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 2 : stc Saudi Arabian Grand Prix - Qualifying - 18/04/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 2 : stc Saudi Arabian Grand Prix - Qualifying - 18/04/2025 17:00
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : stc Saudi Arabian Grand Prix - Practice 2 - 18/04/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : stc Saudi Arabian Grand Prix - Practice 2 - 18/04/2025 19:00
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
+http://example.com/Basketball.m3u8
+#EXTINF:-1 tvg-id="877" tvg-name="Lega A : Olimpia Milano vs. Vanoli Soresina - 18/04/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Lega A : Olimpia Milano vs. Vanoli Soresina - 18/04/2025 20:30
+https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
+#EXTINF:-1 tvg-name="----- Water polo -----" group-title="Eventi", ----- Water polo -----
+http://example.com/Water_polo.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="Italy Serie A1 : AN Brescia vs. Pro Recco - 18/04/2025 19:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie A1 : AN Brescia vs. Pro Recco - 18/04/2025 19:30
+https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
