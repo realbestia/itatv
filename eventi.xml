@@ -1,3 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="882">
+    <display-name>Italy - Serie A (women) : Juventus vs Milan</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418153000 +0000" channel="882">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">Italy - Serie A (women) : Juventus vs Milan.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418153000 +0000" stop="20250418173000 +0000" channel="882">
+    <title lang="it">Italy - Serie A (women) : Juventus vs Milan</title>
+    <desc lang="it">Italy - Serie A (women) : Juventus vs Milan trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="55">
+    <display-name>Italy - Serie A (women) : Lazio vs Napoli</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418173000 +0000" channel="55">
+    <title lang="it">inizierà alle 19:30.</title>
+    <desc lang="it">Italy - Serie A (women) : Lazio vs Napoli.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418173000 +0000" stop="20250418193000 +0000" channel="55">
+    <title lang="it">Italy - Serie A (women) : Lazio vs Napoli</title>
+    <desc lang="it">Italy - Serie A (women) : Lazio vs Napoli trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="9">
+    <display-name>Italy - Serie C : AlbinoLeffe vs Alcione</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="9">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : AlbinoLeffe vs Alcione.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="9">
+    <title lang="it">Italy - Serie C : AlbinoLeffe vs Alcione</title>
+    <desc lang="it">Italy - Serie C : AlbinoLeffe vs Alcione trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="870">
+    <display-name>Italy - Serie C : AlbinoLeffe vs Alcione</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="870">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : AlbinoLeffe vs Alcione.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="870">
+    <title lang="it">Italy - Serie C : AlbinoLeffe vs Alcione</title>
+    <desc lang="it">Italy - Serie C : AlbinoLeffe vs Alcione trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="10">
+    <display-name>Italy - Serie C : Atalanta II vs Union ArzignanoChiampo</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="10">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : Atalanta II vs Union ArzignanoChiampo.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="10">
+    <title lang="it">Italy - Serie C : Atalanta II vs Union ArzignanoChiampo</title>
+    <desc lang="it">Italy - Serie C : Atalanta II vs Union ArzignanoChiampo trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="11">
+    <display-name>Italy - Serie C : Caldiero Terme vs Lecco</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="11">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : Caldiero Terme vs Lecco.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="11">
+    <title lang="it">Italy - Serie C : Caldiero Terme vs Lecco</title>
+    <desc lang="it">Italy - Serie C : Caldiero Terme vs Lecco trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="12">
+    <display-name>Italy - Serie C : Pro Patria vs Lumezzane</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="12">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : Pro Patria vs Lumezzane.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="12">
+    <title lang="it">Italy - Serie C : Pro Patria vs Lumezzane</title>
+    <desc lang="it">Italy - Serie C : Pro Patria vs Lumezzane trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="13">
+    <display-name>Italy - Serie C : Renate vs Pergolettese</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="13">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : Renate vs Pergolettese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="13">
+    <title lang="it">Italy - Serie C : Renate vs Pergolettese</title>
+    <desc lang="it">Italy - Serie C : Renate vs Pergolettese trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="14">
+    <display-name>Italy - Serie C : FeralpiSalò vs Pro Vercelli</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="14">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : FeralpiSalò vs Pro Vercelli.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="14">
+    <title lang="it">Italy - Serie C : FeralpiSalò vs Pro Vercelli</title>
+    <desc lang="it">Italy - Serie C : FeralpiSalò vs Pro Vercelli trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="15">
+    <display-name>Italy - Serie C : Novara vs Trento</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="15">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : Novara vs Trento.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="15">
+    <title lang="it">Italy - Serie C : Novara vs Trento</title>
+    <desc lang="it">Italy - Serie C : Novara vs Trento trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="16">
+    <display-name>Italy - Serie C : Vicenza vs Triestina</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="16">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : Vicenza vs Triestina.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="16">
+    <title lang="it">Italy - Serie C : Vicenza vs Triestina</title>
+    <desc lang="it">Italy - Serie C : Vicenza vs Triestina trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="17">
+    <display-name>Italy - Serie C : Calcio Padova vs Clodiense</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="17">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : Calcio Padova vs Clodiense.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="17">
+    <title lang="it">Italy - Serie C : Calcio Padova vs Clodiense</title>
+    <desc lang="it">Italy - Serie C : Calcio Padova vs Clodiense trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="18">
+    <display-name>Italy - Serie C : Giana Erminio vs Virtus Verona</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="18">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">Italy - Serie C : Giana Erminio vs Virtus Verona.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418180000 +0000" stop="20250418200000 +0000" channel="18">
+    <title lang="it">Italy - Serie C : Giana Erminio vs Virtus Verona</title>
+    <desc lang="it">Italy - Serie C : Giana Erminio vs Virtus Verona trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="577">
+    <display-name>Formula 2 : stc Saudi Arabian Grand Prix - Free Practice</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418100000 +0000" channel="577">
+    <title lang="it">inizierà alle 12:00.</title>
+    <desc lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Free Practice.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418100000 +0000" stop="20250418120000 +0000" channel="577">
+    <title lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Free Practice</title>
+    <desc lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Free Practice trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250418000000 +0000" stop="20250418133000 +0000" channel="577">
+    <title lang="it">inizierà alle 15:30.</title>
+    <desc lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 1.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418133000 +0000" stop="20250418153000 +0000" channel="577">
+    <title lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 1</title>
+    <desc lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 1 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250418000000 +0000" stop="20250418150000 +0000" channel="577">
+    <title lang="it">inizierà alle 17:00.</title>
+    <desc lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Qualifying.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418150000 +0000" stop="20250418170000 +0000" channel="577">
+    <title lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Qualifying</title>
+    <desc lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250418000000 +0000" stop="20250418170000 +0000" channel="577">
+    <title lang="it">inizierà alle 19:00.</title>
+    <desc lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418170000 +0000" stop="20250418190000 +0000" channel="577">
+    <title lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 2</title>
+    <desc lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="877">
+    <display-name>Lega A : Olimpia Milano vs. Vanoli Soresina</display-name>
+  </channel>
+  <programme start="20250418000000 +0000" stop="20250418183000 +0000" channel="877">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Lega A : Olimpia Milano vs. Vanoli Soresina.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418183000 +0000" stop="20250418203000 +0000" channel="877">
+    <title lang="it">Lega A : Olimpia Milano vs. Vanoli Soresina</title>
+    <desc lang="it">Lega A : Olimpia Milano vs. Vanoli Soresina trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+  <programme start="20250418000000 +0000" stop="20250418173000 +0000" channel="882">
+    <title lang="it">inizierà alle 19:30.</title>
+    <desc lang="it">Italy Serie A1 : AN Brescia vs. Pro Recco.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250418173000 +0000" stop="20250418193000 +0000" channel="882">
+    <title lang="it">Italy Serie A1 : AN Brescia vs. Pro Recco</title>
+    <desc lang="it">Italy Serie A1 : AN Brescia vs. Pro Recco trasmesso in diretta.</desc>
+    <category lang="it">Water polo</category>
+  </programme>
 </tv>
