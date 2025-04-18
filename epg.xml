@@ -1,15 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv><programme start="20250418000000 +0000" stop="20250418173000 +0000" channel="55">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Italy - Serie A (women) : Lazio vs Napoli.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250418173000 +0000" stop="20250418193000 +0000" channel="55">
-    <title lang="it">Italy - Serie A (women) : Lazio vs Napoli</title>
-    <desc lang="it">Italy - Serie A (women) : Lazio vs Napoli trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="9">
+<tv><programme start="20250418000000 +0000" stop="20250418180000 +0000" channel="9">
     <title lang="it">inizierà alle 20:00.</title>
     <desc lang="it">Italy - Serie C : AlbinoLeffe vs Alcione.</desc>
     <category lang="it">Annuncio</category>
@@ -119,16 +109,6 @@
     <desc lang="it">Italy - Serie C : Giana Erminio vs Virtus Verona trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <programme start="20250418000000 +0000" stop="20250418170000 +0000" channel="577">
-    <title lang="it">inizierà alle 19:00.</title>
-    <desc lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 2.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250418170000 +0000" stop="20250418190000 +0000" channel="577">
-    <title lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 2</title>
-    <desc lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Practice 2 trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250418000000 +0000" stop="20250418183000 +0000" channel="877">
     <title lang="it">inizierà alle 20:30.</title>
     <desc lang="it">Lega A : Olimpia Milano vs. Vanoli Soresina.</desc>
@@ -138,16 +118,6 @@
     <title lang="it">Lega A : Olimpia Milano vs. Vanoli Soresina</title>
     <desc lang="it">Lega A : Olimpia Milano vs. Vanoli Soresina trasmesso in diretta.</desc>
     <category lang="it">Basketball</category>
-  </programme>
-  <programme start="20250418000000 +0000" stop="20250418173000 +0000" channel="882">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Italy Serie A1 : AN Brescia vs. Pro Recco.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250418173000 +0000" stop="20250418193000 +0000" channel="882">
-    <title lang="it">Italy Serie A1 : AN Brescia vs. Pro Recco</title>
-    <desc lang="it">Italy Serie A1 : AN Brescia vs. Pro Recco trasmesso in diretta.</desc>
-    <category lang="it">Water polo</category>
   </programme>
 <programme channel="608014d19a26320007c92ab6" start="20250418164600 +0000" stop="20250418171400 +0000">
     <title>FailFactory: Mountain Madness</title>
