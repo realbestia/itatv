@@ -6,7 +6,7 @@ import io
 
 # URL dei file GZIP da elaborare
 urls_gzip = [
-    'https://www.epgitalia.tv/gzip'
+    'https://www.epgitalia.tv/guide2'
 ]
 
 # File di output
