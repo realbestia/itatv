@@ -39,6 +39,7 @@ def fetch_logos(logos_url):
 
 def normalize_channel_name(name):
     name = re.sub(r"\s+", "", name.strip().lower())
+    name = re.sub(r"\.it\b", "", name)
     name = re.sub(r"hd|fullhd", "", name)
     return name
 
