@@ -4,45 +4,49 @@ import os
 import xml.etree.ElementTree as ET
 import io
 
-# URL dei file GZIP da elaborare
+# URL dei file GZIP o XML da elaborare
 urls_gzip = [
-    'https://www.epgitalia.tv/gzip'
+    'https://www.epgitalia.tv/gzip',
+    'https://www.open-epg.com/files/italy1.xml',
+    'https://www.open-epg.com/files/italy2.xml',
+    'https://www.open-epg.com/files/italy3.xml',
+    'https://www.open-epg.com/files/italy4.xml'
 ]
 
 # File di output
 output_gzip = 'epg.gzip'  # File compresso finale
-output_xml = 'epg.xml'  # Nome del file XML finale
-
-temp_files = []  # Per gestire i file temporanei
+output_xml = 'epg.xml'    # Nome del file XML finale
 
 # URL dei file eventi.xml e it.xml da aggiungere
 url_eventi = 'https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml'
 url_it = 'https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml'
 
 def download_and_parse_xml(url):
-    """Scarica e decomprime un file GZIP contenente XML."""
+    """Scarica un file .xml o .gzip e restituisce l'ElementTree."""
     try:
         response = requests.get(url, timeout=30)
         response.raise_for_status()
-        
-        with gzip.open(io.BytesIO(response.content), 'rb') as f_in:
-            xml_content = f_in.read()
-            
+
+        # Prova a decomprimere come GZIP
+        try:
+            with gzip.open(io.BytesIO(response.content), 'rb') as f_in:
+                xml_content = f_in.read()
+        except (gzip.BadGzipFile, OSError):
+            # Non è un file gzip, usa direttamente il contenuto
+            xml_content = response.content
+
         return ET.ElementTree(ET.fromstring(xml_content))
     except requests.exceptions.RequestException as e:
-        print(f"Errore durante il download: {e}")
-    except gzip.BadGzipFile:
-        print("Errore: il file scaricato non Ã¨ un GZIP valido.")
+        print(f"Errore durante il download da {url}: {e}")
     except ET.ParseError as e:
-        print(f"Errore nel parsing del file XML: {e}")
+        print(f"Errore nel parsing del file XML da {url}: {e}")
     return None
 
 # Creare un unico XML vuoto
 root_finale = ET.Element('tv')
-
 tree_finale = ET.ElementTree(root_finale)
 
-# Processare ogni URL GZIP
+# Processare ogni URL
 for url in urls_gzip:
     tree = download_and_parse_xml(url)
     if tree is not None:
