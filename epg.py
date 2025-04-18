@@ -6,7 +6,6 @@ import io
 
 # URL dei file GZIP o XML da elaborare
 urls_gzip = [
-    'https://www.epgitalia.tv/gzip',
     'https://www.open-epg.com/files/italy1.xml',
     'https://www.open-epg.com/files/italy2.xml',
     'https://www.open-epg.com/files/italy3.xml',
