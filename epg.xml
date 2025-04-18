@@ -1,15 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv><programme start="20250418000000 +0000" stop="20250418153000 +0000" channel="882">
-    <title lang="it">inizierà alle 17:30.</title>
-    <desc lang="it">Italy - Serie A (women) : Juventus vs Milan.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250418153000 +0000" stop="20250418173000 +0000" channel="882">
-    <title lang="it">Italy - Serie A (women) : Juventus vs Milan</title>
-    <desc lang="it">Italy - Serie A (women) : Juventus vs Milan trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <programme start="20250418000000 +0000" stop="20250418173000 +0000" channel="55">
+<tv><programme start="20250418000000 +0000" stop="20250418173000 +0000" channel="55">
     <title lang="it">inizierà alle 19:30.</title>
     <desc lang="it">Italy - Serie A (women) : Lazio vs Napoli.</desc>
     <category lang="it">Annuncio</category>
@@ -128,16 +118,6 @@
     <title lang="it">Italy - Serie C : Giana Erminio vs Virtus Verona</title>
     <desc lang="it">Italy - Serie C : Giana Erminio vs Virtus Verona trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <programme start="20250418000000 +0000" stop="20250418150000 +0000" channel="577">
-    <title lang="it">inizierà alle 17:00.</title>
-    <desc lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Qualifying.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250418150000 +0000" stop="20250418170000 +0000" channel="577">
-    <title lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Qualifying</title>
-    <desc lang="it">Formula 2 : stc Saudi Arabian Grand Prix - Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
   </programme>
   <programme start="20250418000000 +0000" stop="20250418170000 +0000" channel="577">
     <title lang="it">inizierà alle 19:00.</title>
