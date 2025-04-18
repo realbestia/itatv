@@ -1,5 +1,157 @@
 {
     "Friday 18th April 2025 - Schedule Time UK GMT": {
+        "PPV Events</span>": [
+            {
+                "time": "18:00",
+                "event": "TJPW: Live in Las Vegas 2025",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "161"
+                    }
+                ]
+            },
+            {
+                "time": "18:30",
+                "event": "Boxen Statt Theater 2025: Angelo Pe\u00f1a vs Karim Guerfi",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "162"
+                    }
+                ]
+            },
+            {
+                "time": "19:00",
+                "event": "STARDOM: American Dream 2025 in Neon City",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "163"
+                    }
+                ]
+            },
+            {
+                "time": "21:30",
+                "event": "Stateline Rumble #4",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "76"
+                    }
+                ]
+            },
+            {
+                "time": "21:45",
+                "event": "Super DIRTcar Albany-Saratoga Speedway",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "77"
+                    }
+                ]
+            },
+            {
+                "time": "22:30",
+                "event": "Attica Late Models - Ohio's Finest Racing",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "86"
+                    }
+                ]
+            },
+            {
+                "time": "22:45",
+                "event": "2025 Weekly Racing at Utica-Rome Speedway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "105"
+                    }
+                ]
+            },
+            {
+                "time": "23:15",
+                "event": "World of Outlaws Sprint Cars",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "106"
+                    }
+                ]
+            },
+            {
+                "time": "23:15",
+                "event": "2025 MARS Slocum 50 at 34 Raceway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "107"
+                    }
+                ]
+            },
+            {
+                "time": "23:30",
+                "event": "2025 IMCA Season Opener at Marshalltown Speedway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "109"
+                    }
+                ]
+            },
+            {
+                "time": "23:30",
+                "event": "2025 Spring Nationals at I-75 Raceway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "110"
+                    }
+                ]
+            },
+            {
+                "time": "23:30",
+                "event": "Devotion Championship Wrestling: High Stakes In The High Desert",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "151"
+                    }
+                ]
+            },
+            {
+                "time": "02:00",
+                "event": "GCW: Joey Janela's Spring Break 9",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "152"
+                    }
+                ]
+            },
+            {
+                "time": "03:00",
+                "event": "Pro Wrestling Revolution: The Gate of Revolution 2025",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "153"
+                    }
+                ]
+            },
+            {
+                "time": "03:30",
+                "event": "FSW: ID Championship Tournament 2025",
+                "channels": [
+                    {
+                        "channel_name": "Triller TV",
+                        "channel_id": "154"
+                    }
+                ]
+            }
+        ],
         "TV shows</span>": [
             {
                 "time": "12:30",
@@ -3650,6 +3802,10 @@
                 "time": "20:00",
                 "event": "PFL World Tournament : Impa Kasanganay vs Fabian Edwards",
                 "channels": [
+                    {
+                        "channel_name": "PPV Feed",
+                        "channel_id": "164"
+                    },
                     {
                         "channel_name": "ESPN USA",
                         "channel_id": "44"
