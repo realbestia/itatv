@@ -1,84 +1,78 @@
 import requests
 import lzma
-import os
-import xml.etree.ElementTree as ET
 import io
+import xml.etree.ElementTree as ET
 
-# URL del file .xz da elaborare
+# URL dei file
 url_xz = 'https://www.epgitalia.tv/guidexz'
-
-# File di output
-output_xml = 'epg.xml'  # Nome del file XML finale
-
-# URL dei file eventi.xml e it.xml da aggiungere
 url_eventi = 'https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml'
 url_it = 'https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml'
+output_xml = 'epg.xml'
 
-def download_and_parse_xz(url):
-    """Scarica e decomprime un file XZ contenente XML."""
+def load_xml_from_response(response):
+    """Tenta di decomprimere come .xz, altrimenti assume XML puro."""
+    try:
+        # Prova a leggere come .xz
+        with lzma.open(io.BytesIO(response.content), 'rb') as f_in:
+            content = f_in.read()
+        print("Contenuto decompresso come .xz")
+    except lzma.LZMAError:
+        # Fallito, tratta come XML normale
+        content = response.content
+        print("Contenuto trattato come XML non compresso")
+    return ET.ElementTree(ET.fromstring(content))
+
+def download_and_parse_xml(url):
     try:
         response = requests.get(url, timeout=30)
         response.raise_for_status()
-        
-        with lzma.open(io.BytesIO(response.content), 'rb') as f_in:
-            xml_content = f_in.read()
-        
-        return ET.ElementTree(ET.fromstring(xml_content))
-    except requests.exceptions.RequestException as e:
-        print(f"Errore durante il download: {e}")
-    except lzma.LZMAError:
-        print("Errore: il file scaricato non è un XZ valido.")
-    except ET.ParseError as e:
-        print(f"Errore nel parsing del file XML: {e}")
-    return None
+        return load_xml_from_response(response)
+    except Exception as e:
+        print(f"Errore durante il download o parsing da {url}: {e}")
+        return None
 
-# Creare un unico XML vuoto
+# XML vuoto principale
 root_finale = ET.Element('tv')
 tree_finale = ET.ElementTree(root_finale)
 
-# Scaricare e processare il file .xz
-tree = download_and_parse_xz(url_xz)
-if tree is not None:
-    root = tree.getroot()
-    for element in root:
-        root_finale.append(element)
+# Carica il file principale (.xz o XML)
+tree_main = download_and_parse_xml(url_xz)
+if tree_main:
+    for elem in tree_main.getroot():
+        root_finale.append(elem)
 
-# Scaricare e aggiungere eventi.xml
-response_eventi = requests.get(url_eventi, timeout=30)
-if response_eventi.ok:
-    try:
-        root_eventi = ET.ElementTree(ET.fromstring(response_eventi.content)).getroot()
-        for programme in root_eventi.findall(".//programme"):
-            root_finale.append(programme)
-    except ET.ParseError as e:
-        print(f"Errore nel parsing del file eventi.xml: {e}")
+# Aggiunge eventi.xml
+try:
+    r_eventi = requests.get(url_eventi, timeout=30)
+    r_eventi.raise_for_status()
+    root_eventi = ET.fromstring(r_eventi.content)
+    for programme in root_eventi.findall(".//programme"):
+        root_finale.append(programme)
+except Exception as e:
+    print(f"Errore eventi.xml: {e}")
 
-# Scaricare e aggiungere it.xml
-response_it = requests.get(url_it, timeout=30)
-if response_it.ok:
-    try:
-        root_it = ET.ElementTree(ET.fromstring(response_it.content)).getroot()
-        for programme in root_it.findall(".//programme"):
-            root_finale.append(programme)
-    except ET.ParseError as e:
-        print(f"Errore nel parsing del file it.xml: {e}")
+# Aggiunge it.xml
+try:
+    r_it = requests.get(url_it, timeout=30)
+    r_it.raise_for_status()
+    root_it = ET.fromstring(r_it.content)
+    for programme in root_it.findall(".//programme"):
+        root_finale.append(programme)
+except Exception as e:
+    print(f"Errore it.xml: {e}")
 
-# Funzione per pulire attributi
+# Pulizia attributi
 def clean_attribute(element, attr_name):
     if attr_name in element.attrib:
-        old_value = element.attrib[attr_name]
-        new_value = old_value.replace(" ", "").lower()
-        element.attrib[attr_name] = new_value
+        element.attrib[attr_name] = element.attrib[attr_name].replace(" ", "").lower()
 
-# Pulire gli ID dei canali
-for channel in root_finale.findall(".//channel"):
-    clean_attribute(channel, 'id')
+for ch in root_finale.findall(".//channel"):
+    clean_attribute(ch, 'id')
 
-# Pulire gli attributi 'channel' nei programmi
-for programme in root_finale.findall(".//programme"):
-    clean_attribute(programme, 'channel')
+for prg in root_finale.findall(".//programme"):
+    clean_attribute(prg, 'channel')
 
-# Salvare il file XML finale
+# Salva XML finale
 with open(output_xml, 'wb') as f_out:
     tree_finale.write(f_out, encoding='utf-8', xml_declaration=True)
 print(f"File XML salvato: {output_xml}")
