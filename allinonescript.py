@@ -853,15 +853,50 @@ if __name__ == "__main__":
     main()
 # Funzione principale che esegue tutti gli script
 def run_all_scripts():
-    # Eseguiamo ogni funzione nello stesso ordine che avevamo nel run_all.py
-    schedule_extractor()
-    epg_eventi_generator()
-    epg_merger()
-    eventi_m3u8_generator()
-    vavoo_italy_channels()
-    world_channels_generator()
-    merger_playlist()
+    try:
+        schedule_extractor()
+    except Exception as e:
+        print(f"Errore durante l'esecuzione di schedule_extractor: {e}")
+        return  # Se questo script fallisce, ferma l'esecuzione
 
-# Esecuzione del programma principale
+    try:
+        epg_eventi_generator()
+    except Exception as e:
+        print(f"Errore durante l'esecuzione di epg_eventi_generator: {e}")
+        return  # Interrompe se non si può generare l'EPG
+
+    try:
+        epg_merger()
+    except Exception as e:
+        print(f"Errore durante l'esecuzione di epg_merger: {e}")
+        return
+
+    try:
+        eventi_m3u8_generator()
+    except Exception as e:
+        print(f"Errore durante l'esecuzione di eventi_m3u8_generator: {e}")
+        return
+
+    try:
+        vavoo_italy_channels()
+    except Exception as e:
+        print(f"Errore durante l'esecuzione di vavoo_italy_channels: {e}")
+        return
+
+    try:
+        world_channels_generator()
+    except Exception as e:
+        print(f"Errore durante l'esecuzione di world_channels_generator: {e}")
+        return
+
+    try:
+        merger_playlist()
+    except Exception as e:
+        print(f"Errore durante l'esecuzione di merger_playlist: {e}")
+        return
+
+    print("Tutti gli script sono stati eseguiti correttamente!")
+
+# Esecuzione principale
 if __name__ == "__main__":
     run_all_scripts()
