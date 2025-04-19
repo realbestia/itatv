@@ -5222,6 +5222,10 @@
                 "event": "BKB 40: Cardiff Brawl III",
                 "channels": [
                     {
+                        "channel_name": "Event PPV",
+                        "channel_id": "190"
+                    },
+                    {
                         "channel_name": "Sport Klub Fight Croatia",
                         "channel_id": "180"
                     }
