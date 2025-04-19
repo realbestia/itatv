@@ -75,9 +75,9 @@ combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + pla
 combined_playlist = '#EXTM3U\n' + combined_playlist
 
 # Salva la playlist finale
-output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
+output_filename = os.path.join(script_directory, "lista.m3u8")
 with open(output_filename, 'w', encoding='utf-8') as file:
-    file.write(combined_playlist)
+    file.write(lista)
 
 print(f"Playlist combinata salvata in: {output_filename}")
 
