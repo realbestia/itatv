@@ -1,8 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Monza vs Napoli - 19/04/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Monza vs Napoli - 19/04/2025 18:00
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Aston Villa vs Newcastle United - 19/04/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Aston Villa vs Newcastle United - 19/04/2025 18:30
 https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie C : Foggia vs Messina - 19/04/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Foggia vs Messina - 19/04/2025 18:30
@@ -29,14 +27,10 @@ https://nfsnew.newkso.ru/nfs/premium26/mono.m3u8
 https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
 http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="577" tvg-name="Formula 2 : stc Saudi Arabian Grand Prix - Sprint Race - 19/04/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 2 : stc Saudi Arabian Grand Prix - Sprint Race - 19/04/2025 17:00
-https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : stc Saudi Arabian Grand Prix - Qualifying - 19/04/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : stc Saudi Arabian Grand Prix - Qualifying - 19/04/2025 19:00
 https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
 http://example.com/Basketball.m3u8
-#EXTINF:-1 tvg-id="878" tvg-name="Lega A : Varese vs Sassari - 19/04/2025 17:50" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Lega A : Varese vs Sassari - 19/04/2025 17:50
-https://windnew.newkso.ru/wind/premium878/mono.m3u8
 #EXTINF:-1 tvg-id="879" tvg-name="Lega A : Benetton Treviso vs Tortona - 19/04/2025 19:05" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Lega A : Benetton Treviso vs Tortona - 19/04/2025 19:05
 https://windnew.newkso.ru/wind/premium879/mono.m3u8
 #EXTINF:-1 tvg-name="----- Rugby Union -----" group-title="Eventi", ----- Rugby Union -----
