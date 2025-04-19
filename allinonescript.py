@@ -857,7 +857,6 @@ def run_all_scripts():
         schedule_extractor()
     except Exception as e:
         print(f"Errore durante l'esecuzione di schedule_extractor: {e}")
-        return  # Se questo script fallisce, ferma l'esecuzione
 
     try:
         epg_eventi_generator()
