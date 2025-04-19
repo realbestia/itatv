@@ -72,7 +72,7 @@ playlist3 = download_playlist(url3)
 combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
 
 # Aggiungi intestazione #EXTM3U con EPG
-combined_playlist = '#EXTM3U\n' + combined_playlist
+combined_playlist = '#EXTM3U\n' + lista
 
 # Salva la playlist finale
 output_filename = os.path.join(script_directory, "lista.m3u8")
