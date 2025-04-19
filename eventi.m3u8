@@ -1,16 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Lecce vs Como - 19/04/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Lecce vs Como - 19/04/2025 15:00
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
-#EXTINF:-1 tvg-id="20" tvg-name="Bundesliga : Heidenheim vs Bayern München - 19/04/2025 15:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : Heidenheim vs Bayern München - 19/04/2025 15:30
-https://nfsnew.newkso.ru/nfs/premium20/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Crystal Palace vs AFC Bournemouth - 19/04/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Crystal Palace vs AFC Bournemouth - 19/04/2025 16:00
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
-#EXTINF:-1 tvg-id="30" tvg-name="England - Premier League : Everton vs Manchester City - 19/04/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Everton vs Manchester City - 19/04/2025 16:00
-https://nfsnew.newkso.ru/nfs/premium30/mono.m3u8
-#EXTINF:-1 tvg-id="77" tvg-name="England - Premier League : West Ham United vs Southampton - 19/04/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : West Ham United vs Southampton - 19/04/2025 16:00
-https://nfsnew.newkso.ru/nfs/premium77/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Monza vs Napoli - 19/04/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Monza vs Napoli - 19/04/2025 18:00
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Aston Villa vs Newcastle United - 19/04/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Aston Villa vs Newcastle United - 19/04/2025 18:30
@@ -39,8 +29,6 @@ https://nfsnew.newkso.ru/nfs/premium26/mono.m3u8
 https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
 http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : stc Saudi Arabian Grand Prix - Practice 3 - 19/04/2025 15:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : stc Saudi Arabian Grand Prix - Practice 3 - 19/04/2025 15:30
-https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-id="577" tvg-name="Formula 2 : stc Saudi Arabian Grand Prix - Sprint Race - 19/04/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 2 : stc Saudi Arabian Grand Prix - Sprint Race - 19/04/2025 17:00
 https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : stc Saudi Arabian Grand Prix - Qualifying - 19/04/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : stc Saudi Arabian Grand Prix - Qualifying - 19/04/2025 19:00
