@@ -13,6 +13,73 @@ def merger_playlist():
     # Ad esempio:
     print("Eseguendo il merger_playlist.py...")
     # Il codice che avevi nello script "merger_playlist.py" va qui, senza modifiche.
+import requests
+import os
+
+# Percorsi ai file locali
+file1 = "channels_italy.m3u8"
+file2 = "eventi.m3u8"
+file4 = "world.m3u8"
+
+# URL remoto della playlist Pluto TV
+url3 = "https://raw.githubusercontent.com/Brenders/Pluto-TV-Italia-M3U/main/PlutoItaly.m3u"
+
+# Funzione per leggere una playlist da file locale
+def read_playlist(file_path, append_params=False, exclude_group_title=None):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        playlist = f.read()
+
+    # Rimuovi qualsiasi riga che inizia con '#EXTM3U'
+    playlist = '\n'.join(line for line in playlist.split('\n') if not line.startswith('#EXTM3U'))
+
+    if append_params:
+        playlist_lines = playlist.splitlines()
+        for i in range(len(playlist_lines)):
+            if '.m3u8' in playlist_lines[i]:
+                playlist_lines[i] += "&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Filovetoplay.xyz%2F&h_origin=https%3A%2F%2Filovetoplay.xyz"
+        playlist = '\n'.join(playlist_lines)
+
+    if exclude_group_title:
+        playlist = '\n'.join(line for line in playlist.split('\n') if exclude_group_title not in line)
+
+    return playlist
+
+# Funzione per scaricare playlist da URL
+def download_playlist(url):
+    response = requests.get(url)
+    response.raise_for_status()
+    playlist = response.text
+    playlist = '\n'.join(line for line in playlist.split('\n') if not line.startswith('#EXTM3U'))
+    return playlist
+
+# Ottieni la directory dello script
+script_directory = os.path.dirname(os.path.abspath(__file__))
+
+# Percorsi completi ai file locali
+path1 = os.path.join(script_directory, file1)
+path2 = os.path.join(script_directory, file2)
+path4 = os.path.join(script_directory, file4)
+
+# Leggi le playlist locali
+playlist1 = read_playlist(path1)
+playlist2 = read_playlist(path2, append_params=True)
+playlist4 = read_playlist(path4, exclude_group_title="Italy")
+
+# Scarica la playlist Pluto TV dal link
+playlist3 = download_playlist(url3)
+
+# Unisci tutte le playlist
+combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
+
+# Aggiungi intestazione #EXTM3U con EPG
+combined_playlist = '#EXTM3U\n' + combined_playlist
+
+# Salva la playlist finale
+output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
+with open(output_filename, 'w', encoding='utf-8') as file:
+    file.write(combined_playlist)
+
+print(f"Playlist combinata salvata in: {output_filename}")
 
 # Funzione per il secondo script (epg_merger.py)
 def epg_merger():
