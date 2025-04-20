@@ -1,3 +1,326 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="2">
+    <display-name>Italy - Serie A : Torino vs Udinese</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421103000 +0000" channel="2">
+    <title lang="it">inizierà alle 12:30.</title>
+    <desc lang="it">Italy - Serie A : Torino vs Udinese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421103000 +0000" stop="20250421123000 +0000" channel="2">
+    <title lang="it">Italy - Serie A : Torino vs Udinese</title>
+    <desc lang="it">Italy - Serie A : Torino vs Udinese trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="870">
+    <display-name>Italy - Serie A : Torino vs Udinese</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421103000 +0000" channel="870">
+    <title lang="it">inizierà alle 12:30.</title>
+    <desc lang="it">Italy - Serie A : Torino vs Udinese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421103000 +0000" stop="20250421123000 +0000" channel="870">
+    <title lang="it">Italy - Serie A : Torino vs Udinese</title>
+    <desc lang="it">Italy - Serie A : Torino vs Udinese trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="55">
+    <display-name>Italy - Serie B : Südtirol vs Bari 1908</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421103000 +0000" channel="55">
+    <title lang="it">inizierà alle 12:30.</title>
+    <desc lang="it">Italy - Serie B : Südtirol vs Bari 1908.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421103000 +0000" stop="20250421123000 +0000" channel="55">
+    <title lang="it">Italy - Serie B : Südtirol vs Bari 1908</title>
+    <desc lang="it">Italy - Serie B : Südtirol vs Bari 1908 trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="877">
+    <display-name>Italy - Serie A : Cagliari vs Fiorentina</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="877">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie A : Cagliari vs Fiorentina.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="877">
+    <title lang="it">Italy - Serie A : Cagliari vs Fiorentina</title>
+    <desc lang="it">Italy - Serie A : Cagliari vs Fiorentina trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="59">
+    <display-name>Italy - Serie B : Palermo vs Carrarese</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="59">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Palermo vs Carrarese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="59">
+    <title lang="it">Italy - Serie B : Palermo vs Carrarese</title>
+    <desc lang="it">Italy - Serie B : Palermo vs Carrarese trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="68">
+    <display-name>Italy - Serie B : Spezia vs Cosenza</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="68">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Spezia vs Cosenza.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="68">
+    <title lang="it">Italy - Serie B : Spezia vs Cosenza</title>
+    <desc lang="it">Italy - Serie B : Spezia vs Cosenza trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="69">
+    <display-name>Italy - Serie B : Sassuolo vs Frosinone</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="69">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Sassuolo vs Frosinone.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="69">
+    <title lang="it">Italy - Serie B : Sassuolo vs Frosinone</title>
+    <desc lang="it">Italy - Serie B : Sassuolo vs Frosinone trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="76">
+    <display-name>Italy - Serie B : Mantova vs Catanzaro</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="76">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Mantova vs Catanzaro.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="76">
+    <title lang="it">Italy - Serie B : Mantova vs Catanzaro</title>
+    <desc lang="it">Italy - Serie B : Mantova vs Catanzaro trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="77">
+    <display-name>Italy - Serie B : Juve Stabia vs Sampdoria</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="77">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Juve Stabia vs Sampdoria.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="77">
+    <title lang="it">Italy - Serie B : Juve Stabia vs Sampdoria</title>
+    <desc lang="it">Italy - Serie B : Juve Stabia vs Sampdoria trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="86">
+    <display-name>Italy - Serie B : Cittadella vs Salernitana</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="86">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Cittadella vs Salernitana.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="86">
+    <title lang="it">Italy - Serie B : Cittadella vs Salernitana</title>
+    <desc lang="it">Italy - Serie B : Cittadella vs Salernitana trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="105">
+    <display-name>Italy - Serie B : Brescia vs Reggiana</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="105">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie B : Brescia vs Reggiana.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="105">
+    <title lang="it">Italy - Serie B : Brescia vs Reggiana</title>
+    <desc lang="it">Italy - Serie B : Brescia vs Reggiana trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="5">
+    <display-name>Italy - Serie C : Sestri Levante vs Ascoli</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="5">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Sestri Levante vs Ascoli.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="5">
+    <title lang="it">Italy - Serie C : Sestri Levante vs Ascoli</title>
+    <desc lang="it">Italy - Serie C : Sestri Levante vs Ascoli trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="6">
+    <display-name>Italy - Serie C : Arezzo vs Lucchese</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="6">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Arezzo vs Lucchese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="6">
+    <title lang="it">Italy - Serie C : Arezzo vs Lucchese</title>
+    <desc lang="it">Italy - Serie C : Arezzo vs Lucchese trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="7">
+    <display-name>Italy - Serie C : Gubbio vs Milan II</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="7">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Gubbio vs Milan II.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="7">
+    <title lang="it">Italy - Serie C : Gubbio vs Milan II</title>
+    <desc lang="it">Italy - Serie C : Gubbio vs Milan II trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="8">
+    <display-name>Italy - Serie C : Campobasso vs Perugia</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="8">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Campobasso vs Perugia.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="8">
+    <title lang="it">Italy - Serie C : Campobasso vs Perugia</title>
+    <desc lang="it">Italy - Serie C : Campobasso vs Perugia trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="9">
+    <display-name>Italy - Serie C : Legnago Salus vs Pescara</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="9">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Legnago Salus vs Pescara.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="9">
+    <title lang="it">Italy - Serie C : Legnago Salus vs Pescara</title>
+    <desc lang="it">Italy - Serie C : Legnago Salus vs Pescara trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="2">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Ternana vs Pianese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="2">
+    <title lang="it">Italy - Serie C : Ternana vs Pianese</title>
+    <desc lang="it">Italy - Serie C : Ternana vs Pianese trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="462">
+    <display-name>Italy - Serie C : Ternana vs Pianese</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="462">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Ternana vs Pianese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="462">
+    <title lang="it">Italy - Serie C : Ternana vs Pianese</title>
+    <desc lang="it">Italy - Serie C : Ternana vs Pianese trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="10">
+    <display-name>Italy - Serie C : Pontedera vs Rimini</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="10">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Pontedera vs Rimini.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="10">
+    <title lang="it">Italy - Serie C : Pontedera vs Rimini</title>
+    <desc lang="it">Italy - Serie C : Pontedera vs Rimini trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="11">
+    <display-name>Italy - Serie C : Vis Pesaro vs SPAL</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="11">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Vis Pesaro vs SPAL.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="11">
+    <title lang="it">Italy - Serie C : Vis Pesaro vs SPAL</title>
+    <desc lang="it">Italy - Serie C : Vis Pesaro vs SPAL trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="460">
+    <display-name>Italy - Serie C : Pineto vs Virtus Entella</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="460">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie C : Pineto vs Virtus Entella.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421130000 +0000" stop="20250421150000 +0000" channel="460">
+    <title lang="it">Italy - Serie C : Pineto vs Virtus Entella</title>
+    <desc lang="it">Italy - Serie C : Pineto vs Virtus Entella trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250421000000 +0000" stop="20250421153000 +0000" channel="55">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">Italy - Serie B : Modena vs Cesena.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421153000 +0000" stop="20250421173000 +0000" channel="55">
+    <title lang="it">Italy - Serie B : Modena vs Cesena</title>
+    <desc lang="it">Italy - Serie B : Modena vs Cesena trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250421000000 +0000" stop="20250421160000 +0000" channel="877">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">Italy - Serie A : Genoa vs Lazio.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421160000 +0000" stop="20250421180000 +0000" channel="877">
+    <title lang="it">Italy - Serie A : Genoa vs Lazio</title>
+    <desc lang="it">Italy - Serie A : Genoa vs Lazio trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250421000000 +0000" stop="20250421183000 +0000" channel="59">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Italy - Serie B : Pisa vs Cremonese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421183000 +0000" stop="20250421203000 +0000" channel="59">
+    <title lang="it">Italy - Serie B : Pisa vs Cremonese</title>
+    <desc lang="it">Italy - Serie B : Pisa vs Cremonese trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250421000000 +0000" stop="20250421184500 +0000" channel="877">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Parma vs Juventus.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421184500 +0000" stop="20250421204500 +0000" channel="877">
+    <title lang="it">Italy - Serie A : Parma vs Juventus</title>
+    <desc lang="it">Italy - Serie A : Parma vs Juventus trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="882">
+    <display-name>Serie A2 : Fortitudo Bologna vs Rimini</display-name>
+  </channel>
+  <programme start="20250421000000 +0000" stop="20250421184500 +0000" channel="882">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">Serie A2 : Fortitudo Bologna vs Rimini.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250421184500 +0000" stop="20250421204500 +0000" channel="882">
+    <title lang="it">Serie A2 : Fortitudo Bologna vs Rimini</title>
+    <desc lang="it">Serie A2 : Fortitudo Bologna vs Rimini trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
 </tv>
