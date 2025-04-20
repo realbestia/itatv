@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="462">
-    <display-name>England - Premier League : Leicester City vs Liverpool</display-name>
-  </channel>
-  <programme start="20250420000000 +0000" stop="20250420153000 +0000" channel="462">
-    <title lang="it">inizierà alle 17:30.</title>
-    <desc lang="it">England - Premier League : Leicester City vs Liverpool.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250420153000 +0000" stop="20250420173000 +0000" channel="462">
-    <title lang="it">England - Premier League : Leicester City vs Liverpool</title>
-    <desc lang="it">England - Premier League : Leicester City vs Liverpool trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="7">
-    <display-name>Bundesliga : Borussia Dortmund vs Borussia M'gladbach</display-name>
-  </channel>
-  <programme start="20250420000000 +0000" stop="20250420153000 +0000" channel="7">
-    <title lang="it">inizierà alle 17:30.</title>
-    <desc lang="it">Bundesliga : Borussia Dortmund vs Borussia M'gladbach.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250420153000 +0000" stop="20250420173000 +0000" channel="7">
-    <title lang="it">Bundesliga : Borussia Dortmund vs Borussia M'gladbach</title>
-    <desc lang="it">Bundesliga : Borussia Dortmund vs Borussia M'gladbach trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="26">
     <display-name>Italy - Serie A : Bologna vs Internazionale</display-name>
   </channel>
@@ -65,6 +39,9 @@
     <desc lang="it">UEFA Women's Champions League : Barcelona vs Chelsea FC trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="462">
+    <display-name>Bundesliga : St. Pauli vs Bayer Leverkusen</display-name>
+  </channel>
   <programme start="20250420000000 +0000" stop="20250420173000 +0000" channel="462">
     <title lang="it">inizierà alle 19:30.</title>
     <desc lang="it">Bundesliga : St. Pauli vs Bayer Leverkusen.</desc>
