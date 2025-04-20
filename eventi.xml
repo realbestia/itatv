@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="462">
-    <display-name>Bundesliga : St. Pauli vs Bayer Leverkusen</display-name>
-  </channel>
-  <programme start="20250420000000 +0000" stop="20250420173000 +0000" channel="462">
-    <title lang="it">inizierà alle 19:30.</title>
-    <desc lang="it">Bundesliga : St. Pauli vs Bayer Leverkusen.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250420173000 +0000" stop="20250420193000 +0000" channel="462">
-    <title lang="it">Bundesliga : St. Pauli vs Bayer Leverkusen</title>
-    <desc lang="it">Bundesliga : St. Pauli vs Bayer Leverkusen trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="877">
     <display-name>Italy - Serie A : Milan vs Atalanta</display-name>
   </channel>
@@ -25,31 +12,5 @@
     <title lang="it">Italy - Serie A : Milan vs Atalanta</title>
     <desc lang="it">Italy - Serie A : Milan vs Atalanta trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="577">
-    <display-name>Formula 1 : stc Saudi Arabian Grand Prix - Race</display-name>
-  </channel>
-  <programme start="20250420000000 +0000" stop="20250420170000 +0000" channel="577">
-    <title lang="it">inizierà alle 19:00.</title>
-    <desc lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Race.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250420170000 +0000" stop="20250420190000 +0000" channel="577">
-    <title lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Race</title>
-    <desc lang="it">Formula 1 : stc Saudi Arabian Grand Prix - Race trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
-  <channel id="460">
-    <display-name>MLB : Minnesota Twins vs Atlanta Braves</display-name>
-  </channel>
-  <programme start="20250420000000 +0000" stop="20250420173500 +0000" channel="460">
-    <title lang="it">inizierà alle 19:35.</title>
-    <desc lang="it">MLB : Minnesota Twins vs Atlanta Braves.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250420173500 +0000" stop="20250420193500 +0000" channel="460">
-    <title lang="it">MLB : Minnesota Twins vs Atlanta Braves</title>
-    <desc lang="it">MLB : Minnesota Twins vs Atlanta Braves trasmesso in diretta.</desc>
-    <category lang="it">Baseball</category>
   </programme>
 </tv>
