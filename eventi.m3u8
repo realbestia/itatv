@@ -1,24 +1,12 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="462" tvg-name="England - Premier League : Leicester City vs Liverpool - 20/04/2025 17:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Leicester City vs Liverpool - 20/04/2025 17:30
-https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
-#EXTINF:-1 tvg-id="7" tvg-name="Bundesliga : Borussia Dortmund vs Borussia M'gladbach - 20/04/2025 17:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : Borussia Dortmund vs Borussia M'gladbach - 20/04/2025 17:30
-https://nfsnew.newkso.ru/nfs/premium7/mono.m3u8
-#EXTINF:-1 tvg-id="26" tvg-name="Italy - Serie A : Bologna vs Internazionale - 20/04/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Bologna vs Internazionale - 20/04/2025 18:00
-https://nfsnew.newkso.ru/nfs/premium26/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="Italy - Serie A : Bologna vs Internazionale - 20/04/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Bologna vs Internazionale - 20/04/2025 18:00
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="UEFA Women's Champions League : Barcelona vs Chelsea FC - 20/04/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Women's Champions League : Barcelona vs Chelsea FC - 20/04/2025 18:00
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-id="462" tvg-name="Bundesliga : St. Pauli vs Bayer Leverkusen - 20/04/2025 19:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : St. Pauli vs Bayer Leverkusen - 20/04/2025 19:30
 https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Milan vs Atalanta - 20/04/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Milan vs Atalanta - 20/04/2025 20:45
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
 http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : stc Saudi Arabian Grand Prix - Grand Prix Sunday - 20/04/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : stc Saudi Arabian Grand Prix - Grand Prix Sunday - 20/04/2025 18:00
-https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : stc Saudi Arabian Grand Prix - Race - 20/04/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : stc Saudi Arabian Grand Prix - Race - 20/04/2025 19:00
 https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-name="----- Baseball -----" group-title="Eventi", ----- Baseball -----
