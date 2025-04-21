@@ -1,3 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="870">
+    <display-name>England - Premier League : Manchester City vs Aston Villa</display-name>
+  </channel>
+  <programme start="20250422000000 +0000" stop="20250422190000 +0000" channel="870">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">England - Premier League : Manchester City vs Aston Villa.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250422190000 +0000" stop="20250422210000 +0000" channel="870">
+    <title lang="it">England - Premier League : Manchester City vs Aston Villa</title>
+    <desc lang="it">England - Premier League : Manchester City vs Aston Villa trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="877">
+    <display-name>Serie A1 Women : Volley Conegliano vs. Volley Monza</display-name>
+  </channel>
+  <programme start="20250422000000 +0000" stop="20250422183000 +0000" channel="877">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Serie A1 Women : Volley Conegliano vs. Volley Monza.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250422183000 +0000" stop="20250422203000 +0000" channel="877">
+    <title lang="it">Serie A1 Women : Volley Conegliano vs. Volley Monza</title>
+    <desc lang="it">Serie A1 Women : Volley Conegliano vs. Volley Monza trasmesso in diretta.</desc>
+    <category lang="it">Volleyball</category>
+  </programme>
+  <channel id="882">
+    <display-name>Serie A1 Women : Volley Conegliano vs. Volley Monza</display-name>
+  </channel>
+  <programme start="20250422000000 +0000" stop="20250422183000 +0000" channel="882">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Serie A1 Women : Volley Conegliano vs. Volley Monza.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250422183000 +0000" stop="20250422203000 +0000" channel="882">
+    <title lang="it">Serie A1 Women : Volley Conegliano vs. Volley Monza</title>
+    <desc lang="it">Serie A1 Women : Volley Conegliano vs. Volley Monza trasmesso in diretta.</desc>
+    <category lang="it">Volleyball</category>
+  </programme>
 </tv>
