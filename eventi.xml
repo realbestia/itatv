@@ -1,44 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="2">
-    <display-name>Italy - Serie A : Torino vs Udinese</display-name>
-  </channel>
-  <programme start="20250421000000 +0000" stop="20250421103000 +0000" channel="2">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy - Serie A : Torino vs Udinese.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250421103000 +0000" stop="20250421123000 +0000" channel="2">
-    <title lang="it">Italy - Serie A : Torino vs Udinese</title>
-    <desc lang="it">Italy - Serie A : Torino vs Udinese trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="870">
-    <display-name>Italy - Serie A : Torino vs Udinese</display-name>
-  </channel>
-  <programme start="20250421000000 +0000" stop="20250421103000 +0000" channel="870">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy - Serie A : Torino vs Udinese.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250421103000 +0000" stop="20250421123000 +0000" channel="870">
-    <title lang="it">Italy - Serie A : Torino vs Udinese</title>
-    <desc lang="it">Italy - Serie A : Torino vs Udinese trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="55">
-    <display-name>Italy - Serie B : Südtirol vs Bari 1908</display-name>
-  </channel>
-  <programme start="20250421000000 +0000" stop="20250421103000 +0000" channel="55">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy - Serie B : Südtirol vs Bari 1908.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250421103000 +0000" stop="20250421123000 +0000" channel="55">
-    <title lang="it">Italy - Serie B : Südtirol vs Bari 1908</title>
-    <desc lang="it">Italy - Serie B : Südtirol vs Bari 1908 trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="877">
     <display-name>Italy - Serie A : Cagliari vs Fiorentina</display-name>
   </channel>
@@ -208,6 +169,9 @@
     <desc lang="it">Italy - Serie C : Legnago Salus vs Pescara trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="2">
+    <display-name>Italy - Serie C : Ternana vs Pianese</display-name>
+  </channel>
   <programme start="20250421000000 +0000" stop="20250421130000 +0000" channel="2">
     <title lang="it">inizierà alle 15:00.</title>
     <desc lang="it">Italy - Serie C : Ternana vs Pianese.</desc>
@@ -270,6 +234,9 @@
     <desc lang="it">Italy - Serie C : Pineto vs Virtus Entella trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="55">
+    <display-name>Italy - Serie B : Modena vs Cesena</display-name>
+  </channel>
   <programme start="20250421000000 +0000" stop="20250421153000 +0000" channel="55">
     <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie B : Modena vs Cesena.</desc>
