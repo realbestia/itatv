@@ -1,29 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="69">
-    <display-name>Italy - Serie B : Cesena vs Sassuolo</display-name>
-  </channel>
-  <programme start="20250425000000 +0000" stop="20250425183000 +0000" channel="69">
-    <title lang="it">inizierà alle 20:30.</title>
-    <desc lang="it">Italy - Serie B : Cesena vs Sassuolo.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250425183000 +0000" stop="20250425203000 +0000" channel="69">
-    <title lang="it">Italy - Serie B : Cesena vs Sassuolo</title>
-    <desc lang="it">Italy - Serie B : Cesena vs Sassuolo trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="55">
-    <display-name>Italy - Serie A : Atalanta vs Lecce</display-name>
-  </channel>
-  <programme start="20250425000000 +0000" stop="20250425184500 +0000" channel="55">
-    <title lang="it">inizierà alle 20:45.</title>
-    <desc lang="it">Italy - Serie A : Atalanta vs Lecce.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250425184500 +0000" stop="20250425204500 +0000" channel="55">
-    <title lang="it">Italy - Serie A : Atalanta vs Lecce</title>
-    <desc lang="it">Italy - Serie A : Atalanta vs Lecce trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
 </tv>
