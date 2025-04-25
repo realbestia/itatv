@@ -1,3 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="460">
+    <display-name>Bundesliga : Bayern München vs Mainz 05</display-name>
+  </channel>
+  <programme start="20250426000000 +0000" stop="20250426133000 +0000" channel="460">
+    <title lang="it">inizierà alle 15:30.</title>
+    <desc lang="it">Bundesliga : Bayern München vs Mainz 05.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426133000 +0000" stop="20250426153000 +0000" channel="460">
+    <title lang="it">Bundesliga : Bayern München vs Mainz 05</title>
+    <desc lang="it">Bundesliga : Bayern München vs Mainz 05 trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="575">
+    <display-name>Moto3 : Spanish Grand Prix Free Practice 2</display-name>
+  </channel>
+  <programme start="20250426000000 +0000" stop="20250426063000 +0000" channel="575">
+    <title lang="it">inizierà alle 08:30.</title>
+    <desc lang="it">Moto3 : Spanish Grand Prix Free Practice 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426063000 +0000" stop="20250426083000 +0000" channel="575">
+    <title lang="it">Moto3 : Spanish Grand Prix Free Practice 2</title>
+    <desc lang="it">Moto3 : Spanish Grand Prix Free Practice 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426084500 +0000" channel="575">
+    <title lang="it">inizierà alle 10:45.</title>
+    <desc lang="it">Moto2 : Spanish Grand Prix Free Practice 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426084500 +0000" stop="20250426104500 +0000" channel="575">
+    <title lang="it">Moto2 : Spanish Grand Prix Free Practice 2</title>
+    <desc lang="it">Moto2 : Spanish Grand Prix Free Practice 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426084500 +0000" channel="575">
+    <title lang="it">inizierà alle 10:45.</title>
+    <desc lang="it">MotoGP : Spanish Grand Prix Free Practice 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426084500 +0000" stop="20250426104500 +0000" channel="575">
+    <title lang="it">MotoGP : Spanish Grand Prix Free Practice 2</title>
+    <desc lang="it">MotoGP : Spanish Grand Prix Free Practice 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426104500 +0000" channel="575">
+    <title lang="it">inizierà alle 12:45.</title>
+    <desc lang="it">Moto3 : Spanish Grand Prix Qualifying.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426104500 +0000" stop="20250426124500 +0000" channel="575">
+    <title lang="it">Moto3 : Spanish Grand Prix Qualifying</title>
+    <desc lang="it">Moto3 : Spanish Grand Prix Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426114000 +0000" channel="575">
+    <title lang="it">inizierà alle 13:40.</title>
+    <desc lang="it">Moto2 : Spanish Grand Prix Qualifying.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426114000 +0000" stop="20250426134000 +0000" channel="575">
+    <title lang="it">Moto2 : Spanish Grand Prix Qualifying</title>
+    <desc lang="it">Moto2 : Spanish Grand Prix Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426114000 +0000" channel="575">
+    <title lang="it">inizierà alle 13:40.</title>
+    <desc lang="it">MotoGP : Spanish Grand Prix Qualifying.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426114000 +0000" stop="20250426134000 +0000" channel="575">
+    <title lang="it">MotoGP : Spanish Grand Prix Qualifying</title>
+    <desc lang="it">MotoGP : Spanish Grand Prix Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="878">
+    <display-name>UFC Fight Night Main Card : Ian Garry vs Carlos Prates</display-name>
+  </channel>
+  <programme start="20250426000000 +0000" stop="20250426010000 +0000" channel="878">
+    <title lang="it">inizierà alle 03:00.</title>
+    <desc lang="it">UFC Fight Night Main Card : Ian Garry vs Carlos Prates.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426010000 +0000" stop="20250426030000 +0000" channel="878">
+    <title lang="it">UFC Fight Night Main Card : Ian Garry vs Carlos Prates</title>
+    <desc lang="it">UFC Fight Night Main Card : Ian Garry vs Carlos Prates trasmesso in diretta.</desc>
+    <category lang="it">MMA</category>
+  </programme>
+  <channel id="882">
+    <display-name>Serie A1 Men 2024/2025 - Semifinal - Game 1</display-name>
+  </channel>
+  <programme start="20250426000000 +0000" stop="20250426131000 +0000" channel="882">
+    <title lang="it">inizierà alle 15:10.</title>
+    <desc lang="it">Serie A1 Men 2024/2025 - Semifinal - Game 1.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426131000 +0000" stop="20250426151000 +0000" channel="882">
+    <title lang="it">Serie A1 Men 2024/2025 - Semifinal - Game 1</title>
+    <desc lang="it">Serie A1 Men 2024/2025 - Semifinal - Game 1 trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+  <channel id="879">
+    <display-name>Lega A : Trento vs Sassari</display-name>
+  </channel>
+  <programme start="20250426000000 +0000" stop="20250426175000 +0000" channel="879">
+    <title lang="it">inizierà alle 19:50.</title>
+    <desc lang="it">Lega A : Trento vs Sassari.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426175000 +0000" stop="20250426195000 +0000" channel="879">
+    <title lang="it">Lega A : Trento vs Sassari</title>
+    <desc lang="it">Lega A : Trento vs Sassari trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426161500 +0000" channel="460">
+    <title lang="it">inizierà alle 18:15.</title>
+    <desc lang="it">United Rugby Championship : Stormers vs Treviso.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426161500 +0000" stop="20250426181500 +0000" channel="460">
+    <title lang="it">United Rugby Championship : Stormers vs Treviso</title>
+    <desc lang="it">United Rugby Championship : Stormers vs Treviso trasmesso in diretta.</desc>
+    <category lang="it">Rugby Union</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426183500 +0000" channel="460">
+    <title lang="it">inizierà alle 20:35.</title>
+    <desc lang="it">United Rugby Championship : Zebre vs Edinburgh.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426183500 +0000" stop="20250426203500 +0000" channel="460">
+    <title lang="it">United Rugby Championship : Zebre vs Edinburgh</title>
+    <desc lang="it">United Rugby Championship : Zebre vs Edinburgh trasmesso in diretta.</desc>
+    <category lang="it">Rugby Union</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426111500 +0000" channel="882">
+    <title lang="it">inizierà alle 13:15.</title>
+    <desc lang="it">Six Nations Women : Italy W vs Wales W.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426111500 +0000" stop="20250426131500 +0000" channel="882">
+    <title lang="it">Six Nations Women : Italy W vs Wales W</title>
+    <desc lang="it">Six Nations Women : Italy W vs Wales W trasmesso in diretta.</desc>
+    <category lang="it">Rugby Union</category>
+  </programme>
+  <programme start="20250426000000 +0000" stop="20250426111500 +0000" channel="460">
+    <title lang="it">inizierà alle 13:15.</title>
+    <desc lang="it">Six Nations Women : Italy W vs Wales W.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250426111500 +0000" stop="20250426131500 +0000" channel="460">
+    <title lang="it">Six Nations Women : Italy W vs Wales W</title>
+    <desc lang="it">Six Nations Women : Italy W vs Wales W trasmesso in diretta.</desc>
+    <category lang="it">Rugby Union</category>
+  </programme>
 </tv>
