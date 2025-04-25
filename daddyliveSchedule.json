@@ -3718,22 +3718,12 @@
                 "event": "Hexagone MMA 27",
                 "channels": [
                     {
-                        "channel_name": "RMC Sport 1 France",
-                        "channel_id": "119"
-                    }
-                ]
-            },
-            {
-                "time": "17:00",
-                "event": "KSW 105 - First Fights",
-                "channels": [
-                    {
-                        "channel_name": "KSW PPV",
+                        "channel_name": "PPV Feed",
                         "channel_id": "59"
                     },
                     {
-                        "channel_name": "SporTV2 Brazil",
-                        "channel_id": "79"
+                        "channel_name": "RMC Sport 1 France",
+                        "channel_id": "119"
                     }
                 ]
             }
