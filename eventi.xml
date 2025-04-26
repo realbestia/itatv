@@ -1,29 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="879">
-    <display-name>Lega A : Trento vs Sassari</display-name>
-  </channel>
-  <programme start="20250426000000 +0000" stop="20250426175000 +0000" channel="879">
-    <title lang="it">inizierà alle 19:50.</title>
-    <desc lang="it">Lega A : Trento vs Sassari.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250426175000 +0000" stop="20250426195000 +0000" channel="879">
-    <title lang="it">Lega A : Trento vs Sassari</title>
-    <desc lang="it">Lega A : Trento vs Sassari trasmesso in diretta.</desc>
-    <category lang="it">Basketball</category>
-  </programme>
-  <channel id="460">
-    <display-name>United Rugby Championship : Zebre vs Edinburgh</display-name>
-  </channel>
-  <programme start="20250426000000 +0000" stop="20250426183500 +0000" channel="460">
-    <title lang="it">inizierà alle 20:35.</title>
-    <desc lang="it">United Rugby Championship : Zebre vs Edinburgh.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250426183500 +0000" stop="20250426203500 +0000" channel="460">
-    <title lang="it">United Rugby Championship : Zebre vs Edinburgh</title>
-    <desc lang="it">United Rugby Championship : Zebre vs Edinburgh trasmesso in diretta.</desc>
-    <category lang="it">Rugby Union</category>
-  </programme>
 </tv>
