@@ -1,11 +1,101 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
-#EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
-http://example.com/Basketball.m3u8
-#EXTINF:-1 tvg-id="879" tvg-name="Lega A : Trento vs Sassari - 26/04/2025 19:50" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Lega A : Trento vs Sassari - 26/04/2025 19:50
-https://windnew.newkso.ru/wind/premium879/mono.m3u8
 #EXTINF:-1 tvg-name="----- Rugby Union -----" group-title="Eventi", ----- Rugby Union -----
 http://example.com/Rugby_Union.m3u8
-#EXTINF:-1 tvg-id="460" tvg-name="United Rugby Championship : Stormers vs Treviso - 26/04/2025 18:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", United Rugby Championship : Stormers vs Treviso - 26/04/2025 18:15
-https://dokko1new.newkso.ru/dokko1/premium460/mono.m3u8
 #EXTINF:-1 tvg-id="460" tvg-name="United Rugby Championship : Zebre vs Edinburgh - 26/04/2025 20:35" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", United Rugby Championship : Zebre vs Edinburgh - 26/04/2025 20:35
 https://dokko1new.newkso.ru/dokko1/premium460/mono.m3u8
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie A : Como vs Genoa - 27/04/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Como vs Genoa - 27/04/2025 12:30
+https://ddy6new.newkso.ru/ddy6/premium55/mono.m3u8
+#EXTINF:-1 tvg-id="59" tvg-name="Italy - Serie A : Venezia vs Milan - 27/04/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Venezia vs Milan - 27/04/2025 12:30
+https://windnew.newkso.ru/wind/premium59/mono.m3u8
+#EXTINF:-1 tvg-id="106" tvg-name="Italy Serie A (women) : Como vs Lazio - 27/04/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie A (women) : Como vs Lazio - 27/04/2025 12:30
+https://ddy6new.newkso.ru/ddy6/premium106/mono.m3u8
+#EXTINF:-1 tvg-id="108" tvg-name="Italy Serie A (women) : Napoli vs Sampdoria - 27/04/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie A (women) : Napoli vs Sampdoria - 27/04/2025 12:30
+https://ddy6new.newkso.ru/ddy6/premium108/mono.m3u8
+#EXTINF:-1 tvg-id="69" tvg-name="Italy - Serie A : Fiorentina vs Empoli - 27/04/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Fiorentina vs Empoli - 27/04/2025 15:00
+https://ddy6new.newkso.ru/ddy6/premium69/mono.m3u8
+#EXTINF:-1 tvg-id="76" tvg-name="Italy - Serie A : Internazionale vs Roma - 27/04/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Internazionale vs Roma - 27/04/2025 15:00
+https://windnew.newkso.ru/wind/premium76/mono.m3u8
+#EXTINF:-1 tvg-id="77" tvg-name="Italy - Serie B : Catanzaro vs Palermo - 27/04/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Catanzaro vs Palermo - 27/04/2025 15:00
+https://nfsnew.newkso.ru/nfs/premium77/mono.m3u8
+#EXTINF:-1 tvg-id="86" tvg-name="Italy - Serie B : Südtirol vs Juve Stabia - 27/04/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Südtirol vs Juve Stabia - 27/04/2025 15:00
+https://dokko1new.newkso.ru/dokko1/premium86/mono.m3u8
+#EXTINF:-1 tvg-id="462" tvg-name="Italy - Serie C : Pescara vs Campobasso - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Pescara vs Campobasso - 27/04/2025 16:30
+https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
+#EXTINF:-1 tvg-id="159" tvg-name="Italy - Serie C : Lucchese vs Sassari Torres - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Lucchese vs Sassari Torres - 27/04/2025 16:30
+https://dokko1new.newkso.ru/dokko1/premium159/mono.m3u8
+#EXTINF:-1 tvg-id="460" tvg-name="Italy - Serie C : Milan II vs Vis Pesaro - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Milan II vs Vis Pesaro - 27/04/2025 16:30
+https://dokko1new.newkso.ru/dokko1/premium460/mono.m3u8
+#EXTINF:-1 tvg-id="6" tvg-name="Italy - Serie C : Virtus Entella vs Ternana - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Virtus Entella vs Ternana - 27/04/2025 16:30
+https://nfsnew.newkso.ru/nfs/premium6/mono.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="Italy - Serie C : Virtus Entella vs Ternana - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Virtus Entella vs Ternana - 27/04/2025 16:30
+https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
+#EXTINF:-1 tvg-id="160" tvg-name="Italy - Serie C : Athletic Carpi vs Sestri Levante - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Athletic Carpi vs Sestri Levante - 27/04/2025 16:30
+https://ddy6new.newkso.ru/ddy6/premium160/mono.m3u8
+#EXTINF:-1 tvg-id="7" tvg-name="Italy - Serie C : Perugia vs Pontedera - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Perugia vs Pontedera - 27/04/2025 16:30
+https://nfsnew.newkso.ru/nfs/premium7/mono.m3u8
+#EXTINF:-1 tvg-id="161" tvg-name="Italy - Serie C : Rimini vs Pineto - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Rimini vs Pineto - 27/04/2025 16:30
+https://windnew.newkso.ru/wind/premium161/mono.m3u8
+#EXTINF:-1 tvg-id="162" tvg-name="Italy - Serie C : Ascoli vs Legnago Salus - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Ascoli vs Legnago Salus - 27/04/2025 16:30
+https://windnew.newkso.ru/wind/premium162/mono.m3u8
+#EXTINF:-1 tvg-id="8" tvg-name="Italy - Serie C : SPAL vs Gubbio - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : SPAL vs Gubbio - 27/04/2025 16:30
+https://nfsnew.newkso.ru/nfs/premium8/mono.m3u8
+#EXTINF:-1 tvg-id="9" tvg-name="Italy - Serie C : Pianese vs Arezzo - 27/04/2025 16:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Pianese vs Arezzo - 27/04/2025 16:30
+https://nfsnew.newkso.ru/nfs/premium9/mono.m3u8
+#EXTINF:-1 tvg-id="461" tvg-name="England - Premier League : Liverpool vs Tottenham Hotspur - 27/04/2025 17:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Liverpool vs Tottenham Hotspur - 27/04/2025 17:30
+https://ddy6new.newkso.ru/ddy6/premium461/mono.m3u8
+#EXTINF:-1 tvg-id="25" tvg-name="Italy - Serie A : Juventus vs Monza - 27/04/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Juventus vs Monza - 27/04/2025 18:00
+https://nfsnew.newkso.ru/nfs/premium25/mono.m3u8
+#EXTINF:-1 tvg-id="870" tvg-name="Italy - Serie A : Juventus vs Monza - 27/04/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Juventus vs Monza - 27/04/2025 18:00
+https://windnew.newkso.ru/wind/premium870/mono.m3u8
+#EXTINF:-1 tvg-id="8" tvg-name="Italy - Serie C : Giugliano vs Benevento - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Giugliano vs Benevento - 27/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium8/mono.m3u8
+#EXTINF:-1 tvg-id="161" tvg-name="Italy - Serie C : Trapani 1905 vs Casertana - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Trapani 1905 vs Casertana - 27/04/2025 20:00
+https://windnew.newkso.ru/wind/premium161/mono.m3u8
+#EXTINF:-1 tvg-id="9" tvg-name="Italy - Serie C : Potenza Calcio vs Catania - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Potenza Calcio vs Catania - 27/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium9/mono.m3u8
+#EXTINF:-1 tvg-id="162" tvg-name="Italy - Serie C : Picerno vs Foggia - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Picerno vs Foggia - 27/04/2025 20:00
+https://windnew.newkso.ru/wind/premium162/mono.m3u8
+#EXTINF:-1 tvg-id="159" tvg-name="Italy - Serie C : Messina vs Juventus II - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Messina vs Juventus II - 27/04/2025 20:00
+https://dokko1new.newkso.ru/dokko1/premium159/mono.m3u8
+#EXTINF:-1 tvg-id="7" tvg-name="Italy - Serie C : Audace Cerignola vs Latina - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Audace Cerignola vs Latina - 27/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium7/mono.m3u8
+#EXTINF:-1 tvg-id="160" tvg-name="Italy - Serie C : Cavese vs Sorrento - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Cavese vs Sorrento - 27/04/2025 20:00
+https://ddy6new.newkso.ru/ddy6/premium160/mono.m3u8
+#EXTINF:-1 tvg-id="6" tvg-name="Italy - Serie C : Avellino vs Team Altamura - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Avellino vs Team Altamura - 27/04/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium6/mono.m3u8
+#EXTINF:-1 tvg-id="460" tvg-name="Italy - Serie C : Avellino vs Team Altamura - 27/04/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Avellino vs Team Altamura - 27/04/2025 20:00
+https://dokko1new.newkso.ru/dokko1/premium460/mono.m3u8
+#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Napoli vs Torino - 27/04/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Napoli vs Torino - 27/04/2025 20:45
+https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
+#EXTINF:-1 tvg-id="106" tvg-name="Italy - Serie A : Atalanta vs Lecce - 27/04/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Atalanta vs Lecce - 27/04/2025 20:45
+https://ddy6new.newkso.ru/ddy6/premium106/mono.m3u8
+#EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
+http://example.com/Motorsport.m3u8
+#EXTINF:-1 tvg-id="575" tvg-name="MotoGP : Spanish Grand Prix Warm Up - 27/04/2025 09:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MotoGP : Spanish Grand Prix Warm Up - 27/04/2025 09:30
+https://nfsnew.newkso.ru/nfs/premium575/mono.m3u8
+#EXTINF:-1 tvg-id="575" tvg-name="Moto3 : Spanish Grand Prix Race - 27/04/2025 10:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Moto3 : Spanish Grand Prix Race - 27/04/2025 10:00
+https://nfsnew.newkso.ru/nfs/premium575/mono.m3u8
+#EXTINF:-1 tvg-id="575" tvg-name="Moto2 : Spanish Grand Prix Race - 27/04/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Moto2 : Spanish Grand Prix Race - 27/04/2025 12:00
+https://nfsnew.newkso.ru/nfs/premium575/mono.m3u8
+#EXTINF:-1 tvg-id="575" tvg-name="MotoGP : Spanish Grand Prix Race - 27/04/2025 14:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MotoGP : Spanish Grand Prix Race - 27/04/2025 14:00
+https://nfsnew.newkso.ru/nfs/premium575/mono.m3u8
+#EXTINF:-1 tvg-name="----- Snooker -----" group-title="Eventi", ----- Snooker -----
+http://example.com/Snooker.m3u8
+#EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship, 2025 : Murphy, Shaun vs. Trump, Judd - 27/04/2025 11:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship, 2025 : Murphy, Shaun vs. Trump, Judd - 27/04/2025 11:00
+https://windnew.newkso.ru/wind/premium878/mono.m3u8
+#EXTINF:-1 tvg-name="----- Athletics -----" group-title="Eventi", ----- Athletics -----
+http://example.com/Athletics.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="London Marathon 2025 - 27/04/2025 09:40" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", London Marathon 2025 - 27/04/2025 09:40
+https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
+#EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
+http://example.com/Basketball.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="Series A2 : Assigeco Piacenza vs Sebastiani - 27/04/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Series A2 : Assigeco Piacenza vs Sebastiani - 27/04/2025 18:30
+https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
+#EXTINF:-1 tvg-id="879" tvg-name="League A : Venice vs Pistoia - 27/04/2025 19:50" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", League A : Venice vs Pistoia - 27/04/2025 19:50
+https://windnew.newkso.ru/wind/premium879/mono.m3u8
+#EXTINF:-1 tvg-name="----- Cycling -----" group-title="Eventi", ----- Cycling -----
+http://example.com/Cycling.m3u8
+#EXTINF:-1 tvg-id="851" tvg-name="Liège-Bastogne-Liège Men | Liège (252km) - 27/04/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Liège-Bastogne-Liège Men | Liège (252km) - 27/04/2025 12:00
+https://ddy6new.newkso.ru/ddy6/premium851/mono.m3u8
