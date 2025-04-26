@@ -13,29 +13,6 @@
     <desc lang="it">Bundesliga : Bayern München vs Mainz 05 trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="575">
-    <display-name>Moto2 : Spanish Grand Prix Qualifying</display-name>
-  </channel>
-  <programme start="20250426000000 +0000" stop="20250426114000 +0000" channel="575">
-    <title lang="it">inizierà alle 13:40.</title>
-    <desc lang="it">Moto2 : Spanish Grand Prix Qualifying.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250426114000 +0000" stop="20250426134000 +0000" channel="575">
-    <title lang="it">Moto2 : Spanish Grand Prix Qualifying</title>
-    <desc lang="it">Moto2 : Spanish Grand Prix Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
-  <programme start="20250426000000 +0000" stop="20250426114000 +0000" channel="575">
-    <title lang="it">inizierà alle 13:40.</title>
-    <desc lang="it">MotoGP : Spanish Grand Prix Qualifying.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250426114000 +0000" stop="20250426134000 +0000" channel="575">
-    <title lang="it">MotoGP : Spanish Grand Prix Qualifying</title>
-    <desc lang="it">MotoGP : Spanish Grand Prix Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="882">
     <display-name>Serie A1 Men 2024/2025 - Semifinal - Game 1</display-name>
   </channel>
@@ -80,26 +57,6 @@
   <programme start="20250426183500 +0000" stop="20250426203500 +0000" channel="460">
     <title lang="it">United Rugby Championship : Zebre vs Edinburgh</title>
     <desc lang="it">United Rugby Championship : Zebre vs Edinburgh trasmesso in diretta.</desc>
-    <category lang="it">Rugby Union</category>
-  </programme>
-  <programme start="20250426000000 +0000" stop="20250426111500 +0000" channel="882">
-    <title lang="it">inizierà alle 13:15.</title>
-    <desc lang="it">Six Nations Women : Italy W vs Wales W.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250426111500 +0000" stop="20250426131500 +0000" channel="882">
-    <title lang="it">Six Nations Women : Italy W vs Wales W</title>
-    <desc lang="it">Six Nations Women : Italy W vs Wales W trasmesso in diretta.</desc>
-    <category lang="it">Rugby Union</category>
-  </programme>
-  <programme start="20250426000000 +0000" stop="20250426111500 +0000" channel="460">
-    <title lang="it">inizierà alle 13:15.</title>
-    <desc lang="it">Six Nations Women : Italy W vs Wales W.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250426111500 +0000" stop="20250426131500 +0000" channel="460">
-    <title lang="it">Six Nations Women : Italy W vs Wales W</title>
-    <desc lang="it">Six Nations Women : Italy W vs Wales W trasmesso in diretta.</desc>
     <category lang="it">Rugby Union</category>
   </programme>
 </tv>
