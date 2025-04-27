@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="25">
-    <display-name>Italy - Serie A : Juventus vs Monza</display-name>
-  </channel>
-  <programme start="20250427000000 +0000" stop="20250427160000 +0000" channel="25">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">Italy - Serie A : Juventus vs Monza.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427160000 +0000" stop="20250427180000 +0000" channel="25">
-    <title lang="it">Italy - Serie A : Juventus vs Monza</title>
-    <desc lang="it">Italy - Serie A : Juventus vs Monza trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="870">
-    <display-name>Italy - Serie A : Juventus vs Monza</display-name>
-  </channel>
-  <programme start="20250427000000 +0000" stop="20250427160000 +0000" channel="870">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">Italy - Serie A : Juventus vs Monza.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427160000 +0000" stop="20250427180000 +0000" channel="870">
-    <title lang="it">Italy - Serie A : Juventus vs Monza</title>
-    <desc lang="it">Italy - Serie A : Juventus vs Monza trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="8">
     <display-name>Italy - Serie C : Giugliano vs Benevento</display-name>
   </channel>
@@ -168,19 +142,6 @@
     <title lang="it">Italy - Serie A : Atalanta vs Lecce</title>
     <desc lang="it">Italy - Serie A : Atalanta vs Lecce trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="882">
-    <display-name>Series A2 : Assigeco Piacenza vs Sebastiani</display-name>
-  </channel>
-  <programme start="20250427000000 +0000" stop="20250427163000 +0000" channel="882">
-    <title lang="it">inizierà alle 18:30.</title>
-    <desc lang="it">Series A2 : Assigeco Piacenza vs Sebastiani.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427163000 +0000" stop="20250427183000 +0000" channel="882">
-    <title lang="it">Series A2 : Assigeco Piacenza vs Sebastiani</title>
-    <desc lang="it">Series A2 : Assigeco Piacenza vs Sebastiani trasmesso in diretta.</desc>
-    <category lang="it">Basketball</category>
   </programme>
   <channel id="879">
     <display-name>League A : Venice vs Pistoia</display-name>
