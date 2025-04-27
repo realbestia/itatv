@@ -1,57 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="55">
-    <display-name>Italy - Serie A : Como vs Genoa</display-name>
-  </channel>
-  <programme start="20250427000000 +0000" stop="20250427103000 +0000" channel="55">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy - Serie A : Como vs Genoa.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427103000 +0000" stop="20250427123000 +0000" channel="55">
-    <title lang="it">Italy - Serie A : Como vs Genoa</title>
-    <desc lang="it">Italy - Serie A : Como vs Genoa trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="59">
-    <display-name>Italy - Serie A : Venezia vs Milan</display-name>
-  </channel>
-  <programme start="20250427000000 +0000" stop="20250427103000 +0000" channel="59">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy - Serie A : Venezia vs Milan.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427103000 +0000" stop="20250427123000 +0000" channel="59">
-    <title lang="it">Italy - Serie A : Venezia vs Milan</title>
-    <desc lang="it">Italy - Serie A : Venezia vs Milan trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="106">
-    <display-name>Italy Serie A (women) : Como vs Lazio</display-name>
-  </channel>
-  <programme start="20250427000000 +0000" stop="20250427103000 +0000" channel="106">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy Serie A (women) : Como vs Lazio.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427103000 +0000" stop="20250427123000 +0000" channel="106">
-    <title lang="it">Italy Serie A (women) : Como vs Lazio</title>
-    <desc lang="it">Italy Serie A (women) : Como vs Lazio trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="108">
-    <display-name>Italy Serie A (women) : Napoli vs Sampdoria</display-name>
-  </channel>
-  <programme start="20250427000000 +0000" stop="20250427103000 +0000" channel="108">
-    <title lang="it">inizierà alle 12:30.</title>
-    <desc lang="it">Italy Serie A (women) : Napoli vs Sampdoria.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427103000 +0000" stop="20250427123000 +0000" channel="108">
-    <title lang="it">Italy Serie A (women) : Napoli vs Sampdoria</title>
-    <desc lang="it">Italy Serie A (women) : Napoli vs Sampdoria trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="69">
     <display-name>Italy - Serie A : Fiorentina vs Empoli</display-name>
   </channel>
@@ -389,6 +337,9 @@
     <desc lang="it">Italy - Serie A : Napoli vs Torino trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="106">
+    <display-name>Italy - Serie A : Atalanta vs Lecce</display-name>
+  </channel>
   <programme start="20250427000000 +0000" stop="20250427184500 +0000" channel="106">
     <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">Italy - Serie A : Atalanta vs Lecce.</desc>
@@ -400,18 +351,8 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="575">
-    <display-name>Moto2 : Spanish Grand Prix Race</display-name>
+    <display-name>MotoGP : Spanish Grand Prix Race</display-name>
   </channel>
-  <programme start="20250427000000 +0000" stop="20250427100000 +0000" channel="575">
-    <title lang="it">inizierà alle 12:00.</title>
-    <desc lang="it">Moto2 : Spanish Grand Prix Race.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427100000 +0000" stop="20250427120000 +0000" channel="575">
-    <title lang="it">Moto2 : Spanish Grand Prix Race</title>
-    <desc lang="it">Moto2 : Spanish Grand Prix Race trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250427000000 +0000" stop="20250427120000 +0000" channel="575">
     <title lang="it">inizierà alle 14:00.</title>
     <desc lang="it">MotoGP : Spanish Grand Prix Race.</desc>
@@ -444,18 +385,5 @@
     <title lang="it">League A : Venice vs Pistoia</title>
     <desc lang="it">League A : Venice vs Pistoia trasmesso in diretta.</desc>
     <category lang="it">Basketball</category>
-  </programme>
-  <channel id="851">
-    <display-name>Liège-Bastogne-Liège Men | Liège (252km)</display-name>
-  </channel>
-  <programme start="20250427000000 +0000" stop="20250427100000 +0000" channel="851">
-    <title lang="it">inizierà alle 12:00.</title>
-    <desc lang="it">Liège-Bastogne-Liège Men | Liège (252km).</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250427100000 +0000" stop="20250427120000 +0000" channel="851">
-    <title lang="it">Liège-Bastogne-Liège Men | Liège (252km)</title>
-    <desc lang="it">Liège-Bastogne-Liège Men | Liège (252km) trasmesso in diretta.</desc>
-    <category lang="it">Cycling</category>
   </programme>
 </tv>
