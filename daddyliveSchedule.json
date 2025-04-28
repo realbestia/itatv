@@ -4105,6 +4105,204 @@
                 ]
             }
         ],
+        "Tennis ATP - MADRID</span>": [
+            {
+                "time": "09:00",
+                "event": "ATP - MADRID : De Minaur A. vs Shapovalov D.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ]
+            },
+            {
+                "time": "09:00",
+                "event": "ATP - MADRID : Khachanov K. vs Paul T.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 9",
+                        "channel_id": "1509"
+                    }
+                ]
+            },
+            {
+                "time": "09:00",
+                "event": "ATP - MADRID : Tiafoe F. vs Muller A.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 10",
+                        "channel_id": "1510"
+                    }
+                ]
+            },
+            {
+                "time": "10:30",
+                "event": "ATP - MADRID : Norrie C. vs Diallo G.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 10",
+                        "channel_id": "1510"
+                    }
+                ]
+            },
+            {
+                "time": "10:30",
+                "event": "ATP - MADRID : Mensik J. vs Bublik A.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 9",
+                        "channel_id": "1509"
+                    }
+                ]
+            },
+            {
+                "time": "10:30",
+                "event": "ATP - MADRID : Dimitrov G. vs Fearnley J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    }
+                ]
+            },
+            {
+                "time": "11:00",
+                "event": "ATP - MADRID : Tsitsipas S. vs Musetti L.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ]
+            },
+            {
+                "time": "12:00",
+                "event": "ATP - MADRID : Draper J. vs Berrettini M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 9",
+                        "channel_id": "1509"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    }
+                ]
+            },
+            {
+                "time": "12:30",
+                "event": "ATP - MADRID : Zverev A. vs Cerundolo F.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "ATP - MADRID : Medvedev D. vs Nakashima B.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ]
+            },
+            {
+                "time": "19:30",
+                "event": "ATP - MADRID : Fritz T. vs Ruud C.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    }
+                ]
+            }
+        ],
+        "Tennis WTA - MADRID</span>": [
+            {
+                "time": "09:00",
+                "event": "WTA - MADRID : Shnaider D. vs Swiatek I.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            },
+            {
+                "time": "11:00",
+                "event": "WTA - MADRID : Keys M. vs Vekic D.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ]
+            },
+            {
+                "time": "12:00",
+                "event": "WTA - MADRID : Uchijima M. vs Alexandrova E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    }
+                ]
+            },
+            {
+                "time": "12:30",
+                "event": "WTA - MADRID : Svitolina E. vs Sakkari M.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            },
+            {
+                "time": "18:00",
+                "event": "WTA - MADRID : Sabalenka A. vs Stearns P.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            },
+            {
+                "time": "19:30",
+                "event": "WTA - MADRID : Kostyuk M. vs Potapova A.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ]
+            }
+        ],
         "Tennis</span>": [
             {
                 "time": "09:00",
