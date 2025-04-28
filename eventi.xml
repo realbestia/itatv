@@ -1,3 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="3">
+    <display-name>UEFA Champions League : Arsenal vs PSG</display-name>
+  </channel>
+  <programme start="20250429000000 +0000" stop="20250429190000 +0000" channel="3">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs PSG.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250429190000 +0000" stop="20250429210000 +0000" channel="3">
+    <title lang="it">UEFA Champions League : Arsenal vs PSG</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs PSG trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="4">
+    <display-name>UEFA Champions League : Arsenal vs PSG</display-name>
+  </channel>
+  <programme start="20250429000000 +0000" stop="20250429190000 +0000" channel="4">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs PSG.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250429190000 +0000" stop="20250429210000 +0000" channel="4">
+    <title lang="it">UEFA Champions League : Arsenal vs PSG</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs PSG trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="461">
+    <display-name>UEFA Champions League : Arsenal vs PSG</display-name>
+  </channel>
+  <programme start="20250429000000 +0000" stop="20250429190000 +0000" channel="461">
+    <title lang="it">inizierà alle 21:00.</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs PSG.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250429190000 +0000" stop="20250429210000 +0000" channel="461">
+    <title lang="it">UEFA Champions League : Arsenal vs PSG</title>
+    <desc lang="it">UEFA Champions League : Arsenal vs PSG trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="878">
+    <display-name>World Snooker Championship</display-name>
+  </channel>
+  <programme start="20250429000000 +0000" stop="20250429090000 +0000" channel="878">
+    <title lang="it">inizierà alle 11:00.</title>
+    <desc lang="it">World Snooker Championship.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250429090000 +0000" stop="20250429110000 +0000" channel="878">
+    <title lang="it">World Snooker Championship</title>
+    <desc lang="it">World Snooker Championship trasmesso in diretta.</desc>
+    <category lang="it">Snooker</category>
+  </programme>
+  <programme start="20250429000000 +0000" stop="20250429120000 +0000" channel="878">
+    <title lang="it">inizierà alle 14:00.</title>
+    <desc lang="it">World Snooker Championship.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250429120000 +0000" stop="20250429140000 +0000" channel="878">
+    <title lang="it">World Snooker Championship</title>
+    <desc lang="it">World Snooker Championship trasmesso in diretta.</desc>
+    <category lang="it">Snooker</category>
+  </programme>
+  <programme start="20250429000000 +0000" stop="20250429180000 +0000" channel="878">
+    <title lang="it">inizierà alle 20:00.</title>
+    <desc lang="it">World Snooker Championship.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250429180000 +0000" stop="20250429200000 +0000" channel="878">
+    <title lang="it">World Snooker Championship</title>
+    <desc lang="it">World Snooker Championship trasmesso in diretta.</desc>
+    <category lang="it">Snooker</category>
+  </programme>
+  <channel id="9">
+    <display-name>Euroleague : Paris Basketball vs. Fenerbahce Istanbul</display-name>
+  </channel>
+  <programme start="20250429000000 +0000" stop="20250429183000 +0000" channel="9">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Euroleague : Paris Basketball vs. Fenerbahce Istanbul.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250429183000 +0000" stop="20250429203000 +0000" channel="9">
+    <title lang="it">Euroleague : Paris Basketball vs. Fenerbahce Istanbul</title>
+    <desc lang="it">Euroleague : Paris Basketball vs. Fenerbahce Istanbul trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
 </tv>
