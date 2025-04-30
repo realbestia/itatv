@@ -1,16 +1,4 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
-#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
-http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="3" tvg-name="UEFA Champions League : Arsenal vs PSG - 29/04/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Champions League : Arsenal vs PSG - 29/04/2025 21:00
-https://nfsnew.newkso.ru/nfs/premium3/mono.m3u8
-#EXTINF:-1 tvg-id="4" tvg-name="UEFA Champions League : Arsenal vs PSG - 29/04/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Champions League : Arsenal vs PSG - 29/04/2025 21:00
-https://nfsnew.newkso.ru/nfs/premium4/mono.m3u8
-#EXTINF:-1 tvg-id="461" tvg-name="UEFA Champions League : Arsenal vs PSG - 29/04/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Champions League : Arsenal vs PSG - 29/04/2025 21:00
-https://ddy6new.newkso.ru/ddy6/premium461/mono.m3u8
-#EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
-http://example.com/Basketball.m3u8
-#EXTINF:-1 tvg-id="9" tvg-name="Euroleague : Paris Basketball vs. Fenerbahce Istanbul - 29/04/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Euroleague : Paris Basketball vs. Fenerbahce Istanbul - 29/04/2025 20:30
-https://nfsnew.newkso.ru/nfs/premium9/mono.m3u8
 #EXTINF:-1 tvg-name="----- Snooker -----" group-title="Eventi", ----- Snooker -----
 http://example.com/Snooker.m3u8
 #EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship - 30/04/2025 11:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship - 30/04/2025 11:00
