@@ -1,16 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="69">
-    <display-name>UEFA Champions League : Barcelona vs Internazionale</display-name>
-  </channel>
-  <programme start="20250430000000 +0000" stop="20250430190000 +0000" channel="69">
-    <title lang="it">inizierà alle 21:00.</title>
-    <desc lang="it">UEFA Champions League : Barcelona vs Internazionale.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250430190000 +0000" stop="20250430210000 +0000" channel="69">
-    <title lang="it">UEFA Champions League : Barcelona vs Internazionale</title>
-    <desc lang="it">UEFA Champions League : Barcelona vs Internazionale trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
 </tv>
