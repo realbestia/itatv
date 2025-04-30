@@ -26,17 +26,4 @@
     <desc lang="it">World Snooker Championship trasmesso in diretta.</desc>
     <category lang="it">Snooker</category>
   </programme>
-  <channel id="882">
-    <display-name>IIHF Division 1A : Poland vs Italy</display-name>
-  </channel>
-  <programme start="20250430000000 +0000" stop="20250430140000 +0000" channel="882">
-    <title lang="it">inizierà alle 16:00.</title>
-    <desc lang="it">IIHF Division 1A : Poland vs Italy.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250430140000 +0000" stop="20250430160000 +0000" channel="882">
-    <title lang="it">IIHF Division 1A : Poland vs Italy</title>
-    <desc lang="it">IIHF Division 1A : Poland vs Italy trasmesso in diretta.</desc>
-    <category lang="it">Ice Hockey</category>
-  </programme>
 </tv>
