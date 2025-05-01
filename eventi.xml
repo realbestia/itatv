@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="9">
-    <display-name>England - Premier League : Nottingham Forest vs Brentford</display-name>
-  </channel>
-  <programme start="20250501000000 +0000" stop="20250501183000 +0000" channel="9">
-    <title lang="it">inizierà alle 20:30.</title>
-    <desc lang="it">England - Premier League : Nottingham Forest vs Brentford.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250501183000 +0000" stop="20250501203000 +0000" channel="9">
-    <title lang="it">England - Premier League : Nottingham Forest vs Brentford</title>
-    <desc lang="it">England - Premier League : Nottingham Forest vs Brentford trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="13">
     <display-name>UEFA Europa League : Tottenham Hotspur vs Bodø / Glimt</display-name>
   </channel>
@@ -116,19 +103,6 @@
     <title lang="it">UEFA Conference League : Djurgården vs Chelsea</title>
     <desc lang="it">UEFA Conference League : Djurgården vs Chelsea trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="878">
-    <display-name>World Snooker Championship</display-name>
-  </channel>
-  <programme start="20250501000000 +0000" stop="20250501180000 +0000" channel="878">
-    <title lang="it">inizierà alle 20:00.</title>
-    <desc lang="it">World Snooker Championship.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250501180000 +0000" stop="20250501200000 +0000" channel="878">
-    <title lang="it">World Snooker Championship</title>
-    <desc lang="it">World Snooker Championship trasmesso in diretta.</desc>
-    <category lang="it">Snooker</category>
   </programme>
   <channel id="882">
     <display-name>Serie A2 2024/2025-Play-in gara 1</display-name>
