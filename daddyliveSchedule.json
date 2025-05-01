@@ -1,5 +1,57 @@
 {
     "Thursday 01st May 2025 - Schedule Time UK GMT": {
+        "PPV Events</span>": [
+            {
+                "time": "21:00",
+                "event": "2025 PDRA Mid-Atlantic Showdown",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "106"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "2025 Bama Outlaws",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "107"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "2025 Kubota High Limit Racing Thursday at Texas Motor Speedway",
+                "channels": [
+                    {
+                        "channel_name": "Floracing",
+                        "channel_id": "108"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "World of Outlaws Late Model",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "109"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "Glory Underground : Chico Kwasi vs. Tyjani Beztati II",
+                "channels": [
+                    {
+                        "channel_name": "Event PPV",
+                        "channel_id": "110"
+                    }
+                ]
+            }
+        ],
         "TV Shows</span>": [
             {
                 "time": "12:30",
@@ -2323,51 +2375,6 @@
         ],
         "MMA</span>": [
             {
-                "time": "21:00",
-                "event": "PFL World Tournament : Alex Polizzi vs Rafael Xavier",
-                "channels": []
-            },
-            {
-                "time": "21:00",
-                "event": "PFL World Tournament : Alexander Romanov vs Timothy Johnson",
-                "channels": []
-            },
-            {
-                "time": "21:00",
-                "event": "PFL World Tournament : Antonio Carlos Junior vs Karl Moore",
-                "channels": []
-            },
-            {
-                "time": "21:00",
-                "event": "PFL World Tournament : Karl Albrektsson vs Simeon Powell",
-                "channels": []
-            },
-            {
-                "time": "21:00",
-                "event": "PFL World Tournament : Linton Vassell vs Oleg Popov",
-                "channels": []
-            },
-            {
-                "time": "21:00",
-                "event": "PFL World Tournament : Phil Davis vs Robert Wilkinson",
-                "channels": []
-            },
-            {
-                "time": "21:00",
-                "event": "PFL World Tournament : Rodrigo Nascimento Ferreira vs Abraham Bably",
-                "channels": []
-            },
-            {
-                "time": "21:00",
-                "event": "PFL World Tournament : Sullivan Cauley vs Marcelo Nunes",
-                "channels": []
-            },
-            {
-                "time": "21:00",
-                "event": "PFL World Tournament : Valentin Moldavsky vs Sergei Bilostenniy",
-                "channels": []
-            },
-            {
                 "time": "23:00",
                 "event": "PFL World Tournament : Phil Davis vs Rob Wilkinson",
                 "channels": [
@@ -2388,6 +2395,46 @@
                         "channel_id": "375"
                     }
                 ]
+            },
+            {
+                "time": "23:00",
+                "event": "PFL World Tournament : Alexander Romanov vs Timothy Johnson",
+                "channels": []
+            },
+            {
+                "time": "23:20",
+                "event": "PFL World Tournament : Antonio Carlos Junior vs Karl Moore",
+                "channels": []
+            },
+            {
+                "time": "23:40",
+                "event": "PFL World Tournament : Karl Albrektsson vs Simeon Powell",
+                "channels": []
+            },
+            {
+                "time": "23:52",
+                "event": "PFL World Tournament : Linton Vassell vs Oleg Popov",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "PFL World Tournament : Phil Davis vs Robert Wilkinson",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "PFL World Tournament : Rodrigo Nascimento Ferreira vs Abraham Bably",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "PFL World Tournament : Sullivan Cauley vs Marcelo Nunes",
+                "channels": []
+            },
+            {
+                "time": "00:00",
+                "event": "PFL World Tournament : Valentin Moldavsky vs Sergei Bilostenniy",
+                "channels": []
             },
             {
                 "time": "00:10",
