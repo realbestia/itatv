@@ -10,47 +10,64 @@ url4 = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=htt
 # Funzione per scaricare una playlist
 def download_playlist(url, append_params=False, exclude_group_title=None):
     response = requests.get(url)
-    response.raise_for_status()  # Se c'è un errore, solleva un'eccezione
+    response.raise_for_status()
     playlist = response.text
-    
-    # Rimuovi qualsiasi riga che inizia con '#EXTM3U'
+
+    # Rimuove l'intestazione #EXTM3U se presente
     playlist = '\n'.join(line for line in playlist.split('\n') if not line.startswith('#EXTM3U'))
-    
+
     if append_params:
-        # Aggiungi i parametri agli URL di streaming nella playlist
         playlist_lines = playlist.splitlines()
         for i in range(len(playlist_lines)):
-            if '.m3u8' in playlist_lines[i]:  # Cerca i link .m3u8
-                # Aggiungi i parametri alla fine del link
+            if '.m3u8' in playlist_lines[i]:
                 playlist_lines[i] += "&h_user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F133.0.0.0+Safari%2F537.36&h_referer=https%3A%2F%2Filovetoplay.xyz%2F&h_origin=https%3A%2F%2Filovetoplay.xyz"
         playlist = '\n'.join(playlist_lines)
-    
-    # Escludi canali con un determinato group-title
+
     if exclude_group_title:
-        playlist = '\n'.join(line for line in playlist.split('\n') if exclude_group_title not in line)
-    
+        lines = playlist.split('\n')
+        filtered_lines = []
+        skip_next = False
+        for line in lines:
+            if skip_next:
+                skip_next = False
+                continue
+            if exclude_group_title in line and line.startswith("#EXTINF"):
+                skip_next = True
+                continue
+            filtered_lines.append(line)
+        playlist = '\n'.join(filtered_lines)
+
     return playlist
 
-# Ottieni la directory dove si trova lo script
+# Directory dello script
 script_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Scarica le playlist
 playlist1 = download_playlist(url1)
-playlist2 = download_playlist(url2, append_params=True)  # Aggiungi i parametri alla playlist eventi.m3u8
+playlist2 = download_playlist(url2, append_params=True)
 playlist3 = download_playlist(url3)
-playlist4 = download_playlist(url4, exclude_group_title="Italy")  # Escludi i canali con group-title="Italy"
+playlist4 = download_playlist(url4, exclude_group_title="Italy")
 
-# Unisci le quattro playlist
+# Unisci tutte le playlist
 combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
 
-# Aggiungi il nuovo #EXTM3U tvg-url all'inizio della playlist combinata
+# Aggiungi intestazione EPG per .m3u8
 combined_playlist = '#EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n' + combined_playlist
 
-# Percorso completo del file di output
-output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
+# Percorsi dei file di output
+output_filename_m3u8 = os.path.join(script_directory, "combined_playlist.m3u8")
+output_filename_m3u = os.path.join(script_directory, "combined_playlist.m3u")
 
-# Salva la playlist combinata
-with open(output_filename, 'w') as file:
+# Salva file .m3u8
+with open(output_filename_m3u8, 'w', encoding='utf-8') as file:
     file.write(combined_playlist)
 
-print(f"Playlist combinata salvata in: {output_filename}")
+# Modifica intestazione per .m3u
+combined_playlist_m3u = combined_playlist.replace("#EXTM3U tvg-url=", "#EXTM3U x-tvg-url=")
+
+# Salva file .m3u
+with open(output_filename_m3u, 'w', encoding='utf-8') as file:
+    file.write(combined_playlist_m3u)
+
+print(f"Playlist .m3u8 salvata in: {output_filename_m3u8}")
+print(f"Playlist .m3 salvata in: {output_filename_m3u}")
