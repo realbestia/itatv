@@ -47,3 +47,7 @@ http://example.com/Basketball.m3u8
 https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
 #EXTINF:-1 tvg-id="882" tvg-name="Serie A2 2024/2025-Play-in gara 1 - 01/05/2025 20:50" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Serie A2 2024/2025-Play-in gara 1 - 01/05/2025 20:50
 https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
+#EXTINF:-1 tvg-name="----- Ice Hockey -----" group-title="Eventi", ----- Ice Hockey -----
+http://example.com/Ice_Hockey.m3u8
+#EXTINF:-1 tvg-id="163" tvg-name="Ice Hockey Games : Sweden vs Switzerland - 01/05/2025 19:35" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Ice Hockey Games : Sweden vs Switzerland - 01/05/2025 19:35
+https://windnew.newkso.ru/wind/premium163/mono.m3u8
