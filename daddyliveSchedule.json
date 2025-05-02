@@ -551,55 +551,41 @@
         "Soccer</span>": [
             {
                 "time": "18:45",
-                "event": "Scottish Championship : Airdrieonians vs Ayr United",
+                "event": "Ireland Republic - First Division : Athlone Town vs Dundalk",
                 "channels": [
                     {
-                        "channel_name": "SPFL Feed",
+                        "channel_name": "LOI TV",
                         "channel_id": "151"
                     }
                 ]
             },
             {
                 "time": "18:45",
-                "event": "Scottish Championship : Falkirk vs Hamilton Academical",
+                "event": "Ireland Republic - First Division : Cobh Ramblers vs Bray Wanderers",
                 "channels": [
                     {
-                        "channel_name": "SPFL Feed",
+                        "channel_name": "LOI TV",
                         "channel_id": "152"
-                    },
-                    {
-                        "channel_name": "BBC Scotland",
-                        "channel_id": "1"
                     }
                 ]
             },
             {
                 "time": "18:45",
-                "event": "Scottish Championship : Greenock Morton vs Dunfermline Athletic",
+                "event": "Ireland Republic - First Division : Finn Harps vs Treaty United",
                 "channels": [
                     {
-                        "channel_name": "SPFL Feed",
+                        "channel_name": "LOI TV",
                         "channel_id": "153"
                     }
                 ]
             },
             {
                 "time": "18:45",
-                "event": "Scottish Championship : Livingston vs Partick Thistle",
+                "event": "Ireland Republic - First Division : UCD vs Kerry",
                 "channels": [
                     {
-                        "channel_name": "SPFL Feed",
+                        "channel_name": "LOI TV",
                         "channel_id": "154"
-                    }
-                ]
-            },
-            {
-                "time": "18:45",
-                "event": "Scottish Championship : Queen's Park vs Raith Rovers",
-                "channels": [
-                    {
-                        "channel_name": "SPFL Feed",
-                        "channel_id": "155"
                     }
                 ]
             },
@@ -652,6 +638,36 @@
                         "channel_id": "160"
                     }
                 ]
+            },
+            {
+                "time": "18:45",
+                "event": "Scottish Championship : Airdrieonians vs Ayr United",
+                "channels": []
+            },
+            {
+                "time": "18:45",
+                "event": "Scottish Championship : Falkirk vs Hamilton Academical",
+                "channels": [
+                    {
+                        "channel_name": "BBC Scotland",
+                        "channel_id": "1"
+                    }
+                ]
+            },
+            {
+                "time": "18:45",
+                "event": "Scottish Championship : Greenock Morton vs Dunfermline Athletic",
+                "channels": []
+            },
+            {
+                "time": "18:45",
+                "event": "Scottish Championship : Livingston vs Partick Thistle",
+                "channels": []
+            },
+            {
+                "time": "18:45",
+                "event": "Scottish Championship : Queen's Park vs Raith Rovers",
+                "channels": []
             },
             {
                 "time": "07:30",
