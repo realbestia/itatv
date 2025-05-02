@@ -6121,6 +6121,78 @@
                 ]
             }
         ],
+        "Tennis ATP - MADRID</span>": [
+            {
+                "time": "11:30",
+                "event": "ATP - MADRID : Krawietz K./Puetz T. vs Granollers M./Zeballos H.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ]
+            },
+            {
+                "time": "14:00",
+                "event": "ATP - MADRID : Cerundolo F. vs Ruud C.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    }
+                ]
+            },
+            {
+                "time": "15:00",
+                "event": "ATP - MADRID : Arevalo M./Pavic M. vs Harrison C./King E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 8",
+                        "channel_id": "1508"
+                    }
+                ]
+            },
+            {
+                "time": "18:00",
+                "event": "ATP - MADRID : Draper J. vs Musetti L.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 7",
+                        "channel_id": "1507"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    }
+                ]
+            }
+        ],
+        "Tennis WTA - MADRID</span>": [
+            {
+                "time": "11:30",
+                "event": "WTP - MADRID : Azarenka V./Krueger A. vs Kudermetova V./Mertens E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            },
+            {
+                "time": "19:30",
+                "event": "WTP - MADRID : Cirstea S./Kalinskaya A. vs Hsieh S-W./Ostapenko J.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 4",
+                        "channel_id": "1504"
+                    }
+                ]
+            }
+        ],
         "Tennis</span>": [
             {
                 "time": "11:30",
