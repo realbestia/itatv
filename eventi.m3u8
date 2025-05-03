@@ -41,8 +41,6 @@ https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-name="----- Snooker -----" group-title="Eventi", ----- Snooker -----
 http://example.com/Snooker.m3u8
-#EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship - 03/05/2025 11:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship - 03/05/2025 11:00
-https://windnew.newkso.ru/wind/premium878/mono.m3u8
 #EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship - 03/05/2025 14:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship - 03/05/2025 14:00
 https://windnew.newkso.ru/wind/premium878/mono.m3u8
 #EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship - 03/05/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship - 03/05/2025 20:00
@@ -51,10 +49,6 @@ https://windnew.newkso.ru/wind/premium878/mono.m3u8
 http://example.com/Basketball.m3u8
 #EXTINF:-1 tvg-id="879" tvg-name="Lega A : Aquila Basket Trento vs. Pallacanestro Reggiana - 03/05/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Lega A : Aquila Basket Trento vs. Pallacanestro Reggiana - 03/05/2025 20:00
 https://windnew.newkso.ru/wind/premium879/mono.m3u8
-#EXTINF:-1 tvg-name="----- Ice Hockey -----" group-title="Eventi", ----- Ice Hockey -----
-http://example.com/Ice_Hockey.m3u8
-#EXTINF:-1 tvg-id="24" tvg-name="Ice Hockey Games : Switzerland vs Finland - 03/05/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Ice Hockey Games : Switzerland vs Finland - 03/05/2025 12:00
-https://nfsnew.newkso.ru/nfs/premium24/mono.m3u8
 #EXTINF:-1 tvg-name="----- Volleyball -----" group-title="Eventi", ----- Volleyball -----
 http://example.com/Volleyball.m3u8
 #EXTINF:-1 tvg-id="462" tvg-name="Champions League Women : Vakifbank SK vs. Pallavolo Scandicci - 03/05/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Champions League Women : Vakifbank SK vs. Pallavolo Scandicci - 03/05/2025 18:00
