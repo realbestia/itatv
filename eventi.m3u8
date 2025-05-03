@@ -1,10 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie A (women) : Inter Milano vs Fiorentina - 03/05/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Inter Milano vs Fiorentina - 03/05/2025 12:30
-https://ddy6new.newkso.ru/ddy6/premium55/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Aston Villa vs Fulham - 03/05/2025 13:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Aston Villa vs Fulham - 03/05/2025 13:30
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="110" tvg-name="Italy - Serie A (women) : Lazio vs Sassuolo - 03/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Lazio vs Sassuolo - 03/05/2025 15:00
 https://ddy6new.newkso.ru/ddy6/premium110/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Cagliari vs Udinese - 03/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Cagliari vs Udinese - 03/05/2025 15:00
@@ -41,8 +37,6 @@ https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 #EXTINF:-1 tvg-name="----- Snooker -----" group-title="Eventi", ----- Snooker -----
 http://example.com/Snooker.m3u8
-#EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship - 03/05/2025 14:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship - 03/05/2025 14:00
-https://windnew.newkso.ru/wind/premium878/mono.m3u8
 #EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship - 03/05/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship - 03/05/2025 20:00
 https://windnew.newkso.ru/wind/premium878/mono.m3u8
 #EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
