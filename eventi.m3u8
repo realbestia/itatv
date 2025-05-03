@@ -1,50 +1,28 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="18" tvg-name="Italy - Serie A : Torino vs Venezia - 02/05/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Torino vs Venezia - 02/05/2025 20:45
-https://nfsnew.newkso.ru/nfs/premium18/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="Italy - Serie A : Torino vs Venezia - 02/05/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Torino vs Venezia - 02/05/2025 20:45
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
-#EXTINF:-1 tvg-id="20" tvg-name="England - Premier League : Manchester City vs Wolverhampton Wanderers - 02/05/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Manchester City vs Wolverhampton Wanderers - 02/05/2025 21:00
-https://nfsnew.newkso.ru/nfs/premium20/mono.m3u8
-#EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
-http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : crypto.com Miami Grand Prix - Sprint Qualifying - 02/05/2025 22:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : crypto.com Miami Grand Prix - Sprint Qualifying - 02/05/2025 22:30
-https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
-#EXTINF:-1 tvg-name="----- Volleyball -----" group-title="Eventi", ----- Volleyball -----
-http://example.com/Volleyball.m3u8
-#EXTINF:-1 tvg-id="882" tvg-name="Women's Serie A1 2024/2025 - Final - Game 1 - 02/05/2025 20:20" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Women's Serie A1 2024/2025 - Final - Game 1 - 02/05/2025 20:20
-https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
-#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
-http://example.com/Soccer.m3u8
 #EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie A (women) : Inter Milano vs Fiorentina - 03/05/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Inter Milano vs Fiorentina - 03/05/2025 12:30
 https://ddy6new.newkso.ru/ddy6/premium55/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Aston Villa vs Fulham - 03/05/2025 13:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Aston Villa vs Fulham - 03/05/2025 13:30
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="110" tvg-name="Italy - Serie A (women) : Lazio vs Sassuolo - 03/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Lazio vs Sassuolo - 03/05/2025 15:00
 https://ddy6new.newkso.ru/ddy6/premium110/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Cagliari vs Udinese - 03/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Cagliari vs Udinese - 03/05/2025 15:00
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
+#EXTINF:-1 tvg-id="68" tvg-name="Italy - Serie A : Parma vs Como - 03/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Parma vs Como - 03/05/2025 15:00
+https://windnew.newkso.ru/wind/premium68/mono.m3u8
 #EXTINF:-1 tvg-id="462" tvg-name="Bundesliga : RB Leipzig vs Bayern München - 03/05/2025 15:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : RB Leipzig vs Bayern München - 03/05/2025 15:30
 https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Everton vs Ipswich Town - 03/05/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Everton vs Ipswich Town - 03/05/2025 16:00
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="460" tvg-name="England - Premier League : Leicester City vs Southampton - 03/05/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Leicester City vs Southampton - 03/05/2025 16:00
 https://dokko1new.newkso.ru/dokko1/premium460/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Lecce vs Napoli - 03/05/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Lecce vs Napoli - 03/05/2025 18:00
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie A (women) : Sampdoria vs Como - 03/05/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Sampdoria vs Como - 03/05/2025 18:00
 https://ddy6new.newkso.ru/ddy6/premium55/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Arsenal vs AFC Bournemouth - 03/05/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Arsenal vs AFC Bournemouth - 03/05/2025 18:30
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="3" tvg-name="Bundesliga : Borussia Dortmund vs Wolfsburg - 03/05/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : Borussia Dortmund vs Wolfsburg - 03/05/2025 18:30
 https://nfsnew.newkso.ru/nfs/premium3/mono.m3u8
 #EXTINF:-1 tvg-id="6" tvg-name="Italy - Serie C : Avellino vs Calcio Padova - 03/05/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Avellino vs Calcio Padova - 03/05/2025 19:00
 https://nfsnew.newkso.ru/nfs/premium6/mono.m3u8
 #EXTINF:-1 tvg-id="16" tvg-name="Italy - Serie A : Internazionale vs Hellas Verona - 03/05/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Internazionale vs Hellas Verona - 03/05/2025 20:45
 https://nfsnew.newkso.ru/nfs/premium16/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="Italy - Serie A : Internazionale vs Hellas Verona - 03/05/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Internazionale vs Hellas Verona - 03/05/2025 20:45
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
 http://example.com/Motorsport.m3u8
 #EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : crypto.com Miami Grand Prix - Sprint Grid - 03/05/2025 17:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : crypto.com Miami Grand Prix - Sprint Grid - 03/05/2025 17:00
@@ -69,10 +47,6 @@ https://windnew.newkso.ru/wind/premium879/mono.m3u8
 http://example.com/Climbing.m3u8
 #EXTINF:-1 tvg-id="878" tvg-name="World Cup | Bali Men's and Women's Speed ​​| Final - 03/05/2025 09:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Cup | Bali Men's and Women's Speed ​​| Final - 03/05/2025 09:00
 https://windnew.newkso.ru/wind/premium878/mono.m3u8
-#EXTINF:-1 tvg-name="----- Ice Hockey -----" group-title="Eventi", ----- Ice Hockey -----
-http://example.com/Ice_Hockey.m3u8
-#EXTINF:-1 tvg-id="24" tvg-name="Ice Hockey Games : Switzerland vs Finland - 03/05/2025 12:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Ice Hockey Games : Switzerland vs Finland - 03/05/2025 12:00
-https://nfsnew.newkso.ru/nfs/premium24/mono.m3u8
 #EXTINF:-1 tvg-name="----- Rugby Union -----" group-title="Eventi", ----- Rugby Union -----
 http://example.com/Rugby_Union.m3u8
 #EXTINF:-1 tvg-id="462" tvg-name="Super Rugby : Hurricanes vs Chiefs - 03/05/2025 09:05" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Super Rugby : Hurricanes vs Chiefs - 03/05/2025 09:05
