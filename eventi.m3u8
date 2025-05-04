@@ -1,1 +1,21 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="UEFA Women's Under-17 Championship : Poland U17 vs Italy U17 - 05/05/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Women's Under-17 Championship : Poland U17 vs Italy U17 - 05/05/2025 19:00
+https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
+#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Genoa vs Milan - 05/05/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Genoa vs Milan - 05/05/2025 20:45
+https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
+#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Crystal Palace vs Nottingham Forest - 05/05/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Crystal Palace vs Nottingham Forest - 05/05/2025 21:00
+https://windnew.newkso.ru/wind/premium870/mono.m3u8
+#EXTINF:-1 tvg-id="461" tvg-name="England - Premier League : Crystal Palace vs Nottingham Forest - 05/05/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Crystal Palace vs Nottingham Forest - 05/05/2025 21:00
+https://ddy6new.newkso.ru/ddy6/premium461/mono.m3u8
+#EXTINF:-1 tvg-name="----- Snooker -----" group-title="Eventi", ----- Snooker -----
+http://example.com/Snooker.m3u8
+#EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship - 05/05/2025 13:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship - 05/05/2025 13:45
+https://windnew.newkso.ru/wind/premium878/mono.m3u8
+#EXTINF:-1 tvg-id="878" tvg-name="World Snooker Championship - 05/05/2025 19:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Snooker Championship - 05/05/2025 19:30
+https://windnew.newkso.ru/wind/premium878/mono.m3u8
+#EXTINF:-1 tvg-name="----- Cycling -----" group-title="Eventi", ----- Cycling -----
+http://example.com/Cycling.m3u8
+#EXTINF:-1 tvg-id="879" tvg-name="La Vuelta Femenina | Stage 2 Women | Molins De Rei – Saint Boi De Llobregat (99km) - 05/05/2025 15:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", La Vuelta Femenina | Stage 2 Women | Molins De Rei – Saint Boi De Llobregat (99km) - 05/05/2025 15:30
+https://windnew.newkso.ru/wind/premium879/mono.m3u8
