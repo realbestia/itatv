@@ -66,6 +66,16 @@
                 ]
             },
             {
+                "time": "17:00",
+                "event": "The Rehearsal Season 2, Episode 3",
+                "channels": [
+                    {
+                        "channel_name": "HBO2 USA",
+                        "channel_id": "689"
+                    }
+                ]
+            },
+            {
                 "time": "18:00",
                 "event": "Beyond the Gates Season 1, Episode 47",
                 "channels": [
@@ -120,16 +130,6 @@
                 ]
             },
             {
-                "time": "17:00",
-                "event": "The Rehearsal Season 2, Episode 3",
-                "channels": [
-                    {
-                        "channel_name": "HBO2 USA",
-                        "channel_id": "689"
-                    }
-                ]
-            },
-            {
                 "time": "22:00",
                 "event": "E! Live From the Red Carpet Met Gala 2025 Episode 5 \u2022 Live",
                 "channels": [
@@ -156,6 +156,16 @@
                     {
                         "channel_name": "MSNBC USA",
                         "channel_id": "327"
+                    }
+                ]
+            },
+            {
+                "time": "23:00",
+                "event": "NHL Draft Lottery Live",
+                "channels": [
+                    {
+                        "channel_name": "ESPN USA",
+                        "channel_id": "44"
                     }
                 ]
             },
@@ -2525,7 +2535,7 @@
                     },
                     {
                         "channel_name": "YES USA",
-                        "channel_id": "463"
+                        "channel_id": "763"
                     },
                     {
                         "channel_name": "MLB Network USA",
