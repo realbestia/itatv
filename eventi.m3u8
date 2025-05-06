@@ -1,14 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Genoa vs Milan - 05/05/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Genoa vs Milan - 05/05/2025 20:45
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Crystal Palace vs Nottingham Forest - 05/05/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Crystal Palace vs Nottingham Forest - 05/05/2025 21:00
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
-#EXTINF:-1 tvg-id="461" tvg-name="England - Premier League : Crystal Palace vs Nottingham Forest - 05/05/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Crystal Palace vs Nottingham Forest - 05/05/2025 21:00
-https://ddy6new.newkso.ru/ddy6/premium461/mono.m3u8
-#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
-http://example.com/Soccer.m3u8
 #EXTINF:-1 tvg-id="3" tvg-name="UEFA Champions League : Inter vs Barcelona - 06/05/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Champions League : Inter vs Barcelona - 06/05/2025 21:00
 https://nfsnew.newkso.ru/nfs/premium3/mono.m3u8
 #EXTINF:-1 tvg-id="870" tvg-name="UEFA Champions League : Inter vs Barcelona - 06/05/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Champions League : Inter vs Barcelona - 06/05/2025 21:00
