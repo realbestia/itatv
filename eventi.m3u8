@@ -7,7 +7,19 @@ https://nfsnew.newkso.ru/nfs/premium3/mono.m3u8
 https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="4" tvg-name="UEFA Champions League : Inter vs Barcelona - 06/05/2025 21:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", UEFA Champions League : Inter vs Barcelona - 06/05/2025 21:00
 https://nfsnew.newkso.ru/nfs/premium4/mono.m3u8
-#EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
-http://example.com/Basketball.m3u8
-#EXTINF:-1 tvg-id="882" tvg-name="Serie A1 Men 2024/2025 - Final - Game 1 - 06/05/2025 19:50" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Serie A1 Men 2024/2025 - Final - Game 1 - 06/05/2025 19:50
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="28" tvg-name="Italy Serie C : AlbinoLeffe vs Atalanta II - 07/05/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie C : AlbinoLeffe vs Atalanta II - 07/05/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium28/mono.m3u8
+#EXTINF:-1 tvg-id="29" tvg-name="Italy Serie C : Renate vs Giana Erminio - 07/05/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie C : Renate vs Giana Erminio - 07/05/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium29/mono.m3u8
+#EXTINF:-1 tvg-id="30" tvg-name="Italy Serie C : Crotone vs Juventus II - 07/05/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie C : Crotone vs Juventus II - 07/05/2025 20:00
+https://nfsnew.newkso.ru/nfs/premium30/mono.m3u8
+#EXTINF:-1 tvg-id="59" tvg-name="Italy Serie C : Pescara vs Pianese - 07/05/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie C : Pescara vs Pianese - 07/05/2025 20:00
+https://windnew.newkso.ru/wind/premium59/mono.m3u8
+#EXTINF:-1 tvg-id="68" tvg-name="Italy Serie C : Arezzo vs Vis Pesaro - 07/05/2025 20:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy Serie C : Arezzo vs Vis Pesaro - 07/05/2025 20:00
+https://windnew.newkso.ru/wind/premium68/mono.m3u8
+#EXTINF:-1 tvg-name="----- Volleyball -----" group-title="Eventi", ----- Volleyball -----
+http://example.com/Volleyball.m3u8
+#EXTINF:-1 tvg-id="882" tvg-name="Serie A1 : Volley Civitanova vs. Trentino Volley - 07/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Serie A1 : Volley Civitanova vs. Trentino Volley - 07/05/2025 20:30
 https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
