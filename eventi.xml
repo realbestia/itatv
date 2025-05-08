@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="882">
-    <display-name>UEFA Women's Under-17 Championship : Italy U17 vs France U17</display-name>
-  </channel>
-  <programme start="20250508000000 +0000" stop="20250508140000 +0000" channel="882">
-    <title lang="it">inizierà alle 16:00.</title>
-    <desc lang="it">UEFA Women's Under-17 Championship : Italy U17 vs France U17.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250508140000 +0000" stop="20250508160000 +0000" channel="882">
-    <title lang="it">UEFA Women's Under-17 Championship : Italy U17 vs France U17</title>
-    <desc lang="it">UEFA Women's Under-17 Championship : Italy U17 vs France U17 trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="5">
     <display-name>UEFA Europa League : Bodø / Glimt vs Tottenham</display-name>
   </channel>
@@ -117,6 +104,9 @@
     <desc lang="it">European Championship : Italy vs Spain trasmesso in diretta.</desc>
     <category lang="it">Handball</category>
   </programme>
+  <channel id="882">
+    <display-name>Women's Serie A1 2024/2025 - Final - game 3</display-name>
+  </channel>
   <programme start="20250508000000 +0000" stop="20250508182000 +0000" channel="882">
     <title lang="it">inizierà alle 20:20.</title>
     <desc lang="it">Women's Serie A1 2024/2025 - Final - game 3.</desc>
