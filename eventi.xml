@@ -170,18 +170,8 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="575">
-    <display-name>Moto3 : France Qualifying</display-name>
+    <display-name>Moto2 : France Qualifying</display-name>
   </channel>
-  <programme start="20250509000000 +0000" stop="20250509111000 +0000" channel="575">
-    <title lang="it">inizierà alle 13:10.</title>
-    <desc lang="it">Moto3 : France Qualifying.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250509111000 +0000" stop="20250509131000 +0000" channel="575">
-    <title lang="it">Moto3 : France Qualifying</title>
-    <desc lang="it">Moto3 : France Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250509000000 +0000" stop="20250509120000 +0000" channel="575">
     <title lang="it">inizierà alle 14:00.</title>
     <desc lang="it">Moto2 : France Qualifying.</desc>
@@ -201,18 +191,5 @@
     <title lang="it">MotoGP | Round 6 | France Practice</title>
     <desc lang="it">MotoGP | Round 6 | France Practice trasmesso in diretta.</desc>
     <category lang="it">Motorsport</category>
-  </programme>
-  <channel id="878">
-    <display-name>Giro d'Italia | Stage 1 Men | Durazzo - Tirana (164km)</display-name>
-  </channel>
-  <programme start="20250509000000 +0000" stop="20250509110000 +0000" channel="878">
-    <title lang="it">inizierà alle 13:00.</title>
-    <desc lang="it">Giro d'Italia | Stage 1 Men | Durazzo - Tirana (164km).</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250509110000 +0000" stop="20250509130000 +0000" channel="878">
-    <title lang="it">Giro d'Italia | Stage 1 Men | Durazzo - Tirana (164km)</title>
-    <desc lang="it">Giro d'Italia | Stage 1 Men | Durazzo - Tirana (164km) trasmesso in diretta.</desc>
-    <category lang="it">Cycling</category>
   </programme>
 </tv>
