@@ -169,17 +169,4 @@
     <desc lang="it">Italy - Serie A : Milan vs Bologna trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="575">
-    <display-name>MotoGP | Round 6 | France Practice</display-name>
-  </channel>
-  <programme start="20250509000000 +0000" stop="20250509130000 +0000" channel="575">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">MotoGP | Round 6 | France Practice.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250509130000 +0000" stop="20250509150000 +0000" channel="575">
-    <title lang="it">MotoGP | Round 6 | France Practice</title>
-    <desc lang="it">MotoGP | Round 6 | France Practice trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
 </tv>
