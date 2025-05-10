@@ -246,19 +246,6 @@
     <desc lang="it">Italy - Serie A : Empoli vs Parma trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="575">
-    <display-name>MotoGP : French Grand Prix Sprint Race</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510124500 +0000" channel="575">
-    <title lang="it">inizierà alle 14:45.</title>
-    <desc lang="it">MotoGP : French Grand Prix Sprint Race.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510124500 +0000" stop="20250510144500 +0000" channel="575">
-    <title lang="it">MotoGP : French Grand Prix Sprint Race</title>
-    <desc lang="it">MotoGP : French Grand Prix Sprint Race trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="879">
     <display-name>FIA WEC | 6 Hours of Spa-Francorchamps Course</display-name>
   </channel>
