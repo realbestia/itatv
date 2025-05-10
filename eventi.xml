@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="19">
-    <display-name>Italy - Serie C : Pro Patria vs Pro Vercelli</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510153000 +0000" channel="19">
-    <title lang="it">inizierà alle 17:30.</title>
-    <desc lang="it">Italy - Serie C : Pro Patria vs Pro Vercelli.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510153000 +0000" stop="20250510173000 +0000" channel="19">
-    <title lang="it">Italy - Serie C : Pro Patria vs Pro Vercelli</title>
-    <desc lang="it">Italy - Serie C : Pro Patria vs Pro Vercelli trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="877">
     <display-name>Italy - Serie A : Lazio vs Juventus</display-name>
   </channel>
@@ -117,6 +104,9 @@
     <desc lang="it">Italy - Serie A (women) : Juventus vs Inter Milano trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="19">
+    <display-name>Italy - Serie A : Empoli vs Parma</display-name>
+  </channel>
   <programme start="20250510000000 +0000" stop="20250510184500 +0000" channel="19">
     <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">Italy - Serie A : Empoli vs Parma.</desc>
