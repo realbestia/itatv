@@ -247,18 +247,8 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="575">
-    <display-name>MotoGP : French Grand Prix Qualifying</display-name>
+    <display-name>Moto3 : French Grand Prix Free Qualifying</display-name>
   </channel>
-  <programme start="20250510000000 +0000" stop="20250510080000 +0000" channel="575">
-    <title lang="it">inizierà alle 10:00.</title>
-    <desc lang="it">MotoGP : French Grand Prix Qualifying.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510080000 +0000" stop="20250510100000 +0000" channel="575">
-    <title lang="it">MotoGP : French Grand Prix Qualifying</title>
-    <desc lang="it">MotoGP : French Grand Prix Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250510000000 +0000" stop="20250510104500 +0000" channel="575">
     <title lang="it">inizierà alle 12:45.</title>
     <desc lang="it">Moto3 : French Grand Prix Free Qualifying.</desc>
