@@ -3817,6 +3817,16 @@
                 ]
             },
             {
+                "time": "17:00",
+                "event": "Peru - Primera Division : Ayacucho vs Sporting Cristal",
+                "channels": [
+                    {
+                        "channel_name": "Liga 1 Max Peru",
+                        "channel_id": "12"
+                    }
+                ]
+            },
+            {
                 "time": "17:30",
                 "event": "Poland - I League : Ruch Chorzow vs LKS Lodz",
                 "channels": []
@@ -3922,16 +3932,6 @@
                     {
                         "channel_name": "Sky Sport 254 IT",
                         "channel_id": "30"
-                    }
-                ]
-            },
-            {
-                "time": "18:00",
-                "event": "Peru - Primera Division : Ayacucho vs Sporting Cristal",
-                "channels": [
-                    {
-                        "channel_name": "Liga 1 Max Peru",
-                        "channel_id": "12"
                     }
                 ]
             },
@@ -7853,6 +7853,10 @@
                 "time": "17:30",
                 "event": "ACB : MoraBanc Andorra vs Basquet Girona",
                 "channels": [
+                    {
+                        "channel_name": "Movistar Deportes 4 Spain",
+                        "channel_id": "527"
+                    },
                     {
                         "channel_name": "ERT 3 Greece",
                         "channel_id": "151"
