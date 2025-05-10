@@ -1,70 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="877">
-    <display-name>Italy - Serie A : Como vs Cagliari</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510130000 +0000" channel="877">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie A : Como vs Cagliari.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510130000 +0000" stop="20250510150000 +0000" channel="877">
-    <title lang="it">Italy - Serie A : Como vs Cagliari</title>
-    <desc lang="it">Italy - Serie A : Como vs Cagliari trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="55">
-    <display-name>Italy - Serie A (women) : Fiorentina vs Roma</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510130000 +0000" channel="55">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie A (women) : Fiorentina vs Roma.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510130000 +0000" stop="20250510150000 +0000" channel="55">
-    <title lang="it">Italy - Serie A (women) : Fiorentina vs Roma</title>
-    <desc lang="it">Italy - Serie A (women) : Fiorentina vs Roma trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="19">
-    <display-name>Italy - Serie C : Messina vs Foggia</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510130000 +0000" channel="19">
-    <title lang="it">inizierà alle 15:00.</title>
-    <desc lang="it">Italy - Serie C : Messina vs Foggia.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510130000 +0000" stop="20250510150000 +0000" channel="19">
-    <title lang="it">Italy - Serie C : Messina vs Foggia</title>
-    <desc lang="it">Italy - Serie C : Messina vs Foggia trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="20">
-    <display-name>Bundesliga : Werder Bremen vs RB Leipzig</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510133000 +0000" channel="20">
-    <title lang="it">inizierà alle 15:30.</title>
-    <desc lang="it">Bundesliga : Werder Bremen vs RB Leipzig.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510133000 +0000" stop="20250510153000 +0000" channel="20">
-    <title lang="it">Bundesliga : Werder Bremen vs RB Leipzig</title>
-    <desc lang="it">Bundesliga : Werder Bremen vs RB Leipzig trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="462">
-    <display-name>Bundesliga : Werder Bremen vs RB Leipzig</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510133000 +0000" channel="462">
-    <title lang="it">inizierà alle 15:30.</title>
-    <desc lang="it">Bundesliga : Werder Bremen vs RB Leipzig.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510133000 +0000" stop="20250510153000 +0000" channel="462">
-    <title lang="it">Bundesliga : Werder Bremen vs RB Leipzig</title>
-    <desc lang="it">Bundesliga : Werder Bremen vs RB Leipzig trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="27">
     <display-name>England - Premier League : Fulham vs Everton</display-name>
   </channel>
@@ -117,6 +52,9 @@
     <desc lang="it">England - Premier League : Wolves vs Brighton trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="19">
+    <display-name>Italy - Serie C : Pro Patria vs Pro Vercelli</display-name>
+  </channel>
   <programme start="20250510000000 +0000" stop="20250510153000 +0000" channel="19">
     <title lang="it">inizierà alle 17:30.</title>
     <desc lang="it">Italy - Serie C : Pro Patria vs Pro Vercelli.</desc>
@@ -127,6 +65,9 @@
     <desc lang="it">Italy - Serie C : Pro Patria vs Pro Vercelli trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="877">
+    <display-name>Italy - Serie A : Lazio vs Juventus</display-name>
+  </channel>
   <programme start="20250510000000 +0000" stop="20250510160000 +0000" channel="877">
     <title lang="it">inizierà alle 18:00.</title>
     <desc lang="it">Italy - Serie A : Lazio vs Juventus.</desc>
@@ -259,6 +200,9 @@
     <desc lang="it">FIA WEC | 6 Hours of Spa-Francorchamps Course trasmesso in diretta.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="462">
+    <display-name>MLB : Pittsburgh Pirates vs Atlanta Braves</display-name>
+  </channel>
   <programme start="20250510000000 +0000" stop="20250510200500 +0000" channel="462">
     <title lang="it">inizierà alle 22:05.</title>
     <desc lang="it">MLB : Pittsburgh Pirates vs Atlanta Braves.</desc>
