@@ -1,44 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="877">
-    <display-name>Italy - Serie A : Lazio vs Juventus</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510160000 +0000" channel="877">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">Italy - Serie A : Lazio vs Juventus.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510160000 +0000" stop="20250510180000 +0000" channel="877">
-    <title lang="it">Italy - Serie A : Lazio vs Juventus</title>
-    <desc lang="it">Italy - Serie A : Lazio vs Juventus trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="461">
-    <display-name>England - Premier League : Bournemouth vs Aston Villa</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510163000 +0000" channel="461">
-    <title lang="it">inizierà alle 18:30.</title>
-    <desc lang="it">England - Premier League : Bournemouth vs Aston Villa.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510163000 +0000" stop="20250510183000 +0000" channel="461">
-    <title lang="it">England - Premier League : Bournemouth vs Aston Villa</title>
-    <desc lang="it">England - Premier League : Bournemouth vs Aston Villa trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="870">
-    <display-name>Bundesliga : Bayern vs Borussia M'gladbach</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510163000 +0000" channel="870">
-    <title lang="it">inizierà alle 18:30.</title>
-    <desc lang="it">Bundesliga : Bayern vs Borussia M'gladbach.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510163000 +0000" stop="20250510183000 +0000" channel="870">
-    <title lang="it">Bundesliga : Bayern vs Borussia M'gladbach</title>
-    <desc lang="it">Bundesliga : Bayern vs Borussia M'gladbach trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="28">
     <display-name>Italy - Serie C : Virtus Entella vs Avellino</display-name>
   </channel>
@@ -117,6 +78,9 @@
     <desc lang="it">Italy - Serie A : Empoli vs Parma trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="461">
+    <display-name>Italy - Serie A : Empoli vs Parma</display-name>
+  </channel>
   <programme start="20250510000000 +0000" stop="20250510184500 +0000" channel="461">
     <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">Italy - Serie A : Empoli vs Parma.</desc>
@@ -127,6 +91,9 @@
     <desc lang="it">Italy - Serie A : Empoli vs Parma trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="870">
+    <display-name>Italy - Serie A : Empoli vs Parma</display-name>
+  </channel>
   <programme start="20250510000000 +0000" stop="20250510184500 +0000" channel="870">
     <title lang="it">inizierà alle 20:45.</title>
     <desc lang="it">Italy - Serie A : Empoli vs Parma.</desc>
@@ -175,16 +142,6 @@
     <title lang="it">Lega A : Basket Napoli vs Trento</title>
     <desc lang="it">Lega A : Basket Napoli vs Trento trasmesso in diretta.</desc>
     <category lang="it">Basketball</category>
-  </programme>
-  <programme start="20250510000000 +0000" stop="20250510161500 +0000" channel="462">
-    <title lang="it">inizierà alle 18:15.</title>
-    <desc lang="it">United Rugby Championship : Treviso vs Glasgow.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510161500 +0000" stop="20250510181500 +0000" channel="462">
-    <title lang="it">United Rugby Championship : Treviso vs Glasgow</title>
-    <desc lang="it">United Rugby Championship : Treviso vs Glasgow trasmesso in diretta.</desc>
-    <category lang="it">Rugby Union</category>
   </programme>
   <programme start="20250510000000 +0000" stop="20250510183000 +0000" channel="882">
     <title lang="it">inizierà alle 20:30.</title>
