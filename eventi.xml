@@ -1,16 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="462">
-    <display-name>MLB : Pittsburgh Pirates vs Atlanta Braves</display-name>
+  <channel id="877">
+    <display-name>Italy - Serie A : Udinese vs Monza</display-name>
   </channel>
-  <programme start="20250510000000 +0000" stop="20250510200500 +0000" channel="462">
-    <title lang="it">inizierà alle 22:05.</title>
-    <desc lang="it">MLB : Pittsburgh Pirates vs Atlanta Braves.</desc>
+  <programme start="20250511000000 +0000" stop="20250511103000 +0000" channel="877">
+    <title lang="it">inizierà alle 12:30.</title>
+    <desc lang="it">Italy - Serie A : Udinese vs Monza.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250510200500 +0000" stop="20250510220500 +0000" channel="462">
-    <title lang="it">MLB : Pittsburgh Pirates vs Atlanta Braves</title>
-    <desc lang="it">MLB : Pittsburgh Pirates vs Atlanta Braves trasmesso in diretta.</desc>
-    <category lang="it">Baseball</category>
+  <programme start="20250511103000 +0000" stop="20250511123000 +0000" channel="877">
+    <title lang="it">Italy - Serie A : Udinese vs Monza</title>
+    <desc lang="it">Italy - Serie A : Udinese vs Monza trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="870">
+    <display-name>England - Premier League : Newcastle vs Chelsea</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511110000 +0000" channel="870">
+    <title lang="it">inizierà alle 13:00.</title>
+    <desc lang="it">England - Premier League : Newcastle vs Chelsea.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511110000 +0000" stop="20250511130000 +0000" channel="870">
+    <title lang="it">England - Premier League : Newcastle vs Chelsea</title>
+    <desc lang="it">England - Premier League : Newcastle vs Chelsea trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511130000 +0000" channel="877">
+    <title lang="it">inizierà alle 15:00.</title>
+    <desc lang="it">Italy - Serie A : Verona vs Lecce.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511130000 +0000" stop="20250511150000 +0000" channel="877">
+    <title lang="it">Italy - Serie A : Verona vs Lecce</title>
+    <desc lang="it">Italy - Serie A : Verona vs Lecce trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="26">
+    <display-name>England - Premier League : Manchester United vs West Ham</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511131500 +0000" channel="26">
+    <title lang="it">inizierà alle 15:15.</title>
+    <desc lang="it">England - Premier League : Manchester United vs West Ham.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511131500 +0000" stop="20250511151500 +0000" channel="26">
+    <title lang="it">England - Premier League : Manchester United vs West Ham</title>
+    <desc lang="it">England - Premier League : Manchester United vs West Ham trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="28">
+    <display-name>England - Premier League : Nottingham Forest vs Leicester City</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511131500 +0000" channel="28">
+    <title lang="it">inizierà alle 15:15.</title>
+    <desc lang="it">England - Premier League : Nottingham Forest vs Leicester City.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511131500 +0000" stop="20250511151500 +0000" channel="28">
+    <title lang="it">England - Premier League : Nottingham Forest vs Leicester City</title>
+    <desc lang="it">England - Premier League : Nottingham Forest vs Leicester City trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511131500 +0000" channel="870">
+    <title lang="it">inizierà alle 15:15.</title>
+    <desc lang="it">England - Premier League : Tottenham vs Crystal Palace.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511131500 +0000" stop="20250511151500 +0000" channel="870">
+    <title lang="it">England - Premier League : Tottenham vs Crystal Palace</title>
+    <desc lang="it">England - Premier League : Tottenham vs Crystal Palace trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="460">
+    <display-name>Bundesliga : Leverkusen vs Borussia Dortmund</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511133000 +0000" channel="460">
+    <title lang="it">inizierà alle 15:30.</title>
+    <desc lang="it">Bundesliga : Leverkusen vs Borussia Dortmund.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511133000 +0000" stop="20250511153000 +0000" channel="460">
+    <title lang="it">Bundesliga : Leverkusen vs Borussia Dortmund</title>
+    <desc lang="it">Bundesliga : Leverkusen vs Borussia Dortmund trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="882">
+    <display-name>UEFA Women's Under-17 Championship : Italy U17 vs Spain U17</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511140000 +0000" channel="882">
+    <title lang="it">inizierà alle 16:00.</title>
+    <desc lang="it">UEFA Women's Under-17 Championship : Italy U17 vs Spain U17.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511140000 +0000" stop="20250511160000 +0000" channel="882">
+    <title lang="it">UEFA Women's Under-17 Championship : Italy U17 vs Spain U17</title>
+    <desc lang="it">UEFA Women's Under-17 Championship : Italy U17 vs Spain U17 trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="461">
+    <display-name>England - Premier League : Liverpool vs Arsenal</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511153000 +0000" channel="461">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">England - Premier League : Liverpool vs Arsenal.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511153000 +0000" stop="20250511173000 +0000" channel="461">
+    <title lang="it">England - Premier League : Liverpool vs Arsenal</title>
+    <desc lang="it">England - Premier League : Liverpool vs Arsenal trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="11">
+    <display-name>Bundesliga : Eintracht Frankfurt vs St. Pauli</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511153000 +0000" channel="11">
+    <title lang="it">inizierà alle 17:30.</title>
+    <desc lang="it">Bundesliga : Eintracht Frankfurt vs St. Pauli.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511153000 +0000" stop="20250511173000 +0000" channel="11">
+    <title lang="it">Bundesliga : Eintracht Frankfurt vs St. Pauli</title>
+    <desc lang="it">Bundesliga : Eintracht Frankfurt vs St. Pauli trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="14">
+    <display-name>Italy - Serie A : Torino vs Inter</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511160000 +0000" channel="14">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">Italy - Serie A : Torino vs Inter.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511160000 +0000" stop="20250511180000 +0000" channel="14">
+    <title lang="it">Italy - Serie A : Torino vs Inter</title>
+    <desc lang="it">Italy - Serie A : Torino vs Inter trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511160000 +0000" channel="870">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">Italy - Serie A : Torino vs Inter.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511160000 +0000" stop="20250511180000 +0000" channel="870">
+    <title lang="it">Italy - Serie A : Torino vs Inter</title>
+    <desc lang="it">Italy - Serie A : Torino vs Inter trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511184500 +0000" channel="877">
+    <title lang="it">inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Napoli vs Genoa.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511184500 +0000" stop="20250511204500 +0000" channel="877">
+    <title lang="it">Italy - Serie A : Napoli vs Genoa</title>
+    <desc lang="it">Italy - Serie A : Napoli vs Genoa trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="575">
+    <display-name>MotoGP : French Grand Prix France Warm Up</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511073000 +0000" channel="575">
+    <title lang="it">inizierà alle 09:30.</title>
+    <desc lang="it">MotoGP : French Grand Prix France Warm Up.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511073000 +0000" stop="20250511093000 +0000" channel="575">
+    <title lang="it">MotoGP : French Grand Prix France Warm Up</title>
+    <desc lang="it">MotoGP : French Grand Prix France Warm Up trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511080000 +0000" channel="575">
+    <title lang="it">inizierà alle 10:00.</title>
+    <desc lang="it">Moto3 : French Grand Prix Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511080000 +0000" stop="20250511100000 +0000" channel="575">
+    <title lang="it">Moto3 : French Grand Prix Race</title>
+    <desc lang="it">Moto3 : French Grand Prix Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511100000 +0000" channel="575">
+    <title lang="it">inizierà alle 12:00.</title>
+    <desc lang="it">Moto 2 : French Grand Prix rance Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511100000 +0000" stop="20250511120000 +0000" channel="575">
+    <title lang="it">Moto 2 : French Grand Prix rance Race</title>
+    <desc lang="it">Moto 2 : French Grand Prix rance Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="879">
+    <display-name>World Championship Spain | MX2 | Race 1</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511110000 +0000" channel="879">
+    <title lang="it">inizierà alle 13:00.</title>
+    <desc lang="it">World Championship Spain | MX2 | Race 1.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511110000 +0000" stop="20250511130000 +0000" channel="879">
+    <title lang="it">World Championship Spain | MX2 | Race 1</title>
+    <desc lang="it">World Championship Spain | MX2 | Race 1 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511111500 +0000" channel="575">
+    <title lang="it">inizierà alle 13:15.</title>
+    <desc lang="it">MotoGP : French Grand Prix France Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511111500 +0000" stop="20250511131500 +0000" channel="575">
+    <title lang="it">MotoGP : French Grand Prix France Race</title>
+    <desc lang="it">MotoGP : French Grand Prix France Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511140000 +0000" channel="879">
+    <title lang="it">inizierà alle 16:00.</title>
+    <desc lang="it">World Championship Spain | MX2 | Race 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511140000 +0000" stop="20250511160000 +0000" channel="879">
+    <title lang="it">World Championship Spain | MX2 | Race 2</title>
+    <desc lang="it">World Championship Spain | MX2 | Race 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511110000 +0000" channel="879">
+    <title lang="it">inizierà alle 13:00.</title>
+    <desc lang="it">World Championship Spain | MX2 | Race 1.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511110000 +0000" stop="20250511130000 +0000" channel="879">
+    <title lang="it">World Championship Spain | MX2 | Race 1</title>
+    <desc lang="it">World Championship Spain | MX2 | Race 1 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="878">
+    <display-name>Lega A : Venezia vs Varese</display-name>
+  </channel>
+  <programme start="20250511000000 +0000" stop="20250511161500 +0000" channel="878">
+    <title lang="it">inizierà alle 18:15.</title>
+    <desc lang="it">Lega A : Venezia vs Varese.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511161500 +0000" stop="20250511181500 +0000" channel="878">
+    <title lang="it">Lega A : Venezia vs Varese</title>
+    <desc lang="it">Lega A : Venezia vs Varese trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511110000 +0000" channel="878">
+    <title lang="it">inizierà alle 13:00.</title>
+    <desc lang="it">Giro d'Italia | Stage 3 | Multi-Screen Men | Valona (160km).</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511110000 +0000" stop="20250511130000 +0000" channel="878">
+    <title lang="it">Giro d'Italia | Stage 3 | Multi-Screen Men | Valona (160km)</title>
+    <desc lang="it">Giro d'Italia | Stage 3 | Multi-Screen Men | Valona (160km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
+  <programme start="20250511000000 +0000" stop="20250511160000 +0000" channel="460">
+    <title lang="it">inizierà alle 18:00.</title>
+    <desc lang="it">EHF Euro Cup : Serbia vs Italy.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250511160000 +0000" stop="20250511180000 +0000" channel="460">
+    <title lang="it">EHF Euro Cup : Serbia vs Italy</title>
+    <desc lang="it">EHF Euro Cup : Serbia vs Italy trasmesso in diretta.</desc>
+    <category lang="it">Handball</category>
   </programme>
 </tv>
