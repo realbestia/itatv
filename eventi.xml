@@ -246,19 +246,6 @@
     <desc lang="it">Italy - Serie A : Empoli vs Parma trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="575">
-    <display-name>Moto3 : French Grand Prix Free Qualifying</display-name>
-  </channel>
-  <programme start="20250510000000 +0000" stop="20250510104500 +0000" channel="575">
-    <title lang="it">inizierà alle 12:45.</title>
-    <desc lang="it">Moto3 : French Grand Prix Free Qualifying.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510104500 +0000" stop="20250510124500 +0000" channel="575">
-    <title lang="it">Moto3 : French Grand Prix Free Qualifying</title>
-    <desc lang="it">Moto3 : French Grand Prix Free Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="879">
     <display-name>FIA WEC | Round 3 | 6 Hours of Spa-Francorchamps Race</display-name>
   </channel>
@@ -272,6 +259,9 @@
     <desc lang="it">FIA WEC | Round 3 | 6 Hours of Spa-Francorchamps Race trasmesso in diretta.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="575">
+    <display-name>Moto 2 : French Grand Prix Qualifying</display-name>
+  </channel>
   <programme start="20250510000000 +0000" stop="20250510114000 +0000" channel="575">
     <title lang="it">inizierà alle 13:40.</title>
     <desc lang="it">Moto 2 : French Grand Prix Qualifying.</desc>
@@ -324,16 +314,6 @@
     <title lang="it">Lega A : Basket Napoli vs Trento</title>
     <desc lang="it">Lega A : Basket Napoli vs Trento trasmesso in diretta.</desc>
     <category lang="it">Basketball</category>
-  </programme>
-  <programme start="20250510000000 +0000" stop="20250510110000 +0000" channel="878">
-    <title lang="it">inizierà alle 13:00.</title>
-    <desc lang="it">Giro d'Italia | Stage 2 Men | Tirana (ITT, 13.7km).</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250510110000 +0000" stop="20250510130000 +0000" channel="878">
-    <title lang="it">Giro d'Italia | Stage 2 Men | Tirana (ITT, 13.7km)</title>
-    <desc lang="it">Giro d'Italia | Stage 2 Men | Tirana (ITT, 13.7km) trasmesso in diretta.</desc>
-    <category lang="it">Cycling</category>
   </programme>
   <programme start="20250510000000 +0000" stop="20250510161500 +0000" channel="462">
     <title lang="it">inizierà alle 18:15.</title>
