@@ -1,24 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Como vs Cagliari - 10/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Como vs Cagliari - 10/05/2025 15:00
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
-#EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie A (women) : Fiorentina vs Roma - 10/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A (women) : Fiorentina vs Roma - 10/05/2025 15:00
-https://ddy6new.newkso.ru/ddy6/premium55/mono.m3u8
-#EXTINF:-1 tvg-id="19" tvg-name="Italy - Serie C : Messina vs Foggia - 10/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Messina vs Foggia - 10/05/2025 15:00
-https://nfsnew.newkso.ru/nfs/premium19/mono.m3u8
-#EXTINF:-1 tvg-id="20" tvg-name="Bundesliga : Werder Bremen vs RB Leipzig - 10/05/2025 15:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : Werder Bremen vs RB Leipzig - 10/05/2025 15:30
-https://nfsnew.newkso.ru/nfs/premium20/mono.m3u8
-#EXTINF:-1 tvg-id="462" tvg-name="Bundesliga : Werder Bremen vs RB Leipzig - 10/05/2025 15:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Bundesliga : Werder Bremen vs RB Leipzig - 10/05/2025 15:30
-https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
-#EXTINF:-1 tvg-id="27" tvg-name="England - Premier League : Fulham vs Everton - 10/05/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Fulham vs Everton - 10/05/2025 16:00
-https://nfsnew.newkso.ru/nfs/premium27/mono.m3u8
-#EXTINF:-1 tvg-id="28" tvg-name="England - Premier League : Ipswich Town vs Brentford - 10/05/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Ipswich Town vs Brentford - 10/05/2025 16:00
-https://nfsnew.newkso.ru/nfs/premium28/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Southampton vs Manchester City - 10/05/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Southampton vs Manchester City - 10/05/2025 16:00
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
-#EXTINF:-1 tvg-id="30" tvg-name="England - Premier League : Wolves vs Brighton - 10/05/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Wolves vs Brighton - 10/05/2025 16:00
-https://nfsnew.newkso.ru/nfs/premium30/mono.m3u8
 #EXTINF:-1 tvg-id="19" tvg-name="Italy - Serie C : Pro Patria vs Pro Vercelli - 10/05/2025 17:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie C : Pro Patria vs Pro Vercelli - 10/05/2025 17:30
 https://nfsnew.newkso.ru/nfs/premium19/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Lazio vs Juventus - 10/05/2025 18:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Lazio vs Juventus - 10/05/2025 18:00
@@ -45,8 +27,6 @@ https://ddy6new.newkso.ru/ddy6/premium461/mono.m3u8
 https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
 http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="575" tvg-name="MotoGP : French Grand Prix Sprint Race - 10/05/2025 14:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MotoGP : French Grand Prix Sprint Race - 10/05/2025 14:45
-https://nfsnew.newkso.ru/nfs/premium575/mono.m3u8
 #EXTINF:-1 tvg-id="879" tvg-name="FIA WEC | 6 Hours of Spa-Francorchamps Course - 10/05/2025 19:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", FIA WEC | 6 Hours of Spa-Francorchamps Course - 10/05/2025 19:00
 https://windnew.newkso.ru/wind/premium879/mono.m3u8
 #EXTINF:-1 tvg-name="----- Baseball -----" group-title="Eventi", ----- Baseball -----
