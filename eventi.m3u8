@@ -1,10 +1,6 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Udinese vs Monza - 11/05/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Udinese vs Monza - 11/05/2025 12:30
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
-#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Newcastle vs Chelsea - 11/05/2025 13:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Newcastle vs Chelsea - 11/05/2025 13:00
-https://windnew.newkso.ru/wind/premium870/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Verona vs Lecce - 11/05/2025 15:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Verona vs Lecce - 11/05/2025 15:00
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-id="26" tvg-name="England - Premier League : Manchester United vs West Ham - 11/05/2025 15:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Manchester United vs West Ham - 11/05/2025 15:15
@@ -29,21 +25,11 @@ https://windnew.newkso.ru/wind/premium870/mono.m3u8
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi", ----- Motorsport -----
 http://example.com/Motorsport.m3u8
-#EXTINF:-1 tvg-id="879" tvg-name="World Championship Spain | MX2 | Race 1 - 11/05/2025 13:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Championship Spain | MX2 | Race 1 - 11/05/2025 13:00
-https://windnew.newkso.ru/wind/premium879/mono.m3u8
-#EXTINF:-1 tvg-id="575" tvg-name="MotoGP : French Grand Prix France Race - 11/05/2025 13:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", MotoGP : French Grand Prix France Race - 11/05/2025 13:15
-https://nfsnew.newkso.ru/nfs/premium575/mono.m3u8
 #EXTINF:-1 tvg-id="879" tvg-name="World Championship Spain | MX2 | Race 2 - 11/05/2025 16:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Championship Spain | MX2 | Race 2 - 11/05/2025 16:00
-https://windnew.newkso.ru/wind/premium879/mono.m3u8
-#EXTINF:-1 tvg-id="879" tvg-name="World Championship Spain | MX2 | Race 1 - 11/05/2025 13:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", World Championship Spain | MX2 | Race 1 - 11/05/2025 13:00
 https://windnew.newkso.ru/wind/premium879/mono.m3u8
 #EXTINF:-1 tvg-name="----- Basketball -----" group-title="Eventi", ----- Basketball -----
 http://example.com/Basketball.m3u8
 #EXTINF:-1 tvg-id="878" tvg-name="Lega A : Venezia vs Varese - 11/05/2025 18:15" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Lega A : Venezia vs Varese - 11/05/2025 18:15
-https://windnew.newkso.ru/wind/premium878/mono.m3u8
-#EXTINF:-1 tvg-name="----- Cycling -----" group-title="Eventi", ----- Cycling -----
-http://example.com/Cycling.m3u8
-#EXTINF:-1 tvg-id="878" tvg-name="Giro d'Italia | Stage 3 | Multi-Screen Men | Valona (160km) - 11/05/2025 13:00" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Giro d'Italia | Stage 3 | Multi-Screen Men | Valona (160km) - 11/05/2025 13:00
 https://windnew.newkso.ru/wind/premium878/mono.m3u8
 #EXTINF:-1 tvg-name="----- Handball -----" group-title="Eventi", ----- Handball -----
 http://example.com/Handball.m3u8
