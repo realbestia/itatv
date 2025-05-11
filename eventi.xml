@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="14">
-    <display-name>Italy - Serie A : Torino vs Inter</display-name>
-  </channel>
-  <programme start="20250511000000 +0000" stop="20250511160000 +0000" channel="14">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">Italy - Serie A : Torino vs Inter.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511160000 +0000" stop="20250511180000 +0000" channel="14">
-    <title lang="it">Italy - Serie A : Torino vs Inter</title>
-    <desc lang="it">Italy - Serie A : Torino vs Inter trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="870">
-    <display-name>Italy - Serie A : Torino vs Inter</display-name>
-  </channel>
-  <programme start="20250511000000 +0000" stop="20250511160000 +0000" channel="870">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">Italy - Serie A : Torino vs Inter.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511160000 +0000" stop="20250511180000 +0000" channel="870">
-    <title lang="it">Italy - Serie A : Torino vs Inter</title>
-    <desc lang="it">Italy - Serie A : Torino vs Inter trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="877">
     <display-name>Italy - Serie A : Napoli vs Genoa</display-name>
   </channel>
@@ -38,31 +12,5 @@
     <title lang="it">Italy - Serie A : Napoli vs Genoa</title>
     <desc lang="it">Italy - Serie A : Napoli vs Genoa trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="878">
-    <display-name>Lega A : Venezia vs Varese</display-name>
-  </channel>
-  <programme start="20250511000000 +0000" stop="20250511161500 +0000" channel="878">
-    <title lang="it">inizierà alle 18:15.</title>
-    <desc lang="it">Lega A : Venezia vs Varese.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511161500 +0000" stop="20250511181500 +0000" channel="878">
-    <title lang="it">Lega A : Venezia vs Varese</title>
-    <desc lang="it">Lega A : Venezia vs Varese trasmesso in diretta.</desc>
-    <category lang="it">Basketball</category>
-  </programme>
-  <channel id="460">
-    <display-name>EHF Euro Cup : Serbia vs Italy</display-name>
-  </channel>
-  <programme start="20250511000000 +0000" stop="20250511160000 +0000" channel="460">
-    <title lang="it">inizierà alle 18:00.</title>
-    <desc lang="it">EHF Euro Cup : Serbia vs Italy.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511160000 +0000" stop="20250511180000 +0000" channel="460">
-    <title lang="it">EHF Euro Cup : Serbia vs Italy</title>
-    <desc lang="it">EHF Euro Cup : Serbia vs Italy trasmesso in diretta.</desc>
-    <category lang="it">Handball</category>
   </programme>
 </tv>
