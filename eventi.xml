@@ -158,18 +158,8 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="575">
-    <display-name>Moto3 : French Grand Prix Race</display-name>
+    <display-name>Moto 2 : French Grand Prix rance Race</display-name>
   </channel>
-  <programme start="20250511000000 +0000" stop="20250511080000 +0000" channel="575">
-    <title lang="it">inizierà alle 10:00.</title>
-    <desc lang="it">Moto3 : French Grand Prix Race.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511080000 +0000" stop="20250511100000 +0000" channel="575">
-    <title lang="it">Moto3 : French Grand Prix Race</title>
-    <desc lang="it">Moto3 : French Grand Prix Race trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250511000000 +0000" stop="20250511100000 +0000" channel="575">
     <title lang="it">inizierà alle 12:00.</title>
     <desc lang="it">Moto 2 : French Grand Prix rance Race.</desc>
