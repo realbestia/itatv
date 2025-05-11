@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="882">
-    <display-name>UEFA Women's Under-17 Championship : Italy U17 vs Spain U17</display-name>
-  </channel>
-  <programme start="20250511000000 +0000" stop="20250511140000 +0000" channel="882">
-    <title lang="it">inizierà alle 16:00.</title>
-    <desc lang="it">UEFA Women's Under-17 Championship : Italy U17 vs Spain U17.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511140000 +0000" stop="20250511160000 +0000" channel="882">
-    <title lang="it">UEFA Women's Under-17 Championship : Italy U17 vs Spain U17</title>
-    <desc lang="it">UEFA Women's Under-17 Championship : Italy U17 vs Spain U17 trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="461">
     <display-name>England - Premier League : Liverpool vs Arsenal</display-name>
   </channel>
@@ -77,19 +64,6 @@
     <title lang="it">Italy - Serie A : Napoli vs Genoa</title>
     <desc lang="it">Italy - Serie A : Napoli vs Genoa trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="879">
-    <display-name>World Championship Spain | MX2 | Race 2</display-name>
-  </channel>
-  <programme start="20250511000000 +0000" stop="20250511140000 +0000" channel="879">
-    <title lang="it">inizierà alle 16:00.</title>
-    <desc lang="it">World Championship Spain | MX2 | Race 2.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511140000 +0000" stop="20250511160000 +0000" channel="879">
-    <title lang="it">World Championship Spain | MX2 | Race 2</title>
-    <desc lang="it">World Championship Spain | MX2 | Race 2 trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
   </programme>
   <channel id="878">
     <display-name>Lega A : Venezia vs Varese</display-name>
