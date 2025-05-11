@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="461">
-    <display-name>England - Premier League : Liverpool vs Arsenal</display-name>
-  </channel>
-  <programme start="20250511000000 +0000" stop="20250511153000 +0000" channel="461">
-    <title lang="it">inizierà alle 17:30.</title>
-    <desc lang="it">England - Premier League : Liverpool vs Arsenal.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511153000 +0000" stop="20250511173000 +0000" channel="461">
-    <title lang="it">England - Premier League : Liverpool vs Arsenal</title>
-    <desc lang="it">England - Premier League : Liverpool vs Arsenal trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="11">
-    <display-name>Bundesliga : Eintracht Frankfurt vs St. Pauli</display-name>
-  </channel>
-  <programme start="20250511000000 +0000" stop="20250511153000 +0000" channel="11">
-    <title lang="it">inizierà alle 17:30.</title>
-    <desc lang="it">Bundesliga : Eintracht Frankfurt vs St. Pauli.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250511153000 +0000" stop="20250511173000 +0000" channel="11">
-    <title lang="it">Bundesliga : Eintracht Frankfurt vs St. Pauli</title>
-    <desc lang="it">Bundesliga : Eintracht Frankfurt vs St. Pauli trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="14">
     <display-name>Italy - Serie A : Torino vs Inter</display-name>
   </channel>
