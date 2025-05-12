@@ -1,7 +1,31 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Venezia vs Fiorentina - 12/05/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Venezia vs Fiorentina - 12/05/2025 18:30
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
 #EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Atalanta vs Roma - 12/05/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Atalanta vs Roma - 12/05/2025 20:45
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="55" tvg-name="Italy - Serie B : Brescia vs Reggiana - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Brescia vs Reggiana - 13/05/2025 20:30
+https://ddy6new.newkso.ru/ddy6/premium55/mono.m3u8
+#EXTINF:-1 tvg-id="59" tvg-name="Italy - Serie B : Juve Stabia vs Sampdoria - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Juve Stabia vs Sampdoria - 13/05/2025 20:30
+https://windnew.newkso.ru/wind/premium59/mono.m3u8
+#EXTINF:-1 tvg-id="68" tvg-name="Italy - Serie B : Cittadella vs Salernitana - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Cittadella vs Salernitana - 13/05/2025 20:30
+https://windnew.newkso.ru/wind/premium68/mono.m3u8
+#EXTINF:-1 tvg-id="69" tvg-name="Italy - Serie B : Mantova vs Catanzaro - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Mantova vs Catanzaro - 13/05/2025 20:30
+https://ddy6new.newkso.ru/ddy6/premium69/mono.m3u8
+#EXTINF:-1 tvg-id="76" tvg-name="Italy - Serie B : Modena vs Cesena - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Modena vs Cesena - 13/05/2025 20:30
+https://windnew.newkso.ru/wind/premium76/mono.m3u8
+#EXTINF:-1 tvg-id="77" tvg-name="Italy - Serie B : Palermo vs Carrarese - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Palermo vs Carrarese - 13/05/2025 20:30
+https://nfsnew.newkso.ru/nfs/premium77/mono.m3u8
+#EXTINF:-1 tvg-id="86" tvg-name="Italy - Serie B : Pisa vs Cremonese - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Pisa vs Cremonese - 13/05/2025 20:30
+https://dokko1new.newkso.ru/dokko1/premium86/mono.m3u8
+#EXTINF:-1 tvg-id="105" tvg-name="Italy - Serie B : Sassuolo vs Frosinone - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Sassuolo vs Frosinone - 13/05/2025 20:30
+https://ddy6new.newkso.ru/ddy6/premium105/mono.m3u8
+#EXTINF:-1 tvg-id="106" tvg-name="Italy - Serie B : Spezia vs Cosenza - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Spezia vs Cosenza - 13/05/2025 20:30
+https://ddy6new.newkso.ru/ddy6/premium106/mono.m3u8
+#EXTINF:-1 tvg-id="107" tvg-name="Italy - Serie B : Südtirol vs Bari 1908 - 13/05/2025 20:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie B : Südtirol vs Bari 1908 - 13/05/2025 20:30
+https://ddy6new.newkso.ru/ddy6/premium107/mono.m3u8
+#EXTINF:-1 tvg-name="----- Cycling -----" group-title="Eventi", ----- Cycling -----
+http://example.com/Cycling.m3u8
+#EXTINF:-1 tvg-id="878" tvg-name="Giro d'Italia | Stage 4 Men | Alberobello – Lecce (187km) - 13/05/2025 12:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Giro d'Italia | Stage 4 Men | Alberobello – Lecce (187km) - 13/05/2025 12:30
+https://windnew.newkso.ru/wind/premium878/mono.m3u8
