@@ -1,1 +1,7 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Venezia vs Fiorentina - 12/05/2025 18:30" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Venezia vs Fiorentina - 12/05/2025 18:30
+https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
+#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Atalanta vs Roma - 12/05/2025 20:45" group-title="Eventi" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Italy - Serie A : Atalanta vs Roma - 12/05/2025 20:45
+https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
