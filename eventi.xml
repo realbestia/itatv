@@ -130,6 +130,19 @@
     <desc lang="it">Italy - Serie B : Südtirol vs Bari 1908 trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="882">
+    <display-name>Italy A1 Women : PF Schio vs. Umana Venezia</display-name>
+  </channel>
+  <programme start="20250513000000 +0000" stop="20250513183000 +0000" channel="882">
+    <title lang="it">inizierà alle 20:30.</title>
+    <desc lang="it">Italy A1 Women : PF Schio vs. Umana Venezia.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250513183000 +0000" stop="20250513203000 +0000" channel="882">
+    <title lang="it">Italy A1 Women : PF Schio vs. Umana Venezia</title>
+    <desc lang="it">Italy A1 Women : PF Schio vs. Umana Venezia trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
   <channel id="878">
     <display-name>Giro d'Italia | Stage 4 Men | Alberobello – Lecce (187km)</display-name>
   </channel>
