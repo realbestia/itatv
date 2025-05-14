@@ -56,8 +56,8 @@ def generate_epg_xml(json_data):
                         channel_ids.add(channel_id)
 
                     # Aggiungi un annuncio che parte da mezzanotte fino all'inizio evento
-                    announcement_start_time = datetime.combine(event_date, datetime.min.time())
-                    announcement_stop_time = event_datetime
+                    announcement_start_time = datetime.combine(event_date, datetime.min.time()) + timedelta(hours=2)  # Aggiunge 2 ore
+                    announcement_stop_time = event_datetime + timedelta(hours=2)  # Aggiunge 2 ore
 
                     epg_content += f'  <programme start="{format_xmltv_time(announcement_start_time)}" stop="{format_xmltv_time(announcement_stop_time)}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">inizierà alle {(event_datetime + timedelta(hours=2)).strftime("%H:%M")}.</title>\n'
@@ -66,10 +66,10 @@ def generate_epg_xml(json_data):
                     epg_content += f'  </programme>\n'
 
                     # Evento principale
-                    start_time = format_xmltv_time(event_datetime)
-                    stop_time = format_xmltv_time(event_datetime + timedelta(hours=2))
+                    start_time = event_datetime + timedelta(hours=2)  # Aggiunge 2 ore
+                    stop_time = event_datetime + timedelta(hours=2, minutes=120)  # Aggiunge 2 ore
 
-                    epg_content += f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
+                    epg_content += f'  <programme start="{format_xmltv_time(start_time)}" stop="{format_xmltv_time(stop_time)}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">{event_name}</title>\n'
                     epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
                     epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'
