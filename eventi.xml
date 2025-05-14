@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="877">
-    <display-name>Spain - La Liga : Villarreal vs Leganés</display-name>
-  </channel>
-  <programme start="20250514000000 +0000" stop="20250514170000 +0000" channel="877">
-    <title lang="it">inizierà alle 19:00.</title>
-    <desc lang="it">Spain - La Liga : Villarreal vs Leganés.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250514170000 +0000" stop="20250514190000 +0000" channel="877">
-    <title lang="it">Spain - La Liga : Villarreal vs Leganés</title>
-    <desc lang="it">Spain - La Liga : Villarreal vs Leganés trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="30">
     <display-name>Italy - Serie C : FeralpiSalò vs Crotone</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514180000 +0000" channel="30">
+  <programme start="20250514000000 +0200" stop="20250514180000 +0200" channel="30">
     <title lang="it">inizierà alle 20:00.</title>
     <desc lang="it">Italy - Serie C : FeralpiSalò vs Crotone.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250514180000 +0000" stop="20250514200000 +0000" channel="30">
+  <programme start="20250514180000 +0200" stop="20250514200000 +0200" channel="30">
     <title lang="it">Italy - Serie C : FeralpiSalò vs Crotone</title>
     <desc lang="it">Italy - Serie C : FeralpiSalò vs Crotone trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
@@ -29,12 +16,12 @@
   <channel id="882">
     <display-name>Italy - Serie C : FeralpiSalò vs Crotone</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514180000 +0000" channel="882">
+  <programme start="20250514000000 +0200" stop="20250514180000 +0200" channel="882">
     <title lang="it">inizierà alle 20:00.</title>
     <desc lang="it">Italy - Serie C : FeralpiSalò vs Crotone.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250514180000 +0000" stop="20250514200000 +0000" channel="882">
+  <programme start="20250514180000 +0200" stop="20250514200000 +0200" channel="882">
     <title lang="it">Italy - Serie C : FeralpiSalò vs Crotone</title>
     <desc lang="it">Italy - Serie C : FeralpiSalò vs Crotone trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
@@ -42,12 +29,12 @@
   <channel id="55">
     <display-name>Italy - Serie C : Sassari Torres vs Atalanta II</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514180000 +0000" channel="55">
+  <programme start="20250514000000 +0200" stop="20250514180000 +0200" channel="55">
     <title lang="it">inizierà alle 20:00.</title>
     <desc lang="it">Italy - Serie C : Sassari Torres vs Atalanta II.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250514180000 +0000" stop="20250514200000 +0000" channel="55">
+  <programme start="20250514180000 +0200" stop="20250514200000 +0200" channel="55">
     <title lang="it">Italy - Serie C : Sassari Torres vs Atalanta II</title>
     <desc lang="it">Italy - Serie C : Sassari Torres vs Atalanta II trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
@@ -55,12 +42,12 @@
   <channel id="9">
     <display-name>Italy - Serie C : Monopoli vs Giana Erminio</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514180000 +0000" channel="9">
+  <programme start="20250514000000 +0200" stop="20250514180000 +0200" channel="9">
     <title lang="it">inizierà alle 20:00.</title>
     <desc lang="it">Italy - Serie C : Monopoli vs Giana Erminio.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250514180000 +0000" stop="20250514200000 +0000" channel="9">
+  <programme start="20250514180000 +0200" stop="20250514200000 +0200" channel="9">
     <title lang="it">Italy - Serie C : Monopoli vs Giana Erminio</title>
     <desc lang="it">Italy - Serie C : Monopoli vs Giana Erminio trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
@@ -68,12 +55,12 @@
   <channel id="10">
     <display-name>Italy - Serie C : Rimini vs Vis Pesaro</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514180000 +0000" channel="10">
+  <programme start="20250514000000 +0200" stop="20250514180000 +0200" channel="10">
     <title lang="it">inizierà alle 20:00.</title>
     <desc lang="it">Italy - Serie C : Rimini vs Vis Pesaro.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250514180000 +0000" stop="20250514200000 +0000" channel="10">
+  <programme start="20250514180000 +0200" stop="20250514200000 +0200" channel="10">
     <title lang="it">Italy - Serie C : Rimini vs Vis Pesaro</title>
     <desc lang="it">Italy - Serie C : Rimini vs Vis Pesaro trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
@@ -81,12 +68,12 @@
   <channel id="11">
     <display-name>Italy - Serie C : Pescara vs Catania</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514180000 +0000" channel="11">
+  <programme start="20250514000000 +0200" stop="20250514180000 +0200" channel="11">
     <title lang="it">inizierà alle 20:00.</title>
     <desc lang="it">Italy - Serie C : Pescara vs Catania.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250514180000 +0000" stop="20250514200000 +0000" channel="11">
+  <programme start="20250514180000 +0200" stop="20250514200000 +0200" channel="11">
     <title lang="it">Italy - Serie C : Pescara vs Catania</title>
     <desc lang="it">Italy - Serie C : Pescara vs Catania trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
@@ -94,22 +81,25 @@
   <channel id="12">
     <display-name>Coppa Italia : Milan vs Bologna</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514190000 +0000" channel="12">
+  <programme start="20250514000000 +0200" stop="20250514190000 +0200" channel="12">
     <title lang="it">inizierà alle 21:00.</title>
     <desc lang="it">Coppa Italia : Milan vs Bologna.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250514190000 +0000" stop="20250514210000 +0000" channel="12">
+  <programme start="20250514190000 +0200" stop="20250514210000 +0200" channel="12">
     <title lang="it">Coppa Italia : Milan vs Bologna</title>
     <desc lang="it">Coppa Italia : Milan vs Bologna trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <programme start="20250514000000 +0000" stop="20250514193000 +0000" channel="877">
+  <channel id="877">
+    <display-name>Spain - La Liga : Real Madrid vs Mallorca</display-name>
+  </channel>
+  <programme start="20250514000000 +0200" stop="20250514193000 +0200" channel="877">
     <title lang="it">inizierà alle 21:30.</title>
     <desc lang="it">Spain - La Liga : Real Madrid vs Mallorca.</desc>
     <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250514193000 +0000" stop="20250514213000 +0000" channel="877">
+  <programme start="20250514193000 +0200" stop="20250514213000 +0200" channel="877">
     <title lang="it">Spain - La Liga : Real Madrid vs Mallorca</title>
     <desc lang="it">Spain - La Liga : Real Madrid vs Mallorca trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
