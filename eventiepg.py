@@ -6,10 +6,6 @@ from datetime import datetime, timedelta
 def clean_text(text):
     return re.sub(r'</?span.*?>', '', text)  # Rimuove tag HTML, incluso <span>
 
-# Funzione per formattare la data in XMLTV con fuso orario italiano (ora legale)
-def format_xmltv_time(dt):
-    return dt.strftime("%Y%m%d%H%M%S") + " +0200"
-
 # Funzione per generare il file EPG XML
 def generate_epg_xml(json_data):
     epg_content = '<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n'
@@ -51,28 +47,29 @@ def generate_epg_xml(json_data):
                     # Se il canale non è stato ancora aggiunto, lo aggiunge
                     if channel_id not in channel_ids:
                         epg_content += f'  <channel id="{channel_id}">\n'
-                        epg_content += f'    <display-name>{event_name}</display-name>\n'
+                        epg_content += f'    <display-name>{event_name}</display-name>\n'  # Usa event_name per <display-name>
                         epg_content += f'  </channel>\n'
                         channel_ids.add(channel_id)
 
-                    # Aggiungi un annuncio che parte da mezzanotte fino all'inizio evento
-                    announcement_start_time = datetime.combine(event_date, datetime.min.time()) + timedelta(hours=2)  # Aggiunge 2 ore
-                    announcement_stop_time = event_datetime + timedelta(hours=2)  # Aggiunge 2 ore
+                    # Aggiungi un annuncio che parte da mezzanotte del giorno dell'evento
+                    announcement_start_time = datetime.combine(event_date, datetime.min.time())  # 00:00 dello stesso giorno
+                    announcement_stop_time = event_datetime
 
-                    epg_content += f'  <programme start="{format_xmltv_time(announcement_start_time)}" stop="{format_xmltv_time(announcement_stop_time)}" channel="{channel_id}">\n'
+                    epg_content += f'  <programme start="{announcement_start_time.strftime("%Y%m%d%H%M%S") + " +0000"}" stop="{announcement_stop_time.strftime("%Y%m%d%H%M%S") + " +0000"}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">inizierà alle {(event_datetime + timedelta(hours=2)).strftime("%H:%M")}.</title>\n'
                     epg_content += f'    <desc lang="it">{event_name}.</desc>\n'
                     epg_content += f'    <category lang="it">Annuncio</category>\n'
                     epg_content += f'  </programme>\n'
 
-                    # Evento principale
-                    start_time = event_datetime + timedelta(hours=2)  # Aggiunge 2 ore all'ora di inizio dell'evento
-                    stop_time = event_datetime + timedelta(hours=2, minutes=120)  # Aggiunge 2 ore all'ora di fine
+                    # Formatta start e stop per l'evento principale
+                    start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0000"
+                    stop_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0000"
 
-                    epg_content += f'  <programme start="{format_xmltv_time(start_time)}" stop="{format_xmltv_time(stop_time)}" channel="{channel_id}">\n'
+                    # Aggiunge l'evento principale nel file EPG
+                    epg_content += f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">{event_name}</title>\n'
                     epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
-                    epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'
+                    epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'  # Pulisce la categoria
                     epg_content += f'  </programme>\n'
 
     epg_content += "</tv>\n"
