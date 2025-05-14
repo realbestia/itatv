@@ -29,7 +29,7 @@ def generate_epg_xml(json_data):
             for event_info in events:
                 time_str = event_info["time"]
                 event_name = clean_text(event_info["event"])  # Pulisce il nome evento
-                event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
+                event_desc = event_info.get("description", f"{event_name} LIVE.")
 
                 try:
                     event_time = datetime.strptime(time_str, "%H:%M").time()
