@@ -113,7 +113,7 @@ def generate_m3u8_from_json(json_data):
 
             # Aggiunge la categoria solo se ha eventi con canali validi
             if valid_events:
-                m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi\", ----- {category_name} -----\n"
+                m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi Live\", ----- {category_name} -----\n"
                 m3u8_content += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
 
                 for event in valid_events:
@@ -121,7 +121,7 @@ def generate_m3u8_from_json(json_data):
                     tvg_name = clean_text(tvg_name)
 
                     for channel in event["channels"]:
-                        m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel['channel_id']}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
+                        m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel['channel_id']}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi Live\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
                         m3u8_content += f"{channel['stream_url']}\n"
 
     return m3u8_content
