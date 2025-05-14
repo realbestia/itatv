@@ -26,12 +26,12 @@ jobs:
       - name: Esegui lo script
         run: python deevents.py
 
-      - name: Verifica se eventi.m3u8 è stato generato
+      - name: Verifica se eventi.m3u è stato generato
         run: |
-          if [ -f "deevents.m3u8" ]; then
-            echo "Il file deevents.m3u8 è stato generato."
+          if [ -f "deevents.m3u" ]; then
+            echo "Il file deevents.m3u è stato generato."
           else
-            echo "Il file deevents.m3u8 non esiste. Esco."
+            echo "Il file deevents.m3u non esiste. Esco."
             exit 0  # Esci senza fare commit o push
           fi
 
