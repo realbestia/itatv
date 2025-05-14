@@ -113,7 +113,7 @@ def generate_m3u8_from_json(json_data):
 
             # Aggiunge la categoria solo se ha eventi con canali validi
             if valid_events:
-                m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Eventi\", ----- {category_name} -----\n"
+                m3u8_content += f"#EXTINF:-1 tvg-name=\"----- {category_name} -----\" group-title=\"Live Events\", ----- {category_name} -----\n"
                 m3u8_content += f"http://example.com/{category_name.replace(' ', '_')}.m3u8\n"
 
                 for event in valid_events:
@@ -121,8 +121,8 @@ def generate_m3u8_from_json(json_data):
                     tvg_name = clean_text(tvg_name)
 
                     for channel in event["channels"]:
-                        m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel['channel_id']}\" tvg-name=\"{tvg_name}\" group-title=\"Eventi\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
-                        m3u8_content += f"{channel['stream_url']}\n"
+                        m3u8_content += f"#EXTINF:-1 tvg-id=\"{channel['channel_id']}\" tvg-name=\"{tvg_name}\" group-title=\"Live Events\" tvg-logo=\"https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png\", {tvg_name}\n"
+                        m3u8_content += f"https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d={channel['stream_url']}&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz\n\n"
 
     return m3u8_content
 
