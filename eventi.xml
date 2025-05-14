@@ -1,29 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="12">
-    <display-name>Coppa Italia : Milan vs Bologna</display-name>
-  </channel>
-  <programme start="20250514000000 +0000" stop="20250514190000 +0200" channel="12">
-    <title lang="it">inizierà alle 21:00.</title>
-    <desc lang="it">Coppa Italia : Milan vs Bologna.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250514190000 +0200" stop="20250514210000 +0200" channel="12">
-    <title lang="it">Coppa Italia : Milan vs Bologna</title>
-    <desc lang="it">Coppa Italia : Milan vs Bologna trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="877">
-    <display-name>Spain - La Liga : Real Madrid vs Mallorca</display-name>
-  </channel>
-  <programme start="20250514000000 +0000" stop="20250514193000 +0200" channel="877">
-    <title lang="it">inizierà alle 21:30.</title>
-    <desc lang="it">Spain - La Liga : Real Madrid vs Mallorca.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250514193000 +0200" stop="20250514213000 +0200" channel="877">
-    <title lang="it">Spain - La Liga : Real Madrid vs Mallorca</title>
-    <desc lang="it">Spain - La Liga : Real Madrid vs Mallorca trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
 </tv>
