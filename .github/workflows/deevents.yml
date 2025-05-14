@@ -2,7 +2,7 @@ name: Esegui deevents.py ogni 2 ore
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Esegue ogni 2 ore
+    - cron: '57 */1 * * *'  # Esegue ogni 2 ore
   workflow_dispatch:  # Permette di eseguire manualmente
 
 permissions:
