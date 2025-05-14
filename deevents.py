@@ -55,7 +55,7 @@ def get_stream_link(channel_id, max_retries=3):
 
     return None  # Se tutte le prove falliscono
 
-# Funzione per generare il file M3U8
+# Funzione per generare il file M3U
 def generate_m3u8_from_json(json_data):
     m3u8_content = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/deevents.xml"\n'
     current_datetime = datetime.now()
@@ -81,7 +81,7 @@ def generate_m3u8_from_json(json_data):
                 event_name = event_info["event"]
 
                 try:
-                    event_time = (datetime.strptime(time_str, "%H:%M") + timedelta(hours=2)).time()  # Aggiungi 2 ora
+                    event_time = (datetime.strptime(time_str, "%H:%M") + timedelta(hours=2)).time()  # Aggiungi 2 ore
                     event_datetime = datetime.combine(event_date, event_time)
                 except ValueError:
                     continue
@@ -126,7 +126,7 @@ def generate_m3u8_from_json(json_data):
 
     return m3u8_content
 
-# Funzione per caricare e filtrare il JSON (solo canali italiani)
+# Funzione per caricare e filtrare il JSON (solo canali DE)
 def load_json(json_file):
     with open(json_file, "r", encoding="utf-8") as file:
         json_data = json.load(file)
@@ -159,14 +159,14 @@ def load_json(json_file):
 
     return filtered_data
 
-# Carica il JSON e filtra i canali italiani
+# Carica il JSON e filtra i canali
 json_data = load_json("daddyliveSchedule.json")
 
-# Genera il file M3U8
+# Genera il file M3U
 m3u8_content = generate_m3u8_from_json(json_data)
 
-# Salva il file M3U8
-with open("deevents.m3u8", "w", encoding="utf-8") as file:
+# Salva il file M3U
+with open("deevents.m3u", "w", encoding="utf-8") as file:
     file.write(m3u8_content)
 
-print("✅ Generazione completata! Il file 'deevents.m3u8' è pronto.")
+print("✅ Generazione completata! Il file 'deevents.m3u' è pronto.")
