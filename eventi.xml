@@ -1,3 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="877">
+    <display-name>Spain - La Liga : Osasuna vs Atlético Madrid</display-name>
+  </channel>
+  <programme start="20250515000000 +0000" stop="20250515170000 +0200" channel="877">
+    <title lang="it">inizierà alle 19:00.</title>
+    <desc lang="it">Spain - La Liga : Osasuna vs Atlético Madrid.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250515170000 +0200" stop="20250515190000 +0200" channel="877">
+    <title lang="it">Spain - La Liga : Osasuna vs Atlético Madrid</title>
+    <desc lang="it">Spain - La Liga : Osasuna vs Atlético Madrid trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250515000000 +0000" stop="20250515193000 +0200" channel="877">
+    <title lang="it">inizierà alle 21:30.</title>
+    <desc lang="it">Spain - La Liga : Espanyol vs Barcelona.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250515193000 +0200" stop="20250515213000 +0200" channel="877">
+    <title lang="it">Spain - La Liga : Espanyol vs Barcelona</title>
+    <desc lang="it">Spain - La Liga : Espanyol vs Barcelona trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="851">
+    <display-name>Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km)</display-name>
+  </channel>
+  <programme start="20250515000000 +0000" stop="20250515123000 +0200" channel="851">
+    <title lang="it">inizierà alle 14:30.</title>
+    <desc lang="it">Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km).</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250515123000 +0200" stop="20250515143000 +0200" channel="851">
+    <title lang="it">Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km)</title>
+    <desc lang="it">Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
+  <channel id="878">
+    <display-name>Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km)</display-name>
+  </channel>
+  <programme start="20250515000000 +0000" stop="20250515123000 +0200" channel="878">
+    <title lang="it">inizierà alle 14:30.</title>
+    <desc lang="it">Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km).</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250515123000 +0200" stop="20250515143000 +0200" channel="878">
+    <title lang="it">Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km)</title>
+    <desc lang="it">Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
 </tv>
