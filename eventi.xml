@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="882">
-    <display-name>UEFA Women's Under-17 Championship : Netherlands U17 vs France U17</display-name>
-  </channel>
-  <programme start="20250514000000 +0000" stop="20250514140000 +0000" channel="882">
-    <title lang="it">inizierà alle 16:00.</title>
-    <desc lang="it">UEFA Women's Under-17 Championship : Netherlands U17 vs France U17.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250514140000 +0000" stop="20250514160000 +0000" channel="882">
-    <title lang="it">UEFA Women's Under-17 Championship : Netherlands U17 vs France U17</title>
-    <desc lang="it">UEFA Women's Under-17 Championship : Netherlands U17 vs France U17 trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="877">
     <display-name>Spain - La Liga : Villarreal vs Leganés</display-name>
   </channel>
@@ -39,6 +26,9 @@
     <desc lang="it">Italy - Serie C : FeralpiSalò vs Crotone trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="882">
+    <display-name>Italy - Serie C : FeralpiSalò vs Crotone</display-name>
+  </channel>
   <programme start="20250514000000 +0000" stop="20250514180000 +0000" channel="882">
     <title lang="it">inizierà alle 20:00.</title>
     <desc lang="it">Italy - Serie C : FeralpiSalò vs Crotone.</desc>
