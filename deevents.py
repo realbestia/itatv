@@ -57,7 +57,7 @@ def get_stream_link(channel_id, max_retries=3):
 
 # Funzione per generare il file M3U8
 def generate_m3u8_from_json(json_data):
-    m3u8_content = '#EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/deevents.xml"\n'
+    m3u8_content = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/deevents.xml"\n'
     current_datetime = datetime.now()
 
     for date, categories in json_data.items():
