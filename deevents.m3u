@@ -1,9 +1,6 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/deevents.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Live Events", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="571" tvg-name="Netherlands - Eredivisie : Groningen vs Ajax - 14/05/2025 20:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Netherlands - Eredivisie : Groningen vs Ajax - 14/05/2025 20:00
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium571/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
-
 #EXTINF:-1 tvg-id="427" tvg-name="Coppa Italia : Milan vs Bologna - 14/05/2025 21:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Coppa Italia : Milan vs Bologna - 14/05/2025 21:00
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium427/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
 
@@ -14,4 +11,84 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy
 http://example.com/Tennis.m3u8
 #EXTINF:-1 tvg-id="884" tvg-name="ATP Masters Rome: 1/4 Final 2 - 14/05/2025 20:45" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", ATP Masters Rome: 1/4 Final 2 - 14/05/2025 20:45
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://windnew.newkso.ru/wind/premium884/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Live Events", ----- Soccer -----
+http://example.com/Soccer.m3u8
+#EXTINF:-1 tvg-id="426" tvg-name="Spain - La Liga : Osasuna vs Atlético Madrid - 15/05/2025 19:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Spain - La Liga : Osasuna vs Atlético Madrid - 15/05/2025 19:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium426/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="571" tvg-name="Saudi Arabia - Pro League : Al Raed vs Al Ittihad - 15/05/2025 20:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Saudi Arabia - Pro League : Al Raed vs Al Ittihad - 15/05/2025 20:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium571/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="426" tvg-name="Spain - La Liga : Espanyol vs Barcelona - 15/05/2025 21:30" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Spain - La Liga : Espanyol vs Barcelona - 15/05/2025 21:30
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium426/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="640" tvg-name="Copa Libertadores : Flamengo vs LDU Quito - 15/05/2025 02:30" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Copa Libertadores : Flamengo vs LDU Quito - 15/05/2025 02:30
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium640/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-name="----- Tennis -----" group-title="Live Events", ----- Tennis -----
+http://example.com/Tennis.m3u8
+#EXTINF:-1 tvg-id="884" tvg-name="ATP and WTA 1000 Rome Semifinal - 15/05/2025 11:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", ATP and WTA 1000 Rome Semifinal - 15/05/2025 11:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://windnew.newkso.ru/wind/premium884/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="884" tvg-name="WTA 1000 Rome: 1/2 Final A LIVE - 15/05/2025 15:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", WTA 1000 Rome: 1/2 Final A LIVE - 15/05/2025 15:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://windnew.newkso.ru/wind/premium884/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="884" tvg-name="ATP and WTA 1000 Rome Semifinal - 15/05/2025 19:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", ATP and WTA 1000 Rome Semifinal - 15/05/2025 19:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://windnew.newkso.ru/wind/premium884/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="884" tvg-name="WTA 1000 Rome: 1/2 Final B - 15/05/2025 20:45" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", WTA 1000 Rome: 1/2 Final B - 15/05/2025 20:45
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://windnew.newkso.ru/wind/premium884/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Live Events", ----- Motorsport -----
+http://example.com/Motorsport.m3u8
+#EXTINF:-1 tvg-id="557" tvg-name="Rally de Portugal: Meet the Crews from Figueria da - 15/05/2025 19:30" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Rally de Portugal: Meet the Crews from Figueria da - 15/05/2025 19:30
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-name="----- Golf -----" group-title="Live Events", ----- Golf -----
+http://example.com/Golf.m3u8
+#EXTINF:-1 tvg-id="785" tvg-name="Major Championship PGA Championship - 15/05/2025 13:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Major Championship PGA Championship - 15/05/2025 13:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium785/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="785" tvg-name="Major Championship PGA Championship - 15/05/2025 18:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Major Championship PGA Championship - 15/05/2025 18:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium785/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-name="----- Darts -----" group-title="Live Events", ----- Darts -----
+http://example.com/Darts.m3u8
+#EXTINF:-1 tvg-id="427" tvg-name="Premier League Darts - Belfast : Michael van Gerwen vs Nathan Aspinall - 15/05/2025 20:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Michael van Gerwen vs Nathan Aspinall - 15/05/2025 20:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium427/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="641" tvg-name="Premier League Darts - Belfast : Michael van Gerwen vs Nathan Aspinall - 15/05/2025 20:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Michael van Gerwen vs Nathan Aspinall - 15/05/2025 20:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium641/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="427" tvg-name="Premier League Darts - Belfast : Gerwyn Price vs Stephen Bunting - 15/05/2025 20:45" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Gerwyn Price vs Stephen Bunting - 15/05/2025 20:45
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium427/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="641" tvg-name="Premier League Darts - Belfast : Gerwyn Price vs Stephen Bunting - 15/05/2025 20:45" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Gerwyn Price vs Stephen Bunting - 15/05/2025 20:45
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium641/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="427" tvg-name="Premier League Darts - Belfast : Chris Dobey vs Rob Cross - 15/05/2025 21:15" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Chris Dobey vs Rob Cross - 15/05/2025 21:15
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium427/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="641" tvg-name="Premier League Darts - Belfast : Chris Dobey vs Rob Cross - 15/05/2025 21:15" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Chris Dobey vs Rob Cross - 15/05/2025 21:15
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium641/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="427" tvg-name="Premier League Darts - Belfast : Luke Littler vs Luke Humphries - 15/05/2025 21:45" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Luke Littler vs Luke Humphries - 15/05/2025 21:45
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium427/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="641" tvg-name="Premier League Darts - Belfast : Luke Littler vs Luke Humphries - 15/05/2025 21:45" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Luke Littler vs Luke Humphries - 15/05/2025 21:45
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium641/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-name="----- Ice Hockey -----" group-title="Live Events", ----- Ice Hockey -----
+http://example.com/Ice_Hockey.m3u8
+#EXTINF:-1 tvg-id="557" tvg-name="NHL : Dallas Stars vs Winnipeg Jets - 15/05/2025 03:30" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", NHL : Dallas Stars vs Winnipeg Jets - 15/05/2025 03:30
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-id="556" tvg-name="NHL : Dallas Stars vs Winnipeg Jets - 15/05/2025 03:30" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", NHL : Dallas Stars vs Winnipeg Jets - 15/05/2025 03:30
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium556/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
+
+#EXTINF:-1 tvg-name="----- Rugby League -----" group-title="Live Events", ----- Rugby League -----
+http://example.com/Rugby_League.m3u8
+#EXTINF:-1 tvg-id="640" tvg-name="Super League Rugby : St Helens vs Catalans Dragons - 15/05/2025 21:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Super League Rugby : St Helens vs Catalans Dragons - 15/05/2025 21:00
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium640/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
 
