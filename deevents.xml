@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="426">
-    <display-name>Spain - La Liga : Villarreal vs Leganés</display-name>
-  </channel>
-  <programme start="20250514000000 +0000" stop="20250514170000 +0000" channel="426">
-    <title lang="it">fängt um 19:00. an</title>
-    <desc lang="it">Spain - La Liga : Villarreal vs Leganés.</desc>
-    <category lang="it">Bekanntmachung</category>
-  </programme>
-  <programme start="20250514170000 +0000" stop="20250514190000 +0000" channel="426">
-    <title lang="it">Spain - La Liga : Villarreal vs Leganés</title>
-    <desc lang="it">Spain - La Liga : Villarreal vs Leganés LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="571">
     <display-name>Netherlands - Eredivisie : Groningen vs Ajax</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514180000 +0000" channel="571">
+  <programme start="20250514000000 +0000" stop="20250514180000 +0200" channel="571">
     <title lang="it">fängt um 20:00. an</title>
     <desc lang="it">Netherlands - Eredivisie : Groningen vs Ajax.</desc>
     <category lang="it">Bekanntmachung</category>
   </programme>
-  <programme start="20250514180000 +0000" stop="20250514200000 +0000" channel="571">
+  <programme start="20250514180000 +0200" stop="20250514200000 +0200" channel="571">
     <title lang="it">Netherlands - Eredivisie : Groningen vs Ajax</title>
     <desc lang="it">Netherlands - Eredivisie : Groningen vs Ajax LIVE.</desc>
     <category lang="it">Soccer</category>
@@ -29,81 +16,61 @@
   <channel id="427">
     <display-name>Coppa Italia : Milan vs Bologna</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514190000 +0000" channel="427">
+  <programme start="20250514000000 +0000" stop="20250514190000 +0200" channel="427">
     <title lang="it">fängt um 21:00. an</title>
     <desc lang="it">Coppa Italia : Milan vs Bologna.</desc>
     <category lang="it">Bekanntmachung</category>
   </programme>
-  <programme start="20250514190000 +0000" stop="20250514210000 +0000" channel="427">
+  <programme start="20250514190000 +0200" stop="20250514210000 +0200" channel="427">
     <title lang="it">Coppa Italia : Milan vs Bologna</title>
     <desc lang="it">Coppa Italia : Milan vs Bologna LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <programme start="20250514000000 +0000" stop="20250514193000 +0000" channel="426">
+  <channel id="426">
+    <display-name>Spain - La Liga : Real Madrid vs Mallorca</display-name>
+  </channel>
+  <programme start="20250514000000 +0000" stop="20250514193000 +0200" channel="426">
     <title lang="it">fängt um 21:30. an</title>
     <desc lang="it">Spain - La Liga : Real Madrid vs Mallorca.</desc>
     <category lang="it">Bekanntmachung</category>
   </programme>
-  <programme start="20250514193000 +0000" stop="20250514213000 +0000" channel="426">
+  <programme start="20250514193000 +0200" stop="20250514213000 +0200" channel="426">
     <title lang="it">Spain - La Liga : Real Madrid vs Mallorca</title>
     <desc lang="it">Spain - La Liga : Real Madrid vs Mallorca LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <programme start="20250514000000 +0000" stop="20250514220000 +0000" channel="571">
+  <programme start="20250514000000 +0000" stop="20250514220000 +0200" channel="571">
     <title lang="it">fängt um 00:00. an</title>
     <desc lang="it">Copa Sudamericana : Fluminense vs Unión Española.</desc>
     <category lang="it">Bekanntmachung</category>
   </programme>
-  <programme start="20250514220000 +0000" stop="20250515000000 +0000" channel="571">
+  <programme start="20250514220000 +0200" stop="20250515000000 +0200" channel="571">
     <title lang="it">Copa Sudamericana : Fluminense vs Unión Española</title>
     <desc lang="it">Copa Sudamericana : Fluminense vs Unión Española LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
   <channel id="884">
-    <display-name>WTA 1000 Rome: 1/4 Final 4</display-name>
+    <display-name>ATP Masters Rome: 1/4 Final 2</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514170000 +0000" channel="884">
-    <title lang="it">fängt um 19:00. an</title>
-    <desc lang="it">WTA 1000 Rome: 1/4 Final 4.</desc>
-    <category lang="it">Bekanntmachung</category>
-  </programme>
-  <programme start="20250514170000 +0000" stop="20250514190000 +0000" channel="884">
-    <title lang="it">WTA 1000 Rome: 1/4 Final 4</title>
-    <desc lang="it">WTA 1000 Rome: 1/4 Final 4 LIVE.</desc>
-    <category lang="it">Tennis</category>
-  </programme>
-  <programme start="20250514000000 +0000" stop="20250514184500 +0000" channel="884">
+  <programme start="20250514000000 +0000" stop="20250514184500 +0200" channel="884">
     <title lang="it">fängt um 20:45. an</title>
     <desc lang="it">ATP Masters Rome: 1/4 Final 2.</desc>
     <category lang="it">Bekanntmachung</category>
   </programme>
-  <programme start="20250514184500 +0000" stop="20250514204500 +0000" channel="884">
+  <programme start="20250514184500 +0200" stop="20250514204500 +0200" channel="884">
     <title lang="it">ATP Masters Rome: 1/4 Final 2</title>
     <desc lang="it">ATP Masters Rome: 1/4 Final 2 LIVE.</desc>
     <category lang="it">Tennis</category>
   </programme>
-  <channel id="235">
-    <display-name>Handball-Bundesliga Women : Blomberg-Lippe W vs BVB Dortmund W</display-name>
-  </channel>
-  <programme start="20250514000000 +0000" stop="20250514170000 +0000" channel="235">
-    <title lang="it">fängt um 19:00. an</title>
-    <desc lang="it">Handball-Bundesliga Women : Blomberg-Lippe W vs BVB Dortmund W.</desc>
-    <category lang="it">Bekanntmachung</category>
-  </programme>
-  <programme start="20250514170000 +0000" stop="20250514190000 +0000" channel="235">
-    <title lang="it">Handball-Bundesliga Women : Blomberg-Lippe W vs BVB Dortmund W</title>
-    <desc lang="it">Handball-Bundesliga Women : Blomberg-Lippe W vs BVB Dortmund W LIVE.</desc>
-    <category lang="it">Handball</category>
-  </programme>
   <channel id="557">
     <display-name>NHL : Florida Panthers vs Toronto Maple Leafs</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514230000 +0000" channel="557">
+  <programme start="20250514000000 +0000" stop="20250514230000 +0200" channel="557">
     <title lang="it">fängt um 01:00. an</title>
     <desc lang="it">NHL : Florida Panthers vs Toronto Maple Leafs.</desc>
     <category lang="it">Bekanntmachung</category>
   </programme>
-  <programme start="20250514230000 +0000" stop="20250515010000 +0000" channel="557">
+  <programme start="20250514230000 +0200" stop="20250515010000 +0200" channel="557">
     <title lang="it">NHL : Florida Panthers vs Toronto Maple Leafs</title>
     <desc lang="it">NHL : Florida Panthers vs Toronto Maple Leafs LIVE.</desc>
     <category lang="it">Ice Hockey</category>
@@ -111,12 +78,12 @@
   <channel id="556">
     <display-name>NHL : Florida Panthers vs Toronto Maple Leafs</display-name>
   </channel>
-  <programme start="20250514000000 +0000" stop="20250514230000 +0000" channel="556">
+  <programme start="20250514000000 +0000" stop="20250514230000 +0200" channel="556">
     <title lang="it">fängt um 01:00. an</title>
     <desc lang="it">NHL : Florida Panthers vs Toronto Maple Leafs.</desc>
     <category lang="it">Bekanntmachung</category>
   </programme>
-  <programme start="20250514230000 +0000" stop="20250515010000 +0000" channel="556">
+  <programme start="20250514230000 +0200" stop="20250515010000 +0200" channel="556">
     <title lang="it">NHL : Florida Panthers vs Toronto Maple Leafs</title>
     <desc lang="it">NHL : Florida Panthers vs Toronto Maple Leafs LIVE.</desc>
     <category lang="it">Ice Hockey</category>
