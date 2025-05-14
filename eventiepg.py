@@ -66,8 +66,8 @@ def generate_epg_xml(json_data):
                     epg_content += f'  </programme>\n'
 
                     # Evento principale
-                    start_time = event_datetime + timedelta(hours=2)  # Aggiunge 2 ore
-                    stop_time = event_datetime + timedelta(hours=2, minutes=120)  # Aggiunge 2 ore
+                    start_time = event_datetime + timedelta(hours=2)  # Aggiunge 2 ore all'ora di inizio dell'evento
+                    stop_time = event_datetime + timedelta(hours=2, minutes=120)  # Aggiunge 2 ore all'ora di fine
 
                     epg_content += f'  <programme start="{format_xmltv_time(start_time)}" stop="{format_xmltv_time(stop_time)}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">{event_name}</title>\n'
