@@ -36,19 +36,6 @@
     <desc lang="it">Spain - La Liga : Espanyol vs Barcelona LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="640">
-    <display-name>Copa Libertadores : Flamengo vs LDU Quito</display-name>
-  </channel>
-  <programme start="20250515000000 +0000" stop="20250515003000 +0200" channel="640">
-    <title lang="it">fängt um 02:30. an</title>
-    <desc lang="it">Copa Libertadores : Flamengo vs LDU Quito.</desc>
-    <category lang="it">Bekanntmachung</category>
-  </programme>
-  <programme start="20250515003000 +0200" stop="20250515023000 +0200" channel="640">
-    <title lang="it">Copa Libertadores : Flamengo vs LDU Quito</title>
-    <desc lang="it">Copa Libertadores : Flamengo vs LDU Quito LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="884">
     <display-name>ATP and WTA 1000 Rome Semifinal</display-name>
   </channel>
@@ -214,29 +201,9 @@
     <desc lang="it">Premier League Darts - Belfast : Luke Littler vs Luke Humphries LIVE.</desc>
     <category lang="it">Darts</category>
   </programme>
-  <programme start="20250515000000 +0000" stop="20250515013000 +0200" channel="557">
-    <title lang="it">fängt um 03:30. an</title>
-    <desc lang="it">NHL : Dallas Stars vs Winnipeg Jets.</desc>
-    <category lang="it">Bekanntmachung</category>
-  </programme>
-  <programme start="20250515013000 +0200" stop="20250515033000 +0200" channel="557">
-    <title lang="it">NHL : Dallas Stars vs Winnipeg Jets</title>
-    <desc lang="it">NHL : Dallas Stars vs Winnipeg Jets LIVE.</desc>
-    <category lang="it">Ice Hockey</category>
-  </programme>
-  <channel id="556">
-    <display-name>NHL : Dallas Stars vs Winnipeg Jets</display-name>
+  <channel id="640">
+    <display-name>Super League Rugby : St Helens vs Catalans Dragons</display-name>
   </channel>
-  <programme start="20250515000000 +0000" stop="20250515013000 +0200" channel="556">
-    <title lang="it">fängt um 03:30. an</title>
-    <desc lang="it">NHL : Dallas Stars vs Winnipeg Jets.</desc>
-    <category lang="it">Bekanntmachung</category>
-  </programme>
-  <programme start="20250515013000 +0200" stop="20250515033000 +0200" channel="556">
-    <title lang="it">NHL : Dallas Stars vs Winnipeg Jets</title>
-    <desc lang="it">NHL : Dallas Stars vs Winnipeg Jets LIVE.</desc>
-    <category lang="it">Ice Hockey</category>
-  </programme>
   <programme start="20250515000000 +0000" stop="20250515190000 +0200" channel="640">
     <title lang="it">fängt um 21:00. an</title>
     <desc lang="it">Super League Rugby : St Helens vs Catalans Dragons.</desc>
