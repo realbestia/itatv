@@ -51,16 +51,6 @@ def generate_epg_xml(json_data):
                         epg_content += f'  </channel>\n'
                         channel_ids.add(channel_id)
 
-                    # Aggiungi un annuncio che parte da mezzanotte del giorno dell'evento
-                    announcement_start_time = datetime.combine(event_date, datetime.min.time())  # 00:00 dello stesso giorno
-                    announcement_stop_time = event_datetime
-
-                    epg_content += f'  <programme start="{announcement_start_time.strftime("%Y%m%d%H%M%S") + " +0200"}" stop="{announcement_stop_time.strftime("%Y%m%d%H%M%S") + " +0200"}" channel="{channel_id}">\n'
-                    epg_content += f'    <title lang="it">inizierà alle {(event_datetime + timedelta(hours=2)).strftime("%H:%M")}.</title>\n'
-                    epg_content += f'    <desc lang="it">{event_name}.</desc>\n'
-                    epg_content += f'    <category lang="it">Annuncio</category>\n'
-                    epg_content += f'  </programme>\n'
-
                     # Formatta start e stop per l'evento principale
                     start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0200"
                     stop_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
