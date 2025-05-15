@@ -63,14 +63,6 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy
 #EXTINF:-1 tvg-id="641" tvg-name="Premier League Darts - Belfast : Luke Littler vs Luke Humphries - 15/05/2025 21:45" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Premier League Darts - Belfast : Luke Littler vs Luke Humphries - 15/05/2025 21:45
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium641/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
 
-#EXTINF:-1 tvg-name="----- Ice Hockey -----" group-title="Live Events", ----- Ice Hockey -----
-http://example.com/Ice_Hockey.m3u8
-#EXTINF:-1 tvg-id="557" tvg-name="NHL : Dallas Stars vs Winnipeg Jets - 15/05/2025 03:30" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", NHL : Dallas Stars vs Winnipeg Jets - 15/05/2025 03:30
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
-
-#EXTINF:-1 tvg-id="556" tvg-name="NHL : Dallas Stars vs Winnipeg Jets - 15/05/2025 03:30" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", NHL : Dallas Stars vs Winnipeg Jets - 15/05/2025 03:30
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium556/mono.m3u8&h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://ilovetoplay.xyz/&h_origin=https://ilovetoplay.xyz
-
 #EXTINF:-1 tvg-name="----- Rugby League -----" group-title="Live Events", ----- Rugby League -----
 http://example.com/Rugby_League.m3u8
 #EXTINF:-1 tvg-id="640" tvg-name="Super League Rugby : St Helens vs Catalans Dragons - 15/05/2025 21:00" group-title="Live Events" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Super League Rugby : St Helens vs Catalans Dragons - 15/05/2025 21:00
