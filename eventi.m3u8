@@ -1,13 +1,1 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
-#EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi Live", ----- Soccer -----
-http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Spain - La Liga : Osasuna vs Atlético Madrid - 15/05/2025 19:00" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Spain - La Liga : Osasuna vs Atlético Madrid - 15/05/2025 19:00
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Spain - La Liga : Espanyol vs Barcelona - 15/05/2025 21:30" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Spain - La Liga : Espanyol vs Barcelona - 15/05/2025 21:30
-https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
-#EXTINF:-1 tvg-name="----- Cycling -----" group-title="Eventi Live", ----- Cycling -----
-http://example.com/Cycling.m3u8
-#EXTINF:-1 tvg-id="851" tvg-name="Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km) - 15/05/2025 14:30" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km) - 15/05/2025 14:30
-https://ddy6new.newkso.ru/ddy6/premium851/mono.m3u8
-#EXTINF:-1 tvg-id="878" tvg-name="Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km) - 15/05/2025 14:30" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Giro d'Italia | Stage 6 | Multi-Screen Men | Potenza – Naples (226km) - 15/05/2025 14:30
-https://windnew.newkso.ru/wind/premium878/mono.m3u8
