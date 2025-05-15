@@ -6478,6 +6478,114 @@
                 ]
             }
         ],
+        "Tennis ATP - ROME</span>": [
+            {
+                "time": "11:00",
+                "event": "ATP - ROME : Hurkacz H. vs Paul T.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 9",
+                        "channel_id": "1509"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    }
+                ]
+            },
+            {
+                "time": "14:00",
+                "event": "ATP - ROME : Granollers M./Zeballos H. vs Salisbury J./Skupski N.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 10",
+                        "channel_id": "1510"
+                    }
+                ]
+            },
+            {
+                "time": "15:30",
+                "event": "ATP - ROME : Arevalo M./Pavic M. vs Harrison C./King E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 10",
+                        "channel_id": "1510"
+                    }
+                ]
+            },
+            {
+                "time": "17:00",
+                "event": "ATP - ROME : Sinner J. vs Ruud C.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 9",
+                        "channel_id": "1509"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    }
+                ]
+            }
+        ],
+        "Tennis WTA - ROME</span>": [
+            {
+                "time": "11:00",
+                "event": "WTA - ROME : Eikeri U./Hozumi E. vs Hunter S./Perez E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    }
+                ]
+            },
+            {
+                "time": "12:30",
+                "event": "WTA - ROME : Muhammad A./Schuurs D. vs Kudermetova V./Mertens E.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 3",
+                        "channel_id": "1503"
+                    }
+                ]
+            },
+            {
+                "time": "13:00",
+                "event": "WTA - ROME : Paolini J. vs Stearns P.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ]
+            },
+            {
+                "time": "18:30",
+                "event": "WTA - ROME : Zheng Q. vs Gauff C.",
+                "channels": [
+                    {
+                        "channel_name": "Tennis Stream 15",
+                        "channel_id": "1515"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 1",
+                        "channel_id": "1501"
+                    },
+                    {
+                        "channel_name": "Tennis Stream 2",
+                        "channel_id": "1502"
+                    }
+                ]
+            }
+        ],
         "Tennis</span>": [
             {
                 "time": "09:00",
