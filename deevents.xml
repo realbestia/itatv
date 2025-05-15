@@ -1,45 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="426">
-    <display-name>Spain - La Liga : Espanyol vs Barcelona</display-name>
-  </channel>
-  <programme start="20250515193000 +0200" stop="20250515213000 +0200" channel="426">
-    <title lang="it">Spain - La Liga : Espanyol vs Barcelona</title>
-    <desc lang="it">Spain - La Liga : Espanyol vs Barcelona LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="427">
-    <display-name>Premier League Darts - Belfast : Chris Dobey vs Rob Cross</display-name>
+    <display-name>Premier League Darts - Belfast : Luke Littler vs Luke Humphries</display-name>
   </channel>
-  <programme start="20250515191500 +0200" stop="20250515211500 +0200" channel="427">
-    <title lang="it">Premier League Darts - Belfast : Chris Dobey vs Rob Cross</title>
-    <desc lang="it">Premier League Darts - Belfast : Chris Dobey vs Rob Cross LIVE.</desc>
-    <category lang="it">Darts</category>
-  </programme>
-  <channel id="641">
-    <display-name>Premier League Darts - Belfast : Chris Dobey vs Rob Cross</display-name>
-  </channel>
-  <programme start="20250515191500 +0200" stop="20250515211500 +0200" channel="641">
-    <title lang="it">Premier League Darts - Belfast : Chris Dobey vs Rob Cross</title>
-    <desc lang="it">Premier League Darts - Belfast : Chris Dobey vs Rob Cross LIVE.</desc>
-    <category lang="it">Darts</category>
-  </programme>
   <programme start="20250515194500 +0200" stop="20250515214500 +0200" channel="427">
     <title lang="it">Premier League Darts - Belfast : Luke Littler vs Luke Humphries</title>
     <desc lang="it">Premier League Darts - Belfast : Luke Littler vs Luke Humphries LIVE.</desc>
     <category lang="it">Darts</category>
   </programme>
+  <channel id="641">
+    <display-name>Premier League Darts - Belfast : Luke Littler vs Luke Humphries</display-name>
+  </channel>
   <programme start="20250515194500 +0200" stop="20250515214500 +0200" channel="641">
     <title lang="it">Premier League Darts - Belfast : Luke Littler vs Luke Humphries</title>
     <desc lang="it">Premier League Darts - Belfast : Luke Littler vs Luke Humphries LIVE.</desc>
     <category lang="it">Darts</category>
-  </programme>
-  <channel id="640">
-    <display-name>Super League Rugby : St Helens vs Catalans Dragons</display-name>
-  </channel>
-  <programme start="20250515190000 +0200" stop="20250515210000 +0200" channel="640">
-    <title lang="it">Super League Rugby : St Helens vs Catalans Dragons</title>
-    <desc lang="it">Super League Rugby : St Helens vs Catalans Dragons LIVE.</desc>
-    <category lang="it">Rugby League</category>
   </programme>
 </tv>
