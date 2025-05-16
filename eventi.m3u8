@@ -1,5 +1,33 @@
 #EXTM3U tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/eventi.xml"
 #EXTINF:-1 tvg-name="----- Soccer -----" group-title="Eventi Live", ----- Soccer -----
 http://example.com/Soccer.m3u8
-#EXTINF:-1 tvg-id="877" tvg-name="Spain - La Liga : Espanyol vs Barcelona - 15/05/2025 21:30" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Spain - La Liga : Espanyol vs Barcelona - 15/05/2025 21:30
+#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Chelsea vs Manchester United - 16/05/2025 21:15" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", England - Premier League : Chelsea vs Manchester United - 16/05/2025 21:15
+https://windnew.newkso.ru/wind/premium870/mono.m3u8
+#EXTINF:-1 tvg-name="----- Motorsport -----" group-title="Eventi Live", ----- Motorsport -----
+http://example.com/Motorsport.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 3 : AWS Emilia Romagna GP - Practice - 16/05/2025 10:00" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 3 : AWS Emilia Romagna GP - Practice - 16/05/2025 10:00
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 2 : AWS Emilia Romagna GP - Free Practice - 16/05/2025 11:05" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 2 : AWS Emilia Romagna GP - Free Practice - 16/05/2025 11:05
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : AWS Emilia Romagna GP - Practice 1 - 16/05/2025 13:30" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : AWS Emilia Romagna GP - Practice 1 - 16/05/2025 13:30
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 3 : AWS Emilia Romagna GP - Qualifying - 16/05/2025 15:00" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 3 : AWS Emilia Romagna GP - Qualifying - 16/05/2025 15:00
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 2 : AWS Emilia Romagna GP - Qualifying - 16/05/2025 16:00" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 2 : AWS Emilia Romagna GP - Qualifying - 16/05/2025 16:00
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : AWS Emilia Romagna GP - Practice 2 - 16/05/2025 17:00" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Formula 1 : AWS Emilia Romagna GP - Practice 2 - 16/05/2025 17:00
+https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
+#EXTINF:-1 tvg-name="----- Cycling -----" group-title="Eventi Live", ----- Cycling -----
+http://example.com/Cycling.m3u8
+#EXTINF:-1 tvg-id="878" tvg-name="Giro d'Italia | Stage 7 | Multi-Screen Men | Castel di Sangro – Tagliacozzo (168km) - 16/05/2025 12:40" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Giro d'Italia | Stage 7 | Multi-Screen Men | Castel di Sangro – Tagliacozzo (168km) - 16/05/2025 12:40
+https://windnew.newkso.ru/wind/premium878/mono.m3u8
+#EXTINF:-1 tvg-name="----- Rugby Union -----" group-title="Eventi Live", ----- Rugby Union -----
+http://example.com/Rugby_Union.m3u8
+#EXTINF:-1 tvg-id="460" tvg-name="United Rugby Championship : Munster vs Treviso - 16/05/2025 21:00" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", United Rugby Championship : Munster vs Treviso - 16/05/2025 21:00
+https://dokko1new.newkso.ru/dokko1/premium460/mono.m3u8
+#EXTINF:-1 tvg-name="----- Volleyball -----" group-title="Eventi Live", ----- Volleyball -----
+http://example.com/Volleyball.m3u8
+#EXTINF:-1 tvg-id="877" tvg-name="Champions League : Perugia vs Halkbank - 16/05/2025 20:00" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Champions League : Perugia vs Halkbank - 16/05/2025 20:00
 https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
+#EXTINF:-1 tvg-id="462" tvg-name="Champions League : Perugia vs Halkbank - 16/05/2025 20:00" group-title="Eventi Live" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/livestreaming.png", Champions League : Perugia vs Halkbank - 16/05/2025 20:00
+https://ddy6new.newkso.ru/ddy6/premium462/mono.m3u8
