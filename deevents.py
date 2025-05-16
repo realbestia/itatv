@@ -5,7 +5,7 @@
     from datetime import datetime, timedelta
     from dateutil import parser
 
-    PROXY = "https://nzo66-piccolotest.hf.space/proxy/m3u?url="  # Proxy HLS
+    PROXY = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d="  # Proxy HLS
     JSON_FILE = "daddyliveSchedule.json"
     OUTPUT_FILE = "deevents.m3u"
     BASE_URL = "https://thedaddy.to/embed/"
