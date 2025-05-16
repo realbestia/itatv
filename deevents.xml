@@ -1,3 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="571">
+    <display-name>Australia - A-League : Western United vs Melbourne City</display-name>
+  </channel>
+  <programme start="20250516093500 +0200" stop="20250516113500 +0200" channel="571">
+    <title lang="it">Australia - A-League : Western United vs Melbourne City</title>
+    <desc lang="it">Australia - A-League : Western United vs Melbourne City LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250516155500 +0200" stop="20250516175500 +0200" channel="571">
+    <title lang="it">Saudi Arabia - Pro League : Al Fateh vs Al Hilal</title>
+    <desc lang="it">Saudi Arabia - Pro League : Al Fateh vs Al Hilal LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="427">
+    <display-name>Saudi Arabia - Pro League : Al Fateh vs Al Hilal</display-name>
+  </channel>
+  <programme start="20250516155500 +0200" stop="20250516175500 +0200" channel="427">
+    <title lang="it">Saudi Arabia - Pro League : Al Fateh vs Al Hilal</title>
+    <desc lang="it">Saudi Arabia - Pro League : Al Fateh vs Al Hilal LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250516180000 +0200" stop="20250516200000 +0200" channel="571">
+    <title lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Taawon</title>
+    <desc lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Taawon LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250516180000 +0200" stop="20250516200000 +0200" channel="427">
+    <title lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Taawon</title>
+    <desc lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Taawon LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250516183000 +0200" stop="20250516203000 +0200" channel="571">
+    <title lang="it">Poland - Ekstraklasa : Śląsk Wrocław vs Jagiellonia Białystok</title>
+    <desc lang="it">Poland - Ekstraklasa : Śląsk Wrocław vs Jagiellonia Białystok LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="557">
+    <display-name>England - Premier League : Aston Villa vs Tottenham</display-name>
+  </channel>
+  <programme start="20250516183000 +0200" stop="20250516203000 +0200" channel="557">
+    <title lang="it">England - Premier League : Aston Villa vs Tottenham</title>
+    <desc lang="it">England - Premier League : Aston Villa vs Tottenham LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="435">
+    <display-name>England - Premier League : Chelsea vs Manchester United</display-name>
+  </channel>
+  <programme start="20250516191500 +0200" stop="20250516211500 +0200" channel="435">
+    <title lang="it">England - Premier League : Chelsea vs Manchester United</title>
+    <desc lang="it">England - Premier League : Chelsea vs Manchester United LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="15">
+    <display-name>England - Premier League : Chelsea vs Manchester United</display-name>
+  </channel>
+  <programme start="20250516191500 +0200" stop="20250516211500 +0200" channel="15">
+    <title lang="it">England - Premier League : Chelsea vs Manchester United</title>
+    <desc lang="it">England - Premier League : Chelsea vs Manchester United LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="884">
+    <display-name>ATP and WTA 1000 Rome Semifinal</display-name>
+  </channel>
+  <programme start="20250516090000 +0200" stop="20250516110000 +0200" channel="884">
+    <title lang="it">ATP and WTA 1000 Rome Semifinal</title>
+    <desc lang="it">ATP and WTA 1000 Rome Semifinal LIVE.</desc>
+    <category lang="it">Tennis</category>
+  </programme>
+  <programme start="20250516113000 +0200" stop="20250516133000 +0200" channel="884">
+    <title lang="it">WTA 1000 Rome: (Doubles) 1/2 Final A</title>
+    <desc lang="it">WTA 1000 Rome: (Doubles) 1/2 Final A LIVE.</desc>
+    <category lang="it">Tennis</category>
+  </programme>
+  <programme start="20250516133000 +0200" stop="20250516153000 +0200" channel="884">
+    <title lang="it">ATP Masters Rome: 1/2 Final A</title>
+    <desc lang="it">ATP Masters Rome: 1/2 Final A LIVE.</desc>
+    <category lang="it">Tennis</category>
+  </programme>
+  <programme start="20250516170000 +0200" stop="20250516190000 +0200" channel="884">
+    <title lang="it">WTA 1000 Rome: (doubles) 1/2 Final B</title>
+    <desc lang="it">WTA 1000 Rome: (doubles) 1/2 Final B LIVE.</desc>
+    <category lang="it">Tennis</category>
+  </programme>
+  <programme start="20250516183000 +0200" stop="20250516203000 +0200" channel="884">
+    <title lang="it">ATP Masters Rome: 1/2 Final B</title>
+    <desc lang="it">ATP Masters Rome: 1/2 Final B LIVE.</desc>
+    <category lang="it">Tennis</category>
+  </programme>
+  <channel id="274">
+    <display-name>Formula 3 : AWS Emilia Romagna GP - Practice</display-name>
+  </channel>
+  <programme start="20250516080000 +0200" stop="20250516100000 +0200" channel="274">
+    <title lang="it">Formula 3 : AWS Emilia Romagna GP - Practice</title>
+    <desc lang="it">Formula 3 : AWS Emilia Romagna GP - Practice LIVE.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250516090500 +0200" stop="20250516110500 +0200" channel="274">
+    <title lang="it">Formula 2 : AWS Emilia Romagna GP - Free Practice</title>
+    <desc lang="it">Formula 2 : AWS Emilia Romagna GP - Free Practice LIVE.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250516113000 +0200" stop="20250516133000 +0200" channel="274">
+    <title lang="it">Formula 1 : AWS Emilia Romagna GP - Practice 1</title>
+    <desc lang="it">Formula 1 : AWS Emilia Romagna GP - Practice 1 LIVE.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250516130000 +0200" stop="20250516150000 +0200" channel="274">
+    <title lang="it">Formula 3 : AWS Emilia Romagna GP - Qualifying</title>
+    <desc lang="it">Formula 3 : AWS Emilia Romagna GP - Qualifying LIVE.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250516140000 +0200" stop="20250516160000 +0200" channel="274">
+    <title lang="it">Formula 2 : AWS Emilia Romagna GP - Qualifying</title>
+    <desc lang="it">Formula 2 : AWS Emilia Romagna GP - Qualifying LIVE.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250516150000 +0200" stop="20250516170000 +0200" channel="274">
+    <title lang="it">Formula 1 : AWS Emilia Romagna GP - Practice 2</title>
+    <desc lang="it">Formula 1 : AWS Emilia Romagna GP - Practice 2 LIVE.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="785">
+    <display-name>Major Championship PGA Championship</display-name>
+  </channel>
+  <programme start="20250516110000 +0200" stop="20250516130000 +0200" channel="785">
+    <title lang="it">Major Championship PGA Championship</title>
+    <desc lang="it">Major Championship PGA Championship LIVE.</desc>
+    <category lang="it">Golf</category>
+  </programme>
+  <programme start="20250516160000 +0200" stop="20250516180000 +0200" channel="785">
+    <title lang="it">Major Championship PGA Championship</title>
+    <desc lang="it">Major Championship PGA Championship LIVE.</desc>
+    <category lang="it">Golf</category>
+  </programme>
+  <programme start="20250516213000 +0200" stop="20250516233000 +0200" channel="785">
+    <title lang="it">Major Championship PGA Championship</title>
+    <desc lang="it">Major Championship PGA Championship LIVE.</desc>
+    <category lang="it">Golf</category>
+  </programme>
+  <channel id="640">
+    <display-name>AFL : Sydney Swans vs Carlton Blues</display-name>
+  </channel>
+  <programme start="20250516094000 +0200" stop="20250516114000 +0200" channel="640">
+    <title lang="it">AFL : Sydney Swans vs Carlton Blues</title>
+    <desc lang="it">AFL : Sydney Swans vs Carlton Blues LIVE.</desc>
+    <category lang="it">Aussie rules</category>
+  </programme>
 </tv>
