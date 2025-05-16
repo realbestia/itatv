@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x'  # Sostituisci con la versione necessaria
 
       - name: Installa le dipendenze
-        run: pip install requests beautifulsoup4 lxml
+        run: pip install requests beautifulsoup4 lxml python-dateutil
 
       - name: Esegui lo script
         run: python deevents.py
