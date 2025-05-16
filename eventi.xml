@@ -1,3 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="162">
+    <display-name>Italy - Serie C : Foggia vs Messina</display-name>
+  </channel>
+  <programme start="20250517130000 +0200" stop="20250517150000 +0200" channel="162">
+    <title lang="it">Italy - Serie C : Foggia vs Messina</title>
+    <desc lang="it">Italy - Serie C : Foggia vs Messina trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="185">
+    <display-name>Italy - Serie B : Catanzaro vs Cesena</display-name>
+  </channel>
+  <programme start="20250517151500 +0200" stop="20250517171500 +0200" channel="185">
+    <title lang="it">Italy - Serie B : Catanzaro vs Cesena</title>
+    <desc lang="it">Italy - Serie B : Catanzaro vs Cesena trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250517153000 +0200" stop="20250517173000 +0200" channel="162">
+    <title lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria</title>
+    <desc lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="870">
+    <display-name>Italy - Serie C : Pro Vercelli vs Pro Patria</display-name>
+  </channel>
+  <programme start="20250517153000 +0200" stop="20250517173000 +0200" channel="870">
+    <title lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria</title>
+    <desc lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="851">
+    <display-name>Coppa Italia Femminile : Juventus vs Roma</display-name>
+  </channel>
+  <programme start="20250517160000 +0200" stop="20250517180000 +0200" channel="851">
+    <title lang="it">Coppa Italia Femminile : Juventus vs Roma</title>
+    <desc lang="it">Coppa Italia Femminile : Juventus vs Roma trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="177">
+    <display-name>Italy - Serie B : Juve Stabia vs Palermo</display-name>
+  </channel>
+  <programme start="20250517173000 +0200" stop="20250517193000 +0200" channel="177">
+    <title lang="it">Italy - Serie B : Juve Stabia vs Palermo</title>
+    <desc lang="it">Italy - Serie B : Juve Stabia vs Palermo trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="23">
+    <display-name>Italy - Serie C : Triestina vs Caldiero Terme</display-name>
+  </channel>
+  <programme start="20250517180000 +0200" stop="20250517200000 +0200" channel="23">
+    <title lang="it">Italy - Serie C : Triestina vs Caldiero Terme</title>
+    <desc lang="it">Italy - Serie C : Triestina vs Caldiero Terme trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250517180000 +0200" stop="20250517200000 +0200" channel="162">
+    <title lang="it">Italy - Serie C : SPAL vs Milan II</title>
+    <desc lang="it">Italy - Serie C : SPAL vs Milan II trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250517180000 +0200" stop="20250517200000 +0200" channel="870">
+    <title lang="it">Italy - Serie C : SPAL vs Milan II</title>
+    <desc lang="it">Italy - Serie C : SPAL vs Milan II trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="24">
+    <display-name>Italy - Serie C : Lucchese vs Sestri Levante</display-name>
+  </channel>
+  <programme start="20250517180000 +0200" stop="20250517200000 +0200" channel="24">
+    <title lang="it">Italy - Serie C : Lucchese vs Sestri Levante</title>
+    <desc lang="it">Italy - Serie C : Lucchese vs Sestri Levante trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="25">
+    <display-name>Italy - Serie C : Calcio Padova vs Virtus Entella</display-name>
+  </channel>
+  <programme start="20250517183000 +0200" stop="20250517203000 +0200" channel="25">
+    <title lang="it">Italy - Serie C : Calcio Padova vs Virtus Entella</title>
+    <desc lang="it">Italy - Serie C : Calcio Padova vs Virtus Entella trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="882">
+    <display-name>Italy - Serie C : Calcio Padova vs Virtus Entella</display-name>
+  </channel>
+  <programme start="20250517183000 +0200" stop="20250517203000 +0200" channel="882">
+    <title lang="it">Italy - Serie C : Calcio Padova vs Virtus Entella</title>
+    <desc lang="it">Italy - Serie C : Calcio Padova vs Virtus Entella trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="877">
+    <display-name>Italy - Serie A : Genoa vs Atalanta</display-name>
+  </channel>
+  <programme start="20250517184500 +0200" stop="20250517204500 +0200" channel="877">
+    <title lang="it">Italy - Serie A : Genoa vs Atalanta</title>
+    <desc lang="it">Italy - Serie A : Genoa vs Atalanta trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="878">
+    <display-name>Formula E Tokyo | Race 1 Round 8</display-name>
+  </channel>
+  <programme start="20250517060500 +0200" stop="20250517080500 +0200" channel="878">
+    <title lang="it">Formula E Tokyo | Race 1 Round 8</title>
+    <desc lang="it">Formula E Tokyo | Race 1 Round 8 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="577">
+    <display-name>Formula 3 : AWS Emilia Romagna GP - Sprint Race</display-name>
+  </channel>
+  <programme start="20250517080000 +0200" stop="20250517100000 +0200" channel="577">
+    <title lang="it">Formula 3 : AWS Emilia Romagna GP - Sprint Race</title>
+    <desc lang="it">Formula 3 : AWS Emilia Romagna GP - Sprint Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250517103000 +0200" stop="20250517123000 +0200" channel="577">
+    <title lang="it">Formula 1 : AWS Emilia Romagna GP - Practice 3</title>
+    <desc lang="it">Formula 1 : AWS Emilia Romagna GP - Practice 3 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250517121000 +0200" stop="20250517141000 +0200" channel="577">
+    <title lang="it">Formula 2 : AWS Emilia Romagna GP - Sprint Race</title>
+    <desc lang="it">Formula 2 : AWS Emilia Romagna GP - Sprint Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <programme start="20250517140000 +0200" stop="20250517160000 +0200" channel="577">
+    <title lang="it">Formula 1 : AWS Emilia Romagna GP - Qualifying</title>
+    <desc lang="it">Formula 1 : AWS Emilia Romagna GP - Qualifying trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="879">
+    <display-name>UFC Fight Night Main Card : Gilbert Burns vs Michael Morales</display-name>
+  </channel>
+  <programme start="20250517230000 +0200" stop="20250518010000 +0200" channel="879">
+    <title lang="it">UFC Fight Night Main Card : Gilbert Burns vs Michael Morales</title>
+    <desc lang="it">UFC Fight Night Main Card : Gilbert Burns vs Michael Morales trasmesso in diretta.</desc>
+    <category lang="it">MMA</category>
+  </programme>
+  <programme start="20250517093000 +0200" stop="20250517113000 +0200" channel="879">
+    <title lang="it">Gulf of the Island | Race GT World Series</title>
+    <desc lang="it">Gulf of the Island | Race GT World Series trasmesso in diretta.</desc>
+    <category lang="it">Athletics</category>
+  </programme>
+  <programme start="20250517200000 +0200" stop="20250517220000 +0200" channel="878">
+    <title lang="it">World Cup Curitiba | Boulder | Men's Final</title>
+    <desc lang="it">World Cup Curitiba | Boulder | Men's Final trasmesso in diretta.</desc>
+    <category lang="it">Climbing</category>
+  </programme>
+  <programme start="20250517100500 +0200" stop="20250517120500 +0200" channel="851">
+    <title lang="it">Giro d'Italia | Stage 8 | Multi-Screen Men | Giulianova – Castelraimondo (197km)</title>
+    <desc lang="it">Giro d'Italia | Stage 8 | Multi-Screen Men | Giulianova – Castelraimondo (197km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
+  <programme start="20250517100500 +0200" stop="20250517120500 +0200" channel="878">
+    <title lang="it">Giro d'Italia | Stage 8 | Multi-Screen Men | Giulianova – Castelraimondo (197km)</title>
+    <desc lang="it">Giro d'Italia | Stage 8 | Multi-Screen Men | Giulianova – Castelraimondo (197km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
+  <programme start="20250517140000 +0200" stop="20250517160000 +0200" channel="882">
+    <title lang="it">Italy - Top 12 : Rugby Viadana 1970 vs. Valorugby Emilia</title>
+    <desc lang="it">Italy - Top 12 : Rugby Viadana 1970 vs. Valorugby Emilia trasmesso in diretta.</desc>
+    <category lang="it">Rugby Union</category>
+  </programme>
+  <channel id="462">
+    <display-name>United Rugby Championship : Zebre vs Connacht</display-name>
+  </channel>
+  <programme start="20250517160000 +0200" stop="20250517180000 +0200" channel="462">
+    <title lang="it">United Rugby Championship : Zebre vs Connacht</title>
+    <desc lang="it">United Rugby Championship : Zebre vs Connacht trasmesso in diretta.</desc>
+    <category lang="it">Rugby Union</category>
+  </programme>
+  <programme start="20250517093500 +0200" stop="20250517113500 +0200" channel="462">
+    <title lang="it">Super Rugby : Brumbies vs Reds</title>
+    <desc lang="it">Super Rugby : Brumbies vs Reds trasmesso in diretta.</desc>
+    <category lang="it">Rugby Union</category>
+  </programme>
+  <programme start="20250517124500 +0200" stop="20250517144500 +0200" channel="462">
+    <title lang="it">Champions League : Jastrzebski vs Aluron Warta</title>
+    <desc lang="it">Champions League : Jastrzebski vs Aluron Warta trasmesso in diretta.</desc>
+    <category lang="it">Volleyball</category>
+  </programme>
 </tv>
