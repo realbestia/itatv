@@ -164,7 +164,7 @@ def generate_m3u_from_schedule(json_file, output_file):
                 continue
 
             # Spacer con nome categoria pulito e group-title "Eventi Live"
-            f.write(f'#EXTINF:-1 group-title="Eventi Live" tvg-name="{category}",--- {category} ---\n\n')
+            f.write(f'#EXTINF:-1 group-title="Eventi Live" tvg-name="{category}",--- {category} ---\nhttps://exemple.m3u8\n\n')
 
             for ch in channels:
                 tvg_name = ch["tvg_name"]
