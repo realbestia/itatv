@@ -336,66 +336,6 @@
                 ]
             },
             {
-                "time": "02:00",
-                "event": "Accused: Did I Do It? Season 1, Episode 8",
-                "channels": [
-                    {
-                        "channel_name": "A&E TV USA",
-                        "channel_id": "302"
-                    }
-                ]
-            },
-            {
-                "time": "02:00",
-                "event": "SurrealEstate Season 3, Episode 7",
-                "channels": [
-                    {
-                        "channel_name": "Syfy USA",
-                        "channel_id": "373"
-                    }
-                ]
-            },
-            {
-                "time": "02:00",
-                "event": "Found Season 2, Episode 22 \u2022 Finale",
-                "channels": [
-                    {
-                        "channel_name": "NBCNY USA",
-                        "channel_id": "769"
-                    }
-                ]
-            },
-            {
-                "time": "02:00",
-                "event": "Grey's Anatomy Season 21, Episode 18 \u2022 Finale",
-                "channels": [
-                    {
-                        "channel_name": "ABC NY USA",
-                        "channel_id": "766"
-                    }
-                ]
-            },
-            {
-                "time": "02:00",
-                "event": "House Hunters International Season 199, Episode 12",
-                "channels": [
-                    {
-                        "channel_name": "HGTV USA",
-                        "channel_id": "382"
-                    }
-                ]
-            },
-            {
-                "time": "02:15",
-                "event": "Watch What Happens Live With Andy Cohen Season 22, Episode 83",
-                "channels": [
-                    {
-                        "channel_name": "Bravo USA",
-                        "channel_id": "307"
-                    }
-                ]
-            },
-            {
                 "time": "01:00",
                 "event": "100-Foot Wave Season 3, Episode 3",
                 "channels": [
@@ -472,6 +412,66 @@
                     {
                         "channel_name": "National Geographic (NGC)",
                         "channel_id": "328"
+                    }
+                ]
+            },
+            {
+                "time": "02:00",
+                "event": "Accused: Did I Do It? Season 1, Episode 8",
+                "channels": [
+                    {
+                        "channel_name": "A&E TV USA",
+                        "channel_id": "302"
+                    }
+                ]
+            },
+            {
+                "time": "02:00",
+                "event": "SurrealEstate Season 3, Episode 7",
+                "channels": [
+                    {
+                        "channel_name": "Syfy USA",
+                        "channel_id": "373"
+                    }
+                ]
+            },
+            {
+                "time": "02:00",
+                "event": "Found Season 2, Episode 22 \u2022 Finale",
+                "channels": [
+                    {
+                        "channel_name": "NBCNY USA",
+                        "channel_id": "769"
+                    }
+                ]
+            },
+            {
+                "time": "02:00",
+                "event": "Grey's Anatomy Season 21, Episode 18 \u2022 Finale",
+                "channels": [
+                    {
+                        "channel_name": "ABC NY USA",
+                        "channel_id": "766"
+                    }
+                ]
+            },
+            {
+                "time": "02:00",
+                "event": "House Hunters International Season 199, Episode 12",
+                "channels": [
+                    {
+                        "channel_name": "HGTV USA",
+                        "channel_id": "382"
+                    }
+                ]
+            },
+            {
+                "time": "02:15",
+                "event": "Watch What Happens Live With Andy Cohen Season 22, Episode 83",
+                "channels": [
+                    {
+                        "channel_name": "Bravo USA",
+                        "channel_id": "307"
                     }
                 ]
             }
