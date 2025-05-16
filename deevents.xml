@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="785">
-    <display-name>Major Championship PGA Championship</display-name>
-  </channel>
-  <programme start="20250516213000 +0200" stop="20250516233000 +0200" channel="785">
-    <title lang="it">Major Championship PGA Championship</title>
-    <desc lang="it">Major Championship PGA Championship LIVE.</desc>
-    <category lang="it">Golf</category>
-  </programme>
   <channel id="571">
     <display-name>Australia - A-League : Melbourne Victory vs Auckland</display-name>
   </channel>
@@ -96,6 +88,9 @@
     <desc lang="it">WRC Rally Portugal | Special Stage 17 LIVE.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="785">
+    <display-name>Major Championship PGA Championship</display-name>
+  </channel>
   <programme start="20250517120000 +0200" stop="20250517140000 +0200" channel="785">
     <title lang="it">Major Championship PGA Championship</title>
     <desc lang="it">Major Championship PGA Championship LIVE.</desc>
