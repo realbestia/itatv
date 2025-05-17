@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="851">
-    <display-name>Coppa Italia Femminile : Juventus vs Roma</display-name>
-  </channel>
-  <programme start="20250517160000 +0200" stop="20250517180000 +0200" channel="851">
-    <title lang="it">Coppa Italia Femminile : Juventus vs Roma</title>
-    <desc lang="it">Coppa Italia Femminile : Juventus vs Roma trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="177">
     <display-name>Italy - Serie B : Juve Stabia vs Palermo</display-name>
   </channel>
@@ -87,13 +79,5 @@
     <title lang="it">World Cup Curitiba | Boulder | Men's Final</title>
     <desc lang="it">World Cup Curitiba | Boulder | Men's Final trasmesso in diretta.</desc>
     <category lang="it">Climbing</category>
-  </programme>
-  <channel id="462">
-    <display-name>United Rugby Championship : Zebre vs Connacht</display-name>
-  </channel>
-  <programme start="20250517160000 +0200" stop="20250517180000 +0200" channel="462">
-    <title lang="it">United Rugby Championship : Zebre vs Connacht</title>
-    <desc lang="it">United Rugby Championship : Zebre vs Connacht trasmesso in diretta.</desc>
-    <category lang="it">Rugby Union</category>
   </programme>
 </tv>
