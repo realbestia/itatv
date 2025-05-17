@@ -5,7 +5,7 @@ from urllib.parse import quote
 from datetime import datetime, timedelta  
 from dateutil import parser  
 
-PROXY = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d="  
+PROXY = "https://nzo66-tvproxy.hf.space/proxy/m3u?url="  
 JSON_FILE = "daddyliveSchedule.json"  
 OUTPUT_FILE = "deevents.m3u"  
 BASE_URL = "https://thedaddy.to/embed/"  
@@ -71,9 +71,6 @@ def get_final_m3u8(iframe_url):
             return f"https://top1.newkso.ru/top1/cdn/{channel_key}/mono.m3u8"  
 
         stream_url = (f"{PROXY}https://{server_key}new.newkso.ru/{server_key}/{channel_key}/mono.m3u8"  
-                      f"?h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "  
-                      f"(KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://forcedtoplay.xyz/"  
-                      f"&h_origin=https://forcedtoplay.xyz")  
         return stream_url  
 
     except requests.RequestException as e:  
