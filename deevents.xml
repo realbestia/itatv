@@ -16,14 +16,6 @@
     <desc lang="it">ATP and WTA 1000 Rome WTA Singles Final LIVE.</desc>
     <category lang="it">Tennis</category>
   </programme>
-  <channel id="274">
-    <display-name>Formula 2 : AWS Emilia Romagna GP - Sprint Race</display-name>
-  </channel>
-  <programme start="20250517121000 +0200" stop="20250517141000 +0200" channel="274">
-    <title lang="it">Formula 2 : AWS Emilia Romagna GP - Sprint Race</title>
-    <desc lang="it">Formula 2 : AWS Emilia Romagna GP - Sprint Race LIVE.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="557">
     <display-name>WRC Rally Portugal | Special Stage 15</display-name>
   </channel>
@@ -32,6 +24,9 @@
     <desc lang="it">WRC Rally Portugal | Special Stage 15 LIVE.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="274">
+    <display-name>Formula 1 : AWS Emilia Romagna GP - Qualifying</display-name>
+  </channel>
   <programme start="20250517140000 +0200" stop="20250517160000 +0200" channel="274">
     <title lang="it">Formula 1 : AWS Emilia Romagna GP - Qualifying</title>
     <desc lang="it">Formula 1 : AWS Emilia Romagna GP - Qualifying LIVE.</desc>
@@ -45,11 +40,6 @@
   <channel id="785">
     <display-name>Major Championship PGA Championship</display-name>
   </channel>
-  <programme start="20250517120000 +0200" stop="20250517140000 +0200" channel="785">
-    <title lang="it">Major Championship PGA Championship</title>
-    <desc lang="it">Major Championship PGA Championship LIVE.</desc>
-    <category lang="it">Golf</category>
-  </programme>
   <programme start="20250517170000 +0200" stop="20250517190000 +0200" channel="785">
     <title lang="it">Major Championship PGA Championship</title>
     <desc lang="it">Major Championship PGA Championship LIVE.</desc>
