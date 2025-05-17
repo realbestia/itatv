@@ -822,23 +822,11 @@ https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F
 #EXTINF:-1 tvg-id="" tvg-name="WWE CHANNEL" tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/8c/WWE_Network_logo.jpeg" group-title="Altro", WWE CHANNEL
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https%3A%2F%2Fvavoo.to%2Fplay%2F2989824407%2Findex.m3u8
 
-#EXTINF:-1 group-title="Eventi Live" tvg-name="Soccer",--- Soccer ---
-https://exemple.m3u8
-
-#EXTINF:-1 tvg-id="25" tvg-name="Italy - Serie C : Calcio Padova vs Virtus Entella (2025-05-17 20:30)" group-title="Eventi Live",Italy - Serie C : Calcio Padova vs Virtus Entella (2025-05-17 20:30)
-https://nzo66-dlhd-proxy.hf.space/proxy/m3u?url=https://nfsnew.newkso.ru/nfs/premium25/mono.m3u8
-
-#EXTINF:-1 tvg-id="882" tvg-name="Italy - Serie C : Calcio Padova vs Virtus Entella (2025-05-17 20:30)" group-title="Eventi Live",Italy - Serie C : Calcio Padova vs Virtus Entella (2025-05-17 20:30)
-https://nzo66-dlhd-proxy.hf.space/proxy/m3u?url=https://ddy6new.newkso.ru/ddy6/premium882/mono.m3u8
-
-#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Genoa vs Atalanta (2025-05-17 20:45)" group-title="Eventi Live",Italy - Serie A : Genoa vs Atalanta (2025-05-17 20:45)
-https://nzo66-dlhd-proxy.hf.space/proxy/m3u?url=https://nfsnew.newkso.ru/nfs/premium877/mono.m3u8
-
 #EXTINF:-1 group-title="Eventi Live" tvg-name="Climbing",--- Climbing ---
 https://exemple.m3u8
 
 #EXTINF:-1 tvg-id="878" tvg-name="World Cup Curitiba | Boulder | Men's Final (2025-05-17 22:00)" group-title="Eventi Live",World Cup Curitiba | Boulder | Men's Final (2025-05-17 22:00)
-https://nzo66-dlhd-proxy.hf.space/proxy/m3u?url=https://windnew.newkso.ru/wind/premium878/mono.m3u8
+https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://windnew.newkso.ru/wind/premium878/mono.m3u8
 
 #EXTINF:-1 tvg-chno="80" tvg-name="Pluto TV Christmas" tvg-logo="https://images.pluto.tv/channels/612e05b885183d0007958101/colorLogoPNG.png" tvg-id="612e05b885183d0007958101" group-title="Pluto TV Italia",Pluto TV Christmas
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612e05b885183d0007958101/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
