@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="571">
-    <display-name>Australia - A-League : Melbourne Victory vs Auckland</display-name>
+    <display-name>Scottish Premiership : Celtic vs St. Mirren</display-name>
   </channel>
-  <programme start="20250517093500 +0200" stop="20250517113500 +0200" channel="571">
-    <title lang="it">Australia - A-League : Melbourne Victory vs Auckland</title>
-    <desc lang="it">Australia - A-League : Melbourne Victory vs Auckland LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <programme start="20250517113000 +0200" stop="20250517133000 +0200" channel="571">
     <title lang="it">Scottish Premiership : Celtic vs St. Mirren</title>
     <desc lang="it">Scottish Premiership : Celtic vs St. Mirren LIVE.</desc>
@@ -30,25 +25,12 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="884">
-    <display-name>ATP and WTA 1000 Rome Doubles Semifinals</display-name>
+    <display-name>ATP and WTA 1000 Rome WTA Singles Final</display-name>
   </channel>
-  <programme start="20250517090000 +0200" stop="20250517110000 +0200" channel="884">
-    <title lang="it">ATP and WTA 1000 Rome Doubles Semifinals</title>
-    <desc lang="it">ATP and WTA 1000 Rome Doubles Semifinals LIVE.</desc>
-    <category lang="it">Tennis</category>
-  </programme>
   <programme start="20250517150000 +0200" stop="20250517170000 +0200" channel="884">
     <title lang="it">ATP and WTA 1000 Rome WTA Singles Final</title>
     <desc lang="it">ATP and WTA 1000 Rome WTA Singles Final LIVE.</desc>
     <category lang="it">Tennis</category>
-  </programme>
-  <channel id="557">
-    <display-name>WRC Rally Portugal | Special Stage 13</display-name>
-  </channel>
-  <programme start="20250517092500 +0200" stop="20250517112500 +0200" channel="557">
-    <title lang="it">WRC Rally Portugal | Special Stage 13</title>
-    <desc lang="it">WRC Rally Portugal | Special Stage 13 LIVE.</desc>
-    <category lang="it">Motorsport</category>
   </programme>
   <channel id="274">
     <display-name>Formula 1 : AWS Emilia Romagna GP - Practice 3</display-name>
@@ -63,6 +45,9 @@
     <desc lang="it">Formula 2 : AWS Emilia Romagna GP - Sprint Race LIVE.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="557">
+    <display-name>WRC Rally Portugal | Special Stage 15</display-name>
+  </channel>
   <programme start="20250517140000 +0200" stop="20250517160000 +0200" channel="557">
     <title lang="it">WRC Rally Portugal | Special Stage 15</title>
     <desc lang="it">WRC Rally Portugal | Special Stage 15 LIVE.</desc>
@@ -90,13 +75,5 @@
     <title lang="it">Major Championship PGA Championship</title>
     <desc lang="it">Major Championship PGA Championship LIVE.</desc>
     <category lang="it">Golf</category>
-  </programme>
-  <channel id="640">
-    <display-name>National Rugby League : Cronulla Sharks vs Melbourne Storm</display-name>
-  </channel>
-  <programme start="20250517093500 +0200" stop="20250517113500 +0200" channel="640">
-    <title lang="it">National Rugby League : Cronulla Sharks vs Melbourne Storm</title>
-    <desc lang="it">National Rugby League : Cronulla Sharks vs Melbourne Storm LIVE.</desc>
-    <category lang="it">Rugby League</category>
   </programme>
 </tv>
