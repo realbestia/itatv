@@ -2,6 +2,12 @@
 #EXTINF:-1 group-title="Eventi Live" tvg-name="Soccer",--- Soccer ---
 https://exemple.m3u8
 
+#EXTINF:-1 tvg-id="162" tvg-name="Italy - Serie C : Foggia vs Messina (2025-05-17 15:00)" group-title="Eventi Live",Italy - Serie C : Foggia vs Messina (2025-05-17 15:00)
+https://ddylv-proxy.hf.space/proxy?url=https://windnew.newkso.ru/wind/premium162/mono.m3u8
+
+#EXTINF:-1 tvg-id="162" tvg-name="Italy - Serie C : Pro Vercelli vs Pro Patria (2025-05-17 17:30)" group-title="Eventi Live",Italy - Serie C : Pro Vercelli vs Pro Patria (2025-05-17 17:30)
+https://ddylv-proxy.hf.space/proxy?url=https://windnew.newkso.ru/wind/premium162/mono.m3u8
+
 #EXTINF:-1 tvg-id="870" tvg-name="Italy - Serie C : Pro Vercelli vs Pro Patria (2025-05-17 17:30)" group-title="Eventi Live",Italy - Serie C : Pro Vercelli vs Pro Patria (2025-05-17 17:30)
 https://ddylv-proxy.hf.space/proxy?url=https://windnew.newkso.ru/wind/premium870/mono.m3u8
 
@@ -10,6 +16,9 @@ https://ddylv-proxy.hf.space/proxy?url=https://ddy6new.newkso.ru/ddy6/premium851
 
 #EXTINF:-1 tvg-id="23" tvg-name="Italy - Serie C : Triestina vs Caldiero Terme (2025-05-17 20:00)" group-title="Eventi Live",Italy - Serie C : Triestina vs Caldiero Terme (2025-05-17 20:00)
 https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium23/mono.m3u8
+
+#EXTINF:-1 tvg-id="162" tvg-name="Italy - Serie C : SPAL vs Milan II (2025-05-17 20:00)" group-title="Eventi Live",Italy - Serie C : SPAL vs Milan II (2025-05-17 20:00)
+https://ddylv-proxy.hf.space/proxy?url=https://windnew.newkso.ru/wind/premium162/mono.m3u8
 
 #EXTINF:-1 tvg-id="870" tvg-name="Italy - Serie C : SPAL vs Milan II (2025-05-17 20:00)" group-title="Eventi Live",Italy - Serie C : SPAL vs Milan II (2025-05-17 20:00)
 https://ddylv-proxy.hf.space/proxy?url=https://windnew.newkso.ru/wind/premium870/mono.m3u8
@@ -28,9 +37,6 @@ https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium877/m
 
 #EXTINF:-1 group-title="Eventi Live" tvg-name="Motorsport",--- Motorsport ---
 https://exemple.m3u8
-
-#EXTINF:-1 tvg-id="577" tvg-name="Formula 3 : AWS Emilia Romagna GP - Sprint Race (2025-05-17 10:00)" group-title="Eventi Live",Formula 3 : AWS Emilia Romagna GP - Sprint Race (2025-05-17 10:00)
-https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 
 #EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : AWS Emilia Romagna GP - Practice 3 (2025-05-17 12:30)" group-title="Eventi Live",Formula 1 : AWS Emilia Romagna GP - Practice 3 (2025-05-17 12:30)
 https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
