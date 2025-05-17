@@ -5,17 +5,14 @@ https://exemple.m3u8
 #EXTINF:-1 tvg-id="571" tvg-name="Australia - A-League : Melbourne Victory vs Auckland (11:35)" group-title="Live Events",Australia - A-League : Melbourne Victory vs Auckland (11:35)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://dokko1new.newkso.ru/dokko1/premium571/mono.m3u8?h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://forcedtoplay.xyz/&h_origin=https://forcedtoplay.xyz
 
-#EXTINF:-1 tvg-name="Tennis" group-title="Live Events",--- Tennis ---
-https://exemple.m3u8
-
-#EXTINF:-1 tvg-id="884" tvg-name="ATP and WTA 1000 Rome Doubles Semifinals (11:00)" group-title="Live Events",ATP and WTA 1000 Rome Doubles Semifinals (11:00)
-https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://windnew.newkso.ru/wind/premium884/mono.m3u8?h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://forcedtoplay.xyz/&h_origin=https://forcedtoplay.xyz
-
 #EXTINF:-1 tvg-name="Motorsport" group-title="Live Events",--- Motorsport ---
 https://exemple.m3u8
 
 #EXTINF:-1 tvg-id="557" tvg-name="WRC Rally Portugal | Special Stage 13 (11:25)" group-title="Live Events",WRC Rally Portugal | Special Stage 13 (11:25)
 https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8?h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://forcedtoplay.xyz/&h_origin=https://forcedtoplay.xyz
+
+#EXTINF:-1 tvg-id="274" tvg-name="Formula 1 : AWS Emilia Romagna GP - Practice 3 (12:30)" group-title="Live Events",Formula 1 : AWS Emilia Romagna GP - Practice 3 (12:30)
+https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d=https://windnew.newkso.ru/wind/premium274/mono.m3u8?h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://forcedtoplay.xyz/&h_origin=https://forcedtoplay.xyz
 
 #EXTINF:-1 tvg-name="Rugby League" group-title="Live Events",--- Rugby League ---
 https://exemple.m3u8
