@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="162">
-    <display-name>Italy - Serie C : Foggia vs Messina</display-name>
-  </channel>
-  <programme start="20250517130000 +0200" stop="20250517150000 +0200" channel="162">
-    <title lang="it">Italy - Serie C : Foggia vs Messina</title>
-    <desc lang="it">Italy - Serie C : Foggia vs Messina trasmesso in diretta.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="185">
     <display-name>Italy - Serie B : Catanzaro vs Cesena</display-name>
   </channel>
@@ -16,6 +8,9 @@
     <desc lang="it">Italy - Serie B : Catanzaro vs Cesena trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="162">
+    <display-name>Italy - Serie C : Pro Vercelli vs Pro Patria</display-name>
+  </channel>
   <programme start="20250517153000 +0200" stop="20250517173000 +0200" channel="162">
     <title lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria</title>
     <desc lang="it">Italy - Serie C : Pro Vercelli vs Pro Patria trasmesso in diretta.</desc>
