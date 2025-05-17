@@ -96,13 +96,8 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="577">
-    <display-name>Formula 2 : AWS Emilia Romagna GP - Sprint Race</display-name>
+    <display-name>Formula 1 : AWS Emilia Romagna GP - Qualifying</display-name>
   </channel>
-  <programme start="20250517121000 +0200" stop="20250517141000 +0200" channel="577">
-    <title lang="it">Formula 2 : AWS Emilia Romagna GP - Sprint Race</title>
-    <desc lang="it">Formula 2 : AWS Emilia Romagna GP - Sprint Race trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250517140000 +0200" stop="20250517160000 +0200" channel="577">
     <title lang="it">Formula 1 : AWS Emilia Romagna GP - Qualifying</title>
     <desc lang="it">Formula 1 : AWS Emilia Romagna GP - Qualifying trasmesso in diretta.</desc>
@@ -136,10 +131,5 @@
     <title lang="it">United Rugby Championship : Zebre vs Connacht</title>
     <desc lang="it">United Rugby Championship : Zebre vs Connacht trasmesso in diretta.</desc>
     <category lang="it">Rugby Union</category>
-  </programme>
-  <programme start="20250517124500 +0200" stop="20250517144500 +0200" channel="462">
-    <title lang="it">Champions League : Jastrzebski vs Aluron Warta</title>
-    <desc lang="it">Champions League : Jastrzebski vs Aluron Warta trasmesso in diretta.</desc>
-    <category lang="it">Volleyball</category>
   </programme>
 </tv>
