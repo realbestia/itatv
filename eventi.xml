@@ -90,14 +90,6 @@
     <desc lang="it">Italy - Serie A : Genoa vs Atalanta trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="577">
-    <display-name>Formula 1 : AWS Emilia Romagna GP - Qualifying</display-name>
-  </channel>
-  <programme start="20250517140000 +0200" stop="20250517160000 +0200" channel="577">
-    <title lang="it">Formula 1 : AWS Emilia Romagna GP - Qualifying</title>
-    <desc lang="it">Formula 1 : AWS Emilia Romagna GP - Qualifying trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="879">
     <display-name>UFC Fight Night Main Card : Gilbert Burns vs Michael Morales</display-name>
   </channel>
@@ -113,11 +105,6 @@
     <title lang="it">World Cup Curitiba | Boulder | Men's Final</title>
     <desc lang="it">World Cup Curitiba | Boulder | Men's Final trasmesso in diretta.</desc>
     <category lang="it">Climbing</category>
-  </programme>
-  <programme start="20250517140000 +0200" stop="20250517160000 +0200" channel="882">
-    <title lang="it">Italy - Top 12 : Rugby Viadana 1970 vs. Valorugby Emilia</title>
-    <desc lang="it">Italy - Top 12 : Rugby Viadana 1970 vs. Valorugby Emilia trasmesso in diretta.</desc>
-    <category lang="it">Rugby Union</category>
   </programme>
   <channel id="462">
     <display-name>United Rugby Championship : Zebre vs Connacht</display-name>
