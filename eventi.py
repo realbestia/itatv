@@ -5,6 +5,7 @@ from urllib.parse import quote
 from datetime import datetime, timedelta
 from dateutil import parser
 
+PROXY = "https://nzo66-dlhd-proxy.hf.space/proxy/m3u?url="
 JSON_FILE = "daddyliveSchedule.json"
 OUTPUT_FILE = "eventi.m3u8"
 BASE_URL = "https://thedaddy.to/embed/"
@@ -69,7 +70,7 @@ def get_final_m3u8(iframe_url):
         if server_key == "top1/cdn":
             return f"https://top1.newkso.ru/top1/cdn/{channel_key}/mono.m3u8"
 
-        stream_url = (f"https://{server_key}new.newkso.ru/{server_key}/{channel_key}/mono.m3u8")
+        stream_url = (f"{PROXY}https://{server_key}new.newkso.ru/{server_key}/{channel_key}/mono.m3u8")
         return stream_url
 
     except requests.RequestException as e:
