@@ -5,6 +5,9 @@ https://exemple.m3u8
 #EXTINF:-1 tvg-id="162" tvg-name="Italy - Serie C : Foggia vs Messina (2025-05-17 15:00)" group-title="Eventi Live",Italy - Serie C : Foggia vs Messina (2025-05-17 15:00)
 https://ddylv-proxy.hf.space/proxy?url=https://windnew.newkso.ru/wind/premium162/mono.m3u8
 
+#EXTINF:-1 tvg-id="185" tvg-name="Italy - Serie B : Catanzaro vs Cesena (2025-05-17 17:15)" group-title="Eventi Live",Italy - Serie B : Catanzaro vs Cesena (2025-05-17 17:15)
+https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium185/mono.m3u8
+
 #EXTINF:-1 tvg-id="162" tvg-name="Italy - Serie C : Pro Vercelli vs Pro Patria (2025-05-17 17:30)" group-title="Eventi Live",Italy - Serie C : Pro Vercelli vs Pro Patria (2025-05-17 17:30)
 https://ddylv-proxy.hf.space/proxy?url=https://windnew.newkso.ru/wind/premium162/mono.m3u8
 
@@ -40,12 +43,6 @@ https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium877/m
 
 #EXTINF:-1 group-title="Eventi Live" tvg-name="Motorsport",--- Motorsport ---
 https://exemple.m3u8
-
-#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : AWS Emilia Romagna GP - Practice 3 (2025-05-17 12:30)" group-title="Eventi Live",Formula 1 : AWS Emilia Romagna GP - Practice 3 (2025-05-17 12:30)
-https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
-
-#EXTINF:-1 tvg-id="577" tvg-name="Formula 2 : AWS Emilia Romagna GP - Sprint Race (2025-05-17 14:10)" group-title="Eventi Live",Formula 2 : AWS Emilia Romagna GP - Sprint Race (2025-05-17 14:10)
-https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
 
 #EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : AWS Emilia Romagna GP - Qualifying (2025-05-17 16:00)" group-title="Eventi Live",Formula 1 : AWS Emilia Romagna GP - Qualifying (2025-05-17 16:00)
 https://ddylv-proxy.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium577/mono.m3u8
