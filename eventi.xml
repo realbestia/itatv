@@ -95,14 +95,6 @@
     <desc lang="it">Italy - Serie A : Genoa vs Atalanta trasmesso in diretta.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <channel id="878">
-    <display-name>Formula E Tokyo | Race 1 Round 8</display-name>
-  </channel>
-  <programme start="20250517060500 +0200" stop="20250517080500 +0200" channel="878">
-    <title lang="it">Formula E Tokyo | Race 1 Round 8</title>
-    <desc lang="it">Formula E Tokyo | Race 1 Round 8 trasmesso in diretta.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="577">
     <display-name>Formula 3 : AWS Emilia Romagna GP - Sprint Race</display-name>
   </channel>
@@ -139,6 +131,9 @@
     <desc lang="it">Gulf of the Island | Race GT World Series trasmesso in diretta.</desc>
     <category lang="it">Athletics</category>
   </programme>
+  <channel id="878">
+    <display-name>World Cup Curitiba | Boulder | Men's Final</display-name>
+  </channel>
   <programme start="20250517200000 +0200" stop="20250517220000 +0200" channel="878">
     <title lang="it">World Cup Curitiba | Boulder | Men's Final</title>
     <desc lang="it">World Cup Curitiba | Boulder | Men's Final trasmesso in diretta.</desc>
