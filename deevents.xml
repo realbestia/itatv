@@ -42,14 +42,6 @@
     <desc lang="it">ATP and WTA 1000 Rome WTA Singles Final LIVE.</desc>
     <category lang="it">Tennis</category>
   </programme>
-  <channel id="557">
-    <display-name>WRC Rally Portugal | Special Stage 12</display-name>
-  </channel>
-  <programme start="20250517063500 +0200" stop="20250517083500 +0200" channel="557">
-    <title lang="it">WRC Rally Portugal | Special Stage 12</title>
-    <desc lang="it">WRC Rally Portugal | Special Stage 12 LIVE.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <channel id="274">
     <display-name>Formula 3 : AWS Emilia Romagna GP - Sprint Race</display-name>
   </channel>
@@ -58,6 +50,9 @@
     <desc lang="it">Formula 3 : AWS Emilia Romagna GP - Sprint Race LIVE.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="557">
+    <display-name>WRC Rally Portugal | Special Stage 13</display-name>
+  </channel>
   <programme start="20250517092500 +0200" stop="20250517112500 +0200" channel="557">
     <title lang="it">WRC Rally Portugal | Special Stage 13</title>
     <desc lang="it">WRC Rally Portugal | Special Stage 13 LIVE.</desc>
