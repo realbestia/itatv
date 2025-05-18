@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="426">
-    <display-name>Spain - Primera División Femenina : Barcelona vs Athletic Club</display-name>
-  </channel>
-  <programme start="20250518100000 +0200" stop="20250518120000 +0200" channel="426">
-    <title lang="it">Spain - Primera División Femenina : Barcelona vs Athletic Club</title>
-    <desc lang="it">Spain - Primera División Femenina : Barcelona vs Athletic Club LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="427">
-    <display-name>Spain - Primera División Femenina : Valencia vs Real Madrid</display-name>
-  </channel>
-  <programme start="20250518100000 +0200" stop="20250518120000 +0200" channel="427">
-    <title lang="it">Spain - Primera División Femenina : Valencia vs Real Madrid</title>
-    <desc lang="it">Spain - Primera División Femenina : Valencia vs Real Madrid LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="4">
-    <display-name>England - Premier League : Everton vs Southampton</display-name>
-  </channel>
-  <programme start="20250518110000 +0200" stop="20250518130000 +0200" channel="4">
-    <title lang="it">England - Premier League : Everton vs Southampton</title>
-    <desc lang="it">England - Premier League : Everton vs Southampton LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="640">
     <display-name>Belgium - Pro League : Anderlecht vs Club Brugge</display-name>
   </channel>
@@ -40,6 +16,9 @@
     <desc lang="it">Netherlands - Eredivisie : Sparta Rotterdam vs PSV LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="4">
+    <display-name>England - Premier League : West Ham United vs Nottingham Forest</display-name>
+  </channel>
   <programme start="20250518131500 +0200" stop="20250518151500 +0200" channel="4">
     <title lang="it">England - Premier League : West Ham United vs Nottingham Forest</title>
     <desc lang="it">England - Premier League : West Ham United vs Nottingham Forest LIVE.</desc>
@@ -68,11 +47,17 @@
     <desc lang="it">Belgium - Pro League : Gent vs Genk LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="426">
+    <display-name>Spain - La Liga : Barcelona vs Villarreal</display-name>
+  </channel>
   <programme start="20250518170000 +0200" stop="20250518190000 +0200" channel="426">
     <title lang="it">Spain - La Liga : Barcelona vs Villarreal</title>
     <desc lang="it">Spain - La Liga : Barcelona vs Villarreal LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="427">
+    <display-name>Spain - La Liga : Sevilla vs Real Madrid</display-name>
+  </channel>
   <programme start="20250518170000 +0200" stop="20250518190000 +0200" channel="427">
     <title lang="it">Spain - La Liga : Sevilla vs Real Madrid</title>
     <desc lang="it">Spain - La Liga : Sevilla vs Real Madrid LIVE.</desc>
@@ -94,22 +79,12 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="884">
-    <display-name>WTA Strasbourg Open - Day 1</display-name>
+    <display-name>Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz</display-name>
   </channel>
-  <programme start="20250518110000 +0200" stop="20250518130000 +0200" channel="884">
-    <title lang="it">WTA Strasbourg Open - Day 1</title>
-    <desc lang="it">WTA Strasbourg Open - Day 1 LIVE.</desc>
-    <category lang="it">Tennis</category>
-  </programme>
   <programme start="20250518150000 +0200" stop="20250518170000 +0200" channel="884">
     <title lang="it">Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz</title>
     <desc lang="it">Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz LIVE.</desc>
     <category lang="it">Tennis</category>
-  </programme>
-  <programme start="20250518110000 +0200" stop="20250518130000 +0200" channel="557">
-    <title lang="it">FIA World Rally Championship Rally de Portugal: SS23</title>
-    <desc lang="it">FIA World Rally Championship Rally de Portugal: SS23 LIVE.</desc>
-    <category lang="it">Motorsport</category>
   </programme>
   <programme start="20250518120000 +0200" stop="20250518140000 +0200" channel="557">
     <title lang="it">WRC Rally Portugal | Special Stage 24 | Day 4</title>
