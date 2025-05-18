@@ -24,7 +24,7 @@ jobs:
           playwright install 
       
       - name: Run extraction script
-        run: python lista.py
+        run: python listaMFP.py
       
       - name: Configura Git
         run: |
