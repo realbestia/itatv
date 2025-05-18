@@ -94,13 +94,8 @@
     <category lang="it">Soccer</category>
   </programme>
   <channel id="884">
-    <display-name>ATP and WTA 1000 Rome Final</display-name>
+    <display-name>WTA Strasbourg Open - Day 1</display-name>
   </channel>
-  <programme start="20250518090000 +0200" stop="20250518110000 +0200" channel="884">
-    <title lang="it">ATP and WTA 1000 Rome Final</title>
-    <desc lang="it">ATP and WTA 1000 Rome Final LIVE.</desc>
-    <category lang="it">Tennis</category>
-  </programme>
   <programme start="20250518110000 +0200" stop="20250518130000 +0200" channel="884">
     <title lang="it">WTA Strasbourg Open - Day 1</title>
     <desc lang="it">WTA Strasbourg Open - Day 1 LIVE.</desc>
@@ -110,14 +105,6 @@
     <title lang="it">Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz</title>
     <desc lang="it">Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz LIVE.</desc>
     <category lang="it">Tennis</category>
-  </programme>
-  <channel id="274">
-    <display-name>Porsche Supercup Motor Racing : Emilia-Romagna Grand Prix</display-name>
-  </channel>
-  <programme start="20250518093000 +0200" stop="20250518113000 +0200" channel="274">
-    <title lang="it">Porsche Supercup Motor Racing : Emilia-Romagna Grand Prix</title>
-    <desc lang="it">Porsche Supercup Motor Racing : Emilia-Romagna Grand Prix LIVE.</desc>
-    <category lang="it">Motorsport</category>
   </programme>
   <programme start="20250518110000 +0200" stop="20250518130000 +0200" channel="557">
     <title lang="it">FIA World Rally Championship Rally de Portugal: SS23</title>
@@ -129,6 +116,9 @@
     <desc lang="it">WRC Rally Portugal | Special Stage 24 | Day 4 LIVE.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="274">
+    <display-name>Formula 1 : AWS Emilia Romagna GP - Grand Prix Sunday</display-name>
+  </channel>
   <programme start="20250518120000 +0200" stop="20250518140000 +0200" channel="274">
     <title lang="it">Formula 1 : AWS Emilia Romagna GP - Grand Prix Sunday</title>
     <desc lang="it">Formula 1 : AWS Emilia Romagna GP - Grand Prix Sunday LIVE.</desc>
