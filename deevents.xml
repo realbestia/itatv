@@ -111,19 +111,14 @@
     <desc lang="it">Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz LIVE.</desc>
     <category lang="it">Tennis</category>
   </programme>
-  <channel id="274">
-    <display-name>Formula 3 : AWS Emilia Romagna GP - Race</display-name>
-  </channel>
-  <programme start="20250518063000 +0200" stop="20250518083000 +0200" channel="274">
-    <title lang="it">Formula 3 : AWS Emilia Romagna GP - Race</title>
-    <desc lang="it">Formula 3 : AWS Emilia Romagna GP - Race LIVE.</desc>
-    <category lang="it">Motorsport</category>
-  </programme>
   <programme start="20250518073000 +0200" stop="20250518093000 +0200" channel="557">
     <title lang="it">WRC Rally Portugal | Special Stage 21 | Day 4</title>
     <desc lang="it">WRC Rally Portugal | Special Stage 21 | Day 4 LIVE.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="274">
+    <display-name>Formula 2 : AWS Emilia Romagna GP - Race</display-name>
+  </channel>
   <programme start="20250518080000 +0200" stop="20250518100000 +0200" channel="274">
     <title lang="it">Formula 2 : AWS Emilia Romagna GP - Race</title>
     <desc lang="it">Formula 2 : AWS Emilia Romagna GP - Race LIVE.</desc>
