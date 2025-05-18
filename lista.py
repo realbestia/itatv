@@ -55,12 +55,18 @@ def merger_playlist():
     # Aggiungi intestazione EPG
     combined_playlist = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n' + combined_playlist
     
-    # Salva la playlist
-    output_filename = os.path.join(script_directory, "combined_playlist.m3u")
-    with open(output_filename, 'w', encoding='utf-8') as file:
-        file.write(lista)
+    # Salva in .m3u
+    output_m3u = os.path.join(script_directory, "combined_playlist.m3u")
+    with open(output_m3u, 'w', encoding='utf-8') as file:
+        file.write(combined_playlist)
     
-    print(f"Playlist combinata salvata in: {output_filename}")
+    # Salva anche in .m3u8
+    output_m3u8 = os.path.join(script_directory, "combined_playlist.m3u8")
+    with open(output_m3u8, 'w', encoding='utf-8') as file:
+        file.write(combined_playlist)
+    
+    print(f"Playlist combinata salvata in: {output_m3u}")
+    print(f"Playlist combinata salvata anche in: {output_m3u8}")
 
 # Funzione per il secondo script (epg_merger.py)
 def epg_merger():
