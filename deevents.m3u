@@ -2,30 +2,21 @@
 #EXTINF:-1 tvg-name="Soccer" group-title="Live Events",--- Soccer ---
 https://exemple.m3u8
 
-#EXTINF:-1 tvg-id="640" tvg-name="Belgium - Pro League : Anderlecht vs Club Brugge (13:30)" group-title="Live Events",Belgium - Pro League : Anderlecht vs Club Brugge (13:30)
-https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/premium640/mono.m3u8
-
 #EXTINF:-1 tvg-id="571" tvg-name="Netherlands - Eredivisie : Sparta Rotterdam vs PSV (14:30)" group-title="Live Events",Netherlands - Eredivisie : Sparta Rotterdam vs PSV (14:30)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/premium571/mono.m3u8
 
-#EXTINF:-1 tvg-name="Motorsport" group-title="Live Events",--- Motorsport ---
-https://exemple.m3u8
+#EXTINF:-1 tvg-id="4" tvg-name="England - Premier League : West Ham United vs Nottingham Forest (15:15)" group-title="Live Events",England - Premier League : West Ham United vs Nottingham Forest (15:15)
+https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://nfsnew.newkso.ru/nfs/premium4/mono.m3u8
 
-#EXTINF:-1 tvg-id="557" tvg-name="WRC Rally Portugal | Special Stage 24 | Day 4 (14:00)" group-title="Live Events",WRC Rally Portugal | Special Stage 24 | Day 4 (14:00)
+#EXTINF:-1 tvg-id="557" tvg-name="England - Premier League : Brentford vs Fulham (16:00)" group-title="Live Events",England - Premier League : Brentford vs Fulham (16:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8
 
-#EXTINF:-1 tvg-id="274" tvg-name="Formula 1 : AWS Emilia Romagna GP - Grand Prix Sunday (14:00)" group-title="Live Events",Formula 1 : AWS Emilia Romagna GP - Grand Prix Sunday (14:00)
-https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://windnew.newkso.ru/wind/premium274/mono.m3u8
+#EXTINF:-1 tvg-name="Motorsport" group-title="Live Events",--- Motorsport ---
+https://exemple.m3u8
 
 #EXTINF:-1 tvg-id="274" tvg-name="Formula 1 : AWS Emilia Romagna GP - Race (15:00)" group-title="Live Events",Formula 1 : AWS Emilia Romagna GP - Race (15:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://windnew.newkso.ru/wind/premium274/mono.m3u8
 
 #EXTINF:-1 tvg-id="557" tvg-name="FIA World Rally Championship Rally de Portugal: SS24 (15:00)" group-title="Live Events",FIA World Rally Championship Rally de Portugal: SS24 (15:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8
-
-#EXTINF:-1 tvg-name="Golf" group-title="Live Events",--- Golf ---
-https://exemple.m3u8
-
-#EXTINF:-1 tvg-id="785" tvg-name="Major Championship PGA Championship (14:00)" group-title="Live Events",Major Championship PGA Championship (14:00)
-https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/premium785/mono.m3u8
 
