@@ -178,7 +178,6 @@ def eventi_m3u8_generator():
     # Aggiungi il codice del tuo script "eventi_m3u8_generator.py" in questa funzione.
     print("Eseguendo l'eventi_m3u8_generator.py...")
     # Il codice che avevi nello script "eventi_m3u8_generator.py" va qui, senza modifiche.
-    import json
     import re
     import requests
     from urllib.parse import quote
