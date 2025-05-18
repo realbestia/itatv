@@ -53,7 +53,7 @@ def merger_playlist():
     lista = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
     
     # Aggiungi intestazione EPG
-    lista = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/nzo66/TV/refs/heads/main/epg.xml"\n' + lista
+    lista = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n' + lista
     
     # Salva la playlist
     output_filename = os.path.join(script_directory, "lista.m3u")
@@ -642,7 +642,7 @@ def vavoo_italy_channels():
     import os
     import xml.etree.ElementTree as ET
     
-    PROXY = "https://nzo66-tvproxy.hf.space/proxy/m3u?url="
+    PROXY = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d="
     EPG_FILE = "epg.xml"
     LOGOS_FILE = "logos.txt"
     OUTPUT_FILE = "channels_italy.m3u8"
@@ -786,7 +786,7 @@ def world_channels_generator():
     import os
     from collections import defaultdict
     
-    PROXY = "https://nzo66-tvproxy.hf.space/proxy/m3u?url="
+    PROXY = "https://mfp2.nzo66.com/proxy/hls/manifest.m3u8?api_password=mfp123&d="
     OUTPUT_FILE = "world.m3u8"
     BASE_URLS = [
         "https://vavoo.to"
