@@ -50,13 +50,13 @@ def merger_playlist():
     playlist4 = download_playlist(url4, exclude_group_title="Italy")
     
     # Unisci le playlist
-    lista = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
+    combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
     
     # Aggiungi intestazione EPG
-    lista = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n' + lista
+    combined_playlist = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n' + combined_playlist
     
     # Salva la playlist
-    output_filename = os.path.join(script_directory, "lista.m3u")
+    output_filename = os.path.join(script_directory, "combined_playlist.m3u")
     with open(output_filename, 'w', encoding='utf-8') as file:
         file.write(lista)
     
