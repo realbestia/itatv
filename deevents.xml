@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="557">
-    <display-name>England - Premier League : Brentford vs Fulham</display-name>
-  </channel>
-  <programme start="20250518140000 +0200" stop="20250518160000 +0200" channel="557">
-    <title lang="it">England - Premier League : Brentford vs Fulham</title>
-    <desc lang="it">England - Premier League : Brentford vs Fulham LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="4">
     <display-name>England - Premier League : Arsenal vs Newcastle United</display-name>
   </channel>
@@ -79,6 +71,9 @@
     <desc lang="it">IndyCar Series Season Pole Day of Qualifying - Indianapolis Motor Speedway LIVE.</desc>
     <category lang="it">Motorsport</category>
   </programme>
+  <channel id="557">
+    <display-name>NHL : Florida Panthers vs Toronto Maple Leafs</display-name>
+  </channel>
   <programme start="20250518233000 +0200" stop="20250519013000 +0200" channel="557">
     <title lang="it">NHL : Florida Panthers vs Toronto Maple Leafs</title>
     <desc lang="it">NHL : Florida Panthers vs Toronto Maple Leafs LIVE.</desc>
