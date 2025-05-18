@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="640">
-    <display-name>Belgium - Pro League : Anderlecht vs Club Brugge</display-name>
-  </channel>
-  <programme start="20250518113000 +0200" stop="20250518133000 +0200" channel="640">
-    <title lang="it">Belgium - Pro League : Anderlecht vs Club Brugge</title>
-    <desc lang="it">Belgium - Pro League : Anderlecht vs Club Brugge LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="571">
     <display-name>Netherlands - Eredivisie : Sparta Rotterdam vs PSV</display-name>
   </channel>
@@ -42,6 +34,9 @@
     <desc lang="it">Poland - Ekstraklasa : Katowice vs Lech Poznań LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="640">
+    <display-name>Belgium - Pro League : Gent vs Genk</display-name>
+  </channel>
   <programme start="20250518163000 +0200" stop="20250518183000 +0200" channel="640">
     <title lang="it">Belgium - Pro League : Gent vs Genk</title>
     <desc lang="it">Belgium - Pro League : Gent vs Genk LIVE.</desc>
