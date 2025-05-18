@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="4">
-    <display-name>England - Premier League : Arsenal vs Newcastle United</display-name>
-  </channel>
-  <programme start="20250518153000 +0200" stop="20250518173000 +0200" channel="4">
-    <title lang="it">England - Premier League : Arsenal vs Newcastle United</title>
-    <desc lang="it">England - Premier League : Arsenal vs Newcastle United LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="571">
-    <display-name>Poland - Ekstraklasa : Katowice vs Lech Poznań</display-name>
-  </channel>
-  <programme start="20250518153000 +0200" stop="20250518173000 +0200" channel="571">
-    <title lang="it">Poland - Ekstraklasa : Katowice vs Lech Poznań</title>
-    <desc lang="it">Poland - Ekstraklasa : Katowice vs Lech Poznań LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="640">
     <display-name>Belgium - Pro League : Gent vs Genk</display-name>
   </channel>
@@ -50,18 +34,13 @@
     <desc lang="it">Italy - Serie A : Parma vs Napoli LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="571">
+    <display-name>Major League Soccer : Inter Miami vs Orlando City SC</display-name>
+  </channel>
   <programme start="20250518230000 +0200" stop="20250519010000 +0200" channel="571">
     <title lang="it">Major League Soccer : Inter Miami vs Orlando City SC</title>
     <desc lang="it">Major League Soccer : Inter Miami vs Orlando City SC LIVE.</desc>
     <category lang="it">Soccer</category>
-  </programme>
-  <channel id="884">
-    <display-name>Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz</display-name>
-  </channel>
-  <programme start="20250518150000 +0200" stop="20250518170000 +0200" channel="884">
-    <title lang="it">Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz</title>
-    <desc lang="it">Masters Roma Final ATP Masters 1000 : J. Sinner vs C. Alcaraz LIVE.</desc>
-    <category lang="it">Tennis</category>
   </programme>
   <channel id="274">
     <display-name>IndyCar Series Season Pole Day of Qualifying - Indianapolis Motor Speedway</display-name>
