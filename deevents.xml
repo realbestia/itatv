@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="571">
-    <display-name>UEFA U17 European Championship : Albania U17 vs Portugal U17</display-name>
-  </channel>
-  <programme start="20250519160000 +0200" stop="20250519180000 +0200" channel="571">
-    <title lang="it">UEFA U17 European Championship : Albania U17 vs Portugal U17</title>
-    <desc lang="it">UEFA U17 European Championship : Albania U17 vs Portugal U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="1">
     <display-name>UEFA U17 European Championship : Germany U17 vs France U17</display-name>
   </channel>
@@ -24,6 +16,9 @@
     <desc lang="it">UEFA U17 European Championship : Germany U17 vs France U17 LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="571">
+    <display-name>UEFA U17 European Championship : Germany U17 vs France U17</display-name>
+  </channel>
   <programme start="20250519183000 +0200" stop="20250519203000 +0200" channel="571">
     <title lang="it">UEFA U17 European Championship : Germany U17 vs France U17</title>
     <desc lang="it">UEFA U17 European Championship : Germany U17 vs France U17 LIVE.</desc>
