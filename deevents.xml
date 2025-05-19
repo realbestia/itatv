@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="1">
-    <display-name>UEFA U17 European Championship : Germany U17 vs France U17</display-name>
-  </channel>
-  <programme start="20250519183000 +0200" stop="20250519203000 +0200" channel="1">
-    <title lang="it">UEFA U17 European Championship : Germany U17 vs France U17</title>
-    <desc lang="it">UEFA U17 European Championship : Germany U17 vs France U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="557">
-    <display-name>UEFA U17 European Championship : Germany U17 vs France U17</display-name>
-  </channel>
-  <programme start="20250519183000 +0200" stop="20250519203000 +0200" channel="557">
-    <title lang="it">UEFA U17 European Championship : Germany U17 vs France U17</title>
-    <desc lang="it">UEFA U17 European Championship : Germany U17 vs France U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="571">
-    <display-name>UEFA U17 European Championship : Germany U17 vs France U17</display-name>
-  </channel>
-  <programme start="20250519183000 +0200" stop="20250519203000 +0200" channel="571">
-    <title lang="it">UEFA U17 European Championship : Germany U17 vs France U17</title>
-    <desc lang="it">UEFA U17 European Championship : Germany U17 vs France U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="5">
     <display-name>England - Premier League : Brighton & Hove Albion vs Liverpool</display-name>
   </channel>
@@ -40,11 +16,17 @@
     <desc lang="it">England - Premier League : Brighton & Hove Albion vs Liverpool LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="571">
+    <display-name>Argentina - Primera División : Argentinos Juniors vs San Lorenzo</display-name>
+  </channel>
   <programme start="20250519220000 +0200" stop="20250520000000 +0200" channel="571">
     <title lang="it">Argentina - Primera División : Argentinos Juniors vs San Lorenzo</title>
     <desc lang="it">Argentina - Primera División : Argentinos Juniors vs San Lorenzo LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="557">
+    <display-name>NHL : Dallas Stars vs Winnipeg Jets</display-name>
+  </channel>
   <programme start="20250519233000 +0200" stop="20250520013000 +0200" channel="557">
     <title lang="it">NHL : Dallas Stars vs Winnipeg Jets</title>
     <desc lang="it">NHL : Dallas Stars vs Winnipeg Jets LIVE.</desc>
