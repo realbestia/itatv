@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="571">
-    <display-name>Major League Soccer : Inter Miami vs Orlando City SC</display-name>
+    <display-name>UEFA U17 European Championship : Albania U17 vs Portugal U17</display-name>
   </channel>
-  <programme start="20250518230000 +0200" stop="20250519010000 +0200" channel="571">
-    <title lang="it">Major League Soccer : Inter Miami vs Orlando City SC</title>
-    <desc lang="it">Major League Soccer : Inter Miami vs Orlando City SC LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="557">
-    <display-name>NHL : Florida Panthers vs Toronto Maple Leafs</display-name>
-  </channel>
-  <programme start="20250518233000 +0200" stop="20250519013000 +0200" channel="557">
-    <title lang="it">NHL : Florida Panthers vs Toronto Maple Leafs</title>
-    <desc lang="it">NHL : Florida Panthers vs Toronto Maple Leafs LIVE.</desc>
-    <category lang="it">Ice Hockey</category>
-  </programme>
-  <channel id="556">
-    <display-name>NHL : Florida Panthers vs Toronto Maple Leafs</display-name>
-  </channel>
-  <programme start="20250518233000 +0200" stop="20250519013000 +0200" channel="556">
-    <title lang="it">NHL : Florida Panthers vs Toronto Maple Leafs</title>
-    <desc lang="it">NHL : Florida Panthers vs Toronto Maple Leafs LIVE.</desc>
-    <category lang="it">Ice Hockey</category>
-  </programme>
   <programme start="20250519160000 +0200" stop="20250519180000 +0200" channel="571">
     <title lang="it">UEFA U17 European Championship : Albania U17 vs Portugal U17</title>
     <desc lang="it">UEFA U17 European Championship : Albania U17 vs Portugal U17 LIVE.</desc>
@@ -37,6 +16,9 @@
     <desc lang="it">UEFA U17 European Championship : Germany U17 vs France U17 LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="557">
+    <display-name>UEFA U17 European Championship : Germany U17 vs France U17</display-name>
+  </channel>
   <programme start="20250519183000 +0200" stop="20250519203000 +0200" channel="557">
     <title lang="it">UEFA U17 European Championship : Germany U17 vs France U17</title>
     <desc lang="it">UEFA U17 European Championship : Germany U17 vs France U17 LIVE.</desc>
@@ -55,6 +37,9 @@
     <desc lang="it">England - Premier League : Brighton & Hove Albion vs Liverpool LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="556">
+    <display-name>England - Premier League : Brighton & Hove Albion vs Liverpool</display-name>
+  </channel>
   <programme start="20250519190000 +0200" stop="20250519210000 +0200" channel="556">
     <title lang="it">England - Premier League : Brighton & Hove Albion vs Liverpool</title>
     <desc lang="it">England - Premier League : Brighton & Hove Albion vs Liverpool LIVE.</desc>
