@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from dateutil import parser
 import urllib.parse
 
-PROXY = "https://tvproxy.nzo66.com/"  # Proxy HLS
+PROXY = "https://tvproxy.nzo66.com"  # Proxy HLS
 JSON_FILE = "daddyliveSchedule.json"
 OUTPUT_FILE = "deevents.m3u"
 BASE_URL = "https://thedaddy.to/embed/"
