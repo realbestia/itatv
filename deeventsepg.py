@@ -8,7 +8,7 @@ def clean_text(text):
 
 # Funzione per generare il file EPG XML
 def generate_epg_xml(json_data):
-    epg_content = '<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n'
+    epg_content = '<?xml version="1.0" encoding="utf-8"?>\n<tv>\n'
     current_datetime = datetime.now()
 
     channel_ids = set()  # Per evitare duplicati nei canali
