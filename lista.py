@@ -564,114 +564,115 @@ def epg_eventi_generator():
     # Aggiungi il codice del tuo script "epg_eventi_generator.py" in questa funzione.
     print("Eseguendo l'epg_eventi_generator.py...")
     # Il codice che avevi nello script "epg_eventi_generator.py" va qui, senza modifiche.
-import json
-import re
-import html
-from datetime import datetime, timedelta
-
-# Rimuove tag HTML
-def clean_text(text):
-    return re.sub(r'<[^>]+>', '', text)
-
-# Genera l'EPG XML
-def generate_epg_xml(json_data):
-    epg_lines = ['<?xml version="1.0" encoding="utf-8"?>', '<tv>']
-    now = datetime.now()
-    today = now.date()
-    channel_ids = set()
-
-    for date, categories in json_data.items():
-        try:
-            date_str = re.sub(r'(\d+)(st|nd|rd|th)', r'\1', date.split(' - ')[0])
-            date_obj = datetime.strptime(date_str, "%A %d %B %Y")
-        except ValueError:
-            continue
-
-        if date_obj.date() != today:
-            continue
-
-        for category, events in categories.items():
-            for event_info in events:
-                time_str = event_info["time"]
-                try:
-                    event_time = datetime.strptime(time_str, "%H:%M").time()
-                    event_dt = datetime.combine(date_obj.date(), event_time)
-                    event_dt_local = event_dt + timedelta(hours=2)
-                except ValueError:
-                    continue
-
-                if event_dt_local < now - timedelta(hours=2):
-                    continue
-
-                for channel in event_info["channels"]:
-                    channel_name_clean = clean_text(channel["channel_name"])
-                    if not re.search(r'\b(italy|rai|italia|it)\b', channel_name_clean, re.IGNORECASE):
+    import json
+    import re
+    import html
+    from datetime import datetime, timedelta
+    
+    # Rimuove tag HTML
+    def clean_text(text):
+        return re.sub(r'<[^>]+>', '', text)
+    
+    # Genera l'EPG XML
+    def generate_epg_xml(json_data):
+        epg_lines = ['<?xml version="1.0" encoding="utf-8"?>', '<tv>']
+        now = datetime.now()
+        today = now.date()
+        channel_ids = set()
+    
+        for date, categories in json_data.items():
+            try:
+                date_str = re.sub(r'(\d+)(st|nd|rd|th)', r'\1', date.split(' - ')[0])
+                date_obj = datetime.strptime(date_str, "%A %d %B %Y")
+            except ValueError:
+                continue
+    
+            if date_obj.date() != today:
+                continue
+    
+            for category, events in categories.items():
+                for event_info in events:
+                    time_str = event_info["time"]
+                    try:
+                        event_time = datetime.strptime(time_str, "%H:%M").time()
+                        event_dt = datetime.combine(date_obj.date(), event_time)
+                        event_dt_local = event_dt + timedelta(hours=2)
+                    except ValueError:
                         continue
+    
+                    if event_dt_local < now - timedelta(hours=2):
+                        continue
+    
+                    for channel in event_info["channels"]:
+                        channel_name_clean = clean_text(channel["channel_name"])
+                        if not re.search(r'\b(italy|rai|italia|it)\b', channel_name_clean, re.IGNORECASE):
+                            continue
+    
+                        channel_id = channel["channel_id"]
+                        channel_name = html.escape(channel_name_clean)
+    
+                        if channel_id not in channel_ids:
+                            epg_lines.append(f'  <channel id="{channel_id}">')
+                            epg_lines.append(f'    <display-name lang="it">{channel_name}</display-name>')
+                            epg_lines.append(f'  </channel>')
+                            channel_ids.add(channel_id)
+    
+                        title = html.escape(clean_text(event_info["event"]))
+                        desc = html.escape(event_info.get("description", f"{title} LIVE."))
+                        category_name = html.escape(clean_text(category))
+    
+                        start = event_dt_local.strftime("%Y%m%d%H%M%S") + " +0200"
+                        stop = (event_dt_local + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
+    
+                        epg_lines.append(f'  <programme start="{start}" stop="{stop}" channel="{channel_id}">')
+                        epg_lines.append(f'    <title lang="it">{title}</title>')
+                        epg_lines.append(f'    <desc lang="it">{desc}</desc>')
+                        epg_lines.append(f'    <category lang="it">{category_name}</category>')
+                        epg_lines.append(f'  </programme>')
+    
+        epg_lines.append('</tv>')
+        return '\n'.join(epg_lines)
+    
+    # Carica il JSON e filtra
+    def load_json(json_file):
+        with open(json_file, "r", encoding="utf-8") as file:
+            data = json.load(file)
+    
+        filtered = {}
+        for date, categories in data.items():
+            cat_filtered = {}
+    
+            for category, events in categories.items():
+                event_filtered = []
+                for event_info in events:
+                    channels_filtered = []
+    
+                    for channel in event_info["channels"]:
+                        name = clean_text(channel["channel_name"])
+                        if re.search(r'\b(italy|rai|italia|it)\b', name, re.IGNORECASE):
+                            channels_filtered.append(channel)
+    
+                    if channels_filtered:
+                        event_filtered.append({**event_info, "channels": channels_filtered})
+    
+                if event_filtered:
+                    cat_filtered[category] = event_filtered
+    
+            if cat_filtered:
+                filtered[date] = cat_filtered
+    
+        return filtered
+    
+    # Esecuzione
+    json_data = load_json("daddyliveSchedule.json")
+    epg_content = generate_epg_xml(json_data)
+    
+    # Salva con nome richiesto
+    with open("eventi.xml", "w", encoding="utf-8") as f:
+        f.write(epg_content)
+    
+    print("✅ File 'eventi.xml' generato con eventi italiani odierni.")
 
-                    channel_id = channel["channel_id"]
-                    channel_name = html.escape(channel_name_clean)
-
-                    if channel_id not in channel_ids:
-                        epg_lines.append(f'  <channel id="{channel_id}">')
-                        epg_lines.append(f'    <display-name lang="it">{channel_name}</display-name>')
-                        epg_lines.append(f'  </channel>')
-                        channel_ids.add(channel_id)
-
-                    title = html.escape(clean_text(event_info["event"]))
-                    desc = html.escape(event_info.get("description", f"{title} LIVE."))
-                    category_name = html.escape(clean_text(category))
-
-                    start = event_dt_local.strftime("%Y%m%d%H%M%S") + " +0200"
-                    stop = (event_dt_local + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
-
-                    epg_lines.append(f'  <programme start="{start}" stop="{stop}" channel="{channel_id}">')
-                    epg_lines.append(f'    <title lang="it">{title}</title>')
-                    epg_lines.append(f'    <desc lang="it">{desc}</desc>')
-                    epg_lines.append(f'    <category lang="it">{category_name}</category>')
-                    epg_lines.append(f'  </programme>')
-
-    epg_lines.append('</tv>')
-    return '\n'.join(epg_lines)
-
-# Carica il JSON e filtra
-def load_json(json_file):
-    with open(json_file, "r", encoding="utf-8") as file:
-        data = json.load(file)
-
-    filtered = {}
-    for date, categories in data.items():
-        cat_filtered = {}
-
-        for category, events in categories.items():
-            event_filtered = []
-            for event_info in events:
-                channels_filtered = []
-
-                for channel in event_info["channels"]:
-                    name = clean_text(channel["channel_name"])
-                    if re.search(r'\b(italy|rai|italia|it)\b', name, re.IGNORECASE):
-                        channels_filtered.append(channel)
-
-                if channels_filtered:
-                    event_filtered.append({**event_info, "channels": channels_filtered})
-
-            if event_filtered:
-                cat_filtered[category] = event_filtered
-
-        if cat_filtered:
-            filtered[date] = cat_filtered
-
-    return filtered
-
-# Esecuzione
-json_data = load_json("daddyliveSchedule.json")
-epg_content = generate_epg_xml(json_data)
-
-# Salva con nome richiesto
-with open("eventi.xml", "w", encoding="utf-8") as f:
-    f.write(epg_content)
-
-print("✅ File 'eventi.xml' generato con eventi italiani odierni.")
 # Funzione per il sesto script (vavoo_italy_channels.py)
 def vavoo_italy_channels():
     # Codice del sesto script qui
