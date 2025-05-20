@@ -210,7 +210,7 @@ def eventi_m3u8_generator():
             clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name)
 
             # Prepara la query di ricerca 
-            search_query = urllib.parse.quote(f"{clean_event_name} logo") 
+            search_query = urllib.parse.quote(f"{clean_event_name} logo dazn") 
 
             # Utilizziamo l'API di Bing Image Search (richiede una chiave API) 
             # Alternativa: possiamo usare un'API gratuita come DuckDuckGo o un'altra soluzione 
