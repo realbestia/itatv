@@ -49,8 +49,8 @@ def generate_epg_xml(json_data):
 
                     # Se il canale non è stato ancora aggiunto, lo aggiunge
                     if channel_id not in channel_ids:
-                        epg_content += f'  <channel id="{channel_id}">\n'
-                        epg_content += f'    <display-name>{channel_name}</display-name>\n'  # Nome canale qui
+                        epg_content += f'<channel id="{channel_id}">\n'
+                        epg_content += f'<display-name>{channel_name}</display-name>\n'  # Nome canale qui
                         epg_content += f'  </channel>\n'
                         channel_ids.add(channel_id)
 
@@ -59,11 +59,11 @@ def generate_epg_xml(json_data):
                     stop_time = (event_datetime_local + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
 
                     # Aggiunge l'evento principale nel file EPG
-                    epg_content += f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
-                    epg_content += f'    <title lang="it">{event_name}</title>\n'
-                    epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
-                    epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'
-                    epg_content += f'  </programme>\n'
+                    epg_content += f'<programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
+                    epg_content += f'<title lang="it">{event_name}</title>\n'
+                    epg_content += f'<desc lang="it">{event_desc}</desc>\n'
+                    epg_content += f'<category lang="it">{clean_text(category)}</category>\n'
+                    epg_content += f'</programme>\n'
 
     epg_content += "</tv>\n"
     return epg_content
