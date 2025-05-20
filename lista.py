@@ -20,7 +20,6 @@ def merger_playlist():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
-    LINKEPG = os.getenv("LINKEPG")
     NOMEREPO = os.getenv("NOMEREPO")
     NOMEGITHUB = os.getenv("NOMEGITHUB")
 
