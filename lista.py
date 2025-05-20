@@ -600,14 +600,14 @@ def epg_eventi_generator():
                     try:
                         event_time = datetime.strptime(time_str, "%H:%M").time()
                         event_datetime = datetime.combine(event_date, event_time)
-    
-                        # Aggiunta 2 ore per convertire da UTC a +0200
-                        event_datetime_local = event_datetime + timedelta(hours=2)
                     except ValueError:
                         continue
     
-                    if event_datetime_local < current_datetime - timedelta(hours=2):
+                    if event_datetime < current_datetime - timedelta(hours=2):
                         continue  # Esclude eventi già terminati
+    
+                    # Aggiungi 2 ore all'orario per convertire UTC in +2
+                    event_datetime += timedelta(hours=2)
     
                     for channel in event_info["channels"]:
                         channel_id = channel["channel_id"]
@@ -616,29 +616,19 @@ def epg_eventi_generator():
                         # Se il canale non è stato ancora aggiunto, lo aggiunge
                         if channel_id not in channel_ids:
                             epg_content += f'  <channel id="{channel_id}">\n'
-                            epg_content += f'    <display-name>{channel_name}</display-name>\n'  # Usa nome canale
+                            epg_content += f'    <display-name>{event_name}</display-name>\n'  # Usa event_name per <display-name>
                             epg_content += f'  </channel>\n'
                             channel_ids.add(channel_id)
     
-                        # Aggiungi un annuncio che parte da mezzanotte del giorno dell'evento (in locale)
-                        announcement_start_time = datetime.combine(event_date, datetime.min.time()) + timedelta(hours=2)  # 00:00 + 2h
-                        announcement_stop_time = event_datetime_local
-    
-                        epg_content += f'  <programme start="{announcement_start_time.strftime("%Y%m%d%H%M%S")} +0200" stop="{announcement_stop_time.strftime("%Y%m%d%H%M%S")} +0200" channel="{channel_id}">\n'
-                        epg_content += f'    <title lang="it">inizierà alle {event_datetime_local.strftime("%H:%M")}.</title>\n'
-                        epg_content += f'    <desc lang="it">{event_name}.</desc>\n'
-                        epg_content += f'    <category lang="it">Annuncio</category>\n'
-                        epg_content += f'  </programme>\n'
-    
-                        # Formatta start e stop per l'evento principale (locale +2h)
-                        start_time = event_datetime_local.strftime("%Y%m%d%H%M%S") + " +0200"
-                        stop_time = (event_datetime_local + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
+                        # Formatta start e stop per l'evento principale
+                        start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0200"
+                        stop_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
     
                         # Aggiunge l'evento principale nel file EPG
                         epg_content += f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
                         epg_content += f'    <title lang="it">{event_name}</title>\n'
                         epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
-                        epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'
+                        epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'  # Pulisce la categoria
                         epg_content += f'  </programme>\n'
     
         epg_content += "</tv>\n"
