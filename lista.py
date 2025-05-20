@@ -15,7 +15,15 @@ def merger_playlist():
     # Il codice che avevi nello script "merger_playlist.py" va qui, senza modifiche.
     import requests
     import os
-    
+    from dotenv import load_dotenv
+
+    # Carica le variabili d'ambiente dal file .env
+    load_dotenv()
+
+    LINKEPG = os.getenv("LINKEPG")
+    NOMEREPO = os.getenv("NOMEREPO")
+    NOMEGITHUB = os.getenv("NOMEGITHUB")
+
     # Percorsi o URL delle playlist M3U8
     url1 = "channels_italy.m3u8"  # File locale
     url2 = "eventi.m3u8"   
@@ -53,7 +61,7 @@ def merger_playlist():
     combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
     
     # Aggiungi intestazione EPG
-    combined_playlist = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/epg.xml"\n' + combined_playlist
+    combined_playlist = f'#EXTM3U x-tvg-url="https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/refs/heads/main/epg.xml"\n' + combined_playlist
     
     # Salva in .m3u
     output_m3u = os.path.join(script_directory, "combined_playlist.m3u")
@@ -185,8 +193,13 @@ def eventi_m3u8_generator():
     from datetime import datetime, timedelta 
     from dateutil import parser 
     import urllib.parse
+    import os
+    from dotenv import load_dotenv
 
-    PROXY = "https://tvproxy.nzo66.com"  # Proxy HLS 
+    # Carica le variabili d'ambiente dal file .env
+    load_dotenv()
+
+    PROXY = os.getenv("PROXYIP")  # Proxy HLS 
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
     BASE_URL = "https://thedaddy.to/embed/" 
@@ -214,7 +227,7 @@ def eventi_m3u8_generator():
 
             # Utilizziamo l'API di Bing Image Search (richiede una chiave API) 
             # Alternativa: possiamo usare un'API gratuita come DuckDuckGo o un'altra soluzione 
-            search_url = f"https://www.bing.com/images/search?q={search_query}" 
+            search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent&form=IRFLTR" 
 
             headers = { 
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" 
@@ -683,8 +696,12 @@ def vavoo_italy_channels():
     import re
     import os
     import xml.etree.ElementTree as ET
+    from dotenv import load_dotenv
     
-    PROXY = "https://tvproxy.nzo66.com"
+    # Carica le variabili d'ambiente dal file .env
+    load_dotenv()
+
+    PROXY = os.getenv("PROXYIP")
     EPG_FILE = "epg.xml"
     LOGOS_FILE = "logos.txt"
     OUTPUT_FILE = "channels_italy.m3u8"
@@ -827,8 +844,11 @@ def world_channels_generator():
     import re
     import os
     from collections import defaultdict
-    
-    PROXY = "https://tvproxy.nzo66.com"
+    from dotenv import load_dotenv
+    # Carica le variabili d'ambiente dal file .env
+    load_dotenv()
+
+    PROXY = os.getenv("PROXYIP")
     OUTPUT_FILE = "world.m3u8"
     BASE_URLS = [
         "https://vavoo.to"
