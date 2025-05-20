@@ -51,7 +51,7 @@ def generate_epg_xml(json_data):
                     if channel_id not in channel_ids:
                         epg_content += f'<channel id="{channel_id}">\n'
                         epg_content += f'<display-name>{channel_name}</display-name>\n'  # Nome canale qui
-                        epg_content += f'  </channel>\n'
+                        epg_content += f'</channel>\n'
                         channel_ids.add(channel_id)
 
                     # Format start e stop con orario locale +0200
