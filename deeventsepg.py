@@ -52,8 +52,8 @@ def generate_epg_xml(json_data):
                         channel_ids.add(channel_id)
 
                     # Formatta start e stop per l'evento principale
-                    start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0200"
-                    stop_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
+                    start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0000"
+                    stop_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0000"
 
                     # Aggiunge l'evento principale nel file EPG
                     epg_content += f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
