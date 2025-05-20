@@ -60,9 +60,9 @@ def generate_epg_xml(json_data):
 
                     # Aggiunge l'evento principale nel file EPG
                     epg_content += f'<programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
-                    epg_content += f'<title lang="it">{event_name}</title>\n'
-                    epg_content += f'<desc lang="it">{event_desc}</desc>\n'
-                    epg_content += f'<category lang="it">{clean_text(category)}</category>\n'
+                    epg_content += f'<title lang="it">{event_name}</title>'
+                    epg_content += f'<desc lang="it">{event_desc}</desc>'
+                    epg_content += f'<category lang="it">{clean_text(category)}</category>'
                     epg_content += f'</programme>\n'
 
     epg_content += "</tv>\n"
