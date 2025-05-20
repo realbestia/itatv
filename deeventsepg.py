@@ -49,8 +49,8 @@ def generate_epg_xml(json_data):
 
                     # Se il canale non è stato ancora aggiunto, lo aggiunge
                     if channel_id not in channel_ids:
-                        epg_content += f'<channel id="{channel_id}">\n'
-                        epg_content += f'<display-name>{channel_name}</display-name>\n'  # Nome canale qui
+                        epg_content += f'<channel id="{channel_id}">'
+                        epg_content += f'<display-name>{channel_name}</display-name>'  # Nome canale qui
                         epg_content += f'</channel>\n'
                         channel_ids.add(channel_id)
 
