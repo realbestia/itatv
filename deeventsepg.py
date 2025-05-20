@@ -55,9 +55,9 @@ def generate_epg_xml(json_data):
                     stop_time = (event_datetime_local + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
 
                     epg_lines.append(f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">')
-                    epg_lines.append(f'    <title lang="it">{event_name}</title>')
-                    epg_lines.append(f'    <desc lang="it">{event_desc}</desc>')
-                    epg_lines.append(f'    <category lang="it">{category_name}</category>')
+                    epg_lines.append(f'    <title lang="de">{event_name}</title>')
+                    epg_lines.append(f'    <desc lang="de">{event_desc}</desc>')
+                    epg_lines.append(f'    <category lang="de">{category_name}</category>')
                     epg_lines.append(f'  </programme>')
 
     epg_lines.append('</tv>')
