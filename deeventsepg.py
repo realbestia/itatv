@@ -59,7 +59,7 @@ def generate_epg_xml(json_data):
                     stop_time = (event_datetime_local + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
 
                     # Aggiunge l'evento principale nel file EPG
-                    epg_content += f'<programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
+                    epg_content += f'<programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">'
                     epg_content += f'<title lang="it">{event_name}</title>'
                     epg_content += f'<desc lang="it">{event_desc}</desc>'
                     epg_content += f'<category lang="it">{clean_text(category)}</category>'
