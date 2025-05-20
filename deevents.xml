@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tv>
-  <channel id="557">
-    <display-name lang="de">Sky Sport Mix DE</display-name>
-  </channel>
-  <programme start="20250520210000 +0200" stop="20250520230000 +0200" channel="557">
-    <title lang="it">England - Premier League : Crystal Palace vs Wolverhampton Wanderers</title>
-    <desc lang="it">England - Premier League : Crystal Palace vs Wolverhampton Wanderers LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="13">
-    <display-name lang="de">Sky Sport Premier League DE</display-name>
-  </channel>
-  <programme start="20250520210000 +0200" stop="20250520230000 +0200" channel="13">
-    <title lang="it">England - Premier League : Manchester City vs AFC Bournemouth</title>
-    <desc lang="it">England - Premier League : Manchester City vs AFC Bournemouth LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="556">
-    <display-name lang="de">Sky Sport Top Event DE</display-name>
-  </channel>
-  <programme start="20250520210000 +0200" stop="20250520230000 +0200" channel="556">
-    <title lang="it">England - Premier League : Manchester City vs AFC Bournemouth</title>
-    <desc lang="it">England - Premier League : Manchester City vs AFC Bournemouth LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="571">
     <display-name lang="de">Sportdigital FUSSBALL DE</display-name>
   </channel>
