@@ -34,7 +34,7 @@ def search_logo_for_event(event_name):
 
         # Utilizziamo l'API di Bing Image Search (richiede una chiave API)
         # Alternativa: possiamo usare un'API gratuita come DuckDuckGo o un'altra soluzione
-        search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent&form=IRFLTR"
+        search_url = f"https://www.bing.com/images/search?q={search_query}"
 
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
