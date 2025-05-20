@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tv>
-  <channel id="426">
-    <display-name lang="de">DAZN1 DE</display-name>
-  </channel>
-  <programme start="20250520200000 +0200" stop="20250520220000 +0200" channel="426">
-    <title lang="it">Saudi Arabia - Pro League : Al Shabab vs Al Ittihad</title>
-    <desc lang="it">Saudi Arabia - Pro League : Al Shabab vs Al Ittihad LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="571">
-    <display-name lang="de">Sportdigital FUSSBALL DE</display-name>
-  </channel>
-  <programme start="20250520203000 +0200" stop="20250520223000 +0200" channel="571">
-    <title lang="it">UEFA U17 European Championship : Italy U17 vs Czechia U17</title>
-    <desc lang="it">UEFA U17 European Championship : Italy U17 vs Czechia U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="557">
     <display-name lang="de">Sky Sport Mix DE</display-name>
   </channel>
@@ -40,6 +24,9 @@
     <desc lang="it">England - Premier League : Manchester City vs AFC Bournemouth LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
+  <channel id="571">
+    <display-name lang="de">Sportdigital FUSSBALL DE</display-name>
+  </channel>
   <programme start="20250521013000 +0200" stop="20250521033000 +0200" channel="571">
     <title lang="it">Argentina - Primera División : River Plate vs Platense</title>
     <desc lang="it">Argentina - Primera División : River Plate vs Platense LIVE.</desc>
