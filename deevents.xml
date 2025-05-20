@@ -1,94 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="571">
-    <display-name>Argentina - Primera División : Argentinos Juniors vs San Lorenzo</display-name>
+    <display-name>Sportdigital FUSSBALL DE</display-name>
   </channel>
-  <programme start="20250519220000 +0200" stop="20250520000000 +0200" channel="571">
-    <title lang="it">Argentina - Primera División : Argentinos Juniors vs San Lorenzo</title>
-    <desc lang="it">Argentina - Primera División : Argentinos Juniors vs San Lorenzo LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="557">
-    <display-name>NHL : Dallas Stars vs Winnipeg Jets</display-name>
-  </channel>
-  <programme start="20250519233000 +0200" stop="20250520013000 +0200" channel="557">
-    <title lang="it">NHL : Dallas Stars vs Winnipeg Jets</title>
-    <desc lang="it">NHL : Dallas Stars vs Winnipeg Jets LIVE.</desc>
-    <category lang="it">Ice Hockey</category>
-  </programme>
-  <channel id="556">
-    <display-name>NHL : Dallas Stars vs Winnipeg Jets</display-name>
-  </channel>
-  <programme start="20250519233000 +0200" stop="20250520013000 +0200" channel="556">
-    <title lang="it">NHL : Dallas Stars vs Winnipeg Jets</title>
-    <desc lang="it">NHL : Dallas Stars vs Winnipeg Jets LIVE.</desc>
-    <category lang="it">Ice Hockey</category>
-  </programme>
-  <programme start="20250520160000 +0200" stop="20250520180000 +0200" channel="571">
+  <programme start="20250520180000 +0200" stop="20250520200000 +0200" channel="571">
     <title lang="it">UEFA U17 European Championship : England U17 vs Belgium U17</title>
     <desc lang="it">UEFA U17 European Championship : England U17 vs Belgium U17 LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
   <channel id="426">
-    <display-name>Saudi Arabia - Pro League : Al Shabab vs Al Ittihad</display-name>
+    <display-name>DAZN1 DE</display-name>
   </channel>
-  <programme start="20250520180000 +0200" stop="20250520200000 +0200" channel="426">
+  <programme start="20250520200000 +0200" stop="20250520220000 +0200" channel="426">
     <title lang="it">Saudi Arabia - Pro League : Al Shabab vs Al Ittihad</title>
     <desc lang="it">Saudi Arabia - Pro League : Al Shabab vs Al Ittihad LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <programme start="20250520183000 +0200" stop="20250520203000 +0200" channel="571">
+  <programme start="20250520203000 +0200" stop="20250520223000 +0200" channel="571">
     <title lang="it">UEFA U17 European Championship : Italy U17 vs Czechia U17</title>
     <desc lang="it">UEFA U17 European Championship : Italy U17 vs Czechia U17 LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <programme start="20250520190000 +0200" stop="20250520210000 +0200" channel="557">
+  <channel id="557">
+    <display-name>Sky Sport Mix DE</display-name>
+  </channel>
+  <programme start="20250520210000 +0200" stop="20250520230000 +0200" channel="557">
     <title lang="it">England - Premier League : Crystal Palace vs Wolverhampton Wanderers</title>
     <desc lang="it">England - Premier League : Crystal Palace vs Wolverhampton Wanderers LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
   <channel id="13">
-    <display-name>England - Premier League : Manchester City vs AFC Bournemouth</display-name>
+    <display-name>Sky Sport Premier League DE</display-name>
   </channel>
-  <programme start="20250520190000 +0200" stop="20250520210000 +0200" channel="13">
+  <programme start="20250520210000 +0200" stop="20250520230000 +0200" channel="13">
     <title lang="it">England - Premier League : Manchester City vs AFC Bournemouth</title>
     <desc lang="it">England - Premier League : Manchester City vs AFC Bournemouth LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <programme start="20250520190000 +0200" stop="20250520210000 +0200" channel="556">
+  <channel id="556">
+    <display-name>Sky Sport Top Event DE</display-name>
+  </channel>
+  <programme start="20250520210000 +0200" stop="20250520230000 +0200" channel="556">
     <title lang="it">England - Premier League : Manchester City vs AFC Bournemouth</title>
     <desc lang="it">England - Premier League : Manchester City vs AFC Bournemouth LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
-  <programme start="20250520233000 +0200" stop="20250521013000 +0200" channel="571">
+  <programme start="20250521013000 +0200" stop="20250521033000 +0200" channel="571">
     <title lang="it">Argentina - Primera División : River Plate vs Platense</title>
     <desc lang="it">Argentina - Primera División : River Plate vs Platense LIVE.</desc>
     <category lang="it">Soccer</category>
   </programme>
   <channel id="884">
-    <display-name>Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Early Rounds</display-name>
+    <display-name>Sky Sports Tennis DE</display-name>
   </channel>
-  <programme start="20250520090000 +0200" stop="20250520110000 +0200" channel="884">
+  <programme start="20250520110000 +0200" stop="20250520130000 +0200" channel="884">
     <title lang="it">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Early Rounds</title>
     <desc lang="it">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Early Rounds LIVE.</desc>
     <category lang="it">Tennis</category>
   </programme>
-  <programme start="20250520000000 +0200" stop="20250520020000 +0200" channel="557">
+  <programme start="20250520020000 +0200" stop="20250520040000 +0200" channel="557">
     <title lang="it">NHL : Carolina Hurricanes vs Florida Panthers</title>
     <desc lang="it">NHL : Carolina Hurricanes vs Florida Panthers LIVE.</desc>
     <category lang="it">Ice Hockey</category>
   </programme>
-  <programme start="20250520000000 +0200" stop="20250520020000 +0200" channel="556">
+  <programme start="20250520020000 +0200" stop="20250520040000 +0200" channel="556">
     <title lang="it">NHL : Carolina Hurricanes vs Florida Panthers</title>
     <desc lang="it">NHL : Carolina Hurricanes vs Florida Panthers LIVE.</desc>
     <category lang="it">Ice Hockey</category>
   </programme>
-  <programme start="20250520000000 +0200" stop="20250520020000 +0200" channel="557">
+  <programme start="20250520020000 +0200" stop="20250520040000 +0200" channel="557">
     <title lang="it">Eastern Conference Final. Toronto Maple Leafs vs Florida Panthers vs. Carolina Hurricanes. Game 1</title>
     <desc lang="it">Eastern Conference Final. Toronto Maple Leafs vs Florida Panthers vs. Carolina Hurricanes. Game 1 LIVE.</desc>
     <category lang="it">Ice Hockey</category>
   </programme>
-  <programme start="20250520000000 +0200" stop="20250520020000 +0200" channel="556">
+  <programme start="20250520020000 +0200" stop="20250520040000 +0200" channel="556">
     <title lang="it">Eastern Conference Final. Toronto Maple Leafs vs Florida Panthers vs. Carolina Hurricanes. Game 1</title>
     <desc lang="it">Eastern Conference Final. Toronto Maple Leafs vs Florida Panthers vs. Carolina Hurricanes. Game 1 LIVE.</desc>
     <category lang="it">Ice Hockey</category>
