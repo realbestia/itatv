@@ -34,10 +34,13 @@ def generate_epg_xml(json_data):
                 try:
                     event_time = datetime.strptime(time_str, "%H:%M").time()
                     event_datetime = datetime.combine(event_date, event_time)
+
+                    # Aggiunta 2 ore per convertire da UTC a +0200 (ora locale)
+                    event_datetime_local = event_datetime + timedelta(hours=2)
                 except ValueError:
                     continue
 
-                if event_datetime < current_datetime - timedelta(hours=2):
+                if event_datetime_local < current_datetime - timedelta(hours=2):
                     continue  # Esclude eventi già terminati
 
                 for channel in event_info["channels"]:
@@ -47,25 +50,25 @@ def generate_epg_xml(json_data):
                     # Se il canale non è stato ancora aggiunto, lo aggiunge
                     if channel_id not in channel_ids:
                         epg_content += f'  <channel id="{channel_id}">\n'
-                        epg_content += f'    <display-name>{event_name}</display-name>\n'  # Usa event_name per <display-name>
+                        epg_content += f'    <display-name>{channel_name}</display-name>\n'  # Nome canale qui
                         epg_content += f'  </channel>\n'
                         channel_ids.add(channel_id)
 
-                    # Formatta start e stop per l'evento principale
-                    start_time = event_datetime.strftime("%Y%m%d%H%M%S") + " +0000"
-                    stop_time = (event_datetime + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0000"
+                    # Format start e stop con orario locale +0200
+                    start_time = event_datetime_local.strftime("%Y%m%d%H%M%S") + " +0200"
+                    stop_time = (event_datetime_local + timedelta(hours=2)).strftime("%Y%m%d%H%M%S") + " +0200"
 
                     # Aggiunge l'evento principale nel file EPG
                     epg_content += f'  <programme start="{start_time}" stop="{stop_time}" channel="{channel_id}">\n'
                     epg_content += f'    <title lang="it">{event_name}</title>\n'
                     epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
-                    epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'  # Pulisce la categoria
+                    epg_content += f'    <category lang="it">{clean_text(category)}</category>\n'
                     epg_content += f'  </programme>\n'
 
     epg_content += "</tv>\n"
     return epg_content
 
-# Funzione per caricare e filtrare il JSON (solo canali italiani)
+# Funzione per caricare e filtrare il JSON (solo canali DE)
 def load_json(json_file):
     with open(json_file, "r", encoding="utf-8") as file:
         json_data = json.load(file)
@@ -98,7 +101,7 @@ def load_json(json_file):
 
     return filtered_data
 
-# Carica il JSON e filtra i canali italiani
+# Carica il JSON e filtra i canali tedeschi
 json_data = load_json("daddyliveSchedule.json")
 
 # Genera il file EPG XML
