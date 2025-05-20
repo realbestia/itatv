@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x'  # Sostituisci con la versione necessaria
 
       - name: Installa le dipendenze
-        run: pip install requests python-dateutil
+        run: pip install requests python-dateutil  selenium webdriver-manager
 
       - name: Esegui lo script
         run: python deevents.py
