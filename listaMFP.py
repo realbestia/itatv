@@ -236,11 +236,12 @@ def eventi_m3u8_generator():
                     #f"{team1} vs {team2} logo dazn",
                     #f"{team1} vs {team2} logo partita",
                     #f"{team1} vs {team2} logo evento",
-                    f"{team1} vs {team2} logo art"
+                    #f"{team1} vs {team2} logo art",
+                    f"{team1} vs {team2} icon art"
                 ]
             else:
                 search_queries = [
-                    f"{clean_event_name} logo art"
+                    f"{clean_event_name} icon art"
                 ]
             
             # Configura le opzioni di Chrome
