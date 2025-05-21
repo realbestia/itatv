@@ -36,8 +36,10 @@ def search_logo_for_event(event_name):
         import urllib.parse
         import json
 
-        # Rimuovi eventuali riferimenti all'orario dal nome dell'evento
         clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name)
+        # Se c'è un ':', prendi solo la parte dopo
+        if ':' in clean_event_name:
+            clean_event_name = clean_event_name.split(':', 1)[1].strip()
         
         # Estrai i nomi delle squadre (se presenti)
         teams_match = re.search(r'(.+?)\s+(?:vs\.?|contro|[-–—])\s+(.+)', clean_event_name, re.IGNORECASE)
@@ -46,8 +48,8 @@ def search_logo_for_event(event_name):
         if teams_match:
             team1, team2 = teams_match.groups()
             search_queries = [
-                f"{team1} {team2} logo partita",
-                f"{clean_event_name} logo dazn"
+                f"{team1} vs {team2} logo art",
+                f"{clean_event_name} logo art"
             ]
         else:
             search_queries = [
