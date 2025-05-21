@@ -1,19 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tv>
-  <channel id="435">
-    <display-name lang="de">Movistar Liga de Campeones</display-name>
-  </channel>
-  <programme start="20250521210000 +0200" stop="20250521230000 +0200" channel="435">
-    <title lang="it">UEFA Europa League Final : Tottenham Hotspur vs Manchester United</title>
-    <desc lang="it">UEFA Europa League Final : Tottenham Hotspur vs Manchester United LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="740">
-    <display-name lang="de">RTL DE</display-name>
-  </channel>
-  <programme start="20250521210000 +0200" stop="20250521230000 +0200" channel="740">
-    <title lang="it">UEFA Europa League Final : Tottenham Hotspur vs Manchester United</title>
-    <desc lang="it">UEFA Europa League Final : Tottenham Hotspur vs Manchester United LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
 </tv>
