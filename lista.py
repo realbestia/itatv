@@ -291,6 +291,9 @@ def eventi_m3u8_generator():
                         vs_path = "vs.png"
                         if exists(vs_path):
                             img_vs = Image.open(vs_path)
+                            # Converti l'immagine VS in modalità RGBA se non lo è già
+                            if img_vs.mode != 'RGBA':
+                                img_vs = img_vs.convert('RGBA')
                         else:
                             # Crea un'immagine di testo "VS" se il file non esiste
                             img_vs = Image.new('RGBA', (100, 100), (255, 255, 255, 0))
@@ -308,19 +311,32 @@ def eventi_m3u8_generator():
                         img2 = img2.resize(size)
                         img_vs = img_vs.resize((100, 100))
                         
+                        # Assicurati che tutte le immagini siano in modalità RGBA per supportare la trasparenza
+                        if img1.mode != 'RGBA':
+                            img1 = img1.convert('RGBA')
+                        if img2.mode != 'RGBA':
+                            img2 = img2.convert('RGBA')
+                        
                         # Crea una nuova immagine con spazio per entrambi i loghi e il VS
-                        # Riduciamo la larghezza per avvicinare i loghi
-                        combined_width = 300  # Ridotto da 500 a 300
+                        combined_width = 300
                         combined = Image.new('RGBA', (combined_width, 150), (255, 255, 255, 0))
                         
                         # Posiziona le immagini con il VS sovrapposto al centro
                         # Posiziona il primo logo a sinistra
-                        combined.paste(img1, (0, 0), img1 if img1.mode == 'RGBA' else None)
-                        # Posiziona il secondo logo a destra, attaccato al primo
-                        combined.paste(img2, (combined_width - 150, 0), img2 if img2.mode == 'RGBA' else None)
+                        combined.paste(img1, (0, 0), img1)
+                        # Posiziona il secondo logo a destra
+                        combined.paste(img2, (combined_width - 150, 0), img2)
+                        
                         # Posiziona il VS al centro, sovrapposto ai due loghi
                         vs_x = (combined_width - 100) // 2
-                        combined.paste(img_vs, (vs_x, 25), img_vs if img_vs.mode == 'RGBA' else None)
+                        
+                        # Crea una copia dell'immagine combinata prima di sovrapporre il VS
+                        # Questo passaggio è importante per preservare i dettagli dei loghi sottostanti
+                        combined_with_vs = combined.copy()
+                        combined_with_vs.paste(img_vs, (vs_x, 25), img_vs)
+                        
+                        # Usa l'immagine con VS sovrapposto
+                        combined = combined_with_vs
                         
                         # Salva l'immagine combinata
                         os.makedirs(os.path.dirname(output_filename), exist_ok=True)
