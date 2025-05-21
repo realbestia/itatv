@@ -234,13 +234,9 @@ def eventi_m3u8_generator():
                 search_queries = [
                     f"{team1} vs {team2} logo dazn",
                     f"{team1} vs {team2} partita logo",
-                    f"{team1} vs {team2} logo evento sportivo",
+                    f"{team1} vs {team2} logo evento",
                     f"{team1} vs {team2} match logo",
-                    f"{team1} vs {team2} hd logo",
-                    f"{team1} vs {team2} tv logo",
-                    f"{team1} vs {team2} sky dazn logo",
-                    f"{team1} vs {team2} streaming logo",
-                    f"{clean_event_name} logo dazn"
+                    f"{team1} vs {team2} sky dazn logo"
                 ]
             else:
                 search_queries = [
