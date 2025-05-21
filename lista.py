@@ -235,7 +235,7 @@ def eventi_m3u8_generator():
             if teams_match:
                 team1, team2 = teams_match.groups()
                 search_queries = [
-                    f"{team1} {team2} logo partita",
+                    f"{team1} {team2} logo dazn",
                     f"{clean_event_name} logo dazn"
                 ]
             else:
@@ -327,7 +327,7 @@ def eventi_m3u8_generator():
         
         # Se non troviamo nulla, restituiamo None 
         return None
-
+        
     def get_iframe_url(url): 
         try: 
             resp = session.post(url, timeout=HTTP_TIMEOUT) 
