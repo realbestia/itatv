@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tv>
-  <channel id="426">
-    <display-name lang="de">DAZN1 DE</display-name>
-  </channel>
-  <programme start="20250521181000 +0200" stop="20250521201000 +0200" channel="426">
-    <title lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Khaleej</title>
-    <desc lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Khaleej LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
-  <channel id="571">
-    <display-name lang="de">Sportdigital FUSSBALL DE</display-name>
-  </channel>
-  <programme start="20250521181000 +0200" stop="20250521201000 +0200" channel="571">
-    <title lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Khaleej</title>
-    <desc lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Khaleej LIVE.</desc>
-    <category lang="it">Soccer</category>
-  </programme>
   <channel id="435">
     <display-name lang="de">Movistar Liga de Campeones</display-name>
   </channel>
