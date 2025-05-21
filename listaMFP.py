@@ -207,41 +207,54 @@ def eventi_m3u8_generator():
      
     def search_logo_for_event(event_name):
         """
-        Cerca un logo per l'evento su Bing, estraendo direttamente i link immagine dai dati JSON iniettati nella pagina.
+        Cerca un logo usando DuckDuckGo Image Search. Nessuna libreria esterna necessaria.
         """
         try:
-            # Rimuove l'orario finale
+            # Pulizia nome evento
             clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name).strip()
-    
-            # Usa solo la parte dopo ":" se presente (es. "Serie A : Milan vs Inter" -> "Milan vs Inter")
             if ':' in clean_event_name:
                 clean_event_name = clean_event_name.split(':', 1)[1].strip()
     
-            # Estrai nomi squadre se presenti
             teams_match = re.search(r'(.+?)\s+(?:vs\.?|contro|[-–—])\s+(.+)', clean_event_name, re.IGNORECASE)
             if teams_match:
                 team1, team2 = teams_match.groups()
-                search_query = f"{team1} vs {team2} logo epg"
+                query = f"{team1} vs {team2} logo epg"
             else:
-                search_query = f"{clean_event_name} logo epg"
+                query = f"{clean_event_name} logo epg"
     
-            url = f"https://www.bing.com/images/search?q={urllib.parse.quote(search_query)}"
             headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+                'User-Agent': 'Mozilla/5.0'
             }
     
-            response = requests.get(url, headers=headers, timeout=10)
-            html = response.text
+            # 1. Ottieni il token (vqd)
+            token_url = f"https://duckduckgo.com/?q={urllib.parse.quote(query)}"
+            token_res = requests.get(token_url, headers=headers, timeout=10)
+            vqd_match = re.search(r'vqd=([\d-]+)\&', token_res.text)
     
-            # Cerca blocco JSON con dati delle immagini
-            matches = re.findall(r'"murl":"(https://[^"]+?\.(?:jpg|png|jpeg|webp|gif))"', html)
+            if not vqd_match:
+                print("[!] Token vqd non trovato.")
+                return None
     
-            if matches:
-                return matches[0]  # Primo URL trovato
+            vqd = vqd_match.group(1)
     
-            print(f"[!] Nessuna immagine trovata per: {search_query}")
+            # 2. Richiesta immagini usando il token
+            api_url = (
+                f"https://duckduckgo.com/i.js?l=it-it&o=json&q={urllib.parse.quote(query)}&vqd={vqd}"
+            )
+    
+            res = requests.get(api_url, headers=headers, timeout=10)
+            if res.status_code == 200:
+                data = res.json()
+                results = data.get("results", [])
+                for r in results:
+                    if r.get("image"):
+                        return r["image"]
+    
+            print(f"[!] Nessuna immagine valida trovata per: {query}")
+    
         except Exception as e:
-            print(f"[!] Errore nella ricerca del logo: {e}")
+            print(f"[!] Errore durante la ricerca logo: {e}")
+        
         return None
         
     def extract_channels_from_json(path): 
