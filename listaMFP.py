@@ -219,8 +219,10 @@ def eventi_m3u8_generator():
             from selenium.webdriver.support import expected_conditions as EC
             import time
             
-            clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name)
-            # Se c'è un ':', prendi solo la parte dopo
+            # Rimuovi eventuali riferimenti all'orario (es. (22:00))
+            clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name).strip()
+            
+            # Se c'è un ":", prendi solo la parte dopo (es. "Serie A : Milan vs Inter" → "Milan vs Inter")
             if ':' in clean_event_name:
                 clean_event_name = clean_event_name.split(':', 1)[1].strip()
             
