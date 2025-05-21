@@ -207,53 +207,41 @@ def eventi_m3u8_generator():
      
     def search_logo_for_event(event_name):
         """
-        Cerca un logo per l'evento specificato usando Bing e parsing HTML con regex (senza Selenium né BeautifulSoup).
-        Restituisce l'URL dell'immagine trovata o None se non trovata.
+        Cerca un logo per l'evento su Bing, estraendo direttamente i link immagine dai dati JSON iniettati nella pagina.
         """
         try:
-            # Rimuove l'orario (es. (22:00)) dal nome
+            # Rimuove l'orario finale
             clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name).strip()
     
-            # Prendi solo la parte dopo ":" se presente
+            # Usa solo la parte dopo ":" se presente (es. "Serie A : Milan vs Inter" -> "Milan vs Inter")
             if ':' in clean_event_name:
                 clean_event_name = clean_event_name.split(':', 1)[1].strip()
     
-            # Cerca eventuali nomi delle squadre
+            # Estrai nomi squadre se presenti
             teams_match = re.search(r'(.+?)\s+(?:vs\.?|contro|[-–—])\s+(.+)', clean_event_name, re.IGNORECASE)
-    
             if teams_match:
                 team1, team2 = teams_match.groups()
-                search_queries = [f"{team1} vs {team2} logo epg"]
+                search_query = f"{team1} vs {team2} logo epg"
             else:
-                search_queries = [f"{clean_event_name} logo epg"]
+                search_query = f"{clean_event_name} logo epg"
     
+            url = f"https://www.bing.com/images/search?q={urllib.parse.quote(search_query)}"
             headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
             }
     
-            for query in search_queries:
-                search_url = f"https://www.bing.com/images/search?q={urllib.parse.quote(query)}"
-                response = requests.get(search_url, headers=headers, timeout=10)
+            response = requests.get(url, headers=headers, timeout=10)
+            html = response.text
     
-                if response.status_code == 200:
-                    html = response.text
+            # Cerca blocco JSON con dati delle immagini
+            matches = re.findall(r'"murl":"(https://[^"]+?\.(?:jpg|png|jpeg|webp|gif))"', html)
     
-                    # Cerca URL di immagini valide in formato HTTP/S (estensioni comuni)
-                    image_urls = re.findall(r'"murl":"(https?://[^"]+?\.(?:png|jpg|jpeg|webp|gif))"', html)
+            if matches:
+                return matches[0]  # Primo URL trovato
     
-                    if image_urls:
-                        return image_urls[0]
-    
-                    # Fallback: cerca immagini direttamente nei tag <img>
-                    image_urls = re.findall(r'<img[^>]+src="(https?://[^"]+)"', html)
-                    if image_urls:
-                        return image_urls[0]
-    
-            print(f"[!] Nessun logo trovato per '{clean_event_name}' dopo aver provato tutte le query")
-    
+            print(f"[!] Nessuna immagine trovata per: {search_query}")
         except Exception as e:
-            print(f"[!] Errore nella ricerca del logo per '{event_name}': {e}")
-    
+            print(f"[!] Errore nella ricerca del logo: {e}")
         return None
         
     def extract_channels_from_json(path): 
