@@ -278,7 +278,19 @@ def eventi_m3u8_generator():
                             file_age = current_time - os.path.getmtime(output_filename)
                             if file_age <= three_hours_in_seconds:
                                 print(f"[✓] Utilizzo immagine combinata esistente: {output_filename}")
-                                return output_filename
+                                
+                                # Carica le variabili d'ambiente per GitHub
+                                NOMEREPO = os.getenv("NOMEREPO", "").strip()
+                                NOMEGITHUB = os.getenv("NOMEGITHUB", "").strip()
+                                
+                                # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
+                                if NOMEGITHUB and NOMEREPO:
+                                    github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
+                                    print(f"[✓] URL GitHub generato per logo esistente: {github_raw_url}")
+                                    return github_raw_url
+                                else:
+                                    # Altrimenti restituisci il percorso locale
+                                    return output_filename
                         
                         # Scarica i loghi
                         response1 = requests.get(logo1_url, timeout=10)
