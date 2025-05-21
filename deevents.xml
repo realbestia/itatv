@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tv>
+  <channel id="426">
+    <display-name lang="de">DAZN1 DE</display-name>
+  </channel>
+  <programme start="20250521181000 +0200" stop="20250521201000 +0200" channel="426">
+    <title lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Khaleej</title>
+    <desc lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Khaleej LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
   <channel id="571">
     <display-name lang="de">Sportdigital FUSSBALL DE</display-name>
   </channel>
-  <programme start="20250521013000 +0200" stop="20250521033000 +0200" channel="571">
-    <title lang="it">Argentina - Primera División : River Plate vs Platense</title>
-    <desc lang="it">Argentina - Primera División : River Plate vs Platense LIVE.</desc>
+  <programme start="20250521181000 +0200" stop="20250521201000 +0200" channel="571">
+    <title lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Khaleej</title>
+    <desc lang="it">Saudi Arabia - Pro League : Al Nassr vs Al Khaleej LIVE.</desc>
     <category lang="it">Soccer</category>
+  </programme>
+  <channel id="435">
+    <display-name lang="de">Movistar Liga de Campeones</display-name>
+  </channel>
+  <programme start="20250521210000 +0200" stop="20250521230000 +0200" channel="435">
+    <title lang="it">UEFA Europa League Final : Tottenham Hotspur vs Manchester United</title>
+    <desc lang="it">UEFA Europa League Final : Tottenham Hotspur vs Manchester United LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="740">
+    <display-name lang="de">RTL DE</display-name>
+  </channel>
+  <programme start="20250521210000 +0200" stop="20250521230000 +0200" channel="740">
+    <title lang="it">UEFA Europa League Final : Tottenham Hotspur vs Manchester United</title>
+    <desc lang="it">UEFA Europa League Final : Tottenham Hotspur vs Manchester United LIVE.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="884">
+    <display-name lang="de">Sky Sports Tennis DE</display-name>
+  </channel>
+  <programme start="20250521110000 +0200" stop="20250521130000 +0200" channel="884">
+    <title lang="it">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA &amp; Rabat-WTA Early Rounds</title>
+    <desc lang="it">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA &amp;amp; Rabat-WTA Early Rounds LIVE.</desc>
+    <category lang="it">Tennis</category>
+  </programme>
+  <channel id="557">
+    <display-name lang="de">Sky Sport Mix DE</display-name>
+  </channel>
+  <programme start="20250521020000 +0200" stop="20250521040000 +0200" channel="557">
+    <title lang="it">NHL : Edmonton Oilers vs Dallas Stars</title>
+    <desc lang="it">NHL : Edmonton Oilers vs Dallas Stars LIVE.</desc>
+    <category lang="it">Ice Hockey</category>
+  </programme>
+  <channel id="556">
+    <display-name lang="de">Sky Sport Top Event DE</display-name>
+  </channel>
+  <programme start="20250521020000 +0200" stop="20250521040000 +0200" channel="556">
+    <title lang="it">NHL : Edmonton Oilers vs Dallas Stars</title>
+    <desc lang="it">NHL : Edmonton Oilers vs Dallas Stars LIVE.</desc>
+    <category lang="it">Ice Hockey</category>
   </programme>
 </tv>
