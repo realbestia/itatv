@@ -327,7 +327,19 @@ def eventi_m3u8_generator():
                         combined.save(output_filename)
                         
                         print(f"[✓] Immagine combinata creata: {output_filename}")
-                        return output_filename
+                        
+                        # Carica le variabili d'ambiente per GitHub
+                        NOMEREPO = os.getenv("NOMEREPO", "").strip()
+                        NOMEGITHUB = os.getenv("NOMEGITHUB", "").strip()
+                        
+                        # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
+                        if NOMEGITHUB and NOMEREPO:
+                            github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
+                            print(f"[✓] URL GitHub generato: {github_raw_url}")
+                            return github_raw_url
+                        else:
+                            # Altrimenti restituisci il percorso locale
+                            return output_filename
                         
                     except Exception as e:
                         print(f"[!] Errore nella creazione dell'immagine combinata: {e}")
