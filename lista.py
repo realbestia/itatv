@@ -249,7 +249,36 @@ def eventi_m3u8_generator():
                         import io
                         from PIL import Image
                         import requests
-                        from os.path import exists
+                        from os.path import exists, getmtime
+                        import os
+                        import time
+                        
+                        # Crea la cartella logos se non esiste
+                        logos_dir = "logos"
+                        os.makedirs(logos_dir, exist_ok=True)
+                        
+                        # Controlla e rimuovi i loghi più vecchi di 3 ore
+                        current_time = time.time()
+                        three_hours_in_seconds = 3 * 60 * 60
+                        
+                        for logo_file in os.listdir(logos_dir):
+                            logo_path = os.path.join(logos_dir, logo_file)
+                            if os.path.isfile(logo_path):
+                                file_age = current_time - os.path.getmtime(logo_path)
+                                if file_age > three_hours_in_seconds:
+                                    try:
+                                        os.remove(logo_path)
+                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_file}")
+                                    except Exception as e:
+                                        print(f"[!] Errore nella rimozione del logo {logo_file}: {e}")
+                        
+                        # Verifica se l'immagine combinata esiste già e non è obsoleta
+                        output_filename = f"logos/{team1}_vs_{team2}.png"
+                        if exists(output_filename):
+                            file_age = current_time - os.path.getmtime(output_filename)
+                            if file_age <= three_hours_in_seconds:
+                                print(f"[✓] Utilizzo immagine combinata esistente: {output_filename}")
+                                return output_filename
                         
                         # Scarica i loghi
                         response1 = requests.get(logo1_url, timeout=10)
@@ -280,15 +309,15 @@ def eventi_m3u8_generator():
                         img_vs = img_vs.resize((100, 100))
                         
                         # Crea una nuova immagine con spazio per entrambi i loghi e il VS
-                        combined = Image.new('RGBA', (400, 150), (255, 255, 255, 0))
+                        # Aumentiamo la larghezza per avere più spazio tra i loghi
+                        combined = Image.new('RGBA', (500, 150), (255, 255, 255, 0))
                         
-                        # Posiziona le immagini
-                        combined.paste(img1, (0, 0), img1 if img1.mode == 'RGBA' else None)
-                        combined.paste(img_vs, (150, 25), img_vs if img_vs.mode == 'RGBA' else None)
-                        combined.paste(img2, (250, 0), img2 if img2.mode == 'RGBA' else None)
+                        # Posiziona le immagini con più spazio tra loro
+                        combined.paste(img1, (50, 0), img1 if img1.mode == 'RGBA' else None)
+                        combined.paste(img_vs, (200, 25), img_vs if img_vs.mode == 'RGBA' else None)
+                        combined.paste(img2, (300, 0), img2 if img2.mode == 'RGBA' else None)
                         
                         # Salva l'immagine combinata
-                        output_filename = f"logos/{team1}_vs_{team2}.png"
                         os.makedirs(os.path.dirname(output_filename), exist_ok=True)
                         combined.save(output_filename)
                         
