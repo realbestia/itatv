@@ -193,7 +193,6 @@ def eventi_m3u8_generator():
     import urllib.parse 
     import os
     from dotenv import load_dotenv
-    from requests_html import HTMLSession
 
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
@@ -206,42 +205,129 @@ def eventi_m3u8_generator():
     def clean_category_name(name): 
         return re.sub(r'<[^>]+>', '', name).strip() 
      
-    def search_logo_for_event(event_name):
+    def search_logo_for_event(event_name): 
+        """ 
+        Cerca un logo per l'evento specificato utilizzando Selenium per simulare esattamente un browser reale
+        Restituisce l'URL dell'immagine trovata o None se non trovata 
+        """ 
         try:
-            # Rimuovi orario e intestazioni
-            clean_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name)
-            if ':' in clean_name:
-                clean_name = clean_name.split(':', 1)[1].strip()
-    
-            # Estrai nomi delle squadre
-            match = re.search(r'(.+?)\s+(?:vs\.?|contro|[-–—])\s+(.+)', clean_name, re.IGNORECASE)
-            if match:
-                team1, team2 = match.groups()
-                query = f"{team1.strip()} vs {team2.strip()} logo epg"
+            # Importa le librerie necessarie per Selenium
+            from selenium import webdriver
+            from selenium.webdriver.chrome.options import Options
+            from selenium.webdriver.common.by import By
+            from selenium.webdriver.support.ui import WebDriverWait
+            from selenium.webdriver.support import expected_conditions as EC
+            import time
+            
+            # Rimuovi eventuali riferimenti all'orario (es. (22:00))
+            clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name).strip()
+            
+            # Se c'è un ":", prendi solo la parte dopo (es. "Serie A : Milan vs Inter" → "Milan vs Inter")
+            if ':' in clean_event_name:
+                clean_event_name = clean_event_name.split(':', 1)[1].strip()
+            
+            # Estrai i nomi delle squadre (se presenti)
+            teams_match = re.search(r'(.+?)\s+(?:vs\.?|contro|[-–—])\s+(.+)', clean_event_name, re.IGNORECASE)
+            
+            # Prepara query di ricerca diverse a seconda del tipo di evento
+            if teams_match:
+                team1, team2 = teams_match.groups()
+                search_queries = [
+                    #f"{team1} vs {team2} match logo",
+                    #f"{team1} vs {team2} logo dazn",
+                    #f"{team1} vs {team2} logo partita",
+                    #f"{team1} vs {team2} logo evento",
+                    #f"{team1} vs {team2} logo epg"
+                    f"{clean_event_name} logo epg"
+                ]
             else:
-                query = f"{clean_name.strip()} logo epg"
-    
-            session = HTMLSession()
-            url = f"https://www.google.com/search?tbm=isch&q={urllib.parse.quote(query)}"
-            headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                              "(KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
-            }
-    
-            r = session.get(url, headers=headers)
-            r.html.render(timeout=20, sleep=2)
-    
-            # Estrai immagini caricate via JS
-            images = r.html.find('img')
-    
-            for img in images:
-                src = img.attrs.get("src")
-                if src and src.startswith("http") and any(ext in src for ext in [".jpg", ".png", ".webp"]):
-                    return src
-    
-            print(f"[!] Nessuna immagine trovata per: {query}")
-        except Exception as e:
-            print(f"[!] Errore nella ricerca immagine: {e}")
+                search_queries = [
+                    f"{clean_event_name} logo epg"
+                ]
+            
+            # Configura le opzioni di Chrome
+            chrome_options = Options()
+            chrome_options.add_argument("--headless")  # Esegui in modalità headless (senza interfaccia grafica)
+            chrome_options.add_argument("--disable-gpu")
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--window-size=1920,1080")
+            chrome_options.add_argument(f"user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36")
+            
+            # Inizializza il driver di Chrome
+            driver = webdriver.Chrome(options=chrome_options)
+            
+            try:
+                # Prova diverse query di ricerca
+                for query in search_queries:
+                    # Codifica la query per l'URL
+                    search_query = urllib.parse.quote(query)
+                    
+                    # URL di ricerca Bing
+                    search_url = f"https://www.bing.com/images/search?q={search_query}"
+                    
+                    # Apri la pagina di ricerca
+                    driver.get(search_url)
+                    
+                    # Attendi che la pagina si carichi completamente
+                    time.sleep(3)
+                    
+                    # Trova tutte le immagini nella pagina
+                    try:
+                        # Cerca i link delle immagini nei vari formati che Bing utilizza
+                        image_elements = driver.find_elements(By.CSS_SELECTOR, ".mimg")
+                        
+                        if not image_elements:
+                            # Prova un selettore alternativo
+                            image_elements = driver.find_elements(By.CSS_SELECTOR, "a.iusc")
+                        
+                        if image_elements:
+                            # Prendi la prima immagine
+                            first_image = image_elements[0]
+                            
+                            # Estrai l'URL dell'immagine
+                            if first_image.tag_name == "img":
+                                # Se è un tag img, prendi l'attributo src
+                                image_url = first_image.get_attribute("src")
+                            else:
+                                # Se è un link, cerca l'attributo m che contiene i dati dell'immagine
+                                m_attr = first_image.get_attribute("m")
+                                if m_attr:
+                                    # Converti la stringa in JSON
+                                    try:
+                                        m_data = json.loads(m_attr)
+                                        image_url = m_data.get("murl")
+                                    except:
+                                        # Se non riesci a estrarre l'URL dal JSON, clicca sull'immagine
+                                        first_image.click()
+                                        time.sleep(2)
+                                        
+                                        # Dopo il click, cerca il pannello laterale con l'immagine a dimensione piena
+                                        full_image = driver.find_element(By.CSS_SELECTOR, "#mainImageWindow img")
+                                        image_url = full_image.get_attribute("src")
+                                else:
+                                    # Se non c'è l'attributo m, cerca un'immagine all'interno
+                                    img_inside = first_image.find_element(By.TAG_NAME, "img")
+                                    image_url = img_inside.get_attribute("src")
+                            
+                            # Verifica che l'URL sia valido
+                            if image_url and image_url.startswith("http"):
+                                return image_url
+                    
+                    except Exception as e:
+                        print(f"[!] Errore nell'estrazione dell'immagine per '{query}': {e}")
+                        continue
+            
+            finally:
+                # Chiudi il browser
+                driver.quit()
+            
+            print(f"[!] Nessun logo trovato per '{clean_event_name}' dopo aver provato tutte le query")
+                                
+        except Exception as e: 
+            print(f"[!] Errore nella ricerca del logo per '{event_name}': {e}") 
+        
+        # Se non troviamo nulla, restituiamo None 
         return None
         
     def extract_channels_from_json(path): 
