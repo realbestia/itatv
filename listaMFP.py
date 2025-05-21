@@ -193,6 +193,7 @@ def eventi_m3u8_generator():
     import urllib.parse 
     import os
     from dotenv import load_dotenv
+    from requests_html import HTMLSession
 
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
@@ -220,26 +221,27 @@ def eventi_m3u8_generator():
             else:
                 query = f"{clean_name.strip()} logo epg"
     
+            session = HTMLSession()
+            url = f"https://www.google.com/search?tbm=isch&q={urllib.parse.quote(query)}"
             headers = {
-                "User-Agent": "Mozilla/5.0"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                              "(KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
             }
     
-            # Google Images URL
-            search_url = f"https://www.google.com/search?tbm=isch&q={urllib.parse.quote(query)}"
-            response = requests.get(search_url, headers=headers, timeout=10)
-            html = response.text
+            r = session.get(url, headers=headers)
+            r.html.render(timeout=20, sleep=2)
     
-            # Estrai i link delle immagini
-            matches = re.findall(r'"ou":"(https?://[^"]+)"', html)
+            # Estrai immagini caricate via JS
+            images = r.html.find('img')
     
-            for url in matches:
-                if url.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')):
-                    return url
+            for img in images:
+                src = img.attrs.get("src")
+                if src and src.startswith("http") and any(ext in src for ext in [".jpg", ".png", ".webp"]):
+                    return src
     
             print(f"[!] Nessuna immagine trovata per: {query}")
         except Exception as e:
-            print(f"[!] Errore nella ricerca su Google: {e}")
-    
+            print(f"[!] Errore nella ricerca immagine: {e}")
         return None
         
     def extract_channels_from_json(path): 
