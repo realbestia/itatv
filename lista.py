@@ -603,7 +603,7 @@ def eventi_m3u8_generator():
                     clean_event_title = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_title)
                     print(f"[🔍] Ricerca logo per: {clean_event_title}") 
                     logo_url = search_logo_for_event(clean_event_title) 
-                    logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else ''
+                    logo_attribute = f' tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/{logo_url}"' if logo_url else ''
 
                     try: 
                         stream = get_stream_from_channel_id(channel_id) 
