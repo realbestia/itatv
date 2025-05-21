@@ -193,7 +193,6 @@ def eventi_m3u8_generator():
     import urllib.parse 
     import os
     from dotenv import load_dotenv
-    from bs4 import BeautifulSoup
 
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
@@ -208,18 +207,18 @@ def eventi_m3u8_generator():
      
     def search_logo_for_event(event_name):
         """
-        Cerca un logo per l'evento specificato usando Bing e BeautifulSoup (senza Selenium).
+        Cerca un logo per l'evento specificato usando Bing e parsing HTML con regex (senza Selenium né BeautifulSoup).
         Restituisce l'URL dell'immagine trovata o None se non trovata.
         """
         try:
-            # Rimuovi l'orario alla fine dell'evento
+            # Rimuove l'orario (es. (22:00)) dal nome
             clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name).strip()
     
-            # Se c'è ":", usa solo la parte dopo (es. "Serie A : Milan vs Inter" -> "Milan vs Inter")
+            # Prendi solo la parte dopo ":" se presente
             if ':' in clean_event_name:
                 clean_event_name = clean_event_name.split(':', 1)[1].strip()
     
-            # Estrai eventuali squadre
+            # Cerca eventuali nomi delle squadre
             teams_match = re.search(r'(.+?)\s+(?:vs\.?|contro|[-–—])\s+(.+)', clean_event_name, re.IGNORECASE)
     
             if teams_match:
@@ -237,25 +236,24 @@ def eventi_m3u8_generator():
                 response = requests.get(search_url, headers=headers, timeout=10)
     
                 if response.status_code == 200:
-                    soup = BeautifulSoup(response.text, "html.parser")
-                    
-                    # Prova a trovare le immagini con classi comuni usate da Bing
-                    for img in soup.select("img.mimg"):
-                        src = img.get("src")
-                        if src and src.startswith("http"):
-                            return src
+                    html = response.text
     
-                    # Fallback: prova immagini in altri contenitori
-                    for img in soup.find_all("img"):
-                        src = img.get("src")
-                        if src and src.startswith("http"):
-                            return src
+                    # Cerca URL di immagini valide in formato HTTP/S (estensioni comuni)
+                    image_urls = re.findall(r'"murl":"(https?://[^"]+?\.(?:png|jpg|jpeg|webp|gif))"', html)
+    
+                    if image_urls:
+                        return image_urls[0]
+    
+                    # Fallback: cerca immagini direttamente nei tag <img>
+                    image_urls = re.findall(r'<img[^>]+src="(https?://[^"]+)"', html)
+                    if image_urls:
+                        return image_urls[0]
     
             print(f"[!] Nessun logo trovato per '{clean_event_name}' dopo aver provato tutte le query")
     
         except Exception as e:
             print(f"[!] Errore nella ricerca del logo per '{event_name}': {e}")
-        
+    
         return None
         
     def extract_channels_from_json(path): 
