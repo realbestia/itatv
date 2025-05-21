@@ -194,6 +194,7 @@ def eventi_m3u8_generator():
     import urllib.parse
     import os
     from dotenv import load_dotenv
+    from bs4 import BeautifulSoup
 
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
