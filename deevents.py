@@ -53,7 +53,7 @@ def search_logo_for_event(event_name):
             ]
         else:
             search_queries = [
-                f"{clean_event_name} logo dazn"
+                f"{clean_event_name} logo art"
             ]
         
         # Configura le opzioni di Chrome
