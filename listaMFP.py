@@ -205,42 +205,25 @@ def eventi_m3u8_generator():
     def clean_category_name(name): 
         return re.sub(r'<[^>]+>', '', name).strip() 
      
-    def search_logo_for_event(event_name):
+    def search_logo_for_event(event_name): 
         """ 
-        Cerca un logo per l'evento specificato utilizzando Selenium per simulare esattamente un browser reale
-        Ottimizzata per ambiente GitHub Actions
-        Restituisce l'URL dell'immagine trovata o None se non trovata 
-        """
+        Cerca un logo per l'evento specificato utilizzando Selenium per simulare esattamente un browser reale.
+        Restituisce l'URL dell'immagine trovata o None se non trovata.
+        """ 
         try:
             # Importa le librerie necessarie per Selenium
             from selenium import webdriver
             from selenium.webdriver.chrome.options import Options
-            from selenium.webdriver.chrome.service import Service
             from selenium.webdriver.common.by import By
             from selenium.webdriver.support.ui import WebDriverWait
             from selenium.webdriver.support import expected_conditions as EC
             import time
             import re
-            import json
             import urllib.parse
-            import random
-            import os
-            
-            # Log per debug in GitHub Actions
-            print(f"[DEBUG] Avvio ricerca logo per: '{event_name}'")
-            
-            # Lista di user agents per simulare diversi browser
-            user_agents = [
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
-                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
-                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-            ]
-            
-            # Rimuovi eventuali riferimenti all'orario (es. (22:00))
-            clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name).strip()
-            
-            # Se c'è un ":", prendi solo la parte dopo (es. "Serie A : Milan vs Inter" → "Milan vs Inter")
+            import json
+    
+            clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name)
+            # Se c'è un ':', prendi solo la parte dopo
             if ':' in clean_event_name:
                 clean_event_name = clean_event_name.split(':', 1)[1].strip()
             
@@ -251,204 +234,76 @@ def eventi_m3u8_generator():
             if teams_match:
                 team1, team2 = teams_match.groups()
                 search_queries = [
-                    f"{team1} vs {team2} logo epg",
-                    f"{team1} vs {team2} logo partita",
-                    f"{team1} vs {team2} logo match"
+                    f"{team1} vs {team2} logo art",
+                    f"{clean_event_name} logo art"
                 ]
             else:
                 search_queries = [
-                    f"{clean_event_name} logo epg"
+                    f"{clean_event_name} logo art"
                 ]
             
-            print(f"[DEBUG] Query di ricerca preparate: {search_queries}")
-            
-            # Configura le opzioni di Chrome specifiche per GitHub Actions
+            # Configura le opzioni di Chrome
             chrome_options = Options()
-            
-            # Imposta opzioni necessarie per l'ambiente CI
-            chrome_options.add_argument("--headless=new")  # Usa la nuova modalità headless
+            chrome_options.add_argument("--headless")
+            chrome_options.add_argument("--disable-gpu")
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
-            chrome_options.add_argument("--disable-gpu")
             chrome_options.add_argument("--window-size=1920,1080")
-            
-            # Scegli un user agent casuale
-            selected_ua = random.choice(user_agents)
-            chrome_options.add_argument(f"user-agent={selected_ua}")
-            print(f"[DEBUG] User agent selezionato: {selected_ua}")
-            
-            # Disabilita l'automazione flag (aiuta a evitare il rilevamento)
-            chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-            chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-            chrome_options.add_experimental_option("useAutomationExtension", False)
-            
-            # Configurazione specifica per GitHub Actions
-            chrome_options.add_argument("--disable-setuid-sandbox")
-            chrome_options.add_argument("--disable-software-rasterizer")
-            
-            # Verifica se siamo in ambiente GitHub Actions
-            if 'GITHUB_ACTIONS' in os.environ:
-                print("[DEBUG] Rilevato ambiente GitHub Actions")
-                # Specifica il percorso del binario di Chrome in GitHub Actions
-                chrome_options.binary_location = "/usr/bin/google-chrome"
+            chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36")
             
             # Inizializza il driver di Chrome
-            try:
-                # Prima prova usando il Service con il path ChromeDriver
-                print("[DEBUG] Tentativo di inizializzazione ChromeDriver con Service...")
-                service = Service('/usr/local/bin/chromedriver')
-                driver = webdriver.Chrome(service=service, options=chrome_options)
-            except Exception as chrome_error:
-                print(f"[WARNING] Inizializzazione ChromeDriver con Service fallita: {chrome_error}")
-                # Fallback senza specificare il service
-                print("[DEBUG] Tentativo fallback inizializzazione ChromeDriver...")
-                driver = webdriver.Chrome(options=chrome_options)
-            
-            print("[DEBUG] ChromeDriver inizializzato con successo")
-            
-            # Modifica le proprietà del navigator per rendere più difficile il rilevamento
-            driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+            driver = webdriver.Chrome(options=chrome_options)
             
             try:
-                max_retries = 3  # Numero massimo di tentativi per ogni query
-                
                 # Prova diverse query di ricerca
                 for query in search_queries:
-                    print(f"[DEBUG] Tentativo con query: '{query}'")
-                    
-                    # Codifica la query per l'URL
                     search_query = urllib.parse.quote(query)
-                    
-                    # Utilizziamo principalmente Bing che è più tollerante verso l'automazione
                     search_url = f"https://www.bing.com/images/search?q={search_query}"
-                    
-                    retry_count = 0
-                    while retry_count < max_retries:
-                        try:
-                            # Apri la pagina di ricerca
-                            print(f"[DEBUG] Apertura URL: {search_url}")
-                            driver.get(search_url)
-                            
-                            # Aggiungi una pausa per essere sicuri che la pagina si carichi
-                            time.sleep(3 + random.random() * 2)
-                            
-                            # Stampa il titolo della pagina per debug
-                            print(f"[DEBUG] Titolo pagina: {driver.title}")
-                            
-                            # Scorri leggermente la pagina come farebbe un utente reale
-                            driver.execute_script("window.scrollTo(0, 300)")
-                            time.sleep(1)
-                            
-                            # Attendi che le immagini siano caricate
-                            try:
-                                print("[DEBUG] Attesa caricamento immagini...")
-                                wait = WebDriverWait(driver, 10)
-                                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".mimg, a.iusc")))
-                                print("[DEBUG] Immagini trovate nella pagina")
-                            except Exception as wait_error:
-                                print(f"[WARNING] Timeout nell'attesa delle immagini: {wait_error}")
-                                # Continua comunque, potremmo trovare elementi anche senza l'attesa
-                            
-                            # Opzione 1: Cerca immagini dirette
-                            image_elements = driver.find_elements(By.CSS_SELECTOR, ".mimg")
-                            print(f"[DEBUG] Trovate {len(image_elements)} immagini con selettore .mimg")
-                            
-                            if not image_elements or len(image_elements) < 3:
-                                # Opzione 2: Cerca i container delle immagini
-                                image_elements = driver.find_elements(By.CSS_SELECTOR, "a.iusc")
-                                print(f"[DEBUG] Trovate {len(image_elements)} immagini con selettore a.iusc")
-                            
-                            # Se troviamo immagini, tenta di estrarre l'URL
-                            if image_elements:
-                                # Prova le prime 5 immagini (non solo la prima)
-                                for idx, img_element in enumerate(image_elements[:5]):
-                                    try:
-                                        print(f"[DEBUG] Analisi immagine {idx+1}/{min(5, len(image_elements))}")
-                                        
-                                        if img_element.tag_name == "img":
-                                            # Se è un tag img, prendi l'attributo src
-                                            image_url = img_element.get_attribute("src")
-                                            print(f"[DEBUG] URL immagine da tag img: {image_url}")
-                                        else:
-                                            # Se è un link, cerca l'attributo m che contiene i dati dell'immagine
-                                            m_attr = img_element.get_attribute("m")
-                                            if m_attr:
-                                                # Converti la stringa in JSON
-                                                try:
-                                                    m_data = json.loads(m_attr)
-                                                    image_url = m_data.get("murl")
-                                                    print(f"[DEBUG] URL immagine da attributo m: {image_url}")
-                                                except Exception as json_error:
-                                                    print(f"[WARNING] Errore parsing JSON: {json_error}")
-                                                    # Se non riesci a estrarre l'URL dal JSON, clicca sull'immagine
-                                                    print("[DEBUG] Tentativo di click sull'immagine...")
-                                                    driver.execute_script("arguments[0].click();", img_element)
-                                                    time.sleep(2)
-                                                    
-                                                    try:
-                                                        # Dopo il click, cerca il pannello laterale con l'immagine a dimensione piena
-                                                        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#mainImageWindow img")))
-                                                        full_image = driver.find_element(By.CSS_SELECTOR, "#mainImageWindow img")
-                                                        image_url = full_image.get_attribute("src")
-                                                        print(f"[DEBUG] URL immagine dopo click: {image_url}")
-                                                    except Exception as click_error:
-                                                        print(f"[WARNING] Errore dopo click: {click_error}")
-                                                        # Prova un altro selettore
-                                                        try:
-                                                            full_image = driver.find_element(By.CSS_SELECTOR, ".imgContainer img")
-                                                            image_url = full_image.get_attribute("src")
-                                                            print(f"[DEBUG] URL immagine da selettore alternativo: {image_url}")
-                                                        except:
-                                                            image_url = None
-                                            else:
-                                                # Se non c'è l'attributo m, cerca un'immagine all'interno
-                                                try:
-                                                    img_inside = img_element.find_element(By.TAG_NAME, "img")
-                                                    image_url = img_inside.get_attribute("src")
-                                                    print(f"[DEBUG] URL immagine da tag img interno: {image_url}")
-                                                except:
-                                                    image_url = None
-                                        
-                                        # Verifica che l'URL sia valido
-                                        if image_url and image_url.startswith("http") and not image_url.startswith("data:"):
-                                            print(f"[SUCCESS] Trovato logo per '{event_name}': {image_url}")
-                                            return image_url
-                                    
-                                    except Exception as img_error:
-                                        print(f"[WARNING] Errore con l'immagine {idx+1}: {img_error}")
-                                        continue
-                            else:
-                                print("[WARNING] Nessuna immagine trovata in questa pagina")
-                            
-                            # Incrementa il contatore dei tentativi
-                            retry_count += 1
-                            
-                            if retry_count < max_retries:
-                                print(f"[INFO] Ritentativo {retry_count+1}/{max_retries} per la query: '{query}'")
-                                time.sleep(2)  # Breve pausa prima del prossimo tentativo
+                    driver.get(search_url)
+                    time.sleep(3)
+    
+                    try:
+                        image_elements = driver.find_elements(By.CSS_SELECTOR, ".mimg")
+                        if not image_elements:
+                            image_elements = driver.find_elements(By.CSS_SELECTOR, "a.iusc")
                         
-                        except Exception as search_error:
-                            print(f"[ERROR] Errore durante la ricerca: {search_error}")
-                            retry_count += 1
-                            if retry_count < max_retries:
-                                print(f"[INFO] Ritentativo {retry_count+1}/{max_retries} per la query: '{query}'")
-                                time.sleep(3)  # Pausa più lunga in caso di errore
+                        if image_elements:
+                            first_image = image_elements[0]
+                            
+                            if first_image.tag_name == "img":
+                                image_url = first_image.get_attribute("src")
+                            else:
+                                m_attr = first_image.get_attribute("m")
+                                if m_attr:
+                                    try:
+                                        m_data = json.loads(m_attr)
+                                        image_url = m_data.get("murl")
+                                    except:
+                                        first_image.click()
+                                        time.sleep(2)
+                                        full_image = driver.find_element(By.CSS_SELECTOR, "#mainImageWindow img")
+                                        image_url = full_image.get_attribute("src")
+                                else:
+                                    img_inside = first_image.find_element(By.TAG_NAME, "img")
+                                    image_url = img_inside.get_attribute("src")
+                            
+                            if image_url and image_url.startswith("http"):
+                                return image_url
+    
+                    except Exception as e:
+                        print(f"[!] Errore nell'estrazione dell'immagine per '{query}': {e}")
+                        continue
             
             finally:
-                # Chiudi il browser
-                print("[DEBUG] Chiusura del browser")
                 driver.quit()
             
-            print(f"[WARNING] Nessun logo trovato per '{clean_event_name}' dopo aver provato tutte le query")
+            print(f"[!] Nessun logo trovato per '{clean_event_name}' dopo aver provato tutte le query")
                                 
         except Exception as e: 
-            print(f"[ERROR] Errore generale nella ricerca del logo per '{event_name}': {e}")
-            import traceback
-            traceback.print_exc()
+            print(f"[!] Errore nella ricerca del logo per '{event_name}': {e}") 
         
-        # Se non troviamo nulla, restituiamo None 
         return None
-        
+    
     def extract_channels_from_json(path): 
         keywords = {"italy", "rai", "italia", "it"} 
         now = datetime.now() 
