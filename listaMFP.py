@@ -229,7 +229,8 @@ def eventi_m3u8_generator():
             if teams_match:
                 team1, team2 = teams_match.groups()
                 search_queries = [
-                    f"{team1} {team2} logo dazn",
+                    f"{team1} {team2} logo partita",
+                    f"{clean_event_name} logo dazn"
                 ]
             else:
                 search_queries = [
@@ -320,7 +321,7 @@ def eventi_m3u8_generator():
         
         # Se non troviamo nulla, restituiamo None 
         return None
-     
+        
     def extract_channels_from_json(path): 
         keywords = {"italy", "rai", "italia", "it"} 
         now = datetime.now() 
