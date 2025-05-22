@@ -54,15 +54,20 @@ def merger_playlist():
     playlist3 = download_playlist(url3)
     
     # Unisci le playlist
-    lista = playlist1 + "\n" + playlist2 + "\n" + playlist3
+    combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3
     
     # Aggiungi intestazione EPG
-    lista = f'#EXTM3U x-tvg-url="https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/refs/heads/main/epg.xml"\n' + lista
+    combined_playlist = f'#EXTM3U x-tvg-url="https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/refs/heads/main/epg.xml"\n' + combined_playlist
     
     # Salva la playlist
-    output_filename = os.path.join(script_directory, "lista.m3u")
+    output_filename = os.path.join(script_directory, "combined_playlist.m3u")
     with open(output_filename, 'w', encoding='utf-8') as file:
-        file.write(lista)
+        file.write(combined_playlist)
+        
+    # Salva la playlist
+    output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
+    with open(output_filename, 'w', encoding='utf-8') as file:
+        file.write(combined_playlist)
     
     print(f"Playlist combinata salvata in: {output_filename}")
     
@@ -117,15 +122,20 @@ def merger_playlistworld():
     playlist4 = download_playlist(url4, exclude_group_title="Italy")
     
     # Unisci le playlist
-    lista = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
+    combined_playlist = playlist1 + "\n" + playlist2 + "\n" + playlist3 + "\n" + playlist4
     
     # Aggiungi intestazione EPG
-    lista = f'#EXTM3U x-tvg-url="https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/refs/heads/main/epg.xml"\n' + lista
+    combined_playlist = f'#EXTM3U x-tvg-url="https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/refs/heads/main/epg.xml"\n' + combined_playlist
     
     # Salva la playlist
-    output_filename = os.path.join(script_directory, "lista.m3u")
+    output_filename = os.path.join(script_directory, "combined_playlist.m3u")
     with open(output_filename, 'w', encoding='utf-8') as file:
-        file.write(lista)
+        file.write(combined_playlist)
+        
+    # Salva la playlist
+    output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
+    with open(output_filename, 'w', encoding='utf-8') as file:
+        file.write(combined_playlist)
     
     print(f"Playlist combinata salvata in: {output_filename}")
 
