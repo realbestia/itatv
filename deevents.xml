@@ -1,58 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="21">
-    <display-name>Sky Sport News DE</display-name>
-  </channel>
-  <programme start="20250522000000 +0200" stop="20250522180000 +0200" channel="21">
-    <title lang="de">Es beginnt um 18:00.</title>
-    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17.</desc>
-    <category lang="de">Bekanntmachung</category>
-  </programme>
-  <programme start="20250522180000 +0200" stop="20250522200000 +0200" channel="21">
-    <title lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
-    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17 live übertragen.</desc>
-    <category lang="de">Soccer</category>
-  </programme>
-  <channel id="557">
-    <display-name>Sky Sport Mix DE</display-name>
-  </channel>
-  <programme start="20250522000000 +0200" stop="20250522180000 +0200" channel="557">
-    <title lang="de">Es beginnt um 18:00.</title>
-    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17.</desc>
-    <category lang="de">Bekanntmachung</category>
-  </programme>
-  <programme start="20250522180000 +0200" stop="20250522200000 +0200" channel="557">
-    <title lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
-    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17 live übertragen.</desc>
-    <category lang="de">Soccer</category>
-  </programme>
-  <channel id="556">
-    <display-name>Sky Sport Top Event DE</display-name>
-  </channel>
-  <programme start="20250522000000 +0200" stop="20250522180000 +0200" channel="556">
-    <title lang="de">Es beginnt um 18:00.</title>
-    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17.</desc>
-    <category lang="de">Bekanntmachung</category>
-  </programme>
-  <programme start="20250522180000 +0200" stop="20250522200000 +0200" channel="556">
-    <title lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
-    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17 live übertragen.</desc>
-    <category lang="de">Soccer</category>
-  </programme>
   <channel id="571">
     <display-name>Sportdigital FUSSBALL DE</display-name>
   </channel>
-  <programme start="20250522000000 +0200" stop="20250522180000 +0200" channel="571">
-    <title lang="de">Es beginnt um 18:00.</title>
-    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17.</desc>
-    <category lang="de">Bekanntmachung</category>
-  </programme>
-  <programme start="20250522180000 +0200" stop="20250522200000 +0200" channel="571">
-    <title lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
-    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17 live übertragen.</desc>
-    <category lang="de">Soccer</category>
-  </programme>
-  <programme start="20250522200000 +0200" stop="20250522203000 +0200" channel="571">
+  <programme start="20250522000000 +0200" stop="20250522203000 +0200" channel="571">
     <title lang="de">Es beginnt um 20:30.</title>
     <desc lang="de">UEFA U17 European Championship : France U17 vs Portugal U17.</desc>
     <category lang="de">Bekanntmachung</category>
