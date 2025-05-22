@@ -1,29 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
+  <channel id="571">
+    <display-name>Sportdigital FUSSBALL DE</display-name>
+  </channel>
+  <programme start="20250522000000 +0200" stop="20250522203000 +0200" channel="571">
+    <title lang="it">Inizierà alle 20:30.</title>
+    <desc lang="it">UEFA U17 European Championship : France U17 vs Portugal U17.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522203000 +0200" stop="20250522223000 +0200" channel="571">
+    <title lang="it">UEFA U17 European Championship : France U17 vs Portugal U17</title>
+    <desc lang="it">UEFA U17 European Championship : France U17 vs Portugal U17 trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
   <channel id="427">
     <display-name>DAZN2 DE</display-name>
   </channel>
-  <programme start="20250522000000 +0200" stop="20250522214500 +0200" channel="427">
-    <title lang="de">Es beginnt um 21:45.</title>
-    <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris.</desc>
-    <category lang="de">Bekanntmachung</category>
+  <programme start="20250522000000 +0200" stop="20250522201500 +0200" channel="427">
+    <title lang="it">Inizierà alle 20:15.</title>
+    <desc lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen.</desc>
+    <category lang="it">Annuncio</category>
   </programme>
-  <programme start="20250522214500 +0200" stop="20250522234500 +0200" channel="427">
-    <title lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris</title>
-    <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris live übertragen.</desc>
-    <category lang="de">Darts</category>
+  <programme start="20250522201500 +0200" stop="20250522221500 +0200" channel="427">
+    <title lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen</title>
+    <desc lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen trasmesso in diretta.</desc>
+    <category lang="it">Darts</category>
   </programme>
   <channel id="641">
     <display-name>Sport1 DE</display-name>
   </channel>
+  <programme start="20250522000000 +0200" stop="20250522201500 +0200" channel="641">
+    <title lang="it">Inizierà alle 20:15.</title>
+    <desc lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522201500 +0200" stop="20250522221500 +0200" channel="641">
+    <title lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen</title>
+    <desc lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen trasmesso in diretta.</desc>
+    <category lang="it">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522204500 +0200" channel="427">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522204500 +0200" stop="20250522224500 +0200" channel="427">
+    <title lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael</title>
+    <desc lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael trasmesso in diretta.</desc>
+    <category lang="it">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522204500 +0200" channel="641">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522204500 +0200" stop="20250522224500 +0200" channel="641">
+    <title lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael</title>
+    <desc lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael trasmesso in diretta.</desc>
+    <category lang="it">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522211500 +0200" channel="427">
+    <title lang="it">Inizierà alle 21:15.</title>
+    <desc lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522211500 +0200" stop="20250522231500 +0200" channel="427">
+    <title lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob</title>
+    <desc lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob trasmesso in diretta.</desc>
+    <category lang="it">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522211500 +0200" channel="641">
+    <title lang="it">Inizierà alle 21:15.</title>
+    <desc lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522211500 +0200" stop="20250522231500 +0200" channel="641">
+    <title lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob</title>
+    <desc lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob trasmesso in diretta.</desc>
+    <category lang="it">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522214500 +0200" channel="427">
+    <title lang="it">Inizierà alle 21:45.</title>
+    <desc lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522214500 +0200" stop="20250522234500 +0200" channel="427">
+    <title lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris</title>
+    <desc lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris trasmesso in diretta.</desc>
+    <category lang="it">Darts</category>
+  </programme>
   <programme start="20250522000000 +0200" stop="20250522214500 +0200" channel="641">
-    <title lang="de">Es beginnt um 21:45.</title>
-    <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris.</desc>
-    <category lang="de">Bekanntmachung</category>
+    <title lang="it">Inizierà alle 21:45.</title>
+    <desc lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris.</desc>
+    <category lang="it">Annuncio</category>
   </programme>
   <programme start="20250522214500 +0200" stop="20250522234500 +0200" channel="641">
-    <title lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris</title>
-    <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris live übertragen.</desc>
-    <category lang="de">Darts</category>
+    <title lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris</title>
+    <desc lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris trasmesso in diretta.</desc>
+    <category lang="it">Darts</category>
   </programme>
 </tv>
