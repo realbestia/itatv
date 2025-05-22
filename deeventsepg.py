@@ -47,7 +47,7 @@ def generate_epg_xml(json_data):
     italian_offset = timedelta(hours=2)
     italian_offset_str = "+0200" 
 
-    current_datetime_utc = datetime.now(timezone.utc)
+    current_datetime_utc = datetime.utcnow()
     current_datetime_local = current_datetime_utc + italian_offset
 
     # Tiene traccia degli ID dei canali per cui è già stato scritto il tag <channel>
