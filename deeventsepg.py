@@ -1,7 +1,7 @@
 import os
 import re
 import json
-from datetime import datetime, timedelta, timezone # Added timezone
+from datetime import datetime, timedelta, timezone
 
 # Funzione di utilità per pulire il testo (rimuovere tag HTML span)
 def clean_text(text):
@@ -46,8 +46,9 @@ def generate_epg_xml(json_data):
     
     italian_offset = timedelta(hours=2)
     italian_offset_str = "+0200" 
+    italian_tz = timezone(italian_offset)
 
-    current_datetime_utc = datetime.utcnow()
+    current_datetime_utc = datetime.now(timezone.utc)
     current_datetime_local = current_datetime_utc + italian_offset
 
     # Tiene traccia degli ID dei canali per cui è già stato scritto il tag <channel>
@@ -87,12 +88,17 @@ def generate_epg_xml(json_data):
 
                 try:
                     event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
-                    event_datetime_utc = datetime.combine(event_date_part, event_time_utc_obj)
-                    event_datetime_local = event_datetime_utc + italian_offset
+                    # Crea un datetime naive
+                    event_datetime_utc_naive = datetime.combine(event_date_part, event_time_utc_obj)
+                    # Aggiungi l'offset italiano
+                    event_datetime_local_naive = event_datetime_utc_naive + italian_offset
+                    # Rendi il datetime consapevole del fuso orario
+                    event_datetime_local = event_datetime_local_naive.replace(tzinfo=italian_tz)
                 except ValueError as e:
                     print(f"[!] Errore parsing orario UTC '{time_str_utc}' per EPG evento '{event_name}'. Errore: {e}")
                     continue
                 
+                # Ora entrambi i datetime sono offset-aware e possono essere confrontati
                 if event_datetime_local < (current_datetime_local - timedelta(hours=2)):
                     continue
 
@@ -124,10 +130,10 @@ def generate_epg_xml(json_data):
                             # Sovrapposizione o stesso orario di inizio, problematico.
                             # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
                             print(f"[!] Attenzione: L'evento '{event_name}' sul canale '{channel_id}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
-                            announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
+                            announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()).replace(tzinfo=italian_tz)
                     else:
                         # Primo evento per questo canale in questa data
-                        announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()) # 00:00 ora italiana
+                        announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()).replace(tzinfo=italian_tz)
 
                     # Assicura che l'inizio dell'annuncio sia prima della fine
                     if announcement_start_local < announcement_stop_local:
