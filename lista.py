@@ -2046,6 +2046,7 @@ def run_all_scripts():
     from dotenv import load_dotenv
     load_dotenv()
     
+    print(f"DEBUG: EVENTI_EN = '{os.getenv('EVENTI_EN')}'")
     try:
         schedule_extractor()
     except Exception as e:
