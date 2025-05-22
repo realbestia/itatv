@@ -8,6 +8,7 @@ import urllib.parse
 from PIL import Image, ImageDraw, ImageFont
 import io
 import time
+import os
 
 PROXY = "https://nzo66-tvproxy.hf.space"  # Proxy HLS
 JSON_FILE = "daddyliveSchedule.json"
