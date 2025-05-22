@@ -2,8 +2,8 @@ name: Pulisci loghi vecchi
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Ogni 3 ore
-  workflow_dispatch:        # Avvio manuale
+    - cron: '0 */4 * * *'  # Ogni 4 ore
+  workflow_dispatch:        # Avvio manuale opzionale
 
 jobs:
   clean_logos:
@@ -13,14 +13,14 @@ jobs:
       - name: Checkout del repository
         uses: actions/checkout@v3
 
-      - name: Elimina i file più vecchi di 3 ore nella cartella logos/
+      - name: Elimina file più vecchi di 4 ore dalla cartella logos/
         run: |
-          mkdir -p logos  # Crea la cartella se non esiste
-          find logos/ -type f -mmin +180 -print -delete
+          mkdir -p logos
+          find logos/ -type f -mmin +240 -print -delete
 
       - name: Commit e push se ci sono modifiche
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add logos/
-          git diff --cached --quiet || (git commit -m "Pulizia automatica loghi vecchi" && git push)
+          git diff --cached --quiet || (git commit -m "Pulizia automatica loghi vecchi (4h)" && git push)
