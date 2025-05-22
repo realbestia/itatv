@@ -1,104 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="21">
-    <display-name lang="de">Sky Sport News DE</display-name>
+    <display-name>Sky Sport News DE</display-name>
   </channel>
+  <programme start="20250522000000 +0200" stop="20250522180000 +0200" channel="21">
+    <title lang="de">Es beginnt um 18:00.</title>
+    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17.</desc>
+    <category lang="de">Bekanntmachung</category>
+  </programme>
   <programme start="20250522180000 +0200" stop="20250522200000 +0200" channel="21">
-    <title lang="it">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
-    <desc lang="it">UEFA U17 European Championship : Albania U17 vs Germany U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
+    <title lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
+    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17 live übertragen.</desc>
+    <category lang="de">Soccer</category>
   </programme>
   <channel id="557">
-    <display-name lang="de">Sky Sport Mix DE</display-name>
+    <display-name>Sky Sport Mix DE</display-name>
   </channel>
+  <programme start="20250522000000 +0200" stop="20250522180000 +0200" channel="557">
+    <title lang="de">Es beginnt um 18:00.</title>
+    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17.</desc>
+    <category lang="de">Bekanntmachung</category>
+  </programme>
   <programme start="20250522180000 +0200" stop="20250522200000 +0200" channel="557">
-    <title lang="it">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
-    <desc lang="it">UEFA U17 European Championship : Albania U17 vs Germany U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
+    <title lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
+    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17 live übertragen.</desc>
+    <category lang="de">Soccer</category>
   </programme>
   <channel id="556">
-    <display-name lang="de">Sky Sport Top Event DE</display-name>
+    <display-name>Sky Sport Top Event DE</display-name>
   </channel>
+  <programme start="20250522000000 +0200" stop="20250522180000 +0200" channel="556">
+    <title lang="de">Es beginnt um 18:00.</title>
+    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17.</desc>
+    <category lang="de">Bekanntmachung</category>
+  </programme>
   <programme start="20250522180000 +0200" stop="20250522200000 +0200" channel="556">
-    <title lang="it">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
-    <desc lang="it">UEFA U17 European Championship : Albania U17 vs Germany U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
+    <title lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
+    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17 live übertragen.</desc>
+    <category lang="de">Soccer</category>
   </programme>
   <channel id="571">
-    <display-name lang="de">Sportdigital FUSSBALL DE</display-name>
+    <display-name>Sportdigital FUSSBALL DE</display-name>
   </channel>
+  <programme start="20250522000000 +0200" stop="20250522180000 +0200" channel="571">
+    <title lang="de">Es beginnt um 18:00.</title>
+    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17.</desc>
+    <category lang="de">Bekanntmachung</category>
+  </programme>
   <programme start="20250522180000 +0200" stop="20250522200000 +0200" channel="571">
-    <title lang="it">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
-    <desc lang="it">UEFA U17 European Championship : Albania U17 vs Germany U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
+    <title lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17</title>
+    <desc lang="de">UEFA U17 European Championship : Albania U17 vs Germany U17 live übertragen.</desc>
+    <category lang="de">Soccer</category>
+  </programme>
+  <programme start="20250522200000 +0200" stop="20250522203000 +0200" channel="571">
+    <title lang="de">Es beginnt um 20:30.</title>
+    <desc lang="de">UEFA U17 European Championship : France U17 vs Portugal U17.</desc>
+    <category lang="de">Bekanntmachung</category>
   </programme>
   <programme start="20250522203000 +0200" stop="20250522223000 +0200" channel="571">
-    <title lang="it">UEFA U17 European Championship : France U17 vs Portugal U17</title>
-    <desc lang="it">UEFA U17 European Championship : France U17 vs Portugal U17 LIVE.</desc>
-    <category lang="it">Soccer</category>
+    <title lang="de">UEFA U17 European Championship : France U17 vs Portugal U17</title>
+    <desc lang="de">UEFA U17 European Championship : France U17 vs Portugal U17 live übertragen.</desc>
+    <category lang="de">Soccer</category>
   </programme>
   <channel id="884">
-    <display-name lang="de">Sky Sports Tennis DE</display-name>
+    <display-name>Sky Sports Tennis DE</display-name>
   </channel>
+  <programme start="20250522000000 +0200" stop="20250522110000 +0200" channel="884">
+    <title lang="de">Es beginnt um 11:00.</title>
+    <desc lang="de">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Day-5.</desc>
+    <category lang="de">Bekanntmachung</category>
+  </programme>
   <programme start="20250522110000 +0200" stop="20250522130000 +0200" channel="884">
-    <title lang="it">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA &amp; Rabat-WTA Day-5</title>
-    <desc lang="it">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA &amp;amp; Rabat-WTA Day-5 LIVE.</desc>
-    <category lang="it">Tennis</category>
+    <title lang="de">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Day-5</title>
+    <desc lang="de">Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Day-5 live übertragen.</desc>
+    <category lang="de">Tennis</category>
   </programme>
   <channel id="427">
-    <display-name lang="de">DAZN2 DE</display-name>
+    <display-name>DAZN2 DE</display-name>
   </channel>
+  <programme start="20250522000000 +0200" stop="20250522201500 +0200" channel="427">
+    <title lang="de">Es beginnt um 20:15.</title>
+    <desc lang="de">Premier League 2025 : Littler, Luke vs. Bunting, Stephen.</desc>
+    <category lang="de">Bekanntmachung</category>
+  </programme>
   <programme start="20250522201500 +0200" stop="20250522221500 +0200" channel="427">
-    <title lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen</title>
-    <desc lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen LIVE.</desc>
-    <category lang="it">Darts</category>
+    <title lang="de">Premier League 2025 : Littler, Luke vs. Bunting, Stephen</title>
+    <desc lang="de">Premier League 2025 : Littler, Luke vs. Bunting, Stephen live übertragen.</desc>
+    <category lang="de">Darts</category>
   </programme>
   <channel id="641">
-    <display-name lang="de">Sport1 DE</display-name>
+    <display-name>Sport1 DE</display-name>
   </channel>
+  <programme start="20250522000000 +0200" stop="20250522201500 +0200" channel="641">
+    <title lang="de">Es beginnt um 20:15.</title>
+    <desc lang="de">Premier League 2025 : Littler, Luke vs. Bunting, Stephen.</desc>
+    <category lang="de">Bekanntmachung</category>
+  </programme>
   <programme start="20250522201500 +0200" stop="20250522221500 +0200" channel="641">
-    <title lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen</title>
-    <desc lang="it">Premier League 2025 : Littler, Luke vs. Bunting, Stephen LIVE.</desc>
-    <category lang="it">Darts</category>
+    <title lang="de">Premier League 2025 : Littler, Luke vs. Bunting, Stephen</title>
+    <desc lang="de">Premier League 2025 : Littler, Luke vs. Bunting, Stephen live übertragen.</desc>
+    <category lang="de">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522204500 +0200" channel="427">
+    <title lang="de">Es beginnt um 20:45.</title>
+    <desc lang="de">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael.</desc>
+    <category lang="de">Bekanntmachung</category>
   </programme>
   <programme start="20250522204500 +0200" stop="20250522224500 +0200" channel="427">
-    <title lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael</title>
-    <desc lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael LIVE.</desc>
-    <category lang="it">Darts</category>
+    <title lang="de">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael</title>
+    <desc lang="de">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael live übertragen.</desc>
+    <category lang="de">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522204500 +0200" channel="641">
+    <title lang="de">Es beginnt um 20:45.</title>
+    <desc lang="de">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael.</desc>
+    <category lang="de">Bekanntmachung</category>
   </programme>
   <programme start="20250522204500 +0200" stop="20250522224500 +0200" channel="641">
-    <title lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael</title>
-    <desc lang="it">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael LIVE.</desc>
-    <category lang="it">Darts</category>
+    <title lang="de">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael</title>
+    <desc lang="de">Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael live übertragen.</desc>
+    <category lang="de">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522211500 +0200" channel="427">
+    <title lang="de">Es beginnt um 21:15.</title>
+    <desc lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob.</desc>
+    <category lang="de">Bekanntmachung</category>
   </programme>
   <programme start="20250522211500 +0200" stop="20250522231500 +0200" channel="427">
-    <title lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob</title>
-    <desc lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob LIVE.</desc>
-    <category lang="it">Darts</category>
+    <title lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob</title>
+    <desc lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob live übertragen.</desc>
+    <category lang="de">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522211500 +0200" channel="641">
+    <title lang="de">Es beginnt um 21:15.</title>
+    <desc lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob.</desc>
+    <category lang="de">Bekanntmachung</category>
   </programme>
   <programme start="20250522211500 +0200" stop="20250522231500 +0200" channel="641">
-    <title lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob</title>
-    <desc lang="it">Premier League 2025 : Humphries, Luke vs. Cross, Rob LIVE.</desc>
-    <category lang="it">Darts</category>
+    <title lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob</title>
+    <desc lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob live übertragen.</desc>
+    <category lang="de">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522214500 +0200" channel="427">
+    <title lang="de">Es beginnt um 21:45.</title>
+    <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris.</desc>
+    <category lang="de">Bekanntmachung</category>
   </programme>
   <programme start="20250522214500 +0200" stop="20250522234500 +0200" channel="427">
-    <title lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris</title>
-    <desc lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris LIVE.</desc>
-    <category lang="it">Darts</category>
+    <title lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris</title>
+    <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris live übertragen.</desc>
+    <category lang="de">Darts</category>
+  </programme>
+  <programme start="20250522000000 +0200" stop="20250522214500 +0200" channel="641">
+    <title lang="de">Es beginnt um 21:45.</title>
+    <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris.</desc>
+    <category lang="de">Bekanntmachung</category>
   </programme>
   <programme start="20250522214500 +0200" stop="20250522234500 +0200" channel="641">
-    <title lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris</title>
-    <desc lang="it">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris LIVE.</desc>
-    <category lang="it">Darts</category>
-  </programme>
-  <programme start="20250522020000 +0200" stop="20250522040000 +0200" channel="557">
-    <title lang="it">NHL : Florida Panthers vs Carolina Hurricanes</title>
-    <desc lang="it">NHL : Florida Panthers vs Carolina Hurricanes LIVE.</desc>
-    <category lang="it">Ice Hockey</category>
-  </programme>
-  <programme start="20250522020000 +0200" stop="20250522040000 +0200" channel="556">
-    <title lang="it">NHL : Florida Panthers vs Carolina Hurricanes</title>
-    <desc lang="it">NHL : Florida Panthers vs Carolina Hurricanes LIVE.</desc>
-    <category lang="it">Ice Hockey</category>
+    <title lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris</title>
+    <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris live übertragen.</desc>
+    <category lang="de">Darts</category>
   </programme>
 </tv>
