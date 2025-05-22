@@ -3,29 +3,6 @@
   <channel id="427">
     <display-name>DAZN2 DE</display-name>
   </channel>
-  <programme start="20250522000000 +0200" stop="20250522211500 +0200" channel="427">
-    <title lang="de">Es beginnt um 21:15.</title>
-    <desc lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob.</desc>
-    <category lang="de">Bekanntmachung</category>
-  </programme>
-  <programme start="20250522211500 +0200" stop="20250522231500 +0200" channel="427">
-    <title lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob</title>
-    <desc lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob live übertragen.</desc>
-    <category lang="de">Darts</category>
-  </programme>
-  <channel id="641">
-    <display-name>Sport1 DE</display-name>
-  </channel>
-  <programme start="20250522000000 +0200" stop="20250522211500 +0200" channel="641">
-    <title lang="de">Es beginnt um 21:15.</title>
-    <desc lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob.</desc>
-    <category lang="de">Bekanntmachung</category>
-  </programme>
-  <programme start="20250522211500 +0200" stop="20250522231500 +0200" channel="641">
-    <title lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob</title>
-    <desc lang="de">Premier League 2025 : Humphries, Luke vs. Cross, Rob live übertragen.</desc>
-    <category lang="de">Darts</category>
-  </programme>
   <programme start="20250522000000 +0200" stop="20250522214500 +0200" channel="427">
     <title lang="de">Es beginnt um 21:45.</title>
     <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris.</desc>
@@ -36,6 +13,9 @@
     <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris live übertragen.</desc>
     <category lang="de">Darts</category>
   </programme>
+  <channel id="641">
+    <display-name>Sport1 DE</display-name>
+  </channel>
   <programme start="20250522000000 +0200" stop="20250522214500 +0200" channel="641">
     <title lang="de">Es beginnt um 21:45.</title>
     <desc lang="de">Premier League 2025 : Price, Gerwyn vs. Dobey, Chris.</desc>
