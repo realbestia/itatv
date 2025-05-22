@@ -1,24 +1,6 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/deevents.xml"
-#EXTINF:-1 tvg-name="Soccer" group-title="Eventi Live",--- Soccer ---
-https://example.m3u8
-
-#EXTINF:-1 tvg-id="571" tvg-name="UEFA U17 European Championship : France U17 vs Portugal U17 (20:30)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/France U17_vs_Portugal U17.png" group-title="Eventi Live",UEFA U17 European Championship : France U17 vs Portugal U17 (20:30)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-571.php
-
 #EXTINF:-1 tvg-name="Darts" group-title="Eventi Live",--- Darts ---
 https://example.m3u8
-
-#EXTINF:-1 tvg-id="427" tvg-name="Premier League 2025 : Littler, Luke vs. Bunting, Stephen (20:15)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Littler, Luke_vs_Bunting, Stephen.png" group-title="Eventi Live",Premier League 2025 : Littler, Luke vs. Bunting, Stephen (20:15)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-427.php
-
-#EXTINF:-1 tvg-id="641" tvg-name="Premier League 2025 : Littler, Luke vs. Bunting, Stephen (20:15)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Littler, Luke_vs_Bunting, Stephen.png" group-title="Eventi Live",Premier League 2025 : Littler, Luke vs. Bunting, Stephen (20:15)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-641.php
-
-#EXTINF:-1 tvg-id="427" tvg-name="Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael (20:45)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Aspinall, Nathan_vs_van Gerwen, Michael.png" group-title="Eventi Live",Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael (20:45)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-427.php
-
-#EXTINF:-1 tvg-id="641" tvg-name="Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael (20:45)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Aspinall, Nathan_vs_van Gerwen, Michael.png" group-title="Eventi Live",Premier League 2025 : Aspinall, Nathan vs. van Gerwen, Michael (20:45)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-641.php
 
 #EXTINF:-1 tvg-id="427" tvg-name="Premier League 2025 : Humphries, Luke vs. Cross, Rob (21:15)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Humphries, Luke_vs_Cross, Rob.png" group-title="Eventi Live",Premier League 2025 : Humphries, Luke vs. Cross, Rob (21:15)
 https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-427.php
