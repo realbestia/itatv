@@ -1,7 +1,7 @@
 import os
 import re
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone # Added timezone
 
 # Funzione di utilità per pulire il testo (rimuovere tag HTML span)
 def clean_text(text):
