@@ -290,6 +290,12 @@ def eventi_m3u8_generator_world():
                 teams = clean_event_name.split(" vs ")
             elif " - " in clean_event_name:
                 teams = clean_event_name.split(" - ")
+            elif " VS " in clean_event_name:
+                teams = clean_event_name.split(" VS ")
+            elif " VS. " in clean_event_name:
+                teams = clean_event_name.split(" VS. ")
+            elif " vs. " in clean_event_name:
+                teams = clean_event_name.split(" vs. ")
             
             # Se abbiamo identificato due squadre, cerchiamo i loghi separatamente
             if teams and len(teams) == 2:
@@ -717,6 +723,12 @@ def eventi_m3u8_generator():
                 teams = clean_event_name.split(" vs ")
             elif " - " in clean_event_name:
                 teams = clean_event_name.split(" - ")
+            elif " VS " in clean_event_name:
+                teams = clean_event_name.split(" VS ")
+            elif " VS. " in clean_event_name:
+                teams = clean_event_name.split(" VS. ")
+            elif " vs. " in clean_event_name:
+                teams = clean_event_name.split(" vs. ")
             
             # Se abbiamo identificato due squadre, cerchiamo i loghi separatamente
             if teams and len(teams) == 2:
