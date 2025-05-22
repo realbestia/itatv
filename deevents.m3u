@@ -2,6 +2,7 @@
 #EXTINF:-1 tvg-name="Soccer" group-title="Live Events",--- Soccer ---
 https://exemple.m3u8
 
+<<<<<<< Updated upstream
 #EXTINF:-1 tvg-id="21" tvg-name="UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)" tvg-logo="https://i.pinimg.com/originals/b2/67/0f/b2670f031f7e7bd47f007dfe5f372cc2.png" group-title="Live Events",UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://nfsnew.newkso.ru/nfs/premium21/mono.m3u8
 
@@ -15,12 +16,31 @@ https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/premium571/mono.m3u8
 
 #EXTINF:-1 tvg-id="571" tvg-name="UEFA U17 European Championship : France U17 vs Portugal U17 (20:30)" tvg-logo="https://www.polcassinanuova.it/wp-content/uploads/2020/09/iconasitowhite.png" group-title="Live Events",UEFA U17 European Championship : France U17 vs Portugal U17 (20:30)
+=======
+#EXTINF:-1 tvg-id="21" tvg-name="UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)" tvg-logo="logos/Albania U17_vs_Germany U17.png" group-title="Live Events",UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)
+https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://nfsnew.newkso.ru/nfs/premium21/mono.m3u8
+
+#EXTINF:-1 tvg-id="557" tvg-name="UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)" tvg-logo="logos/Albania U17_vs_Germany U17.png" group-title="Live Events",UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)
+https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8
+
+#EXTINF:-1 tvg-id="556" tvg-name="UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)" tvg-logo="logos/Albania U17_vs_Germany U17.png" group-title="Live Events",UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)
+https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/premium556/mono.m3u8
+
+#EXTINF:-1 tvg-id="571" tvg-name="UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)" tvg-logo="logos/Albania U17_vs_Germany U17.png" group-title="Live Events",UEFA U17 European Championship : Albania U17 vs Germany U17 (18:00)
+https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/premium571/mono.m3u8
+
+#EXTINF:-1 tvg-id="571" tvg-name="UEFA U17 European Championship : France U17 vs Portugal U17 (20:30)" tvg-logo="logos/France U17_vs_Portugal U17.png" group-title="Live Events",UEFA U17 European Championship : France U17 vs Portugal U17 (20:30)
+>>>>>>> Stashed changes
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/premium571/mono.m3u8
 
 #EXTINF:-1 tvg-name="Tennis" group-title="Live Events",--- Tennis ---
 https://exemple.m3u8
 
+<<<<<<< Updated upstream
 #EXTINF:-1 tvg-id="884" tvg-name="Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Day-5 (11:00)" tvg-logo="https://aio.panphol.com/assets/images/stocklogo/EPG.png" group-title="Live Events",Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Day-5 (11:00)
+=======
+#EXTINF:-1 tvg-id="884" tvg-name="Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Day-5 (11:00)" tvg-logo="https://theme.tabellen.se/img/league-logos/tennis/png/tennis-5001.png?v=17" group-title="Live Events",Hamburg-ATP, Geneva-ATP, Strasbourg-WTA & Rabat-WTA Day-5 (11:00)
+>>>>>>> Stashed changes
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://windnew.newkso.ru/wind/premium884/mono.m3u8
 
 #EXTINF:-1 tvg-name="Darts" group-title="Live Events",--- Darts ---
@@ -53,9 +73,16 @@ https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://ddy6new.newkso.ru/ddy6/prem
 #EXTINF:-1 tvg-name="Ice Hockey" group-title="Live Events",--- Ice Hockey ---
 https://exemple.m3u8
 
+<<<<<<< Updated upstream
 #EXTINF:-1 tvg-id="557" tvg-name="NHL : Florida Panthers vs Carolina Hurricanes (02:00)" tvg-logo="https://cdn.freelogovectors.net/wp-content/uploads/2018/03/Florida_Panthers_Logo.png" group-title="Live Events",NHL : Florida Panthers vs Carolina Hurricanes (02:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8
 
 #EXTINF:-1 tvg-id="556" tvg-name="NHL : Florida Panthers vs Carolina Hurricanes (02:00)" tvg-logo="https://cdn.freelogovectors.net/wp-content/uploads/2018/03/Florida_Panthers_Logo.png" group-title="Live Events",NHL : Florida Panthers vs Carolina Hurricanes (02:00)
+=======
+#EXTINF:-1 tvg-id="557" tvg-name="NHL : Florida Panthers vs Carolina Hurricanes (02:00)" tvg-logo="logos/Florida Panthers_vs_Carolina Hurricanes.png" group-title="Live Events",NHL : Florida Panthers vs Carolina Hurricanes (02:00)
+https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://ddy6new.newkso.ru/ddy6/premium557/mono.m3u8
+
+#EXTINF:-1 tvg-id="556" tvg-name="NHL : Florida Panthers vs Carolina Hurricanes (02:00)" tvg-logo="logos/Florida Panthers_vs_Carolina Hurricanes.png" group-title="Live Events",NHL : Florida Panthers vs Carolina Hurricanes (02:00)
+>>>>>>> Stashed changes
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://dokko1new.newkso.ru/dokko1/premium556/mono.m3u8
 
