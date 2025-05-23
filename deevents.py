@@ -409,7 +409,7 @@ def eventi_m3u8_generator():
                 if not channels: 
                     continue 
       
-                f.write(f'#EXTINF:-1 tvg-name="{category}" group-title="Eventi Live",--- {category} ---\nhttps://example.m3u8\n\n') 
+                f.write(f'#EXTINF:-1 tvg-name="{category}" group-title="Live Events",--- {category} ---\nhttps://example.m3u8\n\n') 
       
                 for ch in channels: 
                     tvg_name = ch["tvg_name"] 
@@ -424,7 +424,7 @@ def eventi_m3u8_generator():
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
                     stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
-                    f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
+                    f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Live Events",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
       
     if __name__ == "__main__": 
