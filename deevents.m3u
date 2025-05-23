@@ -1,16 +1,1 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/deevents.xml"
-#EXTINF:-1 tvg-name="Soccer" group-title="Live Events",--- Soccer ---
-https://example.m3u8
-
-#EXTINF:-1 tvg-id="556" tvg-name="Germany - Bundesliga 2 : Saarbrücken vs Eintracht Braunschweig (20:30)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Saarbrücken_vs_Eintracht Braunschweig.png" group-title="Live Events",Germany - Bundesliga 2 : Saarbrücken vs Eintracht Braunschweig (20:30)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-556.php
-
-#EXTINF:-1 tvg-id="571" tvg-name="UEFA U17 European Championship : Italy U17 vs England U17 (20:30)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Italy U17_vs_England U17.png" group-title="Live Events",UEFA U17 European Championship : Italy U17 vs England U17 (20:30)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-571.php
-
-#EXTINF:-1 tvg-name="Rugby League" group-title="Live Events",--- Rugby League ---
-https://example.m3u8
-
-#EXTINF:-1 tvg-id="640" tvg-name="Super League Rugby : Huddersfield vs St Helens (21:00)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Huddersfield_vs_St Helens.png" group-title="Live Events",Super League Rugby : Huddersfield vs St Helens (21:00)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-640.php
-
