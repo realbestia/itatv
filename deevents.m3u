@@ -2,15 +2,6 @@
 #EXTINF:-1 tvg-name="Soccer" group-title="Live Events",--- Soccer ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="571" tvg-name="UEFA U17 European Championship : Belgium U17 vs Czechia U17 (18:00)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Belgium U17_vs_Czechia U17.png" group-title="Live Events",UEFA U17 European Championship : Belgium U17 vs Czechia U17 (18:00)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-571.php
-
-#EXTINF:-1 tvg-id="557" tvg-name="- Germany Amateur A-Junioren-Bundesliga Playoffs - Werder Bremen vs. Karlsruher SC (18:00)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/- Germany Amateur A-Junioren-Bundesliga Playoffs - Werder Bremen_vs_Karlsruher SC.png" group-title="Live Events",- Germany Amateur A-Junioren-Bundesliga Playoffs - Werder Bremen vs. Karlsruher SC (18:00)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-557.php
-
-#EXTINF:-1 tvg-id="556" tvg-name="- Germany Amateur A-Junioren-Bundesliga Playoffs - Werder Bremen vs. Karlsruher SC (18:00)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/- Germany Amateur A-Junioren-Bundesliga Playoffs - Werder Bremen_vs_Karlsruher SC.png" group-title="Live Events",- Germany Amateur A-Junioren-Bundesliga Playoffs - Werder Bremen vs. Karlsruher SC (18:00)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-556.php
-
 #EXTINF:-1 tvg-id="556" tvg-name="Germany - Bundesliga 2 : Saarbrücken vs Eintracht Braunschweig (20:30)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Saarbrücken_vs_Eintracht Braunschweig.png" group-title="Live Events",Germany - Bundesliga 2 : Saarbrücken vs Eintracht Braunschweig (20:30)
 https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-556.php
 
@@ -20,10 +11,10 @@ https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-571.p
 #EXTINF:-1 tvg-name="Darts" group-title="Live Events",--- Darts ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="427" tvg-name="PDC Darts Dutch Darts Championship First Round Season 2 (19:00)" tvg-logo="http://www.dartstickets.com/darts/images/players/roland-scholten.png" group-title="Live Events",PDC Darts Dutch Darts Championship First Round Season 2 (19:00)
+#EXTINF:-1 tvg-id="427" tvg-name="PDC Darts Dutch Darts Championship First Round Season 2 (19:00)" tvg-logo="https://www.thesportsdb.com/images/media/league/badge/isf07m1555602216.png/preview" group-title="Live Events",PDC Darts Dutch Darts Championship First Round Season 2 (19:00)
 https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-427.php
 
-#EXTINF:-1 tvg-id="641" tvg-name="PDC Darts Dutch Darts Championship First Round Season 2 (19:00)" tvg-logo="http://www.dartstickets.com/darts/images/players/roland-scholten.png" group-title="Live Events",PDC Darts Dutch Darts Championship First Round Season 2 (19:00)
+#EXTINF:-1 tvg-id="641" tvg-name="PDC Darts Dutch Darts Championship First Round Season 2 (19:00)" tvg-logo="https://champdarts.com/wp-content/uploads/2020/01/pdc-transparent.png" group-title="Live Events",PDC Darts Dutch Darts Championship First Round Season 2 (19:00)
 https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-641.php
 
 #EXTINF:-1 tvg-name="Rugby League" group-title="Live Events",--- Rugby League ---
