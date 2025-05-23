@@ -201,7 +201,7 @@ def eventi_m3u8_generator():
                 # Se non abbiamo trovato entrambi i loghi, restituisci quello che abbiamo
                 return logo1_url or logo2_url
                 
-                    if ':' in event_name:
+            if ':' in event_name:
                 # Usa la parte prima dei ":" per la ricerca
                 prefix_name = event_name.split(':', 1)[0].strip()
                 print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
