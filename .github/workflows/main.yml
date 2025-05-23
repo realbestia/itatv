@@ -22,53 +22,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml playwright bs4 rapidfuzz fuzzywuzzy python-Levenshtein python-dateutil python-dotenv selenium webdriver-manager pillow
           playwright install 
-
-      - name: Elimina file vecchi dalla cartella logos
-        run: |
-          if [ -d "logos" ]; then
-            echo "Verificando la presenza di file nella cartella logos..."
-            ls -la logos/
-            
-            echo "Eliminazione dei file più vecchi di 3 ore dalla cartella logos..."
-            # Crea uno script Python temporaneo per eliminare i file vecchi
-            cat > delete_old_files.py << 'EOF'
-          import os
-          import time
-          import glob
-          
-          def delete_old_files(directory, hours=3):
-              """Elimina i file più vecchi di un certo numero di ore."""
-              current_time = time.time()
-              cutoff_time = current_time - (hours * 3600)
-              
-              count = 0
-              for file_path in glob.glob(f"{directory}/*"):
-                  if os.path.isfile(file_path):
-                      file_mod_time = os.path.getmtime(file_path)
-                      if file_mod_time < cutoff_time:
-                          print(f"Eliminando: {file_path} (modificato {(current_time - file_mod_time) / 3600:.2f} ore fa)")
-                          os.remove(file_path)
-                          count += 1
-              
-              return count
-          
-          if __name__ == "__main__":
-              if os.path.exists("logos"):
-                  count = delete_old_files("logos")
-                  print(f"Eliminati {count} file più vecchi di 3 ore dalla cartella logos")
-              else:
-                  print("La cartella logos non esiste")
-          EOF
-            
-            # Esegui lo script Python
-            python delete_old_files.py
-            
-            # Verifica i file rimanenti
-            echo "File rimanenti nella cartella logos:"
-            ls -la logos/
-          else
-            echo "La cartella logos non esiste. Nessun file da eliminare."
-          fi
       
       - name: Run Script
         run: |
