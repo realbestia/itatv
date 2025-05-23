@@ -63,7 +63,7 @@ def merger_playlist():
     output_filename = os.path.join(script_directory, "combined_playlist.m3u")
     with open(output_filename, 'w', encoding='utf-8') as file:
         file.write(combined_playlist)
-
+        
     output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
     with open(output_filename, 'w', encoding='utf-8') as file:
         file.write(combined_playlist)
@@ -130,7 +130,7 @@ def merger_playlistworld():
     output_filename = os.path.join(script_directory, "combined_playlist.m3u")
     with open(output_filename, 'w', encoding='utf-8') as file:
         file.write(combined_playlist)
-    
+        
     output_filename = os.path.join(script_directory, "combined_playlist.m3u8")
     with open(output_filename, 'w', encoding='utf-8') as file:
         file.write(combined_playlist)
@@ -316,21 +316,6 @@ def eventi_m3u8_generator_world():
                         logos_dir = "logos"
                         os.makedirs(logos_dir, exist_ok=True)
                         
-                        # Controlla e rimuovi i loghi più vecchi di 3 ore
-                        current_time = time.time()
-                        three_hours_in_seconds = 3 * 60 * 60
-                        
-                        for logo_file in os.listdir(logos_dir):
-                            logo_path = os.path.join(logos_dir, logo_file)
-                            if os.path.isfile(logo_path):
-                                file_age = current_time - os.path.getmtime(logo_path)
-                                if file_age > three_hours_in_seconds:
-                                    try:
-                                        os.remove(logo_path)
-                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_path}")
-                                    except Exception as e:
-                                        print(f"[!] Errore nella rimozione del logo {logo_path}: {e}")
-                        
                         # Verifica se l'immagine combinata esiste già e non è obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
                         if exists(output_filename):
@@ -435,6 +420,52 @@ def eventi_m3u8_generator_world():
                 
                 # Se non abbiamo trovato entrambi i loghi, restituisci quello che abbiamo
                 return logo1_url or logo2_url
+            if ':' in event_name:
+                # Usa la parte prima dei ":" per la ricerca
+                prefix_name = event_name.split(':', 1)[0].strip()
+                print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
+                
+                # Prepara la query di ricerca con il prefisso
+                search_query = urllib.parse.quote(f"{prefix_name} logo")
+                
+                # Utilizziamo l'API di Bing Image Search con parametri migliorati
+                search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
+                
+                headers = { 
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                    "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cache-Control": "max-age=0",
+                    "Connection": "keep-alive"
+                } 
+                
+                response = requests.get(search_url, headers=headers, timeout=10)
+                
+                if response.status_code == 200: 
+                    # Metodo 1: Cerca pattern per murl (URL dell'immagine media)
+                    patterns = [
+                        r'murl&quot;:&quot;(https?://[^&]+)&quot;',
+                        r'"murl":"(https?://[^"]+)"',
+                        r'"contentUrl":"(https?://[^"]+\.(?:png|jpg|jpeg|svg))"',
+                        r'<img[^>]+src="(https?://[^"]+\.(?:png|jpg|jpeg|svg))[^>]+class="mimg"',
+                        r'<a[^>]+class="iusc"[^>]+m=\'{"[^"]*":"[^"]*","[^"]*":"(https?://[^"]+)"'
+                    ]
+                    
+                    for pattern in patterns:
+                        matches = re.findall(pattern, response.text)
+                        if matches and len(matches) > 0:
+                            # Prendi il primo risultato che sembra un logo (preferibilmente PNG o SVG)
+                            for match in matches:
+                                if '.png' in match.lower() or '.svg' in match.lower():
+                                    print(f"[✓] Logo trovato con prefisso: {match}")
+                                    return match
+                            # Se non troviamo PNG o SVG, prendi il primo risultato
+                            print(f"[✓] Logo trovato con prefisso: {matches[0]}")
+                            return matches[0]
+            
+            # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
+            print(f"[🔍] Ricerca standard per: {clean_event_name}")
+            
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
@@ -510,7 +541,7 @@ def eventi_m3u8_generator_world():
         """
         try:
             # Prepara la query di ricerca specifica per la squadra
-            search_query = urllib.parse.quote(f"{team_name} logo squadra calcio")
+            search_query = urllib.parse.quote(f"{team_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -579,6 +610,7 @@ def eventi_m3u8_generator_world():
     def extract_channels_from_json(path): 
         keywords = {"italy", "rai", "italia", "it", "uk", "tnt", "usa", "tennis channel", "tennis stream", "la"} 
         now = datetime.now() 
+        yesterday = now.date() - timedelta(days=1)
       
         with open(path, "r", encoding="utf-8") as f: 
             data = json.load(f) 
@@ -593,7 +625,8 @@ def eventi_m3u8_generator_world():
                 print(f"[!] Errore parsing data '{date_part}': {e}") 
                 continue 
       
-            if date_obj != now.date(): 
+            # Includi sia la data odierna che quella di ieri
+            if date_obj != now.date() and date_obj != yesterday:
                 continue 
       
             date_str = date_obj.strftime("%Y-%m-%d") 
@@ -606,10 +639,20 @@ def eventi_m3u8_generator_world():
                 for item in event_items: 
                     time_str = item.get("time", "00:00") 
                     try: 
-                        time_obj = datetime.strptime(time_str, "%H:%M") + timedelta(hours=2) 
+                        # Prima verifica l'orario originale (senza aggiungere le 2 ore)
+                        original_time_obj = datetime.strptime(time_str, "%H:%M")
+                        
+                        # Se è il giorno precedente, includi solo gli eventi dalle 00:00 alle 04:00
+                        if date_obj == yesterday:
+                            if original_time_obj.hour < 0 or original_time_obj.hour >= 4:
+                                continue
+                        
+                        # Ora aggiungi le 2 ore per il display
+                        time_obj = original_time_obj + timedelta(hours=2)
                         event_datetime = datetime.combine(date_obj, time_obj.time()) 
       
-                        if now - event_datetime > timedelta(hours=2): 
+                        # Per il giorno corrente, mantieni la logica esistente
+                        if date_obj == now.date() and now - event_datetime > timedelta(hours=2): 
                             continue 
       
                         time_formatted = time_obj.strftime("%H:%M") 
@@ -632,7 +675,7 @@ def eventi_m3u8_generator_world():
                                 "event_title": event_title  # Aggiungiamo il titolo dell'evento per la ricerca del logo 
                             }) 
       
-        return categorized_channels 
+        return categorized_channels
       
     def generate_m3u_from_schedule(json_file, output_file): 
         categorized_channels = extract_channels_from_json(json_file) 
@@ -670,7 +713,8 @@ def eventi_m3u8_generator_world():
             print("[!] Il modulo 'requests' non è installato. Installalo con 'pip install requests'") 
             exit(1) 
              
-        generate_m3u_from_schedule(JSON_FILE, OUTPUT_FILE) 
+        generate_m3u_from_schedule(JSON_FILE, OUTPUT_FILE)
+             
 # Funzione per il terzo script (eventi_m3u8_generator.py)
 def eventi_m3u8_generator():
     # Codice del terzo script qui
@@ -866,10 +910,56 @@ def eventi_m3u8_generator():
                 
                 # Se non abbiamo trovato entrambi i loghi, restituisci quello che abbiamo
                 return logo1_url or logo2_url
+
+            if ':' in event_name:
+                # Usa la parte prima dei ":" per la ricerca
+                prefix_name = event_name.split(':', 1)[0].strip()
+                print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
+                
+                # Prepara la query di ricerca con il prefisso
+                search_query = urllib.parse.quote(f"{prefix_name} logo")
+                
+                # Utilizziamo l'API di Bing Image Search con parametri migliorati
+                search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
+                
+                headers = { 
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                    "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cache-Control": "max-age=0",
+                    "Connection": "keep-alive"
+                } 
+                
+                response = requests.get(search_url, headers=headers, timeout=10)
+                
+                if response.status_code == 200: 
+                    # Metodo 1: Cerca pattern per murl (URL dell'immagine media)
+                    patterns = [
+                        r'murl&quot;:&quot;(https?://[^&]+)&quot;',
+                        r'"murl":"(https?://[^"]+)"',
+                        r'"contentUrl":"(https?://[^"]+\.(?:png|jpg|jpeg|svg))"',
+                        r'<img[^>]+src="(https?://[^"]+\.(?:png|jpg|jpeg|svg))[^>]+class="mimg"',
+                        r'<a[^>]+class="iusc"[^>]+m=\'{"[^"]*":"[^"]*","[^"]*":"(https?://[^"]+)"'
+                    ]
+                    
+                    for pattern in patterns:
+                        matches = re.findall(pattern, response.text)
+                        if matches and len(matches) > 0:
+                            # Prendi il primo risultato che sembra un logo (preferibilmente PNG o SVG)
+                            for match in matches:
+                                if '.png' in match.lower() or '.svg' in match.lower():
+                                    print(f"[✓] Logo trovato con prefisso: {match}")
+                                    return match
+                            # Se non troviamo PNG o SVG, prendi il primo risultato
+                            print(f"[✓] Logo trovato con prefisso: {matches[0]}")
+                            return matches[0]
+            
+            # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
+            print(f"[🔍] Ricerca standard per: {clean_event_name}")
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
-            search_query = urllib.parse.quote(f"{clean_event_name} logo epg")
+            search_query = urllib.parse.quote(f"{clean_event_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -941,7 +1031,7 @@ def eventi_m3u8_generator():
         """
         try:
             # Prepara la query di ricerca specifica per la squadra
-            search_query = urllib.parse.quote(f"{team_name} logo squadra calcio")
+            search_query = urllib.parse.quote(f"{team_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
