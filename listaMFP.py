@@ -269,7 +269,7 @@ def eventi_m3u8_generator():
     OUTPUT_FILE = "eventi.m3u8" 
     LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
 
-    # Funzione per pulire il nome della categoria
+        # Funzione per pulire il nome della categoria
     def clean_category_name(name): 
         # Rimuove tag html come </span> o simili 
         return re.sub(r'<[^>]+>', '', name).strip()
@@ -318,7 +318,7 @@ def eventi_m3u8_generator():
                         # Crea la cartella logos se non esiste
                         logos_dir = "logos"
                         os.makedirs(logos_dir, exist_ok=True)
-
+                        
                         # Verifica se l'immagine combinata esiste già e non è obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
                         if exists(output_filename):
@@ -423,7 +423,6 @@ def eventi_m3u8_generator():
                 
                 # Se non abbiamo trovato entrambi i loghi, restituisci quello che abbiamo
                 return logo1_url or logo2_url
-
             if ':' in event_name:
                 # Usa la parte prima dei ":" per la ricerca
                 prefix_name = event_name.split(':', 1)[0].strip()
@@ -469,6 +468,7 @@ def eventi_m3u8_generator():
             
             # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
             print(f"[🔍] Ricerca standard per: {clean_event_name}")
+            
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
@@ -886,7 +886,6 @@ def eventi_m3u8_generator_world():
                 
                 # Se non abbiamo trovato entrambi i loghi, restituisci quello che abbiamo
                 return logo1_url or logo2_url
-
             if ':' in event_name:
                 # Usa la parte prima dei ":" per la ricerca
                 prefix_name = event_name.split(':', 1)[0].strip()
@@ -932,6 +931,7 @@ def eventi_m3u8_generator_world():
             
             # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
             print(f"[🔍] Ricerca standard per: {clean_event_name}")
+            
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
