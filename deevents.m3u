@@ -2,12 +2,6 @@
 #EXTINF:-1 tvg-name="Soccer" group-title="Live Events",--- Soccer ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="571" tvg-name="Poland - Ekstraklasa : Zagłębie Lubin vs Cracovia Kraków (17:30)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Zagłębie Lubin_vs_Cracovia Kraków.png" group-title="Live Events",Poland - Ekstraklasa : Zagłębie Lubin vs Cracovia Kraków (17:30)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-571.php
-
-#EXTINF:-1 tvg-id="427" tvg-name="UEFA Women's Champions League : Arsenal vs Barcelona (18:00)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Arsenal_vs_Barcelona.png" group-title="Live Events",UEFA Women's Champions League : Arsenal vs Barcelona (18:00)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-427.php
-
 #EXTINF:-1 tvg-id="426" tvg-name="Spain - La Liga : Espanyol vs Las Palmas (18:30)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Espanyol_vs_Las Palmas.png" group-title="Live Events",Spain - La Liga : Espanyol vs Las Palmas (18:30)
 https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-426.php
 
