@@ -2,12 +2,6 @@
 #EXTINF:-1 tvg-name="Soccer" group-title="Live Events",--- Soccer ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="16" tvg-name="England - Championship : Sheffield United vs Sunderland (16:00)" tvg-logo="https://logodownload.org/wp-content/uploads/2019/10/sheffield-united-logo-0.png" group-title="Live Events",England - Championship : Sheffield United vs Sunderland (16:00)
-https://mfp2.nzo66.com/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-16.php&redirect_stream=true&api_password=mfp123
-
-#EXTINF:-1 tvg-id="426" tvg-name="Spain - La Liga : Real Madrid vs Real Sociedad (16:15)" tvg-logo="https://logodetimes.com/times/real-madrid/logo-real-madrid-4096.png" group-title="Live Events",Spain - La Liga : Real Madrid vs Real Sociedad (16:15)
-https://mfp2.nzo66.com/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-426.php&redirect_stream=true&api_password=mfp123
-
 #EXTINF:-1 tvg-id="571" tvg-name="Poland - Ekstraklasa : Zagłębie Lubin vs Cracovia Kraków (17:30)" tvg-logo="https://cdn.freebiesupply.com/logos/large/2x/zaglebie-lubin-logo-png-transparent.png" group-title="Live Events",Poland - Ekstraklasa : Zagłębie Lubin vs Cracovia Kraków (17:30)
 https://mfp2.nzo66.com/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-571.php&redirect_stream=true&api_password=mfp123
 
@@ -34,15 +28,6 @@ https://mfp2.nzo66.com/extractor/video?host=DLHD&d=https://daddylive.dad/embed/s
 
 #EXTINF:-1 tvg-name="Motorsport" group-title="Live Events",--- Motorsport ---
 https://example.m3u8
-
-#EXTINF:-1 tvg-id="557" tvg-name="Moto2 : Storbritanniens Grand Prix Qualifying (15:40)" tvg-logo="https://1.bp.blogspot.com/--h_B_gQgA5M/X7dzqBuFa1I/AAAAAAAAKcA/_64dF25d7LQDis3x67-bnWXPQwPKkVAVACLcBGAsYHQ/w1200-h630-p-k-no-nu/Moto2.png" group-title="Live Events",Moto2 : Storbritanniens Grand Prix Qualifying (15:40)
-https://mfp2.nzo66.com/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-557.php&redirect_stream=true&api_password=mfp123
-
-#EXTINF:-1 tvg-id="556" tvg-name="Moto2 : Storbritanniens Grand Prix Qualifying (15:40)" tvg-logo="https://1.bp.blogspot.com/-dt6mSIGyYDs/XPVByA3agjI/AAAAAAAAIJs/_6R4IvD5Gh43Bsk4SSoCKUveuK953FQkgCLcBGAs/s72-c/Moto2%2BLogo%2B%255Bwww.blogovector.com%255D.png" group-title="Live Events",Moto2 : Storbritanniens Grand Prix Qualifying (15:40)
-https://mfp2.nzo66.com/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-556.php&redirect_stream=true&api_password=mfp123
-
-#EXTINF:-1 tvg-id="274" tvg-name="Formula 1 : Tag Heuer Monaco Grand Prix - Qualifying (16:00)" tvg-logo="https://logospng.org/download/formula-1/formula-1-4096.png" group-title="Live Events",Formula 1 : Tag Heuer Monaco Grand Prix - Qualifying (16:00)
-https://mfp2.nzo66.com/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-274.php&redirect_stream=true&api_password=mfp123
 
 #EXTINF:-1 tvg-id="557" tvg-name="MotoGP : Storbritanniens Grand Prix Sprint Race (17:00)" tvg-logo="https://cdn.freebiesupply.com/logos/large/2x/moto-gp-1-logo-png-transparent.png" group-title="Live Events",MotoGP : Storbritanniens Grand Prix Sprint Race (17:00)
 https://mfp2.nzo66.com/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-557.php&redirect_stream=true&api_password=mfp123
