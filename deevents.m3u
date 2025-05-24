@@ -2,9 +2,6 @@
 #EXTINF:-1 tvg-name="Soccer" group-title="Live Events",--- Soccer ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="426" tvg-name="Spain - La Liga : Espanyol vs Las Palmas (18:30)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Espanyol_vs_Las Palmas.png" group-title="Live Events",Spain - La Liga : Espanyol vs Las Palmas (18:30)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-426.php
-
 #EXTINF:-1 tvg-id="727" tvg-name="DFB Pokal : Arminia Bielefeld vs Stuttgart (20:00)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Arminia Bielefeld_vs_Stuttgart.png" group-title="Live Events",DFB Pokal : Arminia Bielefeld vs Stuttgart (20:00)
 https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-727.php
 
@@ -19,25 +16,4 @@ https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-427.p
 
 #EXTINF:-1 tvg-id="426" tvg-name="Spain - La Liga : Rayo Vallecano vs Mallorca (21:00)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Rayo Vallecano_vs_Mallorca.png" group-title="Live Events",Spain - La Liga : Rayo Vallecano vs Mallorca (21:00)
 https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-426.php
-
-#EXTINF:-1 tvg-name="Darts" group-title="Live Events",--- Darts ---
-https://example.m3u8
-
-#EXTINF:-1 tvg-id="427" tvg-name="PDC Darts Dutch Darts Championship Season 2 (19:00)" tvg-logo="https://www.thesportsdb.com/images/media/league/badge/isf07m1555602216.png/preview" group-title="Live Events",PDC Darts Dutch Darts Championship Season 2 (19:00)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-427.php
-
-#EXTINF:-1 tvg-id="641" tvg-name="PDC Darts Dutch Darts Championship Season 2 (19:00)" tvg-logo="https://www.thesportsdb.com/images/media/league/badge/isf07m1555602216.png/preview" group-title="Live Events",PDC Darts Dutch Darts Championship Season 2 (19:00)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-641.php
-
-#EXTINF:-1 tvg-name="Handball" group-title="Live Events",--- Handball ---
-https://example.m3u8
-
-#EXTINF:-1 tvg-id="235" tvg-name="Handball-Bundesliga Women : Blomberg-Lippe W vs Ludwigsburg W (19:00)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Blomberg-Lippe W_vs_Ludwigsburg W.png" group-title="Live Events",Handball-Bundesliga Women : Blomberg-Lippe W vs Ludwigsburg W (19:00)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-235.php
-
-#EXTINF:-1 tvg-name="Rugby League" group-title="Live Events",--- Rugby League ---
-https://example.m3u8
-
-#EXTINF:-1 tvg-id="640" tvg-name="Super League Rugby : Catalans Dragons vs Wigan Warriors (18:30)" tvg-logo="https://raw.githubusercontent.com/realbestia/itatv/main/logos/Catalans Dragons_vs_Wigan Warriors.png" group-title="Live Events",Super League Rugby : Catalans Dragons vs Wigan Warriors (18:30)
-https://tvproxy.nzo66.com/proxy/m3u?url=https://daddylive.dad/embed/stream-640.php
 
