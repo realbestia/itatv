@@ -449,7 +449,7 @@ def eventi_m3u8_generator():
         categorized_channels = extract_channels_from_json(json_file) 
 
         with open(output_file, "w", encoding="utf-8") as f: 
-            f.write('#EXTM3U x-tvg-url=\n') 
+            f.write('#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/deevents.xml"\n') 
 
             for category, channels in categorized_channels.items(): 
                 if not channels: 
