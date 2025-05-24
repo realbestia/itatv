@@ -26,7 +26,8 @@ def eventi_m3u8_generator():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
-    PROXY = os.getenv("PROXYIP", "").strip()  
+    MFP_IP = os.getenv("IPMFP", "").strip()  # Inserisci il tuo IP/porta MFP 
+    MFP_PASSWORD = os.getenv("PASSMFP", "").strip()  # Inserisci la tua password API MFP 
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "deevents.m3u" 
     LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
@@ -80,22 +81,7 @@ def eventi_m3u8_generator():
                         # Crea la cartella logos se non esiste
                         logos_dir = "logos"
                         os.makedirs(logos_dir, exist_ok=True)
-                        
-                        # Controlla e rimuovi i loghi più vecchi di 3 ore
-                        current_time = time.time()
-                        three_hours_in_seconds = 3 * 60 * 60
-                        
-                        for logo_file in os.listdir(logos_dir):
-                            logo_path = os.path.join(logos_dir, logo_file)
-                            if os.path.isfile(logo_path):
-                                file_age = current_time - os.path.getmtime(logo_path)
-                                if file_age > three_hours_in_seconds:
-                                    try:
-                                        os.remove(logo_path)
-                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_path}")
-                                    except Exception as e:
-                                        print(f"[!] Errore nella rimozione del logo {logo_path}: {e}")
-                        
+
                         # Verifica se l'immagine combinata esiste già e non è obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
                         if exists(output_filename):
@@ -200,7 +186,7 @@ def eventi_m3u8_generator():
                 
                 # Se non abbiamo trovato entrambi i loghi, restituisci quello che abbiamo
                 return logo1_url or logo2_url
-                
+
             if ':' in event_name:
                 # Usa la parte prima dei ":" per la ricerca
                 prefix_name = event_name.split(':', 1)[0].strip()
@@ -247,10 +233,9 @@ def eventi_m3u8_generator():
             # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
             print(f"[🔍] Ricerca standard per: {clean_event_name}")
             
-            
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
-            search_query = urllib.parse.quote(f"{clean_event_name} logo epg")
+            search_query = urllib.parse.quote(f"{clean_event_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -322,7 +307,7 @@ def eventi_m3u8_generator():
         """
         try:
             # Prepara la query di ricerca specifica per la squadra
-            search_query = urllib.parse.quote(f"{team_name} logo squadra calcio")
+            search_query = urllib.parse.quote(f"{team_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -450,7 +435,7 @@ def eventi_m3u8_generator():
         categorized_channels = extract_channels_from_json(json_file) 
       
         with open(output_file, "w", encoding="utf-8") as f: 
-            f.write('#EXTM3U x-tvg-url="https://raw.githubusercontent.com/realbestia/itatv/refs/heads/main/deevents.xml"\n') 
+            f.write("#EXTM3U\n") 
       
             for category, channels in categorized_channels.items(): 
                 if not channels: 
@@ -470,7 +455,8 @@ def eventi_m3u8_generator():
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
-                    stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
+                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d={LINK_DADDY}/embed/stream-{channel_id}.php" 
+                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}") 
                     f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Live Events",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
       
